@@ -146,7 +146,7 @@ VimIM —— Vim 中文输入法
 ====
 * 【独立】不折腾 **Plug & Play**
 * 【自主】不差钱 **Open Source**
-* 【自力】VimIM `〖点石成金〗`_ 　 `COLUD 云输入`_
+* 【自力】VimIM `〖点石成金〗`_ 　 `CLOUD 云输入`_
 * 【更生】VimIM `〖中文输入模式〗`_  　即插即用 `VimIM 双码输入`_
 * 【高性能】小巧　玲珑　个性　智能　自然　流畅
 * 【低能耗】史上最容易卸载的中文输入法
@@ -392,7 +392,7 @@ __ http://code.google.com/p/vimim/wiki/DIY_Korean
 VimIM 设计思路:
 
 - 用文本文件打造中文输入法：文本文件，天下无敌。
-- 一个文本文件就足以联网 `COLUD 云输入`_
+- 一个文本文件就足以联网 `CLOUD 云输入`_
 - 两个文本文件就是完整的中文输入法。
 - 词库文件完全归用户管理，可以直接用Vim编辑。
 - 源程式不用编译，修改以后立竿见影。
@@ -407,7 +407,7 @@ For the impatient —— 先试一试，看好不好玩：
 (4) 然后把 vimim.vim 和您的码表扔到您的 vim 的 plugin 目录之下
 (5) 先玩一玩 VimIM `〖点石成金〗`_ ，无需改变模式
 (6) 再玩一玩 VimIM `〖中文输入模式〗`_ ，源源不断输入中文
-(7) 如果电脑联网，可以体验一下 `COLUD 云输入`_ 即插即用。
+(7) 如果电脑联网，可以体验一下 `CLOUD 云输入`_ 即插即用。
 
 __ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
@@ -673,13 +673,13 @@ __ http://vimim.googlecode.com/files/vimim.12345.txt
 |
 
 
-.. sidebar::  VimIM `COLUD 云输入`_
+.. sidebar::  VimIM `CLOUD 云输入`_
 
    .. figure:: vimim_dream.png
    .. figure:: cloud_world.gif
 
 
-COLUD 云输入
+CLOUD 云输入
 ============
 
 【官方介绍】
@@ -715,7 +715,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
   * 入〖云〗可能需要设置选项：g:vimim_www_sogou
 
 
-.. sidebar::  VimIM 双拼 `COLUD 云输入`_
+.. sidebar::  VimIM 双拼 `CLOUD 云输入`_
 
    .. figure:: vimim_shuangpin_abc.gif
    .. figure:: vimim_shuangpin_microsoft.gif
@@ -772,7 +772,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
 __ http://code.google.com/p/vimim/wiki/SingleQuote
 __ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
 
-.. sidebar::  VimIM 五笔 `COLUD 云输入`_
+.. sidebar::  VimIM 五笔 `CLOUD 云输入`_
 
    .. figure:: wubi_cloud_1.gif
    .. figure:: wubi_cloud_2.gif
@@ -792,7 +792,7 @@ __ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
     |  只需下载vimim.vim一个文本文件——即插即用。
     |
 
-.. sidebar::  VimIM `COLUD 云输入`_
+.. sidebar::  VimIM `CLOUD 云输入`_
 
    .. figure:: vimim_cloud.gif
 
@@ -804,7 +804,7 @@ __ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
 　【操作步骤】
 
   +--------------------------------------------------+
-  | VimIM `COLUD 云输入`_  　即插即用　Plug & Play   |
+  | VimIM `CLOUD 云输入`_  　即插即用　Plug & Play   |
   +====+====================+========================+
   |    |  　Windows 用户    |   　Linux 用户         |
   +----+--------------------+------------------------+
@@ -1186,7 +1186,7 @@ VimIM 双码输入
  5     手机电脑一路通       VimIM 推荐 `四角号码数码输入`_
  6     自创中文输入法       VimIM 演示 `VimIM 双码输入`_
  7     闭目养神             VimIM 体验 `中文盲打`_
- 8     美女如〖云〗         VimIM 追求 `COLUD 云输入`_
+ 8     美女如〖云〗         VimIM 追求 `CLOUD 云输入`_
 ====  ===================   =================================
 
 __ `Unicode 内码输入`_
@@ -1211,7 +1211,7 @@ __ `概述`_
 
 + VimIM　 `整句输入`_
 + VimIM　 `逐词匹配`_ 　之 ㈠ 句号分隔，自己定匹配
-+ VimIM　 `COLUD 云输入`_ 之 ㈠ 〖混合式云输入〗
++ VimIM　 `CLOUD 云输入`_ 之 ㈠ 〖混合式云输入〗
 
 【测试】
 
@@ -1231,7 +1231,7 @@ __ `概述`_
 【无词库】
 
   *  不联网：利用 VimIM `内码输入`_
-  *  联网：　即插即用 VimIM `COLUD 云输入`_
+  *  联网：　即插即用 VimIM `CLOUD 云输入`_
 
 【带词库】
 
@@ -1430,7 +1430,7 @@ VimIM Mapping
 
 + vim 插入模式：
 
-  - 【云输入】史上最方便的 `COLUD 云输入`_
+  - 【云输入】史上最方便的 `CLOUD 云输入`_
   - 【整句输入】敲中文如同敲英文
   - 【无缝混排】支持 `无缝混排`_
   - 【匹配提醒】缺省匹配，以及总匹配数
@@ -2308,7 +2308,7 @@ __ http://code.google.com/p/vimim/wiki/AboutManual
      | (3) 玩家完全拥有自己的词库（比如粤语，上海话，英文，电码 etc)
      | (4) 玩家可以自定个性输入法：自己定的规矩往往是最好的规矩。
      | (5) `〖点石成金〗`_ 无需状态切换，敲中文敲英文没有区别。
-     | (6) VimIM 可随意扩展：看看我们刚刚上市的VimIM `COLUD 云输入`_
+     | (6) VimIM 可随意扩展：看看我们刚刚上市的VimIM `CLOUD 云输入`_
      |
 
 :问: | VimIM 为什么提供三个中文输入模式?
