@@ -12808,7 +12808,7 @@ deep 深 #
 deepuhuo 灯蛾扑火
 deer 鹿 #
 defa 得法
-default 默认 缺省 #
+default 缺省 默认 #
 defeat 击破 打败 挫败 #
 defen 得分
 defence 防守 #
@@ -17470,17 +17470,9 @@ fupiliaocao 浮皮潦草
 fupiliaocao 肤皮潦草
 fupin 副品
 fupin 扶贫
-fuqi 付讫
-fuqi 夫妻
-fuqi 福气
-fuqi 腹鳍
-fuqi 负起
-fuqian 付钱
-fuqian 浮浅
-fuqian 浮签
-fuqian 肤浅
-fuqiang 富强
-fuqiang 腹腔
+fuqi 夫妻 服气 福气 负起 付讫
+fuqian 肤浅 付钱 浮浅 浮签
+fuqiang 富强 腹腔
 fuqianganle 富强安乐
 fuqiao 浮桥
 fuqidian 夫妻店
@@ -20432,7 +20424,7 @@ guyong 雇用
 guyongbingyizhi 雇佣兵役制
 guyongguandian 雇佣观点
 guyonglaodong 雇佣劳动
-guyou 故友 固有
+guyou 固有 故友
 guyu 古语 谷雨
 guyuan 故园 雇员 固原
 guyue 鼓乐
@@ -32098,13 +32090,9 @@ lushuiyinyuan 露水姻缘
 lusi 鹭鸶
 lusibuzeyin 鹿死不择音
 lusishuishou 鹿死谁手
-lusu 卤素
-lusu 噜苏
-lusu 簏簌
-lusu 露宿
+lusu 露宿 噜苏 卤素 簏簌
 lusufengcan 露宿风餐
-lutai 炉台
-lutai 露台
+lutai 露台 炉台
 lutang 炉膛
 lutian 露天
 lutiankuang 露天矿
@@ -53275,6 +53263,7 @@ xinjiang 新疆
 xinjianshichuan 心坚石穿
 xinjiao 心焦
 xinjiao 新交
+xinjie 新解
 xinjieduan 新阶段
 xinjienanjie 心结难解
 xinjihuoliao 心急火燎
@@ -63369,4 +63358,3 @@ zuzongfadu 祖宗法度
 zuzongjiafa 祖宗家法
 zuzubeibei 祖祖辈辈
 zuzuyouyu 足足有余
-xinjie 新解
