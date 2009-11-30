@@ -170,7 +170,7 @@ __ `VimIM Foundation`_
 **vim**
 
   ====  ==============
-  vim<C-\\>
+  vim <C-\\> p
   ====================
    1     文本編輯器
    2     最牛文本編輯器
@@ -179,21 +179,28 @@ __ `VimIM Foundation`_
    5     中文輸入法
   ====  ==============
 
+
+.. sidebar::  `复活节彩蛋`_   vimim
+
+   .. figure:: vimim_egg.gif
+
+
 **vimim**
 
-  ====  ====================
-  vimim<C-\\>
-  ==========================
-   1     电脑：GUI_Windows32
-   2     版本：702
-   3     版本：862
-   4     编码：utf-8
-   5     输入：拼音
-   6     词库：vimim.txt
-   7     词库：privates.txt
-   8     词库：四角号码
-   9     　云：12朵云输入
-  ====  ====================
+  ====  ==========  =========  ==========================
+  vimim <C-\\> p
+  =======================================================
+   1     computer   电脑：     Windows32_builtin_gui
+   2     Vim        版本：     702
+   3     VimIM      版本：     877
+   4     encoding   编码：     utf-8
+   5     fencs      编码：     ucs-bom,utf8,chinese
+   6     im         输入：     拼音
+   7     datafile   词库：     vimim.txt
+   8     datafile   词库：     privates.txt
+   9     datafile   词库：     四角号码
+  10     cloud      搜狗：     12朵云输入
+  ====  ==========  =========  ==========================
 
 |
 
@@ -211,7 +218,9 @@ __ `VimIM Foundation`_
   #. 敲 i
   #. 敲 m
   #. 敲 <C-\\>
-  #. 【结果】 `VimIM logo <vimim_logo.gif>`_
+  #. 〖结果〗 `VimIM logo <vimim_logo.gif>`_
+  #. 敲 p
+  #. 〖结果〗 输入全部菜单
 
 
 .. sidebar::  VimIM 玩家评论　Testimonials
@@ -752,12 +761,12 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
 
  (6) 支持五笔云输入：为什么五笔不能人〖云〗亦〖云〗？
 
-     * 〖条件〗插入自制五笔云输入词库： `wimim.wubi2pinyin.txt`__ 
+     * 〖条件〗插入自制五笔云输入词库： `wimim.wubi2pinyin.txt`__
      * 〖操作〗敲五笔，上拼音，按空格键入〖云〗。
 
 
 __ http://code.google.com/p/vimim/wiki/SingleQuote
-__ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt 
+__ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
 
 .. sidebar::  VimIM `〖云〗输入`_ 五笔
 
@@ -2751,14 +2760,25 @@ WHAT IS NEW
 #. [done] [legal] add one section in manual to clarify copyright
 #. [done] [diy] add g:vimim_diy_asdfghjklo to support shortcut
 #. [done] [translation] add brutal-force chinese2pinyin translation
-#. [todo] [test] make sure no regression, following each item on manual
 #. [done] [cloud] why not wubi? also add vimim.wubi2pinyin.txt
 #. [done] regression => mjads.xdhao.jdaaa zaskso ma7712li4002 mljjfo
-#. [todo] linux-zero-setting download and play
-#. [todo] issue 15: console vim, menu disappear: zheligaoxing<OneKey>
 #. [done] add easter egg for user environment: vimim<C-\>
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
+#. [todo] [test] make sure no regression, following each item on manual
 #. [todo] issue 16: chaoxianlaodongdang  replacing too many chars
-#. [todo] duo3 躲 哚 垛 朵  bug duo3
+#. [todo] issue 15: console vim, menu disappear: zheligaoxing<OneKey>
+#. [todo] issue 15: set/reset lazyredrew for OneKey
+
+..
+    COLUD 云输入
+    ============
+    ms:       hkfgp;jxlisswouhq;yp
+    nature:   hkfgpyjxlisswouhqyyp
+    plusplus: hdftpqjmlisywoigqqyz
+    purple:   hqftp;jdlishwoisq;ym
+
+
+    无图无真相，看图
+
 
 
