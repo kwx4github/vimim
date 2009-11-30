@@ -774,8 +774,8 @@ __ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
 
 .. sidebar::  VimIM 五笔 `CLOUD 云输入`_
 
-   .. figure:: wubi_cloud_1.gif
-   .. figure:: wubi_cloud_2.gif
+   .. figure:: vimim_wubi_cloud_1.gif
+   .. figure:: vimim_wubi_cloud_2.gif
 
 
 【设计思路】
