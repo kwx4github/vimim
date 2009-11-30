@@ -346,7 +346,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
 + `不折腾——VimIM践行主旨 (wiki)`__
 + `VimIM——利用vim自动补全制作的输入法`__
 + `最早发现〖点石成金〗的VimIM粉丝`__
-+ `抗美援朝新解：用VimIM输入韩语`__
++ `与抗美援朝风马牛不相及：用VimIM敲韩语`__
 
 
 __ http://www.linuxgem.org/2009/5/18/VimIM.8422.html
