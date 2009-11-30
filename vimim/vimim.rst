@@ -2465,14 +2465,16 @@ VimIM的作者
 #. 有几个世界难题是Vim官方论坛上Tony Mechelynck解答的。
 #. 最多的灵感源自VimIM官方论坛上玩家的狂轰滥炸。
 #. 双拼的全部code来自Pan ShiZhu
-#. Project committers on http://code.google.com/p/vimim
+#. all project committers on http://code.google.com/p/vimim
 
 
 VimIM的词库来源
 ---------------
-#. VimIM的唯一官方distribution是唯一文本文件vimim.vim
-#. 使用VimIM云输入不需要任何词库。
-#. 帖在 `网站`__ 上的词库仅供用户参考。如有不妥，可以删除。
+#. VimIM 的唯一官方distribution是唯一文本文件 `vimim.vim`__
+#. 使用 VimIM `内码输入`_ 不需要任何词库。
+#. 使用 VimIM `CLOUD 云输入`_ 不需要任何词库。
+#. 帖在 `VimIM网站`__ 上的词库仅供用户参考。如有不妥，可以删除。
+
 
   - 英文输入法词库 (from vimim, after editing it line by line)
   - 私人信息样本文件 (from vimim, after editing it line by line)
@@ -2500,6 +2502,7 @@ VimIM的词库来源
   - 新华输入法词库 (processing from ibus)
   - 香港拼音输入法词库 (processing from ibus)
 
+__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 __ http://code.google.com/p/vimim/downloads/list
 
 
@@ -2773,8 +2776,6 @@ WHAT IS NEW
 #. [todo] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [todo] issue 15: console vim, menu disappear: zheligaoxing<OneKey>
 #. [todo] issue 15: set/reset lazyredrew for OneKey
-
-
 
 
 
