@@ -2768,10 +2768,12 @@ WHAT IS NEW
 #. [done] regression => mjads.xdhao.jdaaa zaskso ma7712li4002 mljjfo
 #. [done] add easter egg for user environment: vimim<C-\>
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
+#. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [todo] issue 15: console vim, menu disappear: zheligaoxing<OneKey>
 #. [todo] issue 15: set/reset lazyredrew for OneKey
+
 
 
 
