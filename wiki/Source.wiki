@@ -1,0 +1,43 @@
+#labels SourceTab
+=VimIM Subversion Repository=
+
+For the impatient, [http://code.google.com/p/vimim/source/browse/trunk/plugin/vimim.vim this] is the latest snapshot of VimIM's main script.
+
+You can also:
+
+  * *[http://code.google.com/p/vimim/source/browse/ Browse this project's Subversion repository]*
+
+  * *[http://vimim.googlecode.com/svn/vimim/vimim.vim.html Read VimIM's main script online]*
+
+----
+
+==Command-line access==
+
+===Normal Users===
+
+  * Use this command to anonymously check out the latest project source code:
+{{{
+# Non-members may check out a read-only working copy anonymously over HTTP.
+svn checkout http://vimim.googlecode.com/svn/trunk/ vimim-read-only
+}}}
+
+  * Use this command to get a clean directory tree from the repository:
+{{{
+svn export http://vimim.googlecode.com/svn/trunk/ vimim-clean-copy
+}}}
+
+===Developers===
+
+  * For project committers, if you plan to make changes, use this command to check out the code as yourself using HTTPS:
+{{{
+svn checkout https://vimim.googlecode.com/svn/trunk/ vimim-src --username replace-your-google-account-here
+}}}
+
+  * For online document maintainers, use this command:
+{{{
+svn checkout https://vimim.googlecode.com/svn/vimim/ vimim-web --username replace-your-google-account-here
+}}}
+  When prompted, enter your generated [http://code.google.com/hosting/settings googlecode.com password].
+
+==GUI and IDE access==
+ This project's Subversion repository may be accessed using many different [http://subversion.tigris.org/links.html#clients client programs and plug-ins]. See your client's documentation for more information.

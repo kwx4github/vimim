@@ -1,0 +1,21 @@
+﻿#summary VimIM 中文用户手册
+==VimIM 中文用户手册是用什么软件写的?==
+{{{
+有玩家好奇，称赞 VimIM 中文用户手册很漂亮，
+想知道是用什么“先进武器”弄出来的?
+	
+VimIM 中文用户手册是一个 HTML 文件: vimim.html
+VimIM 中文用户手册的 HTML 文件是由一个 RST 文件制造的。
+VimIM 中文用户手册的 RST 源文件早已公开: vimim.rst
+	
+最简单的 RST 文件 => HTML 文件转化过程可以参考:
+http://api.rst2a.com
+	
+那个 RST 文件是由全世界最牛文字编辑器 Vim 写的。
+	
+其中所有的中文都是由 Vim 中最简单最方便的中文输入方式
+（VimIM 点石成金）点出来的。
+	
+笔者喜欢 VimIM 点石成金，无模式转换，Tab键上字：
+Tab键上字很妙，想上字就上字，不想上字上Tab 
+}}}

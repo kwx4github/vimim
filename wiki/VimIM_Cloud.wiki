@@ -1,0 +1,24 @@
+﻿#summary 【广播】VimIM入“云”宣言
+==VimIM 入〖云〗宣言==
+
+一觉醒来，发现外面都〖云〗了。—— Cloud Computing
+
+ * 此时再不人云亦云，VimIM 何以壮志凌云?  
+ * 此时依然不知所云，VimIM 何以平地青云?
+
+云，山川气也。——《说文》
+
+ # 【灵感】风起云涌　 http://forum.ubuntu.org.cn/viewtopic.php?f=68&p=1572260
+ # 【关键】宾客如云　 http://groups.google.com/group/vim_use/t/66062daa9452b90b
+ # 【结果】腾云驾雾　 http://vimim.googlecode.com/svn/vimim/vimim.html#id35
+
+http://vimim.googlecode.com/svn/vimim/vimim_dream.png
+
+<br>
+
+〖附录〗VimIM〖云〗输入设计思路
+  
+ # VimIM 决不能被〖云〗和谐
+ # VimIM 决不能被〖云〗折腾
+ # VimIM 决不能被〖云〗忽悠
+ # VimIM 同时坚信：他山之石，可以攻玉

@@ -1,0 +1,29 @@
+﻿#summary  发现可以用VimIM输入韩语
+http://code.google.com/p/vimim/wiki/DIY_Korean
+{{{
+我试用了一下你的vimim, 发现可以用来输入韩语。我搜了一些常用的韩字，
+近一千个。编码方法就是韩字的键盘表示。有两个改动：
+	
+一、元音字아等都省去了d, 本来아编成dk, 现在只有一个k.
+二、韩语中大写字母表示的字根用重字母表示，例如뜌,Eb,变成了eeb.
+	
+ 非常感谢！
+	
+	
+COMMENT:
+	
+有意思，特上载hangul 词库：
+http://vimim.googlecode.com/files/vimim.hangul.txt
+	
+两个结论：
+	
+㈠ 最简单的往往是最强大的。（VimIM 码表格式简单灵活）
+㈡ 人民，只有人民，（VimIM玩家）才是创造（中文输入法）世界历史的动力。
+	
+说到韩国韩文，想起了一首歌：
+	
+“雄赳赳，气昂昂，跨过鸭绿江！保和平，卫祖国，就是保家乡！
+  中国好儿女，齐心团结紧，抗美援朝，打败美国野心狼！” 
+}}}
+	
+http://groups.google.com/group/vimim/browse_thread/thread/a2d9692021e9ceac/328432cfde61e4f2

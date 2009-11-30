@@ -1,0 +1,13 @@
+﻿#summary VimIM 基金会
+=VimIM 基金会=
+{{{
+VimIM 自由软体基金会 (The VimIM Free Software Foundation)
+致力于推广普及完善 VimIM ，专提供 Bonus 给 VimIM 骇客 。
+   
+VimIM 贝宝 Pay Pal 美金帐户已于2009年2月11日正式开通。
+贝宝 可轻松付款给在中国拥有电子邮件地址的任何人。
+   
+VimIM 基金会每年 春节 颁发奖励 (The VimIM Award)：
+奖励方案由 VimIM 基金会推荐：国人优先，学生优先。
+奖品包括主张“激情成就梦想”的 青岛啤酒 (Tsingtao Beer)
+}}}

@@ -1,0 +1,39 @@
+﻿#summary 天仙配: Vim 配 Firefox
+=【分享】Firefox & Vim 天仙配=
+
+==【旧文】==
+
+我发现 Vim 和 Firefox 是一对天仙配。
+{{{
+一个以写 (write/create/insert/update) 为主。
+一个以读 (read/browse/internet/gmail) 为业。
+}}}
+男耕女织。男欢女爱。各伺其职。
+
+==【新说】==
+
+软件天仙配不多，是稀世珍宝。
+套用情场上的一个段子，两者必须“仿佛永远分离，却又终生相依”。
+
+Vim 和 Firefox 天仙配的另外一个实现方式是：“你中有我”和“我中有你”。
+
+——“你中有我” （从Firefox 里面可以打开Vim）
+{{{
+第一步：插上电源，启动电脑
+第二步：打开 Firefox
+第三步：鼠标右键，出菜单
+第四步：敲 v 表示选择 View Page Source
+第五步：确认 Vim 跳出来
+}}}
+——“我中有你” （从Vim 里面可以打开 Firefox）
+{{{
+第一步：插上电源，启动电脑
+第二步：打开 Vim
+第三步：鼠标右键，出菜单
+第四步：敲 f 表示选择 Firefox
+第五步：确认 FireFox 跳出来
+}}}
+I have enjoyed both features for many years, and never made any
+change since I made it work by simple configuration. If you are
+interested, you can dig into details over internet on how to make it
+work for you. 

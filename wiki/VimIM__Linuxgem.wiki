@@ -1,0 +1,17 @@
+﻿#summary VimIM进城啦
+=VimIM 进城啦=
+
+`LinuxGem` (May 18, 2009) 头版头条!
+
+http://www.linuxgem.org/2009/5/18/VimIM.8422.html
+
+{{{
+VimIM -- 基于 Vim 的中文输入法
+2009年5月18日 13:04 in 桌面应用软件 tags: vim 输入法 vimim
+                
+VimIM 是一个专门为 Vim 玩家开发的嵌入式输入法。
+只要你的 Vim 可以显示中文，就可以用 VimIM。
+便捷的快捷键和独特的输入模式，完美的解决了 Vim 的中文切换问题。
+}}}
+
+【注】 It seems better written than mine :)) 

@@ -1,0 +1,104 @@
+﻿#summary  不折腾，——VimIM践行主旨
+http://code.google.com/p/vimim/wiki/Feedback_Suxpert<br>
+http://vimim.googlecode.com/svn/vimim/cloud_world.gif
+{{{
+	
+首先向vimim兄道歉，早在4天之前我就收到了您的邮件，
+但是因为手头有点工作没脱开身，一直没有将这个早该贴
+出来的报告完成。另Happy Thanks Giving Day, everyone.
+	
+11月24日版本的VimIM应该就已经将这个问题解决掉了，
+——我一直随时关注讨论组页面，近期的进展也都看得见。
+而且尽管我没有写这个报告，相关的测试工作我还是做
+了一些。
+	
+这个报告的主题我选用了vimim兄在文档中经常提到的一
+个词“不折腾”，源于我觉得在汉字乱码支持这方面，
+VimIM要做到的就是这样的目标：不折腾。而实际上我们
+欣喜的看到，这真的已经做到了！
+	
+测试报告：
+	
+1. 环境：Windows XP + SP3, Gvim7.2安装版、手工绿色
+版（从Vim主页下载一些包，然后自己组装^_^）
+PortableApps可移植版（PortableApps.com）三个GVim版
+本，以及前两个的Windows 32 Console版本。
+	
+采用不折腾方案，进行无词库测试。
+	
+所谓的安装就不用再说了，无非是下载vimim.vim和
+wget.exe并放到相应的位置。
+	
+开始测试：
+	
+1a. 什么都不管，直接开始用。真正达到不折腾。
+Win+R cmd回车打开命令提示符（个人习惯，因为我
+装完后都会建立一个可以从这儿调用的批处理文件，:)）
+，输入Gvim或者Vim回车，敲i或I或a或A或O或o或S或s或C
+或c ……进入插入模式，输入Vim敲点石成金Ctrl+\，彩
+色的补全菜单将我们的彩蛋完美展现出来。
+	
+然后继续：输入zhishigongxiangshijiedatong，
+按ctrl+\。
+	
+1b. 某些人喜欢穷折腾？好办。你折腾我不折腾。编辑
+_vimrc脚本（一般在这儿$VIM/_vimrc），让我们尽情折腾吧！
+    :set encoding=UTF-8
+    :set termencoding=GBK
+    :language messages zh_CN.UTF-8
+    :source $VIMRUNTIME/delmenu.vim
+    :source $VIMRUNTIME/menu.vim
+    :set langmenu=zh_CN.UTF-8
+然后重新打开Vim，注意，是重新打开Vim。 
+（写到这儿我想到了，是不是原来我一直把vimim兄所说
+的解决掉了理解错了？应该是从vimrc中设置选项，而不
+是直接从Vim的末行去设置吧？
+……经过多次测试发现貌似所有从Vim末行进行的设置不
+会影响到vimim.vim脚本，即使重新source它。）好的，
+不管你怎么穷折腾，VimIM总会顺利将你要的东西补全出
+来。插入模式，输入vim按ctrl+\，熟悉的彩蛋；插入模
+式， 输入zhishigongxiangshijiedatong，然后Ctrl+\，
+本人的口号再次出现……
+	
+2. 环境：Ubuntu 9.10(从9.04升过来的^_^) + vim7.2。
+	
+2a. 傻瓜操作：下载vimim.vim放到合适的地方，本人为了
+偷懒就把Win下的直接ln过来，:) alt+f2输入
+gnome-terminal或者Konsole（看你的终端模拟器是什么
+了^_^） 输入vim或gvim回车打开vim，进入插入模式，输
+入vim按ctrl+\，哦也，我们熟悉的彩蛋。输入
+zhishigongxiangshijiedatong，按ctrl+\又看到了我们
+的理想。
+	
+2b.折腾2折腾3折腾4，逃不出x86的佛掌；任你再怎么折腾，
+我们不便应万变：
+	
+:set enc=GBK tenc=UTF-8
+	
+看看我们的彩蛋还work不——发现还真没问题！漂亮！然
+后：zhishigongxiangshijiedatong，哦也，还是没问题！
+	
+:set enc=Chinese tenc=UTF-8
+	
+折腾到底，看你行不行：——果然，彩蛋是出问题了，虽
+然zhishigongxiangshijiedatong是没问题。那问题在哪
+儿呢？原来，Linux下的Chinese代码页不含有繁体中文，
+云过来的这些前面可都是简体中文当然没问题，可是我们
+亲爱的彩蛋中是有繁体中文的！这样Vim照着我们的
+encoding表当然就不认识这些繁体是什么东东，只好送你
+个问号放在那儿……
+	
+3. Macintosh，本人没钱，只是见过几面，从来没用过，这
+个测试……那就让好事者来做吧……同样的Unix，BSD…
+…志愿者们可以现身了！
+	
+4. 各个Host上的其它设定：本人精力有限，而且确实不算精
+通，就知道几个常用的设定档，难免以偏概全。因此如果
+真正要做到“我自岿然不动”，还需要更多的测试。
+	
+5. 注意事项：前面也说了，就是所有的设定只有重新启动
+Vim后， VimIM才会正常。 从Vim的末行中进行的设定“
+会”引起前面我提到的各种乱码问题，而在 vimrc 中设
+定，再重启vim 就不会引起中文乱码，—— 当然我现在
+只是确定在我研究过的这几种情况下。其中还不包括没有
+繁体中文的Linux Chinese代码页。

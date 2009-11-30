@@ -1,0 +1,14 @@
+﻿#summary 【推荐】MinTTY Windows console
+===【推荐】MinTTY 微软视窗下最“先进”的 console （终端机）===
+{{{
+【玩家福音】 玩 Linux/UNIX 并不一定非要特意买台专用电脑。
+在 Windows 下面也可以过过瘾。下载cygwin就搞掂，直接下载到根目录下更爽。 
+玩经典的UNIX命令，八九不离十。
+             
+如今 MinTTY 横空出世，在 console 中也可以敲中文了：
+无需 X, 无需 IME, 无需中文 OS, 一切回归自然，犹如清水出芙蓉。
+}}}
+http://maxiangjiang.googlepages.com/vimim_tty_logo.gif
+----
+Thanks to the authors of both MinTTY and PuTTY:
+  http://groups.google.com/group/mintty-discuss/browse_thread/thread/951b7f48b5cac1c4
