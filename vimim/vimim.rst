@@ -2375,7 +2375,7 @@ __ http://code.google.com/p/vimim-wubi/
      | 　　(1) VimIM 不是赢利产品
      | 　　(2) VimIM 源码开放，欢迎玩家参与
      | 　　(3) VimIM 属于所有 VimIM 玩家
-     | 　　(4) VimIM 还提供 bonus__
+     | 　　(4) VimIM 还提供 `bonus <#vimim-foundation>`_
      |
 
 :问: | VimIM 的词库能不能更新?
@@ -2404,25 +2404,31 @@ __ http://code.google.com/p/vimim-wubi/
      | endif
      |
 
-:问: | VimIM 与 Vim abbreviation 好像有点冲突?
-:答: | Yes, but ...
-     | 如果不激活 VimIM, Vim 的 abbreviation 永远不会“被和谐”。
-     |
-     | 问题好像只出现在用〖点石成金〗之后，接着马上敲 Space, 而且敲
-     | Space 的目的是激活abbreviation. 不过这时候，再次用 Space 键时，
-     | Space键又可以激活abbreviation了。
-     |
-     | 原因：OneKey 需要赋予Space键一点智能，以便于上字。
-     |
-
 :问: | VimIM 与 latex-suite plugin 好像有点冲突?
 :答: | 有玩家反应。Let's wait for solution from those players who
      | are interested in making both plugins work in harmony.
      |
 
-__ `VimIM Foundation`_
+:问: | VimIM 与 Vim abbreviation 好像有点冲突?
+:答: | Yes, but ...
+     | 如果不激活 VimIM, Vim 的abbreviation永远不会“被和谐”。
+     |
+     | 问题好像只出现在用〖点石成金〗上字之后，接着马上敲空格键，
+     | 而且敲空格键的目的是激活abbreviation. 不过这时候，再次用
+     | 空格键时，空格键又可以激活abbreviation了。
+     |
+     | 原因：OneKey需要赋予空格键一点智能，以便于上字。
+     |
 
-
+:问: | VimIM 会不会和谐用户的设置，例如：nolazyredraw?
+:答: | Yes, but ...
+     | 如果不激活 VimIM, Vim 的设置永远不会“被和谐”。
+     |
+     | 用〖点石成金〗上字以后，如果愿意，可以敲空格键。
+     | 空格键略具智能：可以把VimIM 固有的几个设置
+     | (lazyredraw, pumheight, hlsearch)
+     | 恢复到用户的在.vimrc中的设置。
+     |
 
 VimIM Foundation
 ================
@@ -2773,9 +2779,7 @@ WHAT IS NEW
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
-#. [todo] issue 16: chaoxianlaodongdang  replacing too many chars
-#. [todo] issue 15: console vim, menu disappear: zheligaoxing<OneKey>
-#. [todo] issue 15: set/reset lazyredrew for OneKey
-
-
+#. [TODO] issue 16: chaoxianlaodongdang  replacing too many chars
+#. [TODO] issue 17: g:vimim_chinese_punctuation=0 make period dummy  ma.ma 
+#. [done] issue 15: set/reset lazyredrew for OneKey
 
