@@ -144,15 +144,16 @@ VimIM —— Vim 中文输入法
 
 特点
 ====
-* 【独立】不折腾 **Plug & Play**
-* 【自主】不差钱 **Open Source**
-* 【自力】VimIM `〖点石成金〗`_ 　 `CLOUD 云输入`_
-* 【更生】VimIM `〖中文输入模式〗`_  　即插即用 `VimIM 双码输入`_
+* 【独立】不折腾　 **Plug & Play**
+* 【自主】不差钱　 **Open Source**
+* 【自力】VimIM `〖点石成金〗`_ 　  〖想云就云〗 `CLOUD 云输入`_
+* 【更生】VimIM `〖中文输入模式〗`_ 〖即插即用〗 `VimIM 双码输入`_
 * 【高性能】小巧　玲珑　个性　智能　自然　流畅
-* 【低能耗】史上最容易卸载的中文输入法
+* 【低能耗】 `史上最容易卸载的中文输入法`__
 * 【和谐☆绿色】 No secret hidden glitch; No strings attached.
 * 【自由☆免费】 Free as in freedom, as well as in `free beer!`__
 
+__ http://code.google.com/p/vimim/wiki/AboutManual
 __ `VimIM Foundation`_
 
 
@@ -192,14 +193,13 @@ __ `VimIM Foundation`_
   =======================================================
    1     computer   电脑：     Windows32_builtin_gui
    2     Vim        版本：     702
-   3     VimIM      版本：     877
+   3     VimIM      版本：     1056
    4     encoding   编码：     utf-8
    5     fencs      编码：     ucs-bom,utf8,chinese
-   6     im         输入：     拼音
-   7     datafile   词库：     vimim.txt
-   8     datafile   词库：     privates.txt
-   9     datafile   词库：     四角号码
-  10     cloud      搜狗：     13朵云输入
+   6     datafile   词库：     vimim.txt
+   7     datafile   词库：     privates.txt
+   8     datafile   词库：     四角号码
+   9     cloud      搜狗：     道是无云却有云
   ====  ==========  =========  ==========================
 
 |
