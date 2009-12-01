@@ -700,7 +700,8 @@ CLOUD 云输入
   (1) 2009年11月2日  `搜狗宣布推出搜狗云输入法`__
   (2) 2009年11月11日 `VimIM 宣誓入云`__
   (3) 2009年11月16日 `史上第一支持五种双拼的云输入法诞生`__
-  (4) 2009年11月28日 `支持五笔云输入：敢为天下先！`__
+  (4) 2009年11月28日 `支持五笔〖动态〗云输入，敢为天下先！`__
+  (5) 2009年12月1日  `支持〖强制性云输入〗，与输入法无关`__
 
 __ http://pinyin.sogou.com/cloud
 __ http://code.google.com/p/vimim/wiki/VimIM_Cloud
@@ -711,9 +712,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
 
   * 入〖云〗必须联网
   * 入〖云〗必须借助 `wget <http://users.ugent.be/~bpuype/wget/>`_
-  * 入〖云〗必须使用汉语拼音：全拼或者双拼
-  * 入〖云〗可能需要设置选项：g:vimim_www_sogou
-
+  * 入〖云〗必须使用汉语拼音：全拼或者双拼甚至简拼
 
 .. sidebar::  VimIM 双拼 `CLOUD 云输入`_
 
@@ -742,32 +741,38 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
        * Linux  　如果vim plugin目录下没有词库
        * Windows　如果wget.exe置于vim plugin目录之下
 
- (3) 支持〖手动档〗　限于 `〖点石成金〗`_
-
-     * 强制非云输入，如果加上一个句号。例：cloud.  => 云
-     * 强制性云输入，如果加上一个逗号。例：ajiao, => 阿娇
-
- (4) 支持〖断字符〗　解决含糊的办法是在含糊的地方贴上标签：
+ (3) 支持〖断字符〗　解决含糊的办法是在含糊的地方贴上标签：
 
      * 错：xianmeimeidepiaosuifengpiaoyang　=>　先美美地飘随风飘扬
      * 对：xi'anmeimeidepi'aosuifengpiaoyang　=>　 `西安妹妹的皮袄随风飘扬`__
 
- (5) 支持五笔云输入：为什么五笔不能人〖云〗亦〖云〗？
+ (4) 支持五笔〖动态〗云输入：为什么五笔不能人〖云〗亦〖云〗？
 
      * 〖条件〗插入自制五笔云输入词库： `wimim.wubi2pinyin.txt`__
-     * 〖操作〗敲五笔，上拼音，按空格键入〖云〗。
+     * 〖操作〗<Ctrl-6>切换，敲五笔，上拼音，按空格键入〖云〗。
 
- (6) 支持中文输入模式〖经典动态〗输入风格 （缺省）
+ (5) 支持中文输入模式〖经典动态〗输入风格 （缺省）
 
        * 如果希望体验搜狗入云的方式：设置 :let g:vimim_www_sogou=1
        * 相比之下，VimIM 的〖混合式云输入〗灵活一些。
 
- (7) 支持中文输入模式〖经典静态〗输入风格
+ (6) 支持中文输入模式〖经典静态〗输入风格
 
        * 考虑到网速，这是VimIM云输入推荐的输入模式。
        * 设置为 ``:let g:vimim_static_input_style=1``
 
+ (7) 支持〖强制性非云输入〗　限于 `〖点石成金〗`_
 
+     * 【特点】如果在编码后加多一个句号。
+     * 【例】cloud.  => 云
+
+ (8) 支持〖强制性云输入〗　限于 `〖点石成金〗`_
+
+     * 【卖点】可以用于非拼音输入法！
+     * 【操作】只需要在编码后加多一个逗号，接着敲〖点石键〗
+     * 【例】ajiao, => 阿娇
+     * 【例】dbrcxby, => 东边日出西边雨
+     * 【例】hfpjlswsqy, => 好风凭借力送我上青云
 
 __ http://code.google.com/p/vimim/wiki/SingleQuote
 __ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
@@ -2808,7 +2813,8 @@ WHAT IS NEW
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
-#. [done] forced CLOUD: replace .. with , for most input methods
+#. [done] [clould] forced CLOUD: replace .. with , for most input methods
+#. [done] [clould] support CLOUD at will using comma
 #. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
 #. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
@@ -2820,7 +2826,5 @@ WHAT IS NEW
 #. [done] issue 23: static+shuangpin+cloud breaks after issue 22
 #. [done] issue 25: conflict VimIM completefunc with others
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-
-
 
 
