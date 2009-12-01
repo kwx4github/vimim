@@ -701,12 +701,15 @@ CLOUD 云输入
   (2) 2009年11月11日 `VimIM 宣誓入云`__
   (3) 2009年11月16日 `史上第一支持五种双拼的云输入法诞生`__
   (4) 2009年11月28日 `支持五笔〖动态〗云输入，敢为天下先！`__
-  (5) 2009年12月1日  `支持〖强制性云输入〗，与输入法无关`__
+  (5) 2009年12月1日  `支持〖强制性云输入〗，不限输入法`__
 
 __ http://pinyin.sogou.com/cloud
 __ http://code.google.com/p/vimim/wiki/VimIM_Cloud
 __ http://groups.google.com/group/vimim/browse_thread/thread/b90a05c1e37e3448
 __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
+__ http://vimim.googlecode.com/svn/vimim/vimim.html#cloud
+
+
 
 【必要条件】
 
@@ -768,7 +771,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
 
  (8) 支持〖强制性云输入〗　限于 `〖点石成金〗`_
 
-     * 【卖点】可以用于非拼音输入法！
+     * 【卖点】不限于汉语拼音输入法！
      * 【操作】只需要在编码后加多一个逗号，接着敲〖点石键〗
      * 【例】ajiao, => 阿娇
      * 【例】dbrcxby, => 东边日出西边雨
