@@ -1518,11 +1518,11 @@ VimIM 不錯, 一直在用 :) -->
 <li>【中文數字】（靜態模式）i2009　=&gt;　二〇〇九　　I2009　=&gt;　貳零零玖</li>
 <li>【中文量詞】（靜態模式）i5t　=&gt;　五噸　　id8　=&gt;　第八</li>
 <li>【大塊英文】敲 CTRL-6 動態切換中英文輸入模式。</li>
-<li>【智能模糊匹配】 缺省開啟</li>
-<li>【可控詞頻調整】 缺省開啟</li>
+<li>【智能模糊匹配】 （缺省開啟）</li>
+<li>【可控詞頻調整】 （缺省開啟）</li>
 <li>【通配符匹配】用星號鍵＊匹配任意字符串或空串 （缺省關閉）</li>
-<li>【缺省輸入風格】 <a class="reference internal" href="#id75">〖中文輸入模式〗</a>  經典動態輸入風格</li>
-<li>【開啟靜態模式】可設 :let g:vimim_static_input_style=1</li>
+<li>【輸入風格】 <a class="reference internal" href="#id75">〖中文輸入模式〗</a>  經典動態輸入風格 （缺省開啟）</li>
+<li>【強制開啟靜態模式】可設 :let g:vimim_static_input_style=1</li>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
@@ -3055,16 +3055,12 @@ If the following download URL does not work for you, please
 <p>【數字鍵上字】</p>
 <blockquote>
 <ul class="simple">
-<li>數字鍵1-9直接上漢字，永遠對應數字標簽。</li>
 <li>數字鍵 0 歸零：回歸起始狀態。</li>
+<li>數字鍵1-9直接上漢字：<ul>
+<li>起始狀態，永遠對應數字標簽。</li>
+<li>如果光標移動(hjkl)，數字相對光標位置。</li>
 </ul>
-</blockquote>
-<p>【數字鍵導航】 optional</p>
-<blockquote>
-<ul class="simple">
-<li>開啟可設  :let g:vimim_number_as_navigation=1</li>
-<li>數字標簽起始為0表示數字鍵為導航鍵。</li>
-<li>數字鍵N正向搜索下第N個匹配，不上字。</li>
+</li>
 </ul>
 </blockquote>
 <p>【vi 快捷鍵導航】（`〖點石成金〗`_ ）</p>
@@ -4476,6 +4472,7 @@ set langmenu=zh_CN.UTF-8
 <li>[done] add new hjkl menu key: =p= for copy &amp; paste popupmenu list</li>
 <li>[done] add pictures of 5 shuangpin cloud input to show evidence</li>
 <li>[todo] [test] make sure no regression, following each item on manual</li>
+<li>[done] forced CLOUD: replace .. with , for most input methods</li>
 <li>[done] issue 15: set/reset lazyredrew for OneKey</li>
 <li>[done] issue 19: add s:shuangpin_keyboard to correct calculation</li>
 <li>[done] issue 18: vimim_tab_for_one_key: use &lt;C-&gt; for &lt;Tab&gt;</li>
@@ -4484,13 +4481,15 @@ set langmenu=zh_CN.UTF-8
 <li>[done] issue 21: use &lt;space&gt; to close OneKey to avoid interference</li>
 <li>[done] issue 20: roll back vimim_label(n) which is reliable</li>
 <li>[done] issue 22: dynamic mode+cloud+shuangpin problem</li>
-<li>[todo] forced CLOUD: replace , with ..</li>
+<li>[done] issue 23: static+shuangpin+cloud breaks after issue 22</li>
+<li>[done] issue 25: conflict VimIM completefunc with others</li>
+<li>[todo] how to find vim executable? s:path=expand(&quot;&lt;sfile&gt;:p:h&quot;).&quot;/&quot;</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 01:13:25 PST on Tuesday, 12/01/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 11:31:13 PST on Tuesday, 12/01/2009
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
