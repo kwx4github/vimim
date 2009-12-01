@@ -2788,4 +2788,5 @@ WHAT IS NEW
 #. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
 #. [done] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [done] issue 17: make period dummy in Chinese Input Mode: ma.ma 
+#. [done] issue 21 in vimim: default on g:vimim_punctuation_navigation
 
