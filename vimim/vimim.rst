@@ -734,7 +734,8 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
      * 例如：如果选项设置为10:　即每敲10个字母以上就丢给〖云〗。
 
  (2) 〖整体性云输入〗每一个输入都〖云〗游
-
+ 
+     * 特点：每打一个字都要向服务器请求一次。
      * 手动开启：设置 :let g:vimim_www_sogou=1
      * 自动开启：
 
@@ -751,22 +752,21 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
      * 错：xianmeimeidepiaosuifengpiaoyang　=>　先美美地飘随风飘扬
      * 对：xi'anmeimeidepi'aosuifengpiaoyang　=>　 `西安妹妹的皮袄随风飘扬`__
 
- (5) 支持中文输入模式〖经典动态〗输入风格
-
-     * 考虑到网速，VimIM云输入缺省的输入模式是静态输入风格。
-     * 如果愿意，玩家可以设置动态输入：
-
-       * 玩家认为网速不是问题。
-       * 玩家希望体验搜狗入云的方式。
-       * 说白了，每打一个字都要向服务器请求一次。
-
-         + ``:let g:vimim_www_sogou=1``
-         + ``:let g:vimim_static_input_style=-1``
-
- (6) 支持五笔云输入：为什么五笔不能人〖云〗亦〖云〗？
+ (5) 支持五笔云输入：为什么五笔不能人〖云〗亦〖云〗？
 
      * 〖条件〗插入自制五笔云输入词库： `wimim.wubi2pinyin.txt`__
      * 〖操作〗敲五笔，上拼音，按空格键入〖云〗。
+
+ (6) 支持中文输入模式〖经典动态〗输入风格 （缺省）
+
+       * 如果希望体验搜狗入云的方式：设置 :let g:vimim_www_sogou=1
+       * 相比之下，VimIM 的〖混合式云输入〗灵活一些。
+
+ (7) 支持中文输入模式〖经典静态〗输入风格
+
+       * 考虑到网速，这是VimIM云输入推荐的输入模式。
+       * 设置为 ``:let g:vimim_static_input_style=1``
+
 
 
 __ http://code.google.com/p/vimim/wiki/SingleQuote
@@ -864,10 +864,8 @@ VimIM 拼音输入总结：
 - 【智能模糊匹配】 缺省开启
 - 【可控词频调整】 缺省开启
 - 【通配符匹配】用星号键＊匹配任意字符串或空串 （缺省关闭）
-- 【输入风格】
-
-  - 【缺省开启】 `〖中文输入模式〗`_  经典静态模式输入风格
-  - 【开启动态模式】 :let g:vimim_static_input_style=-1
+- 【缺省输入风格】 `〖中文输入模式〗`_  经典动态输入风格
+- 【开启静态模式】可设 :let g:vimim_static_input_style=1
 
 
 ========================   =============================================
@@ -2813,13 +2811,13 @@ WHAT IS NEW
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
+#. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
 #. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
 #. [done] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [done] issue 17: make period dummy in Chinese Input Mode: ma.ma
-#. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 21: use <space> to close OneKey to avoid interference 
+#. [done] issue 20: roll back vimim_label(n) which is reliable
 #. [todo] issue 22: dynamic mode+cloud+shuangpin problem
-
 
 
