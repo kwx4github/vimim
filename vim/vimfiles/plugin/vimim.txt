@@ -36887,16 +36887,11 @@ pingjia 平价
 pingjia 评价
 pingjiang 评奖
 pingjiao 平角
-pingjie 凭借
-pingjie 评介
+pingjie 凭借 评介
 pingjijuzhang 凭几据杖
 pingjin 平金
-pingjing 平靖
-pingjing 平静
-pingjing 瓶颈
-pingju 凭据
-pingju 平局
-pingju 评剧
+pingjing 平静 瓶颈 平靖
+pingju 凭据 平局 评剧
 pingjun 平均
 pingjunshu 平均数
 pingjunzhuyi 平均主义
@@ -42068,6 +42063,7 @@ shangqian 上前
 shangqie 尚且
 shangqing 商情 墒情
 shangqingxiada 上情下达
+shangqingyun 上青云
 shangqiu 商丘
 shangqixiyi 赏奇析疑
 shangqu 上去
@@ -45585,10 +45581,9 @@ sinang 私囊
 sinanzhe 死难者
 sinaojin 死脑筋
 sincere 衷心 诚实 #
-sing 唱 #
+sing 唱 唱歌 歌曲 #
 singapore 新加坡 #
 singer 歌手 #
-singing 唱歌 #
 single 一个 单身 单独 单数 #
 sinian 思念 私念
 sink 凹陷 沉下 #
@@ -45792,7 +45787,6 @@ sometime 有时 往往 #
 somewhat 稍有 有点 略有 #
 somewhere 有点 稍有 略有 某处 #
 son 儿子 #
-song 歌曲 #
 song 送 松 淞 凇 宋 颂 嵩 忪 怂 悚 竦 耸 菘 讼 诵
 song1 凇 崧 嵩 忪 松 淞 菘 憽
 song3 怂 悚 竦 耸
@@ -45857,6 +45851,7 @@ songtao 松涛
 songtizi 宋体字
 songwangshiju 送往事居
 songwangyinglai 送往迎来
+songwoshangqingyun 
 songxiang 松香
 songxie 松懈
 songxin 送信 松心
