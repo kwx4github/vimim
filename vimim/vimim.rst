@@ -2148,13 +2148,38 @@ e　亿  j　斤  o　度  t　吨  z　兆
   -  **i_CTRL-6** 　动态切换中英文输入模式，包括标点。
 
 |
-| 此外，VimIM 【英文标点智能】
+
+========  ========= ====  ===========  =========
+ 英文        中文    ..       英文       中文
+========  ========= ====  ===========  =========
+  &          、      ..        [          【
+  #          ＃      ..        ]          】
+  %          ％      ..        ^          ……
+  $          ￥      ..        _          ——
+  !          ！      ..        <          《
+  ~          ～      ..        >          》
+ \+          ＋      ..       \-          －
+ \*          ﹡      ..        =          ＝
+  @          ・      ..        ;          ；
+  :          ：      ..        ,          ，
+  (          （      ..        .          。
+  )          ）      ..        ?          ？
+  {          〖      ..        '        “”
+  }          〗      ..        `        “”
+========  ========= ====  ===========  =========
+
+        let s:punctuations['`']='“”'
+
+|
+|
+| 此外，VimIM 〖英文标点智能〗
 | 如果关闭中文标点选项，又懒得动态切换，那么
 | 用空格键点击英文标点可以直接转换为中文标点。
 | 数字后面的英文标点则不作转换。
 | 【缺省关闭】 :let g:vimim_smart_punctuations=0
 |
 |
+
 
 编辑回帖
 --------
@@ -2787,6 +2812,6 @@ WHAT IS NEW
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
 #. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
 #. [done] issue 16: chaoxianlaodongdang  replacing too many chars
-#. [done] issue 17: make period dummy in Chinese Input Mode: ma.ma 
+#. [done] issue 17: make period dummy in Chinese Input Mode: ma.ma
 #. [done] issue 21 in vimim: default on g:vimim_punctuation_navigation
 
