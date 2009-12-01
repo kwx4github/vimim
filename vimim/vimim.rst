@@ -700,8 +700,8 @@ CLOUD 云输入
   (1) 2009年11月2日  `搜狗宣布推出搜狗云输入法`__
   (2) 2009年11月11日 `VimIM 宣誓入云`__
   (3) 2009年11月16日 `史上第一支持五种双拼的云输入法诞生`__
-  (4) 2009年11月28日 `支持五笔〖动态〗云输入，敢为天下先！`__
-  (5) 2009年12月1日  `东边日出西边雨，道是无云却有云！`__
+  (4) 2009年11月28日 `支持五笔〖动态〗云输入，敢为天下先`__
+  (5) 2009年12月1日  `东边日出西边雨，道是无云却有云`__
 
 __ http://pinyin.sogou.com/cloud
 __ http://code.google.com/p/vimim/wiki/VimIM_Cloud
@@ -2830,6 +2830,7 @@ WHAT IS NEW
 #. [done] issue 22: dynamic mode+cloud+shuangpin problem
 #. [done] issue 23: static+shuangpin+cloud breaks after issue 22
 #. [done] issue 25: conflict VimIM completefunc with others
+#. [done] issue 26: hjkl still mapped after <BS>
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 
 
