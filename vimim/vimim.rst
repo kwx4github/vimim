@@ -707,8 +707,7 @@ __ http://pinyin.sogou.com/cloud
 __ http://code.google.com/p/vimim/wiki/VimIM_Cloud
 __ http://groups.google.com/group/vimim/browse_thread/thread/b90a05c1e37e3448
 __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
-__ http://vimim.googlecode.com/svn/vimim/vimim.html#cloud
-
+__ http://code.google.com/p/vimim/wiki/CloudForAll
 
 
 【必要条件】
@@ -772,7 +771,8 @@ __ http://vimim.googlecode.com/svn/vimim/vimim.html#cloud
 
  (8) 支持〖强制性云输入〗
 
-     * 【卖点】不限于汉语拼音输入法！不需要设置！
+     * 【卖点】东边日出西边雨，道是无云却有云！
+     * 【特点】不限于汉语拼音输入法！不需要设置！
      * 【条件】只需要联网和wget/curl
      * 【限于】 `〖点石成金〗`_
      * 【操作】只需要在编码后加多一个逗号，接着敲〖点石键〗
