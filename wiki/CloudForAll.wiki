@@ -20,7 +20,7 @@ With zero setting, anyone can play CLOUD.
     * 【例】hfpjlswsqy, => 好风凭借力送我上青云
 	
 	
-【五笔云输入】测试条件
+零设置【五笔云输入】测试条件
 ------------------------------------
 computer 电脑：Windows32_builtin_gui
 Vim	 版本：702
