@@ -2786,7 +2786,6 @@ WHAT IS NEW
 #. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
 #. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
-#. [done] issue 17: g:vimim_chinese_punctuation=0 make period dummy ma.ma 
 #. [done] issue 16: chaoxianlaodongdang  replacing too many chars
-#. [todo] g:vimim_first_candidate_fix
+#. [done] issue 17: make period dummy in Chinese Input Mode: ma.ma 
 
