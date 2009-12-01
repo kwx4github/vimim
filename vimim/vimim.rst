@@ -745,7 +745,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
  (3) 支持〖手动档〗　限于 `〖点石成金〗`_
 
      * 强制非云输入，如果加上一个句号。例：cloud.  => 云
-     * 强制性云输入，如果加上二个句号。例：ajiao.. => 阿娇
+     * 强制性云输入，如果加上一个逗号。例：ajiao, => 阿娇
 
  (4) 支持〖断字符〗　解决含糊的办法是在含糊的地方贴上标签：
 
@@ -2819,5 +2819,6 @@ WHAT IS NEW
 #. [done] issue 21: use <space> to close OneKey to avoid interference 
 #. [done] issue 20: roll back vimim_label(n) which is reliable
 #. [done] issue 22: dynamic mode+cloud+shuangpin problem
+#. [todo] forced CLOUD: replace , with ..
 
 
