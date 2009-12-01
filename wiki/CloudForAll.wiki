@@ -1,0 +1,21 @@
+﻿#summary  东边日出西边雨，道是无云却有云
+http://code.google.com/p/vimim/wiki/CloudForAll
+{{{
+	
+【玩家福音】
+	
+This might be a nice feature for wubi or other non-pinyin users!
+With zero setting, anyone can play CLOUD.
+	
+【VimIM 云输入】
+	
+   支持〖强制性云输入〗
+	
+     * 【卖点】不限于汉语拼音输入法！不需要设置！
+     * 【条件】只要联网和wget/curl
+     * 【限于】 `〖点石成金〗`_
+     * 【操作】只需要在编码后加多一个逗号，接着敲〖点石键〗
+     * 【例】ajiao, => 阿娇
+     * 【例】dbrcxby, => 东边日出西边雨
+     * 【例】hfpjlswsqy, => 好风凭借力送我上青云
+	
