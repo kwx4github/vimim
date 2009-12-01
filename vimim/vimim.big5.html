@@ -3232,7 +3232,7 @@ If the following download URL does not work for you, please
 </div>
 <ul class="simple">
 <li>【條件】『Vim 可視模式』</li>
-<li>【限於】UTF-8 encoding （vim 和 詞庫）</li>
+<li>【限於】UTF-8 encoding （vim和詞庫）</li>
 <li>【特點】先確認，后存盤。一次可存一行或數行。</li>
 <li>【操作】 ㈠ 縱向高亮選擇新詞　㈡ 敲缺省鍵</li>
 <li>【缺省開啟】:let g:vimim_save_new_entry=1</li>
@@ -3484,26 +3484,31 @@ If the following download URL does not work for you, please
 <h2><a class="toc-backref" href="#id144">可控詞頻調整</a></h2>
 <p>【詞頻記憶】</p>
 <blockquote>
-<ul class="simple">
-<li>隨用戶的意願自動完善用戶的詞庫。</li>
-<li>優先選擇前一次輸入，自動修改詞庫中對應候選詞的順序</li>
-<li>　　久而久之，詞庫就變成用戶自己的詞庫</li>
-<li>　　不知不覺，VimIM  就變成了最適合用戶的輸入法</li>
-<li>輸入累積 N 次，詞庫可以自動刷新，永久存盤。</li>
-<li>【“全拼”缺省開啟】 （:set encoding=utf-8）</li>
-<li>　　 ㈠ 缺省開啟僅適用於當前的 session</li>
-<li>　　:let g:vimim_save_input_history_frequency=1</li>
-<li>　　 ㈡ 永久存盤需設置適合自己胃口的刷新頻率:</li>
-<li>　　:let g:vimim_save_input_history_frequency=N</li>
-</ul>
+<div class="line-block">
+<div class="line">隨用戶的意願自動完善用戶的詞庫。</div>
+<div class="line">優先選擇前一次輸入，自動修改詞庫中對應候選詞的順序</div>
+<div class="line">　　久而久之，詞庫就變成用戶自己的詞庫</div>
+<div class="line">　　不知不覺，VimIM  就變成了最適合用戶的輸入法</div>
+<div class="line"><br /></div>
+</div>
 </blockquote>
-<p>【首字固定】</p>
-<blockquote>
 <ul class="simple">
-<li>　常用字詞將永遠顯示在第一候選項。</li>
-<li>【“全拼”缺省開啟】:let g:vimim_first_candidate_fix=1</li>
+<li>【限於】UTF-8 encoding （vim和詞庫）</li>
+<li>【限於】單字</li>
+<li>【全拼缺省開啟】僅適用於當前的 session</li>
+<li>【首字固定】<ul>
+<li>常用字詞將永遠顯示在第一候選項。</li>
+<li>【全拼缺省開啟】:let g:vimim_first_candidate_fix=1</li>
 </ul>
-</blockquote>
+</li>
+<li>【永久存盤可設】:let g:vimim_chinese_frequency=N<ul>
+<li>輸入累積N次，詞庫可以自動刷新，永久存盤。</li>
+<li>建議設置比較大一點的值：:let g:vimim_chinese_frequency=20</li>
+<li>也就是說，每敲20個漢字，memory 中的詞頻寫入disk存盤</li>
+</ul>
+</li>
+<li>【徹底關閉可設】:let g:vimim_chinese_frequency=-1</li>
+</ul>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -4466,18 +4471,19 @@ set langmenu=zh_CN.UTF-8
 <li>[done] add new hjkl menu key: =p= for copy &amp; paste popupmenu list</li>
 <li>[done] add pictures of 5 shuangpin cloud input to show evidence</li>
 <li>[todo] [test] make sure no regression, following each item on manual</li>
-<li>[done] issue 15: set/reset lazyredrew for OneKey</li>
 <li>[done] issue 19: add s:shuangpin_keyboard to correct calculation</li>
 <li>[done] issue 18: vimim_tab_for_one_key: use &lt;C-&gt; for &lt;Tab&gt;</li>
 <li>[done] issue 16: chaoxianlaodongdang  replacing too many chars</li>
 <li>[done] issue 17: make period dummy in Chinese Input Mode: ma.ma</li>
-<li>[done] issue 21 in vimim: default on g:vimim_punctuation_navigation</li>
+<li>[done] issue 15: set/reset lazyredrew for OneKey</li>
+<li>[done] issue 21: use &lt;space&gt; to close OneKey to avoid interference</li>
+<li>[todo] issue 22: dynamic mode+cloud+shuangpin problem</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 21:41:50 PST on Monday, 11/30/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 23:52:21 PST on Monday, 11/30/2009
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
