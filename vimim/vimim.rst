@@ -2818,6 +2818,6 @@ WHAT IS NEW
 #. [done] issue 17: make period dummy in Chinese Input Mode: ma.ma
 #. [done] issue 21: use <space> to close OneKey to avoid interference 
 #. [done] issue 20: roll back vimim_label(n) which is reliable
-#. [todo] issue 22: dynamic mode+cloud+shuangpin problem
+#. [done] issue 22: dynamic mode+cloud+shuangpin problem
 
 
