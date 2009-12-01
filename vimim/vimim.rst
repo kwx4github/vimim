@@ -347,6 +347,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
 + `VimIM——利用vim自动补全制作的输入法`__
 + `最早发现〖点石成金〗的VimIM粉丝`__
 + `与抗美援朝风马牛不相及：用VimIM敲韩语`__
++ `排序多个词库文件成为一个词库`__
 
 
 __ http://www.linuxgem.org/2009/5/18/VimIM.8422.html
@@ -355,8 +356,7 @@ __ http://code.google.com/p/vimim/wiki/Feedback_Suxpert
 __ http://bigeagle.yo2.cn/articles/vimim%E2%80%94%E2%80%94%E5%88%A9%E7%94%A8vim%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%E5%88%B6%E4%BD%9C%E7%9A%84%E8%BE%93%E5%85%A5%E6%B3%95.html
 __ http://freeai.blogspot.com/2009/03/vimim.html
 __ http://code.google.com/p/vimim/wiki/DIY_Korean
-
-
+__ http://code.google.com/p/vimim/wiki/MultiWordListFiles
 
 
 |
