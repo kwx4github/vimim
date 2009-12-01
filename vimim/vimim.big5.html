@@ -1332,15 +1332,18 @@ VimIM 不錯, 一直在用 :) -->
 </div>
 <p>【VimIM 雲輸入】</p>
 <blockquote>
-<ol class="arabic simple">
-<li>〖混合式雲輸入〗設置 :let g:vimim_www_sogou=10<ul>
+<ol class="arabic">
+<li><p class="first">〖混合式雲輸入〗設置 :let g:vimim_www_sogou=10</p>
+<ul class="simple">
 <li>（長的）詩詞曲賦、新聞八卦、完整的句子拜托給〖雲〗。</li>
 <li>（短的）私人信息、英文、詞組、單字留給VimIM自己處理。</li>
 <li>長短的定義沒有統一的國際標准。玩家自己定標准。</li>
 <li>例如：如果選項設置為10:　即每敲10個字母以上就丟給〖雲〗。</li>
 </ul>
 </li>
-<li>〖整體性雲輸入〗每一個輸入都〖雲〗游<ul>
+<li><p class="first">〖整體性雲輸入〗每一個輸入都〖雲〗游</p>
+<ul class="simple">
+<li>特點：每打一個字都要向服務器請求一次。</li>
 <li>手動開啟：設置 :let g:vimim_www_sogou=1</li>
 <li>自動開啟：<ul>
 <li>Linux  　如果vim plugin目錄下沒有詞庫</li>
@@ -1349,34 +1352,39 @@ VimIM 不錯, 一直在用 :) -->
 </li>
 </ul>
 </li>
-<li>支持〖手動檔〗　限於 <a class="reference internal" href="#id64">〖點石成金〗</a><ul>
+<li><p class="first">支持〖手動檔〗　限於 <a class="reference internal" href="#id64">〖點石成金〗</a></p>
+<ul class="simple">
 <li>強制非雲輸入，如果加上一個句號。例：cloud.  =&gt; 雲</li>
 <li>強制性雲輸入，如果加上二個句號。例：ajiao.. =&gt; 阿嬌</li>
 </ul>
 </li>
-<li>支持〖斷字符〗　解決含糊的辦法是在含糊的地方貼上標簽：<ul>
+<li><p class="first">支持〖斷字符〗　解決含糊的辦法是在含糊的地方貼上標簽：</p>
+<ul class="simple">
 <li>錯：xianmeimeidepiaosuifengpiaoyang　=&gt;　先美美地飄隨風飄揚</li>
 <li>對：xi'anmeimeidepi'aosuifengpiaoyang　=&gt;　 <a class="reference external" href="http://code.google.com/p/vimim/wiki/SingleQuote">西安妹妹的皮襖隨風飄揚</a></li>
 </ul>
 </li>
-<li>支持中文輸入模式〖經典動態〗輸入風格<ul>
-<li>考慮到網速，VimIM雲輸入缺省的輸入模式是靜態輸入風格。</li>
-<li>如果願意，玩家可以設置動態輸入：<ul>
-<li>玩家認為網速不是問題。</li>
-<li>玩家希望體驗搜狗入雲的方式。</li>
-<li>說白了，每打一個字都要向服務器請求一次。<ul>
-<li><tt class="docutils literal">:let g:vimim_www_sogou=1</tt></li>
-<li><tt class="docutils literal">:let <span class="pre">g:vimim_static_input_style=-1</span></tt></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>支持五筆雲輸入：為什麼五筆不能人〖雲〗亦〖雲〗？<ul>
+<li><p class="first">支持五筆雲輸入：為什麼五筆不能人〖雲〗亦〖雲〗？</p>
+<ul class="simple">
 <li>〖條件〗插入自制五筆雲輸入詞庫： <a class="reference external" href="http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt">wimim.wubi2pinyin.txt</a></li>
 <li>〖操作〗敲五筆，上拼音，按空格鍵入〖雲〗。</li>
 </ul>
+</li>
+<li><p class="first">支持中文輸入模式〖經典動態〗輸入風格 （缺省）</p>
+<blockquote>
+<ul class="simple">
+<li>如果希望體驗搜狗入雲的方式：設置 :let g:vimim_www_sogou=1</li>
+<li>相比之下，VimIM 的〖混合式雲輸入〗靈活一些。</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">支持中文輸入模式〖經典靜態〗輸入風格</p>
+<blockquote>
+<ul class="simple">
+<li>考慮到網速，這是VimIM雲輸入推薦的輸入模式。</li>
+<li>設置為 <tt class="docutils literal">:let g:vimim_static_input_style=1</tt></li>
+</ul>
+</blockquote>
 </li>
 </ol>
 </blockquote>
@@ -1513,11 +1521,8 @@ VimIM 不錯, 一直在用 :) -->
 <li>【智能模糊匹配】 缺省開啟</li>
 <li>【可控詞頻調整】 缺省開啟</li>
 <li>【通配符匹配】用星號鍵＊匹配任意字符串或空串 （缺省關閉）</li>
-<li>【輸入風格】<ul>
-<li>【缺省開啟】 <a class="reference internal" href="#id75">〖中文輸入模式〗</a>  經典靜態模式輸入風格</li>
-<li>【開啟動態模式】 :let g:vimim_static_input_style=-1</li>
-</ul>
-</li>
+<li>【缺省輸入風格】 <a class="reference internal" href="#id75">〖中文輸入模式〗</a>  經典動態輸入風格</li>
+<li>【開啟靜態模式】可設 :let g:vimim_static_input_style=1</li>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
@@ -4471,19 +4476,20 @@ set langmenu=zh_CN.UTF-8
 <li>[done] add new hjkl menu key: =p= for copy &amp; paste popupmenu list</li>
 <li>[done] add pictures of 5 shuangpin cloud input to show evidence</li>
 <li>[todo] [test] make sure no regression, following each item on manual</li>
+<li>[done] issue 15: set/reset lazyredrew for OneKey</li>
 <li>[done] issue 19: add s:shuangpin_keyboard to correct calculation</li>
 <li>[done] issue 18: vimim_tab_for_one_key: use &lt;C-&gt; for &lt;Tab&gt;</li>
 <li>[done] issue 16: chaoxianlaodongdang  replacing too many chars</li>
 <li>[done] issue 17: make period dummy in Chinese Input Mode: ma.ma</li>
-<li>[done] issue 15: set/reset lazyredrew for OneKey</li>
 <li>[done] issue 21: use &lt;space&gt; to close OneKey to avoid interference</li>
+<li>[done] issue 20: roll back vimim_label(n) which is reliable</li>
 <li>[todo] issue 22: dynamic mode+cloud+shuangpin problem</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 23:52:21 PST on Monday, 11/30/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 00:42:20 PST on Tuesday, 12/01/2009
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
