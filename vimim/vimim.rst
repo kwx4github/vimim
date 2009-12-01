@@ -2134,7 +2134,8 @@ e　亿  j　斤  o　度  t　吨  z　兆
 | VimIM 把英文标点智能化，也许可以缓解标点转换问题。
 |
 
-- 【中文标点缺省开启】:let g:vimim_chinese_punctuation=1
+- 【缺省开启】:let g:vimim_chinese_punctuation=1
+- 【强行关闭】:let g:vimim_chinese_punctuation=-1
 - 【标点翻页】 参见 `翻页选字`_
 - 【自动半角】自动在数字后面输入半角标点。例如：1.2.3 而不是1。2。3。
 - 【半角选项】在英文后面输入半角标点：:let g:vimim_english_punctuation=1
@@ -2427,7 +2428,7 @@ __ http://code.google.com/p/vimim-wubi/
      | 用〖点石成金〗上字以后，如果愿意，可以敲空格键。
      | 空格键略具智能：可以把VimIM 固有的几个设置
      | (lazyredraw, pumheight, hlsearch)
-     | 恢复到用户的在.vimrc中的设置。
+     | 恢复到用户的在自己的.vimrc中的设置。
      |
 
 VimIM Foundation
@@ -2780,6 +2781,6 @@ WHAT IS NEW
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
 #. [TODO] issue 16: chaoxianlaodongdang  replacing too many chars
-#. [TODO] issue 17: g:vimim_chinese_punctuation=0 make period dummy  ma.ma 
 #. [done] issue 15: set/reset lazyredrew for OneKey
+#. [TODO] issue 17: g:vimim_chinese_punctuation=0 make period dummy  ma.ma 
 
