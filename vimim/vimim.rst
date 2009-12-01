@@ -2819,8 +2819,7 @@ WHAT IS NEW
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
-#. [done] [clould] forced CLOUD: replace .. with , for most input methods
-#. [done] [clould] support CLOUD at will using comma
+#. [done] [cloud] support CLOUD for all using comma before OneKey
 #. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
 #. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
@@ -2832,5 +2831,5 @@ WHAT IS NEW
 #. [done] issue 23: static+shuangpin+cloud breaks after issue 22
 #. [done] issue 25: conflict VimIM completefunc with others
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [todo] CLOUD. => should be nothing
+
 
