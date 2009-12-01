@@ -1919,7 +1919,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 |
 
 - 【条件】『Vim 可视模式』
-- 【限于】UTF-8 encoding （vim 和 词库）
+- 【限于】UTF-8 encoding （vim和词库）
 - 【特点】先确认，后存盘。一次可存一行或数行。
 - 【操作】 ㈠ 纵向高亮选择新词　㈡ 敲缺省键
 - 【缺省开启】:let g:vimim_save_new_entry=1
@@ -2111,21 +2111,27 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 【词频记忆】
 
-  + 随用户的意愿自动完善用户的词库。
-  + 优先选择前一次输入，自动修改词库中对应候选词的顺序
-  + 　　久而久之，词库就变成用户自己的词库
-  + 　　不知不觉，VimIM  就变成了最适合用户的输入法
-  + 输入累积 N 次，词库可以自动刷新，永久存盘。
-  + 【“全拼”缺省开启】 （:set encoding=utf-8）
-  + 　　 ㈠ 缺省开启仅适用于当前的 session
-  + 　　:let g:vimim_save_input_history_frequency=1
-  + 　　 ㈡ 永久存盘需设置适合自己胃口的刷新频率:
-  + 　　:let g:vimim_save_input_history_frequency=N
+  | 随用户的意愿自动完善用户的词库。
+  | 优先选择前一次输入，自动修改词库中对应候选词的顺序
+  | 　　久而久之，词库就变成用户自己的词库
+  | 　　不知不觉，VimIM  就变成了最适合用户的输入法
+  |
 
-【首字固定】
+- 【限于】UTF-8 encoding （vim和词库）
+- 【限于】单字
+- 【全拼缺省开启】仅适用于当前的 session
+- 【首字固定】
 
-  + 　常用字词将永远显示在第一候选项。
-  + 【“全拼”缺省开启】:let g:vimim_first_candidate_fix=1
+  - 常用字词将永远显示在第一候选项。
+  - 【全拼缺省开启】:let g:vimim_first_candidate_fix=1
+
+- 【永久存盘可设】:let g:vimim_chinese_frequency=N
+
+  - 输入累积N次，词库可以自动刷新，永久存盘。
+  - 建议设置比较大一点的值：:let g:vimim_chinese_frequency=20
+  - 也就是说，每敲20个汉字，memory 中的词频写入disk存盘
+
+- 【彻底关闭可设】:let g:vimim_chinese_frequency=-1
 
 
 |
@@ -2807,10 +2813,13 @@ WHAT IS NEW
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
-#. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
 #. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
 #. [done] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [done] issue 17: make period dummy in Chinese Input Mode: ma.ma
-#. [done] issue 21 in vimim: default on g:vimim_punctuation_navigation
+#. [done] issue 15: set/reset lazyredrew for OneKey
+#. [done] issue 21: use <space> to close OneKey to avoid interference 
+#. [todo] issue 22: dynamic mode+cloud+shuangpin problem
+
+
 
