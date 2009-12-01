@@ -1451,17 +1451,18 @@ VimIM Mapping
 
 【点石键】OneKey 二者择一：
 
-  (1) 【CTRL-\\】【缺省开启】 　 `VimIM Mapping`_
+  (1) 〖CTRL-\\〗〖缺省开启〗 　 `VimIM Mapping`_
 
      + 【特点】打字搜索，中文英文没有区别。
      + 【缺省开启】 :let g:vimim_one_key=1
 
-  (2) 【Tab】【缺省关闭】
+  (2) 〖Tab〗〖缺省关闭〗
 
      + 【优点】Tab键方便省力
      + 【反经典】用Tab键上汉字，用空格键确认
      + 【智能】该出码时就出码，没码时出Tab
-     + 【缺省关闭】 :let g:vimim_tab_for_one_key=0
+     + 【开启可设】 :let g:vimim_tab_for_one_key=1
+     + 【小技巧】开启后，<CTRL-\\>键变成<Tab>键
      + 【推荐】OneKey 专职玩家
 
 |
@@ -2786,5 +2787,6 @@ WHAT IS NEW
 #. [done] issue 17: g:vimim_chinese_punctuation=0 make period dummy  ma.ma 
 #. [todo] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [todo] g:vimim_first_candidate_fix
-
+#. [todo] issue 19: add s:shuangpin_keyboard to correct calculation
+#. [todo] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
 
