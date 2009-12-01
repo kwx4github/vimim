@@ -772,7 +772,8 @@ __ http://vimim.googlecode.com/svn/vimim/vimim.html#cloud
 
  (8) 支持〖强制性云输入〗
 
-     * 【卖点】不限于汉语拼音输入法！
+     * 【卖点】不限于汉语拼音输入法！不需要设置！
+     * 【条件】只需要联网和wget/curl
      * 【限于】 `〖点石成金〗`_
      * 【操作】只需要在编码后加多一个逗号，接着敲〖点石键〗
      * 【例】ajiao, => 阿娇
@@ -2831,5 +2832,5 @@ WHAT IS NEW
 #. [done] issue 23: static+shuangpin+cloud breaks after issue 22
 #. [done] issue 25: conflict VimIM completefunc with others
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-
+#. [todo] CLOUD. => should be nothing
 
