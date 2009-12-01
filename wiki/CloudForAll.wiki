@@ -5,11 +5,11 @@ http://code.google.com/p/vimim/wiki/CloudForAll
 【玩家福音】
 	
 This might be a nice feature for wubi or other non-pinyin users!
-With zero setting, anyone can play CLOUD.
+With zero setting, anyone can play CLOUD input now.
 	
 【VimIM 云输入】
 	
-  支持〖强制性云输入〗
+ 支持〖强制性云输入〗，不限输入法
    
     * 【卖点】不限于汉语拼音输入法！不需要设置！
     * 【条件】只要联网和wget/curl
