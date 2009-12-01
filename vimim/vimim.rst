@@ -2784,9 +2784,9 @@ WHAT IS NEW
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
 #. [done] issue 15: set/reset lazyredrew for OneKey
-#. [done] issue 17: g:vimim_chinese_punctuation=0 make period dummy  ma.ma 
-#. [todo] issue 16: chaoxianlaodongdang  replacing too many chars
+#. [done] issue 19: add s:shuangpin_keyboard to correct calculation
+#. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
+#. [done] issue 17: g:vimim_chinese_punctuation=0 make period dummy ma.ma 
+#. [done] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [todo] g:vimim_first_candidate_fix
-#. [todo] issue 19: add s:shuangpin_keyboard to correct calculation
-#. [todo] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
 
