@@ -746,7 +746,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
      * 强制非云输入，如果加上一个句号。例：cloud.  => 云
      * 强制性云输入，如果加上二个句号。例：ajiao.. => 阿娇
 
- (4) 支持〖断字符〗　解决暧昧的办法是在暧昧的地方贴上标签：
+ (4) 支持〖断字符〗　解决含糊的办法是在含糊的地方贴上标签：
 
      * 错：xianmeimeidepiaosuifengpiaoyang　=>　先美美地飘随风飘扬
      * 对：xi'anmeimeidepi'aosuifengpiaoyang　=>　 `西安妹妹的皮袄随风飘扬`__
@@ -2782,7 +2782,9 @@ WHAT IS NEW
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
-#. [TODO] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [done] issue 15: set/reset lazyredrew for OneKey
-#. [TODO] issue 17: g:vimim_chinese_punctuation=0 make period dummy  ma.ma 
+#. [done] issue 17: g:vimim_chinese_punctuation=0 make period dummy  ma.ma 
+#. [todo] issue 16: chaoxianlaodongdang  replacing too many chars
+#. [todo] g:vimim_first_candidate_fix
+
 
