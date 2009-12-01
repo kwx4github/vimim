@@ -199,7 +199,7 @@ __ `VimIM Foundation`_
    6     datafile   词库：     vimim.txt
    7     datafile   词库：     privates.txt
    8     datafile   词库：     四角号码
-   9     cloud      搜狗：     道是无云却有云
+   9     cloud      搜狗：     想云就云
   ====  ==========  =========  ==========================
 
 |
