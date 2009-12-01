@@ -861,11 +861,11 @@ VimIM 拼音输入总结：
 - 【中文数字】（静态模式）i2009　=>　二〇〇九　　I2009　=>　贰零零玖
 - 【中文量词】（静态模式）i5t　=>　五吨　　id8　=>　第八
 - 【大块英文】敲 CTRL-6 动态切换中英文输入模式。
-- 【智能模糊匹配】 缺省开启
-- 【可控词频调整】 缺省开启
+- 【智能模糊匹配】 （缺省开启）
+- 【可控词频调整】 （缺省开启）
 - 【通配符匹配】用星号键＊匹配任意字符串或空串 （缺省关闭）
-- 【缺省输入风格】 `〖中文输入模式〗`_  经典动态输入风格
-- 【开启静态模式】可设 :let g:vimim_static_input_style=1
+- 【输入风格】 `〖中文输入模式〗`_  经典动态输入风格 （缺省开启）
+- 【强制开启静态模式】可设 :let g:vimim_static_input_style=1
 
 
 ========================   =============================================
@@ -1806,14 +1806,11 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 【数字键上字】
 
-  + 数字键1-9直接上汉字，永远对应数字标签。
   + 数字键 0 归零：回归起始状态。
+  + 数字键1-9直接上汉字：
 
-【数字键导航】 optional
-
-  + 开启可设  :let g:vimim_number_as_navigation=1
-  + 数字标签起始为0表示数字键为导航键。
-  + 数字键N正向搜索下第N个匹配，不上字。
+    - 起始状态，永远对应数字标签。
+    - 如果光标移动(hjkl)，数字相对光标位置。
 
 【vi 快捷键导航】（`〖点石成金〗`_ ）
 
@@ -2811,6 +2808,7 @@ WHAT IS NEW
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
+#. [done] forced CLOUD: replace .. with , for most input methods
 #. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
 #. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
@@ -2819,6 +2817,10 @@ WHAT IS NEW
 #. [done] issue 21: use <space> to close OneKey to avoid interference 
 #. [done] issue 20: roll back vimim_label(n) which is reliable
 #. [done] issue 22: dynamic mode+cloud+shuangpin problem
-#. [todo] forced CLOUD: replace , with ..
+#. [done] issue 23: static+shuangpin+cloud breaks after issue 22
+#. [done] issue 25: conflict VimIM completefunc with others
+#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
+
+
 
 
