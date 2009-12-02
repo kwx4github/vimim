@@ -812,7 +812,9 @@ __ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
 
 __ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
-.. sidebar::  VimIM `CLOUD 云输入`_
+
+
+.. sidebar::  VimIM `CLOUD 云输入`_  全拼和简拼
 
    .. figure:: vimim_cloud.gif
    .. figure:: vimim_cloud_console.gif
