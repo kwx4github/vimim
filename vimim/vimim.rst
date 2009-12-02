@@ -148,7 +148,7 @@ VimIM —— Vim 中文输入法
 * 【自主】不差钱　 **Open Source**
 * 【自力】VimIM `〖点石成金〗`_ 　  〖想云就云〗 `CLOUD 云输入`_
 * 【更生】VimIM `〖中文输入模式〗`_ 〖即插即用〗 `VimIM 双码输入`_
-* 【高性能】小巧　玲珑　个性　智能　自然　流畅
+* 【高性能】小巧　个性　智能　自然　无输入窗口
 * 【低能耗】 `史上最容易卸载的中文输入法`__
 * 【和谐☆绿色】 No secret hidden glitch; No strings attached.
 * 【自由☆免费】 Free as in freedom, as well as in `free beer!`__
@@ -1838,7 +1838,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
     - 起始状态，永远对应数字标签。
     - 如果光标移动(hjkl)，数字相对光标位置。
 
-【vi 快捷键导航】（`〖点石成金〗`_ ）
+【vi 快捷键导航】 `〖点石成金〗`_
 
   + 【经典】 沿用 vi 优良传统，以人为本。
   + 【优点】 十指禅功，可上可下，左右逢源。
@@ -2843,9 +2843,10 @@ WHAT IS NEW
 #. [done] issue 21: use <space> to close OneKey to avoid interference 
 #. [done] issue 20: roll back vimim_label(n) which is reliable
 #. [done] issue 22: dynamic mode+cloud+shuangpin problem
-#. [done] issue 23: static+shuangpin+cloud breaks after issue 22
 #. [done] issue 25: conflict VimIM completefunc with others
 #. [done] issue 26: hjkl still mapped after <BS>
+#. [done] issue 23: static+shuangpin+cloud breaks after issue 22
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-
+#. [todo] seamless position detect when cursor is moved
+#. [todo] reset function
 
