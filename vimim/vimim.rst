@@ -109,7 +109,7 @@ VimIM —— Vim 中文输入法
 
 |
 | VimIM 是专为 vim 玩家开发的插件，可作为 vim 内嵌中文输入法。
-| 只要您的 vim 能显示中文，您就能用 vim 输入搜索中文。
+| 只要您的 vim 能显示中文，您就能用 vim 〖云〗输入中文。
 | VimIM 把 vim 的中文编辑潜能，提升到一个全新的高度。
 |
 
@@ -2235,18 +2235,18 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 
 :问: | 有时候需要在command mode下输入中文，我该怎么做?
-     | Command Mode对于Vim来说是它的精华所在，
-     | 很多高级功能都要在Command Mode下完成。
-:答: | 折衷方案是利用 vim mapping, 归 .vimrc 控制。
-     | 如果Command复杂，mapping 不失为最佳解决方案之一。
+     | command mode对于Vim来说是它的精华所在，
+     | 很多高级功能都要在command mode下完成。
+:答: | 折衷方案是利用 vim mapping, 归.vimrc控制。
+     | 如果command复杂，mapping不失为最佳解决方案之一。
      |
      | 例如: 如下 mapping 可作单行或多行操作：
-     |    nmap      g: vg:
-     |    xnoremap  g: :w! /tmp/_<CR>:source /tmp/_<CR>
+     |  ``nmap      g: vg:``
+     |  ``xnoremap  g: :w! /tmp/_<CR>:source /tmp/_<CR>``
      |
      | 操作: 如果想把文件中的"谷歌拼音" 换成 "VimIM中文输入":
-     |       ㈠ (Vim Insert Mode) 敲入: 　:%s/谷歌拼音/VimIM中文输入
-     |       ㈡ (Vim Normal Mode) 敲map:　g:
+     |       ㈠ (Vim Insert Mode) 敲入: 　　 ``:%s/谷歌拼音/VimIM中文输入``
+     |       ㈡ (Vim Normal Mode) 敲map:　 ``g:``
      |
      |
 
@@ -2850,4 +2850,7 @@ WHAT IS NEW
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] seamless position detect when cursor is moved
 #. [todo] super reset function to avoid repeating
+#. [todo] update manual about g:vimim_smart_backspace
+
+
 
