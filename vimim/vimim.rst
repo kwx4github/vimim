@@ -2845,8 +2845,9 @@ WHAT IS NEW
 #. [done] issue 22: dynamic mode+cloud+shuangpin problem
 #. [done] issue 25: conflict VimIM completefunc with others
 #. [done] issue 26: hjkl still mapped after <BS>
+#. [done] issue 29: texingceshi<CR>ceshi => CHINESE+gceshi
 #. [done] issue 23: static+shuangpin+cloud breaks after issue 22
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] seamless position detect when cursor is moved
-#. [todo] reset function
+#. [todo] super reset function to avoid repeating
 
