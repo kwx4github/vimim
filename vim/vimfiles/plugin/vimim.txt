@@ -21619,7 +21619,7 @@ home 家 #
 homework 作业 #
 honduras 洪都拉斯 #
 honest 诚实 老实 正直 #
-honey 蜜蜂 #
+honey 蜜糖 蜜蜂 #
 hong 红 虹 訇 讧 轰 闳 鸿 哄 宏 弘 泓 洪 烘 竑
 hong1 轰 烘 薨 訇
 hong2 红 宏 弘 泓 洪 蕻 虹 闳 鸿
@@ -46455,6 +46455,7 @@ taideng 台灯
 taidi 台地
 taidong 胎动
 taidou 泰斗
+taiduo 太多
 taidu 态度 台独 胎毒
 taiduan 台端
 taier 胎儿
@@ -50048,20 +50049,11 @@ weishiji 威士忌
 weishou 为首
 weishouli 未受理
 weishoweiwei 畏首畏尾
-weishu 为数
-weishu 伪书
-weishu 卫戍
-weishu 尾数
-weishu 纬书
+weishu 卫戍 为数 伪书 尾数 纬书
 weishui 为谁
 weisuan 胃酸
-weisui 尾随
-weisui 未遂
-weisuo 委琐
-weisuo 微缩
-weisuo 猥琐
-weisuo 畏缩
-weisuo 萎缩
+weisui 尾随 未遂
+weisuo 猥琐 畏缩 委琐 微缩 萎缩
 weisuobuqian 畏缩不前
 weisuonan 猥琐男
 weisuoyuwei 为所欲为
@@ -50071,19 +50063,11 @@ weiti 为题
 weitian 圩田
 weitiao 微调
 weitongjiaocu 味同嚼蜡
-weituo 伪托
-weituo 委托
-weiwan 委婉
-weiwan 委宛
-weiwang 危亡
-weiwang 威望
+weituo 委托 伪托
+weiwan 委婉 委宛
+weiwang 威望 危亡
 weiwangren 未亡人
-weiwei 亹亹
-weiwei 崴嵬
-weiwei 嵬嵬
-weiwei 巍巍
-weiwei 微微
-weiwei 硙硙
+weiwei 巍巍 亹亹 崴嵬 嵬嵬 微微 硙硙
 weiweidaguan 蔚为大观
 weiweidongting 娓娓动听
 weiweiertan 娓娓而谈
