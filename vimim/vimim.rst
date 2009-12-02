@@ -806,6 +806,7 @@ __ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
 .. sidebar::  VimIM `CLOUD 云输入`_
 
    .. figure:: vimim_cloud.gif
+   .. figure:: vimim_cloud_console.gif
 
 
 【自己动手试一试】
