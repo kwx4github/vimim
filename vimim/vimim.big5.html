@@ -450,7 +450,7 @@ VimIM 是一個專門為 vim 玩家開發的嵌入式輸入法，隻要你的 vi
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line">VimIM 是專為 vim 玩家開發的插件，可作為 vim 內嵌中文輸入法。</div>
-<div class="line">隻要您的 vim 能顯示中文，您就能用 vim 輸入搜索中文。</div>
+<div class="line">隻要您的 vim 能顯示中文，您就能用 vim 〖雲〗輸入中文。</div>
 <div class="line">VimIM 把 vim 的中文編輯潛能，提升到一個全新的高度。</div>
 <div class="line"><br /></div>
 </div>
@@ -3723,25 +3723,25 @@ If the following download URL does not work for you, please
 <tbody valign="top">
 <tr class="field"><th class="field-name">問:</th><td class="field-body"><div class="first last line-block">
 <div class="line">有時候需要在command mode下輸入中文，我該怎麼做?</div>
-<div class="line">Command Mode對於Vim來說是它的精華所在，</div>
-<div class="line">很多高級功能都要在Command Mode下完成。</div>
+<div class="line">command mode對於Vim來說是它的精華所在，</div>
+<div class="line">很多高級功能都要在command mode下完成。</div>
 </div>
 </td>
 </tr>
 <tr class="field"><th class="field-name">答:</th><td class="field-body"><div class="first last line-block">
-<div class="line">折衷方案是利用 vim mapping, 歸 .vimrc 控制。</div>
-<div class="line">如果Command復雜，mapping 不失為最佳解決方案之一。</div>
+<div class="line">折衷方案是利用 vim mapping, 歸.vimrc控制。</div>
+<div class="line">如果command復雜，mapping不失為最佳解決方案之一。</div>
 <div class="line"><br /></div>
 <div class="line">例如: 如下 mapping 可作單行或多行操作：</div>
 <div class="line-block">
-<div class="line">nmap      g: vg:</div>
-<div class="line">xnoremap  g: :w! /tmp/_&lt;CR&gt;:source /tmp/_&lt;CR&gt;</div>
+<div class="line"><tt class="docutils literal">nmap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; g: vg:</tt></div>
+<div class="line"><tt class="docutils literal">xnoremap&nbsp; g: :w! <span class="pre">/tmp/_&lt;CR&gt;:source</span> /tmp/_&lt;CR&gt;</tt></div>
 <div class="line"><br /></div>
 </div>
 <div class="line">操作: 如果想把文件中的&quot;谷歌拼音&quot; 換成 &quot;VimIM中文輸入&quot;:</div>
 <div class="line-block">
-<div class="line">㈠ (Vim Insert Mode) 敲入: 　:%s/谷歌拼音/VimIM中文輸入</div>
-<div class="line">㈡ (Vim Normal Mode) 敲map:　g:</div>
+<div class="line">㈠ (Vim Insert Mode) 敲入: 　　 <tt class="docutils literal">:%s/谷歌拼音/VimIM中文輸入</tt></div>
+<div class="line">㈡ (Vim Normal Mode) 敲map:　 <tt class="docutils literal">g:</tt></div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -4500,12 +4500,13 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] how to find vim executable? s:path=expand(&quot;&lt;sfile&gt;:p:h&quot;).&quot;/&quot;</li>
 <li>[todo] seamless position detect when cursor is moved</li>
 <li>[todo] super reset function to avoid repeating</li>
+<li>[todo] update manual about g:vimim_smart_backspace</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 22:22:02 PST on Tuesday, 12/01/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 23:07:53 PST on Tuesday, 12/01/2009
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
