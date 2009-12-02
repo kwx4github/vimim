@@ -14,11 +14,12 @@ With zero setting, anyone can play CLOUD input now.
     * 【卖点】东边日出西边雨，道是无云却有云！
     * 【特点】不限于拼音输入法！不需要设置！
     * 【条件】只需要联网和wget/curl
-    * 【限于】 `〖点石成金〗`_
+    * 【限于】〖点石成金〗
     * 【操作】只需要在编码后加多一个逗号，接着敲〖点石键〗
     * 【例】ajiao, => 阿娇
     * 【例】dbrcxby, => 东边日出西边雨
     * 【例】hfpjlswsqy, => 好风凭借力送我上青云    
+	
 	
 零设置【五笔云输入】测试条件
 ------------------------------------
@@ -30,6 +31,7 @@ fencs	 编码：ucs-bom,utf8,chinese
 im	 输入：五笔
 datafile 词库：vimim.wubi.txt
 datafile 词库：privates.txt
-cloud	 搜狗：道是无云却有云
+cloud	 搜狗：想云就云
 ------------------------------------
+	
 	
