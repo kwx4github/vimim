@@ -1809,7 +1809,14 @@ e　亿  j　斤  o　度  t　吨  z　兆
 【标点翻页】
 
   + 【标点智能化】 标点既可导航，也可玩 `中文标点`_
-  + 【缺省开启】:let g:vimim_punctuation_navigation=1 `〖点石成金〗`_
+  + 【缺省开启】:let g:vimim_punctuation_navigation=1
+ 
+    +  彻底关闭可设：:let g:vimim_punctuation_navigation=-1
+    +  选择关闭可设：:let g:vimim_punctuation_navigation=2
+
+       + 在〖中文输入模式〗中关闭
+       + 在〖点石成金〗中开启
+
 
   +-------------------+---------------------+---------------------+
   |   Vim 按键        |     VimIM  快键     |         功能        |
@@ -2174,23 +2181,25 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 中文标点
 --------
-`〖中文输入模式〗`_
-
-- 【缺省开启】:let g:vimim_chinese_punctuation=1
-- 【关闭可设】:let g:vimim_chinese_punctuation=-1
-- 【自动半角】自动在数字后面输入半角标点。例如：1.2.3 而不是1。2。3。
-- 【半角选项】在英文后面输入半角标点：:let g:vimim_english_punctuation=1
-- 【中英标点动态切换】
-
-  -  **i_CTRL-\\** 　 `VimIM Mapping`_
-  -  **i_CTRL-6** 　动态切换中英文输入模式，包括标点。
-
-
-`〖点石成金〗`_
 
 - 【标点翻页】 参见 `翻页选字`_
-- 〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。
-- 【缺省开启】 :let g:vimim_smart_punctuations=1
+
+- `〖中文输入模式〗`_
+
+  - 【缺省开启】:let g:vimim_chinese_punctuation=1
+  - 【关闭可设】:let g:vimim_chinese_punctuation=-1
+  - 【自动半角】自动在数字后面输入半角标点。例如：1.2.3 而不是1。2。3。
+  - 【半角选项】在英文后面输入半角标点：:let g:vimim_english_punctuation=1
+  - 【中英标点动态切换】
+  
+    -  **i_CTRL-\\** 　 `VimIM Mapping`_
+    -  **i_CTRL-6** 　动态切换中英文输入模式，包括标点。
+
+- `〖点石成金〗`_
+  
+  - 〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。
+  - 【缺省开启】 :let g:vimim_smart_punctuations=1
+ 
  
 |
  
@@ -2821,16 +2830,14 @@ WHAT IS NEW
 #. [done] [seamless] make <C-6><C-6> always starts with seamless
 #. [done] [seamless] default on again: g:vimim_seamless_english_input
 #. [done] [skin] finalize option g:vimim_custom_skin
-#. [done] [cloud] cloud.  => always non-cloud if ending with one dot
-#. [done] [cloud] ajiao.. => always cloud if ending with two dots
 #. [done] [cloud] only try cloud once when no internet connection
 #. [done] [cloud] support apostrophe to mark syllables, remove ambiguity
 #. [done] [apostrophe] xi'anmeimeidepi'aosuifengpiaoyang
 #. [done] [apostrophe] if user wants: :let g:vimim_apostrophe_in_pinyin=1
 #. [done] [punctuation] intelligent: HAPPY, happy<Space>,
 #. [done] [punctuation] add option: :let g:vimim_english_punctuation=0
-#. [redo] [shuangpin] if CLOUD, use apostrophe, otherwise strip it out
 #. [done] [punctuation] OneKey only: :let g:vimim_punctuation_navigation=1
+#. [redo] [shuangpin] if CLOUD, use apostrophe, otherwise strip it out
 #. [done] [shuangpin] close fuzzy match: wfticeui
 #. [done] [cloud] fix issue_12: regression on shuangpin sentence match
 #. [done] [cloud] add support for dynamic Chinese input mode
@@ -2844,7 +2851,8 @@ WHAT IS NEW
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
-#. [done] [cloud] support CLOUD for all using comma before OneKey
+#. [done] [cloud] cloud. => always non-cloud if ending with one dot
+#. [redo] [cloud] support CLOUD for all using comma before OneKey
 #. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
 #. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
@@ -2863,9 +2871,7 @@ WHAT IS NEW
 #. [todo] update manual about g:vimim_smart_backspace
 #. [redo] [one-key-correction] in OneKey => (d)elete in popup menu
 #. [redo] [one-key-correction] make <BS> smart: g:smart_backspace=2
-
-
-
+#. [redo] let g:vimim_punctuation_navigation=1 default for all mode
 
 
 
