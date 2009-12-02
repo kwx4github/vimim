@@ -17289,6 +17289,7 @@ fudao 妇道
 fudao 辅导
 fudaoyuan 辅导员
 fudaozhan 辅导站
+fudeliuyou 富得流油
 fudi 府第
 fudi 府邸
 fudi 腹地
@@ -17684,6 +17685,7 @@ fuzeren 负责人
 fuzeren 负责任
 fuzezhi 负责制
 fuzhai 负债
+fuzhaileilei 负债累累
 fuzhang 腹胀 付账 拊掌
 fuzhangdaxiao 抚掌大笑
 fuzhangrugu 腹胀如鼓
