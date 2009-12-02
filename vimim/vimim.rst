@@ -723,7 +723,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
   * 入〖云〗必须借助 `wget <http://users.ugent.be/~bpuype/wget/>`_
   * 入〖云〗必须使用汉语拼音：全拼或者双拼甚至简拼
 
-.. sidebar::  VimIM 双拼 `CLOUD 云输入`_
+.. sidebar::  VimIM `CLOUD 云输入`_ 　双拼
 
    .. figure:: vimim_shuangpin_abc.gif
    .. figure:: vimim_shuangpin_microsoft.gif
@@ -790,7 +790,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
 __ http://code.google.com/p/vimim/wiki/SingleQuote
 __ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
 
-.. sidebar::  VimIM 五笔 `CLOUD 云输入`_
+.. sidebar::  VimIM `CLOUD 云输入`_ 　五笔
 
    .. figure:: vimim_wubi_cloud_1.gif
    .. figure:: vimim_wubi_cloud_2.gif
@@ -814,7 +814,7 @@ __ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
 
 
-.. sidebar::  VimIM `CLOUD 云输入`_  全拼和简拼
+.. sidebar:: VimIM `CLOUD 云输入`_ 　全拼和简拼
 
    .. figure:: vimim_cloud.gif
    .. figure:: vimim_cloud_console.gif
