@@ -1998,6 +1998,13 @@ e　亿  j　斤  o　度  t　吨  z　兆
 + 例如，您欲打　 **【注】**
 + 　    先敲 **注** ，然后按  ``]``  键
 
+**重新匹配**
+
++ 用 CTRL-H 重新定匹配，从最小匹配开始
++ 〖例〗 wozuixihuandeliulanqi
++  参见 `逐词匹配`_  之㈡ 无句号分隔
++ 【缺省开启】:let g:vimim_smart_ctrl_h=1
+
 **短码模式**
 
 + 可方便自定义短码快键：短码优先完全匹配
@@ -2848,6 +2855,5 @@ WHAT IS NEW
 #. [todo] seamless position detect when cursor is moved
 #. [todo] super reset function to avoid repeating
 #. [todo] update manual about g:vimim_smart_backspace
-
 
 
