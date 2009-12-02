@@ -165,8 +165,9 @@ __ `VimIM Foundation`_
 (2) 首先去 `VimIM 官方网址
     <http://vim.sourceforge.net/scripts/script.php?script_id=2506>`_
     下载新版脚本
-(3) 然后把 vimim.vim 扔到您的 vim 的 plugin 目录之下
+(3) 然后把 vimim.vim__ 扔到您的 vim 的 plugin 目录之下
 
+__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
 **vim**
 
@@ -210,7 +211,7 @@ __ `VimIM Foundation`_
 
 　【操作步骤】
 
-  #. 下载新版脚本 vimim.vim
+  #. 下载新版脚本 vimim.vim__
   #. 把脚本扔到您的 vim 的 plugin 目录之下
   #. 打开 vim （如果用Windows可以双击gVim.exe）
   #. 敲 o 或 i 或 a 进入 vim 插入模式：
@@ -221,6 +222,8 @@ __ `VimIM Foundation`_
   #. 〖结果〗 `VimIM logo <vimim_logo.gif>`_
   #. 敲 p
   #. 〖结果〗 输入全部菜单
+
+__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
 
 .. sidebar::  VimIM 玩家评论　Testimonials
@@ -601,9 +604,11 @@ __ http://zh.wikipedia.org/wiki/%E8%83%A1%E9%80%82
 
 :【自己动手试一试】:
   #. 【目的】　纯数字　<==>　纯汉字
-  #. 下载新版脚本 vimim.vim
+  #. 下载新版脚本 vimim.vim__
   #. 下载新版码表 vimim.4corner.txt
   #. 把两者扔到 vim 的 plugin 目录之下
+
+__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
 :【纯数字　==>　纯汉字】:
   #. 敲 o 或 i 或 a 进入 vim 插入模式
@@ -634,9 +639,11 @@ __ http://vimim.googlecode.com/files/vimim.ctc.txt
 
 :【自己动手试一试】:
   #. 【目的】　电码　<==>　汉字
-  #. 下载新版脚本 vimim.vim
+  #. 下载新版脚本 vimim.vim__
   #. 下载新版码表 vimim.ctc.txt
   #. 把两者扔到 vim 的 plugin 目录之下
+
+__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
 :【电码　==>　汉字】:
   #. 敲 o 或 i 或 a 进入 vim 插入模式
@@ -755,13 +762,13 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
 
  (5) 支持中文输入模式〖经典动态〗输入风格 （缺省）
 
-       * 如果希望体验搜狗入云的方式：设置 :let g:vimim_www_sogou=1
-       * 相比之下，VimIM 的〖混合式云输入〗灵活一些。
+     * 如果希望体验搜狗入云的方式：设置 :let g:vimim_www_sogou=1
+     * 相比之下，VimIM 的〖混合式云输入〗灵活一些。
 
  (6) 支持中文输入模式〖经典静态〗输入风格
 
-       * 考虑到网速，这是VimIM云输入推荐的输入模式。
-       * 设置为 ``:let g:vimim_static_input_style=1``
+     * 考虑到网速，这是VimIM云输入推荐的输入模式。
+     * 设置为 ``:let g:vimim_static_input_style=1``
 
  (7) 支持“想不云就可以不云”
 
@@ -800,8 +807,10 @@ __ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
 【玩家福音】
 
     |  如果想在vim中体验那朵传说中的〖云〗，
-    |  只需下载vimim.vim一个文本文件——即插即用。
+    |  只需下载 vimim.vim__ 一个文本文件——即插即用。
     |
+
+__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
 .. sidebar::  VimIM `CLOUD 云输入`_
 
@@ -1360,7 +1369,7 @@ __ http://vimim.googlecode.com/files/vimim.english.txt
 
 　【操作步骤】
 
-  #. 下载新版脚本 vimim.vim
+  #. 下载新版脚本 vimim.vim__
   #. 下载私人信息样本文件 privates.txt
   #. 把这二个文件扔到您的 vim 的 plugin 目录之下
   #. 打开 vim （如果用Windows可以双击gVim.exe）
@@ -1371,6 +1380,9 @@ __ http://vimim.googlecode.com/files/vimim.english.txt
   #. 敲 j
   #. 敲 c
   #. 【结果】 第三个 password 被复制到 cilpboard 剪贴板。
+
+__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
+
 
 |
 |
@@ -2517,7 +2529,7 @@ VimIM的作者
 
 VimIM的词库来源
 ---------------
-#. VimIM 的唯一官方distribution是唯一文本文件 `vimim.vim`__
+#. VimIM 的唯一官方distribution是唯一文本文件 vimim.vim__
 #. 使用 VimIM `内码输入`_ 不需要任何词库。
 #. 使用 VimIM `CLOUD 云输入`_ 不需要任何词库。
 #. 帖在 `VimIM网站`__ 上的词库仅供用户参考。如有不妥，可以删除。
