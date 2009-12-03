@@ -118,12 +118,12 @@ vimimurl <C-\\> p
 ==============================================================================
    错误报告       http://code.google.com/p/vimim/issues/entry
    词库下载       http://code.google.com/p/vimim/downloads/list
-   新闻论坛       http://groups.google.com/group/vimim
    最新主页       http://vimim.googlecode.com/svn/vimim/vimim.html
    最新程式       http://vimim.googlecode.com/svn/vimim/vimim.vim.html
+   试用版本       http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim
    官方网址       http://vim.sourceforge.net/scripts/script.php?script_id=2506
+   新闻论坛       http://groups.google.com/group/vimim
 ==============    ============================================================
-
 
 |
 
