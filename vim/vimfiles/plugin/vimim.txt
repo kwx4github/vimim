@@ -58983,23 +58983,21 @@ zahuo 杂货
 zahuocai 杂和菜
 zahuoer 杂活儿
 zahuomianer 杂和面儿
-zai 再 在 才 仔 哉 宰 崽 栽 灾 甾 载
+zai 在 再 才 仔 哉 宰 崽 栽 灾 甾 载
 zai1 栽 灾 甾 哉
 zai3 崽 宰
 zai4 在 再 载 扗 洅
 zaian 在案
 zaiban 再版
 zaibaoxian 再保险
-zaibian 在编
-zaibian 灾变
+zaibian 灾变 在编
 zaibo 载波
 zaibu 再不
 zaibushi 再不是
 zaice 在册
 zaichang 在场
 zaichuangzao 再创造
-zaici 再次
-zaici 在此
+zaici 再次 在此
 zaiciyiju 在此一举
 zaidao 栽倒
 zaidu 再度
@@ -59021,12 +59019,10 @@ zaihui 再会
 zaihun 再婚
 zaihuo 灾祸
 zaiji 在即
-zaijia 再嫁
-zaijia 在家
+zaijia 在家 再嫁
 zaijiachujia 在家出家
 zaijian 再见
-zaijiao 再醮
-zaijiao 在教
+zaijiao 在教 再醮
 zaijiaoyu 再教育
 zaijienantao 在劫难逃
 zaijiezaili 再接再厉
@@ -59082,15 +59078,11 @@ zaixiaosheng 在校生
 zaixin 在心
 zaiya 在押
 zaiyang 灾殃
-zaiye 在业
-zaiye 在野
-zaiyi 再议
-zaiyi 在意
-zaiyi 灾异
+zaiye 在野 在业
+zaiyi 在意 再议 灾异
 zaiyici 再一次
 zaiyou 载有
-zaiyu 在于
-zaiyu 载誉
+zaiyu 在于 载誉
 zaiyun 载运
 zaizai 在在
 zaizang 栽赃
@@ -59098,24 +59090,18 @@ zaizao 再造
 zaizaozhien 再造之恩
 zaize 再则
 zaizhe 再者
-zaizhi 再植
-zaizhi 在职
-zaizhi 栽植
-zaizhong 栽种
-zaizhong 载重
+zaizhi 在职 栽植 再植
+zaizhong 栽种 载重
 zaizhonglian 载重量
 zaizhoufuzhou 载舟覆舟
-zaizi 崽子
-zaizi 栽子
+zaizi 崽子 栽子
 zaizuo 在座
 zaizuofengfu 再作冯妇
-zaji 杂技
-zaji 杂记
+zaji 杂技 杂记
 zajia 咱家
 zajia 杂家
 zajiao 杂交
-zaju 杂剧
-zaju 杂居
+zaju 杂剧 杂居
 zaliang 杂粮
 zaluan 杂乱
 zaluanwuzhang 杂乱无章
@@ -59145,8 +59131,7 @@ zangke 牂牁
 zangkuai 驵侩
 zangkuan 赃款
 zanglan 藏蓝
-zangli 葬礼
-zangli 藏历
+zangli 葬礼 藏历
 zangmai 葬埋
 zangmin 藏民
 zangpirenwu 臧否人物
@@ -59183,14 +59168,10 @@ zanxing 暂行
 zanxu 赞许
 zanyang 赞扬
 zanyong 暂用
-zanyu 赞誉
-zanyu 赞语
+zanyu 赞誉 赞语
 zanzhi 拶指
-zanzhu 暂住
-zanzhu 赞助
-zanzi 拶子
-zanzi 簪子
-zanzi 錾子
+zanzhu 赞助 暂住
+zanzi 簪子 錾子 拶子
 zao 造 遭 草 皂 凿 噪 慥 早 枣 槽 澡 灶 燥 糟 藻 蚤 躁
 zao1 遭 糟
 zao3 早 枣 澡 缲 藻 蚤
