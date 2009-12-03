@@ -156,101 +156,11 @@ VimIM —— Vim 中文输入法
 __ http://code.google.com/p/vimim/wiki/AboutManual
 __ `VimIM Foundation`_
 
-
+|
 |
 
-复活节彩蛋
-==========
-(1) 确认您的 vim 能显示中文： `［科普］如何让Vim支持中文？`_
-(2) 首先去 `VimIM 官方网址
-    <http://vim.sourceforge.net/scripts/script.php?script_id=2506>`_
-    下载新版脚本
-(3) 然后把 vimim.vim__ 扔到您的 vim 的 plugin 目录之下
-
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
-
-**vim**
-
-  ====  ==============
-  vim <C-\\> p
-  ====================
-   1     文本編輯器
-   2     最牛文本編輯器
-   3     精力
-   4     生氣
-   5     中文輸入法
-  ====  ==============
-
-
-.. sidebar::  `复活节彩蛋`_   vimim
-
-   .. figure:: vimim_egg.gif
-
-
-**vimim**
-
-  ====  ==========  =========  ==========================
-  vimim <C-\\> p
-  =======================================================
-   1     computer   电脑：     Windows32_builtin_gui
-   2     Vim        版本：     702
-   3     VimIM      版本：     1056
-   4     encoding   编码：     utf-8
-   5     fencs      编码：     ucs-bom,utf8,chinese
-   6     datafile   词库：     vimim.txt
-   7     datafile   词库：     privates.txt
-   8     datafile   词库：     四角号码
-   9     cloud      搜狗：     想云就云
-  ====  ==========  =========  ==========================
-
-|
-
-【自己动手试一试】
-
-　【目的】VimIM 牛刀小试
-
-　【操作步骤】
-
-  #. 下载新版脚本 vimim.vim__
-  #. 把脚本扔到您的 vim 的 plugin 目录之下
-  #. 打开 vim （如果用Windows可以双击gVim.exe）
-  #. 敲 o 或 i 或 a 进入 vim 插入模式：
-  #. 敲 v
-  #. 敲 i
-  #. 敲 m
-  #. 敲 <C-\\>
-  #. 〖结果〗 `VimIM logo <vimim_logo.gif>`_
-  #. 敲 p
-  #. 〖结果〗 输入全部菜单
-
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
-
-
-.. sidebar::  VimIM 玩家评论　Testimonials
-
-  * 众里寻她千百度
-  * 最完美的 vim 中文方案
-  *  vim + IM == 才子配佳人
-  * `vim → 历久弥新`__ 　VimIM → 锦上添花！
-  * 这是我见过的最帅的插件__
-  * 神插件__
-  * `太有创意了 ... 果然闻所未闻 ...`__
-  * `彻底终结了中文输入法转换的梦魇`__
-  * `因vimim而更喜欢vim了！`__
-  * `我感动得都快要哭了`__
-  * `居然可以这样，所有的输入法可以去死了。`__
-  * `软件很华丽，作者很犀利，VIM 之国人神器。`__
-
-__ http://edt1023.sayya.org/vim/node1.html
-__ http://www.douban.com/group/topic/5212341/
-__ http://forum.ubuntu.org.cn/viewtopic.php?f=68&p=1135330
-__ http://bbs.njupt.edu.cn/cgi-bin/bbstcon?board=Unix&file=M.1235391571.A
-__ http://groups.google.com/group/vimim/browse_thread/thread/933ca7066b6fcecd
-__ http://cookinglinux.cn/emacs-learning-three-step.html#comment-205
-__ http://jouevemau.blogspot.com/2009/04/vim.html
-__ http://bbs.chinaunix.net/archiver/tid-1559430-page-7.html
-__ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
-
+..
+..
 .. http://www.ipedia.org.cn/ip/VimIM
 .. http://hyperrate.com/thread.php?tid=9435
    好東西 ... 蠻讚的 ... （台湾）
@@ -333,12 +243,36 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
    云输入非常精准，有很惊艳的感觉，感觉都有点不可思议了;
    这段话就是用vimim写的，呵呵!
 ..
-..
 .. feedback
 ..
-..
 
-|
+
+.. sidebar::  VimIM 玩家评论　Testimonials
+
+  * 众里寻她千百度
+  * 最完美的 vim 中文方案
+  *  vim + IM == 才子配佳人
+  * `vim → 历久弥新`__ 　VimIM → 锦上添花！
+  * 这是我见过的最帅的插件__
+  * 神插件__
+  * `太有创意了 ... 果然闻所未闻 ...`__
+  * `彻底终结了中文输入法转换的梦魇`__
+  * `因vimim而更喜欢vim了！`__
+  * `我感动得都快要哭了`__
+  * `居然可以这样，所有的输入法可以去死了。`__
+  * `软件很华丽，作者很犀利，VIM 之国人神器。`__
+
+__ http://edt1023.sayya.org/vim/node1.html
+__ http://www.douban.com/group/topic/5212341/
+__ http://forum.ubuntu.org.cn/viewtopic.php?f=68&p=1135330
+__ http://bbs.njupt.edu.cn/cgi-bin/bbstcon?board=Unix&file=M.1235391571.A
+__ http://groups.google.com/group/vimim/browse_thread/thread/933ca7066b6fcecd
+__ http://cookinglinux.cn/emacs-learning-three-step.html#comment-205
+__ http://jouevemau.blogspot.com/2009/04/vim.html
+__ http://bbs.chinaunix.net/archiver/tid-1559430-page-7.html
+__ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
+
+ 
 
 玩家体验
 ========
@@ -366,54 +300,71 @@ __ http://code.google.com/p/vimim/wiki/MultiWordListFiles
 
 
 |
-
-**Plug & Play**
-
-|
-| VimIM includes a large number of bells and whistles.
-|
-| 使用 VimIM 输入中文，不需要激活输入法。
-| VimIM 的中文输入操作全部在『vim 插入模式』下完成。
-|
-| VimIM 的设置项全部归玩家的 .vimrc 控制。
-| 所有的设定只要重新启动Vim后，就可正常识别。
 |
 
-.. sidebar:: 和谐软体　 **Together in Harmony**
-
-  - 主要问题：旧版缺省关闭所有选项：烦不胜烦
-  - 解决方案：新版自动开放常用选项：柳暗花明
-  - 理论基础：“不折腾”　 *BuZheTeng*
-
-.. sidebar:: VimIM 设计原则　　 **Design Goals**
-
-  :VIM:       不被和谐!
-  :memory:    不超过码表尺寸
-  :speed:     不低于最高要求
-  :encoding:  不受限制
-  :options:   不强行要求设置
-  :internet:  不联网照样敲中文
-  :datafile:  无词库可以云输入
-
-VimIM 设计思路:
-
-- 用文本文件打造中文输入法：文本文件，天下无敌。
-- 一个文本文件就足以联网 `CLOUD 云输入`_
-- 两个文本文件就是完整的中文输入法。
-- 词库文件完全归用户管理，可以直接用Vim编辑。
-- 源程式不用编译，修改以后立竿见影。
-
-|
-
-For the impatient —— 先试一试，看好不好玩：
-
+复活节彩蛋
+==========
 (1) 确认您的 vim 能显示中文： `［科普］如何让Vim支持中文？`_
-(2) 首先去 `VimIM 官方网址`__ 下载新版脚本
-(3) 再到VimIM码表样例中，抓一个您喜欢的中文输入法码表
-(4) 然后把 vimim.vim 和您的码表扔到您的 vim 的 plugin 目录之下
-(5) 先玩一玩 VimIM `〖点石成金〗`_ ，无需改变模式
-(6) 再玩一玩 VimIM `〖中文输入模式〗`_ ，源源不断输入中文
-(7) 如果电脑联网，可以体验一下 `CLOUD 云输入`_ 即插即用。
+(2) 首先去 `VimIM 官方网址
+    <http://vim.sourceforge.net/scripts/script.php?script_id=2506>`_
+    下载新版脚本
+(3) 然后把 vimim.vim__ 扔到您的 vim 的 plugin 目录之下
+
+__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
+
+**vim**
+
+  ====  ==============
+  vim <C-\\> p
+  ====================
+   1     文本編輯器
+   2     最牛文本編輯器
+   3     精力
+   4     生氣
+   5     中文輸入法
+  ====  ==============
+
+
+.. sidebar::  `复活节彩蛋`_   vimim
+
+   .. figure:: vimim_egg.gif
+
+
+**vimim**
+
+  ====  ==========  =========  ==========================
+  vimim <C-\\> p
+  =======================================================
+   1     computer   电脑：     Windows32_builtin_gui
+   2     Vim        版本：     702
+   3     VimIM      版本：     1056
+   4     encoding   编码：     utf-8
+   5     fencs      编码：     ucs-bom,utf8,chinese
+   6     datafile   词库：     vimim.txt
+   7     datafile   词库：     privates.txt
+   8     datafile   词库：     四角号码
+   9     cloud      搜狗：     想云就云
+  ====  ==========  =========  ==========================
+
+|
+
+【自己动手试一试】
+
+　【目的】VimIM 牛刀小试
+
+　【操作步骤】
+
+  #. 下载新版脚本 vimim.vim__
+  #. 把脚本扔到您的 vim 的 plugin 目录之下
+  #. 打开 vim （如果用Windows可以双击gVim.exe）
+  #. 敲 o 或 i 或 a 进入 vim 插入模式：
+  #. 敲 v
+  #. 敲 i
+  #. 敲 m
+  #. 敲 <C-\\>
+  #. 〖结果〗 `VimIM logo <vimim_logo.gif>`_
+  #. 敲 p
+  #. 〖结果〗 输入全部菜单
 
 __ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
@@ -961,6 +912,13 @@ __ http://code.google.com/p/vimim/wiki/VimIM_English_Input
 
 |
 |
+
+.. sidebar:: 和谐软体　 **Together in Harmony**
+
+  - 主要问题：旧版缺省关闭所有选项：烦不胜烦
+  - 解决方案：新版自动开放常用选项：柳暗花明
+  - 理论基础：“不折腾”　 *BuZheTeng*
+
 
 各式流行输入
 ============
@@ -1986,6 +1944,14 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 其余选项
 --------
+| VimIM includes a large number of bells and whistles.
+|
+| 使用 VimIM 输入中文，不需要激活输入法。
+| VimIM 的中文输入操作全部在『vim 插入模式』下完成。
+|
+| VimIM 的设置项全部归玩家的 .vimrc 控制。
+| 所有的设定只要重新启动Vim后，就可正常识别。
+|
 |
 
 **以词定字**
@@ -2537,6 +2503,26 @@ __ http://code.google.com/p/vimim/wiki/VimIM__PinYin__Input
 __ http://code.google.com/p/vimim/wiki/VimIM__DIY
 
 
+.. sidebar:: VimIM 设计原则　　 **Design Goals**
+
+  :VIM:       不被和谐!
+  :memory:    不超过码表尺寸
+  :speed:     不低于最高要求
+  :encoding:  不受限制
+  :options:   不强行要求设置
+  :internet:  不联网照样敲中文
+  :datafile:  无词库可以云输入
+
+VimIM 设计思路:
+
+- 用文本文件打造中文输入法：文本文件，天下无敌。
+- 一个文本文件就足以联网 `CLOUD 云输入`_
+- 两个文本文件就是完整的中文输入法。
+- 词库文件完全归用户管理，可以直接用Vim编辑。
+- 源程式不用编译，修改以后立竿见影。
+
+|
+
 COPYRIGHT
 =========
 VimIM的作者
@@ -2872,6 +2858,5 @@ WHAT IS NEW
 #. [redo] [one-key-correction] make <BS> smart: g:smart_backspace=2
 #. [redo] let g:vimim_punctuation_navigation=1 default for all mode
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-
 
 
