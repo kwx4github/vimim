@@ -6,7 +6,7 @@ http://code.google.com/p/vimim/wiki/TestCase
 （2）验证新的code没有搞破坏，没有Regression
 	
 在共产主义（自动回归测试）还没有实现之前，
-我们可以先搞初级阶段，甚至刀耕火种。
+我们可以先玩初级阶段，甚至刀耕火种。
 总之，先把饭煮熟再说。
 	
 	
