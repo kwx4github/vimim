@@ -113,10 +113,17 @@ VimIM —— Vim 中文输入法
 | VimIM 把 vim 的中文编辑潜能，提升到一个全新的高度。
 |
 
-:官方网址:  http://vim.sf.net/scripts/script.php?script_id=2506
-:新闻论坛:  http://groups.google.com/group/vimim
-:词库下载:  http://code.google.com/p/vimim/downloads/list
-:最新主页:  http://vimim.googlecode.com/svn/vimim/vimim.html
+==============    ============================================================
+vimimurl <C-\\> p
+==============================================================================
+   错误报告       http://code.google.com/p/vimim/issues/entry
+   词库下载       http://code.google.com/p/vimim/downloads/list
+   新闻论坛       http://groups.google.com/group/vimim
+   最新主页       http://vimim.googlecode.com/svn/vimim/vimim.html
+   最新程式       http://vimim.googlecode.com/svn/vimim/vimim.vim.html
+   官方网址       http://vim.sourceforge.net/scripts/script.php?script_id=2506
+==============    ============================================================
+
 
 |
 
@@ -272,7 +279,7 @@ __ http://jouevemau.blogspot.com/2009/04/vim.html
 __ http://bbs.chinaunix.net/archiver/tid-1559430-page-7.html
 __ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
 
- 
+
 
 玩家体验
 ========
@@ -696,7 +703,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 例如：如果选项设置为10:　即每敲10个字母以上就丢给〖云〗。
 
  (2) 〖整体性云输入〗每一个输入都〖云〗游
- 
+
      * 特点：每打一个字都要向服务器请求一次。
      * 手动开启：设置 :let g:vimim_www_sogou=1
      * 自动开启：
@@ -1771,7 +1778,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
   + 【标点智能化】 标点既可导航，也可玩 `中文标点`_
   + 【缺省开启】:let g:vimim_punctuation_navigation=1
- 
+
     +  彻底关闭可设：:let g:vimim_punctuation_navigation=-1
     +  选择关闭可设：:let g:vimim_punctuation_navigation=2
 
@@ -2140,13 +2147,13 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 一键改错
 --------
-| `〖中文输入模式〗`_  
+| `〖中文输入模式〗`_
 |    【退格键】（开启可设）:let g:vimim_smart_backspace=2
-| 
-| `〖点石成金〗`_ 
+|
+| `〖点石成金〗`_
 |    【菜单】可敲 ``d`` 键 for delete
-| 
-| 
+|
+|
 
 中文标点
 --------
@@ -2160,15 +2167,15 @@ e　亿  j　斤  o　度  t　吨  z　兆
   - 【自动半角】自动在数字后面输入半角标点。例如：1.2.3 而不是1。2。3。
   - 【半角选项】在英文后面输入半角标点：:let g:vimim_english_punctuation=1
   - 【中英标点动态切换】
-  
+
     -  **i_CTRL-\\** 　 `VimIM Mapping`_
     -  **i_CTRL-6** 　动态切换中英文输入模式，包括标点。
 
 - `〖点石成金〗`_
-  
+
   - 〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。
   - 【缺省开启】 :let g:vimim_smart_punctuations=1
- 
+
 - 中文标点英文标点对照表
 
     ========  ========= ====  ===========  =========
@@ -2845,7 +2852,7 @@ WHAT IS NEW
 #. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
 #. [done] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [done] issue 17: make period dummy in Chinese Input Mode: ma.ma
-#. [done] issue 21: use <space> to close OneKey to avoid interference 
+#. [done] issue 21: use <space> to close OneKey to avoid interference
 #. [done] issue 20: roll back vimim_label(n) which is reliable
 #. [done] issue 22: dynamic mode+cloud+shuangpin problem
 #. [done] issue 25: conflict VimIM completefunc with others
@@ -2858,5 +2865,6 @@ WHAT IS NEW
 #. [redo] [one-key-correction] make <BS> smart: g:vimim_smart_backspace=2
 #. [redo] let g:vimim_punctuation_navigation=1 default for all mode
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
+#. [done] add easter egg for VimIM URL: vimimurl<C-\>
 
 
