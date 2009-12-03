@@ -16222,6 +16222,7 @@ fanzhuan 反转
 fanzhuan 翻转
 fanzhuang 饭庄
 fanzhuo 饭桌
+fanzhushu 饭煮熟
 fanzi 幡子
 fanzi 贩子
 fanzui 犯罪
@@ -44482,16 +44483,13 @@ shouyinji 收音机
 shouyinqiangshen 手淫强身
 shouyizhe 受益者
 shouyong 受用
-shouyu 兽欲
-shouyu 手语
-shouyu 手谕
-shouyu 授予
+shouyu 兽欲 授予 手语 手谕
 shouyuan 受援
 shouyuanwuliang 寿元无量
 shouyue 守约
 shouyun 受孕
 shouzai 受灾
-shouze 守则
+shouze 守则 手则
 shouzezhiyi 手泽之遗
 shouzha 手札
 shouzhan 首战
@@ -44503,15 +44501,12 @@ shouzhifumu 受之父母
 shouzhitou 手指头
 shouzhitouduer 手指头肚儿
 shouzhiyiyu 授之以渔
-shouzhizimu 手指字母
-shouzhong 受众
-shouzhong 手重
+shouzhong 受众 手重
 shouzhongzhengqin 寿终正寝
 shouzhudaitu 守株待兔
 shouzhuo 手镯
 shouzi 瘦子
-shouzu 受阻
-shouzu 手足
+shouzu 手足 受阻
 shouzuchongjian 手足重茧
 shouzui 受罪
 shouzuo 首座
@@ -46455,9 +46450,9 @@ taideng 台灯
 taidi 台地
 taidong 胎动
 taidou 泰斗
-taiduo 太多
 taidu 态度 台独 胎毒
 taiduan 台端
+taiduo 太多
 taier 胎儿
 taifa 胎发
 taifeng 台风
@@ -51652,6 +51647,7 @@ xiangyuan 乡愿
 xiangyuan 香橼
 xiangyue 相约
 xiangyuerqi 向隅而泣
+xiangyunjiuyun 想云就云
 xiangyunsha 香云纱
 xiangzao 香皂
 xiangze 香泽
@@ -63320,4 +63316,3 @@ zuzongfadu 祖宗法度
 zuzongjiafa 祖宗家法
 zuzubeibei 祖祖辈辈
 zuzuyouyu 足足有余
-fanzhushu 饭煮熟
