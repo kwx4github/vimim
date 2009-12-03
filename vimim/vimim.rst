@@ -342,8 +342,10 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
 
 玩家体验
 ========
+| 怎么个玩法？最好是看人家写的，多快好省：
 |
 
++ `标题: 挂个贴宣传一下 VimIM 输入法`__
 + `VimIM -- 基于 Vim 的中文输入法 (LinuxGem)`__
 + `强大的VimIM (blog)`__
 + `不折腾——VimIM践行主旨 (wiki)`__
@@ -353,6 +355,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
 + `排序多个词库文件成为一个词库`__
 
 
+__ http://www.linuxsir.org/bbs/showthread.php?p=2051139#post2051139
 __ http://www.linuxgem.org/2009/5/18/VimIM.8422.html
 __ http://crane.is-programmer.com/posts/12726
 __ http://code.google.com/p/vimim/wiki/Feedback_Suxpert
@@ -2863,13 +2866,12 @@ WHAT IS NEW
 #. [done] issue 26: hjkl still mapped after <BS>
 #. [done] issue 29: texingceshi<CR>ceshi => CHINESE+gceshi
 #. [done] issue 23: static+shuangpin+cloud breaks after issue 22
-#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [todo] seamless position detect when cursor is moved
-#. [todo] super reset function to avoid repeating
-#. [todo] update manual about g:vimim_smart_backspace
+#. [done] seamless position detect when cursor is moved
+#. [done] super reset function to avoid repeating
 #. [redo] [one-key-correction] in OneKey => (d)elete in popup menu
 #. [redo] [one-key-correction] make <BS> smart: g:smart_backspace=2
 #. [redo] let g:vimim_punctuation_navigation=1 default for all mode
+#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 
 
 
