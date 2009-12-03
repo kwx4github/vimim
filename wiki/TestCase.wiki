@@ -9,7 +9,7 @@ http://code.google.com/p/vimim/wiki/TestCase
 ------------------------------------------
 euwfti<space><space>wfti<space><space>euwfti<space>
 ------------------------------------------
-
+	
 >>> purpose: to test 双拼 云 动态模式
 ------------------------------------------
 :let s:vimim_www_sogou = 2
@@ -18,7 +18,7 @@ euwfti<space><space>wfti<space><space>euwfti<space>
 ------------------------------------------
 hkfgpyjxlisswovhqyyn
 ------------------------------------------ 
-
-
-
-
+	
+	
+	
+	
