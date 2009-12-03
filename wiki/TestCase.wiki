@@ -1,0 +1,24 @@
+﻿#summary  Regression Test Suite
+http://code.google.com/p/vimim/wiki/TestCase
+{{{
+>>> purpose: to test 双拼 云 静态模式
+------------------------------------------
+:let s:vimim_www_sogou = 1
+:let s:vimim_static_input_style = 1
+:let s:vimim_shuangpin_abc = 1
+------------------------------------------
+euwfti<space><space>wfti<space><space>euwfti<space>
+------------------------------------------
+
+>>> purpose: to test 双拼 云 动态模式
+------------------------------------------
+:let s:vimim_www_sogou = 2
+:let s:vimim_static_input_style = -1
+:let s:vimim_shuangpin_abc = 1
+------------------------------------------
+hkfgpyjxlisswovhqyyn
+------------------------------------------ 
+
+
+
+
