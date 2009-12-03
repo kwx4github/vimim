@@ -2546,10 +2546,10 @@ VimIM的作者
 
 VimIM的词库来源
 ---------------
-#. VimIM 的唯一官方distribution是唯一文本文件 vimim.vim__
+#. VimIM 唯一的官方distribution是一个纯文本文件： vimim.vim__
 #. 使用 VimIM `内码输入`_ 不需要任何词库。
 #. 使用 VimIM `CLOUD 云输入`_ 不需要任何词库。
-#. 帖在 `VimIM网站`__ 上的词库仅供用户参考。如有不妥，可以删除。
+#. 帖在 `VimIM 网站`__ 上的词库仅供用户参考。如有不妥，可以删除。
 
 
   - 英文输入法词库 (from vimim, after editing it line by line)
@@ -2557,26 +2557,26 @@ VimIM的词库来源
   - 四角号码输入法词库 (from vimim, after editing it line by line)
   - 中文电报码 (from my processing unihan.txt data)
   - CNS11643中文標準交換碼 (from official site)
-  - fcitx 拼音输入法大词库 (from fcitx, as I claimed)
-  - 自然输入法词库 (someone sent to me)
+  - fcitx 拼音输入法大词库 (processed from fcitx)
+  - 自然输入法词库 (sent from user)
   - 汉语拼音输入法大词库 (combination, after processing)
-  - 汉语拼音输入法词库 (someone sent to me)
-  - 韩文输入法词库 (someone sent to me)
-  - 五筆劃输入法词库 (someone sent to me)
-  - 五笔98输入法词库 (someone sent to me)
-  - 五笔输入法词库 (someone sent to me)
-  - 极点五笔输入法词库 (someone sent to me)
-  - 仓颉输入法词库(someone sent to me)
-  - 二笔输入法词库(someone sent to me)
-  - 速成输入法词库(someone sent to me)
-  - 行列输入法词库(someone sent to me)
-  - 注音输入法词库(someone sent to me)
-  - 永码输入法词库(processing from ibus)
-  - 粤语拼音输入法词库 (processing from ibus)
-  - 上海吴语注音输入法词库 (processing from ibus)
-  - 郑码输入法词库 (processing from ibus)
-  - 新华输入法词库 (processing from ibus)
-  - 香港拼音输入法词库 (processing from ibus)
+  - 汉语拼音输入法词库 (sent from user)
+  - 韩文输入法词库 (sent from user)
+  - 五筆劃输入法词库 (sent from user)
+  - 五笔98输入法词库 (sent from user)
+  - 五笔输入法词库 (sent from user)
+  - 极点五笔输入法词库 (sent from user)
+  - 仓颉输入法词库(processed from official site)
+  - 二笔输入法词库(sent from user)
+  - 速成输入法词库(sent from user)
+  - 行列输入法词库(processed from official site)
+  - 注音输入法词库(sent from user)
+  - 永码输入法词库(processed from ibus)
+  - 粤语拼音输入法词库 (processed from ibus)
+  - 上海吴语注音输入法词库 (processed from ibus)
+  - 郑码输入法词库 (processed from ibus)
+  - 新华输入法词库 (processed from ibus)
+  - 香港拼音输入法词库 (processed from ibus)
 
 __ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 __ http://code.google.com/p/vimim/downloads/list
@@ -2864,7 +2864,9 @@ WHAT IS NEW
 #. [redo] [one-key-correction] in OneKey => (d)elete in popup menu
 #. [redo] [one-key-correction] make <BS> smart: g:vimim_smart_backspace=2
 #. [redo] let g:vimim_punctuation_navigation=1 default for all mode
-#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [done] add easter egg for VimIM URL: vimimurl<C-\>
+#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
+
+
 
 
