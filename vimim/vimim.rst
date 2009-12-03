@@ -114,7 +114,7 @@ VimIM —— Vim 中文输入法
 |
 
 ==============    ============================================================
-vimimurl <C-\\> p
+vimimhelp <C-\\> p
 ==============================================================================
    错误报告       http://code.google.com/p/vimim/issues/entry
    词库下载       http://code.google.com/p/vimim/downloads/list
@@ -695,21 +695,23 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
 
 【VimIM 云输入】
 
- (1) 〖混合式云输入〗设置 :let g:vimim_www_sogou=10
+ (1) 〖全云输入〗每一个输入都〖云〗游
 
-     * （长的）诗词曲赋、新闻八卦、完整的句子拜托给〖云〗。
-     * （短的）私人信息、英文、词组、单字留给VimIM自己处理。
-     * 长短的定义没有统一的国际标准。玩家自己定标准。
-     * 例如：如果选项设置为10:　即每敲10个字母以上就丢给〖云〗。
-
- (2) 〖整体性云输入〗每一个输入都〖云〗游
-
-     * 特点：每打一个字都要向服务器请求一次。
-     * 手动开启：设置 :let g:vimim_www_sogou=1
+     * 特点：每打一个字母都要向服务器请求一次。
+     * 手动开启：可设置 :let g:vimim_www_sogou=1
      * 自动开启：
 
        * Linux  　如果vim plugin目录下没有词库
        * Windows　如果wget.exe置于vim plugin目录之下
+
+ (2) 〖可控性云输入〗每N个输入就〖云〗游
+
+     * 特点：每打N个字母才向服务器请求一次。
+     * 手动开启：设置 :let g:vimim_www_sogou=N
+     * （长的）诗词曲赋、新闻八卦、完整的句子拜托给〖云〗。
+     * （短的）私人信息、英文、词组、单字留给VimIM自己处理。
+     * 长短的定义没有统一的国际标准。玩家自己定标准。
+     * 例如：如果选项设置为10:　即每敲10个字母以上就丢给〖云〗。
 
  (3) 支持〖断字符〗　解决含糊的办法是在含糊的地方贴上标签：
 
@@ -724,7 +726,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
  (5) 支持中文输入模式〖经典动态〗输入风格 （缺省）
 
      * 如果希望体验搜狗入云的方式：设置 :let g:vimim_www_sogou=1
-     * 相比之下，VimIM 的〖混合式云输入〗灵活一些。
+     * 相比之下，VimIM 的〖可控性云输入〗灵活一些。
 
  (6) 支持中文输入模式〖经典静态〗输入风格
 
@@ -733,7 +735,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
 
  (7) 支持“想不云就可以不云”
 
-     * 【特点】如果在编码后加多一个句号。
+     * 【特点】如果在编码后加多一个英文句号。
      * 【限于】 `〖点石成金〗`_
      * 【例】cloud.  => 云
 
@@ -743,7 +745,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【特点】不限于拼音输入法！不需要设置！
      * 【条件】只需要联网和wget/curl
      * 【限于】 `〖点石成金〗`_
-     * 【操作】在编码后加多一个逗号，接着敲〖点石键〗
+     * 【操作】在编码后加多一个英文逗号，接着敲〖点石键〗
      * 【例】ajiao, => 阿娇
      * 【例】dbrcxby, => 东边日出西边雨
      * 【例】hfpjlswsqy, => 好风凭借力送我上青云
@@ -1200,7 +1202,7 @@ __ `概述`_
 
 + VimIM　 `整句输入`_
 + VimIM　 `逐词匹配`_ 　之 ㈠ 句号分隔，自己定匹配
-+ VimIM　 `CLOUD 云输入`_ 之 ㈠ 〖混合式云输入〗
++ VimIM　 `CLOUD 云输入`_ 之 ㈠ 〖可控性云输入〗
 
 【测试】
 
@@ -2864,9 +2866,7 @@ WHAT IS NEW
 #. [redo] [one-key-correction] in OneKey => (d)elete in popup menu
 #. [redo] [one-key-correction] make <BS> smart: g:vimim_smart_backspace=2
 #. [redo] let g:vimim_punctuation_navigation=1 default for all mode
-#. [done] add easter egg for VimIM URL: vimimurl<C-\>
+#. [done] add new easter egg for VimIM URL: vimimhelp<C-\>
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-
-
 
 
