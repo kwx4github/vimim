@@ -284,7 +284,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
 玩家体验
 ========
 | 怎么个玩法？
-| 玩家自己的体验就是VimIM最好的说明书：
+| VimIM玩家自己的心得体会，就是VimIM最好的用户手则：
 |
 
 + `标题: 挂个贴宣传一下 VimIM 输入法`__
