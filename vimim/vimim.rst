@@ -283,7 +283,8 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
 
 玩家体验
 ========
-| 怎么个玩法？最好是看玩家自己写的，多快好省：
+| 怎么个玩法？
+| 玩家自己的体验就是VimIM最好的说明书：
 |
 
 + `标题: 挂个贴宣传一下 VimIM 输入法`__
