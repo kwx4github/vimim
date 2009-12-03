@@ -461,7 +461,7 @@ VimIM 是一个专门为 vim 玩家开发的嵌入式输入法，只要你的 vi
 <col width="81%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head" colspan="2">vimimurl &lt;C-\&gt; p</th>
+<tr><th class="head" colspan="2">vimimhelp &lt;C-\&gt; p</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -1298,21 +1298,23 @@ VimIM 不错, 一直在用 :) -->
 <p>【VimIM 云输入】</p>
 <blockquote>
 <ol class="arabic simple">
-<li>〖混合式云输入〗设置 :let g:vimim_www_sogou=10<ul>
-<li>（长的）诗词曲赋、新闻八卦、完整的句子拜托给〖云〗。</li>
-<li>（短的）私人信息、英文、词组、单字留给VimIM自己处理。</li>
-<li>长短的定义没有统一的国际标准。玩家自己定标准。</li>
-<li>例如：如果选项设置为10:　即每敲10个字母以上就丢给〖云〗。</li>
-</ul>
-</li>
-<li>〖整体性云输入〗每一个输入都〖云〗游<ul>
-<li>特点：每打一个字都要向服务器请求一次。</li>
-<li>手动开启：设置 :let g:vimim_www_sogou=1</li>
+<li>〖全云输入〗每一个输入都〖云〗游<ul>
+<li>特点：每打一个字母都要向服务器请求一次。</li>
+<li>手动开启：可设置 :let g:vimim_www_sogou=1</li>
 <li>自动开启：<ul>
 <li>Linux  　如果vim plugin目录下没有词库</li>
 <li>Windows　如果wget.exe置于vim plugin目录之下</li>
 </ul>
 </li>
+</ul>
+</li>
+<li>〖可控性云输入〗每N个输入就〖云〗游<ul>
+<li>特点：每打N个字母才向服务器请求一次。</li>
+<li>手动开启：设置 :let g:vimim_www_sogou=N</li>
+<li>（长的）诗词曲赋、新闻八卦、完整的句子拜托给〖云〗。</li>
+<li>（短的）私人信息、英文、词组、单字留给VimIM自己处理。</li>
+<li>长短的定义没有统一的国际标准。玩家自己定标准。</li>
+<li>例如：如果选项设置为10:　即每敲10个字母以上就丢给〖云〗。</li>
 </ul>
 </li>
 <li>支持〖断字符〗　解决含糊的办法是在含糊的地方贴上标签：<ul>
@@ -1327,7 +1329,7 @@ VimIM 不错, 一直在用 :) -->
 </li>
 <li>支持中文输入模式〖经典动态〗输入风格 （缺省）<ul>
 <li>如果希望体验搜狗入云的方式：设置 :let g:vimim_www_sogou=1</li>
-<li>相比之下，VimIM 的〖混合式云输入〗灵活一些。</li>
+<li>相比之下，VimIM 的〖可控性云输入〗灵活一些。</li>
 </ul>
 </li>
 <li>支持中文输入模式〖经典静态〗输入风格<ul>
@@ -1336,7 +1338,7 @@ VimIM 不错, 一直在用 :) -->
 </ul>
 </li>
 <li>支持“想不云就可以不云”<ul>
-<li>【特点】如果在编码后加多一个句号。</li>
+<li>【特点】如果在编码后加多一个英文句号。</li>
 <li>【限于】 <a class="reference internal" href="#id73">〖点石成金〗</a></li>
 <li>【例】cloud.  =&gt; 云</li>
 </ul>
@@ -1346,7 +1348,7 @@ VimIM 不错, 一直在用 :) -->
 <li>【特点】不限于拼音输入法！不需要设置！</li>
 <li>【条件】只需要联网和wget/curl</li>
 <li>【限于】 <a class="reference internal" href="#id73">〖点石成金〗</a></li>
-<li>【操作】在编码后加多一个逗号，接着敲〖点石键〗</li>
+<li>【操作】在编码后加多一个英文逗号，接着敲〖点石键〗</li>
 <li>【例】ajiao, =&gt; 阿娇</li>
 <li>【例】dbrcxby, =&gt; 东边日出西边雨</li>
 <li>【例】hfpjlswsqy, =&gt; 好风凭借力送我上青云</li>
@@ -2112,7 +2114,7 @@ If the following download URL does not work for you, please
 <ul class="simple">
 <li>VimIM　 <a class="reference internal" href="#id74">整句输入</a></li>
 <li>VimIM　 <a class="reference internal" href="#id75">逐词匹配</a> 　之 ㈠ 句号分隔，自己定匹配</li>
-<li>VimIM　 <a class="reference internal" href="#cloud">CLOUD 云输入</a> 之 ㈠ 〖混合式云输入〗</li>
+<li>VimIM　 <a class="reference internal" href="#cloud">CLOUD 云输入</a> 之 ㈠ 〖可控性云输入〗</li>
 </ul>
 <p>【测试】</p>
 <table border="1" class="docutils">
@@ -4597,14 +4599,14 @@ set langmenu=zh_CN.UTF-8
 <li>[redo] [one-key-correction] in OneKey =&gt; (d)elete in popup menu</li>
 <li>[redo] [one-key-correction] make &lt;BS&gt; smart: g:vimim_smart_backspace=2</li>
 <li>[redo] let g:vimim_punctuation_navigation=1 default for all mode</li>
-<li>[done] add easter egg for VimIM URL: vimimurl&lt;C-&gt;</li>
+<li>[done] add new easter egg for VimIM URL: vimimhelp&lt;C-&gt;</li>
 <li>[todo] how to find vim executable? s:path=expand(&quot;&lt;sfile&gt;:p:h&quot;).&quot;/&quot;</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 00:26:36 PST on Thursday, 12/03/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 10:35:18 PST on Thursday, 12/03/2009
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
