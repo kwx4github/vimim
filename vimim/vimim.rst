@@ -833,7 +833,7 @@ VimIM 拼音输入总结：
 - 【空格键】直接上汉字，或上空格。
 - 【回车键】或无缝上英文，或回车。
 - 【无缝混排】支持 `无缝混排`_
-- 【退格键】一键改错 （开启可设）:let g:smart_backspace=2
+- 【退格键】一键改错 （开启可设）:let g:vimim_smart_backspace=2
 - 【<C-H>】（点石成金） `整句输入`_ 重新匹配
 - 【中文数字】（静态模式）i2009　=>　二〇〇九　　I2009　=>　贰零零玖
 - 【中文量词】（静态模式）i5t　=>　五吨　　id8　=>　第八
@@ -876,7 +876,7 @@ VimIM 五笔输入总结：
 - 【空格键】上汉字，开始新的一轮五笔连打。或上空格。
 - 【回车键】或无缝上英文，或回车。
 - 【无缝混排】支持 `无缝混排`_
-- 【退格键】一键改错 （开启可设）:let g:smart_backspace=2
+- 【退格键】一键改错 （开启可设）:let g:vimim_smart_backspace=2
 - 【英文输入】敲 CTRL-6 动态切换中英文输入模式。
 - 【点石成金】四码匹配，逐词上屏。
 - 【通配符匹配】用 z 匹配壹个字符 （缺省关闭）
@@ -2141,7 +2141,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 一键改错
 --------
 | `〖中文输入模式〗`_  
-|    【退格键】（开启可设）:let g:smart_backspace=2
+|    【退格键】（开启可设）:let g:vimim_smart_backspace=2
 | 
 | `〖点石成金〗`_ 
 |    【菜单】可敲 ``d`` 键 for delete
@@ -2855,7 +2855,7 @@ WHAT IS NEW
 #. [done] seamless position detect when cursor is moved
 #. [done] super reset function to avoid repeating
 #. [redo] [one-key-correction] in OneKey => (d)elete in popup menu
-#. [redo] [one-key-correction] make <BS> smart: g:smart_backspace=2
+#. [redo] [one-key-correction] make <BS> smart: g:vimim_smart_backspace=2
 #. [redo] let g:vimim_punctuation_navigation=1 default for all mode
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 
