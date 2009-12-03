@@ -1,6 +1,17 @@
-﻿#summary  Regression Test Suite
+﻿#summary  VimIM 回归测试 Regression Test Suite
 http://code.google.com/p/vimim/wiki/TestCase
 {{{
+针对每一个Bug Fix，我们尽可能做回归测试。
+（1）验证新的code的确把缺陷改正了。
+（2）验证新的code没有搞破坏，没有Regression
+	
+在共产主义（自动回归测试）还没有实现之前，
+我们可以先搞初级阶段，甚至刀耕火种。
+总之，先把饭煮熟再说。
+	
+	
+【回归测试试题】
+	
 >>> purpose: to test 双拼 云 静态模式
 ------------------------------------------
 :let s:vimim_www_sogou = 1
