@@ -10767,7 +10767,7 @@ coach 教练 指导 #
 coal 煤 石炭 #
 coat 上衣 #
 cock 雄鸡 #
-code 密码 #
+code 密码 程式 #
 coding 编程 #
 coffee 咖啡 #
 cognize 认识 #
@@ -63339,3 +63339,4 @@ zuzongfadu 祖宗法度
 zuzongjiafa 祖宗家法
 zuzubeibei 祖祖辈辈
 zuzuyouyu 足足有余
+fanzhushu 饭煮熟
