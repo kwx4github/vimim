@@ -114,7 +114,7 @@ VimIM —— Vim 中文输入法
 |
 
 ==============    ============================================================
-vimimhelp <C-\\> p
+vimimhelp　<C-\\>　p
 ==============================================================================
    错误报告       http://code.google.com/p/vimim/issues/entry
    词库下载       http://code.google.com/p/vimim/downloads/list
@@ -322,7 +322,7 @@ __ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 **vim**
 
   ====  ==============
-  vim <C-\\> p
+  vim　<C-\\>　p
   ====================
    1     文本編輯器
    2     最牛文本編輯器
@@ -340,7 +340,7 @@ __ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 **vimim**
 
   ====  ==========  =========  ==========================
-  vimim <C-\\> p
+  vimim　<C-\\>　p
   =======================================================
    1     computer   电脑：     Windows32_builtin_gui
    2     Vim        版本：     702
