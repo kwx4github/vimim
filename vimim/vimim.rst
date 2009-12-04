@@ -2136,13 +2136,13 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 - 【限于】UTF-8 encoding （vim和词库）
 - 【限于】单字
-- 【全拼缺省开启】仅适用于当前的 session
+- 【缺省开启】仅适用于当前的 session, 不存盘
 - 【首字固定】
 
   - 常用字词将永远显示在第一候选项。
   - 【全拼缺省开启】:let g:vimim_first_candidate_fix=1
 
-- 【永久存盘可设】:let g:vimim_chinese_frequency=N
+- 【永久存盘可设】:let g:vimim_chinese_frequency=N, where N>1
 
   - 输入累积N次，词库可以自动刷新，永久存盘。
   - 建议设置比较大一点的值：:let g:vimim_chinese_frequency=20
@@ -2877,7 +2877,6 @@ WHAT IS NEW
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] issue 32: 857807627775 CLOUD for queyunmu
 #. [todo] OneKey => :let show = {1: 'one', 2: 'two', 3: 'three'}
-
 
 
 
