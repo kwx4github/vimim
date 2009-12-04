@@ -329,9 +329,11 @@ code() { /bin/python ~/script/python/googlecode_upload.py "$@" ;}
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         datafile 四角號碼輸入法詞庫
 code -s datafile -p vimim vimim.4corner.txt
-        datafile 漢語拼音輸入法詞庫
+        datafile 拼音輸入法詞庫
 code -s datafile -p vimim vimim.pinyin.txt
         datafile 英文輸入法詞庫
+code -s datafile -p vimim vimim.pinyin_sogou.txt
+        datafile 搜狗拼音單字雙字詞庫
 code -s datafile -p vimim vimim.english.txt
         datafile 私人信息樣本文件
 code -s datafile -p vimim privates.txt
@@ -1476,6 +1478,9 @@ VimIM 不錯, 一直在用 :) -->
 </tr>
 <tr><td>fcitx大詞庫</td>
 <td><a class="reference external" href="http://vimim.googlecode.com/files/vimim.pinyin_fcitx.txt">http://vimim.googlecode.com/files/vimim.pinyin_fcitx.txt</a></td>
+</tr>
+<tr><td>搜狗單字雙字</td>
+<td><a class="reference external" href="http://vimim.googlecode.com/files/vimim.pinyin_sogou.txt">http://vimim.googlecode.com/files/vimim.pinyin_sogou.txt</a></td>
 </tr>
 </tbody>
 </table>
@@ -3122,14 +3127,6 @@ If the following download URL does not work for you, please
 <td>　　　 <strong>;</strong></td>
 <td>第二個字上屏</td>
 </tr>
-<tr><td></td>
-<td>　　　 <strong>g</strong></td>
-<td>翻頁操作：從頭到尾</td>
-</tr>
-<tr><td></td>
-<td>　　　 <strong>G</strong></td>
-<td>翻頁操作：從尾到頭</td>
-</tr>
 </tbody>
 </table>
 </blockquote>
@@ -4292,6 +4289,7 @@ If the following download URL does not work for you, please
 <li>中文電報碼 (from my processing unihan.txt data)</li>
 <li>CNS11643中文標準交換碼 (from official site)</li>
 <li>fcitx 拼音輸入法大詞庫 (processed from fcitx)</li>
+<li>搜狗單字雙字 (downloaded and processed from web)</li>
 <li>自然輸入法詞庫 (sent from user)</li>
 <li>漢語拼音輸入法大詞庫 (combination, after processing)</li>
 <li>漢語拼音輸入法詞庫 (sent from user)</li>
@@ -4604,13 +4602,16 @@ set langmenu=zh_CN.UTF-8
 <li>[redo] [one-key-correction] make &lt;BS&gt; smart: g:vimim_smart_backspace=2</li>
 <li>[redo] let g:vimim_punctuation_navigation=1 default for all mode</li>
 <li>[done] add new easter egg for VimIM URL: vimimhelp&lt;C-&gt;</li>
+<li>[redo] [wubi] trdeggwhssqu =&gt; i have a dream</li>
 <li>[todo] how to find vim executable? s:path=expand(&quot;&lt;sfile&gt;:p:h&quot;).&quot;/&quot;</li>
+<li>[todo] issue 32: 857807627775 CLOUD for queyunmu</li>
+<li>[todo] OneKey =&gt; :let show = {1: 'one', 2: 'two', 3: 'three'}</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 17:35:01 PST on Thursday, 12/03/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 10:11:54 PST on Friday, 12/04/2009
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
