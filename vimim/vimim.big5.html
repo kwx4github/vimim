@@ -3498,13 +3498,13 @@ If the following download URL does not work for you, please
 <ul class="simple">
 <li>【限於】UTF-8 encoding （vim和詞庫）</li>
 <li>【限於】單字</li>
-<li>【全拼缺省開啟】僅適用於當前的 session</li>
+<li>【缺省開啟】僅適用於當前的 session, 不存盤</li>
 <li>【首字固定】<ul>
 <li>常用字詞將永遠顯示在第一候選項。</li>
 <li>【全拼缺省開啟】:let g:vimim_first_candidate_fix=1</li>
 </ul>
 </li>
-<li>【永久存盤可設】:let g:vimim_chinese_frequency=N<ul>
+<li>【永久存盤可設】:let g:vimim_chinese_frequency=N, where N&gt;1<ul>
 <li>輸入累積N次，詞庫可以自動刷新，永久存盤。</li>
 <li>建議設置比較大一點的值：:let g:vimim_chinese_frequency=20</li>
 <li>也就是說，每敲20個漢字，memory 中的詞頻寫入disk存盤</li>
@@ -4611,7 +4611,7 @@ set langmenu=zh_CN.UTF-8
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 10:11:54 PST on Friday, 12/04/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 11:49:45 PST on Friday, 12/04/2009
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
