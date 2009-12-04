@@ -52,9 +52,11 @@
    --------------------------------------------
            datafile 四角号码输入法词库
    code -s datafile -p vimim vimim.4corner.txt
-           datafile 汉语拼音输入法词库
+           datafile 拼音输入法词库
    code -s datafile -p vimim vimim.pinyin.txt
            datafile 英文输入法词库
+   code -s datafile -p vimim vimim.pinyin_sogou.txt
+           datafile 搜狗拼音单字双字词库
    code -s datafile -p vimim vimim.english.txt
            datafile 私人信息样本文件
    code -s datafile -p vimim privates.txt
@@ -835,6 +837,7 @@ VimIM 拼音输入码表样例：
   汉语拼音       http://vimim.googlecode.com/files/vimim.pinyin.txt
   拼音大词库     http://vimim.googlecode.com/files/vimim.pinyin_huge.txt
   fcitx大词库    http://vimim.googlecode.com/files/vimim.pinyin_fcitx.txt
+  搜狗单字双字   http://vimim.googlecode.com/files/vimim.pinyin_sogou.txt
 ================ =======================================================
 
 VimIM 拼音输入总结：
@@ -1857,10 +1860,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
   +-------------------+-------------------+---------------------+
   | 　　　        　  | 　　　　 **;** 　 | 第二个字上屏        |
   +-------------------+-------------------+---------------------+
-  | 　　　        　  | 　　　　 **g** 　 | 翻页操作：从头到尾  |
-  +-------------------+-------------------+---------------------+
-  | 　　　        　  | 　　　　 **G** 　 | 翻页操作：从尾到头  |
-  +-------------------+-------------------+---------------------+
 
 
 【自己动手试一试】
@@ -2566,6 +2565,7 @@ VimIM的词库来源
   - 中文电报码 (from my processing unihan.txt data)
   - CNS11643中文標準交換碼 (from official site)
   - fcitx 拼音输入法大词库 (processed from fcitx)
+  - 搜狗单字双字 (downloaded and processed from web)
   - 自然输入法词库 (sent from user)
   - 汉语拼音输入法大词库 (combination, after processing)
   - 汉语拼音输入法词库 (sent from user)
@@ -2873,6 +2873,11 @@ WHAT IS NEW
 #. [redo] [one-key-correction] make <BS> smart: g:vimim_smart_backspace=2
 #. [redo] let g:vimim_punctuation_navigation=1 default for all mode
 #. [done] add new easter egg for VimIM URL: vimimhelp<C-\>
+#. [redo] [wubi] trdeggwhssqu => i have a dream
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
+#. [todo] issue 32: 857807627775 CLOUD for queyunmu
+#. [todo] OneKey => :let show = {1: 'one', 2: 'two', 3: 'three'}
+
+
 
 
