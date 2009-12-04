@@ -2783,7 +2783,6 @@ WHAT IS NEW
 #. [todo] support "associate" function if it is helpful
 #. [todo] keep input history for further processing like search
 #. [todo] save user input as a hash: { keycode: Chinese }
-#. [todo] add :profile start /tmp/vimim.profile for optimization
 #. [todo] develop an algorithm to sort Chinese by frequent usage
 #. [todo] try to make vimim.vim and latex-suite plugin work together
 #. [todo] build an internal auto regression test suites
@@ -2876,6 +2875,7 @@ WHAT IS NEW
 #. [redo] [wubi] trdeggwhssqu => i have a dream
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] issue 32: 857807627775 CLOUD for queyunmu
+#. [todo] add :profile start /tmp/vimim.profile for optimization
 #. [todo] OneKey => :let show = {1: 'one', 2: 'two', 3: 'three'}
 
 
