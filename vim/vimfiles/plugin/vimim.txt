@@ -19392,8 +19392,7 @@ guangcancan 光灿灿
 guangchang 广场
 guangchi 光赤
 guangchong 光宠
-guangda 光大
-guangda 广大
+guangda 广大 光大
 guangdang 咣当
 guangdang 逛荡
 guangdao 光刀
@@ -19405,8 +19404,7 @@ guangdianzijishu 光电子技术
 guangdie 光碟
 guangdongshe 广东省
 guangdongyinyue 广东音乐
-guangdu 光度
-guangdu 广度
+guangdu 广度 光度
 guangfan 广泛
 guangfanxing 广泛性
 guangfengjiyue 光风霁月
@@ -19419,8 +19417,7 @@ guanggun 光棍
 guangguner 光棍儿
 guanghan 犷悍
 guanghezuoyong 光合作用
-guanghua 光华
-guanghua 光滑
+guanghua 光滑 光华
 guanghuan 光环
 guanghuazuoyong 光化作用
 guanghui 光辉
@@ -43409,11 +43406,11 @@ shezhang 社长 赊账
 shezheng 摄政
 shezhi 设置 摄制
 shezu 涉足 蛇足 畲族
-shi 十 事 世 什 仕 噬 士 失 始 实 室 尸 屎 市 师 恃 拭
+shi 十 事 世 仕 噬 士 失 始 实 室 尸 屎 市 师 恃 拭
 shi 是 侍 使 势 食 饰 驶 史 嗜 拾 施 时 柿 氏 匙 式 释 铈
-shi 湿 狮 矢 石 示 虱 蚀 视 誓 识 试 诗 豕 轼 适 逝
+shi 湿 狮 矢 石 示 虱 蚀 视 誓 识 试 诗 豕 轼 适 逝 什
 shi1 诗 失 尸 师 施 湿 狮 浉 蓍 虱 匙
-shi2 什 十 埘 实 拾 时 炻 石 蚀 识 食
+shi2 十 埘 实 拾 时 炻 石 蚀 识 食
 shi3 使 史 始 屎 矢 豕 驶
 shi4 士 世 是 事 仕 似 侍 势 嗜 噬 市 式 弑 恃 拭 柿 饰
 shi4 氏 示 室 试 舐 莳 螫 视 誓 谥 轼 适 逝 释 铈
