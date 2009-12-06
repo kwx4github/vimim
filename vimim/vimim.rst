@@ -1690,7 +1690,7 @@ VimIM Mapping
 
 　【操作步骤】
 
-  #.  下载新版脚本     http://vimim.googlecode.com/files/vimim.vim
+  #.  下载新版脚本     vimim.vim__
   #.  下载拼音码表样本 http://vimim.googlecode.com/files/vimim.pinyin.txt
   #.  然后把这两个文本文件扔到您的 vim 的 plugin 目录之下
   #.  打开 vim （如果用Windows可以双击gVim.exe）
@@ -1702,6 +1702,7 @@ VimIM Mapping
   #.  确认vim 显示“花好月圆”“恢恢有余” popup menu
   #.  敲【空格键】或【数字键】上字: 花好月圆
 
+__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
 |
 |
@@ -1715,13 +1716,27 @@ VimIM Mapping
 
 中文数字量词
 ------------
-| VimIM 特为(1)全拼(2)智能ABC双拼玩家提供
-| 阿拉伯数字和中文大小写数字和量词的转换能力：
+VimIM 自然有阿拉伯数字和中文大小写数字和量词的转换能力。
 
-=========  ============================
- **i**     为输入小写中文数字的前导字符
- **ii**    为输入大写中文数字的前导字符
-=========  ============================
+(1) VimIM offers universal imode without limitation
+
+    =========  ============================
+     **,**     为输入小写中文数字的前导字符
+     **,,**    为输入大写中文数字的前导字符
+    =========  ============================
+
+|
+
+(2) VimIM keeps habit of (1)全拼(2)智能ABC双拼
+
+   - 【自动开启】 let g:vimim_chinese_number_imode=1
+
+   =========  ============================
+    **i**     为输入小写中文数字的前导字符
+    **ii**    为输入大写中文数字的前导字符
+   =========  ============================
+
+We can use comma instead of i for all examples below:
 
 
 **中文数字**
@@ -2181,7 +2196,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 - `〖点石成金〗`_
 
   - 〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。
-  - 【缺省开启】 :let g:vimim_smart_punctuations=1
+  - 【缺省开启】 :let g:vimim_onekey_smart_space=1
 
 - 中文标点英文标点对照表
 
@@ -2200,8 +2215,8 @@ e　亿  j　斤  o　度  t　吨  z　兆
       :          ：      ..        ,          ，
       (          （      ..        .          。
       )          ）      ..        ?          ？
-      {          〖      ..        '        “”
-      }          〗      ..       \`        “”
+      {          〖      ..       \`        “”
+      }          〗      ..       ..          ..
     ========  ========= ====  ===========  =========
 
 |
@@ -2811,7 +2826,6 @@ WHAT IS NEW
 #. [done] [cloud] support auto-cloud with Windows when plugin/wget.exe
 #. [done] [static] auto-chinese-enter using any alphabetic key
 #. [done] [OneKey] save keycode in @0 for checking if interested
-#. [done] [imode] introduce double imode for capital Chinese number
 #. [done] [static] make smart <Enter> reliable in Chinese Mode
 #. [done] [static] double <Space> works when no match
 #. [done] [svn] 20091116 start SVN to organize code and VimIM homepage
@@ -2824,7 +2838,6 @@ WHAT IS NEW
 #. [done] [12345] succeed: plug & play vimim.12345.txt only
 #. [done] [12345] succeed: plug & play pinyin plus 5 strokes
 #. [done] [diy] ma7712li4002 => [mali,7712,4002]  sh22zh30
-#. [done] [imode] id2=>second id3c=>third+menu
 #. [done] [seamless] make it better for PinYin: HAPPYwo Happy<CR>wo
 #. [done] [seamless] make sure all chars are valid to avoid capitals error
 #. [done] [seamless] close for dynamic mode as it is not useful
@@ -2852,6 +2865,7 @@ WHAT IS NEW
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
+#. [todo] add :profile start /tmp/vimim.profile for optimization
 #. [done] [cloud] cloud. => always non-cloud if ending with one dot
 #. [redo] [cloud] support CLOUD for all using comma before OneKey
 #. [done] issue 15: set/reset lazyredrew for OneKey
@@ -2871,12 +2885,17 @@ WHAT IS NEW
 #. [redo] [one-key-correction] in OneKey => (d)elete in popup menu
 #. [redo] [one-key-correction] make <BS> smart: g:vimim_smart_backspace=2
 #. [redo] let g:vimim_punctuation_navigation=1 default for all mode
+#. [done] add new option :let g:vimim_insert_without_popup=0
 #. [done] add new easter egg for VimIM URL: vimimhelp<C-\>
+#. [done] add new easter egg for coding: vimims<C-\>
 #. [redo] [wubi] trdeggwhssqu => i have a dream
-#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] issue 32: 857807627775 CLOUD for queyunmu
-#. [todo] add :profile start /tmp/vimim.profile for optimization
 #. [todo] OneKey => :let show = {1: 'one', 2: 'two', 3: 'three'}
+#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
+#. [done] [imode] introduce double imode for capital Chinese number
+#. [done] [imode] id2=>second id3c=>third+menu g:vimim_chinese_number_imode
+#. [todo] OneKey => add universal imode using english comma: ,88 ,,88
+#. [todo] workflow for s:vimim_resume_shuangpin()
 
 
 
