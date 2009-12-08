@@ -115,17 +115,17 @@ VimIM —— Vim 中文输入法
 | VimIM 把 vim 的中文编辑潜能，提升到一个全新的高度。
 |
 
-==============    ============================================================
+==============    ========================================================
 vimimhelp　<C-\\>　p
-==============================================================================
+==========================================================================
    错误报告       http://code.google.com/p/vimim/issues/entry
    词库下载       http://code.google.com/p/vimim/downloads/list
    最新主页       http://vimim.googlecode.com/svn/vimim/vimim.html
    最新程式       http://vimim.googlecode.com/svn/vimim/vimim.vim.html
    试用版本       http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim
-   官方网址       http://vim.sourceforge.net/scripts/script.php?script_id=2506
+   官方网址       http://vim.sf.net/scripts/script.php?script_id=2506
    新闻论坛       http://groups.google.com/group/vimim
-==============    ============================================================
+==============    ========================================================
 
 |
 
@@ -315,12 +315,11 @@ __ http://code.google.com/p/vimim/wiki/MultiWordListFiles
 复活节彩蛋
 ==========
 (1) 确认您的 vim 能显示中文： `［科普］如何让Vim支持中文？`_
-(2) 首先去 `VimIM 官方网址
-    <http://vim.sourceforge.net/scripts/script.php?script_id=2506>`_
-    下载新版脚本
+(2) 首先去 `VimIM 官方网址`__ 下载新版脚本
 (3) 然后把 vimim.vim__ 扔到您的 vim 的 plugin 目录之下
 
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
+__ http://vim.sf.net/scripts/script.php?script_id=2506
+__ http://vim.sf.net/scripts/script.php?script_id=2506
 
 **vim**
 
@@ -376,7 +375,7 @@ __ http://vim.sourceforge.net/scripts/script.php?script_id=2506
   #. 敲 p
   #. 〖结果〗 输入全部菜单
 
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
+__ http://vim.sf.net/scripts/script.php?script_id=2506
 
 
 |
@@ -572,7 +571,7 @@ __ http://zh.wikipedia.org/wiki/%E8%83%A1%E9%80%82
   #. 下载新版码表 vimim.4corner.txt
   #. 把两者扔到 vim 的 plugin 目录之下
 
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
+__ http://vim.sf.net/scripts/script.php?script_id=2506
 
 :【纯数字　==>　纯汉字】:
   #. 敲 o 或 i 或 a 进入 vim 插入模式
@@ -607,7 +606,7 @@ __ http://vimim.googlecode.com/files/vimim.ctc.txt
   #. 下载新版码表 vimim.ctc.txt
   #. 把两者扔到 vim 的 plugin 目录之下
 
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
+__ http://vim.sf.net/scripts/script.php?script_id=2506
 
 :【电码　==>　汉字】:
   #. 敲 o 或 i 或 a 进入 vim 插入模式
@@ -771,14 +770,26 @@ __ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
  (4) VimIM 同时坚信：他山之石，可以攻玉
 
 
+
+【百花齐放】
+
+ (1) `搜狗官方JavaScript浏览器客户端`__
+ (2) `Linux ibus: 多线程，双拼，无阻塞，无候词列表选框`__
+ (3) `小小输入法：自然双拼，支持搜狗云输入法`__
+
+__ http://pinyin.sogou.com/cloud
+__ http://lihdd.net/?p=277
+__ http://bbs.jpu.edu.cn/thread-43589-1-1.html
+
+
+
 【玩家福音】
 
     |  如果想在vim中体验那朵传说中的〖云〗，
     |  只需下载 vimim.vim__ 一个文本文件——即插即用。
     |
 
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
-
+__ http://vim.sf.net/scripts/script.php?script_id=2506
 
 
 .. sidebar:: VimIM `CLOUD 云输入`_ 　全拼和简拼
@@ -821,7 +832,7 @@ __ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 
 
 __ http://users.ugent.be/~bpuype/wget/
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
+__ http://vim.sf.net/scripts/script.php?script_id=2506
 
 |
 |
@@ -1358,7 +1369,7 @@ __ http://vimim.googlecode.com/files/vimim.english.txt
   #. 敲 c
   #. 【结果】 第三个 password 被复制到 cilpboard 剪贴板。
 
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
+__ http://vim.sf.net/scripts/script.php?script_id=2506
 
 
 |
@@ -1429,11 +1440,10 @@ VimIM Mapping
 
 + vim 插入模式：
 
-  - 【云输入】史上最方便的 `CLOUD 云输入`_
+  - 【云输入】最方便的 `CLOUD 云输入`_
+  - 〖想云就云〗不换模式，不限输入法:  using comma
   - 【整句输入】敲中文如同敲英文
-  - 【无缝混排】支持 `无缝混排`_
   - 【匹配提醒】缺省匹配，以及总匹配数
-  - 【中文标点】可点击英文标点直接转换
   - 【万国码】 `Unicode 内码输入`_ 直接上屏
   - 【国标码】 `GBK 内码输入`_ 直接上屏
   - 【大五码】 `Big5 内码输入`_ 直接上屏
@@ -1446,11 +1456,22 @@ VimIM Mapping
   - 【以词定字】可按 ``[`` 或 ``]`` 键
   - 【汉字上屏】也可敲 ``y`` 键或点石键
 
++ OneKey 高级功能：
+
+  - 【开启】敲【点石键】
+  - 〖经典〗空格键上汉字，回车键上英文。
+  - 〖无缝混排〗支持 `无缝混排`_
+  - 〖中文标点〗可点击英文标点直接转换。
+  - 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
+  - 〖回车键〗或无缝上英文，或回车，或上空格。
+  - 【关闭】在空格后敲【空格键】
+  - 【缺省关闭】 :let g:vimim_sexy_onekey=0
+
 |
 
 【点石键】OneKey 二者择一：
 
-  (1) 〖CTRL-\\〗〖缺省开启〗 　 `VimIM Mapping`_
+  (1) 〖CTRL-\\〗             　 `VimIM Mapping`_
 
      + 【特点】打字搜索，中文英文没有区别。
      + 【缺省开启】 :let g:vimim_one_key=1
@@ -1549,7 +1570,7 @@ VimIM Mapping
 | 【演示】 一口气输入一长串拼音：
 | 　　　【输入】jiandaolaoshiwenshenghao.
 | 　　　【匹配】jiandao见到　laoshi老师　wensheng问声　hao好
-| 【全拼缺省开启】 :let g:vimim_match_word_after_word=1
+| 【缺省开启】 :let g:vimim_match_word_after_word=1
 |
 
 【自己动手试一试】
@@ -1702,7 +1723,7 @@ VimIM Mapping
   #.  确认vim 显示“花好月圆”“恢恢有余” popup menu
   #.  敲【空格键】或【数字键】上字: 花好月圆
 
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
+__ http://vim.sf.net/scripts/script.php?script_id=2506
 
 |
 |
@@ -1718,31 +1739,32 @@ __ http://vim.sourceforge.net/scripts/script.php?script_id=2506
 ------------
 VimIM 自然有阿拉伯数字和中文大小写数字和量词的转换能力。
 
-(1) VimIM offers universal imode without limitation
+(1) VimIM keeps habit of (1)全拼(2)智能ABC双拼
 
-    =========  ============================
-     **,**     为输入小写中文数字的前导字符
-     **,,**    为输入大写中文数字的前导字符
-    =========  ============================
+  - 【自动开启】 let g:vimim_imode_pinyin=1
+  - 【强行关闭】 let g:vimim_imode_pinyin=-1
+
+  =========  ============================
+   **i**     为输入小写中文数字的前导字符
+   **ii**    为输入大写中文数字的前导字符
+  =========  ============================
+
+(2) VimIM offers universal imode without limitation
+
+  =========  ============================
+   **,**     为输入小写中文数字的前导字符
+   **,,**    为输入大写中文数字的前导字符
+  =========  ============================
+
+  - 【缺省关闭】 let g:vimim_imode_comma=0
+  -  We can use comma instead of i for all examples below:
 
 |
 
-(2) VimIM keeps habit of (1)全拼(2)智能ABC双拼
-
-   - 【自动开启】 let g:vimim_chinese_number_imode=1
-
-   =========  ============================
-    **i**     为输入小写中文数字的前导字符
-    **ii**    为输入大写中文数字的前导字符
-   =========  ============================
-
-We can use comma instead of i for all examples below:
-
-
 **中文数字**
 
-| i2000 　=>　二〇〇九　（输入“i2000”，按空格）依次类推
-| ii2000　=>　贰零零玖　（输入“ii2000”，按空格）依次类推
+| i2000 　=>　二〇〇九
+| ii2000　=>　贰零零玖
 
 
 **中文量词**
@@ -1762,6 +1784,7 @@ i20r           二〇日
 i2sr           二十日
 i2006n6y3sr    二〇〇六年六月三十日
 ii6b8s2        陆佰捌十贰
+isw8ql         十万八千里
 ============  ========================
 
 常用单个量词的定义与智能abc类似：
@@ -2601,7 +2624,7 @@ VimIM的词库来源
   - 新华输入法词库 (processed from ibus)
   - 香港拼音输入法词库 (processed from ibus)
 
-__ http://vim.sourceforge.net/scripts/script.php?script_id=2506
+__ http://vim.sf.net/scripts/script.php?script_id=2506
 __ http://code.google.com/p/vimim/downloads/list
 
 
@@ -2893,9 +2916,12 @@ WHAT IS NEW
 #. [todo] OneKey => :let show = {1: 'one', 2: 'two', 3: 'three'}
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [done] [imode] introduce double imode for capital Chinese number
-#. [done] [imode] id2=>second id3c=>third+menu g:vimim_chinese_number_imode
-#. [todo] OneKey => add universal imode using english comma: ,88 ,,88
-#. [todo] workflow for s:vimim_resume_shuangpin()
-
+#. [done] [imode] id2=>second id3c=>third+menu g:vimim_imode_pinyin
+#. [done] OneKey => add universal imode using english comma: ,88 ,,88
+#. [redo] workflow, no need buggy s:vimim_resume_shuangpin()
+#. [todo] <Enter><Enter> cannot <Enter> after chinese punctuation
+#. [todo] ,sw8ql need OneKey twice
+#. [todo] <OneKey> without reset <Space>, ignore no completefunc error
+#. [todo] function! s:vimim_pageup_pagedown(matched_list)
 
 
