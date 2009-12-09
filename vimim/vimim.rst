@@ -357,6 +357,14 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 
 |
 
+* vim
+* vimim
+* vimims
+* vimimhelp
+* vimimdefaults
+
+|
+
 【自己动手试一试】
 
 　【目的】VimIM 牛刀小试
@@ -2909,19 +2917,21 @@ WHAT IS NEW
 #. [redo] [one-key-correction] make <BS> smart: g:vimim_smart_backspace=2
 #. [redo] let g:vimim_punctuation_navigation=1 default for all mode
 #. [done] add new option :let g:vimim_insert_without_popup=0
-#. [done] add new easter egg for VimIM URL: vimimhelp<C-\>
-#. [done] add new easter egg for coding: vimims<C-\>
 #. [redo] [wubi] trdeggwhssqu => i have a dream
-#. [todo] issue 32: 857807627775 CLOUD for queyunmu
-#. [todo] OneKey => :let show = {1: 'one', 2: 'two', 3: 'three'}
-#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [done] [imode] introduce double imode for capital Chinese number
 #. [done] [imode] id2=>second id3c=>third+menu g:vimim_imode_pinyin
 #. [done] OneKey => add universal imode using english comma: ,88 ,,88
+#. [done] [egg] add new easter egg for VimIM URL: vimimhelp<C-\>
+#. [done] [egg] add new easter egg for coding: vimims<C-\>
+#. [done] [egg] add new easter egg for coding: vimimdefaults<C-\>
 #. [redo] workflow, no need buggy s:vimim_resume_shuangpin()
 #. [todo] <Enter><Enter> cannot <Enter> after chinese punctuation
 #. [todo] ,sw8ql need OneKey twice
 #. [todo] <OneKey> without reset <Space>, ignore no completefunc error
 #. [todo] function! s:vimim_pageup_pagedown(matched_list)
+#. [todo] issue 32: 857807627775 CLOUD for queyunmu
+#. [todo] OneKey => :let show = {1: 'one', 2: 'two', 3: 'three'}
+#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
+
 
 
