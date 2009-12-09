@@ -47204,8 +47204,7 @@ tiandaleipi 天打雷劈
 tiandanwuwei 恬淡无为
 tiandaohaohuan 天道好还
 tiandi 田地 天地 天帝 天敌
-tiandian 天电
-tiandian 甜点
+tiandian 甜点 天电
 tiandiburong 天地不容
 tiandijingwei 天地经纬
 tianding 添丁 天顶
@@ -54521,7 +54520,7 @@ xuzi 虚字
 xuzi 许字
 xuzi 须子
 xuzuilueshe 虚嘴掠舌
-y 有 一 要 与 业 也 以 员 年 用 于
+y 一 有 要 与 业 也 以 员 年 用 于
 ya 丫 亚 伢 压 厌 吖 吾 呀 哑 垭 娅 岈 崖 御 押 揠
 ya 札 歇 氩 涯 牙 玡 疋 睚 碣 芽 蚜 衙 讶 辂 迓 闸 雅 鸦 鸭 鹌
 ya1 压 丫 呀 哑 垭 押 鸦 鸭
@@ -63313,3 +63312,6 @@ zuzongfadu 祖宗法度
 zuzongjiafa 祖宗家法
 zuzubeibei 祖祖辈辈
 zuzuyouyu 足足有余
+client 客户 客户端 顾客 #
+competitor 竞争者 #
+  
