@@ -55,7 +55,7 @@
            datafile 拼音输入法词库
    code -s datafile -p vimim vimim.pinyin.txt
            datafile 英文输入法词库
-   code -s datafile -p vimim vimim.pinyin_sogou.txt
+   code -s datafile -p vimim vimim.pinyin_quote_sogou.txt
            datafile 搜狗拼音单字双字词库
    code -s datafile -p vimim vimim.english.txt
            datafile 私人信息样本文件
@@ -316,10 +316,10 @@ __ http://code.google.com/p/vimim/wiki/MultiWordListFiles
 ==========
 (1) 确认您的 vim 能显示中文： `［科普］如何让Vim支持中文？`_
 (2) 首先去 `VimIM 官方网址`__ 下载新版脚本
-(3) 然后把 vimim.vim__ 扔到您的 vim 的 plugin 目录之下
+(3) 然后把 vimim.vim 扔到您的 vim 的 plugin 目录之下
 
 __ http://vim.sf.net/scripts/script.php?script_id=2506
-__ http://vim.sf.net/scripts/script.php?script_id=2506
+
 
 **vim**
 
@@ -359,7 +359,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 
 * vim
 * vimim
-* vimims
+* vimimvim
 * vimimhelp
 * vimimdefaults
 
@@ -856,7 +856,7 @@ VimIM 拼音输入码表样例：
   汉语拼音       http://vimim.googlecode.com/files/vimim.pinyin.txt
   拼音大词库     http://vimim.googlecode.com/files/vimim.pinyin_huge.txt
   fcitx大词库    http://vimim.googlecode.com/files/vimim.pinyin_fcitx.txt
-  搜狗单字双字   http://vimim.googlecode.com/files/vimim.pinyin_sogou.txt
+  搜狗单字双字   http://vimim.googlecode.com/files/vimim.pinyin_quote_sogou.txt
 ================ =======================================================
 
 VimIM 拼音输入总结：
@@ -1709,7 +1709,7 @@ VimIM Mapping
   + 【演示】 saza　　　=>　山寨 善战 上载 上涨
   + 【演示】 bucaqi　　=>　不差钱
   + 【演示】 yijizoqi　=>　一见钟情
-  + 【全拼缺省开启】： :let g:vimim_dummy_shuangpin=1
+  + 【缺省关闭】： :let g:vimim_shuangpin_dummy=1
 
 |
 
@@ -2931,7 +2931,12 @@ WHAT IS NEW
 #. [todo] function! s:vimim_pageup_pagedown(matched_list)
 #. [todo] issue 32: 857807627775 CLOUD for queyunmu
 #. [todo] OneKey => :let show = {1: 'one', 2: 'two', 3: 'three'}
+#. [done] vimim_alphabet_auto_select for ShuangPin, might be possible
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-
+#. [todo] [egg] for session varialbes
+#. [todo] [egg] for functions
+#. [todo] [regression] "智能ABC: woybyigemg" =>
+#. [todo] [regression] mjads.xdhao.jdaaa mjads.xdhao.jdaaa
+#. [todo] [regression] seentence match => woyouyigemeng
 
 
