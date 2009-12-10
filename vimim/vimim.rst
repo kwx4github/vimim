@@ -2224,11 +2224,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
     -  **i_CTRL-\\** 　 `VimIM Mapping`_
     -  **i_CTRL-6** 　动态切换中英文输入模式，包括标点。
 
-- `〖点石成金〗`_
-
-  - 〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。
-  - 【缺省开启】 :let g:vimim_onekey_smart_space=1
-
 - 中文标点英文标点对照表
 
     ========  ========= ====  ===========  =========
@@ -2250,9 +2245,27 @@ e　亿  j　斤  o　度  t　吨  z　兆
       }          〗      ..       ..          ..
     ========  ========= ====  ===========  =========
 
-|
-|
 
+- `〖点石成金〗`_
+
+  - 〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。
+  - magic dot for forced non-cloud
+
+    + dot as tail: for 〖想云就云〗不换模式，不限输入法
+    + dot as delimiter: 逐词匹配㈠句号分隔，自己定匹配：
+
+  - magic comma
+    
+    + comma as tail: for 〖想云就云〗不换模式，不限输入法
+    + comma as head: for universal imode: single comma 小写中文数字
+    + comma as head: for universal imode: double comma 大写中文数字
+    + comma as head: triple comma for clear display
+
+  - 【缺省关闭】 :let g:vimim_sexy_onekey=0
+
+
+|
+|
 
 编辑回帖
 --------
@@ -2938,5 +2951,12 @@ WHAT IS NEW
 #. [todo] [regression] "智能ABC: woybyigemg" =>
 #. [todo] [regression] mjads.xdhao.jdaaa mjads.xdhao.jdaaa
 #. [todo] [regression] seentence match => woyouyigemeng
+#. [todo] " [datafile update] modify data in memory based on past usage
+#. [todo] [egg] vimimcloud: haofengpingjielisongwoshangqingyun
+#. [todo] [egg] vimimtest:  haofengpingjielisongwoshangqingyun
+#. [todo] [paste] ,,,a => customized entry, poem, for sharp display
 
+,,,a 锦瑟 李商隐 锦瑟无端五十弦 一弦一柱思华年 庄生晓梦迷蝴蝶 望帝春心托杜鹃 沧海月明珠有泪 蓝田日暖玉生烟 此情可待成追忆 只是当时已惘然
+
+标点符号
 
