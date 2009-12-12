@@ -732,6 +732,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
 
      * 〖条件〗插入自制五笔云输入词库： `wimim.wubi2pinyin.txt`__
      * 〖操作〗<Ctrl-6>切换，敲五笔，上拼音，按空格键入〖云〗。
+     * 【注】如果用〖想云就云〗，什么也不要下载，什么也不要设置。 
 
  (5) 支持中文输入模式〖经典动态〗输入风格 （缺省）
 
