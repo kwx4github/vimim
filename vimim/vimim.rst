@@ -2913,6 +2913,7 @@ WHAT IS NEW
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] add :profile start /tmp/vimim.profile for optimization
+#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [done] [cloud] cloud. => always non-cloud if ending with one dot
 #. [redo] [cloud] support CLOUD for all using comma before OneKey
 #. [done] issue 15: set/reset lazyredrew for OneKey
@@ -2941,25 +2942,11 @@ WHAT IS NEW
 #. [done] [egg] add new easter egg for coding: vimims<C-\>
 #. [done] [egg] add new easter egg for coding: vimimdefaults<C-\>
 #. [redo] workflow, no need buggy s:vimim_resume_shuangpin()
-#. [todo] <Enter><Enter> cannot <Enter> after chinese punctuation
-#. [todo] ,sw8ql need OneKey twice
-#. [todo] <OneKey> without reset <Space>, ignore no completefunc error
-#. [todo] function! s:vimim_pageup_pagedown(matched_list)
-#. [todo] issue 32: 857807627775 CLOUD for queyunmu
-#. [todo] OneKey => :let show = {1: 'one', 2: 'two', 3: 'three'}
+#. [done] <OneKey> without reset <Space>, ignore no completefunc error
+#. [done] function! s:vimim_pageup_pagedown(matched_list)
+#. [done] issue 32: 857807627775 CLOUD for queyunmu
 #. [done] vimim_alphabet_auto_select for ShuangPin, might be possible
-#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [todo] [egg] for session varialbes
-#. [todo] [egg] for functions
-#. [todo] [regression] "智能ABC: woybyigemg" =>
-#. [todo] [regression] mjads.xdhao.jdaaa mjads.xdhao.jdaaa
-#. [todo] [regression] seentence match => woyouyigemeng
-#. [todo] " [datafile update] modify data in memory based on past usage
-#. [todo] [egg] vimimcloud: haofengpingjielisongwoshangqingyun
-#. [todo] [egg] vimimtest:  haofengpingjielisongwoshangqingyun
-#. [todo] [paste] ,,,a => customized entry, poem, for sharp display
+#. [redo] [datafile update] modify data in memory based on past usage
+#. [done] [paste] ,,,a => customized entry, poem, for sharp display
 
-,,,a 锦瑟 李商隐 锦瑟无端五十弦 一弦一柱思华年 庄生晓梦迷蝴蝶 望帝春心托杜鹃 沧海月明珠有泪 蓝田日暖玉生烟 此情可待成追忆 只是当时已惘然
-
-标点符号
 
