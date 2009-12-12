@@ -856,7 +856,7 @@ VimIM 拼音输入码表样例：
   汉语拼音       http://vimim.googlecode.com/files/vimim.pinyin.txt
   拼音大词库     http://vimim.googlecode.com/files/vimim.pinyin_huge.txt
   fcitx大词库    http://vimim.googlecode.com/files/vimim.pinyin_fcitx.txt
-  搜狗单字双字   http://vimim.googlecode.com/files/vimim.pinyin_quote_sogou.txt
+  搜狗单双字     http://vimim.googlecode.com/files/vimim.pinyin_quote_sogou.txt
 ================ =======================================================
 
 VimIM 拼音输入总结：
@@ -1837,7 +1837,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
   + 【缺省开启】:let g:vimim_punctuation_navigation=1
 
     +  彻底关闭可设：:let g:vimim_punctuation_navigation=-1
-    +  选择关闭可设：:let g:vimim_punctuation_navigation=2
+    +  关闭逗号句号：:let g:vimim_punctuation_navigation=0
 
        - 在〖中文输入模式〗中关闭
        - 在〖点石成金〗中开启
@@ -2948,5 +2948,6 @@ WHAT IS NEW
 #. [done] vimim_alphabet_auto_select for ShuangPin, might be possible
 #. [redo] [datafile update] modify data in memory based on past usage
 #. [done] [paste] ,,,a => customized entry, poem, for sharp display
+#. [todo] :let g:vimim_punctuation_navigation=0 makes -= available
 
 
