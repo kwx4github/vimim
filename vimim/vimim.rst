@@ -1834,6 +1834,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
   + 【标点智能化】 标点既可导航，也可玩 `中文标点`_
   + 【翻页优化】翻页内容可来自cache: 云输入翻页的福音。
+  + 【标点】includes 逗号、句号、减号、等号、[、]、分号
   + 【缺省开启】:let g:vimim_punctuation_navigation=1
 
     +  彻底关闭可设：:let g:vimim_punctuation_navigation=-1
@@ -2948,6 +2949,6 @@ WHAT IS NEW
 #. [done] vimim_alphabet_auto_select for ShuangPin, might be possible
 #. [redo] [datafile update] modify data in memory based on past usage
 #. [done] [paste] ,,,a => customized entry, poem, for sharp display
-#. [todo] :let g:vimim_punctuation_navigation=0 makes -= available
+#. [todo] :let g:vimim_punctuation_navigation=0 makes - and = available
 
-
+退
