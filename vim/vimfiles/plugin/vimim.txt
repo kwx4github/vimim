@@ -3459,6 +3459,7 @@ bachuluobudaichuni 拔出萝卜带出泥
 back 背 回 退 #
 background 背景 #
 backslash 反斜杠 #
+backspace 退格键
 backward 落后 #
 bacuichuqun 拔萃出群
 bad 坏 糟 #
@@ -10745,6 +10746,7 @@ clear 清楚 澄清 #
 clearly 显然 明明 #
 clerk 书记 店员 #
 clever 聪明 伶俐 巧妙 机敏 灵巧 #
+client 客户 客户端 顾客 #
 cliff 断崖 绝壁 #
 climate 气候 水土 #
 climax 性高潮 #
@@ -10803,6 +10805,7 @@ compare 比较 对照 #
 compass 指南针 罗盘 圆规 #
 compatible 兼容 #
 compete 竞争 竞赛 #
+competitor 竞争者 #
 compile 编辑 #
 compiler 编译器 #
 complain 埋怨 牢骚 诉苦 #
@@ -20013,6 +20016,7 @@ gun 枪 #
 gun 棍 滚 磙 辊
 gun3 滚 磙 辊
 gunainai 姑奶奶
+gunanguanv 孤男寡女
 gunbang 棍棒
 gunbian 滚边
 gunbian 绲边
@@ -29929,7 +29933,7 @@ leg 腿 #
 leguan 乐观
 lehe 乐和
 lehehe 乐呵呵
-lei 雷 泪 儡 勒 咧 嘞 垒 嫘 擂 檑 诔 镭 漯 磊 礌 类 累 缧 耒 肋 蕾
+lei 累 泪 类 擂 雷 儡 勒 咧 嘞 垒 嫘 檑 诔 镭 漯 磊 礌 缧 耒 肋 蕾
 lei1 勒 嘞
 lei2 雷 嫘 檑 缧 羸 镭
 lei3 磊 儡 垒 耒 蕾 诔
@@ -29937,6 +29941,7 @@ lei4 泪 累 擂 类 肋
 leibao 雷暴
 leibi 类比
 leibie 类别
+leibulei 累不累
 leichang 雷场
 leici 累次
 leida 雷达
@@ -35748,11 +35753,8 @@ one 一 一个 #
 online 在线 #
 only 只有 唯一 #
 ons 一夜情 #
-oooo 　 零 〇 ○ ●
-oooo 东南西北
-oooo 春夏秋冬
-oooo 梅兰竹菊
-oooo 發萬中囍
+oo 　 零 〇 ○ ●
+oooo 东南西北 春夏秋冬 梅兰竹菊 發萬中囍
 oops 哎呀 哎呦 喔唷 #
 opec 欧佩克 #
 open 开启 开着 #
@@ -39062,6 +39064,7 @@ qinshi 寝室 侵蚀 琴师 亲事
 qinshibuan 寝食不安
 qinshou 亲手
 qinshou 禽兽
+qinshouburu 禽兽不如
 qinshouermei 螓首蛾眉
 qinshu 亲属
 qinshu 亲疏
@@ -42273,6 +42276,7 @@ shanshan 讪讪
 shanshan 鄯善
 shanshan 闪闪
 shanshancongchang 善善从长
+shanshanfaguang 闪闪发光
 shanshang 山上
 shanshanlaichi 姗姗来迟
 shanshanwue 善善恶恶
@@ -47819,6 +47823,7 @@ tingkan 停刊
 tingkao 停靠
 tingke 停课
 tingke 听课
+tingleirende 挺累人的
 tingli 听力 挺立 葶苈
 tingling 停灵
 tingliu 停留
@@ -49392,6 +49397,7 @@ wanererxiao 莞尔而笑
 wanerming 玩儿命
 wanerpiao 玩儿票
 wanerwan 玩儿完
+wanfa 玩法
 wanfan 晚饭
 wanfen 万分
 wanfu 万福
@@ -63312,6 +63318,3 @@ zuzongfadu 祖宗法度
 zuzongjiafa 祖宗家法
 zuzubeibei 祖祖辈辈
 zuzuyouyu 足足有余
-client 客户 客户端 顾客 #
-competitor 竞争者 #
-  
