@@ -208,8 +208,7 @@ __ `VimIM Foundation`_
 .. http://www.bluedeep.cn/post/89/
    自己也体验了一把，发现原来新版本的VimIM是如此的出色，故转了过来。
    新增了好多很棒也是很必要的功能。成功的超载了其他的外挂输入法。
-.. http://goooguo.yo2.cn/articles/vimim%E7%BB%99%E6%88%91%E9%80%81%E6%9D%A5%E4%BA%86%E5%8F%8A%E6%97%B6%E9%9B%A8.html
-   Vimim及时雨 ... 今天才突然发现，现在的效果已经比较能够接受了。
+.. Vimim及时雨 ... 今天才突然发现，现在的效果已经比较能够接受了。
 .. http://logs.ubuntu-eu.org/free/2009/06/08/%23ubuntu-tw.html
    用vim的福音来了，在vim中因频繁切换输入法而苦恼的人，现在终于可以解脱了
 .. http://bbs.ctex.org/viewthread.php?tid=50002
@@ -2351,183 +2350,27 @@ FAQ
 
 :问: | VimIM 的作者是谁?
 :答: | 作者的网名是　 **vimim**  :)
-     |
-     | 作者玩 Vim 的历史：
-     | 　　(1) 早在 Vim 3.0 上市之际，开始淘金。
-     | 　　(2) 曾经专程驱车去 Googleplex 朝见过 Bram
-     | 　　(3) 以前用 Vim 编过程式，写过论文。
-     | 　　(4) 现在用 Vim 写信发帖，调试VimIM
-     | 　　(5) 眼下用 OneKey 敲本篇 VimIM 中文用户手册。
-     |
-     | 作者迫使 Vim 输出中文的尝试：
-     | 　　(1) 下决心记住好几个 Unicode 标准内码 :)
-     | 　　(2) 利用 Vim 的 thesaurus 做过英汉字典
-     | 　　(3) 利用 Vim 的 omni completion 开发 VimIM
+     | `Random FAQ about release of VimIM`__
      |
 
-:问: | VimIM 的理念是什么？
-:答: | VimIM 不推销所谓概念或者理念。
-     | VimIM 提供的是实实在在的产品和真真切切的BONUS
-     | VimIM 玩家开心，我们就开心。
-     |
+__ http://code.google.com/p/vimim/wiki/FAQ_Old
 
-:问: | 作者开发 VimIM 最开心的时候是什么？
-:答: | 偶尔上网搜索 vimim, 发现有玩家：
-     |
-     |     ㈠ `因为VimIM而更加喜欢 Vim！`__
-     |     ㈡ `VimIM使我们这些Vim新手更愿意深入学习和使用Vim了！`__
-     |
-     | 而最赏心悦目的是 `居然可以这样`__ 的感觉。
-     |
-     | VimIM 是站在巨人 vim 的肩膀上开发的。
-     | 作者希望更多国人因之发现 vim 这座金矿。
-     |
-     | vim 威力无边，深不可测。
-     | vim 千锤百炼，万古长青。
-     |
-
-__ http://cookinglinux.cn/emacs-learning-three-step.html#comment-205
-__ http://groups.google.com/group/vimim/browse_thread/thread/b03a7d19ccdf389f
-__ http://code.google.com/p/vimim/wiki/AboutManual
-
-:问: | 作者开发 VimIM 最不开心的时候是什么？
-:答: | 总计浪费二个小时，与Vim.cn上的bug辩论VimIM基金会。
-     | 其实是作者咎由自取：对牛怎么能够去弹琴呢？
-     | How could I cast pearls before swine?
-     | —— 是以为戒。
-     |
-
-:问: | 输入法市场早已饱和，作者为什么还在凑热闹？
-:答: | 采菊南山，自斟自饮。
-     |
-     | 作者孤陋寡闻，只会用Vim，离开Vim不知道如何编辑。
-     | 作者坐井观天，不习惯与Vim不一样的文字处理方式。
-     |
-     | 作者的中文输入法背景：
-     | 　　(1) 试过几个系统输入法，但感觉不爽，都卸掉了。
-     | 　　(2) 了解一些汉语拼音，但分不清“书”和“输”。
-     | 　　(3) 小时候偷偷摸摸研究过四角号码检字法。
-     | 　　(4) 擅长英文盲打。
-     |
-     | VimIM 就是在这样的背景问世的。
-     | 而今水到渠成：离开VimIM，作者不知道如何输入中文。
-     |
-
-:问: | 为啥非要用 VimIM 呢？尤其还是在Windows下面。
-     | 如果有系统的输入法，VimIM 有什么优势?
-:答: | VimIM 不过是给 vim 玩家提供的一个 yet another 选择。
-     | VimIM 可以给 vim 的中文用户提供一些出其不意的方便。
-     |
-     | vim 和外挂输入法凑合在一起，好比一对捆绑夫妻，同床异梦。
-     | vim 和 VimIM 的结合可以说是男欢女爱，水乳交融。
-     |
-     | 与系统的输入法比，VimIM 也有自己的优势：
-     |
-     | (1) VimIM 是真正属于Vim玩家自己的中文输入法。
-     | (2) VimIM 与操作系统独立；与Vim完全整合。
-     | (3) 玩家完全拥有自己的词库（比如粤语，上海话，英文，电码 etc)
-     | (4) 玩家可以自定个性输入法：自己定的规矩往往是最好的规矩。
-     | (5) `〖点石成金〗`_ 无需状态切换，敲中文敲英文没有区别。
-     | (6) VimIM 可随意扩展：看看我们刚刚上市的VimIM `CLOUD 云输入`_
-     |
-
-:问: | VimIM 为什么提供三个中文输入模式?
-:答: | 这主要是因为有这样的需求：
-     | 点石成金： **OneKey** 　优于在英文环境下输入搜索中文。
-     | 静态模式： **static** 　长于“中文/英文/数字”混合输入
-     | 动态模式： **dynamic**  输入风格比较流行
-     |
-     | 【注】OneKey 其实不能称之为模式，因为没有所谓模式转换。
-     | 　　　OneKey 打汉字找中文方便自然，完美融合中英文输入。
-     |
-
-:问: | 关于 即插即用 `VimIM 双码输入`_
-     | 　　>> 同时用音码和形码得到一个“混码”，
-     | 　　>> 人脑要编码两次，难道会比直接用形码还方便？
-:答: | 这取决于：㈠对“双码”的正确理解 ㈡用户的输入法背景
-     |
-     | 【要点】“音码”和“形码”和“双码”相互独立，相辅相成。
-     |
-     | 换言之，“音码”或“形码”可以继续使用，毫无二致。
-     | “双码”的妙处有如卧虎藏龙，想用的时候可以享用。
-     |
-     | 而且，不限具体形码。用户可以自己选择：懂什么用什么。
-     | 例如：作者在算盘时代学过的四角号码竟然可以“古木逢春”：
-     | 　　　摇身一变，四角号码检字法成了四角号码输入法。
-     |
-     | 【特点】VimIM 在算法上下功夫，而不是强迫用户记忆新规则。
-     |
-
-:问: | 作者的 VimIM 设置是什么?
-:答: | 作者致力于 **Plug & Play** 不折腾，保证“零”设置也可输入中文。
-     | 不加设置，装上脚本和词库，用 **i_CTRL-\\** 可直接上汉字。
-     | 如果一字不上，词库不占记忆。
-     | 无论什么状态，vim 都不会被和谐!
-     |
-     | 基于自己的输入法背景知识，作者拼凑了一个自己的词库：
-     | 　　(1) 英文　　　vimim.english.txt
-     | 　　(2) 拼音　　　vimim.pinyin.txt
-     | 　　(3) 四角号码　vimim.4corner.txt
-     | 　　把三个码表搅在一起，sort 后存盘。
-     |
-     | 基于自己的词库和爱好，作者挑选了自己的选项并置于:
-     |     " ----------------------------------
-     |     function! s:vimim_initialize_debug()
-     |     " ----------------------------------
-     |
-
-:问: | Vim 还有没有其他输入中文的插件?
-:答: | 百花齐放是 vim 玩家的福音。
-     | VimIM 抛砖引玉，vim 内嵌中文输入法开始雨后春笋：
-     | (1) ywvim__ 引入全新的中文输入模式，特别优于形码输入。
-     | (2) vimim-wubi__ 精于五笔输入。
-     |
-
-__ http://www.vim.org/scripts/script.php?script_id=2662
-__ http://code.google.com/p/vimim-wubi/
-
-:问: | VimIM 的宣传是不是太过?
-:答: | 这个见仁见智，也取决于对 vim 的看法。
-     | 　　(1) 不喜欢 vim 的输入法高手，完全可以不屑一顾。
-     | 　　(2) 偏爱 VimIM 的 vim 玩家，希望 VimIM 越牛越好。
-     |
-     | 作者本着写简历的心态，一路高调，主要是基于:
-     | 　　(1) VimIM 不是赢利产品
-     | 　　(2) VimIM 源码开放，欢迎玩家参与
-     | 　　(3) VimIM 属于所有 VimIM 玩家
-     | 　　(4) VimIM 还提供 `bonus <#vimim-foundation>`_
-     | 　　(5) VimIM 是历史上最容易卸载的中文输入法
-     |
-
-:问: | VimIM 的词库能不能更新?
-:答: | 词库完全属于玩家自己。玩家的词库可以随时更新。
-     | VimIM 词库的特点是纯文本，而且格式最简单。
-     | 更新词库可以用 vim 编辑，加减乘除，随心所欲。
-     | VimIM 还提供几个功能方便更新词库:
-     | 　 `可控词频调整`_
-     | 　 `见字找码`_
-     | 　 `动态造词`_
-     |
-
-:问: | Why not delete non-essential text from the vimim.vim?
-:答: | Okay, the original code for 鸣谢 is moved here for fun:
-     | if keyboard =~ '\*\{2}credits'
-     |     let a='VimIM would never have become what it is now,'
-     |     let a.=' without the help of these people!'
-     |     let a.=' (1) those on vim_use for inspiration'
-     |     let a.=' (2) those on newsmth.net for discussion'
-     |     let a.=' (3) all users for feedback and encouragement'
-     |     let a.=' (4) Yue Wu on newsmth.net for dynamic mode etc'
-     |     let a.=' (5) Tony Mechelynck on vim_use for char_class'
-     |     let a.=' (6) freeai.blogspot.com for Double Pinyin'
-     |     let a.=' (7) dots, Yesheng Zou, on VimIM group for WuBi'
-     |     let result = a
-     | endif
-     |
 
 :问: | VimIM 与 latex-suite plugin 好像有点冲突?
 :答: | 有玩家反应。Let's wait for solution from those players who
      | are interested in making both plugins work in harmony.
+     |
+
+:问: | VimIM 会不会和谐用户的设置，例如：nolazyredraw?
+:答: | Yes, but ...
+     | 如果不激活 VimIM, Vim 的设置永远不会“被和谐”。
+     |
+     | 用〖点石成金〗上字以后，如果愿意，可以敲空格键。
+     | 空格键略具智能：可以把VimIM 固有的几个设置
+     | (lazyredraw, pumheight, hlsearch)
+     | 恢复到用户的在自己的.vimrc中的设置。
+     |
+     | 【更新】 【缺省关闭】 :let g:vimim_sexy_onekey=0
      |
 
 :问: | VimIM 与 Vim abbreviation 好像有点冲突?
@@ -2539,16 +2382,6 @@ __ http://code.google.com/p/vimim-wubi/
      | 空格键时，空格键又可以激活abbreviation了。
      |
      | 原因：OneKey需要赋予空格键一点智能，以便于上字。
-     |
-
-:问: | VimIM 会不会和谐用户的设置，例如：nolazyredraw?
-:答: | Yes, but ...
-     | 如果不激活 VimIM, Vim 的设置永远不会“被和谐”。
-     |
-     | 用〖点石成金〗上字以后，如果愿意，可以敲空格键。
-     | 空格键略具智能：可以把VimIM 固有的几个设置
-     | (lazyredraw, pumheight, hlsearch)
-     | 恢复到用户的在自己的.vimrc中的设置。
      |
 
 VimIM Foundation
@@ -2631,6 +2464,7 @@ VimIM的词库来源
   - fcitx 拼音输入法大词库 (processed from fcitx)
   - 搜狗单字双字 (downloaded and processed from web)
   - 自然输入法词库 (sent from user)
+  - 搜狗拼音单字双字词库 (collected from sogou)
   - 汉语拼音输入法大词库 (combination, after processing)
   - 汉语拼音输入法词库 (sent from user)
   - 韩文输入法词库 (sent from user)
@@ -2652,7 +2486,6 @@ VimIM的词库来源
 
 __ http://vim.sf.net/scripts/script.php?script_id=2506
 __ http://code.google.com/p/vimim/downloads/list
-
 
 |
 |
@@ -2720,7 +2553,6 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/4dc68560ae37e4d0
         source $VIMRUNTIME/menu.vim
         set langmenu=zh_CN.UTF-8
         " --------------------------------------
-
 
 
 |
@@ -2952,4 +2784,6 @@ WHAT IS NEW
 #. [done] [paste] ,,,a => customized entry, poem, for sharp display
 #. [todo] :let g:vimim_punctuation_navigation=0 makes - and = available
 
+退
+退
 退
