@@ -2784,6 +2784,5 @@ WHAT IS NEW
 #. [done] [paste] ,,,a => customized entry, poem, for sharp display
 #. [todo] :let g:vimim_punctuation_navigation=0 makes - and = available
 
-退
-退
-退
+
+
