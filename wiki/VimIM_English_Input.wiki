@@ -14,7 +14,8 @@
 	
 VimIM 最擅长于解决国际纠纷。
 VimIM 的解决方案是：
-http://vimim.googlecode.com/svn/vimim/vimim.html#id44
+http://vimim.googlecode.com/svn/vimim/vimim.html
+==> 英文输入
 	
 不管是aobama嬴还是oubama输, VimIM 敲的永远是最准确的——
 	
