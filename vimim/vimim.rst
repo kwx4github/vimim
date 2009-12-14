@@ -296,6 +296,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/3c94d74fcf43bf22
 + `最早发现〖点石成金〗的VimIM粉丝`__
 + `与抗美援朝风马牛不相及：用VimIM敲韩语`__
 + `排序多个词库文件成为一个词库`__
++ `在VIM里方便的输入中文记VimIM`__
 
 
 __ http://www.linuxsir.org/bbs/showthread.php?p=2051139#post2051139
@@ -306,6 +307,8 @@ __ http://bigeagle.yo2.cn/articles/vimim%E2%80%94%E2%80%94%E5%88%A9%E7%94%A8vim%
 __ http://freeai.blogspot.com/2009/03/vimim.html
 __ http://code.google.com/p/vimim/wiki/DIY_Korean
 __ http://code.google.com/p/vimim/wiki/MultiWordListFiles
+__ http://www.bibibang.com/group_thread/view/id-12421
+
 
 
 |
@@ -650,7 +653,7 @@ __ http://vimim.googlecode.com/files/vimim.12345.txt
 |
 
 
-.. sidebar::  VimIM `CLOUD 云输入`_
+.. sidebar::  VimIM `CLOUD 云输入`_  　〖想云就云〗 
 
    .. figure:: vimim_dream.png
    .. figure:: cloud_world.gif
@@ -731,7 +734,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
 
      * 〖条件〗插入自制五笔云输入词库： `wimim.wubi2pinyin.txt`__
      * 〖操作〗<Ctrl-6>切换，敲五笔，上拼音，按空格键入〖云〗。
-     * 【注】如果用〖想云就云〗，什么也不要下载，什么也不要设置。 
+     * 【注】如果用〖想云就云〗，什么也不要下载，什么也不要设置。
 
  (5) 支持中文输入模式〖经典动态〗输入风格 （缺省）
 
@@ -1474,7 +1477,7 @@ VimIM Mapping
   - 〖回车键〗或无缝上英文，或回车，或上空格。
   - 【缺省关闭】 :let g:vimim_sexy_onekey=0
   - 【强行关闭】
-    
+
     + 在空格或汉字后敲【空格键】
     + 在omni菜单中敲【点石键】
 
@@ -2259,7 +2262,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
     + dot as delimiter: 逐词匹配㈠句号分隔，自己定匹配：
 
   - magic comma
-    
+
     + comma as tail: for 〖想云就云〗不换模式，不限输入法
     + comma as head: for universal imode: single comma 小写中文数字
     + comma as head: for universal imode: double comma 大写中文数字
@@ -2585,6 +2588,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/4dc68560ae37e4d0
 
 WHAT IS NEW
 ===========
+#. [wish] petition to add VimIM to the official Vim Help "mbyte.txt"
 #. [done] support dynamic menu to speed up in Chinese input mode
 #. [done] support fuzzy search without modifying data file
 #. [done] support wildcard, using both * and . the same way as grep
@@ -2670,19 +2674,8 @@ WHAT IS NEW
 #. [done] make Space key smart not to compromise abbreviation
 #. [done] introduce auto processing a separate private data file
 #. [done] upload a sample dummy privates.txt as an example
-#. [todo] petition to add VimIM to the official Vim Help "mbyte.txt"
-#. [todo] broadcast VimIM to *relating* newsgroups and blogs
-#. [todo] check if it is possible to load datafile from "gvim --remote"
-#. [todo] design a way to use cedict.txt as English input
-#. [todo] use SQLite to store and manage datafile?
-#. [todo] trying to support i_CTRL-N i_CTRL-P for Chinese text
-#. [todo] support "associate" function if it is helpful
-#. [todo] keep input history for further processing like search
-#. [todo] save user input as a hash: { keycode: Chinese }
-#. [todo] develop an algorithm to sort Chinese by frequent usage
-#. [todo] try to make vimim.vim and latex-suite plugin work together
-#. [todo] build an internal auto regression test suites
-#. [todo] optimize mixture IM of pinyin and wubi
+#. [done] broadcast VimIM to *relating* newsgroups and blogs
+#. [done] build an internal auto regression test suites
 #. [done] support "i have a dream." for English OneKey sentence match
 #. [done] support "i have a dream." for PinYin  OneKey sentence match
 #. [done] support "i have a dream." for WuBi    OneKey sentence match
@@ -2745,9 +2738,6 @@ WHAT IS NEW
 #. [done] add easter egg for user environment: vimim<C-\>
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
-#. [todo] [test] make sure no regression, following each item on manual
-#. [todo] add :profile start /tmp/vimim.profile for optimization
-#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [done] [cloud] cloud. => always non-cloud if ending with one dot
 #. [redo] [cloud] support CLOUD for all using comma before OneKey
 #. [done] issue 15: set/reset lazyredrew for OneKey
@@ -2782,7 +2772,21 @@ WHAT IS NEW
 #. [done] vimim_alphabet_auto_select for ShuangPin, might be possible
 #. [redo] [datafile update] modify data in memory based on past usage
 #. [done] [paste] ,,,a => customized entry, poem, for sharp display
-#. [todo] :let g:vimim_punctuation_navigation=0 makes - and = available
-
+#. [done] :let g:vimim_punctuation_navigation=0 makes - and = available
+#. [done] onekey, g:vimim_sexy_onekey=1, no transformation of double ,.
+#. [done] yun0mu7=>yunmu yun0mu=>nothing [bug] '^\l\+\d\+' && '\l\+\d\=$'
+#. [todo] add :profile start /tmp/vimim.profile for optimization
+#. [todo] try to make vimim.vim and latex-suite plugin work together
+#. [todo] check if it is possible to load datafile from "gvim --remote"
+#. [todo] use SQLite to store and manage datafile?
+#. [todo] design a way to use cedict.txt as English input
+#. [todo] trying to support i_CTRL-N i_CTRL-P for Chinese text
+#. [todo] save user input as a hash: { keycode: Chinese }
+#. [todo] keep input history for further processing like search
+#. [todo] develop an algorithm to sort Chinese by frequent usage
+#. [todo] support "associate" function if it is helpful
+#. [todo] optimize mixture IM of pinyin and wubi
+#. [todo] [test] make sure no regression, following each item on manual
+#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 
 
