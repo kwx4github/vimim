@@ -363,6 +363,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 * vimim
 * vimimvim
 * vimimhelp
+* vimimdebug
 * vimimdefaults
 
 |
@@ -1253,6 +1254,7 @@ __ `概述`_
 
 【带词库】
 
+  * 〖特点〗 plug & play
   * 用VimIM 打字，只需一个词库。玩家可以从VimIM 码表样例中挑选。
   * 如果希望分开保管 `私人信息`_  ：可以加上 privates.txt
   * 如果想玩 即插即用 `VimIM 双码输入`_  ：可以同时插入两个词库文件：
@@ -1262,11 +1264,21 @@ __ `概述`_
 
 【词库位置】
 
-  * 用户可以随意设置自己词库的位置:
+  * 〖特点〗 多个词库： set & play
+  * 用户可以随意设置自己词库的位置：（例如）
 
     * ``:let g:vimim_datafile="path_to_your_own_data_file"``
-    * ``:let g:vimim_privates_txt="path_to_your_own_privates_file"``
+    * ``:let g:vimim_datafile_private="path_to_your_own_privates_file"``
+    * ``:let g:vimim_datafile_4corner="path_to_your_own_digital_im_file"``
 
+【多功能词库】
+
+  * 〖特点〗 一个词库： set & play
+  * 用户可以在一个词库中混合几个输入法：（例如）
+
+    * ``:let g:vimim_datafile_has_english=1``
+    * ``:let g:vimim_datafile_has_pinyin=1``
+    * ``:let g:vimim_datafile_has_4corner=1``
 
 |
 |
@@ -1337,7 +1349,7 @@ __ http://vimim.googlecode.com/files/vimim.english.txt
 
   | 既可直接把 privates.txt 扔到您的 vim 的 plugin 目录之下
   | 也可在您的 .vimrc 中指定您的私人信息文件：
-  | ``:let g:vimim_privates_txt="path_to_your_own_privates_file"``
+  | ``:let g:vimim_datafile_private="path_to_your_own_privates_file"``
 
 【特点】
 
@@ -2683,7 +2695,7 @@ WHAT IS NEW
 #. [done] support "i have a dream." for CangJie OneKey sentence match
 #. [done] support "i have a dream." for Nature  OneKey sentence match
 #. [done] support live "today" (itoday) and "now" (inow) in Chinese
-#. [done] support arbitrary private file location: g:vimim_privates_txt
+#. [done] support arbitrary private file location: g:vimim_datafile_private
 #. [done] [zhengma] fix aewz using datafile: vimim.zhengma.txt
 #. [done] [ctc] create vimim.ctc.txt from unihan.txt, PRC telegraph code
 #. [done] [ctc] support Chinese Telegraph Code (CTC) input and search
@@ -2788,5 +2800,8 @@ WHAT IS NEW
 #. [todo] optimize mixture IM of pinyin and wubi
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-
+#. [todo] [internal] build debug framework
+#. [todo] [internal] :let g:vimimdebug=1 => vimimdebug =>
+#. [todo] [debug] ma77 mjjas yun0mu yun0mu7
+#. [todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher
 
