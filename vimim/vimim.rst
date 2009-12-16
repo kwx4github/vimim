@@ -63,6 +63,7 @@
            datafile 中文电报码  http://www.dtc.umn.edu/~reedsj/ctc.html
    code -s datafile -p vimim vimim.ctc.txt
    --------------------------------------------
+   cd /home/vimim
    code -s datafile -p vimim vimim.wubi2pinyin.txt
    code -s datafile -p vimim vimim.wubi.txt
    code -s datafile -p vimim vimim.wubi98.txt
@@ -654,7 +655,7 @@ __ http://vimim.googlecode.com/files/vimim.12345.txt
 |
 
 
-.. sidebar::  VimIM `CLOUD 云输入`_  　〖想云就云〗 
+.. sidebar::  VimIM `CLOUD 云输入`_  　〖想云就云〗
 
    .. figure:: vimim_dream.png
    .. figure:: cloud_world.gif
@@ -1492,6 +1493,7 @@ VimIM Mapping
 
     + 在空格或汉字后敲【空格键】
     + 在omni菜单中敲【点石键】
+    + 用i_Ctrl-V加【空格键】强制出空格
 
 |
 
@@ -2804,4 +2806,18 @@ WHAT IS NEW
 #. [todo] [internal] :let g:vimimdebug=1 => vimimdebug =>
 #. [todo] [debug] ma77 mjjas yun0mu yun0mu7
 #. [todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher
+#. [todo] [pinyin+wubi] uses z to mark pinyin and g:vimim_wubi_non_stop=0
+#. [todo] [cidu] datafile initialization and management
+#. [todo] [pinyin+4corner] jingshen9
+
+95
+959
+jing95
+jingshen9
+jlgls
+jslgdg
+ma77li40
+mali77
+
+
 
