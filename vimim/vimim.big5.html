@@ -773,6 +773,7 @@ VimIM 不錯, 一直在用 :) -->
 <li>vimim</li>
 <li>vimimvim</li>
 <li>vimimhelp</li>
+<li>vimimdebug</li>
 <li>vimimdefaults</li>
 </ul>
 <div class="line-block">
@@ -2184,6 +2185,7 @@ If the following download URL does not work for you, please
 <p>【帶詞庫】</p>
 <blockquote>
 <ul class="simple">
+<li>〖特點〗 plug &amp; play</li>
 <li>用VimIM 打字，隻需一個詞庫。玩家可以從VimIM 碼表樣例中挑選。</li>
 <li>如果希望分開保管 <a class="reference internal" href="#id74">私人信息</a>  ：可以加上 privates.txt</li>
 <li>如果想玩 即插即用 <a class="reference internal" href="#vimim">VimIM 雙碼輸入</a>  ：可以同時插入兩個詞庫文件：<ul>
@@ -2196,9 +2198,23 @@ If the following download URL does not work for you, please
 <p>【詞庫位置】</p>
 <blockquote>
 <ul class="simple">
-<li>用戶可以隨意設置自己詞庫的位置:<ul>
+<li>〖特點〗 多個詞庫： set &amp; play</li>
+<li>用戶可以隨意設置自己詞庫的位置：（例如）<ul>
 <li><tt class="docutils literal">:let <span class="pre">g:vimim_datafile=&quot;path_to_your_own_data_file&quot;</span></tt></li>
-<li><tt class="docutils literal">:let <span class="pre">g:vimim_privates_txt=&quot;path_to_your_own_privates_file&quot;</span></tt></li>
+<li><tt class="docutils literal">:let <span class="pre">g:vimim_datafile_private=&quot;path_to_your_own_privates_file&quot;</span></tt></li>
+<li><tt class="docutils literal">:let <span class="pre">g:vimim_datafile_4corner=&quot;path_to_your_own_digital_im_file&quot;</span></tt></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>【多功能詞庫】</p>
+<blockquote>
+<ul class="simple">
+<li>〖特點〗 一個詞庫： set &amp; play</li>
+<li>用戶可以在一個詞庫中混合幾個輸入法：（例如）<ul>
+<li><tt class="docutils literal">:let g:vimim_datafile_has_english=1</tt></li>
+<li><tt class="docutils literal">:let g:vimim_datafile_has_pinyin=1</tt></li>
+<li><tt class="docutils literal">:let g:vimim_datafile_has_4corner=1</tt></li>
 </ul>
 </li>
 </ul>
@@ -2312,7 +2328,7 @@ If the following download URL does not work for you, please
 <div class="line-block">
 <div class="line">既可直接把 privates.txt 扔到您的 vim 的 plugin 目錄之下</div>
 <div class="line">也可在您的 .vimrc 中指定您的私人信息文件：</div>
-<div class="line"><tt class="docutils literal">:let <span class="pre">g:vimim_privates_txt=&quot;path_to_your_own_privates_file&quot;</span></tt></div>
+<div class="line"><tt class="docutils literal">:let <span class="pre">g:vimim_datafile_private=&quot;path_to_your_own_privates_file&quot;</span></tt></div>
 </div>
 </blockquote>
 <p>【特點】</p>
@@ -4336,7 +4352,7 @@ set langmenu=zh_CN.UTF-8
 <li>[done] support &quot;i have a dream.&quot; for CangJie OneKey sentence match</li>
 <li>[done] support &quot;i have a dream.&quot; for Nature  OneKey sentence match</li>
 <li>[done] support live &quot;today&quot; (itoday) and &quot;now&quot; (inow) in Chinese</li>
-<li>[done] support arbitrary private file location: g:vimim_privates_txt</li>
+<li>[done] support arbitrary private file location: g:vimim_datafile_private</li>
 <li>[done] [zhengma] fix aewz using datafile: vimim.zhengma.txt</li>
 <li>[done] [ctc] create vimim.ctc.txt from unihan.txt, PRC telegraph code</li>
 <li>[done] [ctc] support Chinese Telegraph Code (CTC) input and search</li>
@@ -4441,12 +4457,16 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] optimize mixture IM of pinyin and wubi</li>
 <li>[todo] [test] make sure no regression, following each item on manual</li>
 <li>[todo] how to find vim executable? s:path=expand(&quot;&lt;sfile&gt;:p:h&quot;).&quot;/&quot;</li>
+<li>[todo] [internal] build debug framework</li>
+<li>[todo] [internal] :let g:vimimdebug=1 =&gt; vimimdebug =&gt;</li>
+<li>[todo] [debug] ma77 mjjas yun0mu yun0mu7</li>
+<li>[todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 12:08:36 PST on Monday, 12/14/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 17:49:36 PST on Tuesday, 12/15/2009
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
