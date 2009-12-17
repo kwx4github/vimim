@@ -196,7 +196,7 @@ __ `VimIM Foundation`_
 .. http://groups.google.com/group/xiyoulinux  西邮Linux兴趣小组
    vimim -- 刚见到这个软件时让我目瞪口呆，真是太有创意了，居然利用
    vim的补全功能做了个中文输入法! 可以利用这个小工具在vim中输入中文，
-   配合着fbterm 真是太舒服了。码表有很多选择，vi fans 们不可错过。
+   配合着fbterm 真是太舒服了。词库有很多选择，vi fans 们不可错过。
    vimim的确太强悍了，几个月前看到时我跟楼主一个感觉的，而且可以当辞典用
 .. http://bbs.gucas.ac.cn/pc/pccon.php?id=126&nid=31404&s=all
    再无所求 vimim && fireinput  一个浏览器输入，一个vim输入，
@@ -422,7 +422,7 @@ Unicode 内码输入
 
 + 【广告】精巧细致的标准Unicode输入器，独此一家。
 + 【理想】书同文、文同码、码同键。
-+ 【特点】与输入法和码表都无关：以不变应万变。
++ 【特点】与输入法和词库都无关：以不变应万变。
 + 【用途】内码输入是输入非常用字符的有效途径。
 + 【特点】一个字符对应一个代码，武林高手可以中文盲打。
 + 【TIP】 UNICODE 内码一次性列表　　:call CJK()
@@ -477,7 +477,7 @@ GBK 内码输入
 **GBK标准内码输入器**
 
 + 【广告】短小精悍的标准GBK内码输入器，只此一家。
-+ 【特点】与输入法和码表都无关：以不变应万变。
++ 【特点】与输入法和词库都无关：以不变应万变。
 + 【用途】内码输入是输入非常用字符的有效途径。
 + 【特点】一个字符对应一个代码，不知有无玩GBK的武林高手?
 + 【TIP】 GBK内码一次性列表　　:call GBK()
@@ -509,7 +509,7 @@ Big5 内码输入
 **Big5标准内码输入器**
 
 + 【广告】简单明快的标准Big5内码输入器，仅此一家。
-+ 【特点】与输入法和码表都无关：以不变应万变。
++ 【特点】与输入法和词库都无关：以不变应万变。
 + 【用途】内码输入是输入非常用字符的有效途径。
 + 【特点】一个字符对应一个代码，不知有无玩Big5的武林高手?
 + 【TIP】 Big5内码一次性列表　　:call BIG5()
@@ -527,10 +527,10 @@ Big5 内码输入
 
 数码输入
 ========
-VimIM 数码输入码表样例：
+VimIM 数码输入词库样例：
 
 ================ =======================================================
-    数码                              码表 样本
+    数码                              词库 样本
 ================ =======================================================
    四角号码      http://vimim.googlecode.com/files/vimim.4corner.txt
    中文电码      http://vimim.googlecode.com/files/vimim.ctc.txt
@@ -558,7 +558,7 @@ VimIM 数码输入码表样例：
   + 【四角号码】可以实现“字典、电脑、手机”一路通。
   + 【技巧】结合音码则是如虎添翼。
   + 【参考】即插即用VimIM双码输入： `拼音★四角号码`_
-  + 【自动开启】如果plugin目录下有码表 `vimim.4corner.txt`__
+  + 【自动开启】如果plugin目录下有词库 `vimim.4corner.txt`__
   + 【鸣谢】电脑大师 `Bram`__ 发明推广Vim文本編輯器
   + 【鸣谢】编码大师 `王雲五`__ 发明 `四角號碼檢字法`__
   + 【鸣谢】国文大师 `胡适`__ 推广普及四角号码：
@@ -580,7 +580,7 @@ __ http://zh.wikipedia.org/wiki/%E8%83%A1%E9%80%82
 :【自己动手试一试】:
   #. 【目的】　纯数字　<==>　纯汉字
   #. 下载新版脚本 vimim.vim__
-  #. 下载新版码表 vimim.4corner.txt
+  #. 下载新版词库 vimim.4corner.txt
   #. 把两者扔到 vim 的 plugin 目录之下
 
 __ http://vim.sf.net/scripts/script.php?script_id=2506
@@ -607,7 +607,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
   + 【中文电码】史上最早的汉字编码（1880年）
   + 【打字】敲数字可以上汉字
   + 【查询】敲汉字可以查电码
-  + 【自动开启】如果plugin目录下有码表 `vimim.ctc.txt`__
+  + 【自动开启】如果plugin目录下有词库 `vimim.ctc.txt`__
 
 __ http://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%87%E7%94%B5%E7%A0%81
 __ http://vimim.googlecode.com/files/vimim.ctc.txt
@@ -615,7 +615,7 @@ __ http://vimim.googlecode.com/files/vimim.ctc.txt
 :【自己动手试一试】:
   #. 【目的】　电码　<==>　汉字
   #. 下载新版脚本 vimim.vim__
-  #. 下载新版码表 vimim.ctc.txt
+  #. 下载新版词库 vimim.ctc.txt
   #. 把两者扔到 vim 的 plugin 目录之下
 
 __ http://vim.sf.net/scripts/script.php?script_id=2506
@@ -640,13 +640,13 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 | 对于某些生僻字，您有可能并不清楚它的拼音。
 | 这时，您可以尝试使用VimIM提供的笔划输入功能。
 |
-| 样本笔画输入码表主要取自潘罗森笔画输入，为数码。
+| 样本笔画输入词库主要取自潘罗森笔画输入，为数码。
 | 汉字笔画归类为五种：橫1　竖2　撇3　点4　拆5　
 
 + 【广告】最简单的笔划数码输入器。
 + 【技巧】结合音码则是如虎添翼。
 + 【参考】即插即用VimIM双码输入： `拼音★五笔划`_
-+ 【自动开启】如果plugin目录下有码表 `vimim.12345.txt`__
++ 【自动开启】如果plugin目录下有词库 `vimim.12345.txt`__
 
 __ http://vimim.googlecode.com/files/vimim.12345.txt
 
@@ -853,10 +853,10 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 
 拼音输入
 ========
-VimIM 拼音输入码表样例：
+VimIM 拼音输入词库样例：
 
 ================ =======================================================
-    拼音                              码表 样本
+    拼音                              词库 样本
 ================ =======================================================
   汉语拼音       http://vimim.googlecode.com/files/vimim.pinyin.txt
   拼音大词库     http://vimim.googlecode.com/files/vimim.pinyin_huge.txt
@@ -897,10 +897,10 @@ VimIM 拼音输入总结：
 
 五笔输入
 ========
-VimIM 五笔输入码表样例：
+VimIM 五笔输入词库样例：
 
 ================ =======================================================
-    五笔                              码表 样本
+    五笔                              词库 样本
 ================ =======================================================
    五笔 86       http://vimim.googlecode.com/files/vimim.wubi.txt
    五笔 98       http://vimim.googlecode.com/files/vimim.wubi98.txt
@@ -925,6 +925,16 @@ VimIM 五笔输入总结：
   + 四码自动上屏
   + 空码（不存在的编码）时清除已输入编码
   + 【缺省开启】:let g:vimim_wubi_non_stop=1
+
+- 【五笔★拼音】
+
+  + 【五笔输入】敲 CTRL-6 动态切换五笔输入模式。
+  + 【拼音输入】敲 CTRL-6 动态切换拼音输入模式。
+  + 〖特点〗 plug & play 即插即用　动态切换
+
+    (1) 音码（例如：拼音）输入永远独立，插上就可以用。
+    (2) 形码（例如：五笔）输入永远独立，插上就可以用。
+    (3) 平行使用，两个输入法和平共处，互不干扰。
 
 
 |
@@ -1021,10 +1031,10 @@ VimIM 双码输入
 | 【解决方案】
 |       【前提】模模糊糊知道两种中文输入方式，但都不精通。
 |       　　　　第一步：寻找自己有点熟悉的输入方式
-|       　　　　第二步：结合与之相应的输入法码表
+|       　　　　第二步：结合与之相应的输入法词库
 |       　　　　第三步：按照自己定的规矩：想怎么打，就怎么打！
 |       【答案】模糊 + 模糊 = 精确
-|       【原因】VimIM 帮您转换码表里没有，但您心里有的输入码。
+|       【原因】VimIM 帮您转换词库里没有，但您心里有的输入码。
 |
 | 【理论基础】
 |       【通俗】负负得正
@@ -1053,7 +1063,7 @@ VimIM 双码输入
 
 
 ====================== ===================================================
-  VimIM 双码输入                          码表 样本
+  VimIM 双码输入                          词库 样本
 ====================== ===================================================
   汉语拼音             http://vimim.googlecode.com/files/vimim.pinyin.txt
   四角号码             http://vimim.googlecode.com/files/vimim.4corner.txt
@@ -1084,13 +1094,13 @@ VimIM 双码输入
 
 |
 | 【操作】
-|     (1)　抓上汉语拼音码表，扔到您的 vim plugin 目录之下
-|     (2)　抓上四角号码码表，扔到您的 vim plugin 目录之下
+|     (1)　抓上汉语拼音词库，扔到您的 vim plugin 目录之下
+|     (2)　抓上四角号码词库，扔到您的 vim plugin 目录之下
 |
 
 
 ======= ========== ==================================
- 码表     输入码                对应汉字
+ 词库     输入码                对应汉字
 ======= ========== ==================================
 　　A   　　ma     妈　麻　馬　骂　…　马　蚂　码　瑪
 　　B   　　71     厚　医　反　厨　…　唇　辱　馬　愿
@@ -1164,12 +1174,12 @@ VimIM 双码输入
 
 |
 | 【操作】
-|     (1)　抓上汉语拼音码表，扔到您的 vim plugin 目录之下
-|     (2)　抓上五笔划码表，扔到您的 vim plugin 目录之下
+|     (1)　抓上汉语拼音词库，扔到您的 vim plugin 目录之下
+|     (2)　抓上五笔划词库，扔到您的 vim plugin 目录之下
 |
 
 ====================== ==================================================
-  VimIM 双码输入                          码表 样本
+  VimIM 双码输入                          词库 样本
 ====================== ==================================================
   汉语拼音             http://vimim.googlecode.com/files/vimim.pinyin.txt
     五筆劃             http://vimim.googlecode.com/files/vimim.12345.txt
@@ -1256,10 +1266,11 @@ __ `概述`_
 【带词库】
 
   * 〖特点〗 plug & play
-  * 用VimIM 打字，只需一个词库。玩家可以从VimIM 码表样例中挑选。
+  * 用VimIM 打字，只需一个词库。玩家可以从VimIM 词库样例中挑选。
   * 如果希望分开保管 `私人信息`_  ：可以加上 privates.txt
   * 如果想玩 即插即用 `VimIM 双码输入`_  ：可以同时插入两个词库文件：
 
+    *  拼音★五笔
     * `拼音★四角号码`_
     * `拼音★五笔划`_
 
@@ -1287,7 +1298,7 @@ __ `概述`_
 
 词库格式
 --------
-VimIM 码表是开放式的纯文本文件，左码右字。
+VimIM 词库是开放式的纯文本文件，左码右字。
 
 ====== ====== ======
 输入码  空格   汉字
@@ -1309,7 +1320,7 @@ chinese  中文    汉字
 =======  ============
 
 |
-| VimIM `词库格式`_ 简单灵活。码表只要排好序就可以用。
+| VimIM `词库格式`_ 简单灵活。词库只要排好序就可以用。
 | 排序易如反掌：在 『Vim 命令行模式』下，直接调用　 *:sort u*
 |
 | VimIM 对词库的设计是简单灵活，充分利用vim的编辑功夫。
@@ -1555,7 +1566,7 @@ VimIM Mapping
 
   #. 打开 vim （如果用Windows可以双击gVim.exe）
   #. 敲 o 或 i 或 a 进入 vim 插入模式
-  #. （如用拼音码表）输入:  wo you i1g meng.
+  #. （如用拼音词库）输入:  wo you i1g meng.
   #. （在句号后面）敲点石成金键:  <C-\\>
   #. 敲【空格键】或【数字键】上字: wo 　=>　我
   #. 敲【空格键】或【数字键】上字: you　=>　有
@@ -1702,11 +1713,11 @@ VimIM Mapping
 
   + 【优点】 能聪明地理解您的意图。
   + 【特点】 符合一般拼音习惯，原则上N码 => N字
-  + 【擅长】 能够转换码表里没有，但您心里有的输入码。
+  + 【擅长】 能够转换词库里没有，但您心里有的输入码。
   + 【全拼缺省开启】： :let g:vimim_fuzzy_search=1
 
   ================  ================
-                 码表
+                 词库
   ==================================
   huahaoyueyuan        花好月圆
   ================  ================
@@ -1740,7 +1751,7 @@ VimIM Mapping
 　【操作步骤】
 
   #.  下载新版脚本     vimim.vim__
-  #.  下载拼音码表样本 http://vimim.googlecode.com/files/vimim.pinyin.txt
+  #.  下载拼音词库样本 http://vimim.googlecode.com/files/vimim.pinyin.txt
   #.  然后把这两个文本文件扔到您的 vim 的 plugin 目录之下
   #.  打开 vim （如果用Windows可以双击gVim.exe）
   #.  敲 o 或 i 或 a 进入 vim 插入模式
@@ -1967,7 +1978,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 - 【缺省开启】:let g:vimim_reverse_lookup=1
 - 【缺省键】 **v_CTRL-6** 　 `VimIM Mapping`_
 
-以“全拼”码表为例：如果想制造“山寨”一词:
+以“全拼”词库为例：如果想制造“山寨”一词:
 
    +-------+------------------+-------------+------------------+
    | 造词  |     高亮选择     |   敲缺省键  |     结果显示     |
@@ -1995,7 +2006,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 - 【缺省开启】:let g:vimim_save_new_entry=1
 - 【缺省键】 **v_CTRL-\\** 　 `VimIM Mapping`_
 
-以“全拼”码表为例：如果想同时添加“山寨”和“好美满”二词:
+以“全拼”词库为例：如果想同时添加“山寨”和“好美满”二词:
 
    +-------+--------------------+-----------+--------------------+
    | 存盘  |   纵向高亮选择     | 敲缺省键  |         结果       |
@@ -2434,7 +2445,7 @@ __ http://code.google.com/p/vimim/wiki/VimIM__DIY
 .. sidebar:: VimIM 设计原则　　 **Design Goals**
 
   :VIM:       不被和谐!
-  :memory:    不超过码表尺寸
+  :memory:    不超过词库尺寸
   :speed:     不低于最高要求
   :encoding:  不受限制
   :options:   不强行要求设置
@@ -2735,7 +2746,7 @@ WHAT IS NEW
 #. [done] [cloud] only try cloud once when no internet connection
 #. [done] [cloud] support apostrophe to mark syllables, remove ambiguity
 #. [done] [apostrophe] xi'anmeimeidepi'aosuifengpiaoyang
-#. [done] [apostrophe] if user wants: :let g:vimim_apostrophe_in_pinyin=1
+#. [done] [apostrophe] if user wants: :let g:vimim_datafile_has_apostrophe=1
 #. [done] [punctuation] intelligent: HAPPY, happy<Space>,
 #. [done] [punctuation] add option: :let g:vimim_english_punctuation=0
 #. [done] [punctuation] OneKey only: :let g:vimim_punctuation_navigation=1
@@ -2806,18 +2817,8 @@ WHAT IS NEW
 #. [todo] [internal] :let g:vimimdebug=1 => vimimdebug =>
 #. [todo] [debug] ma77 mjjas yun0mu yun0mu7
 #. [todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher
-#. [todo] [pinyin+wubi] uses z to mark pinyin and g:vimim_wubi_non_stop=0
 #. [todo] [cidu] datafile initialization and management
-#. [todo] [pinyin+4corner] jingshen9
-
-95
-959
-jing95
-jingshen9
-jlgls
-jslgdg
-ma77li40
-mali77
-
+#. [done] [pinyin+4corner] 95 959 jing95 jingshen9 mali77 nfofo nhofs
+#. [done] [pinyin+wubi] plug and play using ctrl-6 to switch between
 
 
