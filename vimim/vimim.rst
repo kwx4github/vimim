@@ -894,6 +894,12 @@ VimIM 拼音输入总结：
 ========================   =============================================
 
 |
+|
+
+.. sidebar:: VimIM `五笔输入`_ 【五笔★拼音】　
+
+   .. figure:: wubi_pinyin.gif
+
 
 五笔输入
 ========
@@ -932,8 +938,8 @@ VimIM 五笔输入总结：
   + 【拼音输入】敲 CTRL-6 动态切换拼音输入模式。
   + 〖特点〗 plug & play 即插即用　动态切换
 
-    (1) 音码（例如：拼音）输入永远独立，插上就可以用。
-    (2) 形码（例如：五笔）输入永远独立，插上就可以用。
+    (1) 形码（例如：五笔）输入永远独立，插上就可以用。
+    (2) 音码（例如：拼音）输入永远独立，插上就可以用。
     (3) 平行使用，两个输入法和平共处，互不干扰。
 
 
@@ -2178,7 +2184,11 @@ e　亿  j　斤  o　度  t　吨  z　兆
   - ``:let g:vimim_custom_skin=2``
 
     * 再隐藏编码显示，使显示栏简洁明快。
-
+    
+  - ``:highlight! StatusLine NONE``
+ 
+    * 为 vimrc 设置，滤掉status line的颜色
+    
 |
 
 无缝混排
@@ -2813,12 +2823,15 @@ WHAT IS NEW
 #. [todo] optimize mixture IM of pinyin and wubi
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [todo] [internal] build debug framework
-#. [todo] [internal] :let g:vimimdebug=1 => vimimdebug =>
+#. [done] [internal] build debug framework
+#. [done] [internal] :let g:vimimdebug=1 => vimimdebug =>
+#. [done] [pinyin+4corner] 95 959 jing95 jingshen9 mali77 nfofo nhofs
+#. [done] [pinyin+wubi] plug and play using ctrl-6 to switch between
 #. [todo] [debug] ma77 mjjas yun0mu yun0mu7
 #. [todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher
 #. [todo] [cidu] datafile initialization and management
-#. [done] [pinyin+4corner] 95 959 jing95 jingshen9 mali77 nfofo nhofs
-#. [done] [pinyin+wubi] plug and play using ctrl-6 to switch between
-
-
+#. [todo] [search] optimization
+#. [todo] [pinyin+wubi] memory management
+#. [todo] Customization
+#. [done] issue 43: optimize b:keymap_name and always show IM in statusline
+#. [done] add g:vimim_pinyin_4corner_zi=0 to use last char with 4corner
