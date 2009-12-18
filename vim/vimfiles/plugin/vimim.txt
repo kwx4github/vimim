@@ -2715,7 +2715,7 @@
 9988 炏 燚
 9990 榮
 a 一 一个 #
-a 壹 啊 甲 安 子 阿 吖 呵 锕
+a 壹 啊 安 阿 吖 呵 锕
 a1 啊 阿 吖 呵
 aba 阿爸
 ability 才能 能力 #
@@ -3427,7 +3427,7 @@ aya 啊呀
 ayi 阿姨
 ayo 啊哟
 azerbaijan 阿塞拜疆 #
-b 不 二 贰 乙 丑 报 本 部
+b 不 报 本 部
 ba 爸 八 捌 伯 叭 把 吧 坝 巴 扒 拔 杷 灞 疤 笆 粑 罢 耙 芭 钯 霸 靶
 ba1 巴 叭 吧 岜 扒 疤 笆 粑 芭 仈
 ba2 八 捌 拔 茇 菝 跋 魃
@@ -7077,7 +7077,7 @@ buzuweixun 不足为训
 buzz 嗡嗡 #
 by 被 乘 依 用 #
 bye 再见 再会 告别 拜拜 #
-c 三 叁 丙 寅 成 才 产 出 创 厂 成 长
+c 成 才 产 出 创 厂 成 长
 ca 擦 嚓 礤
 ca1 嚓 擦
 ca4 蔡
@@ -11361,7 +11361,7 @@ cuzi 瘄子
 cycle 循环
 cyprus 塞浦路斯 #
 czech 捷克共和国 #
-d 的 到 都 四 肆 点 丁 卯 动 同 地 多 大 对 得 等
+d 的 到 都 点 动 同 地 多 大 对 得 等
 da 大 打 答 哒 嗒 垯 塌 塔 搭 沓 耷 荙 跶 达
 da1 搭 哒 嗒 耷
 da2 答 达 妲 沓 瘩 达 靼
@@ -14951,8 +14951,8 @@ duzou 独奏
 duzui 堵嘴
 dwarf 侏儒 矮子 #
 dynamic 动态 动态模式 #
-e 五 伍 戊 饿 鳄 鹅 而 辰 饿 俄 厄 呃 哦 垩 娥 屙 峨
-e 噩 轭 遏 鄂 锷 颚 额 鹗 恶 愕 扼 曷 腭 蛾 讹
+e 恶 饿 噩 轭 遏 鄂 锷 颚 额 鹗 愕 扼 曷 腭 蛾 讹
+e 而 鳄 鹅 辰 俄 厄 呃 哦 垩 娥 屙 峨
 e1 呃 屙
 e2 鹅 俄 娥 峨 蛾 讹 锇 额
 e4 饿 恶 厄 呃 噩 垩 愕 扼 腭 苊 萼 谔 轭 遏 鄂 锷 颚 鳄 鹗
@@ -15427,7 +15427,7 @@ ezhuo 恶浊
 ezi 蛾子 囮子
 eziduozhu 恶紫夺朱
 ezuoju 恶作剧
-f 六 陆 分 己 巳 发 方 法
+f 分 发 方 法
 fa 乏 伐 发 拔 拨 法 泛 筏 罚 阀
 fa2 乏 伐 垡 筏 罚 阀
 fa3 法
@@ -17724,7 +17724,7 @@ fuzuo 辅佐
 fuzuoyong 副作用
 fuzuzhang 副组长
 fuzzy 模糊 模糊输入 #
-g 个 七 柒 庚 午 国 工 高
+g 个 国 工 高
 ga 咖 伽 呷 嘎 尜 尬 旮 胳
 ga1 咖 伽 旮
 ga2 尜
@@ -20434,7 +20434,7 @@ guzu 鼓足
 guzui 箍嘴
 guzuogaoshen 故作高深
 guzuoyoueryanta 顾左右而言他
-h 好 和 会 八 捌 辛 未 化 合 后 还 横 一
+h 好 和 会 化 合 后 还 横
 ha 吓 呵 哈 獬 虾 蛤
 ha1 哈
 haba 哈巴
@@ -23572,7 +23572,7 @@ huzi 瓠子
 huzi 胡子
 huzilacha 胡子拉碴
 huzuofeiwei 胡作非为
-i 我 九 竖 玖 壬 申 #
+i 我 #
 ice 冰 #
 icecream 冰淇淋 雪糕 #
 icefire 冰火 #
@@ -23678,7 +23678,7 @@ iterate 叠代 #
 its 它的 #
 ivy 常春藤 #
 ivyleague 常春藤联盟 #
-j 就 十 拾 癸 酉 江 加 家 建 机 济 进 囧
+j 江 就 加 家 建 机 济 进 囧
 jam 果酱 #
 jamaica 牙买加 #
 january 一月 #
@@ -27689,7 +27689,7 @@ juzhuqu 居住区
 juzi 句子 局子 巨子 巨资 锔子 锯子 驹子
 juzichengfen 句子成分
 juzuqingzhong 举足轻重
-k 可 十一 戌 开
+k 可 开
 ka 卡 佧 咔 咖 喀 珈 胩
 ka1 咖 咔 喀
 ka3 卡 佧 胩
@@ -29096,6 +29096,7 @@ kun4 困
 kunan 苦难
 kunao 苦恼 哭闹
 kunbang 捆绑
+kunbangfuqi 捆绑夫妻
 kunbao 坤包
 kunbei 困惫
 kunbiao 坤表
@@ -29230,7 +29231,7 @@ kuzhongzuole 苦中作乐
 kuzhu 苦主
 kuzi 裤子
 kyrgyzstan 吉尔吉斯斯坦 #
-l 了 啦 来 理 领 亥
+l 了 啦 来 理 领
 la 辣 腊 蜡 拉 垃 啦 喇 摺 旯 瘌 砬 镴 鞡
 la1 拉 啦 垃 邋
 la2 喇 旯 砬
