@@ -1551,6 +1551,13 @@ VimIM 不错, 一直在用 :) -->
 </table>
 <div class="line-block">
 <div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="sidebar">
+<p class="first sidebar-title">VimIM <a class="reference internal" href="#id59">五笔输入</a> 【五笔★拼音】</p>
+<div class="last figure">
+<img alt="wubi_pinyin.gif" src="wubi_pinyin.gif" />
+</div>
 </div>
 </div>
 <div class="section" id="id59">
@@ -1601,8 +1608,8 @@ VimIM 不错, 一直在用 :) -->
 <li>【五笔输入】敲 CTRL-6 动态切换五笔输入模式。</li>
 <li>【拼音输入】敲 CTRL-6 动态切换拼音输入模式。</li>
 <li>〖特点〗 plug &amp; play 即插即用　动态切换<ol class="arabic">
-<li>音码（例如：拼音）输入永远独立，插上就可以用。</li>
 <li>形码（例如：五笔）输入永远独立，插上就可以用。</li>
+<li>音码（例如：拼音）输入永远独立，插上就可以用。</li>
 <li>平行使用，两个输入法和平共处，互不干扰。</li>
 </ol>
 </li>
@@ -3550,6 +3557,10 @@ If the following download URL does not work for you, please
 <li>再隐藏编码显示，使显示栏简洁明快。</li>
 </ul>
 </li>
+<li><tt class="docutils literal">:highlight! StatusLine NONE</tt><ul>
+<li>为 vimrc 设置，滤掉status line的颜色</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -4471,19 +4482,24 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] optimize mixture IM of pinyin and wubi</li>
 <li>[todo] [test] make sure no regression, following each item on manual</li>
 <li>[todo] how to find vim executable? s:path=expand(&quot;&lt;sfile&gt;:p:h&quot;).&quot;/&quot;</li>
-<li>[todo] [internal] build debug framework</li>
-<li>[todo] [internal] :let g:vimimdebug=1 =&gt; vimimdebug =&gt;</li>
+<li>[done] [internal] build debug framework</li>
+<li>[done] [internal] :let g:vimimdebug=1 =&gt; vimimdebug =&gt;</li>
+<li>[done] [pinyin+4corner] 95 959 jing95 jingshen9 mali77 nfofo nhofs</li>
+<li>[done] [pinyin+wubi] plug and play using ctrl-6 to switch between</li>
 <li>[todo] [debug] ma77 mjjas yun0mu yun0mu7</li>
 <li>[todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher</li>
 <li>[todo] [cidu] datafile initialization and management</li>
-<li>[done] [pinyin+4corner] 95 959 jing95 jingshen9 mali77 nfofo nhofs</li>
-<li>[done] [pinyin+wubi] plug and play using ctrl-6 to switch between</li>
+<li>[todo] [search] optimization</li>
+<li>[todo] [pinyin+wubi] memory management</li>
+<li>[todo] Customization</li>
+<li>[done] issue 43: optimize b:keymap_name and always show IM in statusline</li>
+<li>[done] add g:vimim_pinyin_4corner_zi=0 to use last char with 4corner</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 23:50:40 PST on Wednesday, 12/16/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 21:18:22 PST on Thursday, 12/17/2009
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
