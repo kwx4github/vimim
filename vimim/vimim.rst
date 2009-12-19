@@ -1140,7 +1140,7 @@ VimIM 双码输入
 |
 
 【词】
-  前一个字长度可以任意，后前一个字长度可以任意
+  前一个字长度任意，后一个字长度任意
 
 ==========   ============  ==================  =============
   输入法          插入             显示           菜单选择
@@ -1212,13 +1212,13 @@ VimIM 双码输入
 
 中文输入的最高境界
 ------------------
-.. The highest realm of Chinese input
+The highest realm of Chinese input:
 
 ====  ===================   =================================
  1     书同文、文同码       VimIM 首选  Unicode__
  2     和谐、绿色           VimIM 坚信 `文本文件，天下无敌`__
  3     不切换输入状态       VimIM 首创 `〖点石成金〗`_
- 4     不改变输入习惯       VimIM 确认 天生跨平台
+ 4     不改变输入习惯       VimIM 确认 `天生跨平台`__
  5     手机电脑一路通       VimIM 推荐 `四角号码数码输入`_
  6     自创中文输入法       VimIM 演示 `VimIM 双码输入`_
  7     闭目养神             VimIM 体验 `中文盲打`_
@@ -1227,6 +1227,7 @@ VimIM 双码输入
 
 __ `Unicode 内码输入`_
 __ `概述`_
+__ `VimIM Mapping`_
 
 
 
@@ -1505,9 +1506,11 @@ VimIM Mapping
   - 〖无缝混排〗支持 `无缝混排`_
   - 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
   - 〖回车键〗或无缝上英文，或回车，或上空格。
+  - 〖状态显示〗 noruler
   - 【缺省关闭】 :let g:vimim_sexy_onekey=0
   - 【强行关闭】
 
+        
     + 在空格或汉字后敲【空格键】
     + 在omni菜单中敲【点石键】
     + 用i_Ctrl-V加【空格键】强制出空格
@@ -2089,11 +2092,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
 + 显示数字标签，并提供数字选字
 + 【缺省开启】:let g:vimim_menu_label=1
 
-**光标颜色**
-
-+ 光标颜色可以归自己指定，缺省是绿色。
-+ 【缺省开启】:let g:vimim_custom_lcursor_color=1
-
 **寻找内码**
 
 + 反向操作 `Unicode 内码输入`_
@@ -2174,9 +2172,9 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 【参考选项】
 
-+ VimIM不干涉Vim的缺省设置。
-+ VimIM提供如下选项：
++ 〖颜色〗g:vimim_custom_skin
 
+  -  【缺省关闭】VimIM不干涉Vim的缺省设置。
   - ``:let g:vimim_custom_skin=1``
 
     * 滤掉显示栏的背景颜色，免得眼花缭乱。
@@ -2185,10 +2183,17 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
     * 再隐藏编码显示，使显示栏简洁明快。
     
-  - ``:highlight! StatusLine NONE``
++ 〖光标〗g:vimim_custom_lcursor_color
+
+  -  光标颜色可以归自己指定，缺省是绿色。
+  -  【缺省开启】:let g:vimim_custom_lcursor_color=1
+
++ 〖状态行〗g:vimim_custom_laststatus
+
+  - statusline 可以显示当前使用的中文输入法：
+  - 【缺省开启】:let g:vimim_custom_laststatus=1
  
-    * 为 vimrc 设置，滤掉status line的颜色
-    
+|
 |
 
 无缝混排
@@ -2825,7 +2830,6 @@ WHAT IS NEW
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [done] [internal] build debug framework
 #. [done] [internal] :let g:vimimdebug=1 => vimimdebug =>
-#. [done] [pinyin+4corner] 95 959 jing95 jingshen9 mali77 nfofo nhofs
 #. [done] [pinyin+wubi] plug and play using ctrl-6 to switch between
 #. [todo] [debug] ma77 mjjas yun0mu yun0mu7
 #. [todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher
@@ -2834,4 +2838,11 @@ WHAT IS NEW
 #. [todo] [pinyin+wubi] memory management
 #. [todo] Customization
 #. [done] issue 43: optimize b:keymap_name and always show IM in statusline
-#. [done] add g:vimim_pinyin_4corner_zi=0 to use last char with 4corner
+#. [done] [pinyin+4corner] 95 959 jing95 jingshen9 mali77 nfofo nhofs
+#. [done] [pinyin+4corner] always use number following glyph as a filter
+#. [done] [onekey] s:vimim_sexy_onekey => noruler means OneKey mode is on
+#. [done] [skin] put together skin section, with both code and document
+
+
+
+
