@@ -1280,7 +1280,7 @@ __ `VimIM Mapping`_
     + `拼音★四角号码`_
     + `拼音★五笔划`_
 
-  * 如果想玩 即插即用　动态切换：可以同时插入两个词库文件：
+  * 如果想玩〖即插即用〗〖动态切换〗可以同时插入两个词库文件：
 
     *  五笔★拼音
     *  二笔★拼音
@@ -2821,6 +2821,16 @@ WHAT IS NEW
 #. [done] :let g:vimim_punctuation_navigation=0 makes - and = available
 #. [done] onekey, g:vimim_sexy_onekey=1, no transformation of double ,.
 #. [done] yun0mu7=>yunmu yun0mu=>nothing [bug] '^\l\+\d\+' && '\l\+\d\=$'
+#. [done] [internal] build debug framework
+#. [done] [internal] :let g:vimimdebug=1 => vimimdebug =>
+#. [done] issue 43: optimize b:keymap_name and always show IM in statusline
+#. [done] [pinyin+4corner] 95 959 jing95 jingshen9 mali77 nfofo nhofs
+#. [done] [pinyin+4corner] always use number following glyph as a filter
+#. [done] [onekey] s:vimim_sexy_onekey => noruler means OneKey mode is on
+#. [done] [pinyin+wubi] plug and play using ctrl-6 to switch between
+#. [done] [pinyin+erbi] can live together in harmony
+#. [done] [cangjie] sleeps with [pinyin] in harmony: plug and play
+#. [done] [skin] put together skin section, with both code and document
 #. [todo] add :profile start /tmp/vimim.profile for optimization
 #. [todo] try to make vimim.vim and latex-suite plugin work together
 #. [todo] check if it is possible to load datafile from "gvim --remote"
@@ -2834,21 +2844,10 @@ WHAT IS NEW
 #. [todo] optimize mixture IM of pinyin and wubi
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [done] [internal] build debug framework
-#. [done] [internal] :let g:vimimdebug=1 => vimimdebug =>
-#. [done] [pinyin+wubi] plug and play using ctrl-6 to switch between
 #. [todo] [debug] ma77 mjjas yun0mu yun0mu7
 #. [todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher
 #. [todo] [cidu] datafile initialization and management
 #. [todo] [search] optimization
 #. [todo] [pinyin+wubi] memory management
-#. [todo] Customization
-#. [done] issue 43: optimize b:keymap_name and always show IM in statusline
-#. [done] [pinyin+4corner] 95 959 jing95 jingshen9 mali77 nfofo nhofs
-#. [done] [pinyin+4corner] always use number following glyph as a filter
-#. [done] [onekey] s:vimim_sexy_onekey => noruler means OneKey mode is on
-#. [done] [skin] put together skin section, with both code and document
-#. [done] [cangjie] sleeps with [pinyin] in harmony: plug and play
-
 
 
