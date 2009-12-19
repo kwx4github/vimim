@@ -1277,9 +1277,15 @@ __ `VimIM Mapping`_
   * 如果希望分开保管 `私人信息`_  ：可以加上 privates.txt
   * 如果想玩 即插即用 `VimIM 双码输入`_  ：可以同时插入两个词库文件：
 
-    *  拼音★五笔
-    * `拼音★四角号码`_
-    * `拼音★五笔划`_
+    + `拼音★四角号码`_
+    + `拼音★五笔划`_
+
+  * 如果想玩 即插即用　动态切换：可以同时插入两个词库文件：
+
+    *  五笔★拼音
+    *  二笔★拼音
+    *  仓颉★拼音
+
 
 【词库位置】
 
@@ -2842,7 +2848,7 @@ WHAT IS NEW
 #. [done] [pinyin+4corner] always use number following glyph as a filter
 #. [done] [onekey] s:vimim_sexy_onekey => noruler means OneKey mode is on
 #. [done] [skin] put together skin section, with both code and document
-
+#. [done] [cangjie] sleeps with [pinyin] in harmony: plug and play
 
 
 
