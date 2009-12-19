@@ -2132,7 +2132,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
      - 快捷英文输入：敲【缺省键】动态切换中英文输入模式。
      - 中文标点自动开启
      - 中英文标点动态切换 （切换键 **i_CTRL-\\** ）
-     - 【缺省开启】 :let g:vimim_chinese_input_mode=1
      - 【缺省键】 **i_CTRL-6** 　 `VimIM Mapping`_
 
   + ㈠【静态模式】
@@ -2235,20 +2234,26 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 - 【限于】UTF-8 encoding （vim和词库）
 - 【限于】单字
-- 【缺省开启】仅适用于当前的 session, 不存盘
-- 【首字固定】
+- 【缺省关闭】
 
-  - 常用字词将永远显示在第一候选项。
-  - 【全拼缺省开启】:let g:vimim_first_candidate_fix=1
 
-- 【永久存盘可设】:let g:vimim_chinese_frequency=N, where N>1
+- 【词频记忆不存盘】:let g:vimim_chinese_frequency=1
+
+  - 仅适用于当前的 session
+
+- 【词频记忆存盘】:let g:vimim_chinese_frequency=N, where N>1
 
   - 输入累积N次，词库可以自动刷新，永久存盘。
   - 建议设置比较大一点的值：:let g:vimim_chinese_frequency=20
   - 也就是说，每敲20个汉字，memory 中的词频写入disk存盘
 
-- 【彻底关闭可设】:let g:vimim_chinese_frequency=-1
+- 【首字固定】
 
+  + 常用字词将永远显示在第一候选项。
+  + 【关闭可设】:let g:vimim_first_candidate_fix=0
+
+
+|
 |
 
 一键改错
@@ -2849,5 +2854,21 @@ WHAT IS NEW
 #. [todo] [cidu] datafile initialization and management
 #. [todo] [search] optimization
 #. [todo] [pinyin+wubi] memory management
+#. [done] minimize initialization process when vim starts up
 
+
+http://www.linuxsir.org/bbs/showthread.php?p=2051139#post2051139
+function! s:vimim_new_order_in_memory(keyboards)
+要重现，调出输入法后乱按键盘就可以了，或连续按“f”键也会出现。
+
+
+computer 电脑：unix_xterm　
+Vim 版本：702　
+VimIM 版本：1440　
+encoding 编码：utf-8　
+fencs 编码：ucs-bom,utf-8,latin1　
+mode 风格：i_CTRL-^　经典动态　
+im 输入：五笔: trdeggwhssqu　
+datafile 词库：/home/lrz/.vim/plugin/vimim.wubijd.txt　
+cloud 搜狗：想云就云
 
