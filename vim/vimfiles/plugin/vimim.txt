@@ -3427,7 +3427,7 @@ aya 啊呀
 ayi 阿姨
 ayo 啊哟
 azerbaijan 阿塞拜疆 #
-b 不 报 本 部
+b 不 被 报 本 部
 ba 爸 八 捌 伯 叭 把 吧 坝 巴 扒 拔 杷 灞 疤 笆 粑 罢 耙 芭 钯 霸 靶
 ba1 巴 叭 吧 岜 扒 疤 笆 粑 芭 仈
 ba2 八 捌 拔 茇 菝 跋 魃
@@ -12324,19 +12324,14 @@ daojiao 道教 倒噍 倒嚼
 daojie 盗劫
 daojiesiyi 蹈节死义
 daojishi 倒计时
-daoju 刀具
-daoju 刀锯
-daoju 道具
+daoju 道具 刀具 刀锯
 daokang 稻糠
 daokeng 导坑
-daokou 盗寇
-daokou 道口
+daokou 道口 盗寇
 daolai 到来
 daolang 刀螂
-daolao 叨唠
-daolao 道劳
-daoli 倒立
-daoli 道理
+daolao 叨唠 道劳
+daoli 道理 倒立
 daoliaoer 到了儿
 daolie 盗猎
 daolinzhi 道林纸
@@ -12349,8 +12344,7 @@ daolunzha 倒轮闸
 daoluyimu 道路以目
 daomadan 刀马旦
 daomafan 捣麻烦
-daomai 倒卖
-daomai 盗卖
+daomai 倒卖 盗卖
 daomaidaomai 倒买倒卖
 daomaoanran 道貌岸然
 daomei 倒霉
@@ -12358,9 +12352,7 @@ daomen 道门
 daomu 盗墓
 daomu 道木
 daona 导纳
-daonian 叨念
-daonian 悼念
-daonian 祷唸
+daonian 悼念 叨念 祷唸
 daopaizi 倒牌子
 daopangkuli 道旁苦李
 daopao 道袍
@@ -12374,23 +12366,18 @@ daoqie 盗窃
 daoqier 捯气儿
 daoqing 道情
 daore 导热
-daoren 刀刃
-daoren 到任
+daoren 到任 刀刃
 daosang 倒嗓
 daoshanhuohai 刀山火海
 daoshanjianshu 刀山剑树
-daoshi 倒是
-daoshi 导师
-daoshi 道士
+daoshi 倒是 导师 道士
 daoshihou 到时候
-daoshou 倒手
-daoshou 到手
+daoshou 到手 倒手
 daoshu 倒数
 daosuan 倒算
 daota 倒塌
 daotai 倒台
-daoteng 倒腾
-daoteng 捣腾
+daoteng 捣腾 倒腾
 daoti 倒替
 daotian 稻田
 daotie 倒贴
@@ -12413,30 +12400,22 @@ daoxingnishi 倒行逆施
 daoxinshitu 悼心失图
 daoxiu 倒休
 daoxixiangying 倒屣相迎
-daoxu 倒叙
-daoxu 倒序
+daoxu 倒序 倒叙
 daoxuanzhiji 倒悬之急
 daoxue 道学
-daoya 倒牙
-daoya 道牙
-daoyan 倒烟
-daoyan 导演
-daoyan 导言
-daoyan 悼唁
-daoyang 倒仰
-daoyang 导扬
+daoya 道牙 倒牙
+daoyan 导演 导言 悼唁
+daoyang 倒仰 导扬
 daoye 倒爷
 daoyi 道义
 daoyin 盗印
-daoying 倒影
-daoying 倒映
+daoying 倒影 倒映
 daoyiyoudao 盗亦有道
 daoyong 盗用
 daoyou 导游
 daoyu 导语
 daoyu 岛屿
-daoyuan 导源
-daoyuan 道院
+daoyuan 道院 导源
 daozaicong 倒栽葱
 daozang 道藏
 daozao 倒灶
@@ -12444,28 +12423,21 @@ daozengzhuren 盗憎主人
 daozha 道砟
 daozhang 倒账
 daozhao 倒找
-daozhi 倒置
-daozhi 到职
-daozhi 导致
+daozhi 导致 倒置 到职
 daozhigange 倒置干戈
 daozhong 稻种
 daozhuan 倒转
-daozi 刀子
-daozi 稻子
-daozi 道子
+daozi 刀子 稻子 道子
 daozizui 刀子嘴
 daozuoer 倒座儿
 dapai 大牌
 dapaihang 大排行
 dapan 大盘
 dapandian 大盘点
-dapao 大炮
-dapao 打泡
-dapao 打炮
+dapao 大炮 打炮 打泡
 dapei 搭配
 dapengche 大篷车
-dapi 大批
-dapi 大辟
+dapi 大批 大辟
 dapian 大片
 dapiao 大票
 dapigu 打屁股
@@ -12473,7 +12445,6 @@ dapiliang 大批量
 dapin 打拼
 dapingshou 打平手
 dapo 打破
-daposhaguowendaodi 打破沙锅问到底
 dapu 打谱
 dapuer 大谱儿
 daqi 打气 大漆
@@ -12485,29 +12456,22 @@ daqianshijie 大千世界
 daqianti 大前提
 daqiantian 大前天
 daqianzhan 打前站
-daqiao 大桥
-daqiao 搭桥
+daqiao 搭桥 大桥
 daqiaoruozhuo 大巧若拙
 daqiceng 大气层
 daqidaluo 大起大落
 daqihou 大气候
-daqin 哒嗪
-daqing 大庆
-daqing 大清
+daqing 大清 大庆
 daqingmaqiao 打情骂俏
 daqipangbo 大气磅礴
-daqiu 大秋
-daqiu 打球
+daqiu 打球 大秋
 daqiufeng 打秋风
 daqiuzuowu 大秋作物
 daqiwancheng 大器晚成
 daqiwuran 大气污染
 daqiya 大气压
-daqu 大区
-daqu 打趣
-daquan 大全
-daquan 大权
-daquan 打拳
+daqu 打趣 大区
+daquan 大权 打拳 大全
 daquandulan 大权独揽
 daquanpangluo 大权旁落
 daquanzi 打圈子
@@ -12521,8 +12485,7 @@ darling 爱人 心爱 #
 darou 大肉
 dart 投掷 标枪 突进 #
 dartmouth 达特茅斯学院 #
-daru 大儒
-daru 打入
+daru 打入 大儒
 darwin 达尔文 #
 dasai 大赛
 dasao 大嫂 打扫
@@ -12537,8 +12500,7 @@ dashaoye 大少爷
 dashe 大赦
 dashedaqicun 打蛇打七寸
 dashener 大婶儿
-dasheng 大声
-dasheng 大胜
+dasheng 大胜 大声
 dashengchan 大生产
 dashengchu 大牲畜
 dashengjihu 大声疾呼
@@ -12920,15 +12882,13 @@ dengxincao 灯心草
 dengxinrong 灯心绒
 dengyinfengci 等因奉此
 dengyou 灯油
-dengyu 灯语
-dengyu 等于
+dengyu 等于 灯语
 dengyuling 等于零
 dengzai 登载
 dengzhan 灯盏
 dengzhao 灯罩
 dengzhi 等值
-dengzi 戥子
-dengzi 镫子
+dengzi 戥子 镫子
 denmark 丹麦 #
 depart 离开 #
 department 部门 #
@@ -14323,6 +14283,7 @@ down 下 向下 #
 download 下载 #
 downstair 楼下 #
 dozen 一打 #
+dpsgwdd 打破沙锅问到底
 drag 拉 拖 牵 #
 dragon 龙 #
 drain 枯干 #
