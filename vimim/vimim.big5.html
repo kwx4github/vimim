@@ -3487,7 +3487,6 @@ If the following download URL does not work for you, please
 <li>快捷英文輸入：敲【缺省鍵】動態切換中英文輸入模式。</li>
 <li>中文標點自動開啟</li>
 <li>中英文標點動態切換 （切換鍵 <strong>i_CTRL-\</strong> ）</li>
-<li>【缺省開啟】 :let g:vimim_chinese_input_mode=1</li>
 <li>【缺省鍵】 <strong>i_CTRL-6</strong> 　 <a class="reference internal" href="#vimim-mapping">VimIM Mapping</a></li>
 </ul>
 </blockquote>
@@ -3615,21 +3614,25 @@ If the following download URL does not work for you, please
 <ul class="simple">
 <li>【限於】UTF-8 encoding （vim和詞庫）</li>
 <li>【限於】單字</li>
-<li>【缺省開啟】僅適用於當前的 session, 不存盤</li>
-<li>【首字固定】<ul>
-<li>常用字詞將永遠顯示在第一候選項。</li>
-<li>【全拼缺省開啟】:let g:vimim_first_candidate_fix=1</li>
+<li>【缺省關閉】</li>
+<li>【詞頻記憶不存盤】:let g:vimim_chinese_frequency=1<ul>
+<li>僅適用於當前的 session</li>
 </ul>
 </li>
-<li>【永久存盤可設】:let g:vimim_chinese_frequency=N, where N&gt;1<ul>
+<li>【詞頻記憶存盤】:let g:vimim_chinese_frequency=N, where N&gt;1<ul>
 <li>輸入累積N次，詞庫可以自動刷新，永久存盤。</li>
 <li>建議設置比較大一點的值：:let g:vimim_chinese_frequency=20</li>
 <li>也就是說，每敲20個漢字，memory 中的詞頻寫入disk存盤</li>
 </ul>
 </li>
-<li>【徹底關閉可設】:let g:vimim_chinese_frequency=-1</li>
+<li>【首字固定】<ul>
+<li>常用字詞將永遠顯示在第一候選項。</li>
+<li>【關閉可設】:let g:vimim_first_candidate_fix=0</li>
+</ul>
+</li>
 </ul>
 <div class="line-block">
+<div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -4505,12 +4508,25 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] [cidu] datafile initialization and management</li>
 <li>[todo] [search] optimization</li>
 <li>[todo] [pinyin+wubi] memory management</li>
+<li>[done] minimize initialization process when vim starts up</li>
 </ol>
+<p><a class="reference external" href="http://www.linuxsir.org/bbs/showthread.php?p=2051139#post2051139">http://www.linuxsir.org/bbs/showthread.php?p=2051139#post2051139</a>
+function! s:vimim_new_order_in_memory(keyboards)
+要重現，調出輸入法后亂按鍵盤就可以了，或連續按“f”鍵也會出現。</p>
+<p>computer 電腦：unix_xterm
+Vim 版本：702
+VimIM 版本：1440
+encoding 編碼：utf-8
+fencs 編碼：ucs-bom,utf-8,latin1
+mode 風格：i_CTRL-^　經典動態
+im 輸入：五筆: trdeggwhssqu
+datafile 詞庫：/home/lrz/.vim/plugin/vimim.wubijd.txt
+cloud 搜狗：想雲就雲</p>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 19:01:38 PST on Friday, 12/18/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 09:35:16 PST on Saturday, 12/19/2009
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
