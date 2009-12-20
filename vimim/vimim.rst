@@ -1748,18 +1748,6 @@ VimIM Mapping
 
 |
 
-**双拼模糊匹配**
-
-  + 【优点】 最简单的双拼方案，可以与全拼同时存在。
-  + 【特点㈠】 以 aeiou 为韵母，以其余的为声母。
-  + 【特点㈡】 每俩码出一个汉字。
-  + 【演示】 saza　　　=>　山寨 善战 上载 上涨
-  + 【演示】 bucaqi　　=>　不差钱
-  + 【演示】 yijizoqi　=>　一见钟情
-  + 【缺省关闭】： :let g:vimim_shuangpin_dummy=1
-
-|
-
 【自己动手试一试】
 
 　【目的】感觉一下 “智能模糊匹配”
@@ -2852,5 +2840,6 @@ WHAT IS NEW
 #. [todo] [pinyin+wubi] memory management
 #. [done] minimize initialization process when vim starts up
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
-#. [todo] ma
 #. [todo] plug and play ==> s:four_corner_flag
+
+
