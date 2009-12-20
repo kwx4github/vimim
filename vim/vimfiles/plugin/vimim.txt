@@ -47034,7 +47034,7 @@ teshu 特殊
 teshudangfei 特殊党费
 teshuhua 特殊化
 teshuxing 特殊性
-test 试验 测试 考试 测验 #
+test 测试 试验 考试 测验 #
 teti 特体
 tewei 特为
 tewu 特务
@@ -62924,6 +62924,7 @@ zuilian 嘴脸
 zuiming 罪名
 zuinie 罪孽
 zuinieshenzhong 罪孽深重
+zuiniu 最牛
 zuipa 最怕
 zuiqian 罪愆
 zuiren 醉人
