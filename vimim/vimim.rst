@@ -721,11 +721,12 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
  (2) 〖可控性云输入〗每N个输入就〖云〗游
 
      * 特点：每打N个字母才向服务器请求一次。
-     * 手动开启：设置 :let g:vimim_www_sogou=N
+     * 设置：:let g:vimim_www_sogou=N
      * （长的）诗词曲赋、新闻八卦、完整的句子拜托给〖云〗。
      * （短的）私人信息、英文、词组、单字留给VimIM自己处理。
      * 长短的定义没有统一的国际标准。玩家自己定标准。
      * 例如：如果选项设置为10:　即每敲10个字母以上就丢给〖云〗。
+     * 结果：本地词库和搜狗云端词库智能切换。
 
  (3) 支持〖断字符〗　解决含糊的办法是在含糊的地方贴上标签：
 
@@ -2232,26 +2233,22 @@ e　亿  j　斤  o　度  t　吨  z　兆
   | 　　久而久之，词库就变成用户自己的词库
   | 　　不知不觉，VimIM  就变成了最适合用户的输入法
 
-- 【限于】UTF-8 encoding （vim和词库）
-- 【限于】单字
-- 【缺省关闭】
+- 【词频记忆不存盘】
 
+  + 仅适用于当前的 session
+  + 【缺省开启】:let g:vimim_chinese_frequency=1
 
-- 【词频记忆不存盘】:let g:vimim_chinese_frequency=1
+- 【词频记忆存盘】
 
-  - 仅适用于当前的 session
-
-- 【词频记忆存盘】:let g:vimim_chinese_frequency=N, where N>1
-
-  - 输入累积N次，词库可以自动刷新，永久存盘。
-  - 建议设置比较大一点的值：:let g:vimim_chinese_frequency=20
-  - 也就是说，每敲20个汉字，memory 中的词频写入disk存盘
+  + 输入累积N次，词库可以自动刷新，永久存盘。
+  + 建议设置比较大一点的值：:let g:vimim_chinese_frequency=20
+  + 也就是说，每敲20个汉字，memory 中的词频写入disk存盘
+  + 【开启可设】:let g:vimim_chinese_frequency=N
 
 - 【首字固定】
 
   + 常用字词将永远显示在第一候选项。
-  + 【关闭可设】:let g:vimim_first_candidate_fix=0
-
+  + 【开启可设】:let g:vimim_frequency_first_fix=1
 
 |
 |
@@ -2697,7 +2694,7 @@ WHAT IS NEW
 #. [done] add g:vimim_reverse_pageup_pagedown for left-hand PageUp/PageDown
 #. [done] avoid changing user's .vimrc option when using OneKey
 #. [done] make vimim_smart_backspace() support vimim_sentence_match()
-#. [done] support fixed first candidate g:vimim_first_candidate_fix=1
+#. [done] support fixed first candidate g:vimim_frequency_first_fix=1
 #. [done] make Chinese/English punctuation smart and solid
 #. [done] enhance html navigation by adding g/G and removing r key
 #. [done] support transformation of Chinese numbers
@@ -2851,24 +2848,9 @@ WHAT IS NEW
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] [debug] ma77 mjjas yun0mu yun0mu7
 #. [todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher
-#. [todo] [cidu] datafile initialization and management
 #. [todo] [search] optimization
 #. [todo] [pinyin+wubi] memory management
 #. [done] minimize initialization process when vim starts up
-
-
-http://www.linuxsir.org/bbs/showthread.php?p=2051139#post2051139
-function! s:vimim_new_order_in_memory(keyboards)
-要重现，调出输入法后乱按键盘就可以了，或连续按“f”键也会出现。
-
-
-computer 电脑：unix_xterm　
-Vim 版本：702　
-VimIM 版本：1440　
-encoding 编码：utf-8　
-fencs 编码：ucs-bom,utf-8,latin1　
-mode 风格：i_CTRL-^　经典动态　
-im 输入：五笔: trdeggwhssqu　
-datafile 词库：/home/lrz/.vim/plugin/vimim.wubijd.txt　
-cloud 搜狗：想云就云
-
+#. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
+#. [todo] ma
+#. [todo] plug and play ==> s:four_corner_flag
