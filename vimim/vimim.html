@@ -1324,11 +1324,12 @@ VimIM 不错, 一直在用 :) -->
 </li>
 <li>〖可控性云输入〗每N个输入就〖云〗游<ul>
 <li>特点：每打N个字母才向服务器请求一次。</li>
-<li>手动开启：设置 :let g:vimim_www_sogou=N</li>
+<li>设置：:let g:vimim_www_sogou=N</li>
 <li>（长的）诗词曲赋、新闻八卦、完整的句子拜托给〖云〗。</li>
 <li>（短的）私人信息、英文、词组、单字留给VimIM自己处理。</li>
 <li>长短的定义没有统一的国际标准。玩家自己定标准。</li>
 <li>例如：如果选项设置为10:　即每敲10个字母以上就丢给〖云〗。</li>
+<li>结果：本地词库和搜狗云端词库智能切换。</li>
 </ul>
 </li>
 <li>支持〖断字符〗　解决含糊的办法是在含糊的地方贴上标签：<ul>
@@ -3612,22 +3613,21 @@ If the following download URL does not work for you, please
 </div>
 </blockquote>
 <ul class="simple">
-<li>【限于】UTF-8 encoding （vim和词库）</li>
-<li>【限于】单字</li>
-<li>【缺省关闭】</li>
-<li>【词频记忆不存盘】:let g:vimim_chinese_frequency=1<ul>
+<li>【词频记忆不存盘】<ul>
 <li>仅适用于当前的 session</li>
+<li>【缺省开启】:let g:vimim_chinese_frequency=1</li>
 </ul>
 </li>
-<li>【词频记忆存盘】:let g:vimim_chinese_frequency=N, where N&gt;1<ul>
+<li>【词频记忆存盘】<ul>
 <li>输入累积N次，词库可以自动刷新，永久存盘。</li>
 <li>建议设置比较大一点的值：:let g:vimim_chinese_frequency=20</li>
 <li>也就是说，每敲20个汉字，memory 中的词频写入disk存盘</li>
+<li>【开启可设】:let g:vimim_chinese_frequency=N</li>
 </ul>
 </li>
 <li>【首字固定】<ul>
 <li>常用字词将永远显示在第一候选项。</li>
-<li>【关闭可设】:let g:vimim_first_candidate_fix=0</li>
+<li>【开启可设】:let g:vimim_frequency_first_fix=1</li>
 </ul>
 </li>
 </ul>
@@ -4351,7 +4351,7 @@ set langmenu=zh_CN.UTF-8
 <li>[done] add g:vimim_reverse_pageup_pagedown for left-hand PageUp/PageDown</li>
 <li>[done] avoid changing user's .vimrc option when using OneKey</li>
 <li>[done] make vimim_smart_backspace() support vimim_sentence_match()</li>
-<li>[done] support fixed first candidate g:vimim_first_candidate_fix=1</li>
+<li>[done] support fixed first candidate g:vimim_frequency_first_fix=1</li>
 <li>[done] make Chinese/English punctuation smart and solid</li>
 <li>[done] enhance html navigation by adding g/G and removing r key</li>
 <li>[done] support transformation of Chinese numbers</li>
@@ -4505,28 +4505,18 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] how to find vim executable? s:path=expand(&quot;&lt;sfile&gt;:p:h&quot;).&quot;/&quot;</li>
 <li>[todo] [debug] ma77 mjjas yun0mu yun0mu7</li>
 <li>[todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher</li>
-<li>[todo] [cidu] datafile initialization and management</li>
 <li>[todo] [search] optimization</li>
 <li>[todo] [pinyin+wubi] memory management</li>
 <li>[done] minimize initialization process when vim starts up</li>
+<li>[done] [frequency] make it work now: g:vimim_chinese_frequency=1</li>
+<li>[todo] ma</li>
+<li>[todo] plug and play ==&gt; s:four_corner_flag</li>
 </ol>
-<p><a class="reference external" href="http://www.linuxsir.org/bbs/showthread.php?p=2051139#post2051139">http://www.linuxsir.org/bbs/showthread.php?p=2051139#post2051139</a>
-function! s:vimim_new_order_in_memory(keyboards)
-要重现，调出输入法后乱按键盘就可以了，或连续按“f”键也会出现。</p>
-<p>computer 电脑：unix_xterm
-Vim 版本：702
-VimIM 版本：1440
-encoding 编码：utf-8
-fencs 编码：ucs-bom,utf-8,latin1
-mode 风格：i_CTRL-^　经典动态
-im 输入：五笔: trdeggwhssqu
-datafile 词库：/home/lrz/.vim/plugin/vimim.wubijd.txt
-cloud 搜狗：想云就云</p>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 09:35:16 PST on Saturday, 12/19/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 11:01:51 PST on Sunday, 12/20/2009
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
