@@ -64,7 +64,6 @@
    code -s datafile -p vimim vimim.ctc.txt
    --------------------------------------------
    cd /home/vimim
-   code -s datafile -p vimim vimim.wubi2pinyin.txt
    code -s datafile -p vimim vimim.wubi.txt
    code -s datafile -p vimim vimim.wubi98.txt
    code -s datafile -p vimim vimim.wubijd.txt
@@ -535,7 +534,7 @@ VimIM 数码输入词库样例：
    四角号码      http://vimim.googlecode.com/files/vimim.4corner.txt
    中文电码      http://vimim.googlecode.com/files/vimim.ctc.txt
     交換碼       http://vimim.googlecode.com/files/vimim.cns11643.txt
-    五筆劃       http://vimim.googlecode.com/files/vimim.12345.txt
+    五笔划       http://vimim.googlecode.com/files/vimim.12345.txt
 ================ =======================================================
 
 |
@@ -733,30 +732,24 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 错：xianmeimeidepiaosuifengpiaoyang　=>　先美美地飘随风飘扬
      * 对：xi'anmeimeidepi'aosuifengpiaoyang　=>　 `西安妹妹的皮袄随风飘扬`__
 
- (4) 支持五笔〖动态〗云输入：为什么五笔不能人〖云〗亦〖云〗？
-
-     * 〖条件〗插入自制五笔云输入词库： `wimim.wubi2pinyin.txt`__
-     * 〖操作〗<Ctrl-6>切换，敲五笔，上拼音，按空格键入〖云〗。
-     * 【注】如果用〖想云就云〗，什么也不要下载，什么也不要设置。
-
- (5) 支持中文输入模式〖经典动态〗输入风格 （缺省）
+ (4) 支持中文输入模式〖经典动态〗输入风格 （缺省）
 
      * 如果希望体验搜狗入云的方式：设置 :let g:vimim_www_sogou=1
      * 相比之下，VimIM 的〖可控性云输入〗灵活一些。
 
- (6) 支持中文输入模式〖经典静态〗输入风格
+ (5) 支持中文输入模式〖经典静态〗输入风格
 
      * 考虑到网速，这是VimIM云输入推荐的输入模式。
      * 设置为 ``:let g:vimim_static_input_style=1``
 
- (7) 支持“想不云就可以不云”
+ (6) 支持“想不云就可以不云”
 
      * 【特点】在输入后加多一个英文句号，接着敲〖点石键〗
      * 【特点】不受g:vimim_www_sogou的设置所限制
      * 【限于】 `〖点石成金〗`_
      * 【例】cloud.  => 云
 
- (8) 推出〖想云就云〗，不换模式，不限输入法
+ (7) 推出〖想云就云〗，不换模式，不限输入法
 
      * 【卖点】东边日出西边雨，道是无云却有云！
      * 【特点】不限于拼音输入法！不需要设置！
@@ -768,13 +761,8 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【例】hfpjlswsqy, => 好风凭借力送我上青云
 
 __ http://code.google.com/p/vimim/wiki/SingleQuote
-__ http://vimim.googlecode.com/files/vimim.wubi2pinyin.txt
 
-.. sidebar::  VimIM `CLOUD 云输入`_ 　五笔
-
-   .. figure:: vimim_wubi_cloud_1.gif
-   .. figure:: vimim_wubi_cloud_2.gif
-
+|
 
 【设计思路】
 
@@ -1189,7 +1177,7 @@ VimIM 双码输入
   VimIM 双码输入                          词库 样本
 ====================== ==================================================
   汉语拼音             http://vimim.googlecode.com/files/vimim.pinyin.txt
-    五筆劃             http://vimim.googlecode.com/files/vimim.12345.txt
+    五笔划             http://vimim.googlecode.com/files/vimim.12345.txt
 ====================== ==================================================
 
 |
@@ -2769,7 +2757,6 @@ WHAT IS NEW
 #. [done] [legal] add one section in manual to clarify copyright
 #. [done] [diy] add g:vimim_diy_asdfghjklo to support shortcut
 #. [done] [translation] add brutal-force chinese2pinyin translation
-#. [done] [cloud] why not wubi? also add vimim.wubi2pinyin.txt
 #. [done] regression => mjads.xdhao.jdaaa zaskso ma7712li4002 mljjfo
 #. [done] add easter egg for user environment: vimim<C-\>
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
@@ -2841,5 +2828,76 @@ WHAT IS NEW
 #. [done] minimize initialization process when vim starts up
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
 #. [todo] plug and play ==> s:four_corner_flag
+#. [todo] remove vimim_auto_spell
 
+
+mjads.xdhao.jdaaa
+6021272260021762 
+hhyy.meet.teacher.hello.sssjj.zdolo.hhyy.sloso.nfofo 
+9999 
+
+vi50 （除了匹配单字，双字也被匹配，造成匹配时间很长，应当只匹配单字，而且只要输入该匹配之后，vimim返回信息第8行自动变成了五笔，此处估计是你的状态错误。）
+vivi50 （不能正常匹配）
+vi50vi  （可以正常匹配）
+vi50vi50 （可以正常匹配） 
+
+
+vi50 =>
+5000　shi 事
+5000　shi 史
+
+vivi50 =>
+5000　shi'shi 世事
+5000　shi'shi 事事
+5000　shi'shi 失事
+5000　shi'shi 实事
+5000　shi'shi 时事
+
+vi50vi  （可以正常匹配）
+vi50vi50 （可以正常匹配） 
+
+
+vi50vi  （可以正常匹配）
+vi50vi
+
+vi50vi50
+
+
+
+
+-------------------------------------------------------------
+vi50 =>
+5000　shi 事
+5000　shi 史
+
+vivi50 =>
+5000　shi'shi 世事
+5000　shi'shi 事事
+5000　shi'shi 失事
+5000　shi'shi 实事
+5000　shi'shi 时事
+
+vi50vi50 => 
+5000　5000　shi'shi 事事
+
+vi50vi =>
+5000　shi'shi 事事
+5000　shi'shi 事实
+5000　shi'shi 史实
+5000　shi'shi 史诗
+
+computer 电脑：Windows32_builtin_gui　
+Vim	 版本：gvim.exe　702　
+VimIM	 版本：vimim.vim　1514　
+encoding 编码：utf-8　
+fencs	 编码：ucs-bom,utf8,chinese　
+lc_time	 编码：English_United States.1252　
+mode	 风格：i_CTRL-^　经典动态　
+im	 输入：〖双拼〗＋〖四角号码〗　
+im	 输入：双拼：智能ABC　
+datafile 词库：C:/home/xma/svn/vim/vimfiles/plugin/vimim.4corner.txt　
+datafile 词库：C:/home/xma/svn/vim/vimfiles/plugin/vimim.pinyin_quote_sogou.txt　
+cloud	 搜狗：〖想云就云〗　
+VimIM	 设置：g:vimim_shuangpin_abc=1　
+-------------------------------------------------------------
 
