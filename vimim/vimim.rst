@@ -157,7 +157,7 @@ vimimhelp　<C-\\>　p
 * 【自主】不差钱　 **Open Source**
 * 【自力】VimIM `〖点石成金〗`_ 　  〖想云就云〗 `CLOUD 云输入`_
 * 【更生】VimIM `〖中文输入模式〗`_ 〖即插即用〗 `VimIM 双码输入`_
-* 【高性能】小巧　个性　智能　自然　无输入窗口
+* 【高性能】中文英文输入和中文英文编辑，不分彼此，融为一体。
 * 【低能耗】 `史上最容易卸载的中文输入法`__
 * 【和谐☆绿色】 No secret hidden glitch; No strings attached.
 * 【自由☆免费】 Free as in freedom, as well as in `free beer!`__
@@ -1415,8 +1415,10 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 VimIM Mapping
 =============
 | VimIM only needs maximum two hot keys.
-| VimIM 缺省热键不干涉 vim 缺省功能。
-|
+| 
+| 按 <Ctrl-\> 在非中文模式直接出选择。
+| 按 <Ctrl-6> 进入中文输入模式，此后按空格出选择。
+| 
 
 +------------------------+----------------------------+-----------------------+
 |   Vim 模式             |  敲　CTRL-6                | 　敲　CTRL-\\         |
@@ -2827,7 +2829,5 @@ WHAT IS NEW
 #. [todo] [pinyin+wubi] memory management
 #. [done] minimize initialization process when vim starts up
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
-
-
 
 
