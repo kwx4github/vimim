@@ -2084,6 +2084,11 @@ e　亿  j　斤  o　度  t　吨  z　兆
 + 【操作】 ㈠ 高亮选择汉字字串　㈡ 敲 **CTRL-6**
 + 【开启可设】:let g:vimim_unicode_lookup=1
 
+**输入记录**
+
++ 输入可以记录在 vim register P
++ 输入记录可以连续不断地playback
++ 【缺省开启】:let g:vimim_p_register_for_recording=1
 
 |
 |
@@ -2453,6 +2458,7 @@ __ http://code.google.com/p/vimim/wiki/VimIM__DIY
   :internet:  不联网照样敲中文
   :datafile:  无词库可以云输入
 
+
 VimIM 设计思路:
 
 - 用文本文件打造中文输入法：文本文件，天下无敌。
@@ -2461,6 +2467,21 @@ VimIM 设计思路:
 - 词库文件完全归用户管理，可以直接用Vim编辑。
 - 源程式不用编译，修改以后立竿见影。
 
+|
+|  let msg = "feedback from VimIM user"
+|
+|  if msg ==# "I like VimIM"
+|      if  msg ==# "VimIM works great"
+|          let action = "I will use it"
+|      else
+|          let action = "I want to customize it"
+|          let action = "I want to improve it"
+|          let action = "I want to write a plugin for it"
+|      endif
+|  else
+|      let action = "I want to delete it and forget it"
+|  endif 
+|
 |
 
 COPYRIGHT
@@ -2823,11 +2844,11 @@ WHAT IS NEW
 #. [todo] optimize mixture IM of pinyin and wubi
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [todo] [debug] ma77 mjjas yun0mu yun0mu7
-#. [todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher
-#. [todo] [search] optimization
-#. [todo] [pinyin+wubi] memory management
 #. [done] minimize initialization process when vim starts up
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
+#. [done] add g:vimim_p_register_for_recording for record and playback
+#. [todo] [pinyin+wubi] memory management
+#. [todo] [search] optimization
+#. [todo] qptest mycloud
 
 
