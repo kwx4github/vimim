@@ -683,6 +683,7 @@ CLOUD 云输入
   (3) 2009年11月16日 `史上第一支持五种双拼的云输入法诞生`__
   (4) 2009年11月28日 `支持五笔动态云输入，敢为天下先`__
   (5) 2009年12月1日  `推出〖想云就云〗，不换模式，不限输入法`__
+  (6) 2009年12月22日 支持〖自己的云〗
 
 __ http://pinyin.sogou.com/cloud
 __ http://code.google.com/p/vimim/wiki/VimIM_Cloud
@@ -761,6 +762,14 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【例】hfpjlswsqy, => 好风凭借力送我上青云
 
 __ http://code.google.com/p/vimim/wiki/SingleQuote
+
+ (8) 支持〖自己的云〗
+
+     * 【卖点】自己的云永远是最好的云
+     * 【条件】python
+     * 【云样】pcloud package
+     * 【即插即用】throw "pcloud" into plugin directory
+     * 【缺省关闭】:let g:vimim_my_cloud=0
 
 |
 
@@ -2847,8 +2856,8 @@ WHAT IS NEW
 #. [done] minimize initialization process when vim starts up
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
 #. [done] add g:vimim_p_register_for_recording for record and playback
+#. [done] [private cloud] let g:vimim_my_cloud='C:/home/vimim/pcloud/qptest'
 #. [todo] [pinyin+wubi] memory management
 #. [todo] [search] optimization
-#. [todo] qptest mycloud
 
 
