@@ -2827,77 +2827,7 @@ WHAT IS NEW
 #. [todo] [pinyin+wubi] memory management
 #. [done] minimize initialization process when vim starts up
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
-#. [todo] plug and play ==> s:four_corner_flag
-#. [todo] remove vimim_auto_spell
-
-
-mjads.xdhao.jdaaa
-6021272260021762 
-hhyy.meet.teacher.hello.sssjj.zdolo.hhyy.sloso.nfofo 
-9999 
-
-vi50 （除了匹配单字，双字也被匹配，造成匹配时间很长，应当只匹配单字，而且只要输入该匹配之后，vimim返回信息第8行自动变成了五笔，此处估计是你的状态错误。）
-vivi50 （不能正常匹配）
-vi50vi  （可以正常匹配）
-vi50vi50 （可以正常匹配） 
-
-
-vi50 =>
-5000　shi 事
-5000　shi 史
-
-vivi50 =>
-5000　shi'shi 世事
-5000　shi'shi 事事
-5000　shi'shi 失事
-5000　shi'shi 实事
-5000　shi'shi 时事
-
-vi50vi  （可以正常匹配）
-vi50vi50 （可以正常匹配） 
-
-
-vi50vi  （可以正常匹配）
-vi50vi
-
-vi50vi50
 
 
 
-
--------------------------------------------------------------
-vi50 =>
-5000　shi 事
-5000　shi 史
-
-vivi50 =>
-5000　shi'shi 世事
-5000　shi'shi 事事
-5000　shi'shi 失事
-5000　shi'shi 实事
-5000　shi'shi 时事
-
-vi50vi50 => 
-5000　5000　shi'shi 事事
-
-vi50vi =>
-5000　shi'shi 事事
-5000　shi'shi 事实
-5000　shi'shi 史实
-5000　shi'shi 史诗
-
-computer 电脑：Windows32_builtin_gui　
-Vim	 版本：gvim.exe　702　
-VimIM	 版本：vimim.vim　1514　
-encoding 编码：utf-8　
-fencs	 编码：ucs-bom,utf8,chinese　
-lc_time	 编码：English_United States.1252　
-mode	 风格：i_CTRL-^　经典动态　
-im	 输入：〖双拼〗＋〖四角号码〗　
-im	 输入：双拼：智能ABC　
-datafile 词库：C:/home/xma/svn/vim/vimfiles/plugin/vimim.4corner.txt　
-datafile 词库：C:/home/xma/svn/vim/vimfiles/plugin/vimim.pinyin_quote_sogou.txt　
-cloud	 搜狗：〖想云就云〗　
-VimIM	 设置：g:vimim_shuangpin_abc=1　
--------------------------------------------------------------
 
