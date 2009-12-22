@@ -43871,8 +43871,8 @@ shisheng 师生 失声 实生 市声
 shishengchan 试生产
 shishengjiusi 十生九死
 shishenjing 视神经
-shishi 事实 世事 史实 史诗 失事 失势 失实 实事 实施 实时
-shishi 师事 时世 时事 时势 时时 视事 誓师 诗史 适时 逝世
+shishi 事实 世事 史实 史诗 失事 失势 失实 实事 实施 实时 事事
+shishi 师事 时世 时事 时势 时时 视事 誓师 诗史 适时 逝世 世世
 shishifeifei 是是非非
 shishijiukong 十室九空
 shishikan 试试看
@@ -45459,6 +45459,7 @@ sijidu 四季度
 sijie 死结 死节
 sijin 四近
 sijiner 死劲儿
+sijiruchun 四季如春
 sijiu 思旧
 siju 死局
 sijuji 司局级
