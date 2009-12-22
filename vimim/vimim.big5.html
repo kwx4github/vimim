@@ -3423,6 +3423,12 @@ If the following download URL does not work for you, please
 <li>【操作】 ㈠ 高亮選擇漢字字串　㈡ 敲 <strong>CTRL-6</strong></li>
 <li>【開啟可設】:let g:vimim_unicode_lookup=1</li>
 </ul>
+<p><strong>輸入記錄</strong></p>
+<ul class="simple">
+<li>輸入可以記錄在 vim register P</li>
+<li>輸入記錄可以連續不斷地playback</li>
+<li>【缺省開啟】:let g:vimim_p_register_for_recording=1</li>
+</ul>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -4104,6 +4110,31 @@ If the following download URL does not work for you, please
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
+<div class="line-block">
+<div class="line">let msg = &quot;feedback from VimIM user&quot;</div>
+<div class="line"><br /></div>
+<div class="line">if msg ==# &quot;I like VimIM&quot;</div>
+<div class="line-block">
+<div class="line">if  msg ==# &quot;VimIM works great&quot;</div>
+<div class="line-block">
+<div class="line">let action = &quot;I will use it&quot;</div>
+</div>
+<div class="line">else</div>
+<div class="line-block">
+<div class="line">let action = &quot;I want to customize it&quot;</div>
+<div class="line">let action = &quot;I want to improve it&quot;</div>
+<div class="line">let action = &quot;I want to write a plugin for it&quot;</div>
+</div>
+<div class="line">endif</div>
+</div>
+<div class="line">else</div>
+<div class="line-block">
+<div class="line">let action = &quot;I want to delete it and forget it&quot;</div>
+</div>
+<div class="line">endif</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
 </div>
 </div>
 <div class="section" id="copyright">
@@ -4476,18 +4507,18 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] optimize mixture IM of pinyin and wubi</li>
 <li>[todo] [test] make sure no regression, following each item on manual</li>
 <li>[todo] how to find vim executable? s:path=expand(&quot;&lt;sfile&gt;:p:h&quot;).&quot;/&quot;</li>
-<li>[todo] [debug] ma77 mjjas yun0mu yun0mu7</li>
-<li>[todo] [debug] mjads.xdhao.jdaaa 6021272260021762 hhyy.meet.teacher</li>
-<li>[todo] [search] optimization</li>
-<li>[todo] [pinyin+wubi] memory management</li>
 <li>[done] minimize initialization process when vim starts up</li>
 <li>[done] [frequency] make it work now: g:vimim_chinese_frequency=1</li>
+<li>[done] add g:vimim_p_register_for_recording for record and playback</li>
+<li>[todo] [pinyin+wubi] memory management</li>
+<li>[todo] [search] optimization</li>
+<li>[todo] qptest mycloud</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 23:42:03 PST on Monday, 12/21/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 12:23:59 PST on Tuesday, 12/22/2009
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
