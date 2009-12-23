@@ -144,8 +144,8 @@ vimimhelp　<C-\\>　p
 |
 | 所谓安装，就是把文本文件扔到 vim 的 plugin 目录之下。
 |
-| 【拼音★四角】同时插上，可以平行使用，也可以交叉使用。
-| 【五笔★拼音】同时插上，可以平行使用，动态切换。
+| 【拼音★四角】同时插上，既可以平行也可以交叉使用，无须切换。
+| 【五笔★拼音】同时插上，可以平行使用，用i_CTRL-^键动态切换。
 |
 | 不加设置，不换模式，点热键就可上汉字，是谓〖点石成金〗。
 | 如果切换成中文输入模式，也可以将就当前流行的输入法习惯。
@@ -2859,5 +2859,5 @@ WHAT IS NEW
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] [pinyin+wubi] memory management
-#. [todo] [search] optimization
+
 
