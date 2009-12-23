@@ -761,8 +761,6 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【例】dbrcxby, => 东边日出西边雨
      * 【例】hfpjlswsqy, => 好风凭借力送我上青云
 
-__ http://code.google.com/p/vimim/wiki/SingleQuote
-
  (8) 支持〖自己的云〗
 
      * 【卖点】自己的云永远是最好的云
@@ -770,6 +768,8 @@ __ http://code.google.com/p/vimim/wiki/SingleQuote
      * 【云样】pcloud package
      * 【即插即用】throw "pcloud" into plugin directory
      * 【缺省关闭】:let g:vimim_my_cloud=0
+
+__ http://code.google.com/p/vimim/wiki/SingleQuote
 
 |
 
