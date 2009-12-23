@@ -2843,24 +2843,21 @@ WHAT IS NEW
 #. [done] [pinyin+erbi] can live together in harmony
 #. [done] [cangjie] sleeps with [pinyin] in harmony: plug and play
 #. [done] [skin] put together skin section, with both code and document
+#. [done] develop an algorithm to sort Chinese by frequent usage
+#. [done] minimize initialization process when vim starts up
+#. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
+#. [done] add g:vimim_p_register_for_recording for record and playback
+#. [done] [private cloud] let g:vimim_my_cloud='C:/home/vimim/pcloud/qptest'
 #. [todo] add :profile start /tmp/vimim.profile for optimization
 #. [todo] try to make vimim.vim and latex-suite plugin work together
 #. [todo] check if it is possible to load datafile from "gvim --remote"
 #. [todo] use SQLite to store and manage datafile?
 #. [todo] design a way to use cedict.txt as English input
 #. [todo] trying to support i_CTRL-N i_CTRL-P for Chinese text
-#. [todo] save user input as a hash: { keycode: Chinese }
 #. [todo] keep input history for further processing like search
-#. [todo] develop an algorithm to sort Chinese by frequent usage
 #. [todo] support "associate" function if it is helpful
-#. [todo] optimize mixture IM of pinyin and wubi
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [done] minimize initialization process when vim starts up
-#. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
-#. [done] add g:vimim_p_register_for_recording for record and playback
-#. [done] [private cloud] let g:vimim_my_cloud='C:/home/vimim/pcloud/qptest'
 #. [todo] [pinyin+wubi] memory management
 #. [todo] [search] optimization
-
 
