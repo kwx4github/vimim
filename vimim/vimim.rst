@@ -1617,7 +1617,6 @@ VimIM Mapping
 | 【演示】 一口气输入一长串用句号分隔的编码。
 | 　　　【输入】pinyin.shuru.si4.jiao3.hao4.ma3.hhyy
 | 　　　【匹配】拼音输入四角号码花好月圆
-| 【缺省开启】 :let g:vimim_match_dot_after_dot=1
 |
 
 
@@ -1627,7 +1626,6 @@ VimIM Mapping
 | 【演示】 一口气输入一长串拼音：
 | 　　　【输入】jiandaolaoshiwenshenghao.
 | 　　　【匹配】jiandao见到　laoshi老师　wensheng问声　hao好
-| 【缺省开启】 :let g:vimim_match_word_after_word=1
 |
 
 【自己动手试一试】
