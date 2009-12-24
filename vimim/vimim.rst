@@ -2846,7 +2846,6 @@ WHAT IS NEW
 #. [done] develop an algorithm to sort Chinese by frequent usage
 #. [done] minimize initialization process when vim starts up
 #. [done] add g:vimim_p_register_for_recording for record and playback
-#. [done] [private cloud] let g:vimim_my_cloud='C:/home/vimim/pcloud/qptest'
 #. [done] magic comma, last but one, for whole-jianpin-cloud at will: laystb,z
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
 #. [todo] add :profile start /tmp/vimim.profile for optimization
@@ -2860,4 +2859,6 @@ WHAT IS NEW
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] ..........zuorichongxian
-[paste] ,,,a => customized entry, poem, for sharp display 
+#. [todo] [mycloud] let g:vimim_my_cloud='C:/home/vimim/pcloud/qptest'
+
+
