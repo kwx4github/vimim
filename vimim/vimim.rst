@@ -1524,7 +1524,7 @@ VimIM Mapping
   - 〖回车键〗或无缝上英文，或回车，或上空格（after .,）
   - 〖状态显示〗 noruler
   - 【缺省关闭】 :let g:vimim_sexy_onekey=0
-  - 【关闭】敲<Esc>
+  - 【关闭】敲<Esc> 或者 <Tab>
 
 |
 
@@ -2847,6 +2847,8 @@ WHAT IS NEW
 #. [done] minimize initialization process when vim starts up
 #. [done] add g:vimim_p_register_for_recording for record and playback
 #. [done] [private cloud] let g:vimim_my_cloud='C:/home/vimim/pcloud/qptest'
+#. [done] magic comma, last but one, for whole-jianpin-cloud at will: laystb,z
+#. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
 #. [todo] add :profile start /tmp/vimim.profile for optimization
 #. [todo] try to make vimim.vim and latex-suite plugin work together
 #. [todo] check if it is possible to load datafile from "gvim --remote"
@@ -2857,10 +2859,5 @@ WHAT IS NEW
 #. [todo] support "associate" function if it is helpful
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [todo] [pinyin+wubi] memory management
-#. [redo] [frequency] make it work now: g:vimim_chinese_frequency=1
-#. [done] magic comma, last but one, for whole-jianpin-cloud at will: laystb,z
-#. [todo] ma3, "patter not found" stuck
 #. [todo] ..........zuorichongxian
-
-
+[paste] ,,,a => customized entry, poem, for sharp display 
