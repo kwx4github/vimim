@@ -764,7 +764,13 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【例】dbrcxby, => 东边日出西边雨
      * 【例】hfpjlswsqy, => 好风凭借力送我上青云
 
- (8) 支持〖自己的云〗
+ (8) 〖想云就云〗全简拼 
+
+     * 【特点】使用全简拼（拼音的第一个字母）匹配
+     * 【操作】在输入后加多二个英文逗号，接着敲〖点石键〗
+     * 【例】laystbz,, => 两岸猿声啼不住
+
+ (9) 支持〖自己的云〗
 
      * 【卖点】自己的云永远是最好的云
      * 【条件】python
@@ -2857,5 +2863,7 @@ WHAT IS NEW
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] [pinyin+wubi] memory management
 #. [redo] [frequency] make it work now: g:vimim_chinese_frequency=1
-#. [todo] [qianpin] double comma indicate whole qianpin: laystbz,,
+#. [done] [cloud] magic double comma for whole cloud qianpin: laystbz,,
+#. [todo] ..........zuorichongxian
+
 
