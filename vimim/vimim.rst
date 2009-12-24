@@ -2234,8 +2234,8 @@ e　亿  j　斤  o　度  t　吨  z　兆
 - 【词频记忆存盘】
 
   + 输入累积N次，词库可以自动刷新，永久存盘。
-  + 建议设置比较大一点的值：:let g:vimim_chinese_frequency=20
-  + 也就是说，每敲20个汉字，memory 中的词频写入disk存盘
+  + 建议设置比较大一点的值：:let g:vimim_chinese_frequency=10
+  + 也就是说，每选择10次菜单，memory中的词频写入disk存盘
   + 【开启可设】:let g:vimim_chinese_frequency=N
 
 - 【首字固定】
@@ -2843,7 +2843,6 @@ WHAT IS NEW
 #. [done] [skin] put together skin section, with both code and document
 #. [done] develop an algorithm to sort Chinese by frequent usage
 #. [done] minimize initialization process when vim starts up
-#. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
 #. [done] add g:vimim_p_register_for_recording for record and playback
 #. [done] [private cloud] let g:vimim_my_cloud='C:/home/vimim/pcloud/qptest'
 #. [todo] add :profile start /tmp/vimim.profile for optimization
@@ -2857,5 +2856,6 @@ WHAT IS NEW
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] [pinyin+wubi] memory management
-
+#. [redo] [frequency] make it work now: g:vimim_chinese_frequency=1
+#. [todo] [qianpin] double comma indicate whole qianpin: laystbz,,
 
