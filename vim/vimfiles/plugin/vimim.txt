@@ -7185,6 +7185,7 @@ cailiao 材料
 cailiao 猜料
 cailiaochang 材料厂
 cailiaofei 材料费
+cailu 财路
 cailu 采录
 cailue 才略
 caimai 采买
@@ -8763,12 +8764,13 @@ chengshangqixia 承上启下
 chengshi 城市 诚实 乘势 乘时 程式
 chengshibuzu 成事不足
 chengshipinmin 城市贫民
-chengshiredaoxiaoying 城市热岛效应
 chengshou 承受
 chengshouli 承受力
 chengshu 成数
 chengshu 成熟
 chengshu 称述
+chengshuang 成双
+chengshuangchengdui 成双成对
 chengshuangjiedui 成双结对
 chengshuo 成说
 chengshuo 称说
@@ -9206,7 +9208,7 @@ chimuzhinian 迟暮之年
 chin 下巴 下腭 #
 china 中国 天朝 吃拿 #
 chinanyuannu 痴男怨女
-chinese 汉字 漢字 中文 中国人 #
+chinese 汉字 汉语 漢字 中文 中国人 #
 chip 芯片 #
 chipaifan 吃派饭
 chipianfan 吃偏饭
@@ -11361,7 +11363,7 @@ cuzi 瘄子
 cycle 循环
 cyprus 塞浦路斯 #
 czech 捷克共和国 #
-d 的 到 都 点 动 同 地 多 大 对 得 等
+d 的 地 到 都 点 动 同 多 大 对 得 等
 da 大 打 答 哒 嗒 垯 塌 塔 搭 沓 耷 荙 跶 达
 da1 搭 哒 嗒 耷
 da2 答 达 妲 沓 瘩 达 靼
@@ -32179,7 +32181,7 @@ lvzhou 绿洲
 lvzong 律宗
 lvzuo 闾左
 m 馬 马 没 们 明 民 面
-ma 马 馬 骂 妈 码 嘛 码 吗 杩 麻
+ma 骂 馬 马 妈 码 嘛 码 吗 杩 麻
 ma1 妈 吗 嘛
 ma2 麻 嫲 蔴
 ma3 马 馬 玛 蚂 码 吗 溤 犸 玛 杩 犸 遤
@@ -32380,8 +32382,7 @@ malaysia 马来西亚 #
 maldives 马尔代夫 #
 male 男 雄 ♂ #
 maleizi 麻雷子
-mali 馬力 马力 麻利
-mali 马里 #
+mali 马力 马里 玛丽 麻利
 malian 抹脸 麻脸
 maliezhuyi 马列主义
 maliya 玛丽娅
@@ -32756,6 +32757,7 @@ maozhong 毛重
 maozhou 鄚州
 maozhu 毛猪
 maozhuang 毛装
+maozhuxi 毛主席
 maozi 帽子
 maozi 毛子
 maozixifa 帽子戏法
@@ -37251,6 +37253,7 @@ population 人口 #
 poqie 迫切
 poqiexing 迫切性
 pork 猪肉 #
+porsche 保时捷 #
 port 港口 #
 portion 分配 部分 #
 portrait 肖像 描写 形像 #
@@ -39849,6 +39852,7 @@ qunzhongyundong 群众运动
 qunzhongzuzhi 群众组织
 quota 行市 #
 quotation 引用 语录 #
+quote 引用 引证 援引 摘引 引号 断字符号 #
 qupai 曲牌
 qupo 驱迫
 qupu 曲谱
