@@ -764,11 +764,12 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【例】dbrcxby, => 东边日出西边雨
      * 【例】hfpjlswsqy, => 好风凭借力送我上青云
 
- (8) 〖想云就云〗全简拼 
+ (8) 〖想云就云〗全简拼（拼音的第一个字母） 
 
-     * 【特点】使用全简拼（拼音的第一个字母）匹配
-     * 【操作】在输入后加多二个英文逗号，接着敲〖点石键〗
-     * 【例】laystbz,, => 两岸猿声啼不住
+     * 【特点】自动加断字符号，增加句子输入的确定性
+     * 【操作】在输入最后一个字母之前加多一个逗号
+     * 【例】laystb,z => 两岸猿声啼不住
+     * 【例】ryddddydg,c => 人有多大胆地有多高产
 
  (9) 支持〖自己的云〗
 
@@ -2863,7 +2864,8 @@ WHAT IS NEW
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] [pinyin+wubi] memory management
 #. [redo] [frequency] make it work now: g:vimim_chinese_frequency=1
-#. [done] [cloud] magic double comma for whole cloud qianpin: laystbz,,
+#. [done] magic comma, last but one, for whole-jianpin-cloud at will: laystb,z
+#. [todo] ma3, "patter not found" stuck
 #. [todo] ..........zuorichongxian
 
 
