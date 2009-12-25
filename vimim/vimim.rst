@@ -2087,7 +2087,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 **数字标签**
 
 + 显示数字标签，并提供数字选字
-+ 【缺省开启】:let g:vimim_menu_label=1
++ 【缺省开启】:let g:vimim_custom_menu_label=1
 
 **寻找内码**
 
@@ -2098,9 +2098,8 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 **输入记录**
 
-+ 输入可以记录在 vim register P
++ 输入记录在 g:vimim
 + 输入记录可以连续不断地playback
-+ 【缺省开启】:let g:vimim_p_register_for_recording=1
 
 |
 |
@@ -2203,17 +2202,8 @@ e　亿  j　斤  o　度  t　吨  z　兆
 | 空格键上汉字，回车键上英文。
 |
 
-`〖点石成金〗`_
-
-  + (Vim Insert Mode)敲两次CTRL-6后可直接敲中文。
-
-`〖中文输入模式〗`_
-
-  + (Vim Insert Mode)敲两次CTRL-6后可直接敲中文。
   + 回车键确认英文或者数字，随后可以直接上中文。
-
-【缺省开启】:let g:vimim_seamless_english_input=1
-
+  + (Vim Insert Mode)敲两次CTRL-6后可直接敲中文。
 
 
 |
@@ -2240,7 +2230,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
   + 也就是说，每选择10次菜单，memory中的词频写入disk存盘
   + 【开启可设】:let g:vimim_chinese_frequency=N
 
-- 【首字固定】
+- 【首字固顶】
 
   + 常用字词将永远显示在第一候选项。
   + 【开启可设】:let g:vimim_frequency_first_fix=1
@@ -2845,7 +2835,6 @@ WHAT IS NEW
 #. [done] [skin] put together skin section, with both code and document
 #. [done] develop an algorithm to sort Chinese by frequent usage
 #. [done] minimize initialization process when vim starts up
-#. [done] add g:vimim_p_register_for_recording for record and playback
 #. [done] magic comma, last but one, for whole-jianpin-cloud at will: laystb,z
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
 #. [todo] add :profile start /tmp/vimim.profile for optimization
@@ -2860,5 +2849,8 @@ WHAT IS NEW
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] ..........zuorichongxian
 #. [todo] [mycloud] let g:vimim_my_cloud='C:/home/vimim/pcloud/qptest'
+#. [todo] [mycloud] let g:vimim_www_mycloud = 0
+#. [done] [rot13] make rot13 ready for Great Wall
+#. [redo] add g:vimim for playback; remove g:vimim_p_register_for_recording
 
 
