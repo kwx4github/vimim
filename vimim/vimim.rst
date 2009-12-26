@@ -1434,10 +1434,10 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 VimIM Mapping
 =============
 | VimIM only needs maximum two hot keys.
-| 
+|
 | 按 <Ctrl-\> 在非中文模式直接出选择。
 | 按 <Ctrl-6> 进入中文输入模式，此后按空格出选择。
-| 
+|
 
 +------------------------+----------------------------+-----------------------+
 |   Vim 模式             |  敲　CTRL-6                | 　敲　CTRL-\\         |
@@ -1496,53 +1496,76 @@ VimIM Mapping
   | 【破旧立新】让中文输入回归自然
   | 【无模式转化】无“状态”切换
 
-+ vim 插入模式：
+  + vim 插入模式：
 
-  - 【云输入】最方便的 `CLOUD 云输入`_
-  - 〖想云就云〗不换模式，不限输入法:  using comma
-  - 【整句输入】敲中文如同敲英文
-  - 〖中文标点〗可点击英文标点直接转换。
-  - 【匹配提醒】缺省匹配，以及总匹配数
-  - 【万国码】 `Unicode 内码输入`_ 直接上屏
-  - 【国标码】 `GBK 内码输入`_ 直接上屏
-  - 【大五码】 `Big5 内码输入`_ 直接上屏
+    - 【云输入】最方便的 `CLOUD 云输入`_
+    - 〖想云就云〗不换模式，不限输入法:  using comma
+    - 【整句输入】敲中文如同敲英文
+    - 〖中文标点〗可点击英文标点直接转换。
+    - 【匹配提醒】缺省匹配，以及总匹配数
+    - 【万国码】 `Unicode 内码输入`_ 直接上屏
+    - 【国标码】 `GBK 内码输入`_ 直接上屏
+    - 【大五码】 `Big5 内码输入`_ 直接上屏
 
-+ 菜单操作：
+  + 菜单操作：
 
-  - 【中文搜索】可用 VimIM `中文搜索`_
-  - 【一键改错】可敲 ``d`` 键 for delete
-  - 【翻页选字】可用 vi 快捷键 `翻页选字`_
-  - 【以词定字】可按 ``[`` 或 ``]`` 键
-  - 【汉字上屏】也可敲 ``y`` 键或点石键
-
-+ OneKey 高级功能：
-
-  - 【开启】敲【点石键】
-  - 〖经典〗空格键上汉字，回车键上英文。
-  - 〖无缝混排〗支持 `无缝混排`_
-  - 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
-  - 〖回车键〗或无缝上英文，或回车，或上空格（after .,）
-  - 〖状态显示〗 noruler
-  - 【缺省关闭】 :let g:vimim_sexy_onekey=0
-  - 【关闭】敲<Esc> 或者 <Tab>
+    - 【中文搜索】可用 VimIM `中文搜索`_
+    - 【一键改错】可敲 ``d`` 键 for delete
+    - 【翻页选字】可用 vi 快捷键 `翻页选字`_
+    - 【以词定字】可按 ``[`` 或 ``]`` 键
+    - 【汉字上屏】也可敲 ``y`` 键或点石键
 
 |
 
-【点石键】OneKey 二者择一：
+【点石键】OneKey 三者择一：
 
-  (1) 〖CTRL-\\〗             　 `VimIM Mapping`_
+  (1) 〖CTRL-\\〗　　　　　　 `VimIM Mapping`_
 
      + 【特点】打字搜索，中文英文没有区别。
      + 【缺省开启】 :let g:vimim_one_key=1
 
-  (2) 〖Tab〗〖缺省关闭〗
+  (2) 〖Tab〗（插入模式）
 
      + 【优点】Tab键方便省力
      + 【反经典】用Tab键上汉字，用空格键确认
      + 【智能】该出码时就出码，没码时出Tab
      + 【开启可设】 :let g:vimim_tab_for_one_key=1
      + 【小技巧】开启后，<CTRL-\\>键变成<Tab>键
-     + 【推荐】OneKey 专职玩家
+     + 【推荐】OneKey 传统玩家
+
+  (3) 〖CTRL-^〗 （参见 `OneKey输入模式`_ ）
+
+|
+
+OneKey输入模式
+--------------
+如果愿意，OneKey 可以作为VimIM唯一的中文输入模式。
+
++ 【点石键】可以定为 CTRL-^
+
+  - 【反经典】把OneKey当作VimIM的中文输入模式。
+  - 【开启可设】:let g:vimim_sexy_onekey=2
+  - 【推荐】OneKey 专职玩家
+
+    - ㈠插入模式
+
+      + 【点石键】与 vim 的i_CTRL-^键定义基本一致
+
+    - ㈡正常模式
+
+      + 【点石键】与插入模式的一模一样
+      + 【特点】把光标置于word任一字母下，一键点出菜单。
+
++ 【开启】—— 敲【点石键】
++ 【关闭】—— 敲<Esc>
++ 【功能】
+
+  - 〖经典〗空格键上汉字，回车键上英文。
+  - 〖无缝混排〗支持 `无缝混排`_
+  - 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
+  - 〖回车键〗或无缝上英文，或回车，或上空格（after .,）
+  - 〖状态显示〗 noruler
+  - 【缺省关闭】 :let g:vimim_sexy_onekey=0
 
 |
 
@@ -2182,7 +2205,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
   - ``:let g:vimim_custom_skin=2``
 
     * 再隐藏编码显示，使显示栏简洁明快。
-    
+
 + 〖光标〗g:vimim_custom_lcursor_color
 
   -  光标颜色可以归自己指定，缺省是绿色。
@@ -2192,7 +2215,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
   - statusline 可以显示当前使用的中文输入法：
   - 【缺省开启】:let g:vimim_custom_laststatus=1
- 
+
 |
 |
 
@@ -2301,8 +2324,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
     + comma as head: for universal imode: double comma 大写中文数字
     + comma as head: triple comma for clear display
 
-  - 【缺省关闭】 :let g:vimim_sexy_onekey=0
-
 
 |
 |
@@ -2397,18 +2418,6 @@ __ http://code.google.com/p/vimim/wiki/FAQ_Old
      | are interested in making both plugins work in harmony.
      |
 
-:问: | VimIM 会不会和谐用户的设置，例如：nolazyredraw?
-:答: | Yes, but ...
-     | 如果不激活 VimIM, Vim 的设置永远不会“被和谐”。
-     |
-     | 用〖点石成金〗上字以后，如果愿意，可以敲空格键。
-     | 空格键略具智能：可以把VimIM 固有的几个设置
-     | (lazyredraw, pumheight, hlsearch)
-     | 恢复到用户的在自己的.vimrc中的设置。
-     |
-     | 【更新】 【缺省关闭】 :let g:vimim_sexy_onekey=0
-     |
-
 :问: | VimIM 与 Vim abbreviation 好像有点冲突?
 :答: | Yes, but ...
      | 如果不激活 VimIM, Vim 的abbreviation永远不会“被和谐”。
@@ -2482,7 +2491,7 @@ VimIM 设计思路:
 |      endif
 |  else
 |      let action = "I want to delete it and forget it"
-|  endif 
+|  endif
 |
 |
 
@@ -2692,7 +2701,7 @@ WHAT IS NEW
 #. [done] make label works as absolute number to user's expectation
 #. [done] make number smart by adding vimim_punctuation_navigation option
 #. [done] combine all punctuation navigation together
-#. [done] add g:vimim_reverse_pageup_pagedown for left-hand PageUp/PageDown
+#. [done] add g:vimim_reverse_pageup_pagedown for left-hand PageUp
 #. [done] avoid changing user's .vimrc option when using OneKey
 #. [done] make vimim_smart_backspace() support vimim_sentence_match()
 #. [done] support fixed first candidate g:vimim_frequency_first_fix=1
@@ -2732,7 +2741,7 @@ WHAT IS NEW
 #. [done] support "i have a dream." for CangJie OneKey sentence match
 #. [done] support "i have a dream." for Nature  OneKey sentence match
 #. [done] support live "today" (itoday) and "now" (inow) in Chinese
-#. [done] support arbitrary private file location: g:vimim_datafile_private
+#. [done] support arbitrary private location: g:vimim_datafile_private
 #. [done] [zhengma] fix aewz using datafile: vimim.zhengma.txt
 #. [done] [ctc] create vimim.ctc.txt from unihan.txt, PRC telegraph code
 #. [done] [ctc] support Chinese Telegraph Code (CTC) input and search
@@ -2770,7 +2779,7 @@ WHAT IS NEW
 #. [done] [cloud] only try cloud once when no internet connection
 #. [done] [cloud] support apostrophe to mark syllables, remove ambiguity
 #. [done] [apostrophe] xi'anmeimeidepi'aosuifengpiaoyang
-#. [done] [apostrophe] if user wants: :let g:vimim_datafile_has_apostrophe=1
+#. [done] [apostrophe] add option: :let g:vimim_datafile_has_apostrophe=1
 #. [done] [punctuation] intelligent: HAPPY, happy<Space>,
 #. [done] [punctuation] add option: :let g:vimim_english_punctuation=0
 #. [done] [punctuation] OneKey only: :let g:vimim_punctuation_navigation=1
@@ -2821,21 +2830,19 @@ WHAT IS NEW
 #. [redo] [datafile update] modify data in memory based on past usage
 #. [done] [paste] ,,,a => customized entry, poem, for sharp display
 #. [done] :let g:vimim_punctuation_navigation=0 makes - and = available
-#. [done] onekey, g:vimim_sexy_onekey=1, no transformation of double ,.
 #. [done] yun0mu7=>yunmu yun0mu=>nothing [bug] '^\l\+\d\+' && '\l\+\d\=$'
 #. [done] [internal] build debug framework
 #. [done] [internal] :let g:vimimdebug=1 => vimimdebug =>
 #. [done] issue 43: optimize b:keymap_name and always show IM in statusline
 #. [done] [pinyin+4corner] 95 959 jing95 jingshen9 mali77 nfofo nhofs
 #. [done] [pinyin+4corner] always use number following glyph as a filter
-#. [done] [onekey] s:vimim_sexy_onekey => noruler means OneKey mode is on
 #. [done] [pinyin+wubi] plug and play using ctrl-6 to switch between
 #. [done] [pinyin+erbi] can live together in harmony
 #. [done] [cangjie] sleeps with [pinyin] in harmony: plug and play
 #. [done] [skin] put together skin section, with both code and document
 #. [done] develop an algorithm to sort Chinese by frequent usage
 #. [done] minimize initialization process when vim starts up
-#. [done] magic comma, last but one, for whole-jianpin-cloud at will: laystb,z
+#. [done] magic comma, last but one, for whole-jianpin-cloud: laystb,z
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
 #. [todo] add :profile start /tmp/vimim.profile for optimization
 #. [todo] try to make vimim.vim and latex-suite plugin work together
@@ -2852,5 +2859,8 @@ WHAT IS NEW
 #. [todo] [mycloud] let g:vimim_www_mycloud = 0
 #. [done] [rot13] make rot13 ready for Great Wall
 #. [redo] add g:vimim for playback; remove g:vimim_p_register_for_recording
+#. [done] [onekey] s:vimim_sexy_onekey => noruler means OneKey mode is on
+#. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
+#. [done] [onekey] create official OneKey Chinese input mode
 
 
