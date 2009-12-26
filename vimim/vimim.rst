@@ -1299,7 +1299,10 @@ __ `VimIM Mapping`_
     *  五笔★拼音
     *  二笔★拼音
     *  仓颉★拼音
-
+    *  郑码★拼音
+    *  速成★拼音
+    *  行列★拼音
+    *  新华★拼音
 
 【词库位置】
 
@@ -1469,7 +1472,7 @@ VimIM Mapping
 |
  
 
-㈡【反经典】 This is another way to use VimIM, using one mapping
+㈡【反经典】 This is another way to use VimIM, using one map only.
 
 (1) 特点： `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
 (2) 设置：:let g:vimim_ctrl_6_as_onekey=1（vim插入模式）
@@ -1576,7 +1579,7 @@ VimIM Mapping
 〖点石成金〗输入模式
 --------------------
 | 如果愿意，OneKey 可以作为VimIM唯一的中文输入模式。
-| 这也许是传说中的中文输入的无模式之模式。
+| 这也许是传说中的无模式之中文输入模式。
 | 也可以当作 `〖点石成金〗`_ 的另类玩法。缺省关闭。
 |
 
@@ -2781,7 +2784,6 @@ WHAT IS NEW
 #. [done] support "i have a dream." for Nature  OneKey sentence match
 #. [done] support live "today" (itoday) and "now" (inow) in Chinese
 #. [done] support arbitrary private location: g:vimim_datafile_private
-#. [done] [zhengma] fix aewz using datafile: vimim.zhengma.txt
 #. [done] [ctc] create vimim.ctc.txt from unihan.txt, PRC telegraph code
 #. [done] [ctc] support Chinese Telegraph Code (CTC) input and search
 #. [done] relieve restriction of the fixed noignorecase setting
@@ -2893,15 +2895,18 @@ WHAT IS NEW
 #. [todo] support "associate" function if it is helpful
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [todo] ..........zuorichongxian
-#. [redo] add g:vimim for playback; remove g:vimim_p_register_for_recording
 #. [done] [onekey] g:vimim_sexy_onekey => noruler means OneKey mode is on
 #. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
-#. [todo] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
+#. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
 #. [done] [onekey] create official OneKey Chinese input mode
 #. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
 #. [done] [mycloud] g:vimim_mycloud_local='C:/home/vimim/pcloud/qptest'
 #. [done] [mycloud] g:vimim_mycloud_www=1 http://pim-cloud.appspot.com/qp/
 #. [done] [rot13] make rot13 ready for Great Wall
+#. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian 
+#. [redo] save g:vimim for all situations, for playback and for fun
+#. [done] [zhengma] fix aewz using datafile: vimim.zhengma.txt
+#. [done] [zhengma] plug and play <=> zhengma and pinyin
+#. [done] [array30][xinhua][quick] plug and play <=> xingma and pinyin
 
 
