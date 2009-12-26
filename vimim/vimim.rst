@@ -2894,47 +2894,14 @@ WHAT IS NEW
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [todo] ..........zuorichongxian
-#. [todo] [mycloud] let g:vimim_my_cloud='C:/home/vimim/pcloud/qptest'
-#. [todo] [mycloud] let g:vimim_www_mycloud = 0
-#. [done] [rot13] make rot13 ready for Great Wall
 #. [redo] add g:vimim for playback; remove g:vimim_p_register_for_recording
 #. [done] [onekey] g:vimim_sexy_onekey => noruler means OneKey mode is on
 #. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
 #. [todo] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
 #. [done] [onekey] create official OneKey Chinese input mode
 #. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
+#. [done] [mycloud] g:vimim_mycloud_local='C:/home/vimim/pcloud/qptest'
+#. [done] [mycloud] g:vimim_mycloud_www=1 http://pim-cloud.appspot.com/qp/
+#. [done] [rot13] make rot13 ready for Great Wall
 
-
-let cloud = "http://pim-cloud.appspot.com/qp/"
-let cloud = "http://pim-cloud.appspot.com/sp_abc/"
-
-%E6%98%A5%E6%A2%A6	8	50_44
-%E6%98%A5%E8%90%8C	8	50_44
-%E6%98%A5	4	5060
-%E7%BA%AF	4	2511
-%E5%94%87	4	7126
-%E9%86%87	4	1064
-%E8%A0%A2	4	5013
-%E6%B7%B3	4	3014
-%E5%81%86	4	2526
-%E6%A4%BF	4	4596
-%E9%B9%91	4	0742
-%E8%8E%BC	4	4411
-%E8%9D%BD	4	5516
-%E7%B4%94	4	2591
-
-chunmeng_50_44 春梦
-chunmeng_50_44 春萌
-chun_5060 春
-chun_2511 纯
-chun_7126 唇
-chun_1064 醇
-chun_5013 蠢
-chun_3014 淳
-chun_2526 偆
-chun_4596 椿
-chun_0742 鹑
-chun_4411 莼
-chun_5516 蝽
-chun_2591 純
 
