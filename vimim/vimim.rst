@@ -684,14 +684,13 @@ CLOUD 云输入
   (1) 2009年11月2日  `搜狗宣布推出搜狗云输入法`__
   (2) 2009年11月11日 `VimIM 宣誓入云`__
   (3) 2009年11月16日 `史上第一支持五种双拼的云输入法诞生`__
-  (4) 2009年11月28日 `支持五笔动态云输入，敢为天下先`__
-  (5) 2009年12月1日  `推出〖想云就云〗，不换模式，不限输入法`__
-  (6) 2009年12月22日 支持〖自己的云〗
+  (4) 2009年12月1日  `推出〖想云就云〗，不换模式，不限输入法`__
+  (5) 2009年12月22日 支持〖自己的云〗 python 版本
+  (6) 2009年12月25日 支持〖自己的云〗 无词库互联网版本
 
 __ http://pinyin.sogou.com/cloud
 __ http://code.google.com/p/vimim/wiki/VimIM_Cloud
 __ http://groups.google.com/group/vimim/browse_thread/thread/b90a05c1e37e3448
-__ http://groups.google.com/group/vimim/browse_thread/thread/11a011bda9d0663c
 __ http://code.google.com/p/vimim/wiki/CloudForAll
 
 
@@ -771,13 +770,20 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【例】laystb,z => 两岸猿声啼不住
      * 【例】ryddddydg,c => 人有多大胆地有多高产
 
- (9) 支持〖自己的云〗
+ (9) 支持〖自己的云〗 python 版本
 
-     * 【卖点】自己的云永远是最好的云
+     * 【卖点】自己的云是最好的云
      * 【条件】python
      * 【云样】pcloud package
      * 【即插即用】throw "pcloud" into plugin directory
-     * 【缺省关闭】:let g:vimim_my_cloud=0
+     * 【缺省关闭】:let g:vimim_mycloud_local=0
+
+ (10) 支持〖自己的云〗 无词库互联网版本
+
+      * 【卖点】自己的云永远是最好的云
+      * 【特点】不限输入法！不需要词库！
+      * 【条件】只需要联网和wget/curl
+      * 【缺省关闭】:let g:vimim_mycloud_www=0
 
 __ http://code.google.com/p/vimim/wiki/SingleQuote
 
@@ -2896,5 +2902,39 @@ WHAT IS NEW
 #. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
 #. [todo] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
 #. [done] [onekey] create official OneKey Chinese input mode
+#. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
 
+
+let cloud = "http://pim-cloud.appspot.com/qp/"
+let cloud = "http://pim-cloud.appspot.com/sp_abc/"
+
+%E6%98%A5%E6%A2%A6	8	50_44
+%E6%98%A5%E8%90%8C	8	50_44
+%E6%98%A5	4	5060
+%E7%BA%AF	4	2511
+%E5%94%87	4	7126
+%E9%86%87	4	1064
+%E8%A0%A2	4	5013
+%E6%B7%B3	4	3014
+%E5%81%86	4	2526
+%E6%A4%BF	4	4596
+%E9%B9%91	4	0742
+%E8%8E%BC	4	4411
+%E8%9D%BD	4	5516
+%E7%B4%94	4	2591
+
+chunmeng_50_44 春梦
+chunmeng_50_44 春萌
+chun_5060 春
+chun_2511 纯
+chun_7126 唇
+chun_1064 醇
+chun_5013 蠢
+chun_3014 淳
+chun_2526 偆
+chun_4596 椿
+chun_0742 鹑
+chun_4411 莼
+chun_5516 蝽
+chun_2591 純
 
