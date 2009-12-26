@@ -1466,10 +1466,11 @@ VimIM Mapping
 ㈡【反经典】 This is another way to use VimIM, using one mapping
 
 (1) 特点： `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
-(2) 设置：:let g:vimim_sexy_onekey=2
-(3) 使用：按 <Ctrl-6> 进入 `〖点石成金〗输入模式`_
-(4) 使用：高亮选择汉字字串，按 <Ctrl-6> 可以 `见字找码`_
-(5) 使用：高亮选择空白位置，按 <Ctrl-6> 可以 `动态造词`_
+(2) 设置：:let g:vimim_ctrl_6_as_onekey=1（vim插入模式）
+(3) 设置：:let g:vimim_ctrl_6_as_onekey=2（包括vim正常模式）
+(4) 使用：按 <Ctrl-6> 进入 `〖点石成金〗输入模式`_
+(5) 使用：高亮选择汉字字串，按 <Ctrl-6> 可以 `见字找码`_
+(6) 使用：高亮选择空白位置，按 <Ctrl-6> 可以 `动态造词`_
 
 
 +------------------------+---------------------------------+
@@ -1569,23 +1570,25 @@ VimIM Mapping
 〖点石成金〗输入模式
 --------------------
 | 如果愿意，OneKey 可以作为VimIM唯一的中文输入模式。
-| 这是 `〖点石成金〗`_ 的另类玩法，缺省关闭。
+| 这也许是传说中的中文输入的无模式之模式。
+| 也可以当作 `〖点石成金〗`_ 的另类玩法。缺省关闭。
 |
 
 + 【点石键】可以定为 CTRL-^
 
   - 【反经典】把OneKey当作VimIM的中文输入模式。
-  - 【开启可设】:let g:vimim_sexy_onekey=2
   - 【推荐】OneKey 专职玩家
 
     - ㈠插入模式
 
       + 【点石键】与 vim 的i_CTRL-^键定义基本一致
+      + 【开启可设】:let g:vimim_ctrl_6_as_onekey=1
 
     - ㈡正常模式
 
       + 【点石键】与插入模式的一模一样
       + 【特点】把光标置于word任一字母下，一键点出菜单。
+      + 【开启可设】:let g:vimim_ctrl_6_as_onekey=2
 
 + 【开启】—— 敲【点石键】
 + 【关闭】—— 敲<Esc>
@@ -1596,7 +1599,6 @@ VimIM Mapping
   - 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
   - 〖回车键〗或无缝上英文，或回车，或上空格（after .,）
   - 〖状态显示〗 noruler
-  - 【缺省关闭】 :let g:vimim_sexy_onekey=0
 
 |
 
@@ -2890,8 +2892,9 @@ WHAT IS NEW
 #. [todo] [mycloud] let g:vimim_www_mycloud = 0
 #. [done] [rot13] make rot13 ready for Great Wall
 #. [redo] add g:vimim for playback; remove g:vimim_p_register_for_recording
-#. [done] [onekey] s:vimim_sexy_onekey => noruler means OneKey mode is on
+#. [done] [onekey] g:vimim_sexy_onekey => noruler means OneKey mode is on
 #. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
+#. [todo] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
 #. [done] [onekey] create official OneKey Chinese input mode
 
 
