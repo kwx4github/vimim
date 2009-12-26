@@ -2469,7 +2469,8 @@ If the following download URL does not work for you, please
 <p>㈡【反经典】 This is another way to use VimIM, using one mapping</p>
 <ol class="arabic simple">
 <li>特点： <a class="reference internal" href="#id76">〖点石成金〗</a> 的另类玩法，一键多用，一石多鸟</li>
-<li>设置：:let g:vimim_sexy_onekey=2</li>
+<li>设置：:let g:vimim_ctrl_6_as_onekey=1（vim插入模式）</li>
+<li>设置：:let g:vimim_ctrl_6_as_onekey=2（包括vim正常模式）</li>
 <li>使用：按 &lt;Ctrl-6&gt; 进入 <a class="reference internal" href="#id78">〖点石成金〗输入模式</a></li>
 <li>使用：高亮选择汉字字串，按 &lt;Ctrl-6&gt; 可以 <a class="reference internal" href="#id86">见字找码</a></li>
 <li>使用：高亮选择空白位置，按 &lt;Ctrl-6&gt; 可以 <a class="reference internal" href="#id87">动态造词</a></li>
@@ -2606,21 +2607,23 @@ If the following download URL does not work for you, please
 <h2><a class="toc-backref" href="#id144">〖点石成金〗输入模式</a></h2>
 <div class="line-block">
 <div class="line">如果愿意，OneKey 可以作为VimIM唯一的中文输入模式。</div>
-<div class="line">这是 <a class="reference internal" href="#id76">〖点石成金〗</a> 的另类玩法，缺省关闭。</div>
+<div class="line">这也许是传说中的中文输入的无模式之模式。</div>
+<div class="line">也可以当作 <a class="reference internal" href="#id76">〖点石成金〗</a> 的另类玩法。缺省关闭。</div>
 <div class="line"><br /></div>
 </div>
 <ul class="simple">
 <li>【点石键】可以定为 CTRL-^<ul>
 <li>【反经典】把OneKey当作VimIM的中文输入模式。</li>
-<li>【开启可设】:let g:vimim_sexy_onekey=2</li>
 <li>【推荐】OneKey 专职玩家<ul>
 <li>㈠插入模式<ul>
 <li>【点石键】与 vim 的i_CTRL-^键定义基本一致</li>
+<li>【开启可设】:let g:vimim_ctrl_6_as_onekey=1</li>
 </ul>
 </li>
 <li>㈡正常模式<ul>
 <li>【点石键】与插入模式的一模一样</li>
 <li>【特点】把光标置于word任一字母下，一键点出菜单。</li>
+<li>【开启可设】:let g:vimim_ctrl_6_as_onekey=2</li>
 </ul>
 </li>
 </ul>
@@ -2635,7 +2638,6 @@ If the following download URL does not work for you, please
 <li>〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。</li>
 <li>〖回车键〗或无缝上英文，或回车，或上空格（after .,）</li>
 <li>〖状态显示〗 noruler</li>
-<li>【缺省关闭】 :let g:vimim_sexy_onekey=0</li>
 </ul>
 </li>
 </ul>
@@ -4567,15 +4569,16 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] [mycloud] let g:vimim_www_mycloud = 0</li>
 <li>[done] [rot13] make rot13 ready for Great Wall</li>
 <li>[redo] add g:vimim for playback; remove g:vimim_p_register_for_recording</li>
-<li>[done] [onekey] s:vimim_sexy_onekey =&gt; noruler means OneKey mode is on</li>
+<li>[done] [onekey] g:vimim_sexy_onekey =&gt; noruler means OneKey mode is on</li>
 <li>[done] [onekey] g:vimim_sexy_onekey&gt;0, no transformation of double ,.</li>
+<li>[todo] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6</li>
 <li>[done] [onekey] create official OneKey Chinese input mode</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 18:43:43 PST on Friday, 12/25/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 20:39:27 PST on Friday, 12/25/2009
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
