@@ -2714,8 +2714,8 @@
 9942 勞
 9988 炏 燚
 9990 榮
-a 一 一个 #
-a 壹 啊 安 阿 吖 呵 锕
+a 一个 #
+a 安 啊 阿
 a1 啊 阿 吖 呵
 aba 阿爸
 ability 才能 能力 #
@@ -3428,7 +3428,7 @@ ayi 阿姨
 ayo 啊哟
 azerbaijan 阿塞拜疆 #
 b 不 被 报 本 部
-ba 爸 八 捌 伯 叭 把 吧 坝 巴 扒 拔 杷 灞 疤 笆 粑 罢 耙 芭 钯 霸 靶
+ba 把 爸 八 捌 伯 叭 吧 坝 巴 扒 拔 杷 灞 疤 笆 粑 罢 耙 芭 钯 霸 靶
 ba1 巴 叭 吧 岜 扒 疤 笆 粑 芭 仈
 ba2 八 捌 拔 茇 菝 跋 魃
 ba3 把 钯 靶
@@ -9611,7 +9611,7 @@ chouzou 抽走
 chouzuo 酬酢
 christ 基督 #
 christmas 圣诞节 #
-chu 处 出 刍 初 厨 搐 储 杵 楚 楮 橱 滁 畜 矗 础 硫 絮 蜍 褚 触 诎 诸 蹰 躇 锄 除 雏 黜
+chu 出 处 刍 初 厨 搐 储 杵 楚 楮 橱 滁 畜 矗 础 硫 絮 蜍 褚 触 诎 诸 蹰 躇 锄 除 雏 黜
 chu1 出 初 樗
 chu2 厨 刍 橱 滁 蜍 蹰 躇 锄 除 雏
 chu3 储 杵 楚 楮 础 褚
@@ -11300,8 +11300,7 @@ cuoyin 错银
 cuoza 错杂
 cuozhe 挫折
 cuozhiyuru 措置裕如
-cuozi 矬子
-cuozi 错字
+cuozi 错字 矬子
 cuozongfuza 错综复杂
 cup 茶杯 奖杯 #
 cuqian 粗浅
@@ -11313,7 +11312,6 @@ curious 好奇 好奇心 #
 curl 卷发 卷毛 #
 current 当前 现时 通用 通货 货币 流通 #
 curry 咖喱 #
-cursor 光标 #
 cursor 光标 游标 #
 curtain 窗帘 #
 curve 弯曲 曲线 #
@@ -15520,6 +15518,7 @@ fall 倒塌 跌到 掉下 #
 fall 掉下 瀑布 跌落 #
 falongzhenkui 发聋振聩
 false 错误 虚伪 #
+falungong 法轮功
 falv 法律
 falvfagui 法律法规
 falvjie 法律界
@@ -18349,7 +18348,7 @@ gazhi 嘎吱
 gazhiwo 胳肢窝 夹肢窝
 gazi 嘎子
 gazi 玍子
-ge 歌 个 割 各 哥 嗝 塥 戈 搁 格 疙 胳 葛 蛤 袼 镉 阁 隔 革 骼 髂 鸽
+ge 个 歌 割 各 哥 嗝 塥 戈 搁 格 疙 胳 葛 蛤 袼 镉 阁 隔 革 骼 髂 鸽
 ge1 歌 哥 鸽 割 圪 戈 搁 格 疙 胳 袼
 ge2 革 嗝 塥 搁 搿 格 胳 膈 葛 蛤 镉 阁 隔 颌 骼 鬲
 ge3 舸 葛
@@ -27877,7 +27876,7 @@ kancaichifan 看菜吃饭
 kancainu 看财奴
 kance 勘测
 kancha 勘察 勘查 看茶
-kancheng 堪称 看成 看承
+kancheng 看成 堪称 看承
 kanchu 看出
 kanchuan 看穿
 kandahan 堪达罕
@@ -32031,7 +32030,6 @@ lushuangzhijie 履霜之戒
 lushui 卤水
 lushui 露水
 lushuifuqi 露水夫妻
-lushuifuqi 露水夫妻
 lushuiqingshan 绿水青山
 lushuiyinyuan 露水姻缘
 lusi 鹭鸶
@@ -32181,7 +32179,7 @@ lvzhou 绿洲
 lvzong 律宗
 lvzuo 闾左
 m 馬 马 没 们 明 民 面
-ma 骂 馬 马 妈 码 嘛 码 吗 杩 麻
+ma 妈 馬 骂 马 码 嘛 码 吗 杩 麻
 ma1 妈 吗 嘛
 ma2 麻 嫲 蔴
 ma3 马 馬 玛 蚂 码 吗 溤 犸 玛 杩 犸 遤
@@ -42040,10 +42038,7 @@ shangshi 伤逝
 shangshi 赏识
 shangshigongsi 上市公司
 shangshou 上手
-shangshu 上书
-shangshu 上述
-shangshu 尚书
-shangshu 尚属
+shangshu 上述 上书 尚书 尚属
 shangshubati 上树拔梯
 shangshui 上水
 shangshui 上税
@@ -45796,7 +45791,7 @@ songtao 松涛
 songtizi 宋体字
 songwangshiju 送往事居
 songwangyinglai 送往迎来
-songwoshangqingyun 
+songwoshangqingyun
 songxiang 松香
 songxie 松懈
 songxin 送信 松心
@@ -47075,7 +47070,7 @@ thanksgiving 感恩节 #
 that 那 那样 那个 那么 #
 the 这 #
 theater 剧场 戏院 #
-their 他们的 #
+their 他们的 她们的 #
 them 它们 #
 then 那么 于是 既然 便 则 遂 尔后 接着 然后 #
 theory 理论 #
@@ -47475,7 +47470,7 @@ tiaosanwosi 调三窝四
 tiaoshe 调摄
 tiaoshen 跳神
 tiaosheng 跳绳
-tiaoshi 挑食 调试 调适
+tiaoshi 调试 挑食 调适
 tiaoshuichi 跳水池
 tiaosuo 挑唆 调唆
 tiaotai 跳台
@@ -47939,7 +47934,7 @@ tomb 坟墓 墦 #
 tomorrow 明天 #
 ton 吨 #
 tone 色调 语调 音色 #
-tong 童 佟 侗 僮 同 垌 峒 彤 恫 恸 曈 桐 桶 橦 洞 潼 痛 瞳 筒 统 通 酮 铜
+tong 同 童 佟 侗 僮 垌 峒 彤 恫 恸 曈 桐 桶 橦 洞 潼 痛 瞳 筒 统 通 酮 铜
 tong1 通 嗵 恫
 tong2 童 同 垌 峒 彤 仝 佟 侗 桐 潼 瞳 茼 酮 铜
 tong3 桶 统 侗 捅 筒
@@ -50108,7 +50103,7 @@ weizhang 违章
 weizhangzhe 违章者
 weizhe 为着
 weizheng 伪证
-weizhi 为之 为止 位置 未知
+weizhi 位置 为之 为止 未知
 weizhiqianjin 遗之千金
 weizhishu 未知数
 weizhixindong 为之心动
@@ -55658,10 +55653,7 @@ yezi 椰子
 yeziyan 叶子烟
 yezonghui 夜总会
 yezuo 夜作
-yi 一 医 义 衣 以 乙 已 亦 亿 裔 议 译 颐 饴 驿 呓 咦 噎 壹 夷 奕 姨
-yi 悒 意 懿 抑 择 挹 掎 揖 施 旖 易 椅 仪 伊 佚 依 倚 崎 异 弈 弋 彝
-yi 毅 浥 溢 漪 焉 猗 疑 疫 益 遗 邑 钇 铱 矣 移 绎 绮 缢 翊 忆 怡 怿
-yi 翌 翼 肄 胰 臆 艺 艾 蚁 逸 螠 诒 诣 诶 谊 贻 轶 迤 迭 宜 屹
+yi 一 以 医 义 衣 乙 已 亦 亿 裔 议 译 颐 饴 驿 呓 咦 噎 壹 夷 奕 姨 悒 意 懿 抑 择 挹 掎 揖 施 旖 易 椅 仪 伊 佚 依 倚 崎 异 弈 弋 彝 毅 浥 溢 漪 焉 猗 疑 疫 益 遗 邑 钇 铱 矣 移 绎 绮 缢 翊 忆 怡 怿 翌 翼 肄 胰 臆 艺 艾 蚁 逸 螠 诒 诣 诶 谊 贻 轶 迤 迭 宜 屹
 yi1 一 伊 依 医 壹 揖 漪 猗 衣 铱 黟
 yi2 移 仪 咦 夷 姨 宜 彝 怡 疑 胰 诒 贻 迤 遗 颐 饴
 yi3 以 乙 倚 已 旖 椅 矣 蚁 迤 钇
@@ -56898,6 +56890,7 @@ yishibushen 一时不慎
 yishichongdong 一时冲动
 yishidao 意识到
 yishiduli 遗世独立
+yishiduoniao 一石多鸟
 yishierniao 一石二鸟
 yishifumu 衣食父母
 yishishengchun 一室生春
@@ -57194,7 +57187,7 @@ yizhenhuangliang 一枕黄粱
 yizhenjianxue 一针见血
 yizhenyixian 一针一线
 yizhenzi 一阵子
-yizhi 一直 一致 意志 以至 以致 医治 已知 意旨 抑制 抑止 移植 遗址 遗志 义肢
+yizhi 一致 一直 意志 以至 以致 医治 已知 意旨 抑制 抑止 移植 遗址 遗志 义肢
 yizhibanjie 一知半解
 yizhibaoyuan 以直报怨
 yizhiduxiu 一枝独秀
@@ -57246,7 +57239,7 @@ yizuo 译作
 yizushishui 衣租食税
 yo 哟 唷
 yo1 哟 唷
-yong 永 勇 用 拥 泳 佣 俑 咏 墉 壅 蛹 涌 痈 镛 雍 庸 恿 慵 踊 邕
+yong 用 永 勇 拥 泳 佣 俑 咏 墉 壅 蛹 涌 痈 镛 雍 庸 恿 慵 踊 邕
 yong1 拥 墉 壅 庸 慵 痈 臃 邕 镛 雍 饔 鳙
 yong3 永 勇 俑 咏 恿 泳 涌 甬 蛹 踊
 yong4 用 佣
@@ -57442,9 +57435,7 @@ youdeng 油灯
 youdeshi 有的是
 youdi 有底
 youdi 邮递
-youdian 优点
-youdian 有点
-youdian 邮电
+youdian 有点 优点 邮电
 youdianju 邮电局
 youdianye 邮电业
 youdianyisi 有点意思
@@ -57655,8 +57646,7 @@ youqiuyu 有求于
 youqiwuli 有气无力
 youqixianshi 油气显示
 youqiyao 尤其要
-youqu 幽趣
-youqu 有趣
+youqu 有趣 幽趣
 youquan 有权
 your 你的 妳的 您的 你们的 妳们的 #
 youran 犹然 悠然 有染
@@ -57896,9 +57886,7 @@ youzhu 幼株
 youzhuyu 有助于
 youzi 游子 邮资 犹自 幼子 油子 油渍 游资 釉子
 youzuihuashe 油嘴滑舌
-yu 于 与 雨 育 屿 峪 喻 纡 羽 聿 臾 芋 菸 萸 懊 揄 於 昙 昱 栩 豫 逾 遇
-yu 欲 毓 浴 淤 渔 渝 瑜 盂 禹 禺 玉 予 余 宇 愚 狱 鱼 域 御 愈 妪 娱 寓 谀 谕
-yu 竽 俞 吁 愉 蜮 衙 裕 虞 蜍 阏 隅 预 馀 驭 鬻 郁 钰 阈 誉
+yu 与 于 雨 育 屿 峪 喻 纡 羽 聿 臾 芋 菸 萸 懊 揄 於 昙 昱 栩 豫 逾 遇 欲 毓 浴 淤 渔 渝 瑜 盂 禹 禺 玉 予 余 宇 愚 狱 鱼 域 御 愈 妪 娱 寓 谀 谕 竽 俞 吁 愉 蜮 衙 裕 虞 蜍 阏 隅 预 馀 驭 鬻 郁 钰 阈 誉
 yu1 吁 於 淤 瘀 纡 迂
 yu2 鱼 于 余 嵛 愉 愚 揄 榆 渔 渝 瑜 盂 禺 竽 臾 萸 虞 蝓 谀 逾 隅 馀 俞 妤 娱
 yu3 雨 与 羽 语 予 圉 宇 屿 禹 窳 龉
@@ -60821,7 +60809,7 @@ zhinangtuan 智囊团
 zhinei 之内
 zhineifangwai 直内方外
 zhinen 稚嫩
-zhineng 只能 智能 职能
+zhineng 智能 只能 职能
 zhinengcailiao 智能材料
 zhinengka 智能卡
 zhinengwuqi 智能武器
@@ -61022,13 +61010,7 @@ zhiyixingnan 知易行难
 zhiyong 只用
 zhiyongshuangquan 智勇双全
 zhiyou 只有 执友 挚友 知友 脂油
-zhiyu 之余
-zhiyu 值遇
-zhiyu 智育
-zhiyu 治愈
-zhiyu 知遇
-zhiyu 置于
-zhiyu 至于
+zhiyu 置于 之余 值遇 智育 治愈 知遇 至于
 zhiyuan 志愿
 zhiyuan 支援
 zhiyuan 纸鸢
@@ -62242,10 +62224,7 @@ zhuyan 主演 助研
 zhuyao 主要
 zhuye 主页
 zhuyeqing 竹叶青
-zhuyi 主义
-zhuyi 主意 注意
-zhuyi 属意
-zhuyi 逐一
+zhuyi 注意 主义 主意 属意 逐一
 zhuyili 注意力
 zhuyin 主因
 zhuyin 注音
