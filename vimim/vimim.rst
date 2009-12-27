@@ -714,7 +714,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
  (1) 〖全云输入〗每一个输入都〖云〗游
 
      * 特点：每打一个字母都要向服务器请求一次。
-     * 手动开启：可设置 :let g:vimim_www_sogou=1
+     * 手动开启：可设置 :let g:vimim_cloud_sogou=1
      * 自动开启：
 
        * Linux  　如果vim plugin目录下没有词库
@@ -723,12 +723,13 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
  (2) 〖可控性云输入〗每N个输入就〖云〗游
 
      * 特点：每打N个字母才向服务器请求一次。
-     * 设置：:let g:vimim_www_sogou=N
+     * 设置：:let g:vimim_cloud_sogou=N
      * （长的）诗词曲赋、新闻八卦、完整的句子拜托给〖云〗。
      * （短的）私人信息、英文、词组、单字留给VimIM自己处理。
      * 长短的定义没有统一的国际标准。玩家自己定标准。
      * 例如：如果选项设置为10:　即每敲10个字母以上就丢给〖云〗。
      * 结果：本地词库和搜狗云端词库智能切换。
+     * 技巧：N 可以随〖想云就云〗的长度动态设置。
 
  (3) 支持〖断字符〗　解决含糊的办法是在含糊的地方贴上标签：
 
@@ -737,7 +738,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
 
  (4) 支持中文输入模式〖经典动态〗输入风格 （缺省）
 
-     * 如果希望体验搜狗入云的方式：设置 :let g:vimim_www_sogou=1
+     * 如果希望体验搜狗入云的方式：设置 :let g:vimim_cloud_sogou=1
      * 相比之下，VimIM 的〖可控性云输入〗灵活一些。
 
  (5) 支持中文输入模式〖经典静态〗输入风格
@@ -748,7 +749,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
  (6) 支持“想不云就可以不云”
 
      * 【特点】在输入后加多一个英文句号，接着敲〖点石键〗
-     * 【特点】不受g:vimim_www_sogou的设置所限制
+     * 【特点】不受g:vimim_cloud_sogou的设置所限制
      * 【限于】 `〖点石成金〗`_
      * 【例】cloud.  => 云
 
@@ -776,14 +777,14 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【条件】python
      * 【云样】pcloud package
      * 【即插即用】throw "pcloud" into plugin directory
-     * 【缺省关闭】:let g:vimim_mycloud_local=0
+     * 【缺省关闭】:let g:vimim_cloud_local=0
 
  (10) 支持〖自己的云〗 无词库互联网版本
 
       * 【卖点】自己的云永远是最好的云
       * 【特点】不限输入法！不需要词库！
       * 【条件】只需要联网和wget/curl
-      * 【缺省关闭】:let g:vimim_mycloud_www=0
+      * 【缺省关闭】:let g:vimim_cloud_pim=0
 
 __ http://code.google.com/p/vimim/wiki/SingleQuote
 
@@ -1568,7 +1569,7 @@ VimIM Mapping
      + 【优点】Tab键方便省力
      + 【反经典】用Tab键上汉字，用空格键确认
      + 【智能】该出码时就出码，没码时出Tab
-     + 【开启可设】 :let g:vimim_tab_for_one_key=1
+     + 【开启可设】 :let g:vimim_tab_as_onekey=1
      + 【小技巧】开启后，<CTRL-\\>键变成<Tab>键
      + 【推荐】OneKey 传统玩家
 
@@ -2792,7 +2793,7 @@ WHAT IS NEW
 #. [done] [ErBi] support non-stop Chinese input for ErBi input method
 #. [done] [ShuangPin] better ShuangPin, all from Pan ShiZhu
 #. [done] [ShuangPin] make it possible to type sentence in static mode
-#. [done] [cloud] support Cloud IM from sugou: g:vimim_www_sogou
+#. [done] [cloud] support Cloud IM from sugou: g:vimim_cloud_sogou
 #. [done] [cloud] support continous partial cloud sentence match
 #. [done] [cloud] support non-cloud sentence input: i.have.a.dream
 #. [done] [cloud] support auto-cloud with linux when no-datafile
@@ -2840,7 +2841,7 @@ WHAT IS NEW
 #. [redo] [cloud] support CLOUD for all using comma before OneKey
 #. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
-#. [done] issue 18: vimim_tab_for_one_key: use <C-\> for <Tab>
+#. [done] issue 18: vimim_tab_as_onekey: use <C-\> for <Tab>
 #. [done] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [done] issue 17: make period dummy in Chinese Input Mode: ma.ma
 #. [done] issue 21: use <space> to close OneKey to avoid interference
@@ -2895,8 +2896,8 @@ WHAT IS NEW
 #. [todo] support "associate" function if it is helpful
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [done] [mycloud] g:vimim_mycloud_local='C:/home/vimim/pcloud/qptest'
-#. [done] [mycloud] g:vimim_mycloud_www=1 http://pim-cloud.appspot.com/qp/
+#. [done] [mycloud] g:vimim_cloud_local='C:/home/vimim/pcloud/qptest'
+#. [done] [mycloud] g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
 #. [done] [rot13] make rot13 ready for Great Wall
 #. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian
 #. [redo] save g:vimim for all situations, for playback and for fun
@@ -2907,7 +2908,9 @@ WHAT IS NEW
 #. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
 #. [done] [onekey] create official OneKey Chinese input mode
 #. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
-#. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey & g:xingma_sleep_with_pinyin
+#. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
+
+
 
 
