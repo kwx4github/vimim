@@ -1562,7 +1562,6 @@ VimIM Mapping
   (1) 〖CTRL-\\〗　　　　　　 `VimIM Mapping`_
 
      + 【特点】打字搜索，中文英文没有区别。
-     + 【缺省开启】 :let g:vimim_one_key=1
 
   (2) 〖Tab〗（插入模式）
 
