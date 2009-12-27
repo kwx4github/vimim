@@ -144,8 +144,8 @@ vimimhelp　<C-\\>　p
 |
 | 所谓安装，就是把文本文件扔到 vim 的 plugin 目录之下。
 |
-| 【拼音★四角】同时插上，既可以平行也可以交叉使用，无须切换。
-| 【五笔★拼音】同时插上，可以平行使用，用CTRL-6键动态切换。
+| 【拼音★四角】同时插上，可以平行也可以交叉使用，无须切换。
+| 【五笔★拼音】同时插上，可以平行使用，动态切换。
 |
 | 不加设置，不换模式，点热键就可上汉字，是谓〖点石成金〗。
 | 如果切换成中文输入模式，也可以将就当前流行的输入法习惯。
@@ -2912,5 +2912,24 @@ WHAT IS NEW
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
 
 
+To the author of mycloud package:
+
+Is it possible to go this way:
+
+(1) if mycloud local is available, then use it first
+(2) otherwise, goes to mycloud www
+
+We may need two gloable variables, then?  For example:
+   :let g:vimim_cloud_python='C:/home/vimim/pcloud/qptest'
+   :let g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
+
+Is it possible to combine those two variables into one?
+For mycloud local, we can do "plug and play"!
+
+You will need to make both share a same input and output format.
+Also, for mycloud local, we don't need rot13.
+
+The whole design idea is to support better "plug and play", with
+minimum or even zero settings!
 
 
