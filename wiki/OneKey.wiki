@@ -38,7 +38,7 @@ VimIM Mapping
 =============
 【反经典】 This is another way to use VimIM, using one map only.
 　
-(1) 特点：〖点石成金〗 的另类玩法，一键多用，一石多鸟
+(1) 特点：〖点石成金〗的另类玩法，一键多用，一石多鸟
 (2) 设置：:let g:vimim_ctrl_6_as_onekey=1（Vim插入模式mapping）
 (3) 设置：:let g:vimim_ctrl_6_as_onekey=2（包括Vim正常模式mapping）
 (4) 使用：按 <Ctrl-6> 进入 〖点石成金〗输入模式
