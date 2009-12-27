@@ -1591,7 +1591,7 @@ VimIM Mapping
 
     - ㈠插入模式
 
-      + 【点石键】与 vim 的i_CTRL-^键定义基本一致
+      + 【点石键】与Vim的标准IM键i_CTRL-^基本一致
       + 【开启可设】:let g:vimim_ctrl_6_as_onekey=1
 
     - ㈡正常模式
@@ -2173,7 +2173,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 〖中文输入模式〗
 ================
 |
-| 需先切入中文输入模式：缺省切入键与 vim 此键功能保持一致：
+| 需先切入中文输入模式：缺省切入键与Vim的标准IM键功能保持一致：
 |     ``CTRL-^ 　Toggle the use of typing language characters.``
 |
 | 〖中文输入模式〗二者择一：
@@ -2193,7 +2193,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
      - 快捷英文输入：敲【缺省键】动态切换中英文输入模式。
      - 中文标点自动开启
      - 中英文标点动态切换 （切换键 **i_CTRL-\\** ）
-     - 【缺省键】 **i_CTRL-6** 　 `VimIM Mapping`_
+     - 【缺省键】 **i_CTRL-^** 　 `VimIM Mapping`_
 
   + ㈠【静态模式】
 
@@ -2328,7 +2328,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
   - 【中英标点动态切换】
 
     -  **i_CTRL-\\** 　 `VimIM Mapping`_
-    -  **i_CTRL-6** 　动态切换中英文输入模式，包括标点。
+    -  **i_CTRL-^** 　动态切换中英文输入模式，包括标点。
 
 - 中文标点英文标点对照表
 
@@ -2626,7 +2626,7 @@ __ http://code.google.com/p/vimim/downloads/list
 
    (1) 用 ``i_CTRL-V`` 插入十进制编码
    (2) 用 ``i_CTRL-K`` 插入二合字母
-   (3) 用 ``i_CTRL-6`` `〖点石成金〗`_ （VimIM 推陈出新）
+   (3) 用 ``i_CTRL-^`` `〖点石成金〗`_ （VimIM 推陈出新）
 
 5. 如何解决windows下Vim的中文乱码问题？
 
@@ -2910,6 +2910,5 @@ WHAT IS NEW
 #. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey & g:xingma_sleep_with_pinyin
-
 
 
