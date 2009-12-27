@@ -32,7 +32,7 @@ VimIM主要技术突破点有三条：
   - 〖回车键〗或无缝上英文，或回车，或上空格（after .,）
   - 〖状态显示〗 noruler
 　
-最后，以Vim标准IM键i_CTRL-^定义【点石键】
+最后，以Vim标准IM键CTRL-6定义【点石键】
 　
 VimIM Mapping
 =============
