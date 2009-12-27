@@ -1231,7 +1231,7 @@ The highest realm of Chinese input:
 ====  ===================   =================================
  1     书同文、文同码       VimIM 首选  Unicode__
  2     和谐、绿色           VimIM 坚信 `文本文件，天下无敌`__
- 3     不切换输入状态       VimIM 首创 `〖点石成金〗`_
+ 3     不切换输入状态       VimIM 首创 `〖点石成金〗`__
  4     不改变输入习惯       VimIM 确认 `天生跨平台`__
  5     手机电脑一路通       VimIM 推荐 `四角号码数码输入`_
  6     自创中文输入法       VimIM 演示 `VimIM 双码输入`_
@@ -1241,6 +1241,7 @@ The highest realm of Chinese input:
 
 __ `Unicode 内码输入`_
 __ `概述`_
+__ http://code.google.com/p/vimim/wiki/OneKey
 __ `VimIM Mapping`_
 
 
@@ -1443,10 +1444,10 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 VimIM Mapping
 =============
 ㈠ 【经典】VimIM only needs maximum two hot keys.
- 
+
 (1) 按 <Ctrl-\> 在非中文模式直接出选择。
 (2) 按 <Ctrl-6> 进入中文输入模式，此后按空格出选择。
- 
+
 
 +------------------------+----------------------------+-----------------------+
 |   Vim 模式             |  敲　CTRL-6                | 　敲　CTRL-\\         |
@@ -1470,7 +1471,7 @@ VimIM Mapping
 | 　　　　　:let g:vimim_ctrl_space_as_ctrl_6=1
 |
 |
- 
+
 
 ㈡【反经典】 This is another way to use VimIM, using one map only.
 
@@ -2895,18 +2896,20 @@ WHAT IS NEW
 #. [todo] support "associate" function if it is helpful
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [done] [onekey] g:vimim_sexy_onekey => noruler means OneKey mode is on
-#. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
-#. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
-#. [done] [onekey] create official OneKey Chinese input mode
-#. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
 #. [done] [mycloud] g:vimim_mycloud_local='C:/home/vimim/pcloud/qptest'
 #. [done] [mycloud] g:vimim_mycloud_www=1 http://pim-cloud.appspot.com/qp/
 #. [done] [rot13] make rot13 ready for Great Wall
-#. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian 
+#. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian
 #. [redo] save g:vimim for all situations, for playback and for fun
 #. [done] [zhengma] fix aewz using datafile: vimim.zhengma.txt
-#. [done] [zhengma] plug and play <=> zhengma and pinyin
+#. [done] [zhengma] plug and play <=> zhengma and pinyin sleep together
 #. [done] [array30][xinhua][quick] plug and play <=> xingma and pinyin
+#. [done] [onekey] g:vimim_sexy_onekey => noruler means OneKey mode is on
+#. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
+#. [done] [onekey] create official OneKey Chinese input mode
+#. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
+#. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
+#. [done] [onekey] g:vimim_ctrl_6_as_onekey & g:xingma_sleep_with_pinyin
+
 
 
