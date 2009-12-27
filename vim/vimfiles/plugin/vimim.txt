@@ -10529,8 +10529,7 @@ chuyuezi 出月子
 chuyunxiangyu 楚云湘雨
 chuzai 处在
 chuzhan 出展 出战 初战
-chuzhang 出账
-chuzhang 处长
+chuzhang 处长 出账
 chuzhe 出蛰
 chuzhen 出诊 出阵 初诊
 chuzheng 出征
@@ -11920,7 +11919,7 @@ danfengchaoyang 丹凤朝阳
 danfengxian 担风险
 danfengyan 丹凤眼
 danfu 担负
-dang 党 当 凼 垱 宕 挡 档 珰 筜 荡 裆 谠 铛
+dang 当 党 凼 垱 宕 挡 档 珰 筜 荡 裆 谠 铛
 dang1 当 裆 铛
 dang3 党 挡 谠
 dang4 荡 凼 宕 挡 档 砀 菪
@@ -12201,7 +12200,7 @@ danzi 胆子
 danzi 蛋子
 danzisuo 弹子锁
 danzuo 单作
-dao 刀 到 倒 导 岛 悼 氘 涛 盗 祷 稻 蹈 道
+dao 到 刀 倒 导 岛 悼 氘 涛 盗 祷 稻 蹈 道
 dao1 刀 叨 忉 氘
 dao3 倒 导 岛 捣 祷 蹈
 dao4 到 倒 帱 悼 盗 稻 道 噵 椡 稲 衜 衟 軇
@@ -23739,7 +23738,7 @@ jiahou 加厚
 jiahua 佳话 假话
 jiahuo 假货 傢伙 家伙
 jiahuoyuren 嫁祸于人
-jiaji 加急 佳绩 夹击 家计 甲级
+jiaji 佳绩 加急 夹击 家计 甲级
 jiajia 加价
 jiajia 戛戛
 jiajiahuhu 家家户户
@@ -32176,7 +32175,7 @@ lvzhou 绿洲
 lvzong 律宗
 lvzuo 闾左
 m 馬 马 没 们 明 民 面
-ma 馬 妈 骂 马 码 嘛 码 吗 杩 麻
+ma 骂 馬 妈 马 码 嘛 码 吗 杩 麻
 ma1 妈 吗 嘛
 ma2 麻 嫲 蔴
 ma3 马 馬 玛 蚂 码 吗 溤 犸 玛 杩 犸 遤
@@ -34757,6 +34756,7 @@ naozhewaner 闹着玩儿
 naozhong 孬种 闹钟
 naozhou 硇洲
 naozi 脑子
+naozichoujin 脑子抽筋
 napa 哪怕
 napin 纳聘
 naqiangnadiao 拿腔拿调
@@ -47374,7 +47374,7 @@ tianzuimishe 甜嘴蜜舌
 tianzun 天尊
 tianzuonieyoukemin 天作孽犹可悯
 tianzuozhihe 天作之合
-tiao 调 跳 挑 条 桃 眺 祧 佻 窕 笤 粜 苕 迢 髫 鲦 龆
+tiao 条 调 跳 挑 桃 眺 祧 佻 窕 笤 粜 苕 迢 髫 鲦 龆
 tiao1 挑 祧 佻
 tiao2 条 笤 苕 蜩 调 迢 髫 鲦 龆
 tiao3 窕 晀
@@ -50620,6 +50620,7 @@ wuguai 无怪
 wuguan 五官 无关 武官
 wuguandaju 无关大局
 wuguandati 无关大体
+wuguanggaotie 武广高铁
 wuguangshise 五光十色
 wuguanhongzhi 无关宏旨
 wuguantongyang 无关痛痒
