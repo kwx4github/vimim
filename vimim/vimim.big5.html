@@ -512,8 +512,8 @@ VimIM 是一個專門為 vim 玩家開發的嵌入式輸入法，隻要你的 vi
 <div class="line"><br /></div>
 <div class="line">所謂安裝，就是把文本文件扔到 vim 的 plugin 目錄之下。</div>
 <div class="line"><br /></div>
-<div class="line">【拼音★四角】同時插上，既可以平行也可以交叉使用，無須切換。</div>
-<div class="line">【五筆★拼音】同時插上，可以平行使用，用CTRL-6鍵動態切換。</div>
+<div class="line">【拼音★四角】同時插上，可以平行也可以交叉使用，無須切換。</div>
+<div class="line">【五筆★拼音】同時插上，可以平行使用，動態切換。</div>
 <div class="line"><br /></div>
 <div class="line">不加設置，不換模式，點熱鍵就可上漢字，是謂〖點石成金〗。</div>
 <div class="line">如果切換成中文輸入模式，也可以將就當前流行的輸入法習慣。</div>
@@ -4589,11 +4589,28 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [onekey] g:vimim_ctrl_6_as_onekey &amp; g:xingma_sleep_with_pinyin</li>
 <li>[done] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6</li>
 </ol>
+<p>To the author of mycloud package:</p>
+<p>Is it possible to go this way:</p>
+<ol class="arabic simple">
+<li>if mycloud local is available, then use it first</li>
+<li>otherwise, goes to mycloud www</li>
+</ol>
+<dl class="docutils">
+<dt>We may need two gloable variables, then?  For example:</dt>
+<dd>:let g:vimim_cloud_python='C:/home/vimim/pcloud/qptest'
+:let g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/</dd>
+</dl>
+<p>Is it possible to combine those two variables into one?
+For mycloud local, we can do &quot;plug and play&quot;!</p>
+<p>You will need to make both share a same input and output format.
+Also, for mycloud local, we don't need rot13.</p>
+<p>The whole design idea is to support better &quot;plug and play&quot;, with
+minimum or even zero settings!</p>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 13:11:54 PST on Sunday, 12/27/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 15:38:58 PST on Sunday, 12/27/2009
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
