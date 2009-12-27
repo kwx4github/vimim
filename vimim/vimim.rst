@@ -777,7 +777,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【条件】python
      * 【云样】pcloud package
      * 【即插即用】throw "pcloud" into plugin directory
-     * 【缺省关闭】:let g:vimim_cloud_local=0
+     * 【缺省关闭】:let g:vimim_cloud_python=0
 
  (10) 支持〖自己的云〗 无词库互联网版本
 
@@ -2896,7 +2896,7 @@ WHAT IS NEW
 #. [todo] support "associate" function if it is helpful
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [done] [mycloud] g:vimim_cloud_local='C:/home/vimim/pcloud/qptest'
+#. [done] [mycloud] g:vimim_cloud_python='C:/home/vimim/pcloud/qptest'
 #. [done] [mycloud] g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
 #. [done] [rot13] make rot13 ready for Great Wall
 #. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian
