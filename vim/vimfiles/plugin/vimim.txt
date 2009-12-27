@@ -3427,7 +3427,7 @@ aya 啊呀
 ayi 阿姨
 ayo 啊哟
 azerbaijan 阿塞拜疆 #
-b 不 被 报 本 部
+b 被 不 报 本 部
 ba 把 爸 八 捌 伯 叭 吧 坝 巴 扒 拔 杷 灞 疤 笆 粑 罢 耙 芭 钯 霸 靶
 ba1 巴 叭 吧 岜 扒 疤 笆 粑 芭 仈
 ba2 八 捌 拔 茇 菝 跋 魃
@@ -6101,6 +6101,7 @@ bodou 搏斗
 boduan 波段
 boduo 剥夺
 body 身体 团体 #
+boeing 波音
 boerbujing 博而不精
 boerguayao 博而寡要
 boerka 波尔卡
@@ -15104,19 +15105,17 @@ eraser 橡皮 #
 erba 二八
 erbadao 二把刀
 erbaiwu 二百五
-erbaoshen 耳报神
 erbei 耳背
 erbi 二笔
 erbian 耳边
 erbianfeng 耳边风
-erbinsimo 耳鬓厮磨 耳鬓斯磨
+erbinsimo 耳鬓厮磨
 erbuzhi 二部制
 ercao 尔曹
 ercaoshen 尔曹身与名俱灭，不废江河万古流
 erchen 贰臣 耳沉
 erchongxing 二重性
 erchui 耳垂
-ercinengyuan 二次能源
 ercongmuming 耳聪目明
 erdaijie 尔代节
 erdaofanzi 二道贩子
@@ -15799,8 +15798,7 @@ fangpan 放盘
 fangpao 放炮
 fangpi 放屁
 fangpixiechi 放辟邪侈
-fangqi 房契
-fangqi 放弃
+fangqi 放弃 房契
 fangqian 房钱
 fangqing 放情
 fangqing 放晴
@@ -20301,6 +20299,7 @@ guquanbulao 顾犬补牢
 guquandaju 顾全大局
 guquzhoulang 顾曲周郎
 guran 固然
+guren 古人
 guren 故人 贾人
 gurou 骨肉
 guroulisan 骨肉离散
@@ -21941,6 +21940,7 @@ huadijiaozi 画荻教子
 huadikemu 画地刻木
 huading 划定
 huadiweilao 画地为牢
+huadiweiyou 化敌为友
 huadong 化冻
 huadong 华东
 huadong 滑动
@@ -25187,7 +25187,7 @@ jie 杰 桀 楷 概 洁 獬 玠 界 疖 皆 睫 碣 秸 竭 籍 纥 结 羯 节 
 jie 饥饿
 jie1 结 街 阶 喈 嗟 接 揭 疖 皆 秸
 jie2 杰 节 洁 偈 劫 婕 孑 截 拮 捷 桀 桔 睫 碣 竭 结 羯 讦 诘
-jie3 姐 解
+jie3 解 姐
 jie4 介 借 届 戒 界 疥 芥 藉 蚧 诫 骱
 jieaishunbian 节哀顺变
 jiean 结案
@@ -26698,9 +26698,7 @@ jishiyu 及时雨
 jishou 寄售
 jishou 棘手
 jishoucue 疾首蹙额
-jishu 奇数
-jishu 技术 级数 基数 计数 记述
-jishu 疾书
+jishu 技术 奇数 级数 基数 计数 记述 疾书
 jishubagua 技术八卦
 jishubu 技术部
 jishugeming 技术革命
@@ -27067,7 +27065,7 @@ jizhen 急诊
 jizhen 集镇
 jizheng 急症
 jizhenshi 急诊室
-jizhi 机智 及至 基质 机制
+jizhi 机制 机智 及至 基质
 jizhiermo 赍志而没
 jizhinuzhang 戟指怒目
 jizhong 击中 集中 机种 冀中
@@ -30958,8 +30956,7 @@ lingyi 另议 凌夷 灵异 陵夷
 lingyizhong 另一种
 lingyong 零用
 lingyou 另有 领有
-lingyu 囹圉
-lingyu 领域
+lingyu 领域 囹圉
 lingyuan 陵园
 lingzamiyan 凌杂米盐
 lingzengzhang 零增长
@@ -32179,7 +32176,7 @@ lvzhou 绿洲
 lvzong 律宗
 lvzuo 闾左
 m 馬 马 没 们 明 民 面
-ma 妈 馬 骂 马 码 嘛 码 吗 杩 麻
+ma 馬 妈 骂 马 码 嘛 码 吗 杩 麻
 ma1 妈 吗 嘛
 ma2 麻 嫲 蔴
 ma3 马 馬 玛 蚂 码 吗 溤 犸 玛 杩 犸 遤
@@ -34145,6 +34142,7 @@ moquancazhang 摩拳擦掌
 moral 寓意 教训 道德 #
 morale 士气 纪律 #
 moran 漠然 蓦然 默然
+moranhuishou 蓦然回首
 moranzhizhi 漠然置之
 more 更加 更多 较多 越越 #
 moren 默认
@@ -43351,9 +43349,7 @@ shezhang 社长 赊账
 shezheng 摄政
 shezhi 设置 摄制
 shezu 涉足 蛇足 畲族
-shi 十 事 世 仕 噬 士 失 始 实 室 尸 屎 市 师 恃 拭
-shi 是 侍 使 势 食 饰 驶 史 嗜 拾 施 时 柿 氏 匙 式 释 铈
-shi 湿 狮 矢 石 示 虱 蚀 视 誓 识 试 诗 豕 轼 适 逝 什
+shi 是 十 事 世 仕 噬 士 失 始 实 室 尸 屎 市 师 恃 拭 侍 使 势 食 饰 驶 史 嗜 拾 施 时 柿 氏 匙 式 释 铈 湿 狮 矢 石 示 虱 蚀 视 誓 识 试 诗 豕 轼 适 逝 什
 shi1 诗 失 尸 师 施 湿 狮 浉 蓍 虱 匙
 shi2 十 埘 实 拾 时 炻 石 蚀 识 食
 shi3 使 史 始 屎 矢 豕 驶
@@ -49271,8 +49267,7 @@ waizai 外在
 waizhai 外债
 waizhang 外长
 waizhanshenjing 外展神经
-waizhao 外罩
-waizhao 歪招
+waizhao 歪招 外罩
 waizhi 外痔
 waizhuan 外传
 waizi 外子
@@ -51438,6 +51433,7 @@ xiangjingboyou 相惊伯有
 xiangjinrubin 相敬如宾
 xiangjixingshi 相机行事
 xiangju 湘剧 相距 芗剧
+xiangke 相克
 xiangke 香客
 xianglai 向来
 xianglai 想来
@@ -60597,7 +60593,7 @@ zhichixia 支持下
 zhichu 支出 支绌
 zhichuchengmen 织楚成门
 zhichuzhen 指出稹
-zhici 致词 致辞 值此 至此
+zhici 至此 致词 致辞 值此
 zhiciyijia 只此一家
 zhida 直达
 zhidacaishu 志大才疏
@@ -60680,9 +60676,7 @@ zhihou 之后
 zhihou 滞后
 zhihuan 掷还
 zhihuan 置换
-zhihui 指挥
-zhihui 智慧
-zhihui 知会
+zhihui 智慧 指挥 知会
 zhihuibang 指挥棒
 zhihuibu 指挥部
 zhihuidao 指挥刀
