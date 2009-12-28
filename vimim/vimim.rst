@@ -729,7 +729,6 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 长短的定义没有统一的国际标准。玩家自己定标准。
      * 例如：如果选项设置为10:　即每敲10个字母以上就丢给〖云〗。
      * 结果：本地词库和搜狗云端词库智能切换。
-     * 技巧：N 可以随〖想云就云〗的长度动态设置。
 
  (3) 支持〖断字符〗　解决含糊的办法是在含糊的地方贴上标签：
 
@@ -2910,26 +2909,5 @@ WHAT IS NEW
 #. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey & g:xingma_sleep_with_pinyin
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
-
-
-To the author of mycloud package:
-
-Is it possible to go this way:
-
-(1) if mycloud local is available, then use it first
-(2) otherwise, goes to mycloud www
-
-We may need two gloable variables, then?  For example:
-   :let g:vimim_cloud_python='C:/home/vimim/pcloud/qptest'
-   :let g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
-
-Is it possible to combine those two variables into one?
-For mycloud local, we can do "plug and play"!
-
-You will need to make both share a same input and output format.
-Also, for mycloud local, we don't need rot13.
-
-The whole design idea is to support better "plug and play", with
-minimum or even zero settings!
 
 
