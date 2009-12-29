@@ -1476,23 +1476,30 @@ VimIM Mapping
 ㈡【反经典】 This is another way to use VimIM, using one map only.
 
 (1) 特点： `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
-(2) 设置：:let g:vimim_ctrl_6_as_onekey=1（vim插入模式）
-(3) 设置：:let g:vimim_ctrl_6_as_onekey=2（包括vim正常模式）
-(4) 使用：按 <Ctrl-6> 进入 `〖点石成金〗输入模式`_
-(5) 使用：高亮选择汉字字串，按 <Ctrl-6> 可以 `见字找码`_
-(6) 使用：高亮选择空白位置，按 <Ctrl-6> 可以 `动态造词`_
+(2) 设置：
 
+    + :let g:vimim_ctrl_6_as_onekey=1（vim插入模式）
+    + :let g:vimim_ctrl_6_as_onekey=2（包括g:vimim_tab_as_onekey）
+    + :let g:vimim_ctrl_6_as_onekey=3（包括vim正常模式）
+
+(3) 使用：
+
+    + 按 <Ctrl-6> 进入 〖点石成金〗 `无模式之模式`_
+    + 高亮选择汉字字串，按 <Ctrl-6> 可以 `见字找码`_
+    + 高亮选择空白位置，按 <Ctrl-6> 可以 `动态造词`_
+
+|
 
 +------------------------+---------------------------------+
 |   Vim 模式             |   敲　 CTRL-6                   |
 +========================+=================================+
-| vim 正常模式           | 开启 `〖点石成金〗输入模式`_    |
+| vim 正常模式           | 开启  〖点石成金〗输入模式      |
 +------------------------+---------------------------------+
-| vim 插入模式    　     | 开启 `〖点石成金〗输入模式`_    |
+| vim 插入模式    　     | 开启  〖点石成金〗输入模式      |
 +------------------------+---------------------------------+
 | vim 可视模式         　| 　`见字找码`_ 　　 `动态造词`_  |
 +------------------------+---------------------------------+
-|    <Esc>               | 关闭 `〖点石成金〗输入模式`_    |
+|    <Esc>               | 关闭  〖点石成金〗输入模式      |
 +------------------------+---------------------------------+
 
 
@@ -1505,8 +1512,8 @@ VimIM Mapping
 
 〖点石成金〗
 ============
-〖点石成金〗概要
-----------------
+概要
+----
 
 | 英文字母为“石”，中文汉字为“金”：是谓〖点石成金〗
 | 有玩家叹曰：使用〖点石成金〗，点出来的不是汉字，是惊艳。
@@ -1572,12 +1579,12 @@ VimIM Mapping
      + 【小技巧】开启后，<CTRL-\\>键变成<Tab>键
      + 【推荐】OneKey 传统玩家
 
-  (3) 〖CTRL-^〗 （参见 `〖点石成金〗输入模式`_ ）
+  (3) 〖CTRL-^〗 （参见 `无模式之模式`_ ）
 
 |
 
-〖点石成金〗输入模式
---------------------
+无模式之模式
+------------
 | 如果愿意，OneKey 可以作为VimIM唯一的中文输入模式。
 | 这也许是传说中的无模式之中文输入模式。
 | 也可以当作 `〖点石成金〗`_ 的另类玩法。缺省关闭。
@@ -1609,6 +1616,36 @@ VimIM Mapping
   - 〖回车键〗或无缝上英文，或回车，或上空格（after .,）
   - 〖状态显示〗 noruler
 
+|
+|
+
+输入记忆
+--------
+| 【卖点】Yes, VimIM can recycle!
+| 【特点】用户输入可以重复利用，省时省力!
+| 【操作】在输入一个字母后按<Ctrl-N>
+| 【缺省开启】:let g:vimim_smart_ctrl_n=1
+|
+
+【自己动手试一试】
+
+　【目的】重复利用用户输入『我有一个梦』
+
+　【操作步骤】
+
+  #. 打开 vim （如果用Windows可以双击gVim.exe）
+  #. 敲 o 或 i 或 a 进入 vim 插入模式
+  #. （如用拼音词库）输入:  woyouyigemeng
+  #. 敲点石金键:  <C-\\>
+  #. 敲【空格键】或【数字键】上字: woyou　=>　我有
+  #. 敲【空格键】或【数字键】上字: yige　 =>　一个
+  #. 敲【空格键】或【数字键】上字: meng　 =>　梦
+  #. 敲 y<C-P> => 一个
+  #. 敲 m<C-P> => 梦
+  #. 敲 w<C-P> => 我有
+
+
+|
 |
 
 .. sidebar::  VimIM 整句输入，无“状态”切换
@@ -1653,9 +1690,9 @@ VimIM Mapping
   #. 敲 o 或 i 或 a 进入 vim 插入模式
   #. （如用拼音词库）输入:  wo you i1g meng.
   #. （在句号后面）敲点石成金键:  <C-\\>
-  #. 敲【空格键】或【数字键】上字: wo 　=>　我
-  #. 敲【空格键】或【数字键】上字: you　=>　有
-  #. 敲【空格键】或【数字键】上字: i1g　=>　一个
+  #. 敲【空格键】或【数字键】上字: wo　　=>　我
+  #. 敲【空格键】或【数字键】上字: you　 =>　有
+  #. 敲【空格键】或【数字键】上字: i1g　 =>　一个
   #. 敲【空格键】或【数字键】上字: meng　=>　梦
 
 
@@ -2908,6 +2945,7 @@ WHAT IS NEW
 #. [done] [onekey] create official OneKey Chinese input mode
 #. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey & g:xingma_sleep_with_pinyin
-#. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 mapping normal CTRL-6
-
+#. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 set vimim_tab_as_onekey
+#. [done] [onekey] g:vimim_ctrl_6_as_onekey=3 mapping normal CTRL-6
+#. [done] [recycle] save typing by reusing input memory: g:vimim_smart_ctrl_n
 
