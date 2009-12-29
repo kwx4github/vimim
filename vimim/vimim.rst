@@ -1624,29 +1624,50 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
 输入记忆
 --------
-| 【卖点】Yes, VimIM can recycle!
-| 【特点】用户输入可以重复利用，省时省力!
-| 【操作】在输入一个字母后按<Ctrl-N>
-| 【缺省开启】:let g:vimim_smart_ctrl_n=1
+- 【卖点】Yes, VimIM can recycle!
+- 【目的】重复利用用户输入，省时省力!
+- 【方式之一】利用 Ctrl-N
+ 
+  - 【特点】同一字母开头的输入只记住一次
+  - 【操作】在输入一个字母后按<Ctrl-N>
+  - 【缺省开启】:let g:vimim_smart_ctrl_n=1
+
+- 【方式之二】利用 Ctrl-P
+
+  - 【特点】记住用户所有输入记录
+  - 【操作】随便输入几个印象中的编码
+  - 【缺省关闭】:let g:vimim_smart_ctrl_p=0
+
 |
 
 **不怕不识货，只怕货比货**
 
-| 比方说，我们想敲以下14个字：
+| 比方说，我们想敲以下14个字，前后敲两遍：
 | 
-|     重复打字不光荣
-|     光荣打字不重复
+|     重复打字不光荣，
+|     光荣打字不重复。
 | 
 | 用谷歌拼音，搜狗拼音，微软拼音：
 | 
-|     chongfu dazi bu guangrong
-|     guangrong dazi bu chongfu
+|  $　 chongfu dazi bu guangrong
+|  $　 guangrong dazi bu chongfu
+|  $　
+|  $　 (keep typing others) ...
+|  $　
+|  $　 chongfu dazi bu guangrong
+|  $　 guangrong dazi bu chongfu
+| 
 | 
 | 用VimIM中文输入法：
 | 
-|     chongfu dazi bu guangrong
-|     g<C-N> d<C-N> bu c<C-N>
-| 
+|  $　 chongfu dazi bu guangrong
+|  $　 g<C-N> d<C-N> bu c<C-N>
+|  $　
+|  $　 (keep typing others) ...
+|  $　
+|  $　 cf<C-P> dz<C-P> bu gg<C-P>
+|  $　 g<C-N> d<C-N> bu c<C-N>
+|
 |
 
 .. sidebar::  VimIM 整句输入，无“状态”切换
@@ -2933,7 +2954,6 @@ WHAT IS NEW
 #. [todo] support "associate" function if it is helpful
 #. [todo] [test] make sure no regression, following each item on manual
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [done] [mycloud] g:vimim_cloud_plugin='C:/home/vimim/pcloud/qptest'
 #. [done] [mycloud] g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
 #. [done] [rot13] make rot13 ready for Great Wall
 #. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian
@@ -2948,5 +2968,7 @@ WHAT IS NEW
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey & g:xingma_sleep_with_pinyin
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 set vimim_tab_as_onekey
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey=3 mapping normal CTRL-6
+#. [done] [mycloud] g:vimim_cloud_plugin='C:/home/vimim/mycloud/mycloud'
 #. [done] [recycle] save typing by reusing input memory: g:vimim_smart_ctrl_n
+#. [done] [recycle] save typing by reusing all input memory: g:vimim_smart_ctrl_p
 
