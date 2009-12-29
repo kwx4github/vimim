@@ -1604,7 +1604,7 @@ VimIM Mapping
 
       + 【点石键】与插入模式的一模一样
       + 【特点】把光标置于word任一字母下，一键点出菜单。
-      + 【开启可设】:let g:vimim_ctrl_6_as_onekey=2
+      + 【开启可设】:let g:vimim_ctrl_6_as_onekey=3
 
 + 【开启】—— 敲【点石键】
 + 【关闭】—— 敲<Esc>
