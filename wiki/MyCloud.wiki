@@ -7,3 +7,11 @@ Our own cloud plugin, or to say customized IM backend
 = Details =
 
 The mainpage in http://pim-cloud.appspot.com/
+
+* Use this command to download a clean directory tree from the repository:
+
+svn co http://vimim.googlecode.com/svn/mycloud/ mycloud
+
+* Use this command in mycloud directory to update to newest version:
+
+svn update
