@@ -770,22 +770,18 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【例】laystb,z => 两岸猿声啼不住
      * 【例】ryddddydg,c => 人有多大胆地有多高产
 
- (9) 支持〖自己的云〗 python 版本
-
-     * 【卖点】自己的云是最好的云
-     * 【条件】python
-     * 【云样】mycloud package
-     * 【即插即用】throw "mycloud" into the plugin directory
-     * 【缺省关闭】:let g:vimim_cloud_plugin=0
-
- (10) 支持〖自己的云〗 无词库互联网版本
+ (9) 支持 `〖自己的云〗`__ 
 
       * 【卖点】自己的云永远是最好的云
+      * 【版本之一】python :let g:vimim_cloud_plugin=0
+      * 【版本之二】无词库互联网
       * 【特点】不限输入法！不需要词库！
       * 【条件】只需要联网和wget/curl
       * 【缺省关闭】:let g:vimim_cloud_pim=0
 
 __ http://code.google.com/p/vimim/wiki/SingleQuote
+__ http://pim-cloud.appspot.com/
+
 
 |
 
@@ -1635,7 +1631,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 - 【方式之二】利用 Ctrl-P
 
   - 【特点】记住用户所有输入记录
-  - 【操作】随便输入几个印象中的编码后，按<Ctrl-P>
+  - 【操作】随便敲几个印象中的输入码后，按<Ctrl-P>
   - 【缺省关闭】:let g:vimim_smart_ctrl_p=0
 
 |
@@ -1785,7 +1781,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 |   (5) 结果: “四角号码”四个汉字上屏
 |
 
-㈣ 无句号分隔，每四编码上屏 （五笔）
+㈣ 无句号分隔，四码上屏 （五笔）
 
 | 【特点】 四码匹配，逐词上屏。
 |
@@ -2305,7 +2301,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
   - ``:let g:vimim_custom_skin=2``
 
-    * 再隐藏编码显示，使显示栏简洁明快。
+    * 再隐藏输入码显示，使显示栏简洁明快。
 
 + 〖光标〗g:vimim_custom_lcursor_color
 
@@ -2957,7 +2953,6 @@ WHAT IS NEW
 #. [done] [mycloud] g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
 #. [done] [rot13] make rot13 ready for Great Wall
 #. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian
-#. [redo] save g:vimim for all situations, for playback and for fun
 #. [done] [zhengma] fix aewz using datafile: vimim.zhengma.txt
 #. [done] [zhengma] plug and play <=> zhengma and pinyin sleep together
 #. [done] [array30][xinhua][quick] plug and play <=> xingma and pinyin
@@ -2971,6 +2966,7 @@ WHAT IS NEW
 #. [done] [mycloud] g:vimim_cloud_plugin='C:/home/vimim/mycloud/mycloud'
 #. [done] [recycle] save typing by reusing input memory: g:vimim_smart_ctrl_n
 #. [done] [recycle] save typing by reusing all inputs: g:vimim_smart_ctrl_p
-
+#. [redo] save g:vim for all situations, for playback and for fun
+#. [done] [egg][vimimstat] typing speed testing using vimim_egg_vimimstat()
 
 
