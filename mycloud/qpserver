@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+# coding=utf-8
+
+import algo
+import sys
+import mysocket
+
+def socketfunc(indata):
+    try:
+        str = indata.decode("base64")
+    except Exception:
+        return ""
+    if str != "":
+        output = ""
+        for k,h,v in algo.parse(str):
+            output += "%s\t%s\t%s\n" % (k,v,h.replace(" ", "_"))
+        return output.encode("base64")
+    else:
+        return ""
+
+def main():
+    algo.parse("__setmode=quanpin")
+    if len(sys.argv) > 1 and sys.argv[1] == "-b":
+        mysocket.setverbose(False)
+        mysocket.forkserver(mysocket.tcpserver, socketfunc, 10007)
+    else:
+        mysocket.setverbose(True)
+        mysocket.tcpserver(socketfunc, 10007)
+
+if __name__ == "__main__":
+    main()
+

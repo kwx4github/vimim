@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+# coding=utf-8
+
+import algo
+import sys
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print "no argument"
+    else:
+        algo.parse("__setmode=abc")
+        keyb = sys.argv[1]
+        ret = algo.parse(keyb)
+        if len(ret) > 0:
+            maxlen = len(ret[0][0])
+            for k,h,v in ret:
+                padding = (maxlen - len(k))/3*2
+                print k," "*padding,"%s_%s" % (keyb[0:v],h.replace(" ", "_"))
+

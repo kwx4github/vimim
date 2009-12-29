@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+# coding=utf-8
+
+import algo
+import sys
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print "no argument"
+    else:
+        if len(sys.argv) > 2:
+            algo.parse("__setmode="+sys.argv[2])
+        else:
+            algo.parse("__setmode=quanpin")
+        for k,h,v in algo.parse(sys.argv[1]):
+            # k is the key
+            # h is the hint text
+            # v is the string pointer
+            print "%s\t%s\t%s" % (k,v,h.replace(" ", "_"))
+        #algo.parse(sys.argv[1], debug=True)
