@@ -1630,25 +1630,23 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 | 【缺省开启】:let g:vimim_smart_ctrl_n=1
 |
 
-【自己动手试一试】
+**不怕不识货，只怕货比货**
 
-　【目的】重复利用用户输入『我有一个梦』
-
-　【操作步骤】
-
-  #. 打开 vim （如果用Windows可以双击gVim.exe）
-  #. 敲 o 或 i 或 a 进入 vim 插入模式
-  #. （如用拼音词库）输入:  woyouyigemeng
-  #. 敲点石金键:  <C-\\>
-  #. 敲【空格键】或【数字键】上字: woyou　=>　我有
-  #. 敲【空格键】或【数字键】上字: yige　 =>　一个
-  #. 敲【空格键】或【数字键】上字: meng　 =>　梦
-  #. 敲 y<C-N> => 一个
-  #. 敲 m<C-N> => 梦
-  #. 敲 w<C-N> => 我有
-
-
-|
+| 比方说，我们想敲以下14个字：
+| 
+|     重复打字不光荣
+|     光荣打字不重复
+| 
+| 用谷歌拼音，搜狗拼音，微软拼音：
+| 
+|     chongfu dazi bu guangrong
+|     guangrong dazi bu chongfu
+| 
+| 用VimIM中文输入法：
+| 
+|     chongfu dazi bu guangrong
+|     g<C-N> d<C-N> bu c<C-N>
+| 
 |
 
 .. sidebar::  VimIM 整句输入，无“状态”切换
