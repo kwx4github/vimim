@@ -685,8 +685,7 @@ CLOUD 云输入
   (2) 2009年11月11日 `VimIM 宣誓入云`__
   (3) 2009年11月16日 `史上第一支持五种双拼的云输入法诞生`__
   (4) 2009年12月1日  `推出〖想云就云〗，不换模式，不限输入法`__
-  (5) 2009年12月22日 支持〖自己的云〗 python 版本
-  (6) 2009年12月25日 支持〖自己的云〗 无词库互联网版本
+  (5) 2009年12月25日 支持〖自己的云〗 无词库互联网版本
 
 __ http://pinyin.sogou.com/cloud
 __ http://code.google.com/p/vimim/wiki/VimIM_Cloud
@@ -773,11 +772,13 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
  (9) 支持 `〖自己的云〗`__ 
 
       * 【卖点】自己的云永远是最好的云
-      * 【版本之一】python :let g:vimim_cloud_plugin=0
-      * 【版本之二】无词库互联网
-      * 【特点】不限输入法！不需要词库！
-      * 【条件】只需要联网和wget/curl
-      * 【缺省关闭】:let g:vimim_cloud_pim=0
+      * 【本地插件】python
+
+        * 【缺省关闭】:let g:vimim_cloud_plugin=0
+
+      * 【远程插件】不限输入法！不需要词库！
+
+        * 【缺省关闭】:let g:vimim_cloud_pim=0
 
 __ http://code.google.com/p/vimim/wiki/SingleQuote
 __ http://pim-cloud.appspot.com/
