@@ -1629,13 +1629,13 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 - 【方式之一】利用 Ctrl-N
  
   - 【特点】同一字母开头的输入只记住一次
-  - 【操作】在输入一个字母后按<Ctrl-N>
+  - 【操作】在输入一个字母后，按<Ctrl-N>
   - 【缺省开启】:let g:vimim_smart_ctrl_n=1
 
 - 【方式之二】利用 Ctrl-P
 
   - 【特点】记住用户所有输入记录
-  - 【操作】随便输入几个印象中的编码
+  - 【操作】随便输入几个印象中的编码后，按<Ctrl-P>
   - 【缺省关闭】:let g:vimim_smart_ctrl_p=0
 
 |
@@ -2970,5 +2970,7 @@ WHAT IS NEW
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey=3 mapping normal CTRL-6
 #. [done] [mycloud] g:vimim_cloud_plugin='C:/home/vimim/mycloud/mycloud'
 #. [done] [recycle] save typing by reusing input memory: g:vimim_smart_ctrl_n
-#. [done] [recycle] save typing by reusing all input memory: g:vimim_smart_ctrl_p
+#. [done] [recycle] save typing by reusing all inputs: g:vimim_smart_ctrl_p
+
+
 
