@@ -134,13 +134,14 @@ def shuangpin_transform(item, sptable):
         if item[index].islower():
             if item[index] in sptable["__uimode__"]:
                 index += 1
-                # uimode only ends with v, otherwise continue to the end
-                while item[index] != "v":
-                    index += 1
-                    if index >= lenitem:
-                        break
-                else:
-                    index += 1
+                if index < lenitem:
+                    # uimode only ends with v, otherwise continue to the end
+                    while item[index] != "v":
+                        index += 1
+                        if index >= lenitem:
+                            break
+                    else:
+                        index += 1
                 continue
             if lenitem == index+1:
                 sp1 = item[index]

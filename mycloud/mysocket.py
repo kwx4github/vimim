@@ -43,57 +43,61 @@ def tcpserver(func, port):
     if verbose:
         print name,'at port', port
     server_close = False;
-    while True:
-        s.listen(1)			# 服务器的侦听连接
-        conn, addr = s.accept()	# 接收一个新的 tcp 连接会话
-        if verbose:
-            print name,'connected to', addr
-        cachedata = ""
+    try:
         while True:
-            data = conn.recv(BUFSIZE)
-            if not data:
-                break
-            if data[-1:] == "\n":
-                data = cachedata + data[:-1]
-                cachedata = ""
-            else:
-                cachedata += data
-                continue
+            s.listen(1)			# 服务器的侦听连接
+            conn, addr = s.accept()	# 接收一个新的 tcp 连接会话
             if verbose:
-                print name,'received:', data
-            if func:
-                try:
-                    ret = func(data)
-                except Exception, (errno, strerror):
-                    if verbose:
-                        print name,'exception:', errno, strerror
-                    conn.send('\n')
-                    continue
-                if ret == None:
-                    conn.send('server closed\n')
-                    server_close = True
+                print name,'connected to', addr
+            cachedata = ""
+            while True:
+                data = conn.recv(BUFSIZE)
+                if not data:
                     break
-                elif ret == 0:
-                    break
-                elif type(ret).__name__ == "str":
-                    if verbose:
-                        print name, 'send data ',len(ret),'bytes'
-                    tcpslice(conn.send, ret)
+                if data[-1:] == "\n":
+                    data = cachedata + data[:-1]
+                    cachedata = ""
                 else:
-                    senddata = str(ret)
-                    if verbose:
-                        print name,'send data ',len(senddata),'bytes'
-                    tcpslice(conn.send, senddata)
-            else:
-                conn.send('\n')
-        conn.close()		# 关闭该 tcp 连接
+                    cachedata += data
+                    continue
+                if verbose:
+                    print name,'received:', data
+                if func:
+                    try:
+                        ret = func(data)
+                    except Exception, (errno, strerror):
+                        if verbose:
+                            print name,'exception:', errno, strerror
+                        conn.send('\n')
+                        break
+                    if ret == None:
+                        conn.send('server closed\n')
+                        server_close = True
+                        break
+                    elif ret == 0:
+                        break
+                    elif type(ret).__name__ == "str":
+                        if verbose:
+                            print name, 'send data ',len(ret),'bytes'
+                        tcpslice(conn.send, ret)
+                    else:
+                        senddata = str(ret)
+                        if verbose:
+                            print name,'send data ',len(senddata),'bytes'
+                        tcpslice(conn.send, senddata)
+                else:
+                    conn.send('\n')
+            conn.close()		# 关闭该 tcp 连接
+            if verbose:
+                print name,'closed connection to', addr
+            if server_close:		# 关闭服务器的侦听连接
+                break
+    except BaseException:
+        pass
+    finally:
+        s.close()
         if verbose:
-            print name,'closed connection to', addr
-        if server_close:		# 关闭服务器的侦听连接
-            break
-    s.close()
-    if verbose:
-        print name, "exit"
+            print name, "exit"
 
 def udpslice(sendfunc, data, addr):
     senddata = data
