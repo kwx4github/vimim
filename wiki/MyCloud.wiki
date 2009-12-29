@@ -1,0 +1,9 @@
+#summary Personal Input Method Cloud
+
+= Introduction =
+
+Our own cloud plugin, or to say customized IM backend
+
+= Details =
+
+The mainpage in http://pim-cloud.appspot.com/
