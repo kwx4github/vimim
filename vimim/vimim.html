@@ -774,19 +774,6 @@ VimIM 不错, 一直在用 :) -->
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<ul class="simple">
-<li>vim</li>
-<li>vimim</li>
-<li>vimimvim</li>
-<li>vimimhelp</li>
-<li>vimimdebug</li>
-<li>vimimdefaults</li>
-</ul>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>【自己动手试一试】</p>
-<p>　【目的】VimIM 牛刀小试</p>
 <p>　【操作步骤】</p>
 <blockquote>
 <ol class="arabic simple">
@@ -803,6 +790,18 @@ VimIM 不错, 一直在用 :) -->
 <li>〖结果〗 输入全部菜单</li>
 </ol>
 </blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li>VimIM 彩蛋：经典　vim</li>
+<li>VimIM 彩蛋：环境　vimim</li>
+<li>VimIM 彩蛋：程式　vimimvim</li>
+<li>VimIM 彩蛋：帮助　vimimhelp</li>
+<li>VimIM 彩蛋：测试　vimimdebug</li>
+<li>VimIM 彩蛋：速度　vimimstat</li>
+<li>VimIM 彩蛋：设置　vimimdefaults</li>
+</ul>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -3602,6 +3601,14 @@ If the following download URL does not work for you, please
 <li>输入记录在 g:vimim</li>
 <li>输入记录可以连续不断地playback</li>
 </ul>
+<p><strong>退格键防误删</strong></p>
+<div class="line-block">
+<div class="line">长按&lt;BackSpace&gt;键，连续删除输入的拼音串。</div>
+<div class="line">当拼音串全部删除后，停顿一秒，才会继续删除文本中的内容。</div>
+<div class="line">这样可以最大程度减少用户的误删除操作。</div>
+<div class="line"><br /></div>
+<div class="line">【缺省开启】:let g:vimim_smart_backspace=1</div>
+</div>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -4501,7 +4508,6 @@ set langmenu=zh_CN.UTF-8
 <li>[done] combine all punctuation navigation together</li>
 <li>[done] add g:vimim_reverse_pageup_pagedown for left-hand PageUp</li>
 <li>[done] avoid changing user's .vimrc option when using OneKey</li>
-<li>[done] make vimim_smart_backspace() support vimim_sentence_match()</li>
 <li>[done] support fixed first candidate g:vimim_frequency_first_fix=1</li>
 <li>[done] make Chinese/English punctuation smart and solid</li>
 <li>[done] enhance html navigation by adding g/G and removing r key</li>
@@ -4669,12 +4675,15 @@ set langmenu=zh_CN.UTF-8
 <li>[done] keep input history for further processing like search</li>
 <li>[redo] [one-key-correction] in OneKey =&gt; (d)elete in popup menu</li>
 <li>[redo] [one-key-correction] make &lt;Esc&gt; smart: also for one-key-correction</li>
+<li>[done] [backspace] make &lt;BS&gt; smart by not delete Chinese by mistake</li>
+<li>[done] [backspace] add g:vimim_smart_backspace which default on</li>
+<li>[todo] [punc] how about imap &quot;</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 22:23:10 PST on Tuesday, 12/29/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 10:12:17 PST on Wednesday, 12/30/2009
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
