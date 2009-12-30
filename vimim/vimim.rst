@@ -882,7 +882,7 @@ VimIM 拼音输入总结：
 - 【空格键】直接上汉字，或上空格。
 - 【回车键】或无缝上英文，或回车。
 - 【无缝混排】支持 `无缝混排`_
-- 【退格键】一键改错 （开启可设）:let g:vimim_smart_backspace=2
+- 【一键改错】<Esc> 将就传统输入法的用户体验
 - 【<C-H>】（点石成金） `整句输入`_ 重新匹配
 - 【中文数字】（静态模式）i2009　=>　二〇〇九　　I2009　=>　贰零零玖
 - 【中文量词】（静态模式）i5t　=>　五吨　　id8　=>　第八
@@ -931,7 +931,7 @@ VimIM 五笔输入总结：
 - 【空格键】上汉字，开始新的一轮五笔连打。或上空格。
 - 【回车键】或无缝上英文，或回车。
 - 【无缝混排】支持 `无缝混排`_
-- 【退格键】一键改错 （开启可设）:let g:vimim_smart_backspace=2
+- 【一键改错】<Esc> 将就传统输入法的用户体验
 - 【英文输入】敲 CTRL-6 动态切换中英文输入模式。
 - 【点石成金】四码匹配，逐词上屏。
 - 【通配符匹配】用 z 匹配壹个字符 （缺省关闭）
@@ -2353,7 +2353,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 - 【首字固顶】
 
-  + 常用字词将永远显示在第一候选项。
+  + 候选词可以固顶，方便调整候选词顺序。
   + 【开启可设】:let g:vimim_frequency_first_fix=1
 
 |
@@ -2361,8 +2361,9 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 一键改错
 --------
-| `〖中文输入模式〗`_
-|    【退格键】（开启可设）:let g:vimim_smart_backspace=2
+| `〖中文输入模式〗`_    <Esc> 键
+|    按一次esc键则关闭菜单并全清刚才的输入，
+|    再按一次esc键则退出插入模式。
 |
 | `〖点石成金〗`_
 |    【菜单】可敲 ``d`` 键 for delete
@@ -2853,8 +2854,8 @@ WHAT IS NEW
 #. [done] [cloud] support non-cloud sentence input: i.have.a.dream
 #. [done] [cloud] support auto-cloud with linux when no-datafile
 #. [done] [cloud] support auto-cloud with Windows when plugin/wget.exe
-#. [done] [static] auto-chinese-enter using any alphabetic key
 #. [done] [OneKey] save keycode in @0 for checking if interested
+#. [done] [static] auto-chinese-enter using any alphabetic key
 #. [done] [static] make smart <Enter> reliable in Chinese Mode
 #. [done] [static] double <Space> works when no match
 #. [done] [svn] 20091116 start SVN to organize code and VimIM homepage
@@ -2908,8 +2909,6 @@ WHAT IS NEW
 #. [done] issue 23: static+shuangpin+cloud breaks after issue 22
 #. [done] seamless position detect when cursor is moved
 #. [done] super reset function to avoid repeating
-#. [redo] [one-key-correction] in OneKey => (d)elete in popup menu
-#. [redo] [one-key-correction] make <BS> smart: g:vimim_smart_backspace=2
 #. [redo] let g:vimim_punctuation_navigation=1 default for all mode
 #. [done] add new option :let g:vimim_insert_without_popup=0
 #. [redo] [wubi] trdeggwhssqu => i have a dream
@@ -2942,21 +2941,19 @@ WHAT IS NEW
 #. [done] magic comma, last but one, for whole-jianpin-cloud: laystb,z
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
 #. [todo] add :profile start /tmp/vimim.profile for optimization
-#. [todo] try to make vimim.vim and latex-suite plugin work together
-#. [todo] check if it is possible to load datafile from "gvim --remote"
 #. [todo] use SQLite to store and manage datafile?
 #. [todo] design a way to use cedict.txt as English input
-#. [todo] trying to support i_CTRL-N i_CTRL-P for Chinese text
-#. [todo] keep input history for further processing like search
 #. [todo] support "associate" function if it is helpful
 #. [todo] [test] make sure no regression, following each item on manual
+#. [todo] try to make vimim.vim and latex-suite plugin work together
+#. [todo] check if it is possible to load datafile from "gvim --remote"
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [done] [mycloud] g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
-#. [done] [rot13] make rot13 ready for Great Wall
 #. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian
+#. [done] [mycloud] g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
+#. [done] [rot13] make rot13 ready for Great Wall, includes %xx
 #. [done] [zhengma] fix aewz using datafile: vimim.zhengma.txt
 #. [done] [zhengma] plug and play <=> zhengma and pinyin sleep together
-#. [done] [array30][xinhua][quick] plug and play <=> xingma and pinyin
+#. [done] [sleep together] [array30][xinhua][quick] and [pinyin] plug and play 
 #. [done] [onekey] g:vimim_sexy_onekey => noruler means OneKey mode is on
 #. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
 #. [done] [onekey] create official OneKey Chinese input mode
@@ -2967,7 +2964,10 @@ WHAT IS NEW
 #. [done] [mycloud] g:vimim_cloud_plugin='C:/home/vimim/mycloud/mycloud'
 #. [done] [recycle] save typing by reusing input memory: g:vimim_smart_ctrl_n
 #. [done] [recycle] save typing by reusing all inputs: g:vimim_smart_ctrl_p
-#. [redo] save g:vim for all situations, for playback and for fun
-#. [done] [egg][vimimstat] typing speed testing using vimim_egg_vimimstat()
-
+#. [redo] [record] g:vimim for all situations, for playback and for fun
+#. [done] [egg][vimimstat] typing speed stat using vimim_egg_vimimstat()
+#. [done] support i_CTRL-N i_CTRL-P for Chinese text, based on input memory
+#. [done] keep input history for further processing like search
+#. [redo] [one-key-correction] in OneKey => (d)elete in popup menu
+#. [redo] [one-key-correction] make <Esc> smart: also for one-key-correction
 
