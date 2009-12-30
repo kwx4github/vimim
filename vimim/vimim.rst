@@ -362,19 +362,6 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 
 |
 
-* vim
-* vimim
-* vimimvim
-* vimimhelp
-* vimimdebug
-* vimimdefaults
-
-|
-
-【自己动手试一试】
-
-　【目的】VimIM 牛刀小试
-
 　【操作步骤】
 
   #. 下载新版脚本 vimim.vim__
@@ -391,6 +378,16 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 
 __ http://vim.sf.net/scripts/script.php?script_id=2506
 
+
+|
+
+* VimIM 彩蛋：经典　vim　
+* VimIM 彩蛋：环境　vimim　
+* VimIM 彩蛋：程式　vimimvim　
+* VimIM 彩蛋：帮助　vimimhelp　
+* VimIM 彩蛋：测试　vimimdebug　
+* VimIM 彩蛋：速度　vimimstat　
+* VimIM 彩蛋：设置　vimimdefaults　
 
 |
 |
@@ -2222,6 +2219,15 @@ e　亿  j　斤  o　度  t　吨  z　兆
 + 输入记录在 g:vimim
 + 输入记录可以连续不断地playback
 
+**退格键防误删**
+
+| 长按<BackSpace>键，连续删除输入的拼音串。
+| 当拼音串全部删除后，停顿一秒，才会继续删除文本中的内容。
+| 这样可以最大程度减少用户的误删除操作。
+| 
+| 【缺省开启】:let g:vimim_smart_backspace=1
+
+
 |
 |
 
@@ -2802,7 +2808,6 @@ WHAT IS NEW
 #. [done] combine all punctuation navigation together
 #. [done] add g:vimim_reverse_pageup_pagedown for left-hand PageUp
 #. [done] avoid changing user's .vimrc option when using OneKey
-#. [done] make vimim_smart_backspace() support vimim_sentence_match()
 #. [done] support fixed first candidate g:vimim_frequency_first_fix=1
 #. [done] make Chinese/English punctuation smart and solid
 #. [done] enhance html navigation by adding g/G and removing r key
@@ -2970,4 +2975,8 @@ WHAT IS NEW
 #. [done] keep input history for further processing like search
 #. [redo] [one-key-correction] in OneKey => (d)elete in popup menu
 #. [redo] [one-key-correction] make <Esc> smart: also for one-key-correction
+#. [done] [backspace] make <BS> smart by not delete Chinese by mistake
+#. [done] [backspace] add g:vimim_smart_backspace which default on
+#. [todo] [punc] how about imap \ "
+
 
