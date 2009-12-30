@@ -2397,20 +2397,21 @@ e　亿  j　斤  o　度  t　吨  z　兆
     ========  ========= ====  ===========  =========
      英文        中文    ..       英文       中文
     ========  ========= ====  ===========  =========
-      &          、      ..        [          【
-      #          ＃      ..        ]          】
-      %          ％      ..        ^          ……
-      $          ￥      ..        _          ——
-      !          ！      ..        <          《
-      ~          ～      ..        >          》
-     \+          ＋      ..       \-          －
-     \*          ﹡      ..        =          ＝
-      @          ・      ..        ;          ；
-      :          ：      ..        ,          ，
-      (          （      ..        .          。
-      )          ）      ..        ?          ？
-      {          〖      ..       \`        “”
-      }          〗      ..       ..          ..
+      &          ※      ..        \`         ‘’
+      \\         、      ..        "          “”
+      #          ＃      ..        [          【
+      %          ％      ..        ]          】 
+      $          ￥      ..        ^          … 
+      !          ！      ..        _          —
+      ~          ～      ..        <          《
+     \+          ＋      ..        >          》
+     \*          ﹡      ..       \-          －
+      @          ・      ..        =          ＝
+      :          ：      ..        ;          ；
+      (          （      ..        ,          ，
+      )          ）      ..        .          。
+      {          〖      ..        ?          ？
+      }          〗      ..        ..         ..
     ========  ========= ====  ===========  =========
 
 
@@ -2977,6 +2978,5 @@ WHAT IS NEW
 #. [redo] [one-key-correction] make <Esc> smart: also for one-key-correction
 #. [done] [backspace] make <BS> smart by not delete Chinese by mistake
 #. [done] [backspace] add g:vimim_smart_backspace which default on
-#. [todo] [punc] how about imap \ "
-
+#. [done] [punctuation] fix backlash and double quote in Chinese Mode
 
