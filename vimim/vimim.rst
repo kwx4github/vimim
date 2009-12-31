@@ -682,12 +682,13 @@ CLOUD 云输入
   (2) 2009年11月11日 `VimIM 宣誓入云`__
   (3) 2009年11月16日 `史上第一支持五种双拼的云输入法诞生`__
   (4) 2009年12月1日  `推出〖想云就云〗，不换模式，不限输入法`__
-  (5) 2009年12月25日 支持〖自己的云〗 无词库互联网版本
+  (5) 2009年12月25日 支持 `〖自己的云〗`__  既可本地也可远程
 
 __ http://pinyin.sogou.com/cloud
 __ http://code.google.com/p/vimim/wiki/VimIM_Cloud
 __ http://groups.google.com/group/vimim/browse_thread/thread/b90a05c1e37e3448
 __ http://code.google.com/p/vimim/wiki/CloudForAll
+__ http://pim-cloud.appspot.com/
 
 
 【必要条件】
@@ -766,7 +767,7 @@ __ http://code.google.com/p/vimim/wiki/CloudForAll
      * 【例】laystb,z => 两岸猿声啼不住
      * 【例】ryddddydg,c => 人有多大胆地有多高产
 
- (9) 支持 `〖自己的云〗`__ 
+ (9) 支持 `〖自己的云〗`__
 
       * 【卖点】自己的云永远是最好的云
       * 【本地插件】python
@@ -1621,7 +1622,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 - 【卖点】Yes, VimIM can recycle!
 - 【目的】重复利用用户输入，省时省力!
 - 【方式之一】利用 Ctrl-N
- 
+
   - 【特点】同一字母开头的输入只记住一次
   - 【操作】在输入一个字母后，按<Ctrl-N>
   - 【缺省开启】:let g:vimim_smart_ctrl_n=1
@@ -1637,12 +1638,12 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 **不怕不识货，只怕货比货**
 
 | 比方说，我们想敲以下14个字，前后敲两遍：
-| 
+|
 |     重复打字不光荣，
 |     光荣打字不重复。
-| 
+|
 | 用谷歌拼音，搜狗拼音，微软拼音：
-| 
+|
 |  $　 chongfu dazi bu guangrong
 |  $　 guangrong dazi bu chongfu
 |  $　
@@ -1650,10 +1651,10 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 |  $　
 |  $　 chongfu dazi bu guangrong
 |  $　 guangrong dazi bu chongfu
-| 
-| 
+|
+|
 | 用VimIM中文输入法：
-| 
+|
 |  $　 chongfu dazi bu guangrong
 |  $　 g<C-N> d<C-N> bu c<C-N>
 |  $　
@@ -2224,7 +2225,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 | 长按<BackSpace>键，连续删除输入的拼音串。
 | 当拼音串全部删除后，停顿一秒，才会继续删除文本中的内容。
 | 这样可以最大程度减少用户的误删除操作。
-| 
+|
 | 【缺省开启】:let g:vimim_smart_backspace=1
 
 
@@ -2400,8 +2401,8 @@ e　亿  j　斤  o　度  t　吨  z　兆
       &          ※      ..        \`         ‘’
       \\         、      ..        "          “”
       #          ＃      ..        [          【
-      %          ％      ..        ]          】 
-      $          ￥      ..        ^          … 
+      %          ％      ..        ]          】
+      $          ￥      ..        ^          …
       !          ！      ..        _          —
       ~          ～      ..        <          《
      \+          ＋      ..        >          》
@@ -2862,7 +2863,7 @@ WHAT IS NEW
 #. [done] [cloud] support auto-cloud with Windows when plugin/wget.exe
 #. [done] [OneKey] save keycode in @0 for checking if interested
 #. [done] [static] auto-chinese-enter using any alphabetic key
-#. [done] [static] make smart <Enter> reliable in Chinese Mode
+#. [done] [static] make smart <Enter> reliable in Chinese mode
 #. [done] [static] double <Space> works when no match
 #. [done] [svn] 20091116 start SVN to organize code and VimIM homepage
 #. [done] [4corner] succeed: plug & play vimim.4corner.txt only
@@ -2959,7 +2960,7 @@ WHAT IS NEW
 #. [done] [rot13] make rot13 ready for Great Wall, includes %xx
 #. [done] [zhengma] fix aewz using datafile: vimim.zhengma.txt
 #. [done] [zhengma] plug and play <=> zhengma and pinyin sleep together
-#. [done] [sleep together] [array30][xinhua][quick] and [pinyin] plug and play 
+#. [done] [sleep together] [array30][xinhua][quick] and [pinyin] plug and play
 #. [done] [onekey] g:vimim_sexy_onekey => noruler means OneKey mode is on
 #. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
 #. [done] [onekey] create official OneKey Chinese input mode
@@ -2978,5 +2979,7 @@ WHAT IS NEW
 #. [redo] [one-key-correction] make <Esc> smart: also for one-key-correction
 #. [done] [backspace] make <BS> smart by not delete Chinese by mistake
 #. [done] [backspace] add g:vimim_smart_backspace which default on
-#. [done] [punctuation] fix backlash and double quote in Chinese Mode
+#. [done] [punctuation] fix backlash and double quote in Chinese mode
+
+
 
