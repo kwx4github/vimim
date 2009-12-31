@@ -1534,14 +1534,15 @@ VimIM 不错, 一直在用 :) -->
 <li>【数字键】数字键上字。数字标签与数字选字一一对应。</li>
 <li>【空格键】直接上汉字，或上空格。</li>
 <li>【回车键】或无缝上英文，或回车。</li>
+<li>【精确输入】可以把数码（四角号码或五笔划）当作拼音音调使用。</li>
 <li>【无缝混排】支持 <a class="reference internal" href="#id96">无缝混排</a></li>
 <li>【一键改错】&lt;Esc&gt; 将就传统输入法的用户体验</li>
 <li>【&lt;C-H&gt;】（点石成金） <a class="reference internal" href="#id83">整句输入</a> 重新匹配</li>
 <li>【中文数字】（静态模式）i2009　=&gt;　二〇〇九　　I2009　=&gt;　贰零零玖</li>
 <li>【中文量词】（静态模式）i5t　=&gt;　五吨　　id8　=&gt;　第八</li>
 <li>【大块英文】敲 CTRL-6 动态切换中英文输入模式。</li>
-<li>【智能模糊匹配】 （缺省开启）</li>
 <li>【可控词频调整】 （缺省开启）</li>
+<li>【智能模糊匹配】 （缺省关闭）</li>
 <li>【通配符匹配】用星号键＊匹配任意字符串或空串 （缺省关闭）</li>
 <li>【输入风格】 <a class="reference internal" href="#id94">〖中文输入模式〗</a>  经典动态输入风格 （缺省开启）</li>
 <li>【开启静态模式】可设 :let g:vimim_static_input_style=1</li>
@@ -3323,7 +3324,12 @@ If the following download URL does not work for you, please
 <blockquote>
 <ul class="simple">
 <li>abcdefghi 一一对应数字键1-9</li>
-<li>abcdefghi 也可以直接上汉字。</li>
+<li>abcdefghi 优于快速选码。<ul>
+<li>第一重码：空格键 或 1 或 a</li>
+<li>第二重码：; 或 b 或 2</li>
+<li>第三重码：c 或 3</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 <p>【vi 快捷键导航】 <a class="reference internal" href="#id78">〖点石成金〗</a></p>
@@ -3805,7 +3811,7 @@ If the following download URL does not work for you, please
 </div>
 <div class="line"><a class="reference internal" href="#id78">〖点石成金〗</a></div>
 <div class="line-block">
-<div class="line">【菜单】可敲 <tt class="docutils literal">d</tt> 键 for delete</div>
+<div class="line">【菜单】可敲 <tt class="docutils literal">q</tt> 键</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -4697,11 +4703,12 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [punctuation] fix backlash and double quote in Chinese mode</li>
 <li>[done] [label] introduce abcdefghi as label along with 123456789</li>
 </ol>
+<p>无须切换无需切换</p>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 13:55:17 PST on Thursday, 12/31/2009
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 14:43:18 PST on Thursday, 12/31/2009
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
