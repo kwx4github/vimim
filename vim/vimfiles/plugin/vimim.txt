@@ -2737,7 +2737,8 @@ accident 意外 事故 #
 accord 调和 一致 #
 account 账目 #
 accumulate 积累 累加 #
-accurate 准确 精确 #
+accuracy 准确性 精确程度 #
+accurate 精确的 准确的 正确无误的 #
 acquire 获得 #
 across 走过 越过 #
 act 动作 扮演 行为 #
@@ -3428,8 +3429,8 @@ aya 啊呀
 ayi 阿姨
 ayo 啊哟
 azerbaijan 阿塞拜疆 #
-b 被 不 报 本 部
-ba 把 爸 八 捌 伯 叭 吧 坝 巴 扒 拔 杷 灞 疤 笆 粑 罢 耙 芭 钯 霸 靶
+b 不 被 报 本 部
+ba 把 吧 爸 八 捌 伯 叭 坝 巴 扒 拔 杷 灞 疤 笆 粑 罢 耙 芭 钯 霸 靶
 ba1 巴 叭 吧 岜 扒 疤 笆 粑 芭 仈
 ba2 八 捌 拔 茇 菝 跋 魃
 ba3 把 钯 靶
@@ -5025,6 +5026,7 @@ benshengdeng 本生灯
 benshi 本事 本市 奔驶 奔逝
 benshiji 本世纪
 benshoubenjiao 笨手笨脚
+bentan 本坛
 bentao 奔逃
 benteng 奔腾
 benti 本题 本体
@@ -5530,10 +5532,7 @@ bihe 闭合
 bihedianlu 闭合电路
 bihu 壁虎
 bihu 庇护
-bihua 壁画
-bihua 比划
-bihua 比画
-bihua 笔划
+bihua 笔划 壁画 比划 比画
 bihuan 璧还
 bihuashuru 笔划输入
 bihuayuanyin 鼻化元音
@@ -5641,7 +5640,7 @@ binfen 缤纷
 bing 丙 兵 冰 屏 平 并 拼 摒 柄 栟 槟 炳 燹 病 禀 秉 饼
 bing1 兵 冰 槟
 bing3 丙 柄 炳 禀 秉 饼
-bing4 病 并 摒
+bing4 并 病 摒
 bingan 并按
 bingan 病案
 bingbairushandao 兵败如山倒
@@ -6652,6 +6651,7 @@ bukexue 不科学
 bukeyanchuan 不可言传
 bukeyanxuan 不可言宣
 bukeyanzhuang 不可言状
+bukeyi 不可以
 bukeyishi 不可一世
 bukeyuyue 不可逾越
 bukezaoci 不可造次
@@ -6906,7 +6906,7 @@ buwuzhengye 不务正业
 buwuzhihe 不舞之鹤
 buxi 补习 不息 不惜
 buxia 部下
-buxiang 不像 不象 不想 不详
+buxiang 不想 不像 不象 不详
 buxiangchen 不相称
 buxianggan 不相干
 buxianghua 不像话
@@ -7300,6 +7300,7 @@ camellia 山茶花 #
 camera 照相机 暗箱 #
 cameroon 喀麦隆 #
 camping 露营 #
+campus 校园 #
 can 能够 会 可以 #
 can 餐 参 惨 惭 掺 残 灿 粲 蚕 骖 鲹 黪
 can1 餐 参 骖
@@ -7323,6 +7324,7 @@ canbu 残部
 canburendu 惨不忍睹
 canburenwen 惨不忍闻
 cancan 餐餐
+cancel 取消 癌 癌症 #
 cancer 癌症 取消 #
 canchan 参禅
 canchashengfan 残茶剩饭
@@ -8543,7 +8545,7 @@ chemafei 车马费
 chemayingmen 车马盈门
 chemen 车门
 chemist 化学 化学家 #
-chen 陈 橙 沉 晨 臣 衬 湛 疹 缜 胂 谌 谶 趁 辰 郴 嗔 堪 宸 尘 忱 抻
+chen 沉 衬 陈 橙 晨 臣 湛 疹 缜 胂 谌 谶 趁 辰 郴 嗔 堪 宸 尘 忱 抻
 chen1 郴 嗔 抻 琛
 chen2 陈 宸 尘 忱 晨 橙 沉 臣 谌 辰
 chen4 趁 榇 秤 衬 谶 龀
@@ -8565,7 +8567,7 @@ chenfang 陈放
 chenfantugeng 尘饭涂羹
 chenfei 尘肺
 chenfeng 尘封
-chenfu 沉浮 臣服 陈腐
+chenfu 臣服 沉浮 陈腐
 chenfufuyang 沉浮俯仰
 cheng 成 称 丞 诚 呈 城 嵊 徵 惩 承 晟 枨 橙 澄 瞠 秤 程 裎 逞 铛 骋
 cheng1 称 蛏 噌 撑 柽 瞠
@@ -8761,9 +8763,7 @@ chengshibuzu 成事不足
 chengshipinmin 城市贫民
 chengshou 承受
 chengshouli 承受力
-chengshu 成数
-chengshu 成熟
-chengshu 称述
+chengshu 成熟 成数 称述
 chengshuang 成双
 chengshuangchengdui 成双成对
 chengshuangjiedui 成双结对
@@ -9061,7 +9061,6 @@ chibufu 吃不服
 chibukai 吃不开
 chibulai 吃不来
 chibuliaodouzhezou 吃不了兜着走
-chibuliaodouzhezou 吃不了，兜着走
 chibushang 吃不上
 chibuxiao 吃不消
 chibuzhu 吃不住
@@ -9078,8 +9077,7 @@ chichengjiangchang 驰骋疆场
 chichengxiangdai 赤诚相待
 chichihehe 吃吃喝喝
 chichouwosuan 持筹握算
-chichu 彳亍
-chichu 踟躇
+chichu 踟躇 彳亍
 chichuanpianwa 尺椽片瓦
 chichuanyongdu 吃穿用度
 chichubuqian 踟蹰不前
@@ -10764,6 +10762,7 @@ compare 比较 对照 #
 compass 指南针 罗盘 圆规 #
 compatible 兼容 #
 compete 竞争 竞赛 #
+competition 比赛 #
 competitor 竞争者 #
 compile 编辑 #
 compiler 编译器 #
@@ -11698,8 +11697,7 @@ daizi 袋子
 daiziguizhong 待字闺中
 daizu 傣族
 daizuiligong 戴罪立功
-daji 大吉
-daji 打击 大计 大几 大蓟
+daji 打击 大忌 大吉 大计 大几
 dajia 大家 打架 大驾 打价 打假
 dajiaguixiu 大家闺秀
 dajiajieshe 打家劫舍
@@ -11721,6 +11719,7 @@ dajiebuduo 大节不夺
 dajiefang 搭街坊
 dajiexiaoxiang 大街小巷
 dajihuang 打饥荒
+dajimian 打击面
 dajin 大尽 大襟 打紧 打进
 dajingmai 大静脉
 dajingshise 大惊失色
@@ -11735,8 +11734,7 @@ dajuan 答卷
 dajun 大军
 daka 大卡
 daka 打卡
-dakai 大楷
-dakai 打开
+dakai 打开 大楷
 dakaitianchuanglianghua 打开天窗说亮话
 dakaiyanjie 大开眼界
 dakao 大考
@@ -11758,11 +11756,7 @@ daleng 打愣
 dalengqiang 打冷枪
 dalengzhan 打冷战
 dalengzhan 打冷颤
-dali 大利
-dali 大力
-dali 大理
-dali 答理
-dali 答礼
+dali 大力 大利 大理 答理 答礼
 dalian 大殓
 dalian 大连
 dalian 褡裢
@@ -11817,7 +11811,7 @@ damp 湿气 潮湿 #
 damudan 达姆弹
 damuge 大拇哥
 damuzhi 大拇指
-dan 蛋 丹 胆 但 单 坛 弹 惮 担 掸 旦 檐 氮 淡 潭 澹 眈 箪 耽 聃 蜒 诞
+dan 单 蛋 丹 胆 但 坛 弹 惮 担 掸 旦 檐 氮 淡 潭 澹 眈 箪 耽 聃 蜒 诞
 dan1 丹 儋 单 担 殚 眈 箪 耽 聃 郸
 dan3 胆 掸 赕
 dan4 蛋 但 诞 弹 惮 旦 氮 淡 澹
@@ -11885,9 +11879,7 @@ dang 当 党 凼 垱 宕 挡 档 珰 筜 荡 裆 谠 铛
 dang1 当 裆 铛
 dang3 党 挡 谠
 dang4 荡 凼 宕 挡 档 砀 菪
-dangan 单干
-dangan 档案
-dangan 胆敢
+dangan 档案 单干 胆敢
 dangang 单杠
 dangang 担纲
 danganguan 档案馆
@@ -14763,8 +14755,7 @@ duoyiban 多一半
 duoyici 多义词
 duoyixing 多义性
 duoyong 多用
-duoyu 多于
-duoyu 多余
+duoyu 多余 多于
 duoyuan 多元
 duoyuanhua 多元化
 duoyuanlun 多元论
@@ -15045,6 +15036,8 @@ erbi 二笔
 erbian 耳边
 erbianfeng 耳边风
 erbinsimo 耳鬓厮磨
+erbu 而不
+erbushi 而不是
 erbuzhi 二部制
 ercao 尔曹
 ercaoshen 尔曹身与名俱灭，不废江河万古流
@@ -15589,6 +15582,7 @@ fangche 房车
 fangche 纺车
 fangchen 防尘
 fangcheng 方程
+fangchengshi 方程式
 fangchengshisaiche 方程式赛车
 fangchi 方尺
 fangchou 纺绸
@@ -16098,9 +16092,7 @@ fanzhuan 反转
 fanzhuan 翻转
 fanzhuang 饭庄
 fanzhuo 饭桌
-fanzhushu 饭煮熟
-fanzi 幡子
-fanzi 贩子
+fanzi 贩子 幡子
 fanzui 犯罪
 fanzuilv 犯罪率
 fanzuo 反坐
@@ -16418,7 +16410,7 @@ feiyizhaoxi 匪伊朝夕
 feiyong 费用
 feiyu 肥育 飞语
 feiyuan 肥源
-feiyue 飞越 飞跃
+feiyue 飞跃 飞越
 feizaihenghuo 飞灾横祸
 feizaishengziyuan 非再生资源
 feizang 肺脏
@@ -17729,7 +17721,7 @@ gallop 奔驰 飞跑 #
 gamashexian 伽马射线
 gambia 冈比亚 #
 gamble 赌场 赌博 #
-game 游戏 比赛 猎物 #
+game 游戏 猎物 #
 gamma γ Γ #
 gan 干 杆 甘 竿 敢 赶 酐 坩 尴 感 旰 柑 橄 淦 玕 疳 秆 绀 肝 赣
 gan1 甘 坩 尴 杆 柑 疳 矸 竿 肝 酐
@@ -18939,6 +18931,7 @@ gongzuozhe 工作者
 gongzuozheng 工作证
 gongzuozu 工作组
 good 好 妙 #
+goodat 擅长于 #
 google 谷歌 #
 goose 鹅 #
 gorilla 大猩猩 #
@@ -19344,6 +19337,7 @@ guangxi 广西
 guangxian 光纤
 guangxian 光线
 guangxian 光鲜
+guangxisheng 广西省
 guangxiu 广绣
 guangxu 光绪
 guangxue 光学
@@ -19627,7 +19621,7 @@ guhua 古话
 guhui 骨灰
 guhuo 鼓惑
 guhuorenxin 蛊惑人心
-gui 鬼 龟 归 刽 硅 规 匮 圭 姽 晷 柜 桂 桅 桧 洼 瑰 癸 诡 贵 跪 轨 闺
+gui 归 鬼 龟 刽 硅 规 匮 圭 姽 晷 柜 桂 桅 桧 洼 瑰 癸 诡 贵 跪 轨 闺
 gui1 归 规 瑰 皈 硅 圭 闺 鲑 龟
 gui3 鬼 匦 宄 晷 癸 诡 轨
 gui4 贵 刽 柜 桂 桧 跪
@@ -19913,7 +19907,7 @@ gunyuan 滚圆
 gunzhu 滚珠
 gunzhuzhoucheng 滚珠轴承
 gunzi 棍子 磙子 辊子
-guo 国 过 郭 锅 果 埚 帼 掴 椁 活 涡 猓 聒 虢 蝈 裹
+guo 过 国 郭 锅 果 埚 帼 掴 椁 活 涡 猓 聒 虢 蝈 裹
 guo1 郭 呙 埚 崞 聒 蝈
 guo2 国 帼 掴 虢 馘 锅
 guo3 果 椁 猓 裹
@@ -20385,6 +20379,7 @@ haimian 海绵
 haimian 海面
 hainabaichuan 海纳百川，有容乃大
 hainandao 海南岛
+hainansheng 海南省
 haineicunzhiji 海内存知己，天涯若比邻
 haineiwai 海内外
 hainiao 害鸟
@@ -21448,6 +21443,7 @@ hide 躲避 隐蔽 隐藏 #
 high 高 #
 higher 更高 越来越高 #
 highest 最高 #
+highway 高速公路 #
 hill 丘山 #
 hind 后面 #
 hint 暗示 讽示 #
@@ -21607,6 +21603,7 @@ hongxiguan 虹吸管
 hongxilinjue 鸿稀鳞绝
 hongxin 红心
 hongxing 红星
+hongxiutianxiang 红袖添香
 hongxixianxiang 虹吸现象
 hongxue 红学
 hongxueqiu 红血球
@@ -22529,7 +22526,7 @@ huhuan 互换
 huhuan 呼唤
 huhuanxing 互换性
 huhui 互惠
-hui 会 灰 回 卉 哕 喙 彗 徊 徽 恢 悔 惠 慧 挥 晖 晦 桧 毁 汇 洄 浍 烩 秽 绘 荟 蛔 蟪 讳 诙 诲 贿 辉
+hui 回 会 灰 卉 哕 喙 彗 徊 徽 恢 悔 惠 慧 挥 晖 晦 桧 毁 汇 洄 浍 烩 秽 绘 荟 蛔 蟪 讳 诙 诲 贿 辉
 hui1 灰 徽 恢 挥 晖 诙 辉 麾 袆
 hui2 回 徊 洄 茴 蛔 囘
 hui3 悔 毁 虺
@@ -23048,7 +23045,7 @@ huo 火 伙 惑 或 扮 活 获 藿 豁 货 越 钬 霍
 huo1 豁 锪
 huo2 活
 huo3 火 伙 夥 钬
-huo4 货 惑 或 祸 获 霍 嚯
+huo4 祸 货 惑 或 获 霍 嚯
 huoba 火把
 huobajie 火把节
 huoban 伙伴 夥伴 活版 火伴
@@ -23543,11 +23540,7 @@ jelly 冻胶 果子冻 #
 jesus 耶稣 耶穌 #
 jet 喷气式飞机 #
 jews 犹太人 犹太裔人 #
-ji 几 击 剂 即 及 叽 吉 咭 奇 妓 哜 唧 圾 揖 暨 期 机
-ji 季 寂 寄 居 岌 嵇 己 忌 基 姬 嫉 急 戢 技 挤
-ji 既 乩 亟 伎 佶 倚 偈 冀 极 棘 楫 汲 济 激 迹 际 集 霁 骑
-ji 畸 疵 疾 瘠 祭 积 秸 稷 稽 穄 笄 笈 箕 籍 跻 跽 蹐 辑
-ji 肌 级 纪 继 绩 缉 羁 脊 芨 荠 萁 蓟 骥 鸡 饥 觊 计 讥 记
+ji 即 几 击 剂 及 叽 吉 咭 奇 妓 哜 唧 圾 揖 暨 期 机 季 寂 寄 居 岌 嵇 己 忌 基 姬 嫉 急 戢 技 挤 既 乩 亟 伎 佶 倚 偈 冀 极 棘 楫 汲 济 激 迹 际 集 霁 骑 畸 疵 疾 瘠 祭 积 秸 稷 稽 穄 笄 笈 箕 籍 跻 跽 蹐 辑 肌 级 纪 继 绩 缉 羁 脊 芨 荠 萁 蓟 骥 鸡 饥 觊 计 讥 记
 ji1 基 机 叽 圾 姬 屐 笄 缉 羁 肌 芨 讥 跻 迹 饥 鸡 箕 绩 积 击 激 玑 畸 稽
 ji2 急 亟 佶 即 及 吉 嫉 岌 嵴 戢 极 棘 楫 殛 汲 疾 瘠 笈 籍 级 脊 蒺 辑 集
 ji3 几 己 戟 挤 掎 脊 虮
@@ -23641,6 +23634,7 @@ jiajiang 嘉奖
 jiajianhushuo 家见户说
 jiajiao 家教
 jiajiao 岬角
+jiajiazhenzhen 假假真真
 jiajidui 甲级队
 jiajie 佳节
 jiajie 假借
@@ -23807,7 +23801,7 @@ jianfuqi 肩负起
 jiang 江 浆 犟 疆 绛 缰 蒋 虹 讲 酱 降 僵 匠 奖 姜 将 强 桨
 jiang 激昂
 jiang1 江 僵 姜 将 浆 疆 礓 缰 茳
-jiang3 奖 桨 蒋 讲
+jiang3 讲 桨 奖 蒋
 jiang4 降 匠 将 洚 浆 犟 糨 绛 酱
 jiangan 江岸
 jiangban 降班
@@ -23871,7 +23865,7 @@ jiangjieshi 蒋介石
 jiangjijiuji 将计就计
 jiangjin 奖金 将近 犟劲
 jiangjinshui 奖金税
-jiangjiu 讲究 将就
+jiangjiu 将就 讲究
 jiangjiuhuorou 浆酒霍肉
 jiangju 僵局
 jiangjun 将军
@@ -23973,7 +23967,7 @@ jiangyuliang 降雨量
 jiangyuliangcai 将遇良材
 jiangyuquzhi 将欲取之，必先与之
 jiangzhang 奖章
-jiangzhi 僵直 将指
+jiangzhi 将之 僵直 将指
 jiangzhirushen 降志辱身
 jiangzhong 江中
 jiangzhuan 奖状
@@ -24900,7 +24894,7 @@ jiazhang 加长
 jiazhang 家长
 jiazhangzhi 家长制
 jiazhao 驾照
-jiazhen 真真假假
+jiazhen 假真
 jiazheng 家政
 jiazhi 价值
 jiazhi 加之
@@ -25068,9 +25062,7 @@ jidui 挤对
 jidujiao 基督教
 jiduo 几多
 jiduxiyanghong 几度夕阳红
-jie 介 借 偈 劫 喈 嗟 契 姐 婕 孑 届 戒 截 拮 捷 接 揭 街 解 讦 诘 诫 阶
-jie 杰 桀 楷 概 洁 獬 玠 界 疖 皆 睫 碣 秸 竭 籍 纥 结 羯 节 芥 藉 蚧
-jie 饥饿
+jie 解 介 借 偈 劫 喈 嗟 契 姐 婕 孑 届 戒 截 拮 捷 接 揭 街 讦 诘 诫 阶 杰 桀 楷 概 洁 獬 玠 界 疖 皆 睫 碣 秸 竭 籍 纥 结 羯 节 芥 藉 蚧 饥饿
 jie1 结 街 阶 喈 嗟 接 揭 疖 皆 秸
 jie2 杰 节 洁 偈 劫 婕 孑 截 拮 捷 桀 桔 睫 碣 竭 结 羯 讦 诘
 jie3 解 姐
@@ -25507,7 +25499,7 @@ jifubaoyang 饥附饱飏
 jigai 技改
 jigan 基干
 jigang 纪纲
-jige 及格 几个 幾個
+jige 几个 及格 幾個
 jigeng 机耕
 jigong 记功 记工 机工
 jigongche 鸡公车
@@ -25650,8 +25642,7 @@ jijun 季军
 jikan 季刊
 jikan 集刊
 jikao 稽考
-jike 忌刻
-jike 既可 即刻 即可
+jike 既可 忌刻 即刻 即可
 jikou 忌口
 jikou 极口
 jikouling 急口令
@@ -26501,6 +26492,7 @@ jiongran 迥然
 jiongranbutong 迥然不同
 jiongtai 窘态
 jipei 继配
+jipiao 机票
 jipidongwu 棘皮动物
 jipigeda 鸡皮疙瘩
 jipihefa 鸡皮鹤发
@@ -26541,7 +26533,7 @@ jiquaoya 佶屈聱牙
 jiquaoya 诘屈聱牙
 jiqun 机群
 jiqunzhijiao 纪群之交
-jiran 寂然 既然
+jiran 既然 寂然
 jiren 己任 级任 继任 记认
 jirenlixia 寄人篱下
 jirentianxiang 吉人天相
@@ -26559,6 +26551,7 @@ jise 基色 饥色
 jishache 急刹车
 jishachengta 积沙成塔
 jishang 击伤 击赏 机上 激赏 齎赏
+jishangxinlai 计上心来
 jishanyuqing 积善余庆
 jishaochengduo 积少成多
 jishaoshu 极少数
@@ -26952,7 +26945,7 @@ jizhongnanfan 积重难返
 jizhongshengzhi 急中生智
 jizhongying 集中营
 jizhou 几周 急骤 极昼
-jizhu 寄主 脊柱 记住 集注
+jizhu 记住 寄主 脊柱 集注
 jizhua 棘爪
 jizhuangxiang 集装箱
 jizhuanti 纪传体
@@ -27689,6 +27682,7 @@ kaiting 开庭
 kaitong 开通
 kaitou 开头
 kaituo 开拓 开脱
+kaituojingshen 开拓精神
 kaituoxing 开拓型
 kaituozhe 开拓者
 kaiwa 开挖
@@ -29057,8 +29051,9 @@ kuzhongzuole 苦中作乐
 kuzhu 苦主
 kuzi 裤子
 kyrgyzstan 吉尔吉斯斯坦 #
+kzmyh 苛政猛于虎
 l 了 啦 来 理 领
-la 辣 腊 蜡 拉 垃 啦 喇 摺 旯 瘌 砬 镴 鞡
+la 啦 辣 腊 蜡 拉 垃 喇 摺 旯 瘌 砬 镴 鞡
 la1 拉 啦 垃 邋
 la2 喇 旯 砬
 la4 辣 拉 瘌 腊 蜡
@@ -29370,7 +29365,7 @@ lanzhu 拦住
 lanzong 揽总
 lanzu 拦阻
 lanzuiruni 烂醉如泥
-lao 老 劳 牢 捞 栳 涝 潦 烙 痨 酪 铑 铹 佬 唠 姥 崂
+lao 捞 老 劳 牢 栳 涝 潦 烙 痨 酪 铑 铹 佬 唠 姥 崂
 lao2 劳 捞 唠 崂 牢 痨 醪 铹
 lao3 老 佬 姥 栳 铑
 lao4 酪 唠 涝 烙
@@ -29932,7 +29927,7 @@ li2 厘 喱 嫠 梨 漓 犁 狸 璃 离 篱 缡 罹 蓠 藜 蜊 蠡 骊 鲡 鹂 
 li3 俚 哩 娌 悝 李 澧 理 礼 蠡 逦 里 锂 鲤 鳢
 li4 丽 例 俐 俪 傈 利 力 励 历 厉 吏 呖 唳 戾 枥 栎
 li4 粝 苈 荔 莅 莉 詈 跞 轹 隶 雳 鬲 栗 沥 猁 疠 疬 痢 砺 砾 立 笠 粒
-lian 恋 连 帘 廉 怜 敛 殓 涟 潋 濂 炼 琏 练 联 脸 离岸 立案 膦 莲 裢 链 镰
+lian 连 恋 帘 廉 怜 敛 殓 涟 潋 濂 炼 琏 练 联 脸 离岸 立案 膦 莲 裢 链 镰
 lian2 连 帘 廉 怜 涟 濂 联 莲 蠊 裢 镰 奁
 lian3 脸 敛 琏 蔹
 lian4 恋 殓 潋 炼 练 链
@@ -30026,6 +30021,7 @@ lianghuishi 两回事
 lianghuxiangdou 两虎相斗
 liangji 两极 两级 良机
 liangjia 粮价 良家
+liangjian 亮剑
 liangjiang 两江
 liangjiaogui 两脚规
 liangjiaoqi 量角器
@@ -30176,8 +30172,7 @@ lianji 联机 敛迹
 lianjia 廉价 恋家 梿枷 脸颊 连枷
 lianjiao 炼焦
 lianjiaoku 连脚裤
-lianjie 廉洁 联接 联结 连接 连结
-lianjie 链接
+lianjie 联结 廉洁 联接 连接 连结 链接
 lianjiefenggong 廉洁奉公
 lianjiehao 连接号
 lianjin 连襟
@@ -31006,7 +31001,7 @@ litouzhibei 力透纸背
 little 小 少 少量 少许 #
 litu 力图
 lituixiu 离退休
-liu 六 刘 柳 榴 泖 流 浏 溜 琉 留 瘤 硫 聊 蹓 遛 鎏 锍 镏 馏 骝
+liu 刘 六 柳 榴 泖 流 浏 溜 琉 留 瘤 硫 聊 蹓 遛 鎏 锍 镏 馏 骝
 liu1 溜 熘
 liu2 刘 留 流 浏 琉 硫 瘤 榴 骝
 liu3 柳 绺 锍
@@ -32030,8 +32025,8 @@ lvzhi 滤纸
 lvzhou 绿洲
 lvzong 律宗
 lvzuo 闾左
-m 馬 马 没 们 明 民 面
-ma 骂 馬 妈 马 码 嘛 码 吗 杩 麻
+m 马 明 没 面 们 馬 民
+ma 馬 吗 马 杩 骂 码 嘛 妈 码 麻
 ma1 妈 吗 嘛
 ma2 麻 嫲 蔴
 ma3 马 馬 玛 蚂 码 吗 溤 犸 玛 杩 犸 遤
@@ -32642,7 +32637,7 @@ mast 竿 桅柱 #
 master 师傅 高手 主人 大师 牛人 掌握 控制 #
 masturbation 打飞机 #
 masusu 麻酥酥
-match 比赛 匹配 火柴 #
+match 匹配 火柴 #
 material 材料 物质 唯物 #
 mathematics 数学 #
 mati 马蹄
@@ -32677,7 +32672,7 @@ mazha 麻渣 蚂蚱 马劄 马扎 马札
 mazhang 马掌
 mazhen 骂阵 麻疹 痲疹 痳疹
 mazhipin 麻织品
-mazi 码子 码字 马子 麻子
+mazi 码字 码子 马子 麻子
 mazong 马鬃
 mazu 妈祖
 mazui 麻醉
@@ -33230,7 +33225,7 @@ mianzi 棉籽
 mianzi 绵子
 mianzi 面子
 mianzui 免罪
-miao 秒 妙 庙 描 苗 杪 淼 渺 猫 眇 瞄 纱 缪 藐 邈 喵
+miao 妙 秒 庙 描 苗 杪 淼 渺 猫 眇 瞄 纱 缪 藐 邈 喵
 miao2 描 瞄 苗
 miao3 秒 杪 淼 渺 眇 缈 藐 邈
 miao4 妙 庙 缪
@@ -33569,9 +33564,7 @@ mingpaidaxue 名牌大学
 mingpaihuo 名牌货
 mingpan 明盘
 mingpian 名片
-mingqi 冥器
-mingqi 名气
-mingqi 明器
+mingqi 名气 冥器 明器
 mingqian 明前
 mingqiang 明抢 鸣枪
 mingqianganjian 明枪暗箭
@@ -34643,7 +34636,7 @@ nazhener 那阵儿
 nazhong 那种
 nazhuyi 拿主意
 nazi 卐 纳粹 #
-ne 呐 呢 哪 疔 讷 那
+ne 呢 呐 哪 疔 讷 那
 near 接近 附近 #
 nearly 几乎 差不多 近乎 #
 neat 整洁 #
@@ -35755,7 +35748,7 @@ pan 盼 判 叛 攀 泮 潘 畔 番 皤 盘 磐 蟠
 pan 锅 #
 pan1 攀 潘 番
 pan2 盘 磐 蟠 蹒
-pan4 判 叛 泮 畔 盼 襻
+pan4 盼 判 叛 泮 畔 襻
 panama 巴拿马 #
 panan 判案
 panbi 攀比
@@ -36260,6 +36253,7 @@ persevere 孜孜不倦 不屈不挠 #
 person 人 #
 peru 秘鲁 #
 pet 宠物 爱畜 #
+petn 季戊四醇 #
 pfizer 辉瑞 #
 phase 相位 #
 phd 博士 博士学位 #
@@ -37164,6 +37158,7 @@ praise 赞美 称赞 #
 pray 祈祷 牺牲 #
 precious 昂贵 贵重 #
 precise 精密 #
+precision 精确 准确 细致 #
 prefer 宁愿 #
 premier 首相 国务卿 #
 prepare 准备 #
@@ -37363,9 +37358,7 @@ puzi 脯子 谱子
 q 起 请 全 切 区 经
 qa 问 答 质量保证 质量控制
 qatar 卡塔尔 #
-qi 器 妻 旗 其 齐 企 岂 奇 伎 乞 偈 凄 启 吱 嘁 圻 亟 契 骑 鳍 麒
-qi 戚 挈 七 柒 期 杞 桤 棋 欺 歧 气 汽 泣 济 淇 漆 琦 琪 畦 忾 崎
-qi 畸 起 砌 碛 祁 祈 祗 祺 稽 绮 缉 脐 芪 憩 荠 萁 蛴 讫 蹊 迄
+qi 企 器 妻 旗 其 齐 岂 奇 伎 乞 偈 凄 启 吱 嘁 圻 亟 契 骑 鳍 麒 戚 挈 七 柒 期 杞 桤 棋 欺 歧 气 汽 泣 济 淇 漆 琦 琪 畦 忾 崎 畸 起 砌 碛 祁 祈 祗 祺 稽 绮 缉 脐 芪 憩 荠 萁 蛴 讫 蹊 迄
 qi1 妻 七 凄 戚 期 柒 栖 桤 槭 欺 沏 漆 蹊
 qi2 奇 其 齐 骑 圻 岐 崎 旗 棋 歧 淇 琦 琪 畦 祁 祈 祺 脐 芪 荠 萁 颀 骐
 qi3 起 乞 启 岂 杞 稽 绮
@@ -39270,7 +39263,7 @@ qiyou 契友
 qiyou 汽油
 qiyoucili 岂有此理
 qiyouji 汽油机
-qiyu 奇遇 其余 旗语 期于
+qiyu 其余 奇遇 旗语 期于
 qiyuan 乞援
 qiyuan 起源
 qiyue 七月
@@ -39312,7 +39305,7 @@ qizuojian 起坐间
 qu 去 区 取 娶 屈 岖 曲 渠 瞿 祛 苣 蛆 蛐 蜡 衢 袪 觑 诎 趋 趣 躯 鞠 驱 驺
 qu1 区 屈 岖 祛 蛆 蛐 觑 诎 趋 躯 驱 麴 黢
 qu2 渠 劬 氍 瞿 磲 蕖 蘧 蠼 衢 鸲
-qu3 取 娶 曲 苣 龋
+qu3 娶 取 曲 苣 龋
 qu4 去 觑 趣 阒
 quality 质 质量 品质 性质
 quan 全 券 劝 卷 圈 拳 拴 权 棬 泉 犬 獾 痊 筌 荃 蜷 诠 辁 醛 铨 鬈
@@ -39546,7 +39539,7 @@ quedian 缺点
 queding 确定
 quee 缺额
 queen 皇后 女王 #
-queer 奇妙 #
+queer 古怪 奇特 不是味儿 #
 quefa 缺乏
 quehan 缺憾
 quehububa 确乎不拔
@@ -39609,7 +39602,7 @@ quhua 区划
 quhui 取回
 quhuo 去火
 quhuoqiushen 屈蠖求伸
-quick 快 快的 迅速 #
+quick 快 快速 迅速 #
 quiet 静 温和 #
 quite 完全 #
 quiver 摇动 震 颤 #
@@ -40094,6 +40087,7 @@ renling 认领
 renliu 人流
 renlun 人伦
 renma 人马
+renmai 人脉
 renmazuo 人马座
 renmen 人们
 renmian 任免
@@ -41394,6 +41388,7 @@ saodu 扫毒
 saofuren 嫂夫人
 saohei 扫黑
 saohuang 扫黄
+saohuangdafei 扫黄打非
 saoke 骚客
 saolei 扫雷
 saoluan 骚乱
@@ -43470,13 +43465,7 @@ shijia 施加
 shijia 时价
 shijia 识家
 shijiachengpi 嗜痂成癖
-shijian 世间
-shijian 事件
-shijian 失检
-shijian 实践
-shijian 尸检
-shijian 时间
-shijian 识见
+shijian 时间 世间 事件 失检 实践 尸检 识见
 shijianbiao 时间表
 shijiancha 时间差
 shijianci 时间词
@@ -43937,7 +43926,7 @@ shorter 更短 越来越短 #
 shou 手 兽 受 售 守 寿 授 收 涛 熟 狩 瘦 绶 首
 shou1 收
 shou3 手 守 首
-shou4 寿 兽 受 售 寿 授 狩 瘦 绶 痩 夀
+shou4 受 寿 兽 售 寿 授 狩 瘦 绶 痩 夀
 shouban 寿斑 手板 手版
 shoubao 收报
 shoubashou 手把手
@@ -44644,6 +44633,7 @@ shuihuowuqing 水火无情
 shuihuozhizhong 水火之中
 shuijian 水碱
 shuijiao 睡觉
+shuijiao 谁叫
 shuijiaodi 水浇地
 shuijie 水解
 shuijin 税金
@@ -45215,6 +45205,7 @@ siche 撕扯
 sichou 丝绸
 sichu 四出 四处
 sichuan 四川
+sichuansheng 四川省
 sichuluanguang 四处乱逛
 sichun 思春
 sick 生病 不舒服 #
@@ -45244,6 +45235,7 @@ sifabu 司法部
 sifan 思凡
 sifang 私房 私访 私方
 sifangbu 四方步
+sifeiershi 似非而是
 sifen 私分
 sifen 私愤
 sifenwulie 四分五裂
@@ -46107,7 +46099,7 @@ surface 表面 #
 suri 素日
 suriname 苏里南 #
 surong 速溶
-surprise 惊奇 吃惊 #
+surprise 惊奇 意外 吃惊 #
 surrender 投降 #
 surround 包围 围绕 #
 suru 宿儒
@@ -46224,6 +46216,7 @@ taichaoguo 太超过
 taicheng 台秤 抬秤
 taichuyoudao 太初有道
 taici 台词
+taida 太大
 taidanshen 太单身
 taideng 台灯
 taidi 台地
@@ -46314,6 +46307,7 @@ taiwei 胎位
 taixi 太息 泰西
 taixia 台下
 taixianzhiwu 苔藓植物
+taixiao 太小
 taixue 太学
 taiyang 太阳
 taiyangdeng 太阳灯
@@ -46355,7 +46349,7 @@ talun 塔轮
 tamade 他妈的 她妈的
 tame 驯服 #
 tamen 他们 她们 它们
-tan 潭 叹 谈 谭 贪 坍 坛 坦 弹 忐 探 掸 摊 昙 檀 毯 滩 澹 炭 痰 瘫 碳 覃
+tan 坛 潭 叹 谈 谭 贪 坍 坦 弹 忐 探 掸 摊 昙 檀 毯 滩 澹 炭 痰 瘫 碳 覃
 tan1 贪 坍 摊 滩 瘫
 tan2 潭 谈 坛 弹 昙 檀 澹 痰 覃 谭 郯 锬 镡
 tan3 毯 坦 忐 袒 钽
@@ -47214,7 +47208,7 @@ tianzuimishe 甜嘴蜜舌
 tianzun 天尊
 tianzuonieyoukemin 天作孽犹可悯
 tianzuozhihe 天作之合
-tiao 条 调 跳 挑 桃 眺 祧 佻 窕 笤 粜 苕 迢 髫 鲦 龆
+tiao 挑 条 调 跳 桃 眺 祧 佻 窕 笤 粜 苕 迢 髫 鲦 龆
 tiao1 挑 祧 佻
 tiao2 条 笤 苕 蜩 调 迢 髫 鲦 龆
 tiao3 窕 晀
@@ -47291,7 +47285,6 @@ tiaonong 挑弄
 tiaonong 调弄
 tiaopei 调配
 tiaopi 调皮
-tiaopijiner 跳皮筋儿
 tiaopin 调频
 tiaoqi 挑起
 tiaoqi 跳棋
@@ -47491,9 +47484,6 @@ tigangqieling 提纲挈领
 tigao 提高
 tige 体格
 tiger 老虎 #
-tiger 苛政猛于虎也
-tight 紧 紧密 贴身 #
-tigong 提供
 tigong 替工
 tiguan 提灌
 tiguangtou 剃光头
@@ -47584,7 +47574,6 @@ tinghao 挺好
 tinghe 听喝
 tinghou 听候
 tinghua 听话
-tinghuaer 听话儿
 tinghui 听会
 tinghuo 停火
 tingji 停机
@@ -48083,7 +48072,6 @@ tongzhong 垌冢
 tongzhougongji 同舟共济
 tongzhuang 童装
 tongzi 童子 筒子
-tongzier 铜子儿
 tongzigong 童子功
 tongziji 童子鸡
 tongzilou 筒子楼
@@ -48168,7 +48156,6 @@ toulan 偷懒 投篮
 touli 头里
 toulian 头脸
 touliang 透亮
-toulianger 透亮儿
 toulianghuanzhu 偷梁换柱
 touliao 投料
 touling 头领
@@ -48943,7 +48930,7 @@ wage 工资 薪水 #
 wagon 货车 #
 wagong 瓦工
 wahui 瓦灰
-wai 外 歪
+wai 歪 外
 wai1 歪
 wai4 外
 waibi 外币
@@ -48964,12 +48951,10 @@ waichuan 外传
 waidai 外带
 waidanwei 外单位
 waidazhengzhao 歪打正着
-waidi 外地
-waidi 外敌
+waidi 外地 外敌
 waidian 外电
 waidiao 外调
 waidiren 外地人
-waier 外耳
 waierdao 外耳道
 waiermen 外耳门
 waifan 外藩
@@ -49062,8 +49047,7 @@ waist 腰 #
 waisun 外孙
 waisunnv 外孙女
 waisunzi 外孙子
-wait 等候 #
-wait 等待
+wait 等候 等待 #
 waitai 外胎
 waitao 外逃
 waiter 服务员 #
@@ -49073,33 +49057,22 @@ waitress 妹子 #
 waiwainiuniu 歪歪扭扭
 waiwei 外围
 waiwen 外文
-waiwu 外侮
-waiwu 外务
-waiwu 外屋
-waiwu 外骛
-waixian 外县
-waixian 外弦
-waixian 外线
-waixiang 外乡
-waixiang 外向
+waiwu 外务 外侮 外屋 外骛
+waixian 外线 外县 外弦
+waixiang 外向 外乡
 waixiangxing 外向型
 waixiangxingjingji 外向型经济
 waixiao 外销
 waixiaoliang 外销量
 waixie 歪斜
-waixie 斜
 waixin 外心
-waixing 外姓
-waixing 外形
+waixing 外姓 外形
 waixu 外需
 waiyan 外延
 waiyang 外洋
-waiyi 外溢
 waiyi 外衣
 waiyin 外因
-waiyu 外域
-waiyu 外语
-waiyu 外遇
+waiyu 外遇 外语 外域
 waiyuan 外援
 waiyuanneifang 外圆内方
 waiyun 外运
@@ -49110,9 +49083,7 @@ waizhanshenjing 外展神经
 waizhao 歪招 外罩
 waizhi 外痔
 waizhuan 外传
-waizi 外子
-waizi 外资
-waizi 崴子
+waizi 外子 外资 崴子
 waizu 外族
 waizufu 外祖父
 waizumu 外祖母
@@ -49133,9 +49104,8 @@ waliang 瓦亮
 walk 走 走路 散步 行 #
 wall 墙 被墙 墙壁 #
 wallstreet 华尔街 #
-walong 瓦垄
 wamingchanzao 蛙鸣蝉噪
-wan 万 晚 顽 丸 剜 婉 完 宛 弯 惋 挽 湾 烷 玩 琬 畹 皖 碗 纨 腕 菀 蜿 豌
+wan 万 完 晚 顽 丸 剜 婉 宛 弯 惋 挽 湾 烷 玩 琬 畹 皖 碗 纨 腕 菀 蜿 豌
 wan1 弯 剜 湾 蜿 豌
 wan2 玩 丸 完 烷 纨 顽
 wan3 晩 娩 婉 宛 惋 挽 晚 琬 畹 皖 碗 脘
@@ -49145,8 +49115,7 @@ wanbai 完败
 wanban 万般
 wanbantianer 晚半天儿
 wanbao 晚报
-wanbei 完备
-wanbei 晚辈
+wanbei 完备 晚辈
 wanbi 完毕
 wanbianbuliqizong 万变不离其宗
 wanbiguizhao 完璧归赵
@@ -49156,8 +49125,7 @@ wanchang 晚场
 wanche 晚车
 wancheng 完成
 wanchun 晚春
-wanci 婉词
-wanci 婉辞
+wanci 婉辞 婉词
 wandan 完蛋
 wandao 晚稻
 wander 徘徊 流浪 #
@@ -49274,6 +49242,7 @@ wangluojiankong 网络监控
 wangluojiaodian 网络焦点
 wangluojingji 网络经济
 wangluojisuanji 网络计算机
+wangluowenxue 网络文学
 wangluoyouxi 网络游戏
 wangluzuqun 网路族群
 wangmazi 王麻子
@@ -49972,6 +49941,7 @@ wenbu 稳步
 wenbuduiti 文不对题
 wenbujiadian 文不加点
 wenbuqianjin 稳步前进
+wenbusheng 文部省
 wencai 文才 文采
 wencao 蕰草
 wencaoshengquan 稳操胜券
@@ -49991,6 +49961,7 @@ wencun 温存
 wenda 问答
 wendai 温带
 wendan 文旦
+wendang 文档
 wendang 稳当
 wendaoyumang 问道于盲
 wending 稳定 问鼎
@@ -50122,8 +50093,7 @@ wensibudong 纹丝不动
 wensuoweiwen 闻所未闻
 wentan 文坛
 wentang 温汤
-wenti 文体
-wenti 问题
+wenti 问题 文体
 wentianwuxi 文恬武嬉
 wentun 温吞 温暾
 wentuo 稳妥
@@ -50939,7 +50909,7 @@ wuzuo 仵作
 wuzuqingzhong 无足轻重
 www 互联网 网站 万维网 萬維網 #
 wyoming 怀俄明 #
-x 湘 学 小 向 心 性 新 现 县
+x 心 现 性 湘 学 小 向 新 县
 xag 白银 #
 xau 黄金 #
 xi 夕 习 兮 吸 唏 喜 嘻 囍 奚 媳 嬉 屣 希 席 徙 息 牺 犀 猎 玺 皙 禧
@@ -50950,7 +50920,7 @@ xi1 西 希 息 悉 惜 昔 兮 吸 嘻 夕 唏 奚 嬉 晰 曦 析 樨 欷 歙 
 xi2 习 媳 席 檄 袭 觋 隰
 xi3 囍 喜 禧 屣 徙 洗 玺 葸 蓰 铣
 xi4 戏 禊 系 细 舄 阋 隙 饩
-xia 下 吓 侠 匣 厦 哧 夏 岈 峡 押 暇 浃 狎 狭 瑕 瞎 硖 虾 辖 遐 霞 黠
+xia 厦 下 吓 侠 匣 哧 夏 岈 峡 押 暇 浃 狎 狭 瑕 瞎 硖 虾 辖 遐 霞 黠
 xia1 虾 呷 瞎
 xia2 侠 匣 峡 暇 柙 狎 瑕 硖 辖 遐 霞 黠
 xia4 下 厦 吓 夏 罅
@@ -51153,7 +51123,7 @@ xianfeng 先锋 险峰 咸丰
 xianfengdaogu 仙风道骨
 xianfengdui 先锋队
 xianfenggulang 掀风鼓浪
-xiang 想 湘 像 乡 香 享 厢 向 响 巷 橡 相 祥 箱 翔 详 象 降 项 飨 饷 骧
+xiang 想 乡 湘 像 香 享 厢 向 响 巷 橡 相 祥 箱 翔 详 象 降 项 飨 饷 骧
 xiang1 湘 香 乡 厢 相 箱 缃 葙 襄 镶 骧
 xiang2 祥 降 翔 详
 xiang3 想 享 响 飨 饷 鲞
@@ -51664,6 +51634,7 @@ xianxia 闲暇
 xianxian 先贤
 xianxian 显现
 xianxian 纤纤
+xianxianchou 现现丑
 xianxiang 现象
 xianxiang 线香
 xianxiang 险象
@@ -52301,7 +52272,7 @@ xidierzuo 席地而坐
 xidong 噏动
 xidong 翕动
 xidu 吸毒
-xie 屑 懈 揳 携 斜 械 榭 歇 泄 泻 胁 谢 鞋 些 亵 偕 写 勰 协 卸 蟹 谐 邂
+xie 些 屑 懈 揳 携 斜 械 榭 歇 泄 泻 胁 谢 鞋 亵 偕 写 勰 协 卸 蟹 谐 邂
 xie1 些 楔 歇 蝎
 xie2 鞋 偕 协 勰 挟 携 撷 斜 缬 胁 谐 邪
 xie3 写
@@ -52500,11 +52471,7 @@ xifengbuying 系风捕影
 xifengjiu 西凤酒
 xifengluhou 席丰履厚
 xifengyinlu 吸风饮露
-xifu 吸附
-xifu 媳妇
-xifu 惜福
-xifu 系缚
-xifu 西服
+xifu 媳妇 吸附 惜福 系缚 西服
 xifuer 媳妇儿
 xigaigu 膝盖骨
 xigang 矽钢
@@ -53073,8 +53040,7 @@ xinminzhuzhuyi 新民主主义
 xinmu 心目 歆慕
 xinmushouzhui 心慕手追
 xinmuzhong 心目中
-xinnian 信念
-xinnian 新年
+xinnian 新年 信念
 xinniang 新娘
 xinong 戏弄
 xinpian 新篇
@@ -53199,6 +53165,7 @@ xinxinxiangrong 欣欣向荣
 xinxinxiangyin 心心相印
 xinxinxianxian 伈伈伣伣
 xinxiong 心胸
+xinxiqueyue 欣喜雀跃
 xinxiruokuang 欣喜若狂
 xinxiu 心秀
 xinxiu 新秀
@@ -55439,6 +55406,7 @@ yeshi 也是 夜市 业师
 yeshier 野食儿
 yeshou 野兽
 yesterday 昨天 #
+yesuanshi 也算是
 yesujiao 耶稣教
 yet 还 仍然 #
 yetai 业态
@@ -55648,8 +55616,7 @@ yideyixin 一德一心
 yidezhigong 一得之功
 yidezhijian 一得之见
 yidezhiyu 一得之愚
-yidi 义地
-yidi 异地 易地
+yidi 易地 义地 异地
 yidian 一点 疑点
 yidianer 一点儿
 yidianyebu 一点也不
@@ -56567,12 +56534,7 @@ yinzhong 隐衷
 yinzhu 银朱
 yinzhui 音缀
 yinzhun 音准
-yinzi 印子
-yinzi 因子
-yinzi 引子
-yinzi 引资
-yinzi 银子
-yinzi 饮子
+yinzi 引子 印子 因子 引资 银子 饮子
 yinziqian 印子钱
 yinzujiujing 引足救经
 yipai 一派
@@ -56839,8 +56801,7 @@ yituiliuerwu 一退六二五
 yituiweijin 以退为进
 yituo 依托
 yituozaituo 一拖再拖
-yiwai 以外
-yiwai 意外
+yiwai 意外 以外
 yiwan 亿万
 yiwanfuweng 亿万富翁
 yiwang 以往 已往 遗忘
@@ -57176,8 +57137,7 @@ yongsu 庸俗
 yongsunbuji 饔飧不继
 yongtan 咏叹
 yongtandiao 咏叹调
-yongtu 壅土
-yongtu 用途
+yongtu 用途 壅土
 yongwangzhiqian 勇往直前
 yongwu 勇武
 yongwu 用武
@@ -57204,9 +57164,7 @@ yongzhiyu 用之于
 yongzhong 臃肿
 yongzhongjiaojiao 庸中佼佼
 yongzhuang 泳装
-you 你 你们 妳 您 #
-you 又 友 有 由 油 悠 优 莜 莠 莸 蚰 蚴 蚪 逾 右 扰 疣 尤 幼 幽 囿 佑
-you 忧 揄 攸 柚 坳 游 渎 痘 窦 犹 猷 陡 兜 蝣 蝤 诱 邮 酉 釉 铀 铕 锈 鱿
+you 又 有 釉 友 由 油 悠 优 莜 莠 莸 蚰 蚴 蚪 逾 右 扰 疣 尤 幼 幽 囿 佑 忧 揄 攸 柚 坳 游 渎 痘 窦 犹 猷 陡 兜 蝣 蝤 诱 邮 酉 铀 铕 锈 鱿
 you1 优 幽 忧 悠 攸 呦
 you2 油 由 游 犹 尤 柚 猷 疣 繇 莜 莸 蚰 蝣 蝤 邮 铀 鱿
 you3 有 友 牖 莠 酉 铕 黝 卣
@@ -57356,6 +57314,7 @@ youjiawuyi 有加无已
 youjiazhengquan 有价证券
 youjiboli 有机玻璃
 youjidui 游击队
+youjie 有解
 youjie 游街
 youjifeiliao 有机肥料
 youjihecheng 有机合成
@@ -57490,7 +57449,7 @@ your 你的 妳的 您的 你们的 妳们的 #
 youran 犹然 悠然 有染
 youranersheng 油然而生
 youranzide 悠然自得
-youren 诱人 游人 友人 有人
+youren 有人 诱人 游人 友人
 yourenyouyu 游刃有余
 yourizi 有日子
 yourong 优容
@@ -58739,7 +58698,7 @@ zahuo 杂货
 zahuocai 杂和菜
 zahuoer 杂活儿
 zahuomianer 杂和面儿
-zai 再 在 才 仔 哉 宰 崽 栽 灾 甾 载
+zai 在 再 才 仔 哉 宰 崽 栽 灾 甾 载
 zai1 栽 灾 甾 哉
 zai3 崽 宰
 zai4 在 再 载 扗 洅
@@ -58869,6 +58828,7 @@ zan4 赞 暂 瓒 錾
 zanba 糌粑
 zanbu 暂不
 zanbujuekou 赞不绝口
+zanbutan 暂且不谈
 zancheng 赞成
 zanchengpiao 赞成票
 zandao 錾刀
@@ -59811,7 +59771,7 @@ zhemexie 这么些
 zhemeyang 这么样
 zhemezhe 这么着
 zhemo 折磨
-zhen 真 针 镇 阵 震 枕 贞 诊 珍 轸 侦 朕 圳 坫 振 斟 桢 椹 畛 疹 砧 祯 稹 箴 缜 臻 袗 赈 鸩 榛 溱
+zhen 阵 镇 真 针 震 枕 贞 诊 珍 轸 侦 朕 圳 坫 振 斟 桢 椹 畛 疹 砧 祯 稹 箴 缜 臻 袗 赈 鸩 榛 溱
 zhen1 真 贞 针 侦 斟 桢 椹 浈 榛 溱 珍 砧 祯 箴 胗 臻 蓁
 zhen3 枕 诊 轸 畛 疹 稹 缜
 zhen4 朕 震 阵 圳 振 赈 镇 鸩
@@ -59855,7 +59815,7 @@ zhenfan 镇反
 zhenfen 振奋
 zhenfengxiangdui 针锋相对
 zhenfu 振幅
-zheng 正 承 拯 挣 政 烝 狰 整 丞 争 伥 峥 帧 征 徵 怔 症 睁 瞠 筝 蒸 证 诤 郑
+zheng 正 挣 症 承 拯 政 烝 狰 整 丞 争 伥 峥 帧 征 徵 怔 睁 瞠 筝 蒸 证 诤 郑
 zheng1 争 峥 征 徵 怔 挣 狰 睁 佂
 zheng1 蒸 筝 钲 铮
 zheng3 整 拯
@@ -60102,8 +60062,7 @@ zhengui 珍贵
 zhenguo 真果
 zhengushuojin 震古烁今
 zhengwei 政委
-zhengwen 征文
-zhengwen 正文
+zhengwen 正文 征文
 zhengwu 政务 正午 正误 证物
 zhengwuyuan 政务院
 zhengxian 正弦
@@ -60180,7 +60139,6 @@ zhenhuai 真坏
 zhenhuo 侦获
 zhenji 赈济 侦缉 真迹 针剂 震级
 zhenjia 真假
-zhenjia 真真假假
 zhenjiahuo 真家伙
 zhenjianduimaimang 针尖对麦芒
 zhenjiang 镇江
@@ -60287,10 +60245,8 @@ zhenzhenyouci 振振有辞
 zhenzhi 真知 针织 诊治 真挚 针黹 镇纸
 zhenzhipin 针织品
 zhenzhizhuojian 真知灼见
-zhenzhong 珍重 震中
-zhenzhu 珍珠
-zhenzhu 真主
-zhenzhu 真珠
+zhenzhong 震中 珍重
+zhenzhu 珍珠 真主 真珠
 zhenzhubei 珍珠贝
 zhenzhumi 珍珠米
 zhenzhuo 斟酌
@@ -61947,9 +61903,11 @@ zhushifangeng 筑室反耕
 zhushitu 主视图
 zhushou 助手 祝寿 住手 株守 驻守
 zhushu 注疏
+zhushu 煮熟
 zhushu 著书
 zhushu 著述
 zhushuai 主帅
+zhushui 注水
 zhushuihe 洙水河
 zhusimaji 蛛丝马迹
 zhusong 主送
@@ -62343,6 +62301,7 @@ zizuozishou 自作自受
 zlove 爱情就像罂粟花
 zmeet 金凤玉露一相逢，便胜却人间无数。
 zmoon 明月今夜有，千里寄相思
+zombie 僵尸 行尸走肉 #
 zone 区域 地带 #
 zong 总 宗 枞 棕偬 粽 纵 综 踪
 zong1 宗 枞 棕 综 腙 踪 鬃
@@ -62754,7 +62713,7 @@ zunzhang 尊长
 zunzhao 遵照
 zunzhong 尊重
 zunzu 樽俎
-zuo 作 做 乍 佐 凿 唑 坐 左 座 挫 昨 柞 琢 祚
+zuo 做 作 乍 佐 凿 唑 坐 左 座 挫 昨 柞 琢 祚
 zuo2 昨 琢 笮
 zuo3 左 佐 撮
 zuo4 坐 做 作 凿 唑 座 怍 祚 胙 酢 阼
