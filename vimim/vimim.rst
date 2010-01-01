@@ -3012,4 +3012,7 @@ WHAT IS NEW
 #. [done] [backspace] add g:vimim_smart_backspace which default on
 #. [done] [punctuation] fix backlash and double quote in Chinese mode
 #. [done] [label] introduce abcdefghi as label along with 123456789
+#. [done] [cmdline] discover cmdline-window for all cmdline operation
+
+
 
