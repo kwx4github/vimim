@@ -414,7 +414,7 @@ VimIM 是一個專門為 vim 玩家開發的嵌入式輸入法，隻要你的 vi
 <li><a class="reference internal" href="#id78" id="id147">〖點石成金〗</a><ul>
 <li><a class="reference internal" href="#id79" id="id148">概要</a></li>
 <li><a class="reference internal" href="#id80" id="id149">無模式之模式</a></li>
-<li><a class="reference internal" href="#id82" id="id150">命令行模式</a></li>
+<li><a class="reference internal" href="#id82" id="id150">命令行窗口</a></li>
 <li><a class="reference internal" href="#id83" id="id151">中文搜索</a></li>
 <li><a class="reference internal" href="#id84" id="id152">輸入記憶</a></li>
 <li><a class="reference internal" href="#id85" id="id153">整句輸入</a></li>
@@ -2684,7 +2684,7 @@ If the following download URL does not work for you, please
 </div>
 </div>
 <div class="section" id="id82">
-<h2><a class="toc-backref" href="#id150">命令行模式</a></h2>
+<h2><a class="toc-backref" href="#id150">命令行窗口</a></h2>
 <div class="line-block">
 <div class="line">命令行模式是Vim的精華之一。</div>
 <div class="line">VimIM 用的是Vim標准命令行窗口。</div>
@@ -2696,15 +2696,43 @@ If the following download URL does not work for you, please
 <li>【關閉】按回車執行命令，然后回到Vim正常模式</li>
 <li>【基本用途】㈠搜索字符串㈡替換字符串</li>
 </ul>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">問:</th><td class="field-body"><div class="first last line-block">
+<div class="line">有時候需要在command mode下輸入中文，我該怎麼做?</div>
+<div class="line">command mode對於Vim來說是它的精華所在，</div>
+<div class="line">很多高級功能都要在command mode下完成。</div>
+</div>
+</td>
+</tr>
+<tr class="field"><th class="field-name">答:</th><td class="field-body"><div class="first last line-block">
+<div class="line">另一個方案是利用 vim mapping, 歸.vimrc控制。</div>
+<div class="line"><br /></div>
+<div class="line">例如: 如下 mapping 可作單行或多行操作：</div>
 <div class="line-block">
+<div class="line"><tt class="docutils literal">nmap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; g: vg:</tt></div>
+<div class="line"><tt class="docutils literal">xnoremap&nbsp; g: :w! <span class="pre">/tmp/_&lt;CR&gt;:source</span> /tmp/_&lt;CR&gt;</tt></div>
+<div class="line"><br /></div>
+</div>
+<div class="line">操作: 如果想把文件中的&quot;谷歌拼音&quot; 換成 &quot;VimIM中文輸入&quot;:</div>
+<div class="line-block">
+<div class="line">㈠ (Vim Insert Mode) 敲入: 　　 <tt class="docutils literal">:%s/谷歌拼音/VimIM中文輸入</tt></div>
+<div class="line">㈡ (Vim Normal Mode) 敲map:　 <tt class="docutils literal">g:</tt></div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id83">
 <h2><a class="toc-backref" href="#id151">中文搜索</a></h2>
 <div class="line-block">
-<div class="line">中文搜索自然可以利用 <a class="reference internal" href="#id82">命令行模式</a></div>
+<div class="line">中文搜索自然可以利用 <a href="#id177"><span class="problematic" id="id178">`命令行模式`_</span></a></div>
 <div class="line">另外一種方式是在omni窗口中直接操作。</div>
 </div>
 <blockquote>
@@ -4120,39 +4148,6 @@ If the following download URL does not work for you, please
 <li>敲 c copy clipboard</li>
 </ol>
 </blockquote>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">問:</th><td class="field-body"><div class="first last line-block">
-<div class="line">有時候需要在command mode下輸入中文，我該怎麼做?</div>
-<div class="line">command mode對於Vim來說是它的精華所在，</div>
-<div class="line">很多高級功能都要在command mode下完成。</div>
-</div>
-</td>
-</tr>
-<tr class="field"><th class="field-name">答:</th><td class="field-body"><div class="first last line-block">
-<div class="line">折衷方案是利用 vim mapping, 歸.vimrc控制。</div>
-<div class="line">如果command復雜，mapping不失為最佳解決方案之一。</div>
-<div class="line"><br /></div>
-<div class="line">例如: 如下 mapping 可作單行或多行操作：</div>
-<div class="line-block">
-<div class="line"><tt class="docutils literal">nmap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; g: vg:</tt></div>
-<div class="line"><tt class="docutils literal">xnoremap&nbsp; g: :w! <span class="pre">/tmp/_&lt;CR&gt;:source</span> /tmp/_&lt;CR&gt;</tt></div>
-<div class="line"><br /></div>
-</div>
-<div class="line">操作: 如果想把文件中的&quot;谷歌拼音&quot; 換成 &quot;VimIM中文輸入&quot;:</div>
-<div class="line-block">
-<div class="line">㈠ (Vim Insert Mode) 敲入: 　　 <tt class="docutils literal">:%s/谷歌拼音/VimIM中文輸入</tt></div>
-<div class="line">㈡ (Vim Normal Mode) 敲map:　 <tt class="docutils literal">g:</tt></div>
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
 <div class="sidebar">
 <p class="first sidebar-title"><a class="reference internal" href="#id93">通配符匹配</a>   【四角號碼演示】</p>
 <div class="last figure">
@@ -4736,10 +4731,16 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [cmdline] discover cmdline-window for all cmdline operation</li>
 </ol>
 </div>
+<div class="system-messages section">
+<h1>Docutils System Messages</h1>
+<div class="system-message" id="id177">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">vimim.rst</tt>, line 1656); <em><a href="#id178">backlink</a></em></p>
+Unknown target name: &quot;命令行模式&quot;.</div>
+</div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 11:33:01 PST on Friday, 01/01/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 12:59:28 PST on Friday, 01/01/2010
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
