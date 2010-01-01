@@ -1579,6 +1579,10 @@ VimIM Mapping
 
 |
 
+.. sidebar::  VimIM 〖点石成金〗无模式之模式
+
+   .. figure:: abcdefghi.gif
+
 无模式之模式
 ------------
 | 如果愿意，OneKey 可以作为VimIM唯一的中文输入模式。
