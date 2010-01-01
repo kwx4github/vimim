@@ -1624,7 +1624,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 |
 |
 
-命令行模式
+命令行窗口
 ----------
 | 命令行模式是Vim的精华之一。
 | VimIM 用的是Vim标准命令行窗口。
@@ -1635,8 +1635,21 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 + 【关闭】按回车执行命令，然后回到Vim正常模式
 + 【基本用途】㈠搜索字符串㈡替换字符串
 
-|
-|
+
+:问: | 有时候需要在command mode下输入中文，我该怎么做?
+     | command mode对于Vim来说是它的精华所在，
+     | 很多高级功能都要在command mode下完成。
+:答: | 另一个方案是利用 vim mapping, 归.vimrc控制。
+     |
+     | 例如: 如下 mapping 可作单行或多行操作：
+     |  ``nmap      g: vg:``
+     |  ``xnoremap  g: :w! /tmp/_<CR>:source /tmp/_<CR>``
+     |
+     | 操作: 如果想把文件中的"谷歌拼音" 换成 "VimIM中文输入":
+     |       ㈠ (Vim Insert Mode) 敲入: 　　 ``:%s/谷歌拼音/VimIM中文输入``
+     |       ㈡ (Vim Normal Mode) 敲map:　 ``g:``
+     |
+     |
 
 中文搜索
 --------
@@ -2490,23 +2503,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
   #.  敲 j  光标向下移动
   #.  敲 j  光标向下移动
   #.  敲 c copy clipboard
-
-
-:问: | 有时候需要在command mode下输入中文，我该怎么做?
-     | command mode对于Vim来说是它的精华所在，
-     | 很多高级功能都要在command mode下完成。
-:答: | 折衷方案是利用 vim mapping, 归.vimrc控制。
-     | 如果command复杂，mapping不失为最佳解决方案之一。
-     |
-     | 例如: 如下 mapping 可作单行或多行操作：
-     |  ``nmap      g: vg:``
-     |  ``xnoremap  g: :w! /tmp/_<CR>:source /tmp/_<CR>``
-     |
-     | 操作: 如果想把文件中的"谷歌拼音" 换成 "VimIM中文输入":
-     |       ㈠ (Vim Insert Mode) 敲入: 　　 ``:%s/谷歌拼音/VimIM中文输入``
-     |       ㈡ (Vim Normal Mode) 敲map:　 ``g:``
-     |
-     |
 
 
 .. sidebar::  `通配符匹配`_   【四角号码演示】
