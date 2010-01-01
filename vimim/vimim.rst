@@ -1554,7 +1554,6 @@ VimIM Mapping
   + 菜单操作：
 
     - 【中文搜索】可用 VimIM `中文搜索`_
-    - 【一键改错】可敲 ``d`` 键 for delete
     - 【翻页选字】可用 vi 快捷键 `翻页选字`_
     - 【以词定字】可按 ``[`` 或 ``]`` 键
     - 【汉字上屏】也可敲 ``y`` 键或点石键
@@ -1612,10 +1611,12 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
   - 〖经典〗空格键上汉字，回车键上英文。
   - 〖无缝混排〗支持 `无缝混排`_
+  - 【一键改错】在omni菜单下，敲 ``q`` 键
   - 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
   - 〖回车键〗或无缝上英文，或回车，或上空格（after .,）
+  - 〖上字〗空格键或字母键或数字键
   - 〖状态显示〗 noruler
-
+  
 |
 |
 
@@ -2065,8 +2066,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
   | 　　　CTRL-Y  　  | 　　　　 **y** 　 | yes 　确认选择      |
   +-------------------+-------------------+---------------------+
   | 　　　        　  | 　　　　 **s** 　 | save to clipboard   |
-  +-------------------+-------------------+---------------------+
-  | 　　　        　  | 　　　　 **q** 　 | delete  一键改错    |
   +-------------------+-------------------+---------------------+
   | 　　　        　  | 　　　　 **p** 　 | paste   菜单复制    |
   +-------------------+-------------------+---------------------+
@@ -2990,5 +2989,7 @@ WHAT IS NEW
 #. [done] [backspace] add g:vimim_smart_backspace which default on
 #. [done] [punctuation] fix backlash and double quote in Chinese mode
 #. [done] [label] introduce abcdefghi as label along with 123456789
+#. [todo] [4corner] what happens if super jianpin using 4corner?
 
-无须切换无需切换
+
+
