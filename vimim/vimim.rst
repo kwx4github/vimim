@@ -1256,13 +1256,14 @@ The Highest Realm
  5     手机电脑一路通       VimIM 推荐 `四角号码数码输入`_
  6     自创中文输入法       VimIM 演示 `VimIM 双码输入`_
  7     闭目养神             VimIM 体验 `中文盲打`_
- 8     美女如〖云〗         VimIM 追求 `CLOUD 云输入`_
+ 8     美女如〖云〗         VimIM 追求 `〖想云就云〗`__
 ====  ===================   =================================
 
 __ `Unicode 内码输入`_
 __ `概述`_
 __ http://code.google.com/p/vimim/wiki/OneKey
 __ `VimIM Mapping`_
+__ `CLOUD 云输入`_
 
 
 
