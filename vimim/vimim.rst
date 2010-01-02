@@ -2251,7 +2251,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 **字母标签**
 
 + 显示字母标签，并提供字母选字
-+ 【缺省开启】:let g:vimim_custom_menu_label=1
++ 【缺省开启】:let g:vimim_custom_menu_label=3
 
 **内码寻找**
 
