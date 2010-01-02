@@ -19,15 +19,15 @@ VimIM 自成体系，别具一格。而今后来居上，鹤立鸡群，何也?
 　
 【自己动手试一试】
 　
-# 【目的】 把 password 从私人数据文件复制到 clipboard 剪贴板
-# 下载新版脚本 vimim.vim
-# 下载私人数据样本文件 privates.txt
-# 把这二个文件扔到您的 Vim 的 plugin 目录下
-# 打开 Vim （如果用Windows可以双击Gvim.exe）
-# 敲 o 或 i 或 a 进入 Vim 插入模式：
-# 敲 password
-# 敲 <C-\>
-# 敲 j
-# 敲 j
-# 敲 c
-# 【结果】 第三个 password 被复制到 cilpboard 剪贴板。
+ # 【目的】 把 password 从私人数据文件复制到 clipboard 剪贴板
+ # 下载新版脚本 vimim.vim
+ # 下载私人数据样本文件 privates.txt
+ # 把这二个文件扔到您的 Vim 的 plugin 目录下
+ # 打开 Vim （如果用Windows可以双击Gvim.exe）
+ # 敲 o 或 i 或 a 进入 Vim 插入模式：
+ # 敲 password
+ # 敲 <C-\>
+ # 敲 j
+ # 敲 j
+ # 敲 c
+ # 【结果】 第三个 password 被复制到 cilpboard 剪贴板。
