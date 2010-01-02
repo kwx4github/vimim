@@ -159,7 +159,7 @@ vimimhelp　<C-\\>　p
 * 【独立】不折腾　 **Plug & Play**
 * 【自主】不差钱　 **Open Source**
 * 【自力】VimIM `〖点石成金〗`_ 　  〖想云就云〗 `CLOUD 云输入`_
-* 【更生】VimIM `〖中文输入模式〗`_ 〖即插即用〗 `VimIM 双码输入`_
+* 【更生】VimIM `〖中文输入模式〗`_ 〖即插即用〗 `双码输入`_
 * 【高性能】中文英文输入和中文英文编辑，不分彼此，融为一体。
 * 【低能耗】 `史上最容易卸载的中文输入法`__
 * 【和谐☆绿色】 No secret hidden glitch; No strings attached.
@@ -1049,8 +1049,8 @@ __ http://code.google.com/p/vimim/wiki/VimIM_English_Input
 |
 |
 
-VimIM 双码输入
-==============
+双码输入
+========
 | VimIM 可使多种输入方式和谐并存，互不冲突而又相互补充。
 | VimIM 充分发挥个人的知识潜能，达到“人尽其能、物尽其用”的境界。
 
@@ -1082,7 +1082,7 @@ VimIM 双码输入
 |
 
 
-.. sidebar:: `VimIM 双码输入`_ —— `拼音★四角号码`_ 　【字】
+.. sidebar:: `双码输入`_ —— `拼音★四角号码`_ 　【字】
 
    .. figure:: vimim_diy_im_single_char_1.gif
    .. figure:: vimim_diy_im_single_char_2.gif
@@ -1123,7 +1123,7 @@ VimIM 双码输入
 | 玩家也许可以实现用拼音输入中文的最高境界：中文盲打。
 
 
-.. sidebar:: `VimIM 双码输入`_ —— `拼音★四角号码`_ 　【词】
+.. sidebar:: `双码输入`_ —— `拼音★四角号码`_ 　【词】
 
    .. figure:: vimim_diy_im_double_char_5.gif
    .. figure:: vimim_diy_im_double_char_6.gif
@@ -1192,7 +1192,7 @@ VimIM 双码输入
 |
 |
 
-.. sidebar::  即插即用 `VimIM 双码输入`_ —— `拼音★五笔划`_
+.. sidebar::  即插即用 `双码输入`_ —— `拼音★五笔划`_
 
    .. figure:: vimim_diy_im_pinyin_12345_a.gif
    .. figure:: vimim_diy_im_pinyin_12345_b.gif
@@ -1254,7 +1254,7 @@ The Highest Realm
  3     不切换输入状态       VimIM 首创 `〖点石成金〗`__
  4     不改变输入习惯       VimIM 确认 `天生跨平台`__
  5     手机电脑一路通       VimIM 推荐 `四角号码数码输入`_
- 6     自创中文输入法       VimIM 演示 `VimIM 双码输入`_
+ 6     自创中文输入法       VimIM 演示 `双码输入`_
  7     闭目养神             VimIM 体验 `中文盲打`_
  8     美女如〖云〗         VimIM 追求 `〖想云就云〗`__
 ====  ===================   =================================
@@ -1311,7 +1311,7 @@ __ `CLOUD 云输入`_
   * 〖特点〗 plug & play
   * 用VimIM 打字，只需一个词库。玩家可以从VimIM 词库样例中挑选。
   * 如果希望分开保管 `私人信息`_  ：可以加上 privates.txt
-  * 如果想玩 即插即用 `VimIM 双码输入`_  ：可以同时插入两个词库文件：
+  * 如果想玩 即插即用 `双码输入`_  ：可以同时插入两个词库文件：
 
     + `拼音★四角号码`_
     + `拼音★五笔划`_
