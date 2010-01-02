@@ -386,7 +386,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 * VimIM 彩蛋：程式　vimimvim　
 * VimIM 彩蛋：帮助　vimimhelp　
 * VimIM 彩蛋：测试　vimimdebug　
-* VimIM 彩蛋：速度　vimimstat　
+* VimIM 彩蛋：统计　vimimstat　
 * VimIM 彩蛋：设置　vimimdefaults　
 
 |
@@ -2273,8 +2273,8 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 **输入统计**
 
-+ VimIM 彩蛋：速度　vimimstat　
-+ 输入速度的统计正在不断完善
++ VimIM 彩蛋：统计　vimimstat　
++ 输入速度的统计正在不断完善之中
 
 
 |
