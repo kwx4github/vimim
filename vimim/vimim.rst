@@ -1090,9 +1090,9 @@ VimIM 双码输入
 **天仙配** —— “拼音输入”配“四角号码输入”
 
 | VimIM 回避拼音重码的方法是形音结合，输入生僻字则
-| 是直接用形码。形码的来源可以由玩家自己决定。玩家
-| 完全可以用自己喜欢的甚至自己发明的形码。VimIM 推
-| 荐的是四角号码。
+| 是直接用形码。形码的来源可以由玩家自己决定。
+| 玩家完全可以用自己喜欢的甚至自己发明的形码。
+| VimIM 推荐的是四角号码。
 |
 | 当然，四角号码也有点学习曲线，但是，四角号码与我
 | 们的Vim一样，值得一学。学好了终生获益。
@@ -1114,7 +1114,6 @@ VimIM 双码输入
 |     (1)　抓上汉语拼音词库，扔到您的 vim plugin 目录之下
 |     (2)　抓上四角号码词库，扔到您的 vim plugin 目录之下
 |
-
 
 ======= ========== ==================================
  词库     输入码                对应汉字
@@ -1147,7 +1146,6 @@ VimIM 双码输入
   双码         m a 7 1       　　　　馬　　          唯一
 ==========   ============  ==================  =============
 
-
 |
 
 【词】
@@ -1163,13 +1161,11 @@ VimIM 双码输入
 
 |
 
-【点评】
-    (1) 拼音配四角原本用于演示即插即用 `VimIM 双码输入`_
-    (2) 不料无心插柳，歪打正着，发现了一对天仙配。
-    (3) VimIM 靠算法把毫不相关的音码和数码结合成为一对鸳鸯：
+【使用技巧】 把数码（四角号码）当作拼音音调使用
 
-        + 鸳（音码）鸯（数码）平时各自觅食，互不相依。
-        + 一旦有需要：比翼双飞，合二为一。
+(1) 有拼音匹配的，用完全匹配： ma77=>马　chuma7=>出马
+(2) 无拼音匹配的，用模糊匹配： chma77=>出马　cm7712=>出马
+
 
 |
 |
@@ -1203,19 +1199,25 @@ VimIM 双码输入
 ====================== ==================================================
 
 |
-| 【结果】
 
-=======   ==============  ==============  =====================
-  ..          汉语拼音       五笔划         拼音★五笔划
-=======   ==============  ==============  =====================
-  马            ma           551             ma551
-  馬            ma         　1211254444    　ma12112
-=======   ==============  ==============  =====================
+【使用技巧】 把数码（五笔划）当作拼音音调使用
 
+(1) 有拼音匹配的，用完全匹配： ma551=>马　chuma5=>出马
+(2) 无拼音匹配的，用模糊匹配： chma5=>出马
+
+|
+
+=========  ===============  =====================  ==================
+  ..          汉语拼音             五笔划             拼音★五笔划
+=========  ===============  =====================  ==================
+  马         ma              551                      ma551
+  馬         ma              1211254444               ma12112
+出马         chuma           52252　551               chuma5
+出卖         chumai          52252　12544134          ma12112
+=========  ===============  =====================  ==================
 
 |
 |
-
 
 输入法林林总总
 ==============
@@ -1620,7 +1622,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
   - 〖回车键〗或无缝上英文，或回车，或上空格（after .,）
   - 〖上字〗空格键或字母键或数字键
   - 〖状态显示〗 noruler
-  
+
 |
 |
 
@@ -1653,7 +1655,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
 中文搜索
 --------
-| 中文搜索自然可以利用 `命令行模式`_
+| 中文搜索自然可以利用 `命令行窗口`_ 模式。
 | 另外一种方式是在omni窗口中直接操作。
 
   + 【美梦成真】不换Vim模式，直接搜索中文。
@@ -2981,7 +2983,6 @@ WHAT IS NEW
 #. [todo] try to make vimim.vim and latex-suite plugin work together
 #. [todo] check if it is possible to load datafile from "gvim --remote"
 #. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
-#. [todo] [4corner] what happens if super jianpin using 4corner?
 #. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian
 #. [done] [mycloud] g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
 #. [done] [rot13] make rot13 ready for Great Wall, includes %xx
@@ -3009,6 +3010,9 @@ WHAT IS NEW
 #. [done] [punctuation] fix backlash and double quote in Chinese mode
 #. [done] [label] introduce abcdefghi as label along with 123456789
 #. [done] [cmdline] discover cmdline-window for all cmdline operation
+#. [done] [4corner] use 4corner as a filter for super jianpin
+#. [done] [5stroke] use 5stroke as a filter for super jianpin
+
 
 
 
