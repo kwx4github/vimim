@@ -2009,7 +2009,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 |
 |
 
-.. sidebar::  `翻页选字`_
+.. sidebar::  `翻页选字`_  【字母键上字】
 
    .. figure:: vimim_label_abcdefghi.gif
 
