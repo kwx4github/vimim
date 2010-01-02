@@ -1382,9 +1382,9 @@ chinese  中文    汉字
 |   第一步：下载 vimim.pinyin.txt__
 |   第二步：下载 vimim.english.txt__
 |   第三步：vim vimim.pinyin.txt
-|   第四步：　　:r  vimim.english.txt
-|   第五步：　　:sort u
-|   第六步：　　:wq
+|   第四步：:r  vimim.english.txt
+|   第五步：:sort u
+|   第六步：:wq
 |
 |   结果是我们做了一个新的词库: vimim.pinyin.txt
 |   也就是说，我们创造了一个我们自己的中文输入法。
@@ -1420,43 +1420,9 @@ __ http://vimim.googlecode.com/files/vimim.english.txt
   (1) 私人信息文件 plug & play 以及 remove & gone
   (2) 私人信息文件可以不排序。
   (3) 私人信息为完全匹配。
+  (4) 活学活用，利用VimIM `管理记忆私人信息`__
 
-【小技巧】
-
-  | **活学活用，利用 VimIM 管理记忆私人信息**
-  |
-  | 号称赶英超美的中文输入法其实并不那么玄而又玄。
-  | 多如牛毛的中文输入专利大多不过是一个字符映射的定义而已。
-  |
-  | VimIM 自成体系，别具一格。而今后来居上，鹤立鸡群，何也?
-  | 因为我们把定义字符映射的权力完完全全交给玩家自己。
-  | 因为我们坚信，自己的输入法才是最好的输入法。
-  |
-  | 字符映射并不限于 English => 中文。
-  | 字符映射也可以为 English => English.
-  |
-  | 理解到这样一个高度，我们就可以激发自己的想像力，信马由缰。
-  | 作者特此抛砖引玉，举一个利用 VimIM 管理记忆私人信息的例子：
-
-【自己动手试一试】
-
-　【目的】把 password 从私人信息文件复制到 clipboard 剪贴板
-
-　【操作步骤】
-
-  #. 下载新版脚本 vimim.vim__
-  #. 下载私人信息样本文件 privates.txt
-  #. 把这二个文件扔到您的 vim 的 plugin 目录之下
-  #. 打开 vim （如果用Windows可以双击gVim.exe）
-  #. 敲 o 或 i 或 a 进入 vim 插入模式：
-  #. 敲 password
-  #. 敲 <C-\\>
-  #. 敲 j
-  #. 敲 j
-  #. 敲 c
-  #. 【结果】 第三个 password 被复制到 cilpboard 剪贴板。
-
-__ http://vim.sf.net/scripts/script.php?script_id=2506
+__ http://code.google.com/p/vimim/wiki/VimIM__privates
 
 
 |
@@ -2244,7 +2210,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
 | VimIM 的设置项全部归玩家的 .vimrc 控制。
 | 所有的设定只要重新启动Vim后，就可正常识别。
 |
-|
 
 **重新匹配**
 
@@ -2288,25 +2253,28 @@ e　亿  j　斤  o　度  t　吨  z　兆
 + 显示字母标签，并提供字母选字
 + 【缺省开启】:let g:vimim_custom_menu_label=1
 
-**寻找内码**
+**内码寻找**
 
 + 反向操作 `Unicode 内码输入`_
 + 在 『Vim 可视模式』下进行从汉字到万国码的转换。
 + 【操作】 ㈠ 高亮选择汉字字串　㈡ 敲 **CTRL-6**
 + 【开启可设】:let g:vimim_unicode_lookup=1
 
+**误删防止**
+
++ 长按退格键，连续删除输入的拼音串。
++ 停顿一秒，才会继续删除文本中的内容。
++ 【缺省开启】:let g:vimim_smart_backspace=1
+
 **输入记录**
 
 + 输入记录在 g:vimim
 + 输入记录可以连续不断地playback
 
-**退格键防误删**
+**输入统计**
 
-| 长按<BackSpace>键，连续删除输入的拼音串。
-| 当拼音串全部删除后，停顿一秒，才会继续删除文本中的内容。
-| 这样可以最大程度减少用户的误删除操作。
-|
-| 【缺省开启】:let g:vimim_smart_backspace=1
++ VimIM 彩蛋：速度　vimimstat　
++ 输入速度的统计正在不断完善
 
 
 |
@@ -2515,32 +2483,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
 |
 |
 
-编辑回帖
---------
-
-:问: | 怎样减少 copy & paste (复制粘贴)重复操作?
-:答: | Vim 擅长于把复杂的编辑操作简单化。
-     | VimIM 尽可能提供自动复制机制，方便粘贴:
-     |
-     | ㈠ 选择提示菜单中的字或成语，敲 "c" 上字的同时自动拷贝。
-     | ㈡ 每当关闭 `〖中文输入模式〗`_ 整个 session 自动拷贝。
-     |    【缺省开启】 :let g:vimim_auto_copy_clipboard=1
-     |
-
-
-【自己动手试一试】
-
-　【目的】复制“精力”二字上 clipboard
-
-　【操作步骤】
-
-  #.  打开 vim （如果用Windows可以双击gVim.exe）
-  #.  敲 o 或 i 或 a 进入 vim 插入模式
-  #.  连敲四键: v i m <C-\\>
-  #.  敲 j  光标向下移动
-  #.  敲 j  光标向下移动
-  #.  敲 c copy clipboard
-
 
 .. sidebar::  `通配符匹配`_   【四角号码演示】
 
@@ -2576,9 +2518,7 @@ FAQ
      |
 
 :问: | VimIM 的作者是谁?
-:答: | 作者的网名是　 **vimim**  :)
-     | `Random FAQ about release of VimIM`__
-     |
+:答: | 作者的网名是 **vimim** 　 `:)`__
 
 __ http://code.google.com/p/vimim/wiki/FAQ_Old
 
@@ -2598,6 +2538,27 @@ __ http://code.google.com/p/vimim/wiki/FAQ_Old
      |
      | 原因：OneKey需要赋予空格键一点智能，以便于上字。
      |
+
+:问: | 怎样减少 copy & paste (复制粘贴)重复操作?
+:答: | Vim 擅长于把复杂的编辑操作简单化。
+     | VimIM 尽可能提供自动复制机制，方便粘贴:
+     |
+     | ㈠ 选择提示菜单中的字或成语，敲 "s" 上字的同时自动拷贝。
+     | ㈡ 每当关闭 `〖中文输入模式〗`_ 整个 session 自动拷贝。
+     |    【缺省开启】 :let g:vimim_auto_copy_clipboard=1
+     | 
+     | 【自己动手试一试】
+     | 　【目的】复制“精力”二字上 clipboard
+     | 　【操作步骤】
+     |    (1) 打开 vim （如果用Windows可以双击gVim.exe）
+     |    (2) 敲 o 或 i 或 a 进入 vim 插入模式
+     |    (3) 连敲四键: v i m <C-\\>
+     |    (4) 敲 j  光标向下移动
+     |    (5) 敲 j  光标向下移动
+     |    (6) 敲 s save to clipboard
+     |
+     |
+
 
 VimIM Foundation
 ================
