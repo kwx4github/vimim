@@ -1183,10 +1183,14 @@ __ http://code.google.com/p/vimim/wiki/VimIM_English_Input
 
 |
 
-【使用技巧】 把数码（四角号码）当作拼音音调使用
+【使用技巧】 
 
-(1) 有拼音匹配的，用完全匹配： ma77=>马　chuma7=>出马
-(2) 无拼音匹配的，用模糊匹配： chma77=>出马　cm7712=>出马
+(1) 把数码（四角号码）当作拼音音调使用
+
+  + 有拼音匹配的，用完全匹配： ma77=>马　chuma7=>出马
+  + 无拼音匹配的，用模糊匹配： chma77=>出马　cm7712=>出马
+
+(2) 把数码（四角号码）当过滤器使用，在omni菜单中操作。
 
 
 |
@@ -1222,10 +1226,14 @@ __ http://code.google.com/p/vimim/wiki/VimIM_English_Input
 
 |
 
-【使用技巧】 把数码（五笔划）当作拼音音调使用
+【使用技巧】 
 
-(1) 有拼音匹配的，用完全匹配： ma551=>马　chuma5=>出马
-(2) 无拼音匹配的，用模糊匹配： chma5=>出马
+(1) 把数码（五笔划）当作拼音音调使用
+
+  + 有拼音匹配的，用完全匹配： ma551=>马　chuma5=>出马
+  + 无拼音匹配的，用模糊匹配： cm55=>出马
+
+(2) 把数码（12345）当过滤器使用，在omni菜单中操作。
 
 |
 
@@ -1234,8 +1242,8 @@ __ http://code.google.com/p/vimim/wiki/VimIM_English_Input
 =========  ===============  =====================  ==================
   马         ma              551                      ma551
   馬         ma              1211254444               ma12112
-出马         chuma           52252　551               chuma5
-出卖         chumai          52252　12544134          ma12112
+出马         chuma           52252　551               cm551
+出卖         chumai          52252　12544134          cm1254
 =========  ===============  =====================  ==================
 
 |
@@ -1650,8 +1658,6 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 | 中文搜索自然可以利用 `命令行窗口`_ 模式。
 | 另外一种方式是在omni窗口中直接操作。
 
-  + 【美梦成真】不换Vim模式，直接搜索中文。
-  + 【限于】 `〖点石成金〗`_
   + 【经典】沿用 vi 搜索键，但 VimIM 推陈出新：
   + 【Vim】功能不变："/"正向搜索或"?"反向搜索。
 
@@ -3015,6 +3021,7 @@ WHAT IS NEW
 #. [done] [4corner] use 4corner as a filter for super jianpin
 #. [done] [5stroke] use 5stroke as a filter for super jianpin
 #. [done] [label] introduce abcdefghi as label along with 123456789
-#. [done] [label] use 4corner as a filter over the omni menu
+#. [done] [label] support 4corner as a filter over the omni menu
+#. [done] [label] support 5stroke as a filter over the omni menu
 
 
