@@ -338,6 +338,8 @@ code -s datafile -p vimim vimim.english.txt
         datafile 私人信息樣本文件
 code -s datafile -p vimim privates.txt
         datafile 中文電報碼  http://www.dtc.umn.edu/~reedsj/ctc.html
+code -s datafile -p vimim vimim.3000.txt
+        datafile 三千漢字，字頻排列
 code -s datafile -p vimim vimim.ctc.txt
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 cd /home/vimim
@@ -3509,6 +3511,10 @@ If the following download URL does not work for you, please
 <td>yes 　確認選擇</td>
 </tr>
 <tr><td></td>
+<td>　　　 <strong>r</strong></td>
+<td>reverse sort</td>
+</tr>
+<tr><td></td>
 <td>　　　 <strong>s</strong></td>
 <td>save to clipboard</td>
 </tr>
@@ -4426,6 +4432,7 @@ If the following download URL does not work for you, please
 <li>英文輸入法詞庫 (from vimim, after editing it line by line)</li>
 <li>私人信息樣本文件 (from vimim, after editing it line by line)</li>
 <li>四角號碼輸入法詞庫 (from vimim, after editing it line by line)</li>
+<li>三千漢字字頻排列 (from vimim, after editing it line by line)</li>
 <li>中文電報碼 (from my processing unihan.txt data)</li>
 <li>CNS11643中文標準交換碼 (from official site)</li>
 <li>fcitx 拼音輸入法大詞庫 (processed from fcitx)</li>
@@ -4753,12 +4760,6 @@ set langmenu=zh_CN.UTF-8
 <li>[done] minimize initialization process when vim starts up</li>
 <li>[done] magic comma, last but one, for whole-jianpin-cloud: laystb,z</li>
 <li>[done] [frequency] make it work now: g:vimim_chinese_frequency=1</li>
-<li>[todo] add :profile start /tmp/vimim.profile for optimization</li>
-<li>[todo] use database SQLite to store and manage datafile</li>
-<li>[todo] design a way to use cedict.txt as English input</li>
-<li>[todo] support &quot;associate&quot; function if it is helpful</li>
-<li>[todo] [test] make sure no regression, following each item on manual</li>
-<li>[todo] check if it is possible to load datafile from &quot;gvim --remote&quot;</li>
 <li>[done] issue 48: A simple way to repeat inputs ..........zuorichongxian</li>
 <li>[done] [mycloud] g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/</li>
 <li>[done] [rot13] make rot13 ready for Great Wall, includes %xx</li>
@@ -4791,12 +4792,20 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [label] support 4corner as a filter over the omni menu</li>
 <li>[done] [label] support 5stroke as a filter over the omni menu</li>
 <li>[done] [label] (1) 1234567890 (2) 10 items per page</li>
+<li>[todo] add :profile start /tmp/vimim.profile for optimization</li>
+<li>[todo] use database SQLite to store and manage datafile</li>
+<li>[todo] design a way to use cedict.txt as English input</li>
+<li>[todo] support &quot;associate&quot; function if it is helpful</li>
+<li>[todo] [test] make sure no regression, following each item on manual</li>
+<li>[todo] check if it is possible to load datafile from &quot;gvim --remote&quot;</li>
+<li>[done] [zi] (1) add 3000 zi sorted by frequency (2) filter zi+number</li>
+<li>[done] [sort] add r(reverse) sort for omni popup menu</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 11:24:38 PST on Monday, 01/04/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 14:51:53 PST on Monday, 01/04/2010
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
