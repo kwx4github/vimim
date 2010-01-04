@@ -2651,12 +2651,12 @@ VimIM的作者
 -----------
 #. vimim 原先是VimIM的唯一作者。
 #. vimim 现在是VimIM的作者之一。
-#. 动态模式是ywvim的作者Yue Wu发明的。
+#. 动态模式的code源自ywvim的作者Yue Wu.
 #. 开始有不少建议来自水木社区VI编辑器论坛众多高手。
 #. 有几个世界难题是Vim官方论坛上Tony Mechelynck解答的。
-#. 最多的灵感源自VimIM官方论坛上玩家的狂轰滥炸。
-#. 双拼的全部code来自Pan ShiZhu
-#. all project committers on http://code.google.com/p/vimim
+#. 双拼的全部code源自mycloud的作者Pan ShiZhu.
+#. 最多的灵感和测试来源于VimIM官方论坛上玩家的狂轰滥炸。
+#. All project committers on http://code.google.com/p/vimim
 
 
 VimIM的词库来源
