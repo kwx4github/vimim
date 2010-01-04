@@ -455,7 +455,7 @@ def getname():
         return "全拼"
     elif g_mode == "abc":
         return "智能双打"
- g_mode == "ms":
+    elif g_mode == "ms":
         return "微软双拼"
     elif g_mode == "plusplus":
         return "加加双拼"

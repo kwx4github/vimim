@@ -10,6 +10,7 @@ if __name__ == "__main__":
     else:
         algo.parse("__setmode=abc")
         keyb = sys.argv[1]
+        #ret = algo.parse(keyb, debug=True)
         ret = algo.parse(keyb)
         if len(ret) > 0:
             maxlen = len(ret[0][0])

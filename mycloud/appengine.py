@@ -22,6 +22,7 @@ class QuanPin(webapp.RequestHandler):
     def get(self, keyb):
         self.response.headers['Content-Type'] = 'text/plain'
         algo.parse("__setmode=quanpin")
+        algo.parse("__setgae=1")
         for k, h, v in algo.parse(keyb):
             self.response.out.write(myformat(k,h,v))
 
@@ -29,6 +30,15 @@ class ShuangPinAbc(webapp.RequestHandler):
     def get(self, keyb):
         self.response.headers['Content-Type'] = 'text/plain'
         algo.parse("__setmode=abc")
+        algo.parse("__setgae=1")
+        for k, h, v in algo.parse(keyb):
+            self.response.out.write(myformat(k,h,v))
+
+class ShuangPinMs(webapp.RequestHandler):
+    def get(self, keyb):
+        self.response.headers['Content-Type'] = 'text/plain'
+        algo.parse("__setmode=ms")
+        algo.parse("__setgae=1")
         for k, h, v in algo.parse(keyb):
             self.response.out.write(myformat(k,h,v))
 
@@ -36,6 +46,7 @@ application = webapp.WSGIApplication([
                                      ('/', MainPage),
                                      ('/qp/(.*)', QuanPin),
                                      ('/abc/(.*)', ShuangPinAbc),
+                                     ('/ms/(.*)', ShuangPinMs),
                                          ],
                                      debug=True)
 

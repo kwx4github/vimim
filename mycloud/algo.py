@@ -182,10 +182,9 @@ def shuangpin_transform(item, sptable):
 
 # 插入中间的非中文输入到返回文字中，并进行附加的形码本地解析
 def process(item, map, rzk):
-    newoutput = ""
     wc = len(item)/3
     twc = map["word_count"]
-    newoutput += map["itmmap"][0][1]
+    newoutput = map["itmmap"][0][0] + map["itmmap"][0][1]
     for i in xrange(len(item)/3):
         start = i*3
         end = i*3+3
@@ -216,14 +215,18 @@ def process(item, map, rzk):
             else:
                 hint = "____"
     elif wc >= 2:
-        if rzk.has_key(item[0:3]):
-            hint = rzk[item[0:3]][0:2]
-        else:
-            hint = "__"
+        #if rzk.has_key(item[0:3]):
+        #    hint = rzk[item[0:3]][0:2]
+        #else:
+        #    hint = "__"
+        #if rzk.has_key(item[-3:]):
+        #    hint += " " + rzk[item[-3:]][0:2]
+        #else:
+        #    hint += " __"
         if rzk.has_key(item[-3:]):
-            hint += " " + rzk[item[-3:]][0:2]
+            hint = rzk[item[-3:]]
         else:
-            hint += " __"
+            hint = "____"
     else:
         hint = ""
     return newoutput, hint
@@ -329,15 +332,11 @@ def local_parse_shuangpin(kbmap, debug):
         if zk3.has_key(key):
             for item in zk3[key].split(" "):
                 ret.append((item, index))
-    if len(ret) >= data.g_maxoutput:
-        return ret
     if wc >= 2:
         key, index = getshuangpin(pyl, 2)
         if zk.has_key(key):
             for item in zk[key].split(" "):
                 ret.append((item, index))
-    if len(ret) >= data.g_maxoutput:
-        return ret
     if wc == 1 or wc == 2:
         key, index = getshuangpin(pyl, 1)
         if zk.has_key(key):
@@ -383,16 +382,15 @@ def parse_glyph(map):
     else:
         # mzk is a dict and we have exhausted the loop, do traverse the tree
         retlist = traverse_tree(mzk)
+        if len(ret) >= data.g_maxoutput:
+            retlist = retlist[0:data.g_maxoutput]
         retlist.sort()
         for item in retlist:
             if rzk.has_key(item):
                 ret.append((item+intermed, rzk[item], wordptr))
             else:
                 ret.append((item+intermed, "", wordptr))
-    if len(ret) >= data.g_maxoutput:
-        return ret[0:data.g_maxoutput]
-    else:
-        return ret
+    return ret
 
 # 处理内部控制输入
 def internal_command(cmd, debug):

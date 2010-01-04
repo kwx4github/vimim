@@ -3,7 +3,9 @@
 	* abc?.txt: added 智能双打词库
 	* ms?.txt: added 微软双拼词库
 	* data.py: 增加对 4 类独立词库的解析
-	* algo.py: 增加对不同输入法引擎的处理
+	* algo.py: 增加对不同输入法引擎的处理，增加最大输出码数量设置
+	* 4corner.txt: 增加了几个字
+	* appengine.py: 增加了对微软拼音的处理
 
 2009-12-29  Pan, Shi Zhu  <pan.shizhu@gmail.com>
 
