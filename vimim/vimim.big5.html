@@ -1315,9 +1315,8 @@ VimIM 不錯, 一直在用 :) -->
 </div>
 <p>【VimIM 雲輸入】</p>
 <blockquote>
-<ol class="arabic">
-<li><p class="first">〖全雲輸入〗每一個輸入都〖雲〗游</p>
-<ul class="simple">
+<ol class="arabic simple">
+<li>〖全雲輸入〗每一個輸入都〖雲〗游<ul>
 <li>特點：每打一個字母都要向服務器請求一次。</li>
 <li>手動開啟：可設置 :let g:vimim_cloud_sogou=1</li>
 <li>自動開啟：<ul>
@@ -1327,8 +1326,7 @@ VimIM 不錯, 一直在用 :) -->
 </li>
 </ul>
 </li>
-<li><p class="first">〖可控性雲輸入〗每N個輸入就〖雲〗游</p>
-<ul class="simple">
+<li>〖可控性雲輸入〗每N個輸入就〖雲〗游<ul>
 <li>特點：每打N個字母才向服務器請求一次。</li>
 <li>設置：:let g:vimim_cloud_sogou=N</li>
 <li>（長的）詩詞曲賦、新聞八卦、完整的句子拜托給〖雲〗。</li>
@@ -1338,34 +1336,33 @@ VimIM 不錯, 一直在用 :) -->
 <li>結果：本地詞庫和搜狗雲端詞庫智能切換。</li>
 </ul>
 </li>
-<li><p class="first">支持〖斷字符〗　解決含糊的辦法是在含糊的地方貼上標簽：</p>
-<ul class="simple">
+<li>支持〖斷字符〗　解決含糊的辦法是在含糊的地方貼上標簽：<ul>
 <li>錯：xianmeimeidepiaosuifengpiaoyang　=&gt;　先美美地飄隨風飄揚</li>
 <li>對：xi'anmeimeidepi'aosuifengpiaoyang　=&gt;　 <a class="reference external" href="http://code.google.com/p/vimim/wiki/SingleQuote">西安妹妹的皮襖隨風飄揚</a></li>
 </ul>
 </li>
-<li><p class="first">支持中文輸入模式〖經典動態〗輸入風格 （缺省）</p>
-<ul class="simple">
+<li>支持中文輸入模式〖經典動態〗輸入風格 （缺省）<ul>
 <li>如果希望體驗搜狗入雲的方式：設置 :let g:vimim_cloud_sogou=1</li>
 <li>相比之下，VimIM 的〖可控性雲輸入〗靈活一些。</li>
 </ul>
 </li>
-<li><p class="first">支持中文輸入模式〖經典靜態〗輸入風格</p>
-<ul class="simple">
+<li>支持中文輸入模式〖經典靜態〗輸入風格<ul>
 <li>考慮到網速，這是VimIM雲輸入推薦的輸入模式。</li>
 <li>設置為 <tt class="docutils literal">:let g:vimim_static_input_style=1</tt></li>
 </ul>
 </li>
-<li><p class="first">支持“想不雲就可以不雲”</p>
-<ul class="simple">
+<li>支持【全雲輸入】〖經典動態〗和〖經典靜態〗的切換<ul>
+<li>Ctrl-6 可用於動態切換兩種輸入風格</li>
+</ul>
+</li>
+<li>支持“想不雲就可以不雲”<ul>
 <li>【特點】在輸入后加多一個英文句號，接著敲〖點石鍵〗</li>
 <li>【特點】不受g:vimim_cloud_sogou的設置所限制</li>
 <li>【限於】 <a class="reference internal" href="#id81">〖點石成金〗</a></li>
 <li>【例】cloud.  =&gt; 雲</li>
 </ul>
 </li>
-<li><p class="first">推出〖想雲就雲〗，不換模式，不限輸入法</p>
-<ul class="simple">
+<li>推出〖想雲就雲〗，不換模式，不限輸入法<ul>
 <li>【賣點】東邊日出西邊雨，道是無雲卻有雲！</li>
 <li>【特點】不限於拼音輸入法！不需要設置！</li>
 <li>【條件】隻需要聯網和wget/curl</li>
@@ -1376,8 +1373,7 @@ VimIM 不錯, 一直在用 :) -->
 <li>【例】hfpjlswsqy, =&gt; 好風憑借力送我上青雲</li>
 </ul>
 </li>
-<li><p class="first">推出〖想雲就雲〗，超級簡拼，自動斷字</p>
-<ul class="simple">
+<li>推出〖想雲就雲〗，超級簡拼，自動斷字<ul>
 <li>【特點】自動加斷字符號，增加整句輸入的確定性</li>
 <li>【定義】超級簡拼的規則為取各個音節的第一個字母輸入</li>
 <li>【操作】在輸入最后一個字母之前加多一個逗號</li>
@@ -1385,9 +1381,7 @@ VimIM 不錯, 一直在用 :) -->
 <li>【例】qzygwc,s ==&gt; q'z'y'g'w'c's 輕舟已過萬重山</li>
 </ul>
 </li>
-<li><p class="first">支持 <a class="reference external" href="http://pim-cloud.appspot.com/">〖自己的雲〗</a></p>
-<blockquote>
-<ul class="simple">
+<li>支持 <a class="reference external" href="http://pim-cloud.appspot.com/">〖自己的雲〗</a><ul>
 <li>【賣點】自己的雲永遠是最好的雲</li>
 <li>【本地插件】python<ul>
 <li>【缺省關閉】:let g:vimim_cloud_plugin=0</li>
@@ -1398,7 +1392,6 @@ VimIM 不錯, 一直在用 :) -->
 </ul>
 </li>
 </ul>
-</blockquote>
 </li>
 </ol>
 </blockquote>
@@ -2338,7 +2331,7 @@ If the following download URL does not work for you, please
 <li>用戶可以隨意設置自己詞庫的位置：（例如）<ul>
 <li><tt class="docutils literal">:let <span class="pre">g:vimim_datafile=&quot;path_to_your_own_data_file&quot;</span></tt></li>
 <li><tt class="docutils literal">:let <span class="pre">g:vimim_datafile_private=&quot;path_to_your_own_privates_file&quot;</span></tt></li>
-<li><tt class="docutils literal">:let <span class="pre">g:vimim_datafile_4corner=&quot;path_to_your_own_digital_im_file&quot;</span></tt></li>
+<li><tt class="docutils literal">:let <span class="pre">g:vimim_datafile_digital=&quot;path_to_your_own_digital_im_file&quot;</span></tt></li>
 </ul>
 </li>
 </ul>
@@ -4788,12 +4781,13 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [label] introduce abcdefghi as label along with 123456789</li>
 <li>[done] [label] support 4corner as a filter over the omni menu</li>
 <li>[done] [label] support 5stroke as a filter over the omni menu</li>
+<li>[done] [whole_cloud] ctrl-6 toggle between static and dynamic</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 11:20:47 PST on Sunday, 01/03/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 19:57:53 PST on Sunday, 01/03/2010
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
