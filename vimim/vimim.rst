@@ -61,6 +61,8 @@
            datafile 私人信息样本文件
    code -s datafile -p vimim privates.txt
            datafile 中文电报码  http://www.dtc.umn.edu/~reedsj/ctc.html
+   code -s datafile -p vimim vimim.3000.txt
+           datafile 三千汉字，字频排列
    code -s datafile -p vimim vimim.ctc.txt
    --------------------------------------------
    cd /home/vimim
@@ -2117,6 +2119,8 @@ e　亿  j　斤  o　度  t　吨  z　兆
   +-------------------+-------------------+---------------------+
   | 　　　CTRL-Y  　  | 　　　　 **y** 　 | yes 　确认选择      |
   +-------------------+-------------------+---------------------+
+  | 　　　        　  | 　　　　 **r** 　 | reverse sort        |
+  +-------------------+-------------------+---------------------+
   | 　　　        　  | 　　　　 **s** 　 | save to clipboard   |
   +-------------------+-------------------+---------------------+
   | 　　　        　  | 　　　　 **p** 　 | paste   菜单复制    |
@@ -2670,6 +2674,7 @@ VimIM的词库来源
   - 英文输入法词库 (from vimim, after editing it line by line)
   - 私人信息样本文件 (from vimim, after editing it line by line)
   - 四角号码输入法词库 (from vimim, after editing it line by line)
+  - 三千汉字字频排列 (from vimim, after editing it line by line)
   - 中文电报码 (from my processing unihan.txt data)
   - CNS11643中文標準交換碼 (from official site)
   - fcitx 拼音输入法大词库 (processed from fcitx)
@@ -2990,12 +2995,6 @@ WHAT IS NEW
 #. [done] minimize initialization process when vim starts up
 #. [done] magic comma, last but one, for whole-jianpin-cloud: laystb,z
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
-#. [todo] add :profile start /tmp/vimim.profile for optimization
-#. [todo] use database SQLite to store and manage datafile
-#. [todo] design a way to use cedict.txt as English input
-#. [todo] support "associate" function if it is helpful
-#. [todo] [test] make sure no regression, following each item on manual
-#. [todo] check if it is possible to load datafile from "gvim --remote"
 #. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian
 #. [done] [mycloud] g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
 #. [done] [rot13] make rot13 ready for Great Wall, includes %xx
@@ -3028,4 +3027,12 @@ WHAT IS NEW
 #. [done] [label] support 4corner as a filter over the omni menu
 #. [done] [label] support 5stroke as a filter over the omni menu
 #. [done] [label] (1) 1234567890 (2) 10 items per page
+#. [todo] add :profile start /tmp/vimim.profile for optimization
+#. [todo] use database SQLite to store and manage datafile
+#. [todo] design a way to use cedict.txt as English input
+#. [todo] support "associate" function if it is helpful
+#. [todo] [test] make sure no regression, following each item on manual
+#. [todo] check if it is possible to load datafile from "gvim --remote"
+#. [done] [zi] (1) add 3000 zi sorted by frequency (2) filter zi+number
+#. [done] [sort] add r(reverse) sort for omni popup menu
 
