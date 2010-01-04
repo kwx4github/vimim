@@ -1,3 +1,9 @@
+2010-1-4  Pan, Shi Zhu  <pan.shizhu@gmail.com>
+	* quanpin?.txt: separated into 4 files
+	* abc?.txt: added 智能双打词库
+	* ms?.txt: added 微软双拼词库
+	* data.py: 增加对 4 类独立词库的解析
+	* algo.py: 增加对不同输入法引擎的处理
 
 2009-12-29  Pan, Shi Zhu  <pan.shizhu@gmail.com>
 

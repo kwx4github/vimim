@@ -263,35 +263,83 @@ def getquanpin(pyl, wc):
         ret += pyl[i][0] + "'"
     return ret.rstrip("'"), pyl[wc][1]
 
-# 利用本地词库进行解析
-def local_parse(kbmap, debug):
+# 利用本地词库进行解析，全拼要支持简拼功能
+def local_parse_quanpin(kbmap, debug):
     ret = []
     pys = kbmap["pinyinstr"]
     if pys == "":
         ret.append(("", pyl[0][1]))
         return ret
     pyl = kbmap["pinyinlist"]
-    pytype = kbmap["pytype"]
-    if pytype == "shuangpin":
-        getpinyin = getshuangpin
-    else:
-        getpinyin = getquanpin
     wc = kbmap["word_count"]
     zk = data.get(data.load_alpha_pyzk)
+    if wc >= 3:
+        zk3 = data.get(data.load_alpha_pyzk3)
+    if wc >= 4:
+        zk4 = data.get(data.load_alpha_pyzk4)
 
     # 分别解析多字词、双字词和单字。
-    if wc > 2:
-        key, index = getpinyin(pyl, wc)
-        if zk.has_key(key):
-            for item in zk[key].split(" "):
+    if wc >= 4:
+        key, index = getquanpin(pyl, 4)
+        if zk4.has_key(key):
+            for item in zk4[key].split(" "):
+                ret.append((item, index))
+    elif wc == 3:
+        key, index = getquanpin(pyl, 3)
+        if zk3.has_key(key):
+            for item in zk3[key].split(" "):
                 ret.append((item, index))
     if wc > 1:
-        key, index = getpinyin(pyl, 2)
+        key, index = getquanpin(pyl, 2)
         if zk.has_key(key):
             for item in zk[key].split(" "):
                 ret.append((item, index))
     if wc > 0:
-        key, index = getpinyin(pyl, 1)
+        key, index = getquanpin(pyl, 1)
+        if zk.has_key(key):
+            for item in zk[key].split(" "):
+                ret.append((item, index))
+    if len(ret) == 0:
+        ret.append(("", pyl[0][1]))
+    return ret
+
+# 利用本地词库进行解析，双拼不必使用简拼
+def local_parse_shuangpin(kbmap, debug):
+    ret = []
+    pys = kbmap["pinyinstr"]
+    if pys == "":
+        ret.append(("", pyl[0][1]))
+        return ret
+    pyl = kbmap["pinyinlist"]
+    wc = kbmap["word_count"]
+    zk = data.get(data.load_alpha_pyzk)
+    if wc == 3 or wc > 4:
+        zk3 = data.get(data.load_alpha_pyzk3)
+    if wc == 4 or wc > 5:
+        zk4 = data.get(data.load_alpha_pyzk4)
+
+    # 分别解析多字词、双字词和单字。
+    if wc == 4 or wc > 5:
+        key, index = getshuangpin(pyl, 4)
+        if zk4.has_key(key):
+            for item in zk4[key].split(" "):
+                ret.append((item, index))
+    if wc == 3 or wc > 4:
+        key, index = getshuangpin(pyl, 3)
+        if zk3.has_key(key):
+            for item in zk3[key].split(" "):
+                ret.append((item, index))
+    if len(ret) >= data.g_maxoutput:
+        return ret
+    if wc >= 2:
+        key, index = getshuangpin(pyl, 2)
+        if zk.has_key(key):
+            for item in zk[key].split(" "):
+                ret.append((item, index))
+    if len(ret) >= data.g_maxoutput:
+        return ret
+    if wc == 1 or wc == 2:
+        key, index = getshuangpin(pyl, 1)
         if zk.has_key(key):
             for item in zk[key].split(" "):
                 ret.append((item, index))
@@ -341,10 +389,13 @@ def parse_glyph(map):
                 ret.append((item+intermed, rzk[item], wordptr))
             else:
                 ret.append((item+intermed, "", wordptr))
-    return ret
+    if len(ret) >= data.g_maxoutput:
+        return ret[0:data.g_maxoutput]
+    else:
+        return ret
 
 # 处理内部控制输入
-def internal_command(cmd, debug=False):
+def internal_command(cmd, debug):
     k,p,v = cmd.partition("=")
     if k == "setmode":
         if v == "":
@@ -353,6 +404,11 @@ def internal_command(cmd, debug=False):
         data.setmode(v)
         if debug:
             print "setmode to", v
+        return True
+    elif k == "setmaxoutput":
+        data.setmaxoutput(v)
+        if debug:
+            print "setmaxoutput to", v
         return True
     elif k == "isvalid":
         return True
@@ -363,37 +419,25 @@ def internal_command(cmd, debug=False):
     else:
         return False
 
-# 主要的解析函数，决定解析方式。
-def parse(keyb, debug=False):
-    # 双下划线开头一律认为是控制指令
-    if keyb[0:2] == "__":
-        ret = internal_command(keyb[2:], debug)
-        if type(ret).__name__ != "str":
-            ret = str(ret)
-        return [(ret, "__", len(keyb))]
+# 全拼和双拼的解析应当尽量分离
+# 因为全拼要支持简拼，而简拼会把双拼搞乱，完全分离全拼和双拼是很必要的。
+# 虽然有一部分重复代码，但我们为代码分离提供了方便。
+def quanpin_parse(keyb, debug):
     pinyin_table = data.get(data.get_py_table)
     pytype = pinyin_table["__type__"]
-    if pytype == "shuangpin":
-        map = shuangpin_transform(keyb, pinyin_table)
-    elif pytype == "quanpin":
-        map = quanpin_transform(keyb, pinyin_table)
-    else:
-        print "invalid pinyin table file"
-        return []
-    if debug:
-        print map
+    map = quanpin_transform(keyb, pinyin_table)
 
     if map["word_count"] == 0:
         result = [("",0)]
     elif map["word_count"] == 1 and map["itmmap"][1][0] != "":
-        result = local_parse(map, debug)
-    elif map["word_count"] < 3 :
-        result = local_parse(map, debug)
+        result = local_parse_quanpin(map, debug)
+    elif map["word_count"] < 5 :
+        result = local_parse_quanpin(map, debug)
     else:
         # 当远程解析超时或者无结果时，启用本地解析
         result = remote_parse(map, debug)
         if len(result) <= 1:
-            result = local_parse(map, debug)
+            result = local_parse_quanpin(map, debug)
 
     xmcode = map["itmmap"][0][0]
     if len(xmcode) > 0 and map["word_count"] == 0:
@@ -420,6 +464,84 @@ def parse(keyb, debug=False):
         print " %d 个结果：缺省为 %s => %s，提示信息为 %s" % (len(ret)-1, keyb, ret[0][0], ret[0][1])
     return ret
 
+def shuangpin_parse(keyb, debug):
+    pinyin_table = data.get(data.get_py_table)
+    pytype = pinyin_table["__type__"]
+    map = shuangpin_transform(keyb, pinyin_table)
+    if debug:
+        print map
+
+    if map["word_count"] == 0:
+        result = [("",0)]
+    elif map["word_count"] == 1 and map["itmmap"][1][0] != "":
+        result = local_parse_shuangpin(map, debug)
+    elif map["word_count"] < 5 :
+        result = local_parse_shuangpin(map, debug)
+    else:
+        # 当远程解析超时或者无结果时，启用本地解析
+        result = remote_parse(map, debug)
+        if len(result) <= 1:
+            result = local_parse_shuangpin(map, debug)
+
+    xmcode = map["itmmap"][0][0]
+    if len(xmcode) > 0 and map["word_count"] == 0:
+        # 解析纯笔形模式，仅当无任何拼音输入时才进入此模式
+        ret = parse_glyph(map)
+    else:
+        ret = []
+        rzk = data.get(data.load_reverse_xmzk)
+        # 解析有拼音输入时的形码过滤
+        for item,index in result:
+            if index == -1:
+                ret.append((item, "", index))
+                continue
+            displayitem, hint = process(item, map, rzk)
+            if displayitem == "":
+                continue
+            if map.has_key(index):
+                ret.append((displayitem, hint, map[index]))
+            else:
+                ret.append((displayitem, hint, index))
+            if len(ret) >= data.g_maxoutput:
+                break
+        if debug:
+            ret.append((keyb, "__", -1))
+    if debug:
+        print " %d 个结果：缺省为 %s => %s，提示信息为 %s" % (len(ret)-1, keyb, ret[0][0], ret[0][1])
+    return ret
+
+# TODO: 五笔解析
+def wubi_parse(keyb, debug):
+    return []
+
+parsefunc = {
+        "quanpin" : quanpin_parse,
+        "abc" : shuangpin_parse,
+        "ms" : shuangpin_parse,
+        "nature" : shuangpin_parse,
+        "plusplus" : shuangpin_parse,
+        "purple" : shuangpin_parse,
+        "wb98" : wubi_parse,
+        "wb86" : wubi_parse,
+        }
+
+# 主要的解析函数，决定解析方式。
+def parse(keyb, debug=False):
+    # 双下划线开头一律认为是控制指令
+    if keyb[0:2] == "__":
+        try:
+            ret = internal_command(keyb[2:], debug)
+        except Exception:
+            ret = "False"
+        if type(ret).__name__ != "str":
+            ret = str(ret)
+        return [(ret, "__", len(keyb))]
+    mode = data.g_mode
+    if parsefunc.has_key(mode):
+        return parsefunc[mode](keyb, debug)
+    else:
+        return []
+
 def selftest():
     print "start self-test"
     parse("fanguo", debug=True)
@@ -444,9 +566,4 @@ def selftest():
     print "self-test finished"
 
 if __name__ == "__main__":
-    parse("fanguo", debug=True)
-    parse("fan'guo", debug=True)
-    parse("fangao", debug=True)
-    parse("fange", debug=True)
-    parse("fango", debug=True)
-    #selftest()
+    selftest()

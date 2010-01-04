@@ -161,13 +161,16 @@ def create_quanpin_table():
 
 def save_to_file(ob, fname):
     file = open(fname, 'wb')
-    cPickle.dump(ob, file, HIGHEST_PROTOCOL)
+    cPickle.dump(ob, file, cPickle.HIGHEST_PROTOCOL)
     file.close
 
 def load_from_file(fname):
-    file = open(fname, "rb")
-    p = cPickle.load(file)
-    file.close()
+    try:
+        file = open(fname, "rb")
+        p = cPickle.load(file)
+        file.close()
+    except Exception:
+        p = {}
     return p
 
 def create_shuangpin_table(rules):
@@ -319,6 +322,21 @@ def load_reverse_zk(fname):
         f.close()
     return rzk
 
+# 载入只支持单个匹配的字库
+def load_unique_zk(fname):
+    f = open(fname)
+    try:
+        rzk = {}
+        for line in f:
+            items = line[:-1].split(" ")
+            key = items[0]
+            #if rzk.has_key(key):
+                #print "duplicated", key, "with", rzk[key], 'and', item
+            rzk[key] = items[1]
+    finally:
+        f.close()
+    return rzk
+
 # 以树结构载入字库，可支持部分匹配
 def load_tree_zk(fname):
     f = open(fname)
@@ -361,13 +379,19 @@ def load_reverse_xmzk():
     return load_reverse_zk(dirname+"4corner.txt")
 
 def load_reverse_pyzk():
-    return load_reverse_zk(dirname+g_mode+"1.txt")
+    return load_unique_zk(dirname+g_mode+"1.txt")
 
 def load_tree_xmzk():
     return load_tree_zk(dirname+"4corner.txt")
 
 def load_alpha_pyzk():
-    return load_alpha_zk(dirname+g_mode+".txt")
+    return load_alpha_zk(dirname+g_mode+"2.txt")
+
+def load_alpha_pyzk3():
+    return load_alpha_zk(dirname+g_mode+"3.txt")
+
+def load_alpha_pyzk4():
+    return load_alpha_zk(dirname+g_mode+"4.txt")
 
 def get_punctmap():
     if g_mode == "quanpin":
@@ -380,6 +404,19 @@ def get_imodemap():
 
 get_py_table = create_quanpin_table
 g_mode = "quanpin"
+g_maxoutput = 30
+
+def getmode():
+    return g_mode
+
+def getmaxoutput():
+    return g_maxoutput
+
+def setmaxoutput(v):
+    global g_maxoutput
+    temp = int(v)
+    if temp > 0:
+        g_maxoutput = temp
 
 def setmode(mode):
     global get_py_table
