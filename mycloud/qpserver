@@ -3,7 +3,17 @@
 
 import algo
 import sys
+import os
 import mysocket
+
+default_port = 10007
+
+def forkserver(func1, func2, port):
+    pid = os.fork()
+    if pid == 0:
+        func1(func2, port)
+    else:
+        pass
 
 def socketfunc(indata):
     try:
@@ -22,10 +32,10 @@ def main():
     algo.parse("__setmode=quanpin")
     if len(sys.argv) > 1 and sys.argv[1] == "-b":
         mysocket.setverbose(False)
-        mysocket.forkserver(mysocket.tcpserver, socketfunc, 10007)
+        forkserver(mysocket.tcpserver, socketfunc, default_port)
     else:
         mysocket.setverbose(True)
-        mysocket.tcpserver(socketfunc, 10007)
+        mysocket.tcpserver(socketfunc, default_port)
 
 if __name__ == "__main__":
     main()

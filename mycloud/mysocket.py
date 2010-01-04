@@ -3,7 +3,6 @@
 
 import sys
 import socket
-import os
 
 DEFAULT_PORT = 10007
 BUFSIZE = 1024
@@ -203,13 +202,6 @@ def sample_client_func(prot, host="localhost", port=DEFAULT_PORT):
         if data == "server closed\n":
             break
     print "client exit"
-
-def forkserver(func1, func2, port=DEFAULT_PORT):
-    pid = os.fork()
-    if pid == 0:
-        func1(func2, port)
-    else:
-        pass
 
 def setverbose(verb):
     global verbose

@@ -429,9 +429,9 @@ def quanpin_parse(keyb, debug):
 
     if map["word_count"] == 0:
         result = [("",0)]
-    elif map["word_count"] == 1 and map["itmmap"][1][0] != "":
+    elif map["word_count"] < 4 and data.getgae():
         result = local_parse_quanpin(map, debug)
-    elif map["word_count"] < 5 :
+    elif map["word_count"] < 5 and not data.getgae():
         result = local_parse_quanpin(map, debug)
     else:
         # 当远程解析超时或者无结果时，启用本地解析
@@ -473,9 +473,9 @@ def shuangpin_parse(keyb, debug):
 
     if map["word_count"] == 0:
         result = [("",0)]
-    elif map["word_count"] == 1 and map["itmmap"][1][0] != "":
+    elif map["word_count"] < 4 and data.getgae():
         result = local_parse_shuangpin(map, debug)
-    elif map["word_count"] < 5 :
+    elif map["word_count"] < 5 and not data.getgae():
         result = local_parse_shuangpin(map, debug)
     else:
         # 当远程解析超时或者无结果时，启用本地解析

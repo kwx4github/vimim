@@ -405,6 +405,16 @@ def get_imodemap():
 get_py_table = create_quanpin_table
 g_mode = "quanpin"
 g_maxoutput = 30
+g_gae = False
+
+def getgae():
+    return g_gae
+
+def setgae(flag):
+    if flag:
+        g_gae = True
+    else:
+        g_gae = False
 
 def getmode():
     return g_mode
@@ -445,7 +455,7 @@ def getname():
         return "全拼"
     elif g_mode == "abc":
         return "智能双打"
-    elif g_mode == "ms":
+ g_mode == "ms":
         return "微软双拼"
     elif g_mode == "plusplus":
         return "加加双拼"
