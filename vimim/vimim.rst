@@ -2075,7 +2075,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 【数字键上字】
 
-  + 数字键 0 归零：回归起始状态。
   + 数字键1-9直接上汉字：
 
     - 起始状态，永远对应数字标签。
@@ -2087,9 +2086,9 @@ e　亿  j　斤  o　度  t　吨  z　兆
   + abcdefghi 一一对应数字键1-9
   + abcdefghi 优于快速选码。
 
-    + 第一重码：空格键 或 1 或 a
-    + 第二重码：; 或 b 或 2
-    + 第三重码：c 或 3
+    + 第一重码：空格键
+    + 第二重码：a 或 1 或 ;
+    + 第三重码：b 或 2
 
 【vi 快捷键导航】 `〖点石成金〗`_
 
@@ -3030,4 +3029,5 @@ WHAT IS NEW
 #. [done] [label] support 4corner as a filter over the omni menu
 #. [done] [label] support 5stroke as a filter over the omni menu
 #. [done] [whole_cloud] ctrl-6 toggle between static and dynamic
+#. [done] [label] (1) counting from zero (2) 10 items per page
 
