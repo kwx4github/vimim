@@ -1183,7 +1183,7 @@ __ http://code.google.com/p/vimim/wiki/VimIM_English_Input
 
 |
 
-【使用技巧】 
+【使用技巧】
 
 (1) 把数码（四角号码）当作拼音音调使用
 
@@ -1226,7 +1226,7 @@ __ http://code.google.com/p/vimim/wiki/VimIM_English_Input
 
 |
 
-【使用技巧】 
+【使用技巧】
 
 (1) 把数码（五笔划）当作拼音音调使用
 
@@ -1622,7 +1622,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
   - 〖回车键〗或无缝上英文，或回车，或上空格（after .,）
   - 〖上字〗空格键和字母键，也可以是数字键
   - 〖状态显示〗 noruler
-  
+
 
 |
 |
@@ -2565,7 +2565,7 @@ __ http://code.google.com/p/vimim/wiki/FAQ_Old
      | ㈠ 选择提示菜单中的字或成语，敲 "s" 上字的同时自动拷贝。
      | ㈡ 每当关闭 `〖中文输入模式〗`_ 整个 session 自动拷贝。
      |    【缺省开启】 :let g:vimim_auto_copy_clipboard=1
-     | 
+     |
      | 【自己动手试一试】
      | 　【目的】复制“精力”二字上 clipboard
      | 　【操作步骤】
@@ -2991,13 +2991,11 @@ WHAT IS NEW
 #. [done] magic comma, last but one, for whole-jianpin-cloud: laystb,z
 #. [done] [frequency] make it work now: g:vimim_chinese_frequency=1
 #. [todo] add :profile start /tmp/vimim.profile for optimization
-#. [todo] use SQLite to store and manage datafile?
+#. [todo] use database SQLite to store and manage datafile
 #. [todo] design a way to use cedict.txt as English input
 #. [todo] support "associate" function if it is helpful
 #. [todo] [test] make sure no regression, following each item on manual
-#. [todo] try to make vimim.vim and latex-suite plugin work together
 #. [todo] check if it is possible to load datafile from "gvim --remote"
-#. [todo] how to find vim executable? s:path=expand("<sfile>:p:h")."/"
 #. [done] issue 48: A simple way to repeat inputs ..........zuorichongxian
 #. [done] [mycloud] g:vimim_cloud_pim=1 http://pim-cloud.appspot.com/qp/
 #. [done] [rot13] make rot13 ready for Great Wall, includes %xx
@@ -3029,6 +3027,5 @@ WHAT IS NEW
 #. [done] [label] introduce abcdefghi as label along with 123456789
 #. [done] [label] support 4corner as a filter over the omni menu
 #. [done] [label] support 5stroke as a filter over the omni menu
-#. [done] [whole_cloud] ctrl-6 toggle between static and dynamic
-#. [done] [label] (1) counting from zero (2) 10 items per page
+#. [done] [label] (1) 1234567890 (2) 10 items per page
 
