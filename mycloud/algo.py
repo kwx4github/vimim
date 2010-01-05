@@ -456,6 +456,8 @@ def quanpin_parse(keyb, debug):
                 ret.append((displayitem, hint, map[index]))
             else:
                 ret.append((displayitem, hint, index))
+            if len(ret) >= data.g_maxoutput:
+                break
         if debug:
             ret.append((keyb, "__", -1))
     if debug:
