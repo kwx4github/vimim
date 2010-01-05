@@ -37,6 +37,12 @@ svn checkout https://vimim.googlecode.com/svn/trunk/ vimim-src --username replac
 {{{
 svn checkout https://vimim.googlecode.com/svn/vimim/ vimim-web --username replace-your-google-account-here
 }}}
+
+  * For mycloud developers, use this command:
+{{{
+svn checkout https://vimim.googlecode.com/svn/mycloud/ vimim-mycloud --username replace-your-google-account-here
+}}}
+
   When prompted, enter your generated [http://code.google.com/hosting/settings googlecode.com password].
 
 ==GUI and IDE access==
