@@ -1621,8 +1621,8 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
   - 〖经典〗空格键上汉字，回车键上英文。
   - 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
-  - 〖回车键〗或无缝上英文，或回车，或上空格（after .,）
-  - 〖上字〗空格键和字母键，也可以是数字键
+  - 〖回车键〗空格后上回车，非空格后上空格。
+  - 〖上字〗空格键和字母键，也可以是数字键。
   - 〖状态显示〗 noruler
 
 
@@ -3035,4 +3035,6 @@ WHAT IS NEW
 #. [todo] check if it is possible to load datafile from "gvim --remote"
 #. [done] [zi] (1) add 3000 zi sorted by frequency (2) filter zi+number
 #. [done] [sort] add r(reverse) sort for omni popup menu
+#. [done] [OneKey Mode] <Enter> (1)Space on non-Space (2)Enter on Space
+
 
