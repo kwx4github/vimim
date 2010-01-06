@@ -1,0 +1,44 @@
+﻿#summary  天下兴亡匹夫有责
+http://code.google.com/p/vimim/wiki/I_Can_Do_It
+{{{
+txxwpfyz, =>
+天下兴亡匹夫有责
+　
+>> 在 linux 中小试牛刀，实现了 libcall 方式调用 mycloud
+>> 无须创建一个独立的进程去访问私云。这提高了访问效率。linux 中已经调试通过。
+>> ...
+>> 不过我们现在已经可以确定 windows gvim 版本只使用 libcall接口，从而屏
+>> 蔽 system 接口，避免弹出黑框窗口的问题。 
+　
+neihangkanmendaowaihkrn => 
+内行看门道外行看热闹
+　
+集笔者十数年使用gVim.exe的经验，立马发现这个DLL的历史意义。如果
+能够做成一个独立的DLL (nothing to do with VimIM or mycloud）
+并被Bram招安。那么，这会是 gVim 历史上一个石破天惊的 milestone. 
+　
+事实证明，即使是天下危急存亡之秋，依靠黄金白银，也征服不了蛮夷之邦。 
+　
+大的事实包括全世界第一的美金债卷储备。
+小的事实包括黑石私募基金的天价股份。
+结果呢？
+摇尾乞怜并不是 Debtor
+趾高气扬也不是 Creditor 
+　
+唯有在文化领域上(including culture, language, science, arts etc)
+光宗耀祖，出人头地，才能让人心服口服，仰慕我天朝之神威。 
+　
+而文化领域的兴旺发达，靠的绝对不是敲锣打鼓，摇旗呐喊。
+文化领域的繁荣昌盛，靠的是：sfqryrwxws,
+　
+什么是 sfqryrwxws?
+　
+使用VimIM超级简拼，〖想云就云〗，不换模式，不限输入法
+    sfqryrwxws, =>
+    随风潜入夜润物细无声
+　
+>> windows gvim 版本只使用libcall接口
+>> ...
+>> 避免弹出黑框窗口的问题。 
+　
+这，就是一个 sfqryrwxws, 的实例。
