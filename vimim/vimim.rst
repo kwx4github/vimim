@@ -314,7 +314,12 @@ __ http://code.google.com/p/vimim/wiki/DIY_Korean
 __ http://code.google.com/p/vimim/wiki/MultiWordListFiles
 __ http://www.bibibang.com/group_thread/view/id-12421
 
+|
+|
 
+
+附录：
+======
 
 |
 |
@@ -3035,6 +3040,11 @@ WHAT IS NEW
 #. [todo] check if it is possible to load datafile from "gvim --remote"
 #. [done] [zi] (1) add 3000 zi sorted by frequency (2) filter zi+number
 #. [done] [sort] add r(reverse) sort for omni popup menu
-#. [done] [OneKey Mode] <Enter> (1)Space on non-Space (2)Enter on Space
+#. [done] [OneKey Mode] <Enter> (1)Space after non-Space (2)Enter after Space
+#. [done] No PageUp after first Page; No PageDown after last page
+#. [done] open debug mode for public; resever only g:vimimdebug=9　
+#. [todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0
+#. [todo] improve performance on dynamic mode by using temp cache
+
 
 
