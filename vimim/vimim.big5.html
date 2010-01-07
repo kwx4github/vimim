@@ -2542,6 +2542,12 @@ If the following download URL does not work for you, please
 <div class="line">　　　　　GVim 玩家可以賦予 CTRL-SPACE 和 CTRL-6 相同的定義：</div>
 <div class="line">　　　　　:let g:vimim_ctrl_space_as_ctrl_6=1</div>
 <div class="line"><br /></div>
+<div class="line">【小技巧】玩家可以swap缺省熱鍵：</div>
+<div class="line-block">
+<div class="line">例如：:let g:vimim_ctrl_6_as_onekey=1</div>
+</div>
+<div class="line">　　　　　　　　㈠ 把 CTRL-6 作為  CTRL-\ 用</div>
+<div class="line">　　　　　　　　㈡ 把 CTRL-\ 作為 CTRL-6 用</div>
 <div class="line"><br /></div>
 </div>
 <p>㈡【反經典】 This is another way to use VimIM, using one map only.</p>
@@ -2549,7 +2555,6 @@ If the following download URL does not work for you, please
 <li>特點： <a class="reference internal" href="#id82">〖點石成金〗</a> 的另類玩法，一鍵多用，一石多鳥</li>
 <li>設置：<ul>
 <li>:let g:vimim_ctrl_6_as_onekey=1（vim插入模式）</li>
-<li>:let g:vimim_ctrl_6_as_onekey=2（包括g:vimim_tab_as_onekey）</li>
 <li>:let g:vimim_ctrl_6_as_onekey=3（包括vim正常模式）</li>
 </ul>
 </li>
@@ -2661,18 +2666,18 @@ If the following download URL does not work for you, please
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>【點石鍵】OneKey 三者擇一：</p>
+<p>【點石鍵】OneKey 三者擇一：　`VimIM Mapping`_</p>
 <blockquote>
 <ol class="arabic simple">
-<li>〖CTRL-\〗　　　　　　 <a class="reference internal" href="#vimim-mapping">VimIM Mapping</a></li>
+<li>〖CTRL-\〗</li>
 </ol>
 <blockquote>
 <ul class="simple">
-<li>【特點】打字搜索，中文英文沒有區別。</li>
+<li>【缺省開啟】</li>
 </ul>
 </blockquote>
 <ol class="arabic simple" start="2">
-<li>〖Tab〗（插入模式）</li>
+<li>〖Tab〗（Vim插入模式）</li>
 </ol>
 <blockquote>
 <ul class="simple">
@@ -2680,13 +2685,18 @@ If the following download URL does not work for you, please
 <li>【反經典】用Tab鍵上漢字，用空格鍵確認</li>
 <li>【智能】該出碼時就出碼，沒碼時出Tab</li>
 <li>【開啟可設】 :let g:vimim_tab_as_onekey=1</li>
-<li>【小技巧】開啟后，&lt;CTRL-\&gt;鍵變成&lt;Tab&gt;鍵</li>
-<li>【推薦】OneKey 傳統玩家</li>
+<li>【推薦】OneKey 專業玩家</li>
 </ul>
 </blockquote>
 <ol class="arabic simple" start="3">
-<li>〖CTRL-^〗 （參見 <a class="reference internal" href="#id84">無模式之模式</a> ）</li>
+<li>〖CTRL-^〗</li>
 </ol>
+<blockquote>
+<ul class="simple">
+<li>【特點】switch the default 〖CTRL-^〗and〖CTRL-\〗</li>
+<li>【開啟可設】:let g:vimim_ctrl_6_as_onekey=1</li>
+</ul>
+</blockquote>
 </blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -2707,24 +2717,12 @@ If the following download URL does not work for you, please
 <div class="line"><br /></div>
 </div>
 <ul class="simple">
-<li>【點石鍵】可以定為 CTRL-^<ul>
+<li>【特點】<ul>
 <li>【反經典】把OneKey當作VimIM的中文輸入模式。</li>
-<li>【推薦】OneKey 專職玩家<ul>
-<li>㈠插入模式<ul>
-<li>【點石鍵】與Vim的標准IM鍵CTRL-6基本一致</li>
-<li>【開啟可設】:let g:vimim_ctrl_6_as_onekey=1</li>
+<li>【設置】—— :let g:vimim_sexy_onekey=1</li>
 </ul>
 </li>
-<li>㈡正常模式<ul>
-<li>【點石鍵】與插入模式的一模一樣</li>
-<li>【特點】把光標置於word任一字母下，一鍵點出菜單。</li>
-<li>【開啟可設】:let g:vimim_ctrl_6_as_onekey=3</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>【操作】<ul>
 <li>【開啟】—— 敲【點石鍵】</li>
 <li>【關閉】—— 敲&lt;Esc&gt;</li>
 <li>【功能】—— 包括〖點石成金〗全部功能<ul>
@@ -2733,6 +2731,8 @@ If the following download URL does not work for you, please
 <li>〖回車鍵〗空格后上回車，非空格后上空格。</li>
 <li>〖上字〗空格鍵和字母鍵，也可以是數字鍵。</li>
 <li>〖狀態顯示〗 noruler</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -4815,12 +4815,13 @@ set langmenu=zh_CN.UTF-8
 <li>[done] open debug mode for public; resever only g:vimimdebug=9</li>
 <li>[todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0</li>
 <li>[todo] improve performance on dynamic mode by using temp cache</li>
+<li>[todo] is it possible to fix omni popup location?</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 21:46:35 PST on Wednesday, 01/06/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 13:25:36 PST on Thursday, 01/07/2010
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
