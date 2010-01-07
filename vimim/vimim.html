@@ -3750,12 +3750,6 @@ If the following download URL does not work for you, please
 <li>【操作】 ㈠ 高亮选择汉字字串　㈡ 敲 <strong>CTRL-6</strong></li>
 <li>【开启可设】:let g:vimim_unicode_lookup=1</li>
 </ul>
-<p><strong>误删防止</strong></p>
-<ul class="simple">
-<li>长按退格键，连续删除输入的拼音串。</li>
-<li>停顿一秒，才会继续删除文本中的内容。</li>
-<li>【缺省开启】:let g:vimim_smart_backspace=1</li>
-</ul>
 <p><strong>输入记录</strong></p>
 <ul class="simple">
 <li>输入记录在 g:vimim</li>
@@ -4793,7 +4787,6 @@ set langmenu=zh_CN.UTF-8
 <li>[redo] [one-key-correction] in OneKey =&gt; (d)elete in popup menu</li>
 <li>[redo] [one-key-correction] make &lt;Esc&gt; smart: also for one-key-correction</li>
 <li>[done] [backspace] make &lt;BS&gt; smart by not delete Chinese by mistake</li>
-<li>[done] [backspace] add g:vimim_smart_backspace which default on</li>
 <li>[done] [punctuation] fix backlash and double quote in Chinese mode</li>
 <li>[done] [cmdline] discover cmdline-window for all cmdline operation</li>
 <li>[done] [4corner] use 4corner as a filter for super jianpin</li>
@@ -4816,12 +4809,14 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0</li>
 <li>[todo] improve performance on dynamic mode by using temp cache</li>
 <li>[todo] is it possible to fix omni popup location?</li>
+<li>[redo] [backspace] make backspace smarter and simpler</li>
+<li>[redo] [enter] OneKey a. a.. a... a.... whole match?</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 13:25:36 PST on Thursday, 01/07/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 15:51:36 PST on Thursday, 01/07/2010
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
