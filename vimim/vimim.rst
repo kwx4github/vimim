@@ -1477,6 +1477,10 @@ VimIM Mapping
 | 　　　　　GVim 玩家可以赋予 CTRL-SPACE 和 CTRL-6 相同的定义：
 | 　　　　　:let g:vimim_ctrl_space_as_ctrl_6=1
 |
+| 【小技巧】玩家可以swap缺省热键：
+|           例如：:let g:vimim_ctrl_6_as_onekey=1
+| 　　　　　　　　㈠ 把 CTRL-6 作为  CTRL-\\ 用
+| 　　　　　　　　㈡ 把 CTRL-\\ 作为 CTRL-6 用
 |
 
 
@@ -1486,7 +1490,6 @@ VimIM Mapping
 (2) 设置：
 
     + :let g:vimim_ctrl_6_as_onekey=1（vim插入模式）
-    + :let g:vimim_ctrl_6_as_onekey=2（包括g:vimim_tab_as_onekey）
     + :let g:vimim_ctrl_6_as_onekey=3（包括vim正常模式）
 
 (3) 使用：
@@ -1573,22 +1576,25 @@ VimIM Mapping
 
 |
 
-【点石键】OneKey 三者择一：
+【点石键】OneKey 三者择一：　`VimIM Mapping`_
 
-  (1) 〖CTRL-\\〗　　　　　　 `VimIM Mapping`_
+  (1) 〖CTRL-\\〗
 
-     + 【特点】打字搜索，中文英文没有区别。
+     + 【缺省开启】
 
-  (2) 〖Tab〗（插入模式）
+  (2) 〖Tab〗（Vim插入模式）
 
      + 【优点】Tab键方便省力
      + 【反经典】用Tab键上汉字，用空格键确认
      + 【智能】该出码时就出码，没码时出Tab
      + 【开启可设】 :let g:vimim_tab_as_onekey=1
-     + 【小技巧】开启后，<CTRL-\\>键变成<Tab>键
-     + 【推荐】OneKey 传统玩家
+     + 【推荐】OneKey 专业玩家
 
-  (3) 〖CTRL-^〗 （参见 `无模式之模式`_ ）
+  (3) 〖CTRL-^〗
+
+     + 【特点】switch the default 〖CTRL-^〗and〖CTRL-\\〗
+     + 【开启可设】:let g:vimim_ctrl_6_as_onekey=1
+
 
 |
 
@@ -1606,31 +1612,22 @@ VimIM Mapping
 __ http://code.google.com/p/vimim/wiki/OneKey
 
 
-+ 【点石键】可以定为 CTRL-^
++ 【特点】
 
   - 【反经典】把OneKey当作VimIM的中文输入模式。
-  - 【推荐】OneKey 专职玩家
+  - 【设置】—— :let g:vimim_sexy_onekey=1
 
-    - ㈠插入模式
++ 【操作】
 
-      + 【点石键】与Vim的标准IM键CTRL-6基本一致
-      + 【开启可设】:let g:vimim_ctrl_6_as_onekey=1
+  - 【开启】—— 敲【点石键】
+  - 【关闭】—— 敲<Esc>
+  - 【功能】—— 包括〖点石成金〗全部功能
 
-    - ㈡正常模式
-
-      + 【点石键】与插入模式的一模一样
-      + 【特点】把光标置于word任一字母下，一键点出菜单。
-      + 【开启可设】:let g:vimim_ctrl_6_as_onekey=3
-
-+ 【开启】—— 敲【点石键】
-+ 【关闭】—— 敲<Esc>
-+ 【功能】—— 包括〖点石成金〗全部功能
-
-  - 〖经典〗空格键上汉字，回车键上英文。
-  - 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
-  - 〖回车键〗空格后上回车，非空格后上空格。
-  - 〖上字〗空格键和字母键，也可以是数字键。
-  - 〖状态显示〗 noruler
+    * 〖经典〗空格键上汉字，回车键上英文。
+    * 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
+    * 〖回车键〗空格后上回车，非空格后上空格。
+    * 〖上字〗空格键和字母键，也可以是数字键。
+    * 〖状态显示〗 noruler
 
 
 |
@@ -3047,6 +3044,7 @@ WHAT IS NEW
 #. [done] open debug mode for public; resever only g:vimimdebug=9　
 #. [todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0
 #. [todo] improve performance on dynamic mode by using temp cache
+#. [todo] is it possible to fix omni popup location?
 
 
 
