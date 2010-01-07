@@ -2287,11 +2287,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
 + 【操作】 ㈠ 高亮选择汉字字串　㈡ 敲 **CTRL-6**
 + 【开启可设】:let g:vimim_unicode_lookup=1
 
-**误删防止**
-
-+ 长按退格键，连续删除输入的拼音串。
-+ 停顿一秒，才会继续删除文本中的内容。
-+ 【缺省开启】:let g:vimim_smart_backspace=1
 
 **输入记录**
 
@@ -3022,7 +3017,6 @@ WHAT IS NEW
 #. [redo] [one-key-correction] in OneKey => (d)elete in popup menu
 #. [redo] [one-key-correction] make <Esc> smart: also for one-key-correction
 #. [done] [backspace] make <BS> smart by not delete Chinese by mistake
-#. [done] [backspace] add g:vimim_smart_backspace which default on
 #. [done] [punctuation] fix backlash and double quote in Chinese mode
 #. [done] [cmdline] discover cmdline-window for all cmdline operation
 #. [done] [4corner] use 4corner as a filter for super jianpin
@@ -3045,6 +3039,8 @@ WHAT IS NEW
 #. [todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0
 #. [todo] improve performance on dynamic mode by using temp cache
 #. [todo] is it possible to fix omni popup location?
+#. [redo] [backspace] make backspace smarter and simpler
+#. [redo] [enter] OneKey a. a.. a... a.... whole match?
 
 
 
