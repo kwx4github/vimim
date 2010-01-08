@@ -1,5 +1,5 @@
 ﻿#summary  Vim vs Emcas
-http://code.google.com/p/vimim/wiki/DigitalPinyin
+http://code.google.com/p/vimim/wiki/Vi_vs_Emacs
 {{{
 纯粹是好奇，或许是无聊，比较了一下cygwin缺省的编辑器
 --------------------------------------------------------------------
