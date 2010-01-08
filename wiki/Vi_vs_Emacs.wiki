@@ -1,0 +1,22 @@
+﻿#summary  Vim vs Emcas
+http://code.google.com/p/vimim/wiki/DigitalPinyin
+{{{
+纯粹是好奇，或许是无聊，比较了一下cygwin缺省的编辑器
+--------------------------------------------------------------------
+$ ls /bin/*nox.exe
+-rwxr-xr-x 1 500 513 15407630 2009-07-30 05:51 /bin/emacs-nox.exe
+-rwxr-xr-x 1 500   0  1446926 2009-09-30 12:54 /bin/vim-nox.exe
+--------------------------------------------------------------------
+　
+注意，emcas 的"GDP"是 vi 的十倍以上。 
+　
+顺势打开 /bin/emacs-nox.exe
+根本无法打字——上英文。
+结果学会了一个操作emcas最牛的命令: C-x C-c
+　
+如果打开 /bin/vim-nox.exe -y
+立马可以打字 ㈠上英文 ㈡上中文 (VimIM 点石成金)
+前提是需要 (1) -y (2) vimim.vim 
+　
+最好是发明一个更好的方式，把那两个前提省略。(类似vim/cream ?).
+那么，中文输入法就有可能 frxcbxj,=> 飞入寻常百姓家。 
