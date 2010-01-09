@@ -58,8 +58,6 @@
    code -s datafile -p vimim vimim.pinyin_quote_sogou.txt
            datafile 搜狗拼音单字双字词库
    code -s datafile -p vimim vimim.english.txt
-           datafile 私人信息样本文件
-   code -s datafile -p vimim privates.txt
            datafile 中文电报码  http://www.dtc.umn.edu/~reedsj/ctc.html
    code -s datafile -p vimim vimim.3000.txt
            datafile 三千汉字，字频排列
@@ -364,7 +362,6 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
    4     encoding   编码：     utf-8
    5     fencs      编码：     ucs-bom,utf8,chinese
    6     datafile   词库：     vimim.txt
-   7     datafile   词库：     privates.txt
    8     datafile   词库：     四角号码
    9     cloud      搜狗：     想云就云
   ====  ==========  =========  ==========================
@@ -1330,7 +1327,6 @@ __ `CLOUD 云输入`_
 
   * 〖特点〗 plug & play
   * 用VimIM 打字，只需一个词库。玩家可以从VimIM 词库样例中挑选。
-  * 如果希望分开保管 `私人信息`_  ：可以加上 privates.txt
   * 如果想玩 即插即用 `双码输入`_  ：可以同时插入两个词库文件：
 
     + `拼音★四角号码`_
@@ -1352,7 +1348,6 @@ __ `CLOUD 云输入`_
   * 用户可以随意设置自己词库的位置：（例如）
 
     * ``:let g:vimim_datafile="path_to_your_own_data_file"``
-    * ``:let g:vimim_datafile_private="path_to_your_own_privates_file"``
     * ``:let g:vimim_datafile_digital="path_to_your_own_digital_im_file"``
 
 【多功能词库】
@@ -1415,42 +1410,14 @@ __ http://vimim.googlecode.com/files/vimim.pinyin.txt
 __ http://vimim.googlecode.com/files/vimim.english.txt
 
 
-私人信息
---------
-| 个人隐私数据最好分开保管，不应与主词库混在一起。
-| VimIM 玩家因之可以放心交换 VimIM 主词库。
-
-【制作】 可以参考样本文件：只需符合 VimIM `词库格式`_
-
-  +-----------------------------------------------------+
-  |                     私人信息样本文件                |
-  +=====================================================+
-  |    http://vimim.googlecode.com/files/privates.txt   |
-  +-----------------------------------------------------+
-
-
-【存放】
-
-  | 既可直接把 privates.txt 扔到您的 vim 的 plugin 目录之下
-  | 也可在您的 .vimrc 中指定您的私人信息文件：
-  | ``:let g:vimim_datafile_private="path_to_your_own_privates_file"``
-
-【特点】
-
-  (1) 私人信息文件 plug & play 以及 remove & gone
-  (2) 私人信息文件可以不排序。
-  (3) 私人信息为完全匹配。
-  (4) 活学活用，利用VimIM `管理记忆私人信息`__
-
-__ http://code.google.com/p/vimim/wiki/VimIM__privates
-
-
 |
 |
 
 VimIM Mapping
 =============
 ㈠ 【经典】VimIM only needs maximum two hot keys.
+
+Vim插入模式
 
 (1) 按 <Ctrl-\> 在非中文模式直接出选择。
 (2) 按 <Ctrl-6> 进入中文输入模式，此后按空格出选择。
@@ -1470,28 +1437,25 @@ VimIM Mapping
 
 |
 | 【小技巧】玩家可以自定义热键：
-| 　　　　　例如在.vimrc中，定义 CTRL-L 为 CTRL-6
-| 　　　　　imap<silent><C-L>   <Plug>VimimChineseToggle
+| 　　　　　例如在.vimrc中，定义 CTRL-L 为中文模式开关
+| 　　　　　imap<silent><C-L>   <Plug>VimimChineseMode
 |
 | 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping,
 | 　　　　　GVim 玩家可以赋予 CTRL-SPACE 和 CTRL-6 相同的定义：
 | 　　　　　:let g:vimim_ctrl_space_as_ctrl_6=1
 |
 | 【小技巧】玩家可以swap缺省热键：
-|           例如：:let g:vimim_ctrl_6_as_onekey=1
+|           例如：:let g:vimim_ctrl_6_as_onekey=1 
 | 　　　　　　　　㈠ 把 CTRL-6 作为  CTRL-\\ 用
-| 　　　　　　　　㈡ 把 CTRL-\\ 作为 CTRL-6 用
+| 　　　　　　　　㈡ (insert mode) 把 CTRL-\\ 作为 CTRL-6 用
+| 　　　　　　　　㈢ (normal mode) 按 CTRL-\\ 切换中文输入模式
 |
 
 
 ㈡【反经典】 This is another way to use VimIM, using one map only.
 
 (1) 特点： `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
-(2) 设置：
-
-    + :let g:vimim_ctrl_6_as_onekey=1（vim插入模式）
-    + :let g:vimim_ctrl_6_as_onekey=3（包括vim正常模式）
-
+(2) 设置： :let g:vimim_ctrl_6_as_onekey=1（vim插入模式）
 (3) 使用：
 
     + 按 <Ctrl-6> 进入 〖点石成金〗 `无模式之模式`_
@@ -2883,8 +2847,6 @@ WHAT IS NEW
 #. [done] support YONG input method: vimim.yong.txt
 #. [done] optimize vimim_label(n) to make the number one fast
 #. [done] make Space key smart not to compromise abbreviation
-#. [done] introduce auto processing a separate private data file
-#. [done] upload a sample dummy privates.txt as an example
 #. [done] broadcast VimIM to *relating* newsgroups and blogs
 #. [done] build an internal auto regression test suites
 #. [done] support "i have a dream." for English OneKey sentence match
@@ -2894,7 +2856,6 @@ WHAT IS NEW
 #. [done] support "i have a dream." for CangJie OneKey sentence match
 #. [done] support "i have a dream." for Nature  OneKey sentence match
 #. [done] support live "today" (itoday) and "now" (inow) in Chinese
-#. [done] support arbitrary private location: g:vimim_datafile_private
 #. [done] [ctc] create vimim.ctc.txt from unihan.txt, PRC telegraph code
 #. [done] [ctc] support Chinese Telegraph Code (CTC) input and search
 #. [done] relieve restriction of the fixed noignorecase setting
@@ -3041,6 +3002,10 @@ WHAT IS NEW
 #. [todo] is it possible to fix omni popup location?
 #. [redo] [backspace] make backspace smarter and simpler
 #. [redo] [enter] OneKey a. a.. a... a.... whole match?
+#. [redo] [ctrl-bslash] to toggle chinese mode :let g:vimim_ctrl_6_as_onekey=1
+#. [done] [filter] use first word?  if s:menu_4corner_filter > 0
+#. [done] [privacy] remove relating codes. merge privates to main datafile.
+
 
 
 
