@@ -1445,7 +1445,7 @@ Vim插入模式
 | 　　　　　:let g:vimim_ctrl_space_as_ctrl_6=1
 |
 | 【小技巧】玩家可以swap缺省热键：
-|           例如：:let g:vimim_ctrl_6_as_onekey=1 
+|           例如：:let g:vimim_ctrl_6_as_onekey=1
 | 　　　　　　　　㈠ 把 CTRL-6 作为  CTRL-\\ 用
 | 　　　　　　　　㈡ (insert mode) 把 CTRL-\\ 作为 CTRL-6 用
 | 　　　　　　　　㈢ (normal mode) 按 CTRL-\\ 切换中文输入模式
@@ -1566,6 +1566,7 @@ Vim插入模式
 
    .. figure:: abcdefghi.gif
 
+
 无模式之模式
 ------------
 | 如果愿意，OneKey 可以作为VimIM唯一的中文输入模式。
@@ -1580,6 +1581,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
   - 【反经典】把OneKey当作VimIM的中文输入模式。
   - 【设置】 :let g:vimim_sexy_onekey=1
+  - 【设置】 :let g:vimim_ctrl_6_as_onekey=1  (optional)
 
 + 【操作】
 
@@ -1589,10 +1591,10 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
     * 〖经典〗空格键上汉字，回车键上英文。
     * 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
-    * 〖回车键〗空格后上回车，非空格后上空格。
-    * 〖上字〗空格键和字母键，也可以是数字键。
+    * 〖回车键〗无缝上英文；标点后上空格；没有事就回车。
+    * 〖上汉字〗空格键和字母键，也可以是数字键。
+    * 〖敲英文〗<C-\> 切换(paste)状态，正好连续敲英文。(optional)
     * 〖状态显示〗 noruler
-    * 当然还包括〖点石成金〗全部功能。
 
 
 |
@@ -3007,7 +3009,6 @@ WHAT IS NEW
 #. [done] [filter] use first word?  if s:menu_4corner_filter > 0
 #. [done] [privacy] remove relating codes. merge privates to main datafile.
 #. [done] [onekey mode] ctrl-6 goes to cloud if vimim_tab_as_onekey
-
-
+#. [todo] [backspace] not so smart
 
 
