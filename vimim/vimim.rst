@@ -1579,7 +1579,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 + 【特点】
 
   - 【反经典】把OneKey当作VimIM的中文输入模式。
-  - 【设置】—— :let g:vimim_sexy_onekey=1
+  - 【设置】 :let g:vimim_sexy_onekey=1
 
 + 【操作】
 
@@ -1592,6 +1592,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
     * 〖回车键〗空格后上回车，非空格后上空格。
     * 〖上字〗空格键和字母键，也可以是数字键。
     * 〖状态显示〗 noruler
+    * 当然还包括〖点石成金〗全部功能。
 
 
 |
@@ -3005,6 +3006,7 @@ WHAT IS NEW
 #. [redo] [ctrl-bslash] to toggle chinese mode :let g:vimim_ctrl_6_as_onekey=1
 #. [done] [filter] use first word?  if s:menu_4corner_filter > 0
 #. [done] [privacy] remove relating codes. merge privates to main datafile.
+#. [done] [onekey mode] ctrl-6 goes to cloud if vimim_tab_as_onekey
 
 
 
