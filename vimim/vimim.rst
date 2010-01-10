@@ -1581,7 +1581,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
   - 【反经典】把OneKey当作VimIM的中文输入模式。
   - 【设置】 :let g:vimim_sexy_onekey=1
-  - 【设置】 :let g:vimim_ctrl_6_as_onekey=1  (optional)
+  - 【设置】 :let g:vimim_sexy_onekey=2  (optional)
 
 + 【操作】
 
@@ -2969,8 +2969,6 @@ WHAT IS NEW
 #. [done] [onekey] create official OneKey Chinese input mode
 #. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
 #. [done] [onekey] g:vimim_ctrl_6_as_onekey & g:xingma_sleep_with_pinyin
-#. [done] [onekey] g:vimim_ctrl_6_as_onekey=2 set vimim_tab_as_onekey
-#. [done] [onekey] g:vimim_ctrl_6_as_onekey=3 mapping normal CTRL-6
 #. [done] [mycloud] g:vimim_cloud_plugin='C:/home/vimim/mycloud/mycloud'
 #. [done] [recycle] save typing by reusing input memory: g:vimim_smart_ctrl_n
 #. [done] [recycle] save typing by reusing all inputs: g:vimim_smart_ctrl_p
@@ -2997,7 +2995,6 @@ WHAT IS NEW
 #. [todo] check if it is possible to load datafile from "gvim --remote"
 #. [done] [zi] (1) add 3000 zi sorted by frequency (2) filter zi+number
 #. [done] [sort] add r(reverse) sort for omni popup menu
-#. [done] [OneKey Mode] <Enter> (1)Space after non-Space (2)Enter after Space
 #. [done] No PageUp after first Page; No PageDown after last page
 #. [done] open debug mode for public; resever only g:vimimdebug=9　
 #. [todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0
@@ -3008,7 +3005,8 @@ WHAT IS NEW
 #. [redo] [ctrl-bslash] to toggle chinese mode :let g:vimim_ctrl_6_as_onekey=1
 #. [done] [filter] use first word?  if s:menu_4corner_filter > 0
 #. [done] [privacy] remove relating codes. merge privates to main datafile.
-#. [done] [onekey mode] ctrl-6 goes to cloud if vimim_tab_as_onekey
-#. [todo] [backspace] not so smart
+#. [redo] [OneKey Mode] <Enter> triple play: seamless, enter, space
+#. [todo] [backspace] too smart is not smart
+#. [done] [onekey] g:vimim_sexy_onekey=2  <C-Bslash> as (paste) toggle
 
 
