@@ -1,0 +1,53 @@
+﻿#summary  对拼音单“字”的处理趋于完美
+http://code.google.com/p/vimim/wiki/PinyinChar
+{{{
+三剑齐下，彻底解决拼音一码多字的世界难题。
+　
+(1) 【数字翻页】也可以把数字当作过滤器使用，减少翻页选字的盲目性。
+(2) 把 vimim.3000.txt 融入 vimim.pinyin.txt
+    结果 => 三千汉字，字频排列 a/b/c/d/.../x/y/z 都可以出字。
+(3) 完善单“字”匹配逻辑
+　
+vimim.pinyin.txt 词库的“字”有带调的，例如：
+ma 妈
+ma1 妈
+ma2 麻
+ma3 马
+ma4 骂
+　
+如果敲ma, 现在可以出所有的ma/ma1/ma2/ma3/ma4
+而且不会出画蛇添足的“马马虎虎”。
+　
+ma =>
+ma 蟆
+ma 嘛
+ma 码
+ma 妈
+ma 麻
+ma 馬
+ma 杩
+ma 马
+ma 吗
+ma 骂
+ma1 妈
+ma1 吗
+ma1 嘛
+ma2 麻
+ma2 嫲
+ma2 蔴
+ma2 蟆
+ma3 马
+ma3 馬
+ma3 玛
+ma3 蚂
+ma3 码
+ma3 吗
+ma3 溤
+ma3 犸
+ma3 玛
+ma3 杩
+ma3 犸
+ma3 遤
+ma4 骂
+ma4 駡
+ma4 罵
