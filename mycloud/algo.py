@@ -392,8 +392,11 @@ def parse_glyph(map):
                 ret.append((item+intermed, "", wordptr))
     return ret
 
+g_gae = False
+
 # 处理内部控制输入
 def internal_command(cmd, debug):
+    global g_gae
     k,p,v = cmd.partition("=")
     if k == "setmode":
         if v == "":
@@ -414,6 +417,9 @@ def internal_command(cmd, debug):
         return data.getname()
     elif k == "getkeychars":
         return data.getkeychars()
+    elif k == "setgae":
+        g_gae = True
+        return True
     else:
         return False
 
@@ -427,9 +433,9 @@ def quanpin_parse(keyb, debug):
 
     if map["word_count"] == 0:
         result = [("",0)]
-    elif map["word_count"] < 4 and data.getgae():
+    elif map["word_count"] < 3 and g_gae:
         result = local_parse_quanpin(map, debug)
-    elif map["word_count"] < 5 and not data.getgae():
+    elif map["word_count"] < 5 and not g_gae:
         result = local_parse_quanpin(map, debug)
     else:
         # 当远程解析超时或者无结果时，启用本地解析
@@ -473,9 +479,9 @@ def shuangpin_parse(keyb, debug):
 
     if map["word_count"] == 0:
         result = [("",0)]
-    elif map["word_count"] < 4 and data.getgae():
+    elif map["word_count"] < 3 and g_gae:
         result = local_parse_shuangpin(map, debug)
-    elif map["word_count"] < 5 and not data.getgae():
+    elif map["word_count"] < 5 and not g_gae:
         result = local_parse_shuangpin(map, debug)
     else:
         # 当远程解析超时或者无结果时，启用本地解析

@@ -405,16 +405,6 @@ def get_imodemap():
 get_py_table = create_quanpin_table
 g_mode = "quanpin"
 g_maxoutput = 30
-g_gae = False
-
-def getgae():
-    return g_gae
-
-def setgae(flag):
-    if flag:
-        g_gae = True
-    else:
-        g_gae = False
 
 def getmode():
     return g_mode

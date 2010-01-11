@@ -1,6 +1,10 @@
+
 2010-1-11 Pan, Shi Zhu  <pan.shizhu@gmail.com>
 	* quanpin2.txt: 增加 3000 简拼字库
 	* abc2.txt: 增加 3000 简拼字库
+	* appengine.py: 调试了 gae 接口与本地配合。
+	* data.py: 调试了 gae 接口与本地配合。
+	* algo.py: 调试了 gae 接口与本地配合。
 
 2010-1-4  Pan, Shi Zhu  <pan.shizhu@gmail.com>
 	* quanpin?.txt: separated into 4 files
