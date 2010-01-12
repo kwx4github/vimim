@@ -124,6 +124,7 @@ vimimhelp　<C-\\>　p
    最新程式       http://vimim.googlecode.com/svn/vimim/vimim.vim.html
    试用版本       http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim
    官方网址       http://vim.sf.net/scripts/script.php?script_id=2506
+   自己的云       http://pim-cloud.appspot.com/ 
    新闻论坛       http://groups.google.com/group/vimim
 ==============    ========================================================
 
@@ -1587,15 +1588,15 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
   - 【开启】—— 敲【点石键】
   - 【关闭】—— 敲<Esc>
-  - 【功能】—— 包括〖点石成金〗全部功能
+  - 【功能】—— 包括〖点石成金〗全部功能，加之：
 
     * 〖经典〗空格键上汉字，回车键上英文。
     * 〖空格键〗出菜单，或上汉字，或上空格，或上中文标点。
-    * 〖回车键〗无缝上英文；标点后上空格；没有事就回车。
+    * 〖回车键〗无缝上英文；标点后或双回车上空格；没有事就回车。
     * 〖上汉字〗空格键和字母键，也可以是数字键。
+    * 〖标点切换〗英文标点之后，空格键出中文标点
     * 〖敲英文〗<C-\> 切换(paste)状态，正好连续敲英文。(optional)
     * 〖状态显示〗 noruler
-
 
 |
 |
@@ -3000,13 +3001,15 @@ WHAT IS NEW
 #. [todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0
 #. [todo] improve performance on dynamic mode by using temp cache
 #. [todo] is it possible to fix omni popup location?
-#. [redo] [backspace] make backspace smarter and simpler
 #. [redo] [enter] OneKey a. a.. a... a.... whole match?
 #. [redo] [ctrl-bslash] to toggle chinese mode :let g:vimim_ctrl_6_as_onekey=1
 #. [done] [filter] use first word?  if s:menu_4corner_filter > 0
 #. [done] [privacy] remove relating codes. merge privates to main datafile.
 #. [redo] [OneKey Mode] <Enter> triple play: seamless, enter, space
-#. [todo] [backspace] too smart is not smart
 #. [done] [onekey] g:vimim_sexy_onekey=2  <C-Bslash> as (paste) toggle
+#. [done] [onekey] sexy onekey, double enter => space
+#. [redo] [backspace] make backspace smarter and simpler
+#. [done] [backspace] too smart is not smart
+
 
 
