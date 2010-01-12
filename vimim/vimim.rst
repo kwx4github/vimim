@@ -1665,7 +1665,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
   - 【特点】同一字母开头的输入只记住一次
   - 【操作】在输入一个字母后，按<Ctrl-N>
-  - 【缺省开启】:let g:vimim_smart_ctrl_n=1
+  - 【缺省关闭】:let g:vimim_smart_ctrl_n=0
 
 - 【方式之二】利用 Ctrl-P
 
@@ -2328,15 +2328,14 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
     * 再隐藏输入码显示，使显示栏简洁明快。
 
-+ 〖光标〗g:vimim_custom_lcursor_color
-
-  -  光标颜色可以归自己指定，缺省是绿色。
-  -  【缺省开启】:let g:vimim_custom_lcursor_color=1
-
 + 〖状态行〗g:vimim_custom_laststatus
 
   - statusline 可以显示当前使用的中文输入法：
   - 【缺省开启】:let g:vimim_custom_laststatus=1
+
++ 〖光标〗
+
+  -  光标颜色可以归自己指定，缺省是绿色。
 
 |
 |
@@ -2990,5 +2989,4 @@ WHAT IS NEW
 #. [done] [backspace] too smart is not smart
 #. [done] [default] ctrl-6 as OneKey and ctrl-Bslash as toggle
 #. [todo] [egg] always no cloud for eggs!!!
-
 
