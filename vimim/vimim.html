@@ -1559,7 +1559,7 @@ VimIM 不错, 一直在用 :) -->
 <li>【无缝混排】支持 <a class="reference internal" href="#id99">无缝混排</a></li>
 <li>【中文数字】（静态模式）i2009　=&gt;　二〇〇九　　I2009　=&gt;　贰零零玖</li>
 <li>【中文量词】（静态模式）i5t　=&gt;　五吨　　id8　=&gt;　第八</li>
-<li>【大块英文】敲 CTRL-6 动态切换中英文输入模式。</li>
+<li>【大块英文】敲 CTRL-\ 动态切换中英文输入模式。</li>
 <li>【可控词频调整】 （缺省开启）</li>
 <li>【智能模糊匹配】 （缺省关闭）</li>
 <li>【通配符匹配】用星号键＊匹配任意字符串或空串 （缺省关闭）</li>
@@ -1671,7 +1671,7 @@ VimIM 不错, 一直在用 :) -->
 <blockquote>
 <ul class="simple">
 <li>【无缝混排】支持 <a class="reference internal" href="#id99">无缝混排</a></li>
-<li>【英文输入】敲 CTRL-6 动态切换中英文输入模式。</li>
+<li>【英文输入】敲 CTRL-\ 动态切换中英文输入模式。</li>
 <li>【点石成金】四码匹配，逐词上屏。</li>
 <li>【通配符匹配】用 z 匹配壹个字符 （缺省关闭）</li>
 <li>【输入风格】 <a class="reference internal" href="#id97">〖中文输入模式〗</a>  经典动态输入风格</li>
@@ -1694,8 +1694,8 @@ VimIM 不错, 一直在用 :) -->
 </ol>
 <blockquote>
 <ul class="simple">
-<li>【五笔输入】敲 CTRL-6 动态切换五笔输入模式。</li>
-<li>【拼音输入】敲 CTRL-6 动态切换拼音输入模式。</li>
+<li>【五笔输入】敲 CTRL-\ 动态切换五笔输入模式。</li>
+<li>【拼音输入】敲 CTRL-\ 动态切换拼音输入模式。</li>
 <li>〖特点〗 plug &amp; play 即插即用　动态切换<ol class="arabic">
 <li>形码（例如：五笔）输入永远独立，插上就可以用。</li>
 <li>音码（例如：拼音）输入永远独立，插上就可以用。</li>
@@ -2452,8 +2452,8 @@ If the following download URL does not work for you, please
 <p>㈠ 【经典】VimIM only needs maximum two hot keys.</p>
 <p>Vim插入模式</p>
 <ol class="arabic simple">
-<li>按 &lt;Ctrl-&gt; 在非中文模式直接出选择。</li>
-<li>按 &lt;Ctrl-6&gt; 进入中文输入模式，此后按空格出选择。</li>
+<li>按 &lt;Ctrl-6&gt; 在非中文模式直接出选择。</li>
+<li>按 &lt;Ctrl-\&gt; 进入中文输入模式，此后按空格出选择。</li>
 </ol>
 <table border="1" class="docutils">
 <colgroup>
@@ -2463,8 +2463,8 @@ If the following download URL does not work for you, please
 </colgroup>
 <thead valign="bottom">
 <tr><th class="head">Vim 模式</th>
-<th class="head">敲　CTRL-6</th>
 <th class="head">敲　CTRL-\</th>
+<th class="head">敲　CTRL-6</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -2493,22 +2493,14 @@ If the following download URL does not work for you, please
 <div class="line">　　　　　imap&lt;silent&gt;&lt;C-L&gt;   &lt;Plug&gt;VimimChineseMode</div>
 <div class="line"><br /></div>
 <div class="line">【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping,</div>
-<div class="line">　　　　　GVim 玩家可以赋予 CTRL-SPACE 和 CTRL-6 相同的定义：</div>
-<div class="line">　　　　　:let g:vimim_ctrl_space_as_ctrl_6=1</div>
-<div class="line"><br /></div>
-<div class="line">【小技巧】玩家可以swap缺省热键：</div>
-<div class="line-block">
-<div class="line">例如：:let g:vimim_ctrl_6_as_onekey=1</div>
-</div>
-<div class="line">　　　　　　　　㈠ 把 CTRL-6 作为  CTRL-\ 用</div>
-<div class="line">　　　　　　　　㈡ (insert mode) 把 CTRL-\ 作为 CTRL-6 用</div>
-<div class="line">　　　　　　　　㈢ (normal mode) 按 CTRL-\ 切换中文输入模式</div>
+<div class="line">　　　　　GVim 玩家可以用 CTRL-SPACE 切换中文模式</div>
+<div class="line">　　　　　:let g:vimim_ctrl_space_to_toggle=1</div>
 <div class="line"><br /></div>
 </div>
 <p>㈡【反经典】 This is another way to use VimIM, using one map only.</p>
 <ol class="arabic simple">
 <li>特点： <a class="reference internal" href="#id80">〖点石成金〗</a> 的另类玩法，一键多用，一石多鸟</li>
-<li>设置： :let g:vimim_ctrl_6_as_onekey=1（vim插入模式）</li>
+<li>设置： :let g:vimim_sexy_onekey=1或2</li>
 <li>使用：<ul>
 <li>按 &lt;Ctrl-6&gt; 进入 〖点石成金〗 <a class="reference internal" href="#id82">无模式之模式</a></li>
 <li>高亮选择汉字字串，按 &lt;Ctrl-6&gt; 可以 <a class="reference internal" href="#id93">见字找码</a></li>
@@ -2617,10 +2609,10 @@ If the following download URL does not work for you, please
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>【点石键】OneKey 三者择一：　`VimIM Mapping`_</p>
+<p>【点石键】OneKey 二者择一：　`VimIM Mapping`_</p>
 <blockquote>
 <ol class="arabic simple">
-<li>〖CTRL-\〗</li>
+<li>〖CTRL-6〗</li>
 </ol>
 <blockquote>
 <ul class="simple">
@@ -2637,15 +2629,6 @@ If the following download URL does not work for you, please
 <li>【智能】该出码时就出码，没码时出Tab</li>
 <li>【开启可设】 :let g:vimim_tab_as_onekey=1</li>
 <li>【推荐】OneKey 专业玩家</li>
-</ul>
-</blockquote>
-<ol class="arabic simple" start="3">
-<li>〖CTRL-^〗</li>
-</ol>
-<blockquote>
-<ul class="simple">
-<li>【特点】switch the default 〖CTRL-^〗and〖CTRL-\〗</li>
-<li>【开启可设】:let g:vimim_ctrl_6_as_onekey=1</li>
 </ul>
 </blockquote>
 </blockquote>
@@ -2683,7 +2666,7 @@ If the following download URL does not work for you, please
 <li>〖回车键〗无缝上英文；标点后或双回车上空格；没有事就回车。</li>
 <li>〖上汉字〗空格键和字母键，也可以是数字键。</li>
 <li>〖标点切换〗英文标点之后，空格键出中文标点</li>
-<li>〖敲英文〗&lt;C-&gt; 切换(paste)状态，正好连续敲英文。(optional)</li>
+<li>〖敲英文〗&lt;Ctrl-\&gt; 切换(paste)状态，正好连续敲英文。(optional)</li>
 <li>〖状态显示〗 noruler</li>
 </ul>
 </li>
@@ -3019,12 +3002,7 @@ If the following download URL does not work for you, please
 <div class="line">(4) 敲【空格键】或【数字键】上字，one by one</div>
 <div class="line">(5) 结果: “我有一个梦”五个汉字上屏。</div>
 <div class="line"><br /></div>
-<div class="line"><br /></div>
 </div>
-</div>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
 </div>
 <div class="sidebar">
 <p class="first sidebar-title"><a class="reference internal" href="#id89">智能模糊匹配</a> 　(VimIM <em>fuzzy search</em>)</p>
@@ -3447,7 +3425,7 @@ If the following download URL does not work for you, please
 </thead>
 <tbody valign="top">
 <tr><td>CTRL-X　CTRL-U</td>
-<td>CTRL-\ 或 &lt;Tab&gt;</td>
+<td>CTRL-6 或 &lt;Tab&gt;</td>
 <td>猜测寻找第一个匹配</td>
 </tr>
 <tr><td>　　PageUp</td>
@@ -3584,11 +3562,9 @@ If the following download URL does not work for you, please
 </div>
 <ul class="simple">
 <li>【条件】『Vim 可视模式』</li>
-<li>【限于】UTF-8 encoding （vim和词库）</li>
-<li>【特点】先确认，后存盘。一次可存一行或数行。</li>
-<li>【操作】 ㈠ 纵向高亮选择新词　㈡ 敲缺省键</li>
-<li>【缺省开启】:let g:vimim_save_new_entry=1</li>
-<li>【缺省键】 <strong>v_CTRL-\</strong> 　 <a class="reference internal" href="#vimim-mapping">VimIM Mapping</a></li>
+<li>【限于】UTF-8 encoding</li>
+<li>【特点】先确认，后存盘。一次可存一行。</li>
+<li>【操作】 ㈠ 高亮选择空白　㈡ 敲 &lt;Ctrl-6&gt;</li>
 </ul>
 <p>以“全拼”词库为例：如果想同时添加“山寨”和“好美满”二词:</p>
 <blockquote>
@@ -3601,19 +3577,16 @@ If the following download URL does not work for you, please
 </colgroup>
 <thead valign="bottom">
 <tr><th class="head">存盘</th>
-<th class="head">纵向高亮选择</th>
+<th class="head">高亮选择空白</th>
 <th class="head">敲缺省键</th>
 <th class="head">结果</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr><td>行㈠</td>
+<tr><td>一行</td>
 <td>shanzhai　山寨</td>
-<td rowspan="2">v_CTRL-\</td>
-<td rowspan="2">内存更新　词库扩展</td>
-</tr>
-<tr><td>行㈡</td>
-<td>haomeiman　好美满</td>
+<td>v_CTRL-^</td>
+<td>内存更新　词库扩展</td>
 </tr>
 </tbody>
 </table>
@@ -3742,7 +3715,7 @@ If the following download URL does not work for you, please
 </div>
 <blockquote>
 <ul>
-<li><p class="first">【共同特点】 『在Vim插入模式下：CTRL-6 切入』</p>
+<li><p class="first">【共同特点】 『在Vim插入模式下：CTRL-\ 切入』</p>
 <blockquote>
 <ul class="simple">
 <li>【经典】空格键上汉字，回车键上英文。</li>
@@ -3752,7 +3725,7 @@ If the following download URL does not work for you, please
 <li>用数字键确认汉字或导航</li>
 <li>快捷英文输入：敲【缺省键】动态切换中英文输入模式。</li>
 <li>中文标点自动开启</li>
-<li>中英文标点动态切换 （切换键 <strong>CTRL-\</strong> ）</li>
+<li>中英文标点动态切换 （切换键 <strong>CTRL-6</strong> ）</li>
 <li>【缺省键】 <strong>CTRL-6</strong> 　 <a class="reference internal" href="#vimim-mapping">VimIM Mapping</a></li>
 </ul>
 </blockquote>
@@ -3851,7 +3824,7 @@ If the following download URL does not work for you, please
 <blockquote>
 <ul class="simple">
 <li>回车键确认英文或者数字，随后可以直接上中文。</li>
-<li>(Vim Insert Mode)敲两次CTRL-6后可直接敲中文。</li>
+<li>(Vim Insert Mode)敲两次CTRL-\后可直接敲中文。</li>
 </ul>
 </blockquote>
 <div class="line-block">
@@ -3922,7 +3895,7 @@ If the following download URL does not work for you, please
 <li>【自动半角】自动在数字后面输入半角标点。例如：1.2.3 而不是1。2。3。</li>
 <li>【半角选项】在英文后面输入半角标点：:let g:vimim_english_punctuation=1</li>
 <li>【中英标点动态切换】<ul>
-<li><strong>CTRL-\</strong> 　 <a class="reference internal" href="#vimim-mapping">VimIM Mapping</a></li>
+<li><strong>CTRL-6</strong> 　 <a class="reference internal" href="#vimim-mapping">VimIM Mapping</a></li>
 <li><strong>CTRL-6</strong> 　动态切换中英文输入模式，包括标点。</li>
 </ul>
 </li>
@@ -4548,7 +4521,7 @@ set langmenu=zh_CN.UTF-8
 <li>[done] support &quot;Double Pinyin Input Method&quot; and upload sample datafile</li>
 <li>[done] make &quot;static mode&quot; as default: Space=&gt;Chinese Enter=&gt;English</li>
 <li>[done] [static/dynamic mode] uses CTRL-6 to be consistent with Vim</li>
-<li>[done] [OneKey] uses CTRL-\ or even Tab key instead if configured</li>
+<li>[done] [OneKey] uses CTRL-6 or even Tab key instead if configured</li>
 <li>[done] [WuBi] support non-stop Chinese input for WuBi input method</li>
 <li>[done] [Erbi] start to support ErBi input method which using 31 keys</li>
 <li>[done] [UI] remove menu extra label text (default)</li>
@@ -4562,7 +4535,7 @@ set langmenu=zh_CN.UTF-8
 <li>[done] New Feature: dynamically save datafile entry   (default off)</li>
 <li>[done] New Feature: support &quot;search&quot; using Vim search key (default on)</li>
 <li>[done] finalize popup menu navigation using vi key (hjkl) (default on)</li>
-<li>[done] build a table to illustrate mapping ctrl-6 &amp; CTRL-\</li>
+<li>[done] build a table to illustrate mapping ctrl-6 &amp; CTRL-6</li>
 <li>[done] use complete_add(m) and complete_check() to avoid waiting</li>
 <li>[done] support direct Unicode input using digit or hex from menu</li>
 <li>[done] A trick to hide all global variables in plugin</li>
@@ -4725,7 +4698,7 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [onekey] g:vimim_sexy_onekey&gt;0, no transformation of double ,.</li>
 <li>[done] [onekey] create official OneKey Chinese input mode</li>
 <li>[done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry</li>
-<li>[done] [onekey] g:vimim_ctrl_6_as_onekey &amp; g:xingma_sleep_with_pinyin</li>
+<li>[done] [onekey] g:vimim_sexy_onekey &amp; g:xingma_sleep_with_pinyin</li>
 <li>[done] [mycloud] g:vimim_cloud_plugin='C:/home/vimim/mycloud/mycloud'</li>
 <li>[done] [recycle] save typing by reusing input memory: g:vimim_smart_ctrl_n</li>
 <li>[done] [recycle] save typing by reusing all inputs: g:vimim_smart_ctrl_p</li>
@@ -4758,7 +4731,6 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] improve performance on dynamic mode by using temp cache</li>
 <li>[todo] is it possible to fix omni popup location?</li>
 <li>[redo] [enter] OneKey a. a.. a... a.... whole match?</li>
-<li>[redo] [ctrl-bslash] to toggle chinese mode :let g:vimim_ctrl_6_as_onekey=1</li>
 <li>[done] [filter] use first word?  if s:menu_4corner_filter &gt; 0</li>
 <li>[done] [privacy] remove relating codes. merge privates to main datafile.</li>
 <li>[redo] [OneKey Mode] &lt;Enter&gt; triple play: seamless, enter, space</li>
@@ -4766,12 +4738,13 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [onekey] sexy onekey, double enter =&gt; space</li>
 <li>[redo] [backspace] make backspace smarter and simpler</li>
 <li>[done] [backspace] too smart is not smart</li>
+<li>[done] [default] ctrl-6 as OneKey and ctrl-Bslash as toggle</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 16:27:56 PST on Monday, 01/11/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 23:19:42 PST on Monday, 01/11/2010
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
