@@ -116,7 +116,7 @@ VimIM —— Vim 中文输入法
 |
 
 ==============    ========================================================
-vimimhelp　<C-\\>　p
+vimimhelp　<C-6>　p
 ==========================================================================
    错误报告       http://code.google.com/p/vimim/issues/entry
    词库下载       http://code.google.com/p/vimim/downloads/list
@@ -337,7 +337,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 **vim**
 
   ====  ==============
-  vim　<C-\\>　p
+  vim　<C-6>　p
   ====================
    1     文本編輯器
    2     最牛文本編輯器
@@ -355,7 +355,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 **vimim**
 
   ====  ==========  =========  ==========================
-  vimim　<C-\\>　p
+  vimim　<C-6>　p
   =======================================================
    1     computer   电脑：     Windows32_builtin_gui
    2     Vim        版本：     702
@@ -378,7 +378,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
   #. 敲 v
   #. 敲 i
   #. 敲 m
-  #. 敲 <C-\\>
+  #. 敲 <C-6>
   #. 〖结果〗 `VimIM logo <vimim_logo.gif>`_
   #. 敲 p
   #. 〖结果〗 输入全部菜单
@@ -594,7 +594,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 :【纯数字　==>　纯汉字】:
   #. 敲 o 或 i 或 a 进入 vim 插入模式
   #. 连敲 6021272260021762
-  #. 敲点石成金键:  <C-\\>
+  #. 敲点石成金键:  <C-6>
   #. 用【空格键】上字，one by one
   #. 结果: “四角号码”四个汉字上屏
 
@@ -629,7 +629,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
 :【电码　==>　汉字】:
   #. 敲 o 或 i 或 a 进入 vim 插入模式
   #. 连敲 00222429719310324316
-  #. 敲点石成金键:  <C-\\>
+  #. 敲点石成金键:  <C-6>
   #. 用【空格键】上字
   #. 结果: “中文电报码”五个汉字上屏
 
@@ -853,7 +853,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
   +----+---------------------------------------------+
   | ㈦ |  敲　haofengpingjielisongwoshangqingyun     |
   +----+---------------------------------------------+
-  | ㈧ |  敲 `〖点石成金〗`_ 键 <C-\\>               |
+  | ㈧ |  敲 `〖点石成金〗`_ 键 <C-6>                |
   +----+---------------------------------------------+
   | ㈨ |  默念：〖云〗〖云〗〖云〗                   |
   +----+---------------------------------------------+
@@ -1420,7 +1420,7 @@ VimIM Mapping
 
 Vim插入模式
 
-(1) 按 <Ctrl-6> 在非中文模式直接出选择。
+(1) 按 <Ctrl-6>  在非中文模式直接出选择。
 (2) 按 <Ctrl-\\> 进入中文输入模式，此后按空格出选择。
 
 
@@ -1648,7 +1648,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
    #.  用 vim 打开一个文件
    #.  敲 o 或 i 或 a 进入 vim 插入模式
-   #.  连敲四键: v i m <C-\\>
+   #.  连敲四键: v i m <C-6>
    #.  敲 l  向下翻页
    #.  敲 k  光标向下移动
    #.  敲 /  正向搜索
@@ -1746,7 +1746,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
   #. 打开 vim （如果用Windows可以双击gVim.exe）
   #. 敲 o 或 i 或 a 进入 vim 插入模式
   #. （如用拼音词库）输入:  wo you i1g meng.
-  #. （在句号后面）敲点石成金键:  <C-\\>
+  #. （在句号后面）敲点石成金键:  <C-6>
   #. 敲【空格键】或【数字键】上字: wo　　=>　我
   #. 敲【空格键】或【数字键】上字: you　 =>　有
   #. 敲【空格键】或【数字键】上字: i1g　 =>　一个
@@ -1798,7 +1798,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
   #.  打开 vim （如果用Windows可以双击gVim.exe）
   #.  敲 o 或 i 或 a 进入 vim 插入模式
   #.  连敲: wozuixihuandeliulanqi.
-  #.  不间断继续敲点石成金键:  <C-\\>
+  #.  不间断继续敲点石成金键:  <C-6>
   #.  敲【空格键】或【数字键】上字: wo 　　　=> 我
   #.  敲【空格键】或【数字键】上字: zui　　　=> 最
   #.  敲【空格键】或【数字键】上字: xihuan 　=> 喜欢
@@ -1815,7 +1815,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 | 【四角号码演示】
 |   (1) 敲 o 或 i 或 a 进入 vim 插入模式
 |   (2) 连敲 6021272260021762
-|   (3) 敲点石成金键:  <C-\\>
+|   (3) 敲点石成金键:  <C-6>
 |   (4) 敲【空格键】或【数字键】上字，one by one
 |   (5) 结果: “四角号码”四个汉字上屏
 |
@@ -1827,7 +1827,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 | 【五笔演示】
 |   (1) 敲 o 或 i 或 a 进入 vim 插入模式
 |   (2) 连敲 trdeggwhssqu
-|   (3) 敲点石成金键:  <C-\\>
+|   (3) 敲点石成金键:  <C-6>
 |   (4) 敲【空格键】或【数字键】上字，one by one
 |   (5) 结果: “我有一个梦”五个汉字上屏。
 |
@@ -1877,10 +1877,10 @@ __ http://code.google.com/p/vimim/wiki/OneKey
   #.  然后把这两个文本文件扔到您的 vim 的 plugin 目录之下
   #.  打开 vim （如果用Windows可以双击gVim.exe）
   #.  敲 o 或 i 或 a 进入 vim 插入模式
-  #.  先敲 huahaoyueyuan<C-\\>
+  #.  先敲 huahaoyueyuan<C-6>
   #.  确认vim 显示“花好月圆” popup menu
   #.  敲【空格键】或【数字键】上字: 花好月圆
-  #.  再连敲五键: h h y y <C-\\>
+  #.  再连敲五键: h h y y <C-6>
   #.  确认vim 显示“花好月圆”“恢恢有余” popup menu
   #.  敲【空格键】或【数字键】上字: 花好月圆
 
@@ -1963,7 +1963,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 | VimIM 加上 one to many, 把中文量词输入进一步智能化：
 
 ====  ==========  ============
-..    i2w<C-\\>   ii2w<C-\\>
+..    i2w<C-6>     ii2w<C-6>
 ====  ==========  ============
  1      二万          贰万
  2      二位          贰位
@@ -2093,7 +2093,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
   #.  打开 vim （如果用Windows可以双击gVim.exe）
   #.  敲 o 或 i 或 a 进入 vim 插入模式
-  #.  敲四键: v i m  <C-\\>
+  #.  敲四键: v i m  <C-6>
   #.  敲 j j
   #.  确认光标指向“精力”
   #.  敲 c
@@ -2521,7 +2521,7 @@ __ http://code.google.com/p/vimim/wiki/FAQ_Old
      | 　【操作步骤】
      |    (1) 打开 vim （如果用Windows可以双击gVim.exe）
      |    (2) 敲 o 或 i 或 a 进入 vim 插入模式
-     |    (3) 连敲四键: v i m <C-\\>
+     |    (3) 连敲四键: v i m <C-6>
      |    (4) 敲 j  光标向下移动
      |    (5) 敲 j  光标向下移动
      |    (6) 敲 s save to clipboard
@@ -2888,14 +2888,14 @@ WHAT IS NEW
 #. [done] [diy] add g:vimim_diy_asdfghjklo to support shortcut
 #. [done] [translation] add brutal-force chinese2pinyin translation
 #. [done] regression => mjads.xdhao.jdaaa zaskso ma7712li4002 mljjfo
-#. [done] add easter egg for user environment: vimim<C-\>
+#. [done] add easter egg for user environment: vimim<C-6>
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [done] [cloud] cloud. => always non-cloud if ending with one dot
 #. [redo] [cloud] support CLOUD for all using comma before OneKey
 #. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
-#. [done] issue 18: vimim_tab_as_onekey: use <C-\> for <Tab>
+#. [done] issue 18: vimim_tab_as_onekey: use <C-6> for <Tab>
 #. [done] issue 16: chaoxianlaodongdang  replacing too many chars
 #. [done] issue 17: make period dummy in Chinese Input Mode: ma.ma
 #. [done] issue 21: use <space> to close OneKey to avoid interference
@@ -2913,9 +2913,9 @@ WHAT IS NEW
 #. [done] [imode] introduce double imode for capital Chinese number
 #. [done] [imode] id2=>second id3c=>third+menu g:vimim_imode_pinyin
 #. [done] OneKey => add universal imode using english comma: ,88 ,,88
-#. [done] [egg] add new easter egg for VimIM URL: vimimhelp<C-\>
-#. [done] [egg] add new easter egg for coding: vimims<C-\>
-#. [done] [egg] add new easter egg for coding: vimimdefaults<C-\>
+#. [done] [egg] add new easter egg for VimIM URL: vimimhelp<C-6>
+#. [done] [egg] add new easter egg for coding: vimims<C-6>
+#. [done] [egg] add new easter egg for coding: vimimdefaults<C-6>
 #. [redo] workflow, no need buggy s:vimim_resume_shuangpin()
 #. [done] <OneKey> without reset <Space>, ignore no completefunc error
 #. [done] function! s:vimim_pageup_pagedown(matched_list)
@@ -2989,5 +2989,6 @@ WHAT IS NEW
 #. [redo] [backspace] make backspace smarter and simpler
 #. [done] [backspace] too smart is not smart
 #. [done] [default] ctrl-6 as OneKey and ctrl-Bslash as toggle
+#. [todo] [egg] always no cloud for eggs!!!
 
 
