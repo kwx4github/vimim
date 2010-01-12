@@ -488,6 +488,9 @@ VimIM 是一個專門為 vim 玩家開發的嵌入式輸入法，隻要你的 vi
 <tr><td>官方網址</td>
 <td><a class="reference external" href="http://vim.sf.net/scripts/script.php?script_id=2506">http://vim.sf.net/scripts/script.php?script_id=2506</a></td>
 </tr>
+<tr><td>自己的雲</td>
+<td><a class="reference external" href="http://pim-cloud.appspot.com/">http://pim-cloud.appspot.com/</a></td>
+</tr>
 <tr><td>新聞論壇</td>
 <td><a class="reference external" href="http://groups.google.com/group/vimim">http://groups.google.com/group/vimim</a></td>
 </tr>
@@ -2674,11 +2677,12 @@ If the following download URL does not work for you, please
 <li>【操作】<ul>
 <li>【開啟】—— 敲【點石鍵】</li>
 <li>【關閉】—— 敲&lt;Esc&gt;</li>
-<li>【功能】—— 包括〖點石成金〗全部功能<ul>
+<li>【功能】—— 包括〖點石成金〗全部功能，加之：<ul>
 <li>〖經典〗空格鍵上漢字，回車鍵上英文。</li>
 <li>〖空格鍵〗出菜單，或上漢字，或上空格，或上中文標點。</li>
-<li>〖回車鍵〗無縫上英文；標點后上空格；沒有事就回車。</li>
+<li>〖回車鍵〗無縫上英文；標點后或雙回車上空格；沒有事就回車。</li>
 <li>〖上漢字〗空格鍵和字母鍵，也可以是數字鍵。</li>
+<li>〖標點切換〗英文標點之后，空格鍵出中文標點</li>
 <li>〖敲英文〗&lt;C-&gt; 切換(paste)狀態，正好連續敲英文。(optional)</li>
 <li>〖狀態顯示〗 noruler</li>
 </ul>
@@ -4753,20 +4757,21 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0</li>
 <li>[todo] improve performance on dynamic mode by using temp cache</li>
 <li>[todo] is it possible to fix omni popup location?</li>
-<li>[redo] [backspace] make backspace smarter and simpler</li>
 <li>[redo] [enter] OneKey a. a.. a... a.... whole match?</li>
 <li>[redo] [ctrl-bslash] to toggle chinese mode :let g:vimim_ctrl_6_as_onekey=1</li>
 <li>[done] [filter] use first word?  if s:menu_4corner_filter &gt; 0</li>
 <li>[done] [privacy] remove relating codes. merge privates to main datafile.</li>
 <li>[redo] [OneKey Mode] &lt;Enter&gt; triple play: seamless, enter, space</li>
-<li>[todo] [backspace] too smart is not smart</li>
 <li>[done] [onekey] g:vimim_sexy_onekey=2  &lt;C-Bslash&gt; as (paste) toggle</li>
+<li>[done] [onekey] sexy onekey, double enter =&gt; space</li>
+<li>[redo] [backspace] make backspace smarter and simpler</li>
+<li>[done] [backspace] too smart is not smart</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 12:30:16 PST on Sunday, 01/10/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 16:27:56 PST on Monday, 01/11/2010
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
