@@ -22,8 +22,12 @@ def getunicode(code):
         return ""
     return ret
 
+# 当前双引号是前引号还是后引号的标志
+g_double_quote_mode = 1
+
 # 解析中间输入，分离形码与其他字符，并转换符号，转换 i 与 u 的处理。
 def filter_glyph(input, pt):
+    global g_double_quote_mode
     punctmap = data.get(data.get_punctmap)
     imodemap = data.get(data.get_imodemap)
     glyph = ""
@@ -32,6 +36,8 @@ def filter_glyph(input, pt):
     mode_i = pt["__uimode__"][1]
     mode_o = ""
     uimode = mode_o
+    if len(input) == 1 and input[0] == mode_i:
+        return "", "一"
     for c in input:
         if c.isdigit() and uimode == mode_o:
             glyph += c
@@ -42,7 +48,14 @@ def filter_glyph(input, pt):
                 uimode = c
                 intmed += c
             elif punctmap.has_key(c):
-                intmed += punctmap[c]
+                if c == '"':
+                    if g_double_quote_mode:
+                        intmed += punctmap[c][0:3]
+                    else:
+                        intmed += punctmap[c][3:6]
+                    g_double_quote_mode = not g_double_quote_mode
+                else:
+                    intmed += punctmap[c]
             elif uimode == mode_i and imodemap.has_key(c):
                 intmed += imodemap[c]
             elif uimode[:1] == mode_u:
@@ -213,22 +226,14 @@ def process(item, map, rzk):
                 # 对于多字输入的情形，隐藏不含形码的单字。
                 return "", ""
             else:
-                hint = "____"
+                hint = "_"
     elif wc >= 2:
-        #if rzk.has_key(item[0:3]):
-        #    hint = rzk[item[0:3]][0:2]
-        #else:
-        #    hint = "__"
-        #if rzk.has_key(item[-3:]):
-        #    hint += " " + rzk[item[-3:]][0:2]
-        #else:
-        #    hint += " __"
         if rzk.has_key(item[-3:]):
             hint = rzk[item[-3:]]
         else:
-            hint = "____"
+            hint = "_"
     else:
-        hint = ""
+        hint = "_"
     return newoutput, hint
 
 # 解析云端数据
@@ -239,8 +244,8 @@ def remote_parse(kbmap, debug):
     str = urllib.unquote(remotestr)
     try:
         exec(str)
-    except Exception, (errno, strerror):
-        print "Exception at "+kbmap["pinyinstr"], "str='"+ str+ "'"," errno="+ errno, strerror
+    except Exception, inst:
+        print "Exception at "+kbmap["pinyinstr"], "str='"+ str+ "'",type(inst).__name__, inst
         return []
     ret = []
     for item in ime_query_res.split("+"):
@@ -270,10 +275,10 @@ def getquanpin(pyl, wc):
 def local_parse_quanpin(kbmap, debug):
     ret = []
     pys = kbmap["pinyinstr"]
+    pyl = kbmap["pinyinlist"]
     if pys == "":
         ret.append(("", pyl[0][1]))
         return ret
-    pyl = kbmap["pinyinlist"]
     wc = kbmap["word_count"]
     zk = data.get(data.load_alpha_pyzk)
     if wc >= 3:
@@ -310,10 +315,10 @@ def local_parse_quanpin(kbmap, debug):
 def local_parse_shuangpin(kbmap, debug):
     ret = []
     pys = kbmap["pinyinstr"]
+    pyl = kbmap["pinyinlist"]
     if pys == "":
         ret.append(("", pyl[0][1]))
         return ret
-    pyl = kbmap["pinyinlist"]
     wc = kbmap["word_count"]
     zk = data.get(data.load_alpha_pyzk)
     if wc == 3 or wc > 4:

@@ -1,4 +1,10 @@
 
+2010-1-12 Pan, Shi Zhu  <pan.shizhu@gmail.com>
+	* mysocket.py: 解决一些异常退出的情况
+	* data.py: 调整标点符号映射表数据
+	* algo.py: 双引号可智能前后匹配
+	* abctest: 缺省打开调试模式
+
 2010-1-11 Pan, Shi Zhu  <pan.shizhu@gmail.com>
 	* quanpin2.txt: 增加 3000 简拼字库
 	* abc2.txt: 增加 3000 简拼字库

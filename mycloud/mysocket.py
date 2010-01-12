@@ -34,10 +34,10 @@ def tcpserver(func, port):
     name = 'tcp server'
     try:
         s.bind(('', port))
-    except Exception, (errno, strerror):
+    except Exception, inst:
         s.close()
         if verbose:
-            print name, "start fail:", errno, strerror
+            print name, "start fail:", type(inst).__name__, inst
         return
     if verbose:
         print name,'at port', port
@@ -64,9 +64,9 @@ def tcpserver(func, port):
                 if func:
                     try:
                         ret = func(data)
-                    except Exception, (errno, strerror):
+                    except Exception, inst:
                         if verbose:
-                            print name,'exception:', errno, strerror
+                            print name, type(inst).__name__, ":", inst
                         conn.send('\n')
                         break
                     if ret == None:
@@ -91,8 +91,8 @@ def tcpserver(func, port):
                 print name,'closed connection to', addr
             if server_close:		# 关闭服务器的侦听连接
                 break
-    except BaseException:
-        pass
+    except BaseException, inst:
+        print name, type(inst).__name__, ":", inst
     finally:
         s.close()
         if verbose:
@@ -113,9 +113,9 @@ def udpserver(func, port):
     name = 'udp server'
     try:
         s.bind(('', port))
-    except Exception, (errno, strerror):
+    except Exception, inst:
         s.close()
-        print name, "start fail:", errno, strerror
+        print name, "start fail:", inst
         return
     print name,'on port', port
     while True:
@@ -150,7 +150,7 @@ def tcpsend(data, host, port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
         s.connect(addr)
-    except Exception, (errno, strerror):
+    except Exception, inst:
         s.close()
         return None
     ret = ""
@@ -173,7 +173,7 @@ def udpsend(data, host, port):
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     try:
         s.bind(('', 0))
-    except Exception, (errno, strerror):
+    except Exception, inst:
         s.close()
         return None
     ret = ""
