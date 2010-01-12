@@ -124,7 +124,7 @@ vimimhelp　<C-\\>　p
    最新程式       http://vimim.googlecode.com/svn/vimim/vimim.vim.html
    试用版本       http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim
    官方网址       http://vim.sf.net/scripts/script.php?script_id=2506
-   自己的云       http://pim-cloud.appspot.com/ 
+   自己的云       http://pim-cloud.appspot.com/
    新闻论坛       http://groups.google.com/group/vimim
 ==============    ========================================================
 
@@ -899,7 +899,7 @@ VimIM 拼音输入总结：
   - 【无缝混排】支持 `无缝混排`_
   - 【中文数字】（静态模式）i2009　=>　二〇〇九　　I2009　=>　贰零零玖
   - 【中文量词】（静态模式）i5t　=>　五吨　　id8　=>　第八
-  - 【大块英文】敲 CTRL-6 动态切换中英文输入模式。
+  - 【大块英文】敲 CTRL-\\ 动态切换中英文输入模式。
   - 【可控词频调整】 （缺省开启）
   - 【智能模糊匹配】 （缺省关闭）
   - 【通配符匹配】用星号键＊匹配任意字符串或空串 （缺省关闭）
@@ -960,7 +960,7 @@ VimIM 五笔输入总结：
 (2) 无菜单：
 
   - 【无缝混排】支持 `无缝混排`_
-  - 【英文输入】敲 CTRL-6 动态切换中英文输入模式。
+  - 【英文输入】敲 CTRL-\\ 动态切换中英文输入模式。
   - 【点石成金】四码匹配，逐词上屏。
   - 【通配符匹配】用 z 匹配壹个字符 （缺省关闭）
   - 【输入风格】 `〖中文输入模式〗`_  经典动态输入风格
@@ -975,8 +975,8 @@ VimIM 五笔输入总结：
 
 (4) 【五笔★拼音】
 
-  - 【五笔输入】敲 CTRL-6 动态切换五笔输入模式。
-  - 【拼音输入】敲 CTRL-6 动态切换拼音输入模式。
+  - 【五笔输入】敲 CTRL-\\ 动态切换五笔输入模式。
+  - 【拼音输入】敲 CTRL-\\ 动态切换拼音输入模式。
   - 〖特点〗 plug & play 即插即用　动态切换
 
     (1) 形码（例如：五笔）输入永远独立，插上就可以用。
@@ -1420,12 +1420,12 @@ VimIM Mapping
 
 Vim插入模式
 
-(1) 按 <Ctrl-\> 在非中文模式直接出选择。
-(2) 按 <Ctrl-6> 进入中文输入模式，此后按空格出选择。
+(1) 按 <Ctrl-6> 在非中文模式直接出选择。
+(2) 按 <Ctrl-\\> 进入中文输入模式，此后按空格出选择。
 
 
 +------------------------+----------------------------+-----------------------+
-|   Vim 模式             |  敲　CTRL-6                | 　敲　CTRL-\\         |
+|   Vim 模式             |  敲　CTRL-\\               | 　敲　CTRL-6          |
 +========================+============================+=======================+
 | vim 正常模式           | 　　Vim 缺省功能           |  Vim 缺省功能         |
 +------------------------+----------------------------+-----------------------+
@@ -1442,21 +1442,14 @@ Vim插入模式
 | 　　　　　imap<silent><C-L>   <Plug>VimimChineseMode
 |
 | 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping,
-| 　　　　　GVim 玩家可以赋予 CTRL-SPACE 和 CTRL-6 相同的定义：
-| 　　　　　:let g:vimim_ctrl_space_as_ctrl_6=1
+| 　　　　　GVim 玩家可以用 CTRL-SPACE 切换中文模式
+| 　　　　　:let g:vimim_ctrl_space_to_toggle=1
 |
-| 【小技巧】玩家可以swap缺省热键：
-|           例如：:let g:vimim_ctrl_6_as_onekey=1
-| 　　　　　　　　㈠ 把 CTRL-6 作为  CTRL-\\ 用
-| 　　　　　　　　㈡ (insert mode) 把 CTRL-\\ 作为 CTRL-6 用
-| 　　　　　　　　㈢ (normal mode) 按 CTRL-\\ 切换中文输入模式
-|
-
 
 ㈡【反经典】 This is another way to use VimIM, using one map only.
 
 (1) 特点： `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
-(2) 设置： :let g:vimim_ctrl_6_as_onekey=1（vim插入模式）
+(2) 设置： :let g:vimim_sexy_onekey=1或2
 (3) 使用：
 
     + 按 <Ctrl-6> 进入 〖点石成金〗 `无模式之模式`_
@@ -1541,9 +1534,9 @@ Vim插入模式
 
 |
 
-【点石键】OneKey 三者择一：　`VimIM Mapping`_
+【点石键】OneKey 二者择一：　`VimIM Mapping`_
 
-  (1) 〖CTRL-\\〗
+  (1) 〖CTRL-6〗
 
      + 【缺省开启】
 
@@ -1554,12 +1547,6 @@ Vim插入模式
      + 【智能】该出码时就出码，没码时出Tab
      + 【开启可设】 :let g:vimim_tab_as_onekey=1
      + 【推荐】OneKey 专业玩家
-
-  (3) 〖CTRL-^〗
-
-     + 【特点】switch the default 〖CTRL-^〗and〖CTRL-\\〗
-     + 【开启可设】:let g:vimim_ctrl_6_as_onekey=1
-
 
 |
 
@@ -1595,7 +1582,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
     * 〖回车键〗无缝上英文；标点后或双回车上空格；没有事就回车。
     * 〖上汉字〗空格键和字母键，也可以是数字键。
     * 〖标点切换〗英文标点之后，空格键出中文标点
-    * 〖敲英文〗<C-\> 切换(paste)状态，正好连续敲英文。(optional)
+    * 〖敲英文〗<Ctrl-\\> 切换(paste)状态，正好连续敲英文。(optional)
     * 〖状态显示〗 noruler
 
 |
@@ -1844,10 +1831,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 |   (4) 敲【空格键】或【数字键】上字，one by one
 |   (5) 结果: “我有一个梦”五个汉字上屏。
 |
-|
 
-|
-|
 
 .. sidebar::  `智能模糊匹配`_ 　(VimIM *fuzzy search*)
 
@@ -2077,7 +2061,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
   +-------------------+-------------------+---------------------+
   |   Vim 按键        |     VimIM  快键   |         功能        |
   +===================+===================+=====================+
-  |  CTRL-X　CTRL-U   | CTRL-\\ 或 <Tab>  | 猜测寻找第一个匹配  |
+  |  CTRL-X　CTRL-U   | CTRL-6 或 <Tab>   | 猜测寻找第一个匹配  |
   +-------------------+-------------------+---------------------+
   | 　　　PageUp  　  | 　　　　 **u** 　 | 向上翻页            |
   +-------------------+-------------------+---------------------+
@@ -2161,22 +2145,17 @@ e　亿  j　斤  o　度  t　吨  z　兆
 |
 
 - 【条件】『Vim 可视模式』
-- 【限于】UTF-8 encoding （vim和词库）
-- 【特点】先确认，后存盘。一次可存一行或数行。
-- 【操作】 ㈠ 纵向高亮选择新词　㈡ 敲缺省键
-- 【缺省开启】:let g:vimim_save_new_entry=1
-- 【缺省键】 **v_CTRL-\\** 　 `VimIM Mapping`_
+- 【限于】UTF-8 encoding
+- 【特点】先确认，后存盘。一次可存一行。
+- 【操作】 ㈠ 高亮选择空白　㈡ 敲 <Ctrl-6>
 
 以“全拼”词库为例：如果想同时添加“山寨”和“好美满”二词:
 
    +-------+--------------------+-----------+--------------------+
-   | 存盘  |   纵向高亮选择     | 敲缺省键  |         结果       |
+   | 存盘  |   高亮选择空白     | 敲缺省键  |         结果       |
    +=======+====================+===========+====================+
-   | 行㈠  |  shanzhai　山寨    | v_CTRL-\\ | 内存更新　词库扩展 |
-   +-------+--------------------+           |                    |
-   | 行㈡  |  haomeiman　好美满 |           |                    |
+   | 一行  |  shanzhai　山寨    | v_CTRL-^  | 内存更新　词库扩展 |
    +-------+--------------------+-----------+--------------------+
-
 
 |
 
@@ -2283,7 +2262,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 |   ㈡【静态模式】就是输入完后按空格出选择项目。
 |
 
-  + 【共同特点】 『在Vim插入模式下：CTRL-6 切入』
+  + 【共同特点】 『在Vim插入模式下：CTRL-\\ 切入』
 
      - 【经典】空格键上汉字，回车键上英文。
      - <Esc> 键：自动切换，与 vim 风格一致
@@ -2292,7 +2271,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
      - 用数字键确认汉字或导航
      - 快捷英文输入：敲【缺省键】动态切换中英文输入模式。
      - 中文标点自动开启
-     - 中英文标点动态切换 （切换键 **CTRL-\\** ）
+     - 中英文标点动态切换 （切换键 **CTRL-6** ）
      - 【缺省键】 **CTRL-6** 　 `VimIM Mapping`_
 
   + ㈠【静态模式】
@@ -2369,7 +2348,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 |
 
   + 回车键确认英文或者数字，随后可以直接上中文。
-  + (Vim Insert Mode)敲两次CTRL-6后可直接敲中文。
+  + (Vim Insert Mode)敲两次CTRL-\\后可直接敲中文。
 
 
 |
@@ -2428,7 +2407,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
   - 【半角选项】在英文后面输入半角标点：:let g:vimim_english_punctuation=1
   - 【中英标点动态切换】
 
-    -  **CTRL-\\** 　 `VimIM Mapping`_
+    -  **CTRL-6** 　 `VimIM Mapping`_
     -  **CTRL-6** 　动态切换中英文输入模式，包括标点。
 
 - 中文标点英文标点对照表
@@ -2792,7 +2771,7 @@ WHAT IS NEW
 #. [done] support "Double Pinyin Input Method" and upload sample datafile
 #. [done] make "static mode" as default: Space=>Chinese Enter=>English
 #. [done] [static/dynamic mode] uses CTRL-6 to be consistent with Vim
-#. [done] [OneKey] uses CTRL-\\ or even Tab key instead if configured
+#. [done] [OneKey] uses CTRL-6 or even Tab key instead if configured
 #. [done] [WuBi] support non-stop Chinese input for WuBi input method
 #. [done] [Erbi] start to support ErBi input method which using 31 keys
 #. [done] [UI] remove menu extra label text (default)
@@ -2806,7 +2785,7 @@ WHAT IS NEW
 #. [done] New Feature: dynamically save datafile entry   (default off)
 #. [done] New Feature: support "search" using Vim search key (default on)
 #. [done] finalize popup menu navigation using vi key (hjkl) (default on)
-#. [done] build a table to illustrate mapping ctrl-6 & CTRL-\\
+#. [done] build a table to illustrate mapping ctrl-6 & CTRL-6
 #. [done] use complete_add(m) and complete_check() to avoid waiting
 #. [done] support direct Unicode input using digit or hex from menu
 #. [done] A trick to hide all global variables in plugin
@@ -2969,7 +2948,7 @@ WHAT IS NEW
 #. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
 #. [done] [onekey] create official OneKey Chinese input mode
 #. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
-#. [done] [onekey] g:vimim_ctrl_6_as_onekey & g:xingma_sleep_with_pinyin
+#. [done] [onekey] g:vimim_sexy_onekey & g:xingma_sleep_with_pinyin
 #. [done] [mycloud] g:vimim_cloud_plugin='C:/home/vimim/mycloud/mycloud'
 #. [done] [recycle] save typing by reusing input memory: g:vimim_smart_ctrl_n
 #. [done] [recycle] save typing by reusing all inputs: g:vimim_smart_ctrl_p
@@ -3002,7 +2981,6 @@ WHAT IS NEW
 #. [todo] improve performance on dynamic mode by using temp cache
 #. [todo] is it possible to fix omni popup location?
 #. [redo] [enter] OneKey a. a.. a... a.... whole match?
-#. [redo] [ctrl-bslash] to toggle chinese mode :let g:vimim_ctrl_6_as_onekey=1
 #. [done] [filter] use first word?  if s:menu_4corner_filter > 0
 #. [done] [privacy] remove relating codes. merge privates to main datafile.
 #. [redo] [OneKey Mode] <Enter> triple play: seamless, enter, space
@@ -3010,6 +2988,6 @@ WHAT IS NEW
 #. [done] [onekey] sexy onekey, double enter => space
 #. [redo] [backspace] make backspace smarter and simpler
 #. [done] [backspace] too smart is not smart
-
+#. [done] [default] ctrl-6 as OneKey and ctrl-Bslash as toggle
 
 
