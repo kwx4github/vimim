@@ -2435,6 +2435,10 @@ e　亿  j　斤  o　度  t　吨  z　兆
 - `〖点石成金〗`_
 
   - 〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。
+
+    + 【开启可设】:let g:vimim_chinese_punctuation=2
+    + 【自动开启】如果 g:vimim_sexy_onekey > 0
+
   - magic dot for forced non-cloud
 
     + dot as tail: for 〖想云就云〗不换模式，不限输入法
@@ -2988,5 +2992,6 @@ WHAT IS NEW
 #. [redo] [backspace] make backspace smarter and simpler
 #. [done] [backspace] too smart is not smart
 #. [done] [default] ctrl-6 as OneKey and ctrl-Bslash as toggle
-#. [todo] [egg] always no cloud for eggs!!!
+#. [done] [smart quote] port smart_single/double_quote to OneKey mode
+#. [done] [onekey] default off for onekey punctuation transformation
 
