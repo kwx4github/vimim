@@ -763,9 +763,9 @@ __ http://pim-cloud.appspot.com/
      * 【条件】只需要联网和wget/curl
      * 【限于】 `〖点石成金〗`_
      * 【操作】在输入后加多一个英文逗号，接着敲〖点石键〗
-     * 【例】ajiao, => 阿娇
-     * 【例】dbrcxby, => 东边日出西边雨
-     * 【例】hfpjlswsqy, => 好风凭借力送我上青云
+     * 【例】ajiao' => 阿娇
+     * 【例】dbrcxby' => 东边日出西边雨
+     * 【例】hfpjlswsqy' => 好风凭借力送我上青云
 
  (8) 推出〖想云就云〗，超级简拼，自动断字
 
@@ -1514,7 +1514,7 @@ Vim插入模式
   + vim 插入模式：
 
     - 【云输入】最方便的 `CLOUD 云输入`_
-    - 〖想云就云〗不换模式，不限输入法:  using comma
+    - 〖想云就云〗不换模式，不限输入法:  加单引号
     - 【整句输入】敲中文如同敲英文
     - 【中文标点】可点击英文标点直接转换。
     - 【匹配提醒】缺省匹配，以及总匹配数
@@ -2436,9 +2436,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
   - 〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。
 
-    + 【开启可设】:let g:vimim_chinese_punctuation=2
-    + 【自动开启】如果 g:vimim_sexy_onekey > 0
-
   - magic dot for forced non-cloud
 
     + dot as tail: for 〖想云就云〗不换模式，不限输入法
@@ -2446,10 +2443,12 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
   - magic comma
 
-    + comma as tail: for 〖想云就云〗不换模式，不限输入法
     + comma as head: for universal imode: single comma 小写中文数字
     + comma as head: for universal imode: double comma 大写中文数字
-    + comma as head: triple comma for clear display
+
+  - magic apostrophe
+
+    + as tail: for 〖想云就云〗不换模式，不限输入法
 
 
 |
@@ -2895,7 +2894,6 @@ WHAT IS NEW
 #. [done] add new hjkl menu key: =p= for copy & paste popupmenu list
 #. [done] add pictures of 5 shuangpin cloud input to show evidence
 #. [done] [cloud] cloud. => always non-cloud if ending with one dot
-#. [redo] [cloud] support CLOUD for all using comma before OneKey
 #. [done] issue 15: set/reset lazyredrew for OneKey
 #. [done] issue 19: add s:shuangpin_keyboard to correct calculation
 #. [done] issue 18: vimim_tab_as_onekey: use <C-6> for <Tab>
@@ -2975,7 +2973,6 @@ WHAT IS NEW
 #. [todo] design a way to use cedict.txt as English input
 #. [todo] support "associate" function if it is helpful
 #. [todo] [test] make sure no regression, following each item on manual
-#. [todo] check if it is possible to load datafile from "gvim --remote"
 #. [done] [zi] (1) add 3000 zi sorted by frequency (2) filter zi+number
 #. [done] [sort] add r(reverse) sort for omni popup menu
 #. [done] No PageUp after first Page; No PageDown after last page
@@ -2994,4 +2991,9 @@ WHAT IS NEW
 #. [done] [default] ctrl-6 as OneKey and ctrl-Bslash as toggle
 #. [done] [smart quote] port smart_single/double_quote to OneKey mode
 #. [done] [onekey] default off for onekey punctuation transformation
+#. [todo] check if it is possible to load datafile from "gvim --remote"
+#. [todo] [3000] create o/i/v meaning personal entries
+#. [done] show-me-not-pattern when ciku has ii/oo/vv, for pretty print
+#. [redo] [cloud] support CLOUD for all using aphostrophe before OneKey
+
 
