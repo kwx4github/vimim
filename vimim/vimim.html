@@ -1378,9 +1378,9 @@ VimIM 不错, 一直在用 :) -->
 <li>【条件】只需要联网和wget/curl</li>
 <li>【限于】 <a class="reference internal" href="#id80">〖点石成金〗</a></li>
 <li>【操作】在输入后加多一个英文逗号，接着敲〖点石键〗</li>
-<li>【例】ajiao, =&gt; 阿娇</li>
-<li>【例】dbrcxby, =&gt; 东边日出西边雨</li>
-<li>【例】hfpjlswsqy, =&gt; 好风凭借力送我上青云</li>
+<li>【例】ajiao' =&gt; 阿娇</li>
+<li>【例】dbrcxby' =&gt; 东边日出西边雨</li>
+<li>【例】hfpjlswsqy' =&gt; 好风凭借力送我上青云</li>
 </ul>
 </li>
 <li><p class="first">推出〖想云就云〗，超级简拼，自动断字</p>
@@ -2585,7 +2585,7 @@ If the following download URL does not work for you, please
 <ul class="simple">
 <li>vim 插入模式：<ul>
 <li>【云输入】最方便的 <a class="reference internal" href="#cloud">CLOUD 云输入</a></li>
-<li>〖想云就云〗不换模式，不限输入法:  using comma</li>
+<li>〖想云就云〗不换模式，不限输入法:  加单引号</li>
 <li>【整句输入】敲中文如同敲英文</li>
 <li>【中文标点】可点击英文标点直接转换。</li>
 <li>【匹配提醒】缺省匹配，以及总匹配数</li>
@@ -4095,21 +4095,19 @@ If the following download URL does not work for you, please
 </li>
 <li><p class="first"><a class="reference internal" href="#id80">〖点石成金〗</a></p>
 <ul class="simple">
-<li>〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。<ul>
-<li>【开启可设】:let g:vimim_chinese_punctuation=2</li>
-<li>【自动开启】如果 g:vimim_sexy_onekey &gt; 0</li>
-</ul>
-</li>
+<li>〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。</li>
 <li>magic dot for forced non-cloud<ul>
 <li>dot as tail: for 〖想云就云〗不换模式，不限输入法</li>
 <li>dot as delimiter: 逐词匹配㈠句号分隔，自己定匹配：</li>
 </ul>
 </li>
 <li>magic comma<ul>
-<li>comma as tail: for 〖想云就云〗不换模式，不限输入法</li>
 <li>comma as head: for universal imode: single comma 小写中文数字</li>
 <li>comma as head: for universal imode: double comma 大写中文数字</li>
-<li>comma as head: triple comma for clear display</li>
+</ul>
+</li>
+<li>magic apostrophe<ul>
+<li>as tail: for 〖想云就云〗不换模式，不限输入法</li>
 </ul>
 </li>
 </ul>
@@ -4645,7 +4643,6 @@ set langmenu=zh_CN.UTF-8
 <li>[done] add new hjkl menu key: =p= for copy &amp; paste popupmenu list</li>
 <li>[done] add pictures of 5 shuangpin cloud input to show evidence</li>
 <li>[done] [cloud] cloud. =&gt; always non-cloud if ending with one dot</li>
-<li>[redo] [cloud] support CLOUD for all using comma before OneKey</li>
 <li>[done] issue 15: set/reset lazyredrew for OneKey</li>
 <li>[done] issue 19: add s:shuangpin_keyboard to correct calculation</li>
 <li>[done] issue 18: vimim_tab_as_onekey: use &lt;C-6&gt; for &lt;Tab&gt;</li>
@@ -4725,7 +4722,6 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] design a way to use cedict.txt as English input</li>
 <li>[todo] support &quot;associate&quot; function if it is helpful</li>
 <li>[todo] [test] make sure no regression, following each item on manual</li>
-<li>[todo] check if it is possible to load datafile from &quot;gvim --remote&quot;</li>
 <li>[done] [zi] (1) add 3000 zi sorted by frequency (2) filter zi+number</li>
 <li>[done] [sort] add r(reverse) sort for omni popup menu</li>
 <li>[done] No PageUp after first Page; No PageDown after last page</li>
@@ -4744,12 +4740,16 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [default] ctrl-6 as OneKey and ctrl-Bslash as toggle</li>
 <li>[done] [smart quote] port smart_single/double_quote to OneKey mode</li>
 <li>[done] [onekey] default off for onekey punctuation transformation</li>
+<li>[todo] check if it is possible to load datafile from &quot;gvim --remote&quot;</li>
+<li>[todo] [3000] create o/i/v meaning personal entries</li>
+<li>[done] show-me-not-pattern when ciku has ii/oo/vv, for pretty print</li>
+<li>[redo] [cloud] support CLOUD for all using aphostrophe before OneKey</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 09:16:05 PST on Wednesday, 01/13/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 18:25:19 PST on Wednesday, 01/13/2010
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
