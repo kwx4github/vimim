@@ -143,6 +143,8 @@ def shuangpin_transform(item, sptable):
     itmmap = {}         # map the word count to intemediate inputs
     pinyinlist = []     # word count list of shuangpin inputs
     word_count = 0
+    alias1 = sptable["__alias1__"]
+    alias2 = sptable["__alias2__"]
     while index < lenitem:
         if item[index].islower():
             if item[index] in sptable["__uimode__"]:
@@ -168,6 +170,10 @@ def shuangpin_transform(item, sptable):
                 ptrmap[len(pinyinstr)] = index
                 pinyinlist.append((sp1, len(pinyinstr)))
                 pinyinstr += sptable[sp1]+"'"
+            elif alias1.has_key(sp1):
+                ptrmap[len(pinyinstr)] = index
+                pinyinlist.append((alias2[sp1], len(pinyinstr)))
+                pinyinstr += alias1[sp1]+"'"
             else:
                 # invalid shuangpin code
                 ptrmap[len(pinyinstr)] = index

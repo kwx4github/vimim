@@ -18,5 +18,8 @@ if __name__ == "__main__":
             for k,h,v in ret:
                 padding = (maxlen - len(k))/3*2
                 count += 1
-                print "%2d"%count,k," "*padding,"%s_%s" % (keyb[0:v],h.replace(" ", "_"))
+                if v == -1:
+                    print "%2d"%count,"%s %s"%(k,h)
+                else:
+                    print "%2d"%count,"%s%s %s"%(k,keyb[v:],h)
 

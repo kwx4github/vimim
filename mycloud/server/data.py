@@ -202,9 +202,16 @@ def create_shuangpin_table(rules):
                 sptable[sp1] = key
     # the jxqy+v special case handling
     if g_mode == "abc" or g_mode == "purple":
-        sptable.update({"jv":"ju", "qv":"qu", "xv":"xu", "yv":"yu"})
+        sptable["__alias1__"] = {"jv":"ju", "qv":"qu", "xv":"xu", "yv":"yu"}
+        sptable["__alias2__"] = {"jv":"ju", "qv":"qu", "xv":"xu", "yv":"yu"}
+        #sptable.update({"jv":"ju", "qv":"qu", "xv":"xu", "yv":"yu"})
     elif g_mode == "ms":
-        sptable.update({"jv":"jue", "qv":"que", "xv":"xue", "yv":"yue"})
+        sptable["__alias1__"] = {"jv":"jue", "qv":"que", "xv":"xue", "yv":"yue"}
+        sptable["__alias2__"] = {"jv":"jt", "qv":"qt", "xv":"xt", "yv":"yt"}
+        #sptable.update({"jv":"jue", "qv":"que", "xv":"xue", "yv":"yue"})
+    else:
+        sptable["__alias1__"] = {}
+        sptable["__alias2__"] = {}
     # the u i mode setting
     if g_mode == "abc":
         sptable["__uimode__"] = "ui"
