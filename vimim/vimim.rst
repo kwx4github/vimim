@@ -2742,7 +2742,7 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/4dc68560ae37e4d0
 |
 |
 
-changes in 2010
+Changes in 2010
 ===============
 【安民告示】 新的缺省键终生不变
 
@@ -2778,6 +2778,13 @@ changes in 2010
   * 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping
   *           GVim 玩家可以用 CTRL-SPACE 切换中文模式
   *           :let g:vimim_ctrl_space_to_toggle=1 
+
+(6) [new] better OneKey sexy mode
+
+  * 设置： :let g:vimim_sexy_onekey=1或2
+  * 无模式之模式
+
+(6) remove support for private datafile
 
 
 |
@@ -3015,6 +3022,7 @@ WHAT IS NEW
 #. [todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0
 #. [todo] improve performance on dynamic mode by using temp cache
 #. [todo] is it possible to fix omni popup location?
+#. [todo] [internal code] direct input based on internal rule?
 #. [redo] [enter] OneKey a. a.. a... a.... whole match?
 #. [done] [filter] use first word?  if s:menu_4corner_filter > 0
 #. [done] [privacy] remove relating codes. merge privates to main datafile.
@@ -3025,13 +3033,11 @@ WHAT IS NEW
 #. [done] [backspace] too smart is not smart
 #. [done] [default] ctrl-6 as OneKey and ctrl-Bslash as toggle
 #. [done] [smart quote] port smart_single/double_quote to OneKey mode
-#. [done] [onekey] default off for onekey punctuation transformation
 #. [todo] check if it is possible to load datafile from "gvim --remote"
-#. [todo] [3000] create o/i/v meaning personal entries
 #. [done] show-me-not-pattern when ciku has ii/oo/vv, for pretty print
 #. [redo] [cloud] support CLOUD for all using aphostrophe before OneKey
-#. [redo] [cloud] .' => forced-non-cloud
-#. [todo] [internal code] direct input based on internal rule?
-#. [todo] [internal code] /home/xma/ma/gb/utf8/gb2312
+#. [todo] [3000] create o/i/v meaning personal entries
 #. [todo] [digit] 0000<space><space> stuck in OneKey mode
+
+
 
