@@ -2746,6 +2746,9 @@ Changes in 2010
 ===============
 【安民告示】 新的缺省键终生不变
 
+vimimhelp =>
+  试用版本  http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim
+
 (1) VimIM mapping
 
   (A) 按 <Ctrl-6>  在非中文模式直接出选择。　　　　　　=> 点石成金
@@ -3038,6 +3041,5 @@ WHAT IS NEW
 #. [redo] [cloud] support CLOUD for all using aphostrophe before OneKey
 #. [todo] [3000] create o/i/v meaning personal entries
 #. [todo] [digit] 0000<space><space> stuck in OneKey mode
-
 
 
