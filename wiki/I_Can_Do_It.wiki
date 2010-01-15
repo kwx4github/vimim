@@ -1,7 +1,7 @@
-﻿#summary  天下兴亡匹夫有责
+﻿#summary 天下兴亡匹夫有责
 http://code.google.com/p/vimim/wiki/I_Can_Do_It
 {{{
-txxwpfyz, =>
+txxwpfyz' =>
 天下兴亡匹夫有责
 　
 >> 在 linux 中小试牛刀，实现了 libcall 方式调用 mycloud
@@ -29,12 +29,12 @@ neihangkanmendaowaihkrn =>
 光宗耀祖，出人头地，才能让人心服口服，仰慕我天朝之神威。 
 　
 而文化领域的兴旺发达，靠的绝对不是敲锣打鼓，摇旗呐喊。
-文化领域的繁荣昌盛，靠的是：sfqryrwxws,
+文化领域的繁荣昌盛，靠的是：sfqryrwxws'
 　
 什么是 sfqryrwxws?
 　
 使用VimIM超级简拼，〖想云就云〗，不换模式，不限输入法
-    sfqryrwxws, =>
+    sfqryrwxws' =>
     随风潜入夜润物细无声
 　
 >> windows gvim 版本只使用libcall接口
