@@ -467,7 +467,7 @@ def getkeychars():
     if g_mode == "quanpin":
         return "[a-z0-9']"
     elif g_mode == "abc":
-        return "[a-z0-9]"
+        return '[a-z0-9"]'
     elif g_mode == "ms":
         return "[a-z0-9;]"
     elif g_mode == "plusplus":

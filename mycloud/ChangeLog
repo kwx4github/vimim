@@ -1,4 +1,10 @@
 
+2010-1-15 Pan, Shi Zhu  <pan.shizhu@gmail.com>
+	* libmycloud.so: Linux i686 version of mycloud plugin
+
+2010-1-14 Pan, Shi Zhu  <pan.shizhu@gmail.com>
+	* libmycloud.dll: Windows Native version of mycloud plugin
+
 2010-1-12 Pan, Shi Zhu  <pan.shizhu@gmail.com>
 	* mysocket.py: 解决一些异常退出的情况
 	* data.py: 调整标点符号映射表数据
