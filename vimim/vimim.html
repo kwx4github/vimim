@@ -881,13 +881,14 @@ VimIM 不错, 一直在用 :) -->
 <li>【TIP】 UNICODE 内码一次性列表　　:call CJK()</li>
 </ul>
 <div class="line-block">
-<div class="line">【演示】Unicode 内码一键输入</div>
-<div class="line">　　　【例】　十进制：敲　 <strong>39340</strong> 　→　馬</div>
-<div class="line">　　　【例】十六进制：敲　 <strong>u99ac</strong> 　→　馬</div>
+<div class="line">【演示】Unicode 内码一键输入：</div>
+<div class="line">　　　【例】　十进制：敲　 <strong>22221</strong> 　→　囍</div>
+<div class="line">　　　【例】十六进制：敲　 <strong>u56cd</strong> 　→　囍</div>
 <div class="line"><br /></div>
-<div class="line">【示意图】标准统一码动态列表：</div>
-<div class="line">　　　【例】　十进制：敲　 <strong>3934u</strong> 　→　馬 in 菜单</div>
-<div class="line">　　　【例】十六进制：敲　  <strong>99au</strong> 　→　馬 in 菜单</div>
+<div class="line">【示意图】标准统一码动态列表（以零结尾）：</div>
+<div class="line"><br /></div>
+<div class="line">　　　【例】　十进制：敲　 <strong>22220</strong> 　→　囍 in 菜单</div>
+<div class="line">　　　【例】十六进制：敲　 <strong>u56c0</strong> 　→　囍 in 菜单</div>
 <div class="line"><br /></div>
 </div>
 <p><strong>万国码一次性列表①</strong> 　 <em>:call CJK()</em></p>
@@ -1037,8 +1038,8 @@ VimIM 不错, 一直在用 :) -->
 <div class="line">　　　【例】十六进制：敲　 <strong>uc2ed</strong> 　→　马　(GB)</div>
 <div class="line"><br /></div>
 <div class="line">【示意图】GBK 标准内码动态列表：</div>
-<div class="line">　　　【例】　十进制：敲　 <strong>4990u</strong> 　→　马 in 菜单</div>
-<div class="line">　　　【例】十六进制：敲　  <strong>c2eu</strong> 　→　马 in 菜单</div>
+<div class="line">　　　【例】　十进制：敲　 <strong>49900</strong> 　→　马 in 菜单</div>
+<div class="line">　　　【例】十六进制：敲　 <strong>uc2e0</strong> 　→　马 in 菜单</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1071,8 +1072,8 @@ VimIM 不错, 一直在用 :) -->
 <div class="line">　　　【例】十六进制：敲　 <strong>ub0a8</strong> 　→　馬　(Big5)</div>
 <div class="line"><br /></div>
 <div class="line">【示意图】Big5 标准内码动态列表：</div>
-<div class="line">　　　【例】　十进制：敲　 <strong>4522u</strong> 　→　馬 in 菜单</div>
-<div class="line">　　　【例】十六进制：敲　  <strong>b0au</strong> 　→　馬 in 菜单</div>
+<div class="line">　　　【例】　十进制：敲　 <strong>45220</strong> 　→　馬 in 菜单</div>
+<div class="line">　　　【例】十六进制：敲　 <strong>ub0a0</strong> 　→　馬 in 菜单</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -4802,7 +4803,6 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0</li>
 <li>[todo] improve performance on dynamic mode by using temp cache</li>
 <li>[todo] is it possible to fix omni popup location?</li>
-<li>[todo] [internal code] direct input based on internal rule?</li>
 <li>[redo] [enter] OneKey a. a.. a... a.... whole match?</li>
 <li>[done] [filter] use first word?  if s:menu_4corner_filter &gt; 0</li>
 <li>[done] [privacy] remove relating codes. merge privates to main datafile.</li>
@@ -4816,14 +4816,16 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] check if it is possible to load datafile from &quot;gvim --remote&quot;</li>
 <li>[done] show-me-not-pattern when ciku has ii/oo/vv, for pretty print</li>
 <li>[redo] [cloud] support CLOUD for all using aphostrophe before OneKey</li>
+<li>[done] [digit] 0000&lt;space&gt;&lt;space&gt; stuck in OneKey mode</li>
 <li>[todo] [3000] create o/i/v meaning personal entries</li>
-<li>[todo] [digit] 0000&lt;space&gt;&lt;space&gt; stuck in OneKey mode</li>
+<li>[done] [internal code] better algorithm with simpler rule: u808f/22221?</li>
+<li>[todo] [internal code] direct input based on internal rule?</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 00:54:31 PST on Friday, 01/15/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 12:03:41 PST on Friday, 01/15/2010
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
