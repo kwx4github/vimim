@@ -1,0 +1,27 @@
+===============================
+This is file is utf-8 encoding!
+===============================
+
+About mycloud:
+
+    mycloud 的相关说明参见 http://pim-cloud.appspot.com/
+
+About client:
+
+    libmycloud.dll 为 Windows 使用
+
+    libmycloud.so 为 32 位 Linux 使用
+
+    mycloud 为 python 版本，任何支持 python 的平台可使用。
+
+    三者选一即可，不需全部使用。
+
+About client-src:
+
+    如果需要其它平台的 libmycloud，可使用源代码自行编译。
+
+About server:
+
+    你可以在任何支持 python 平台上启用 server，并使用你所知道的任何优化技术（例如 pysco JIT）优化 server 的性能。
+    server 与 client 可以不在一台主机上，这降低了 client 对性能的要求。
+
