@@ -392,6 +392,9 @@ def load_alpha_pyzk3():
 def load_alpha_pyzk4():
     return load_alpha_zk(dirname+g_mode+"4.txt")
 
+def load_alpha_userzk():
+    return load_alpha_zk(dirname+"user.txt")
+
 def get_punctmap():
     if g_mode == "quanpin":
         return punctmap_qp

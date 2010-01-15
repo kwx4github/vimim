@@ -285,6 +285,21 @@ def local_parse_quanpin(kbmap, debug):
         zk3 = data.get(data.load_alpha_pyzk3)
     if wc >= 4:
         zk4 = data.get(data.load_alpha_pyzk4)
+    try:
+        userzk = data.get(data.load_alpha_userzk)
+
+        # 按原始输入来检查用户词库，支持不带断字符的原始码用户词库
+        key, index = getquanpin(pyl, wc)
+        if userzk.has_key(key):
+            for item in userzk[key].split(" "):
+                ret.append((item, index))
+        # 按拼音解析后字符串来检查用户词库，支持带全部断字符的全拼用户词库
+        key = pys
+        if userzk.has_key(key):
+            for item in userzk[key].split(" "):
+                ret.append((item, index))
+    except Exception:
+        pass
 
     # 分别解析多字词、双字词和单字。
     if wc >= 4:
@@ -325,6 +340,15 @@ def local_parse_shuangpin(kbmap, debug):
         zk3 = data.get(data.load_alpha_pyzk3)
     if wc == 4 or wc > 5:
         zk4 = data.get(data.load_alpha_pyzk4)
+    try:
+        userzk = data.get(data.load_alpha_userzk)
+        # 按原始输入来检查用户词库，支持不带断字符的双拼原始码用户词库
+        key, index = getquanpin(pyl, wc)
+        if userzk.has_key(key):
+            for item in userzk[key].split(" "):
+                ret.append((item, index))
+    except Exception:
+        pass
 
     # 分别解析多字词、双字词和单字。
     if wc == 4 or wc > 5:
@@ -387,7 +411,7 @@ def parse_glyph(map):
     else:
         # mzk is a dict and we have exhausted the loop, do traverse the tree
         retlist = traverse_tree(mzk)
-        if len(ret) >= data.g_maxoutput:
+        if len(retlist) >= data.g_maxoutput:
             retlist = retlist[0:data.g_maxoutput]
         retlist.sort()
         for item in retlist:
