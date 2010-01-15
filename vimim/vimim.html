@@ -852,9 +852,10 @@ VimIM 不错, 一直在用 :) -->
 </tr>
 </tbody>
 </table>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+<ul class="simple">
+<li>以u为十六进制内码输入的前导字符</li>
+<li>以零结尾为动态列表（十进制或十六进制）</li>
+</ul>
 <div class="sidebar">
 <p class="first sidebar-title"><a class="reference internal" href="#unicode">Unicode 内码输入</a></p>
 <div class="figure">
@@ -1037,7 +1038,7 @@ VimIM 不错, 一直在用 :) -->
 <div class="line">　　　【例】　十进制：敲　 <strong>49901</strong> 　→　马　(GB)</div>
 <div class="line">　　　【例】十六进制：敲　 <strong>uc2ed</strong> 　→　马　(GB)</div>
 <div class="line"><br /></div>
-<div class="line">【示意图】GBK 标准内码动态列表：</div>
+<div class="line">【示意图】GBK 标准内码动态列表（以零结尾）：</div>
 <div class="line">　　　【例】　十进制：敲　 <strong>49900</strong> 　→　马 in 菜单</div>
 <div class="line">　　　【例】十六进制：敲　 <strong>uc2e0</strong> 　→　马 in 菜单</div>
 <div class="line"><br /></div>
@@ -1071,7 +1072,7 @@ VimIM 不错, 一直在用 :) -->
 <div class="line">　　　【例】　十进制：敲　 <strong>45224</strong> 　→　馬　(Big5)</div>
 <div class="line">　　　【例】十六进制：敲　 <strong>ub0a8</strong> 　→　馬　(Big5)</div>
 <div class="line"><br /></div>
-<div class="line">【示意图】Big5 标准内码动态列表：</div>
+<div class="line">【示意图】Big5 标准内码动态列表（以零结尾）：</div>
 <div class="line">　　　【例】　十进制：敲　 <strong>45220</strong> 　→　馬 in 菜单</div>
 <div class="line">　　　【例】十六进制：敲　 <strong>ub0a0</strong> 　→　馬 in 菜单</div>
 <div class="line"><br /></div>
@@ -4562,7 +4563,31 @@ set langmenu=zh_CN.UTF-8
 <li>无模式之模式</li>
 </ul>
 </blockquote>
-<ol class="arabic simple" start="6">
+<ol class="arabic simple" start="7">
+<li>[new] 内码输入；</li>
+</ol>
+<blockquote>
+<ul class="simple">
+<li>以u为十六进制内码输入的前导字符</li>
+<li>以零结尾为动态列表（十进制或十六进制）</li>
+</ul>
+<div class="line-block">
+<div class="line">* Unicode 内码输入</div>
+<div class="line">* GBK 内码输入</div>
+<div class="line">* Big5 内码输入</div>
+<div class="line"><br /></div>
+<div class="line">【演示】Unicode 内码一键输入：</div>
+<div class="line">　　　【例】　十进制：敲　 <strong>22221</strong> 　→　囍</div>
+<div class="line">　　　【例】十六进制：敲　 <strong>u56cd</strong> 　→　囍</div>
+<div class="line"><br /></div>
+<div class="line">【示意图】标准统一码动态列表（以零结尾）：</div>
+<div class="line"><br /></div>
+<div class="line">　　　【例】　十进制：敲　 <strong>22220</strong> 　→　囍 in 菜单</div>
+<div class="line">　　　【例】十六进制：敲　 <strong>u56c0</strong> 　→　囍 in 菜单</div>
+<div class="line"><br /></div>
+</div>
+</blockquote>
+<ol class="arabic simple" start="8">
 <li>remove support for private datafile</li>
 </ol>
 <div class="line-block">
@@ -4825,7 +4850,7 @@ set langmenu=zh_CN.UTF-8
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 12:03:41 PST on Friday, 01/15/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 12:13:15 PST on Friday, 01/15/2010
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
