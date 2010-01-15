@@ -447,7 +447,8 @@ VimIM 是一个专门为 vim 玩家开发的嵌入式输入法，只要你的 vi
 </li>
 <li><a class="reference internal" href="#vim" id="id173">［科普］如何让Vim支持中文？</a></li>
 <li><a class="reference internal" href="#id119" id="id174">参考文献</a></li>
-<li><a class="reference internal" href="#what-is-new" id="id175">WHAT IS NEW</a></li>
+<li><a class="reference internal" href="#changes-in-2010" id="id175">changes in 2010</a></li>
+<li><a class="reference internal" href="#what-is-new" id="id176">WHAT IS NEW</a></li>
 </ul>
 </div>
 </div>
@@ -4488,10 +4489,71 @@ set langmenu=zh_CN.UTF-8
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="changes-in-2010">
+<h1><a class="toc-backref" href="#id175">changes in 2010</a></h1>
+<p>【安民告示】 新的缺省键终生不变</p>
+<ol class="arabic simple">
+<li>VimIM mapping</li>
+</ol>
+<blockquote>
+<ol class="upperalpha simple">
+<li>按 &lt;Ctrl-6&gt;  在非中文模式直接出选择。　　　　　　=&gt; 点石成金</li>
+<li>按 &lt;Ctrl-\&gt; 进入中文输入模式，此后按空格出选择。=&gt; 中文输入模式</li>
+</ol>
+</blockquote>
+<ol class="arabic simple" start="2">
+<li>〖想云就云〗，不换模式，不限输入法</li>
+</ol>
+<blockquote>
+<ul class="simple">
+<li>【条件】只需要联网和wget/curl/libmycloud.dll</li>
+<li>【限于】 <a class="reference internal" href="#id80">〖点石成金〗</a></li>
+<li>【操作】在输入后加多一个单引号，接着敲〖点石键〗</li>
+<li>【例】ajiao' =&gt; 阿娇</li>
+<li>【例】dbrcxby' =&gt; 东边日出西边雨</li>
+<li>【例】hfpjlswsqy' =&gt; 好风凭借力送我上青云</li>
+</ul>
+</blockquote>
+<ol class="arabic simple" start="3">
+<li>强制非云</li>
+</ol>
+<blockquote>
+<ul class="simple">
+<li>【特点】在输入后多英文句号和单引号，接着敲〖点石键〗</li>
+<li>【特点】不受g:vimim_cloud_sogou的设置所限制</li>
+<li>【例】cloud.'  =&gt; 云</li>
+</ul>
+</blockquote>
+<ol class="arabic simple" start="4">
+<li>universal imode</li>
+</ol>
+<blockquote>
+<ul class="simple">
+<li>' =&gt;   为输入小写中文数字的前导字符</li>
+<li>'' =&gt;   为输入大写中文数字的前导字符</li>
+<li>【例】 '2000 　=&gt;　二〇〇九</li>
+<li>【例】 ''2000　=&gt;　贰零零玖</li>
+</ul>
+</blockquote>
+<ol class="arabic simple" start="5">
+<li>new name</li>
+</ol>
+<blockquote>
+<ul class="simple">
+<li>【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping</li>
+<li>GVim 玩家可以用 CTRL-SPACE 切换中文模式</li>
+<li>:let g:vimim_ctrl_space_to_toggle=1</li>
+</ul>
+</blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="what-is-new">
-<h1><a class="toc-backref" href="#id175">WHAT IS NEW</a></h1>
+<h1><a class="toc-backref" href="#id176">WHAT IS NEW</a></h1>
 <ol class="arabic simple">
 <li>[wish] petition to add VimIM to the official Vim Help &quot;mbyte.txt&quot;</li>
 <li>[done] support dynamic menu to speed up in Chinese input mode</li>
@@ -4748,7 +4810,7 @@ set langmenu=zh_CN.UTF-8
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 23:23:32 PST on Thursday, 01/14/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 00:45:09 PST on Friday, 01/15/2010
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
