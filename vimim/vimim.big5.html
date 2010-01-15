@@ -305,6 +305,8 @@ this                     file:///C:/home/xma/svn/vimim/vimim.rst
            http://vimim.googlecode.com/svn/vimim/vimim.big5.html
                    file:///C:/home/xma/svn/vimim/vimim.big5.html
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                svn co https://vimim.googlecode.com/svn/mycloud/
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    http://vimim.googlecode.com/svn/vim/vimfiles/syntax/2html.vim
            file:///C:/home/xma/svn/vim/vimfiles/syntax/2html.vim
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1363,12 +1365,12 @@ VimIM 不錯, 一直在用 :) -->
 <li>設置為 <tt class="docutils literal">:let g:vimim_static_input_style=1</tt></li>
 </ul>
 </li>
-<li><p class="first">支持“想不雲就可以不雲”</p>
+<li><p class="first">支持強制非雲</p>
 <ul class="simple">
-<li>【特點】在輸入后加多一個英文句號，接著敲〖點石鍵〗</li>
+<li>【特點】在輸入后多英文句號和單引號，接著敲〖點石鍵〗</li>
 <li>【特點】不受g:vimim_cloud_sogou的設置所限制</li>
 <li>【限於】 <a class="reference internal" href="#id80">〖點石成金〗</a></li>
-<li>【例】cloud.  =&gt; 雲</li>
+<li>【例】cloud.'  =&gt; 雲</li>
 </ul>
 </li>
 <li><p class="first">推出〖想雲就雲〗，不換模式，不限輸入法</p>
@@ -1377,19 +1379,10 @@ VimIM 不錯, 一直在用 :) -->
 <li>【特點】不限於拼音輸入法！不需要設置！</li>
 <li>【條件】隻需要聯網和wget/curl</li>
 <li>【限於】 <a class="reference internal" href="#id80">〖點石成金〗</a></li>
-<li>【操作】在輸入后加多一個英文逗號，接著敲〖點石鍵〗</li>
+<li>【操作】在輸入后加多一個單引號，接著敲〖點石鍵〗</li>
 <li>【例】ajiao' =&gt; 阿嬌</li>
 <li>【例】dbrcxby' =&gt; 東邊日出西邊雨</li>
 <li>【例】hfpjlswsqy' =&gt; 好風憑借力送我上青雲</li>
-</ul>
-</li>
-<li><p class="first">推出〖想雲就雲〗，超級簡拼，自動斷字</p>
-<ul class="simple">
-<li>【特點】自動加斷字符號，增加整句輸入的確定性</li>
-<li>【定義】超級簡拼的規則為取各個音節的第一個字母輸入</li>
-<li>【操作】在輸入最后一個字母之前加多一個逗號</li>
-<li>【例】laystb,z ==&gt; l'a'y's't'b'z 兩岸猿聲啼不住</li>
-<li>【例】qzygwc,s ==&gt; q'z'y'g'w'c's 輕舟已過萬重山</li>
 </ul>
 </li>
 <li><p class="first">支持 <a class="reference external" href="http://pim-cloud.appspot.com/">〖自己的雲〗</a></p>
@@ -3139,17 +3132,17 @@ If the following download URL does not work for you, please
 <col width="76%" />
 </colgroup>
 <tbody valign="top">
-<tr><td><strong>,</strong></td>
+<tr><td><strong>'</strong></td>
 <td>為輸入小寫中文數字的前導字符</td>
 </tr>
-<tr><td><strong>,,</strong></td>
+<tr><td><strong>''</strong></td>
 <td>為輸入大寫中文數字的前導字符</td>
 </tr>
 </tbody>
 </table>
 <ul class="simple">
-<li>【缺省關閉】 let g:vimim_imode_comma=0</li>
-<li>We can use comma instead of i for all examples below:</li>
+<li>【開啟可設】 let g:vimim_imode_apostrophe=1</li>
+<li>We can use apostrophe instead of i for all examples below:</li>
 </ul>
 </blockquote>
 <div class="line-block">
@@ -4096,18 +4089,20 @@ If the following download URL does not work for you, please
 <li><p class="first"><a class="reference internal" href="#id80">〖點石成金〗</a></p>
 <ul class="simple">
 <li>〖英文標點智能〗用點石鍵點擊英文標點可以直接轉換為中文標點。</li>
-<li>magic dot for forced non-cloud<ul>
-<li>dot as tail: for 〖想雲就雲〗不換模式，不限輸入法</li>
-<li>dot as delimiter: 逐詞匹配㈠句號分隔，自己定匹配：</li>
-</ul>
-</li>
 <li>magic comma<ul>
 <li>comma as head: for universal imode: single comma 小寫中文數字</li>
 <li>comma as head: for universal imode: double comma 大寫中文數字</li>
 </ul>
 </li>
-<li>magic apostrophe<ul>
-<li>as tail: for 〖想雲就雲〗不換模式，不限輸入法</li>
+<li>magic dot<ul>
+<li>dot as delimiter: 逐詞匹配㈠句號分隔，自己定匹配：</li>
+</ul>
+</li>
+<li>magic 單引號<ul>
+<li>單引號在第一個，並且是唯一的字符 ==&gt; 標點符號轉換</li>
+<li>單引號前后都有英文字符 ==&gt;  作為斷字符</li>
+<li>單引號在末尾，並且前面有英文字符 ==&gt;  強制雲：〖想雲就雲〗</li>
+<li>單引號在末尾，並且前面有英文句號 ==&gt;  強制非雲</li>
 </ul>
 </li>
 </ul>
@@ -4744,12 +4739,16 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] [3000] create o/i/v meaning personal entries</li>
 <li>[done] show-me-not-pattern when ciku has ii/oo/vv, for pretty print</li>
 <li>[redo] [cloud] support CLOUD for all using aphostrophe before OneKey</li>
+<li>[redo] [cloud] .' =&gt; forced-non-cloud</li>
+<li>[todo] [internal code] direct input based on internal rule?</li>
+<li>[todo] [internal code] /home/xma/ma/gb/utf8/gb2312</li>
+<li>[todo] [digit] 0000&lt;space&gt;&lt;space&gt; stuck in OneKey mode</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 18:25:19 PST on Wednesday, 01/13/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 23:23:32 PST on Thursday, 01/14/2010
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
