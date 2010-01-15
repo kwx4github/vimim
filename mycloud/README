@@ -19,6 +19,7 @@ About client:
 About client-src:
 
     如果需要其它平台的 libmycloud，可使用源代码自行编译。
+    目前源代码正在整理中，完成之后将上传。
 
 About server:
 
