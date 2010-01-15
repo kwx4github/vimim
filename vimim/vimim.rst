@@ -2739,6 +2739,46 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/4dc68560ae37e4d0
 * http://linuxtoy.org/archives/vimim-09-released.html
 
 
+|
+|
+
+changes in 2010
+===============
+【安民告示】 新的缺省键终生不变
+
+(1) VimIM mapping
+
+  (A) 按 <Ctrl-6>  在非中文模式直接出选择。　　　　　　=> 点石成金
+  (B) 按 <Ctrl-\\> 进入中文输入模式，此后按空格出选择。=> 中文输入模式
+
+(2) 〖想云就云〗，不换模式，不限输入法
+
+   * 【条件】只需要联网和wget/curl/libmycloud.dll
+   * 【限于】 `〖点石成金〗`_
+   * 【操作】在输入后加多一个单引号，接着敲〖点石键〗
+   * 【例】ajiao' => 阿娇
+   * 【例】dbrcxby' => 东边日出西边雨
+   * 【例】hfpjlswsqy' => 好风凭借力送我上青云
+
+(3) 强制非云
+
+   * 【特点】在输入后多英文句号和单引号，接着敲〖点石键〗
+   * 【特点】不受g:vimim_cloud_sogou的设置所限制
+   * 【例】cloud.'  => 云
+
+(4) universal imode
+
+   *   ' =>   为输入小写中文数字的前导字符
+   *  '' =>   为输入大写中文数字的前导字符
+   *  【例】 '2000 　=>　二〇〇九
+   *  【例】 ''2000　=>　贰零零玖
+
+(5) new name
+
+  * 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping
+  *           GVim 玩家可以用 CTRL-SPACE 切换中文模式
+  *           :let g:vimim_ctrl_space_to_toggle=1 
+
 
 |
 
