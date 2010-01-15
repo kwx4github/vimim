@@ -1,10 +1,10 @@
-﻿#summary  军民团结如一人试看天下谁能敌
+﻿#summary 军民团结如一人试看天下谁能敌
 http://code.google.com/p/vimim/wiki/DigitalPinyin
 {{{
 标题是一句古老的口号，曾经振奋亿万人心，响彻长城内外。
 　
 标题的输入来自超级简拼，〖想云就云〗：
-jmtjryrsktxsnd, =>
+jmtjryrsktxsnd' =>
 jmtjryrsktxsnd 军民团结如一人试看天下谁能敌
 　
 特借这个标题，描述一下VimIM如何完善拼音输入法的准确定位。
