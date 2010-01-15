@@ -435,13 +435,14 @@ Unicode 内码输入
 + 【特点】一个字符对应一个代码，武林高手可以中文盲打。
 + 【TIP】 UNICODE 内码一次性列表　　:call CJK()
 
-| 【演示】Unicode 内码一键输入
-| 　　　【例】　十进制：敲　 **39340** 　→　馬
-| 　　　【例】十六进制：敲　 **u99ac** 　→　馬
+| 【演示】Unicode 内码一键输入：
+| 　　　【例】　十进制：敲　 **22221** 　→　囍
+| 　　　【例】十六进制：敲　 **u56cd** 　→　囍
 |
-| 【示意图】标准统一码动态列表：
-| 　　　【例】　十进制：敲　 **3934u** 　→　馬 in 菜单
-| 　　　【例】十六进制：敲　  **99au** 　→　馬 in 菜单
+| 【示意图】标准统一码动态列表（以零结尾）：
+|
+| 　　　【例】　十进制：敲　 **22220** 　→　囍 in 菜单
+| 　　　【例】十六进制：敲　 **u56c0** 　→　囍 in 菜单
 |
 
 **万国码一次性列表①** 　 *:call CJK()*
@@ -496,8 +497,8 @@ GBK 内码输入
 | 　　　【例】十六进制：敲　 **uc2ed** 　→　马　(GB)
 |
 | 【示意图】GBK 标准内码动态列表：
-| 　　　【例】　十进制：敲　 **4990u** 　→　马 in 菜单
-| 　　　【例】十六进制：敲　  **c2eu** 　→　马 in 菜单
+| 　　　【例】　十进制：敲　 **49900** 　→　马 in 菜单
+| 　　　【例】十六进制：敲　 **uc2e0** 　→　马 in 菜单
 |
 |
 
@@ -528,8 +529,8 @@ Big5 内码输入
 | 　　　【例】十六进制：敲　 **ub0a8** 　→　馬　(Big5)
 |
 | 【示意图】Big5 标准内码动态列表：
-| 　　　【例】　十进制：敲　 **4522u** 　→　馬 in 菜单
-| 　　　【例】十六进制：敲　  **b0au** 　→　馬 in 菜单
+| 　　　【例】　十进制：敲　 **45220** 　→　馬 in 菜单
+| 　　　【例】十六进制：敲　 **ub0a0** 　→　馬 in 菜单
 |
 |
 
@@ -3025,7 +3026,6 @@ WHAT IS NEW
 #. [todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0
 #. [todo] improve performance on dynamic mode by using temp cache
 #. [todo] is it possible to fix omni popup location?
-#. [todo] [internal code] direct input based on internal rule?
 #. [redo] [enter] OneKey a. a.. a... a.... whole match?
 #. [done] [filter] use first word?  if s:menu_4corner_filter > 0
 #. [done] [privacy] remove relating codes. merge privates to main datafile.
@@ -3039,7 +3039,9 @@ WHAT IS NEW
 #. [todo] check if it is possible to load datafile from "gvim --remote"
 #. [done] show-me-not-pattern when ciku has ii/oo/vv, for pretty print
 #. [redo] [cloud] support CLOUD for all using aphostrophe before OneKey
+#. [done] [digit] 0000<space><space> stuck in OneKey mode
 #. [todo] [3000] create o/i/v meaning personal entries
-#. [todo] [digit] 0000<space><space> stuck in OneKey mode
+#. [done] [internal code] better algorithm with simpler rule: u808f/22221?
+#. [todo] [internal code] direct input based on internal rule?
 
 
