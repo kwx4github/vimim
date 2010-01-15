@@ -415,6 +415,7 @@ VimIM 内码输入总结
 
 * 以u为十六进制内码输入的前导字符
 * 以零结尾为动态列表（十进制或十六进制）
+* 无词库无联网：abcdefghijklmnopqrstuvwxyz 上单词。
 
 .. sidebar::  `Unicode 内码输入`_
 
@@ -1309,7 +1310,6 @@ __ `CLOUD 云输入`_
  4    〖即插即用双码输入〗      magic.sz2230.s9020.nfofo.ythc
 ====  =======================  ===============================
 
-
 |
 |
 
@@ -1317,8 +1317,8 @@ __ `CLOUD 云输入`_
 --------
 【无词库】
 
-  *  不联网：利用 VimIM `内码输入`_
   *  联网：　即插即用 VimIM `CLOUD 云输入`_
+  *  无联网：利用 VimIM `内码输入`_
 
 【带词库】
 
@@ -2567,6 +2567,7 @@ __ http://code.google.com/p/vimim/wiki/VimIM__DIY
   :options:   不强行要求设置
   :internet:  不联网照样敲中文
   :datafile:  无词库可以云输入
+  :interal:   无词库无联网用内码输入
 
 
 VimIM 设计思路:
@@ -2782,7 +2783,7 @@ vimimhelp =>
 
   * 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping
   *           GVim 玩家可以用 CTRL-SPACE 切换中文模式
-  *           :let g:vimim_ctrl_space_to_toggle=1 
+  *           :let g:vimim_ctrl_space_to_toggle=1
 
 (6) [new] better OneKey sexy mode
 
@@ -2793,6 +2794,7 @@ vimimhelp =>
 
   * 以u为十六进制内码输入的前导字符
   * 以零结尾为动态列表（十进制或十六进制）
+  * 无词库无联网：abcdefghijklmnopqrstuvwxyz 上单词。
 
   | * Unicode 内码输入
   | * GBK 内码输入
@@ -3061,8 +3063,7 @@ WHAT IS NEW
 #. [done] show-me-not-pattern when ciku has ii/oo/vv, for pretty print
 #. [redo] [cloud] support CLOUD for all using aphostrophe before OneKey
 #. [done] [digit] 0000<space><space> stuck in OneKey mode
-#. [todo] [3000] create o/i/v meaning personal entries
+#. [done] [private] create oo/ii/vv personal entries and filter display
 #. [done] [internal code] better algorithm with simpler rule: u808f/22221?
-#. [todo] [internal code] direct input based on internal rule?
-
+#. [done] [super internal code] use_virtual_datafile if no datafile nor cloud
 
