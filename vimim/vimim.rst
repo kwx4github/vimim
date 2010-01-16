@@ -772,7 +772,12 @@ __ http://pim-cloud.appspot.com/
      * 【例】dbrcxby' => 东边日出西边雨
      * 【例】hfpjlswsqy' => 好风凭借力送我上青云
 
- (8) 支持 `〖自己的云〗`__
+ (8) 支持彻底关闭云
+
+     * 【特点】明确是用自己的词库或者是用内码输入
+     * 【设置】:let g:vimim_cloud_sogou=-1
+
+ (9) 支持 `〖自己的云〗`__
 
       * 【卖点】自己的云永远是最好的云
       * 【本地插件】python
@@ -3066,4 +3071,5 @@ WHAT IS NEW
 #. [done] [private] create oo/ii/vv personal entries and filter display
 #. [done] [internal code] better algorithm with simpler rule: u808f/22221?
 #. [done] [super internal code] use_virtual_datafile if no datafile nor cloud
+#. [done] [super internal code] create dictionary for Chinese
 
