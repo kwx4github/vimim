@@ -1453,7 +1453,7 @@ Vim插入模式
 (2) 设置： :let g:vimim_sexy_onekey=1或2
 (3) 使用：
 
-    + 按 <Ctrl-6> 进入 〖点石成金〗 `无模式之模式`_
+    + 按 <Ctrl-6> 进入 〖点石成金〗 `〖无模式之模式〗`_
     + 高亮选择汉字字串，按 <Ctrl-6> 可以 `见字找码`_
     + 高亮选择空白位置，按 <Ctrl-6> 可以 `动态造词`_
 
@@ -1551,13 +1551,13 @@ Vim插入模式
 
 |
 
-.. sidebar::  VimIM 〖点石成金〗无模式之模式
+.. sidebar::  VimIM 〖无模式之模式〗
 
    .. figure:: abcdefghi.gif
 
 
-无模式之模式
-------------
+〖无模式之模式〗
+----------------
 | 如果愿意，OneKey 可以作为VimIM唯一的中文输入模式。
 | 这也许是传说中的 `无模式之中文输入模式`__ 。
 | 也可以当作 `〖点石成金〗`_ 的另类玩法。缺省关闭。
@@ -1583,8 +1583,9 @@ __ http://code.google.com/p/vimim/wiki/OneKey
     * 〖回车键〗无缝上英文；标点后或双回车上空格；没有事就回车。
     * 〖上汉字〗空格键和字母键，也可以是数字键。
     * 〖标点切换〗英文标点之后，空格键出中文标点
+    * 〖打字回帖〗<Esc>后，整个段落自动复制到clipboard剪贴板。
     * 〖敲英文〗<Ctrl-\\> 切换(paste)状态，正好连续敲英文。(optional)
-    * 〖状态显示〗 绿色光标
+    * 〖状态显示〗 绿色光标 noruler
 
 |
 |
@@ -2515,7 +2516,8 @@ __ http://code.google.com/p/vimim/wiki/FAQ_Old
      | VimIM 尽可能提供自动复制机制，方便粘贴:
      |
      | ㈠ 选择提示菜单中的字或成语，敲 "s" 上字的同时自动拷贝。
-     | ㈡ 每当关闭 `〖中文输入模式〗`_ 整个 session 自动拷贝。
+     | ㈡ 每当关闭 `〖无模式之模式〗`_ 整个 paragraph 自动拷贝。
+     | ㈢ 每当关闭 `〖中文输入模式〗`_ 整个 session 自动拷贝。
      |    【缺省开启】 :let g:vimim_auto_copy_clipboard=1
      |
      | 【自己动手试一试】
@@ -2790,8 +2792,8 @@ vimimhelp =>
 
 (6) [new] better OneKey sexy mode
 
+  * `〖无模式之模式〗`_ 
   * 设置： :let g:vimim_sexy_onekey=1或2
-  * 无模式之模式
 
 (7) [new] 内码输入；
 
@@ -3071,5 +3073,4 @@ WHAT IS NEW
 #. [done] [super internal code] use_virtual_datafile if no datafile nor cloud
 #. [done] [super internal code] create dictionary for Chinese
 #. [done] [cloud] if no match from local, always try cloud before giving up
-
 
