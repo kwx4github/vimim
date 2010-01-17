@@ -1584,7 +1584,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
     * 〖上汉字〗空格键和字母键，也可以是数字键。
     * 〖标点切换〗英文标点之后，空格键出中文标点
     * 〖敲英文〗<Ctrl-\\> 切换(paste)状态，正好连续敲英文。(optional)
-    * 〖状态显示〗 noruler
+    * 〖状态显示〗 绿色光标
 
 |
 |
@@ -3072,4 +3072,5 @@ WHAT IS NEW
 #. [done] [internal code] better algorithm with simpler rule: u808f/22221?
 #. [done] [super internal code] use_virtual_datafile if no datafile nor cloud
 #. [done] [super internal code] create dictionary for Chinese
+
 
