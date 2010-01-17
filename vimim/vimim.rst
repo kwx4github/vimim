@@ -756,10 +756,10 @@ __ http://pim-cloud.appspot.com/
 
  (6) 支持强制非云
 
-     * 【特点】在输入后多英文句号和单引号，接着敲〖点石键〗
+     * 【特点】在输入后加英文句号，接着敲〖点石键〗
      * 【特点】不受g:vimim_cloud_sogou的设置所限制
      * 【限于】 `〖点石成金〗`_
-     * 【例】cloud.'  => 云
+     * 【例】cloud.  => 云
 
  (7) 推出〖想云就云〗，不换模式，不限输入法
 
@@ -2437,21 +2437,19 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
   - 〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。
 
-  - magic comma
+  - magic 句号
 
-    + comma as head: for universal imode: single comma 小写中文数字
-    + comma as head: for universal imode: double comma 大写中文数字
-
-  - magic dot
-
-    + dot as delimiter: 逐词匹配㈠句号分隔，自己定匹配：
+    + 句号是唯一的字符 ==> 标点符号转换
+    + 句号前后都有英文字符 ==>  逐词匹配㈠句号分隔，自己定匹配
+    + 句号在末尾 ==>  强制非云
 
   - magic 单引号
 
-    +  单引号在第一个，并且是唯一的字符 ==> 标点符号转换
-    +  单引号前后都有英文字符 ==>  作为断字符
-    +  单引号在末尾，并且前面有英文字符 ==>  强制云：〖想云就云〗
-    +  单引号在末尾，并且前面有英文句号 ==>  强制非云
+    + 单引号在第一个 ==> 小写中文数字
+    + 单引号在前两个 ==> 大写中文数字
+    + 单引号是唯一的字符 ==> 标点符号转换
+    + 单引号前后都有英文字符 ==>  作为断字符
+    + 单引号在末尾，并且前面有英文字符 ==>  强制云：〖想云就云〗
 
 |
 |
@@ -2773,9 +2771,9 @@ vimimhelp =>
 
 (3) 强制非云
 
-   * 【特点】在输入后多英文句号和单引号，接着敲〖点石键〗
+   * 【特点】在输入后加英文句号，接着敲〖点石键〗
    * 【特点】不受g:vimim_cloud_sogou的设置所限制
-   * 【例】cloud.'  => 云
+   * 【例】cloud.  => 云
 
 (4) universal imode
 
@@ -3072,5 +3070,6 @@ WHAT IS NEW
 #. [done] [internal code] better algorithm with simpler rule: u808f/22221?
 #. [done] [super internal code] use_virtual_datafile if no datafile nor cloud
 #. [done] [super internal code] create dictionary for Chinese
+#. [done] [cloud] if no match from local, always try cloud before giving up
 
 
