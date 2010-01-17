@@ -1371,10 +1371,10 @@ VimIM 不错, 一直在用 :) -->
 </li>
 <li><p class="first">支持强制非云</p>
 <ul class="simple">
-<li>【特点】在输入后多英文句号和单引号，接着敲〖点石键〗</li>
+<li>【特点】在输入后加英文句号，接着敲〖点石键〗</li>
 <li>【特点】不受g:vimim_cloud_sogou的设置所限制</li>
 <li>【限于】 <a class="reference internal" href="#id80">〖点石成金〗</a></li>
-<li>【例】cloud.'  =&gt; 云</li>
+<li>【例】cloud.  =&gt; 云</li>
 </ul>
 </li>
 <li><p class="first">推出〖想云就云〗，不换模式，不限输入法</p>
@@ -4099,20 +4099,18 @@ If the following download URL does not work for you, please
 <li><p class="first"><a class="reference internal" href="#id80">〖点石成金〗</a></p>
 <ul class="simple">
 <li>〖英文标点智能〗用点石键点击英文标点可以直接转换为中文标点。</li>
-<li>magic comma<ul>
-<li>comma as head: for universal imode: single comma 小写中文数字</li>
-<li>comma as head: for universal imode: double comma 大写中文数字</li>
-</ul>
-</li>
-<li>magic dot<ul>
-<li>dot as delimiter: 逐词匹配㈠句号分隔，自己定匹配：</li>
+<li>magic 句号<ul>
+<li>句号是唯一的字符 ==&gt; 标点符号转换</li>
+<li>句号前后都有英文字符 ==&gt;  逐词匹配㈠句号分隔，自己定匹配</li>
+<li>句号在末尾 ==&gt;  强制非云</li>
 </ul>
 </li>
 <li>magic 单引号<ul>
-<li>单引号在第一个，并且是唯一的字符 ==&gt; 标点符号转换</li>
+<li>单引号在第一个 ==&gt; 小写中文数字</li>
+<li>单引号在前两个 ==&gt; 大写中文数字</li>
+<li>单引号是唯一的字符 ==&gt; 标点符号转换</li>
 <li>单引号前后都有英文字符 ==&gt;  作为断字符</li>
 <li>单引号在末尾，并且前面有英文字符 ==&gt;  强制云：〖想云就云〗</li>
-<li>单引号在末尾，并且前面有英文句号 ==&gt;  强制非云</li>
 </ul>
 </li>
 </ul>
@@ -4537,9 +4535,9 @@ set langmenu=zh_CN.UTF-8
 </ol>
 <blockquote>
 <ul class="simple">
-<li>【特点】在输入后多英文句号和单引号，接着敲〖点石键〗</li>
+<li>【特点】在输入后加英文句号，接着敲〖点石键〗</li>
 <li>【特点】不受g:vimim_cloud_sogou的设置所限制</li>
-<li>【例】cloud.'  =&gt; 云</li>
+<li>【例】cloud.  =&gt; 云</li>
 </ul>
 </blockquote>
 <ol class="arabic simple" start="4">
@@ -4856,12 +4854,13 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [internal code] better algorithm with simpler rule: u808f/22221?</li>
 <li>[done] [super internal code] use_virtual_datafile if no datafile nor cloud</li>
 <li>[done] [super internal code] create dictionary for Chinese</li>
+<li>[done] [cloud] if no match from local, always try cloud before giving up</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 19:34:29 PST on Saturday, 01/16/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 00:32:28 PST on Sunday, 01/17/2010
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
