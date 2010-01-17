@@ -150,8 +150,8 @@ vimimhelp　<C-6>　p
 | 【拼音★四角】同时插上，可以平行也可以交叉使用，无须切换。
 | 【五笔★拼音】同时插上，可以平行使用，动态切换。
 |
-| 不加设置，不换模式，点热键就可上汉字，是谓〖点石成金〗。
-| 如果切换成中文输入模式，也可以将就当前流行的输入法习惯。
+| 不设选项，不换模式，点<C-6>就可上汉字，是谓〖点石成金〗。
+| 如果用<C-\\>切换成中文输入模式，也可以将就当前流行的输入法习惯。
 |
 | 所谓卸载，就是删除文本文件。
 |
@@ -1583,7 +1583,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
     * 〖回车键〗无缝上英文；标点后或双回车上空格；没有事就回车。
     * 〖上汉字〗空格键和字母键，也可以是数字键。
     * 〖标点切换〗英文标点之后，空格键出中文标点
-    * 〖打字回帖〗<Esc>后，整个段落自动复制到clipboard剪贴板。
+    * 〖打字回帖〗敲<Esc>后，当前行自动复制到剪贴板。
     * 〖敲英文〗<Ctrl-\\> 切换(paste)状态，正好连续敲英文。(optional)
     * 〖状态显示〗 绿色光标 noruler
 
@@ -1919,8 +1919,8 @@ VimIM 自然有阿拉伯数字和中文大小写数字和量词的转换能力�
    **''**    为输入大写中文数字的前导字符
   =========  ============================
 
-  - 【开启可设】 let g:vimim_imode_apostrophe=1
-  -  We can use apostrophe instead of i for all examples below:
+  - 【开启可设】 let g:vimim_imode_universal=1
+  -  We can use apostrophe instead of 'i' for all examples below:
 
 |
 
@@ -2513,10 +2513,10 @@ __ http://code.google.com/p/vimim/wiki/FAQ_Old
 
 :问: | 怎样减少 copy & paste (复制粘贴)重复操作?
 :答: | Vim 擅长于把复杂的编辑操作简单化。
-     | VimIM 尽可能提供自动复制机制，方便粘贴:
+     | VimIM 尽可能提供自动复制机制，方便〖打字回帖〗。
      |
      | ㈠ 选择提示菜单中的字或成语，敲 "s" 上字的同时自动拷贝。
-     | ㈡ 每当关闭 `〖无模式之模式〗`_ 整个 paragraph 自动拷贝。
+     | ㈡ 每当关闭 `〖无模式之模式〗`_ current line 自动拷贝。
      | ㈢ 每当关闭 `〖中文输入模式〗`_ 整个 session 自动拷贝。
      |    【缺省开启】 :let g:vimim_auto_copy_clipboard=1
      |
@@ -2914,7 +2914,6 @@ WHAT IS NEW
 #. [done] support "i have a dream." for ZhengMa OneKey sentence match
 #. [done] support "i have a dream." for CangJie OneKey sentence match
 #. [done] support "i have a dream." for Nature  OneKey sentence match
-#. [done] support live "today" (itoday) and "now" (inow) in Chinese
 #. [done] [ctc] create vimim.ctc.txt from unihan.txt, PRC telegraph code
 #. [done] [ctc] support Chinese Telegraph Code (CTC) input and search
 #. [done] relieve restriction of the fixed noignorecase setting
@@ -3072,5 +3071,6 @@ WHAT IS NEW
 #. [done] [internal code] better algorithm with simpler rule: u808f/22221?
 #. [done] [super internal code] use_virtual_datafile if no datafile nor cloud
 #. [done] [super internal code] create dictionary for Chinese
-#. [done] [cloud] if no match from local, always try cloud before giving up
+#. [done] [all-cloud] if no match from local, always try cloud before giving up
+
 
