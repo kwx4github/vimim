@@ -415,7 +415,7 @@ VimIM 是一個專門為 vim 玩家開發的嵌入式輸入法，隻要你的 vi
 <li><a class="reference internal" href="#vimim-mapping" id="id146">VimIM Mapping</a></li>
 <li><a class="reference internal" href="#id80" id="id147">〖點石成金〗</a><ul>
 <li><a class="reference internal" href="#id81" id="id148">概要</a></li>
-<li><a class="reference internal" href="#id82" id="id149">無模式之模式</a></li>
+<li><a class="reference internal" href="#id82" id="id149">〖無模式之模式〗</a></li>
 <li><a class="reference internal" href="#id84" id="id150">命令行窗口</a></li>
 <li><a class="reference internal" href="#id85" id="id151">中文搜索</a></li>
 <li><a class="reference internal" href="#id86" id="id152">輸入記憶</a></li>
@@ -2505,7 +2505,7 @@ If the following download URL does not work for you, please
 <li>特點： <a class="reference internal" href="#id80">〖點石成金〗</a> 的另類玩法，一鍵多用，一石多鳥</li>
 <li>設置： :let g:vimim_sexy_onekey=1或2</li>
 <li>使用：<ul>
-<li>按 &lt;Ctrl-6&gt; 進入 〖點石成金〗 <a class="reference internal" href="#id82">無模式之模式</a></li>
+<li>按 &lt;Ctrl-6&gt; 進入 〖點石成金〗 <a class="reference internal" href="#id82">〖無模式之模式〗</a></li>
 <li>高亮選擇漢字字串，按 &lt;Ctrl-6&gt; 可以 <a class="reference internal" href="#id93">見字找碼</a></li>
 <li>高亮選擇空白位置，按 &lt;Ctrl-6&gt; 可以 <a class="reference internal" href="#id94">動態造詞</a></li>
 </ul>
@@ -2639,14 +2639,14 @@ If the following download URL does not work for you, please
 <div class="line"><br /></div>
 </div>
 <div class="sidebar">
-<p class="first sidebar-title">VimIM 〖點石成金〗無模式之模式</p>
+<p class="first sidebar-title">VimIM 〖無模式之模式〗</p>
 <div class="last figure">
 <img alt="abcdefghi.gif" src="abcdefghi.gif" />
 </div>
 </div>
 </div>
 <div class="section" id="id82">
-<h2><a class="toc-backref" href="#id149">無模式之模式</a></h2>
+<h2><a class="toc-backref" href="#id149">〖無模式之模式〗</a></h2>
 <div class="line-block">
 <div class="line">如果願意，OneKey 可以作為VimIM唯一的中文輸入模式。</div>
 <div class="line">這也許是傳說中的 <a class="reference external" href="http://code.google.com/p/vimim/wiki/OneKey">無模式之中文輸入模式</a> 。</div>
@@ -2669,8 +2669,9 @@ If the following download URL does not work for you, please
 <li>〖回車鍵〗無縫上英文；標點后或雙回車上空格；沒有事就回車。</li>
 <li>〖上漢字〗空格鍵和字母鍵，也可以是數字鍵。</li>
 <li>〖標點切換〗英文標點之后，空格鍵出中文標點</li>
+<li>〖打字回帖〗&lt;Esc&gt;后，整個段落自動復制到clipboard剪貼板。</li>
 <li>〖敲英文〗&lt;Ctrl-\&gt; 切換(paste)狀態，正好連續敲英文。(optional)</li>
-<li>〖狀態顯示〗 綠色光標</li>
+<li>〖狀態顯示〗 綠色光標 noruler</li>
 </ul>
 </li>
 </ul>
@@ -4232,7 +4233,8 @@ If the following download URL does not work for you, please
 <div class="line">VimIM 盡可能提供自動復制機制，方便粘貼:</div>
 <div class="line"><br /></div>
 <div class="line">㈠ 選擇提示菜單中的字或成語，敲 &quot;s&quot; 上字的同時自動拷貝。</div>
-<div class="line">㈡ 每當關閉 <a class="reference internal" href="#id97">〖中文輸入模式〗</a> 整個 session 自動拷貝。</div>
+<div class="line">㈡ 每當關閉 <a class="reference internal" href="#id82">〖無模式之模式〗</a> 整個 paragraph 自動拷貝。</div>
+<div class="line">㈢ 每當關閉 <a class="reference internal" href="#id97">〖中文輸入模式〗</a> 整個 session 自動拷貝。</div>
 <div class="line-block">
 <div class="line">【缺省開啟】 :let g:vimim_auto_copy_clipboard=1</div>
 <div class="line"><br /></div>
@@ -4566,8 +4568,8 @@ set langmenu=zh_CN.UTF-8
 </ol>
 <blockquote>
 <ul class="simple">
+<li><a class="reference internal" href="#id82">〖無模式之模式〗</a></li>
 <li>設置： :let g:vimim_sexy_onekey=1或2</li>
-<li>無模式之模式</li>
 </ul>
 </blockquote>
 <ol class="arabic simple" start="7">
@@ -4860,7 +4862,7 @@ set langmenu=zh_CN.UTF-8
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 00:32:28 PST on Sunday, 01/17/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 09:31:41 PST on Sunday, 01/17/2010
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
