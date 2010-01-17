@@ -522,8 +522,8 @@ VimIM 是一个专门为 vim 玩家开发的嵌入式输入法，只要你的 vi
 <div class="line">【拼音★四角】同时插上，可以平行也可以交叉使用，无须切换。</div>
 <div class="line">【五笔★拼音】同时插上，可以平行使用，动态切换。</div>
 <div class="line"><br /></div>
-<div class="line">不加设置，不换模式，点热键就可上汉字，是谓〖点石成金〗。</div>
-<div class="line">如果切换成中文输入模式，也可以将就当前流行的输入法习惯。</div>
+<div class="line">不设选项，不换模式，点&lt;C-6&gt;就可上汉字，是谓〖点石成金〗。</div>
+<div class="line">如果用&lt;C-\&gt;切换成中文输入模式，也可以将就当前流行的输入法习惯。</div>
 <div class="line"><br /></div>
 <div class="line">所谓卸载，就是删除文本文件。</div>
 <div class="line"><br /></div>
@@ -2669,7 +2669,7 @@ If the following download URL does not work for you, please
 <li>〖回车键〗无缝上英文；标点后或双回车上空格；没有事就回车。</li>
 <li>〖上汉字〗空格键和字母键，也可以是数字键。</li>
 <li>〖标点切换〗英文标点之后，空格键出中文标点</li>
-<li>〖打字回帖〗&lt;Esc&gt;后，整个段落自动复制到clipboard剪贴板。</li>
+<li>〖打字回帖〗敲&lt;Esc&gt;后，当前行自动复制到剪贴板。</li>
 <li>〖敲英文〗&lt;Ctrl-\&gt; 切换(paste)状态，正好连续敲英文。(optional)</li>
 <li>〖状态显示〗 绿色光标 noruler</li>
 </ul>
@@ -3152,8 +3152,8 @@ If the following download URL does not work for you, please
 </tbody>
 </table>
 <ul class="simple">
-<li>【开启可设】 let g:vimim_imode_apostrophe=1</li>
-<li>We can use apostrophe instead of i for all examples below:</li>
+<li>【开启可设】 let g:vimim_imode_universal=1</li>
+<li>We can use apostrophe instead of 'i' for all examples below:</li>
 </ul>
 </blockquote>
 <div class="line-block">
@@ -4230,10 +4230,10 @@ If the following download URL does not work for you, please
 </tr>
 <tr class="field"><th class="field-name">答:</th><td class="field-body"><div class="first last line-block">
 <div class="line">Vim 擅长于把复杂的编辑操作简单化。</div>
-<div class="line">VimIM 尽可能提供自动复制机制，方便粘贴:</div>
+<div class="line">VimIM 尽可能提供自动复制机制，方便〖打字回帖〗。</div>
 <div class="line"><br /></div>
 <div class="line">㈠ 选择提示菜单中的字或成语，敲 &quot;s&quot; 上字的同时自动拷贝。</div>
-<div class="line">㈡ 每当关闭 <a class="reference internal" href="#id82">〖无模式之模式〗</a> 整个 paragraph 自动拷贝。</div>
+<div class="line">㈡ 每当关闭 <a class="reference internal" href="#id82">〖无模式之模式〗</a> current line 自动拷贝。</div>
 <div class="line">㈢ 每当关闭 <a class="reference internal" href="#id97">〖中文输入模式〗</a> 整个 session 自动拷贝。</div>
 <div class="line-block">
 <div class="line">【缺省开启】 :let g:vimim_auto_copy_clipboard=1</div>
@@ -4698,7 +4698,6 @@ set langmenu=zh_CN.UTF-8
 <li>[done] support &quot;i have a dream.&quot; for ZhengMa OneKey sentence match</li>
 <li>[done] support &quot;i have a dream.&quot; for CangJie OneKey sentence match</li>
 <li>[done] support &quot;i have a dream.&quot; for Nature  OneKey sentence match</li>
-<li>[done] support live &quot;today&quot; (itoday) and &quot;now&quot; (inow) in Chinese</li>
 <li>[done] [ctc] create vimim.ctc.txt from unihan.txt, PRC telegraph code</li>
 <li>[done] [ctc] support Chinese Telegraph Code (CTC) input and search</li>
 <li>[done] relieve restriction of the fixed noignorecase setting</li>
@@ -4856,13 +4855,13 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [internal code] better algorithm with simpler rule: u808f/22221?</li>
 <li>[done] [super internal code] use_virtual_datafile if no datafile nor cloud</li>
 <li>[done] [super internal code] create dictionary for Chinese</li>
-<li>[done] [cloud] if no match from local, always try cloud before giving up</li>
+<li>[done] [all-cloud] if no match from local, always try cloud before giving up</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 09:31:41 PST on Sunday, 01/17/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 14:58:52 PST on Sunday, 01/17/2010
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
