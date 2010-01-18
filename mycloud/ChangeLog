@@ -1,8 +1,12 @@
+2010-1-18 Pan, Shi Zhu  <pan.shizhu@gmail.com>
+	* qptest: 增加全拼调试信息
+	* algo.py: 增加全拼调试信息
 
 2010-1-15 Pan, Shi Zhu  <pan.shizhu@gmail.com>
 	* libmycloud.so: Linux i686 version of mycloud plugin
 	* algo.py: 解决形码输出无输出限制的问题
 	* data.py: 增加对用户自定义词库的支持
+	* abc?.txt: 解决双拼一对多的别名问题
 
 2010-1-14 Pan, Shi Zhu  <pan.shizhu@gmail.com>
 	* libmycloud.dll: Windows Native version of mycloud plugin

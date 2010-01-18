@@ -12,7 +12,7 @@ if __name__ == "__main__":
             algo.parse("__setmode="+sys.argv[2])
         else:
             algo.parse("__setmode=quanpin")
-        for k,h,v in algo.parse(sys.argv[1]):
+        for k,h,v in algo.parse(sys.argv[1], debug=True):
             # k is the key
             # h is the hint text
             # v is the string pointer

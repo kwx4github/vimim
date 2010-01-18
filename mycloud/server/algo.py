@@ -465,6 +465,8 @@ def quanpin_parse(keyb, debug):
     pinyin_table = data.get(data.get_py_table)
     pytype = pinyin_table["__type__"]
     map = quanpin_transform(keyb, pinyin_table)
+    if debug:
+        print map
 
     if map["word_count"] == 0:
         result = [("",0)]
