@@ -19,7 +19,14 @@ About client:
 About client-src:
 
     如果需要其它平台的 libmycloud，可使用源代码自行编译。
-    目前源代码正在整理中，完成之后将上传。
+
+    使用 MinGW 编译 windows 版本，需要手动修改一下 CC 的路径，install 将安装至 ~/vimfiles/plugin
+    make -f Makefile.mingw
+    make install
+
+    使用其他平台编译，需要手动修改一下 CFLAGS 参数，install 将安装至 ~/.vim/plugin。
+    make -f Makefile.linux
+    make install
 
 About server:
 

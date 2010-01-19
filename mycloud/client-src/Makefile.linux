@@ -1,0 +1,25 @@
+# Makefile for all linux or unix systems
+
+CC=gcc 
+
+CFLAGS= -Dvimim_EXPORTS -O2 -std=c99 -DNDEBUG -fPIC   -Wall -pedantic -Werror -Wfatal-errors -march=i686
+LDFLAGS= 
+
+build_target=libvimim.so
+sample=mytest
+srcs=cdecode.c cencode.c dllmain.c mysocket.c 
+
+all: $(build_target)
+
+$(build_target): $(srcs)
+	$(CC) $(CFLAGS) -shared -Wl,-soname,$@ -o $@ $^ $(LDFLAGS)
+
+$(sample): $(srcs) sample.c
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+
+clean:
+	$(RM) $(build_target) $(sample)
+
+install:
+	@mkdir -p ~/.vim/plugin
+	cp $(build_target) ~/.vim/plugin
