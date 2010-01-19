@@ -305,8 +305,8 @@ this                     file:///C:/home/xma/svn/vimim/vimim.rst
            http://vimim.googlecode.com/svn/vimim/vimim.big5.html
                    file:///C:/home/xma/svn/vimim/vimim.big5.html
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - dll
-cp C:/home/vimim/mycloud/client/libmycloud.dll $VIM/vimfiles/plugin/
-http://vimim.googlecode.com/svn/mycloud/client/libmycloud.dll
+cp C:/home/vimim/mycloud/client/libvimim.dll $VIM/vimfiles/plugin/
+http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                 svn co https://vimim.googlecode.com/svn/mycloud/
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1307,7 +1307,7 @@ VimIM 不错, 一直在用 :) -->
 <blockquote>
 <ul class="simple">
 <li>入〖云〗必须联网</li>
-<li>入〖云〗必须借助 <a class="reference external" href="http://vimim.googlecode.com/svn/mycloud/client/libmycloud.dll">libmycloud.dll</a> 或者 <a class="reference external" href="http://users.ugent.be/~bpuype/wget/">wget</a></li>
+<li>入〖云〗必须借助 <a class="reference external" href="http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll">libvimim.dll</a> 或者 <a class="reference external" href="http://users.ugent.be/~bpuype/wget/">wget</a></li>
 <li>入〖云〗必须使用汉语拼音：全拼或者双拼甚至简拼</li>
 </ul>
 </blockquote>
@@ -1475,7 +1475,7 @@ VimIM 不错, 一直在用 :) -->
 <td colspan="2">确认电脑联网</td>
 </tr>
 <tr><td rowspan="2">㈡</td>
-<td rowspan="2">下载  <a class="reference external" href="http://vimim.googlecode.com/svn/mycloud/client/libmycloud.dll">dll</a></td>
+<td rowspan="2">下载  <a class="reference external" href="http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll">dll</a></td>
 <td rowspan="2">确认无词库</td>
 </tr>
 <tr></tr>
@@ -4527,7 +4527,7 @@ set langmenu=zh_CN.UTF-8
 </ol>
 <blockquote>
 <ul class="simple">
-<li>【条件】只需要联网和wget/curl/libmycloud.dll</li>
+<li>【条件】只需要联网和libvimim.dll/wget/curl</li>
 <li>【限于】 <a class="reference internal" href="#id82">〖点石成金〗</a></li>
 <li>【操作】在输入后加多一个单引号，接着敲〖点石键〗</li>
 <li>【例】ajiao' =&gt; 阿娇</li>
@@ -4864,6 +4864,7 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [super internal code] create dictionary for Chinese</li>
 <li>[done] [all-cloud] if no match from local, always try cloud before giving up</li>
 <li>[done] [sexy-onekey] re-consider paste/nopaste option</li>
+<li>[done] remove vimim_length_filter(); improve s:vimim_pinyin_filter()</li>
 <li>[todo] what is the best way to make short-cut out of x3j3 without number?</li>
 <li>[todo] is it possible to use all digital datafile and search by integer?</li>
 <li>[todo] cloud_at_will_trailing_apostrophe not reliable</li>
@@ -4872,7 +4873,7 @@ set langmenu=zh_CN.UTF-8
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 21:26:14 PST on Monday, 01/18/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 00:49:36 PST on Tuesday, 01/19/2010
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
