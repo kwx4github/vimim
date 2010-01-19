@@ -304,6 +304,8 @@ this                     file:///C:/home/xma/svn/vimim/vimim.rst
                         file:///C:/home/xma/svn/vimim/vimim.html
            http://vimim.googlecode.com/svn/vimim/vimim.big5.html
                    file:///C:/home/xma/svn/vimim/vimim.big5.html
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - dll
+cp C:/home/vimim/mycloud/client/libmycloud.dll $VIM/vimfiles/plugin/
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                 svn co https://vimim.googlecode.com/svn/mycloud/
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -2503,7 +2505,7 @@ If the following download URL does not work for you, please
 <p>㈡【反經典】 This is another way to use VimIM, using one map only.</p>
 <ol class="arabic simple">
 <li>特點： <a class="reference internal" href="#id80">〖點石成金〗</a> 的另類玩法，一鍵多用，一石多鳥</li>
-<li>設置： :let g:vimim_sexy_onekey=1或2</li>
+<li>設置： :let g:vimim_sexy_onekey=1</li>
 <li>使用：<ul>
 <li>按 &lt;Ctrl-6&gt; 進入 〖點石成金〗 <a class="reference internal" href="#id82">〖無模式之模式〗</a></li>
 <li>高亮選擇漢字字串，按 &lt;Ctrl-6&gt; 可以 <a class="reference internal" href="#id93">見字找碼</a></li>
@@ -2657,12 +2659,12 @@ If the following download URL does not work for you, please
 <li>【特點】<ul>
 <li>【反經典】把OneKey當作VimIM的中文輸入模式。</li>
 <li>【設置】 :let g:vimim_sexy_onekey=1</li>
-<li>【設置】 :let g:vimim_sexy_onekey=2  (optional)</li>
 </ul>
 </li>
 <li>【操作】<ul>
-<li>【開啟】—— 敲【點石鍵】</li>
-<li>【關閉】—— 敲&lt;Esc&gt;</li>
+<li>【開啟】—— 敲 &lt;Ctrl-6&gt;</li>
+<li>【開啟】—— 敲 &lt;Ctrl-6&gt;</li>
+<li>【退出】—— 敲 &lt;Esc&gt;</li>
 <li>【功能】—— 包括〖點石成金〗全部功能，加之：<ul>
 <li>〖經典〗空格鍵上漢字，回車鍵上英文。</li>
 <li>〖空格鍵〗出菜單，或上漢字，或上空格，或上中文標點。</li>
@@ -2670,7 +2672,7 @@ If the following download URL does not work for you, please
 <li>〖上漢字〗空格鍵和字母鍵，也可以是數字鍵。</li>
 <li>〖標點切換〗英文標點之后，空格鍵出中文標點</li>
 <li>〖打字回帖〗敲&lt;Esc&gt;后，當前行自動復制到剪貼板。</li>
-<li>〖敲英文〗&lt;Ctrl-\&gt; 切換(paste)狀態，正好連續敲英文。(optional)</li>
+<li>〖敲英文〗&lt;Ctrl-6&gt; 切換，回到英文輸入狀態。</li>
 <li>〖狀態顯示〗 綠色光標 noruler</li>
 </ul>
 </li>
@@ -4569,7 +4571,12 @@ set langmenu=zh_CN.UTF-8
 <blockquote>
 <ul class="simple">
 <li><a class="reference internal" href="#id82">〖無模式之模式〗</a></li>
-<li>設置： :let g:vimim_sexy_onekey=1或2</li>
+<li>設置： :let g:vimim_sexy_onekey=1<ul>
+<li>【開啟】—— 敲 &lt;Ctrl-6&gt;</li>
+<li>【開啟】—— 敲 &lt;Ctrl-6&gt;</li>
+<li>【退出】—— 敲 &lt;Esc&gt;</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 <ol class="arabic simple" start="7">
@@ -4841,7 +4848,6 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [filter] use first word?  if s:menu_4corner_filter &gt; 0</li>
 <li>[done] [privacy] remove relating codes. merge privates to main datafile.</li>
 <li>[redo] [OneKey Mode] &lt;Enter&gt; triple play: seamless, enter, space</li>
-<li>[done] [onekey] g:vimim_sexy_onekey=2  &lt;C-Bslash&gt; as (paste) toggle</li>
 <li>[done] [onekey] sexy onekey, double enter =&gt; space</li>
 <li>[redo] [backspace] make backspace smarter and simpler</li>
 <li>[done] [backspace] too smart is not smart</li>
@@ -4856,12 +4862,16 @@ set langmenu=zh_CN.UTF-8
 <li>[done] [super internal code] use_virtual_datafile if no datafile nor cloud</li>
 <li>[done] [super internal code] create dictionary for Chinese</li>
 <li>[done] [all-cloud] if no match from local, always try cloud before giving up</li>
+<li>[done] [sexy-onekey] re-consider paste/nopaste option</li>
+<li>[todo] what is the best way to make short-cut out of x3j3 without number?</li>
+<li>[todo] is it possible to use all digital datafile and search by integer?</li>
+<li>[todo] cloud_at_will_trailing_apostrophe not reliable</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 14:58:52 PST on Sunday, 01/17/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 21:15:44 PST on Monday, 01/18/2010
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
