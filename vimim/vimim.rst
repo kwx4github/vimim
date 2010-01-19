@@ -29,6 +29,7 @@
                       file:///C:/home/xma/svn/vimim/vimim.big5.html
    ---------------------------------------------------------------- dll
    cp C:/home/vimim/mycloud/client/libmycloud.dll $VIM/vimfiles/plugin/
+   http://vimim.googlecode.com/svn/mycloud/client/libmycloud.dll
    ----------------------------------------------------------------
                    svn co https://vimim.googlecode.com/svn/mycloud/
    ----------------------------------------------------------------
@@ -708,8 +709,11 @@ __ http://pim-cloud.appspot.com/
 【必要条件】
 
   * 入〖云〗必须联网
-  * 入〖云〗必须借助 `wget <http://users.ugent.be/~bpuype/wget/>`_
+  * 入〖云〗必须借助 libmycloud.dll__ 或者 wget__
   * 入〖云〗必须使用汉语拼音：全拼或者双拼甚至简拼
+
+__ http://vimim.googlecode.com/svn/mycloud/client/libmycloud.dll
+__ http://users.ugent.be/~bpuype/wget/
 
 .. sidebar::  VimIM `CLOUD 云输入`_ 　双拼
 
@@ -729,7 +733,7 @@ __ http://pim-cloud.appspot.com/
      * 自动开启：
 
        * Linux  　如果vim plugin目录下没有词库
-       * Windows　如果wget.exe置于vim plugin目录之下
+       * Windows　如果dll或者wget置于vim plugin目录之下
 
  (2) 〖可控性云输入〗每N个输入就〖云〗游
 
@@ -767,7 +771,7 @@ __ http://pim-cloud.appspot.com/
 
      * 【卖点】东边日出西边雨，道是无云却有云！
      * 【特点】不限于拼音输入法！不需要设置！
-     * 【条件】只需要联网和wget/curl
+     * 【条件】只需要联网和dll/wget/curl
      * 【限于】 `〖点石成金〗`_
      * 【操作】在输入后加多一个单引号，接着敲〖点石键〗
      * 【例】ajiao' => 阿娇
@@ -845,7 +849,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
   +----+--------------------+------------------------+
   | ㈠ |  确认电脑联网                               |
   +----+--------------------+------------------------+
-  | ㈡ | 下载  wget__       |  确认无词库            +
+  | ㈡ | 下载  dll__        |  确认无词库            +
   +----+--------------------+------------------------+
   | ㈢ | 置wget于plugin之下 |  ..                    |
   +----+--------------------+------------------------+
@@ -865,7 +869,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
   +----+---------------------------------------------+
 
 
-__ http://users.ugent.be/~bpuype/wget/
+__ http://vimim.googlecode.com/svn/mycloud/client/libmycloud.dll
 __ http://vim.sf.net/scripts/script.php?script_id=2506
 
 |
