@@ -27,6 +27,8 @@
                            file:///C:/home/xma/svn/vimim/vimim.html
               http://vimim.googlecode.com/svn/vimim/vimim.big5.html
                       file:///C:/home/xma/svn/vimim/vimim.big5.html
+   ---------------------------------------------------------------- dll
+   cp C:/home/vimim/mycloud/client/libmycloud.dll $VIM/vimfiles/plugin/
    ----------------------------------------------------------------
                    svn co https://vimim.googlecode.com/svn/mycloud/
    ----------------------------------------------------------------
@@ -1450,7 +1452,7 @@ Vim插入模式
 ㈡【反经典】 This is another way to use VimIM, using one map only.
 
 (1) 特点： `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
-(2) 设置： :let g:vimim_sexy_onekey=1或2
+(2) 设置： :let g:vimim_sexy_onekey=1
 (3) 使用：
 
     + 按 <Ctrl-6> 进入 〖点石成金〗 `〖无模式之模式〗`_
@@ -1570,12 +1572,12 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
   - 【反经典】把OneKey当作VimIM的中文输入模式。
   - 【设置】 :let g:vimim_sexy_onekey=1
-  - 【设置】 :let g:vimim_sexy_onekey=2  (optional)
 
 + 【操作】
 
-  - 【开启】—— 敲【点石键】
-  - 【关闭】—— 敲<Esc>
+  - 【开启】—— 敲 <Ctrl-6>
+  - 【开启】—— 敲 <Ctrl-6>
+  - 【退出】—— 敲 <Esc>
   - 【功能】—— 包括〖点石成金〗全部功能，加之：
 
     * 〖经典〗空格键上汉字，回车键上英文。
@@ -1584,7 +1586,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
     * 〖上汉字〗空格键和字母键，也可以是数字键。
     * 〖标点切换〗英文标点之后，空格键出中文标点
     * 〖打字回帖〗敲<Esc>后，当前行自动复制到剪贴板。
-    * 〖敲英文〗<Ctrl-\\> 切换(paste)状态，正好连续敲英文。(optional)
+    * 〖敲英文〗<Ctrl-6> 切换，回到英文输入状态。
     * 〖状态显示〗 绿色光标 noruler
 
 |
@@ -2792,8 +2794,12 @@ vimimhelp =>
 
 (6) [new] better OneKey sexy mode
 
-  * `〖无模式之模式〗`_ 
-  * 设置： :let g:vimim_sexy_onekey=1或2
+  * `〖无模式之模式〗`_
+  * 设置： :let g:vimim_sexy_onekey=1
+
+    * 【开启】—— 敲 <Ctrl-6>
+    * 【开启】—— 敲 <Ctrl-6>
+    * 【退出】—— 敲 <Esc>
 
 (7) [new] 内码输入；
 
@@ -3057,7 +3063,6 @@ WHAT IS NEW
 #. [done] [filter] use first word?  if s:menu_4corner_filter > 0
 #. [done] [privacy] remove relating codes. merge privates to main datafile.
 #. [redo] [OneKey Mode] <Enter> triple play: seamless, enter, space
-#. [done] [onekey] g:vimim_sexy_onekey=2  <C-Bslash> as (paste) toggle
 #. [done] [onekey] sexy onekey, double enter => space
 #. [redo] [backspace] make backspace smarter and simpler
 #. [done] [backspace] too smart is not smart
@@ -3072,5 +3077,9 @@ WHAT IS NEW
 #. [done] [super internal code] use_virtual_datafile if no datafile nor cloud
 #. [done] [super internal code] create dictionary for Chinese
 #. [done] [all-cloud] if no match from local, always try cloud before giving up
+#. [done] [sexy-onekey] re-consider paste/nopaste option
+#. [todo] what is the best way to make short-cut out of x3j3 without number?
+#. [todo] is it possible to use all digital datafile and search by integer?
+#. [todo] cloud_at_will_trailing_apostrophe not reliable
 
 
