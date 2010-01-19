@@ -82,7 +82,8 @@ def quanpin_transform(item, qptable):
         if not item[index].islower():
             index += 1
             continue
-        if item[index] in qptable["__uimode__"]:
+        # support user ziku, uimode only start at index 0
+        if index == 0 and item[index] in qptable["__uimode__"]:
             index += 1
             if index < lenitem :
                 while item[index] != "v":
@@ -130,6 +131,7 @@ def quanpin_transform(item, qptable):
     ptrmap["pinyinstr"] = pinyinstr    # 此处返回完全断字之后的字符串，符合搜狗云标准
     ptrmap["pinyinlist"] = pinyinlist  # 此处返回每个单个拼音的列表，适合本地处理
     ptrmap["itmmap"] = itmmap          # 字间的非字符，例如形码表，标点符号等
+    ptrmap["originput"] = item.translate(data.g_asctable, data.g_numchars)         # 原始输入的字符
     ptrmap["pytype"] = "quanpin"
     return ptrmap
 
@@ -195,6 +197,7 @@ def shuangpin_transform(item, sptable):
     ptrmap["pinyinstr"] = pinyinstr
     ptrmap["itmmap"] = itmmap
     ptrmap["pinyinlist"] = pinyinlist
+    ptrmap["originput"] = item.translate(data.g_asctable, data.g_numchars)
     ptrmap["pytype"] = "shuangpin"
 
     return ptrmap
@@ -242,8 +245,47 @@ def process(item, map, rzk):
         hint = "_"
     return newoutput, hint
 
-# 解析云端数据
+# 解析云端数据，同时兼顾本地用户数据
 def remote_parse(kbmap, debug):
+    ret = []
+
+    try:
+        userzk = data.get(data.load_alpha_userzk)
+        pys = kbmap["pinyinstr"]
+        pyl = kbmap["pinyinlist"]
+        ori = kbmap["originput"]
+        wc = kbmap["word_count"]
+        if kbmap["pytype"] == "quanpin":
+            # 按全部解析出的输入判定
+            index = pyl[wc][1]
+            key = ori
+            if userzk.has_key(key):
+                for item in userzk[key].split(" "):
+                    if item[0] == "#":
+                        break
+                    ret.append((item, index))
+            # 按带断字符的方式判定
+            key = pys
+            if userzk.has_key(key):
+                for item in userzk[key].split(" "):
+                    if item[0] == "#":
+                        break
+                    ret.append((item, index))
+        else:
+            # 按原始输入来检查用户词库，支持不带断字符的双拼原始码用户词库
+            index = pyl[wc][1]
+            key = ori
+            if userzk.has_key(key):
+                for item in userzk[key].split(" "):
+                    if item[0] == "#":
+                        break
+                    ret.append((item, index))
+    except Exception:
+        pass
+    if len(ret) > 0:
+        return ret
+
+    # check cloud
     url = "http://web.pinyin.sogou.com/web_ime/get_ajax/%s.key" % kbmap["pinyinstr"]
     fh = urllib.urlopen(url)
     remotestr = fh.read()
@@ -252,8 +294,7 @@ def remote_parse(kbmap, debug):
         exec(str)
     except Exception, inst:
         print "Exception at "+kbmap["pinyinstr"], "str='"+ str+ "'",type(inst).__name__, inst
-        return []
-    ret = []
+        return ret
     for item in ime_query_res.split("+"):
         myitem = item.rstrip()
         index = myitem.find('：')
@@ -277,7 +318,7 @@ def getquanpin(pyl, wc):
         ret += pyl[i][0] + "'"
     return ret.rstrip("'"), pyl[wc][1]
 
-# 利用本地词库进行解析，全拼要支持简拼功能
+# 利用本地词库进行解析，全拼将来要支持简拼功能
 def local_parse_quanpin(kbmap, debug):
     ret = []
     pys = kbmap["pinyinstr"]
@@ -293,16 +334,22 @@ def local_parse_quanpin(kbmap, debug):
         zk4 = data.get(data.load_alpha_pyzk4)
     try:
         userzk = data.get(data.load_alpha_userzk)
+        ori = kbmap["originput"]
 
-        # 按原始输入来检查用户词库，支持不带断字符的原始码用户词库
-        key, index = getquanpin(pyl, wc)
+        # 按全部解析出的输入判定
+        index = pyl[wc][1]
+        key = ori
         if userzk.has_key(key):
             for item in userzk[key].split(" "):
+                if item[0] == "#":
+                    break
                 ret.append((item, index))
-        # 按拼音解析后字符串来检查用户词库，支持带全部断字符的全拼用户词库
+        # 按带断字符的方式判定
         key = pys
         if userzk.has_key(key):
             for item in userzk[key].split(" "):
+                if item[0] == "#":
+                    break
                 ret.append((item, index))
     except Exception:
         pass
@@ -348,10 +395,14 @@ def local_parse_shuangpin(kbmap, debug):
         zk4 = data.get(data.load_alpha_pyzk4)
     try:
         userzk = data.get(data.load_alpha_userzk)
+        ori = kbmap["originput"]
         # 按原始输入来检查用户词库，支持不带断字符的双拼原始码用户词库
-        key, index = getquanpin(pyl, wc)
+        index = pyl[wc][1]
+        key = ori
         if userzk.has_key(key):
             for item in userzk[key].split(" "):
+                if item[0] == "#":
+                    break
                 ret.append((item, index))
     except Exception:
         pass
@@ -490,7 +541,7 @@ def quanpin_parse(keyb, debug):
         # 解析有拼音输入时的形码过滤
         for item,index in result:
             if index == -1:
-                ret.append((item, "", index))
+                ret.append((item, "_", index))
                 continue
             displayitem, hint = process(item, map, rzk)
             if displayitem == "":
@@ -502,7 +553,7 @@ def quanpin_parse(keyb, debug):
             if len(ret) >= data.g_maxoutput:
                 break
         if debug:
-            ret.append((keyb, "__", -1))
+            ret.append((keyb, "_", -1))
     if debug:
         print " %d 个结果：缺省为 %s => %s，提示信息为 %s" % (len(ret)-1, keyb, ret[0][0], ret[0][1])
     return ret
@@ -536,7 +587,7 @@ def shuangpin_parse(keyb, debug):
         # 解析有拼音输入时的形码过滤
         for item,index in result:
             if index == -1:
-                ret.append((item, "", index))
+                ret.append((item, "_", index))
                 continue
             displayitem, hint = process(item, map, rzk)
             if displayitem == "":
@@ -548,7 +599,7 @@ def shuangpin_parse(keyb, debug):
             if len(ret) >= data.g_maxoutput:
                 break
         if debug:
-            ret.append((keyb, "__", -1))
+            ret.append((keyb, "_", -1))
     if debug:
         print " %d 个结果：缺省为 %s => %s，提示信息为 %s" % (len(ret)-1, keyb, ret[0][0], ret[0][1])
     return ret

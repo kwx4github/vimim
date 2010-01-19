@@ -8,13 +8,18 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         print "no argument"
     else:
-        if len(sys.argv) > 2:
-            algo.parse("__setmode="+sys.argv[2])
-        else:
-            algo.parse("__setmode=quanpin")
-        for k,h,v in algo.parse(sys.argv[1], debug=True):
-            # k is the key
-            # h is the hint text
-            # v is the string pointer
-            print "%s\t%s\t%s" % (k,v,h.replace(" ", "_"))
-        #algo.parse(sys.argv[1], debug=True)
+        algo.parse("__setmode=quanpin")
+        keyb = sys.argv[1]
+        ret = algo.parse(keyb, debug=True)
+        #ret = algo.parse(keyb)
+        if len(ret) > 0:
+            maxlen = len(ret[0][0])
+            count = 0
+            for k,h,v in ret:
+                padding = (maxlen - len(k))/3*2
+                count += 1
+                if v == -1:
+                    print "%2d"%count,"%s %s"%(k,h)
+                else:
+                    print "%2d"%count,"%s%s %s"%(k,keyb[v:],h)
+

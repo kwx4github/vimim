@@ -3,6 +3,7 @@
 # Author: Pan, Shi Zhu
 
 import sys
+import string
 import os.path
 import cPickle
 
@@ -496,6 +497,9 @@ def getkeychars():
         return "[a-z]"
     else:
         raise ValueError, "invalid mode"
+
+g_asctable = string.maketrans("","")
+g_numchars = "0123456789"
 
 # set test stuffs
 if __name__ == "__main__":
