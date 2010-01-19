@@ -28,8 +28,8 @@
               http://vimim.googlecode.com/svn/vimim/vimim.big5.html
                       file:///C:/home/xma/svn/vimim/vimim.big5.html
    ---------------------------------------------------------------- dll
-   cp C:/home/vimim/mycloud/client/libmycloud.dll $VIM/vimfiles/plugin/
-   http://vimim.googlecode.com/svn/mycloud/client/libmycloud.dll
+   cp C:/home/vimim/mycloud/client/libvimim.dll $VIM/vimfiles/plugin/
+   http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll
    ----------------------------------------------------------------
                    svn co https://vimim.googlecode.com/svn/mycloud/
    ----------------------------------------------------------------
@@ -709,10 +709,10 @@ __ http://pim-cloud.appspot.com/
 【必要条件】
 
   * 入〖云〗必须联网
-  * 入〖云〗必须借助 libmycloud.dll__ 或者 wget__
+  * 入〖云〗必须借助 libvimim.dll__ 或者 wget__
   * 入〖云〗必须使用汉语拼音：全拼或者双拼甚至简拼
 
-__ http://vimim.googlecode.com/svn/mycloud/client/libmycloud.dll
+__ http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll
 __ http://users.ugent.be/~bpuype/wget/
 
 .. sidebar::  VimIM `CLOUD 云输入`_ 　双拼
@@ -869,7 +869,7 @@ __ http://vim.sf.net/scripts/script.php?script_id=2506
   +----+---------------------------------------------+
 
 
-__ http://vimim.googlecode.com/svn/mycloud/client/libmycloud.dll
+__ http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll
 __ http://vim.sf.net/scripts/script.php?script_id=2506
 
 |
@@ -2770,7 +2770,7 @@ vimimhelp =>
 
 (2) 〖想云就云〗，不换模式，不限输入法
 
-   * 【条件】只需要联网和wget/curl/libmycloud.dll
+   * 【条件】只需要联网和libvimim.dll/wget/curl
    * 【限于】 `〖点石成金〗`_
    * 【操作】在输入后加多一个单引号，接着敲〖点石键〗
    * 【例】ajiao' => 阿娇
@@ -3082,6 +3082,7 @@ WHAT IS NEW
 #. [done] [super internal code] create dictionary for Chinese
 #. [done] [all-cloud] if no match from local, always try cloud before giving up
 #. [done] [sexy-onekey] re-consider paste/nopaste option
+#. [done] remove vimim_length_filter(); improve s:vimim_pinyin_filter()
 #. [todo] what is the best way to make short-cut out of x3j3 without number?
 #. [todo] is it possible to use all digital datafile and search by integer?
 #. [todo] cloud_at_will_trailing_apostrophe not reliable
