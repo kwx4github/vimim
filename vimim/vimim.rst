@@ -138,7 +138,8 @@ vimimhelp　<C-6>　p
    最新程式       http://vimim.googlecode.com/svn/vimim/vimim.vim.html
    试用版本       http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim
    官方网址       http://vim.sf.net/scripts/script.php?script_id=2506
-   自己的云       http://pim-cloud.appspot.com/
+   民间词库       http://pim-cloud.appspot.com
+   自己的云       http://vimim-data.googlecode.com
    新闻论坛       http://groups.google.com/group/vimim
 ==============    ========================================================
 
@@ -2291,9 +2292,9 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 
 + 【操作】
 
-  - 【开启】—— 敲 <Ctrl-\\>
-  - 【关闭】—— 敲 <Ctrl-\\>
-  - 【退出】—— 敲 <Esc>
+  - 【开启】—— 敲 <Ctrl-\\>    (toggle and triggle)
+  - 【关闭】—— 敲 <Ctrl-\\>    (triggle)
+  - 【退出】—— 敲 <Esc>        (same as Vim)
   - 【功能】—— 包括〖点石成金〗全部功能，加之：
 
     * 〖经典〗空格键上汉字，回车键上英文。
