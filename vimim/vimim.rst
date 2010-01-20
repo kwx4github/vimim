@@ -30,8 +30,17 @@
    ---------------------------------------------------------------- dll
    cp C:/home/vimim/mycloud/client/libvimim.dll $VIM/vimfiles/plugin/
    http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll
-   ----------------------------------------------------------------
-                   svn co https://vimim.googlecode.com/svn/mycloud/
+   ---------------------------------------------------------------- mycloud
+   svn co https://vimim.googlecode.com/svn/mycloud/
+   ---------------------------------------------------------------- vimim-data
+   svn co https://vimim-data.googlecode.com/svn/trunk/
+   cd /home/vimim/data/trunk
+   wget http://vimim.googlecode.com/files/vimim.3000.txt
+   mkdir data && cp /home/vimim/vimim.3000.txt data/
+   make status
+   make dist
+   make help
+   make
    ----------------------------------------------------------------
       http://vimim.googlecode.com/svn/vim/vimfiles/syntax/2html.vim
               file:///C:/home/xma/svn/vim/vimfiles/syntax/2html.vim
@@ -2200,16 +2209,20 @@ e　亿  j　斤  o　度  t　吨  z　兆
 |
 | 〖中文输入模式〗三者择一：
 |
-|   ㈠【动态模式】就是输入过程中一直出选择项目，
+|   :let g:vimim_static_input_style=0  （缺省）
+|   ㈠【经典动态模式】就是输入过程中一直出选择项目，
 |                 或者说，每敲一个字母就蹦出一个菜单。
-|   ㈡【静态模式】就是输入完后按空格出选择项目。
-|                 支持连续上字。
-|   ㈢【sexy静态模式】经典【静态模式】，不可连续上字。
-|                     但是支持OneKey所有功能。
+|
+|   :let g:vimim_static_input_style=1
+|   ㈡【经典静态模式】就是输入完后按空格出选择项目。
+|                     支持连续上字。
+|
+|   :let g:vimim_static_input_style=2
+|   ㈢【Sexy静态模式】(A) 对比【经典静态模式】去掉连续上字
+|                     (B) 对比【点石成金】加上连续上字，以及不少cool功能
 |
 |
 
-     - 快捷英文输入：敲【缺省键】动态切换中英文输入模式。
 
   + 【共同特点】 
 
@@ -2226,8 +2239,8 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 |
 
-〖动态模式〗
-------------
+〖经典动态模式〗
+----------------
 
 - 【缺省开启】
 - 【优点】完美实现 Vim 与中文输入法的无间配合
@@ -2249,8 +2262,8 @@ e　亿  j　斤  o　度  t　吨  z　兆
 
 |
 
-〖静态模式〗
-------------
+〖经典静态模式〗
+----------------
 
 - 【开启】:let g:vimim_static_input_style=-1
 - 【特点】可以继续输入，省掉许多空格
@@ -2258,23 +2271,23 @@ e　亿  j　斤  o　度  t　吨  z　兆
 - 【优势】长句子云输入
 
 
-〖无模式之模式〗
+〖Sexy静态模式〗
 ----------------
-| 这也许是传说中的 `无模式之中文输入模式`__ 。
-| 也可以当作 `〖点石成金〗`_ 的另类玩法。缺省关闭。
+这也许是传说中的 `无模式之中文输入模式`__ 。
 
 __ http://code.google.com/p/vimim/wiki/OneKey
 
-
-.. sidebar::  VimIM 〖无模式之模式〗
+.. sidebar::  VimIM 〖Sexy静态模式〗
 
    .. figure:: abcdefghi.gif
 
 
-+ 【特点】
++ 【特点】 集【点石成金】和【经典静态模式】之优点于一身。
 
-  - 【特点】 `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
-  - 【设置】 :let g:vimim_sexy_onekey=1
+  (1)  对比【经典静态模式】去掉连续上字
+  (2)  对比【点石成金】加上连续上字，以及不少cool功能。
+
++ 【设置】 :let g:vimim_static_input_style=2
 
 + 【操作】
 
@@ -2298,15 +2311,15 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 +------------------------+---------------------------------+
 |   Vim 模式             |   敲　 CTRL-\\                  |
 +========================+=================================+
-| vim 正常模式           | 开启  〖点石成金〗输入模式      |
+| vim 正常模式           | 开启  〖Sexy静态模式〗          |
 +------------------------+---------------------------------+
-| vim 插入模式    　     | 开启  〖点石成金〗输入模式      |
+| vim 插入模式    　     | 开启  〖Sexy静态模式〗          |
 +------------------------+---------------------------------+
 | vim 可视模式         　| 　`见字找码`_ 　　              |
 +------------------------+---------------------------------+
 | vim 可视模式         　| 　`动态造词`_ 　　              |
 +------------------------+---------------------------------+
-|    <Esc>               | 关闭  〖点石成金〗输入模式      |
+|    <Esc>               | 关闭  〖Sexy静态模式〗          |
 +------------------------+---------------------------------+
 
 
@@ -2523,7 +2536,7 @@ __ http://code.google.com/p/vimim/wiki/FAQ_Old
      | VimIM 尽可能提供自动复制机制，方便〖打字回帖〗。
      |
      | ㈠ 选择提示菜单中的字或成语，敲 "s" 上字的同时自动拷贝。
-     | ㈡ 每当关闭 `〖无模式之模式〗`_ current line 自动拷贝。
+     | ㈡ 每当关闭 `〖Sexy静态模式〗`_ current line 自动拷贝。
      | ㈢ 每当关闭 `〖中文输入模式〗`_ 整个 session 自动拷贝。
      |    【缺省开启】 :let g:vimim_auto_copy_clipboard=1
      |
@@ -2773,12 +2786,17 @@ vimimhelp =>
 
     〖中文输入模式〗三者择一：
 
-    |   ㈠【动态模式】就是输入过程中一直出选择项目，
-    |                 或者说，每敲一个字母就蹦出一个菜单。
-    |   ㈡【静态模式】就是输入完后按空格出选择项目。
-    |                 支持连续上字。
-    |   ㈢【sexy静态模式】经典【静态模式】，不可连续上字。
-    |                     但是支持OneKey所有功能。
+    |  :let g:vimim_static_input_style=0  （缺省）
+    |  ㈠【经典动态模式】就是输入过程中一直出选择项目，
+    |                或者说，每敲一个字母就蹦出一个菜单。
+    |
+    |  :let g:vimim_static_input_style=1
+    |  ㈡【经典静态模式】就是输入完后按空格出选择项目。
+    |                    支持连续上字。
+    |
+    |  :let g:vimim_static_input_style=2
+    |  ㈢【Sexy静态模式】(A) 对比【经典静态模式】去掉连续上字
+    |                    (B) 对比【点石成金】加上连续上字，以及不少cool功能
  
 (3) 〖想云就云〗，不换模式，不限输入法
 
@@ -2808,14 +2826,23 @@ vimimhelp =>
   *           GVim 玩家可以用 CTRL-SPACE 切换中文模式
   *           :let g:vimim_ctrl_space_to_toggle=1
 
-(7) [new] better OneKey sexy mode
 
-  * `〖无模式之模式〗`_
-  * 设置： :let g:vimim_sexy_onekey=1
+(7) 〖Sexy静态模式〗  (new)
 
-    * 【开启】—— 敲 <Ctrl-6>
-    * 【开启】—— 敲 <Ctrl-6>
-    * 【退出】—— 敲 <Esc>
+    这也许是传说中的 `无模式之中文输入模式`__ 。
+
+   + 【特点】
+   
+     - 【特点】 `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
+     - 【设置】 :let g:vimim_static_input_style=2
+   
+   + 【操作】
+   
+     - 【开启】—— 敲 <Ctrl-\\>
+     - 【关闭】—— 敲 <Ctrl-\\>
+     - 【退出】—— 敲 <Esc>
+     - 【功能】—— 包括〖点石成金〗全部功能，加之：......
+
 
 (8) [new] Windows gVim 用户的福音：
 
@@ -3057,11 +3084,10 @@ WHAT IS NEW
 #. [done] [zhengma] fix aewz using datafile: vimim.zhengma.txt
 #. [done] [zhengma] plug and play <=> zhengma and pinyin sleep together
 #. [done] [sleep together] [array30][xinhua][quick] and [pinyin] plug and play
-#. [done] [onekey] g:vimim_sexy_onekey => noruler means OneKey mode is on
 #. [done] [onekey] g:vimim_sexy_onekey>0, no transformation of double ,.
+#. [done] [onekey] g:vimim_sexy_onekey & g:xingma_sleep_with_pinyin
 #. [done] [onekey] create official OneKey Chinese input mode
 #. [done] [onekey] combine g:vimim_reverse_lookup and g:vimim_save_new_entry
-#. [done] [onekey] g:vimim_sexy_onekey & g:xingma_sleep_with_pinyin
 #. [done] [mycloud] g:vimim_cloud_plugin='C:/home/vimim/mycloud/mycloud'
 #. [done] [recycle] save typing by reusing input memory: g:vimim_smart_ctrl_n
 #. [done] [recycle] save typing by reusing all inputs: g:vimim_smart_ctrl_p
@@ -3117,5 +3143,11 @@ WHAT IS NEW
 #. [todo] cloud_at_will_trailing_apostrophe not reliable
 #. [todo] let msg = "OneKey stops here": mutual exclusive <C-6> and <C-Bslash>
 #. [todo] shi5 should be zi
- 
- 
+#. [todo] need to optimize s:vimim_pinyin_filter(results, keyboards)
+#. [done] replace g:vimim_sexy_onekey=1 with g:vimim_static_input_style=2
+#. [todo] ma.vim.ma
+#. [todo] yun07mu
+
+
+
+
