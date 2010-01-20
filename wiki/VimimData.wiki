@@ -1,0 +1,41 @@
+﻿#summary  VimIM Data Project
+http://code.google.com/p/vimim/wiki/VimimData
+{{{
+http://code.google.com/p/vimim-data/
+　
+Phil 把 26 個詞庫都加進去了
+同時上傳了 26 個詞庫的 bzip2 壓縮包
+　
+Phil 覺得沒必要刪除 VimIM 的下載
+因為那裡有記錄每個文件下載的次數
+這樣對統計有點用處
+例如大概那種輸入法最多 VimIM 使用
+　
+checkout 了以後
+data/ 里就是 26 個詞庫的原始文件
+　
+make 或 make help
+  可以得到詳細的說明
+　
+make status
+  可以列出 make all / make dist / make upload 等命令將會處理的文件
+　
+make bzip2
+  可以把 data/ 目錄下的每個詞庫文件壓縮成 bzip2 檔案，放在 build 目錄下
+　
+make dist-bzip2
+  可以把 build/ 下的 bzip2 文件複製一份到 dist/ 目錄下
+  和 make bzip2 分開的原因是可能日後支持增量打包（雖然似乎一個文件沒什麼用）
+  這個依賴 bzip2
+　
+make upload
+  可以把 dist/ 目錄下的所有文件上傳到 google code 的 download 頁面
+  這個不依賴於前面的命令，也就是運行的時候 dist/ 下有什麼文件就會上傳什麼
+  請根據 Makefile 里的介紹設好 ～/.googlecode-password 文件（以及文件屬性！）
+  以避免重複輸入密碼
+　
+上面的 bzip2 換成 gzip 就是產生 gzip 的相應命令
+由於 bzip2 通常壓縮率更高
+Phil 覺得祗提供 bzip2 包即可
+例如Phil 剛剛用來上傳的一系列操作就是
+make cleanall && make dist-bzip2 && make upload 
