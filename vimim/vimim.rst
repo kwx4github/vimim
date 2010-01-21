@@ -2225,13 +2225,13 @@ e　亿  j　斤  o　度  t　吨  z　兆
 |
 
 
-  + 【共同特点】 
+  + 【共同特点】
 
      - 【经典】空格键上汉字，回车键上英文。
      - 用数字键确认汉字
      - 匹配提醒：缺省匹配，以及总匹配数。
 
-  + 【动态、静态模式】【共同特点】 
+  + 【动态、静态模式】【共同特点】
 
      - <Esc> 键：自动切换，与 vim 风格一致
      - 模式提醒：光标颜色和状态提示 ``INSERT (lang)``
@@ -2783,7 +2783,7 @@ vimimhelp =>
   (A) 按 <Ctrl-6>  在非中文模式直接出选择。　　　　　　=> 点石成金
   (B) 按 <Ctrl-\\> 进入中文输入模式，此后按空格出选择。=> 中文输入模式
 
-(2) 天下大势, 久分必合   
+(2) 天下大势, 久分必合
 
     〖中文输入模式〗三者择一：
 
@@ -2798,7 +2798,7 @@ vimimhelp =>
     |  :let g:vimim_static_input_style=2
     |  ㈢【Sexy静态模式】(A) 对比【经典静态模式】去掉连续上字
     |                    (B) 对比【点石成金】加上连续上字，以及不少cool功能
- 
+
 (3) 〖想云就云〗，不换模式，不限输入法
 
    * 【条件】只需要联网和libvimim.dll/wget/curl
@@ -2831,12 +2831,12 @@ vimimhelp =>
 (7) `〖Sexy静态模式〗`_
 
    + 【特点】
-   
+
      - 【特点】 `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
      - 【设置】 :let g:vimim_static_input_style=2
-   
+
    + 【操作】
-   
+
      - 【开启】—— 敲 <Ctrl-\\>
      - 【关闭】—— 敲 <Ctrl-\\>
      - 【退出】—— 敲 <Esc>
@@ -3136,15 +3136,16 @@ WHAT IS NEW
 #. [done] [super internal code] create dictionary for Chinese
 #. [done] [all-cloud] if no match from local, always try cloud before giving up
 #. [done] [sexy-onekey] re-consider paste/nopaste option
-#. [done] remove vimim_length_filter(); improve s:vimim_pinyin_filter()
 #. [todo] what is the best way to make short-cut out of x3j3 without number?
 #. [todo] is it possible to use all digital datafile and search by integer?
-#. [todo] cloud_at_will_trailing_apostrophe not reliable
 #. [todo] let msg = "OneKey stops here": mutual exclusive <C-6> and <C-Bslash>
-#. [todo] shi5 should be zi
-#. [todo] need to optimize s:vimim_pinyin_filter(results, keyboards)
+#. [done] add back vimim_length_filter(); improve s:vimim_pinyin_filter()
 #. [done] replace g:vimim_sexy_onekey=1 with g:vimim_static_input_style=2
+#. [todo] cloud_at_will_trailing_apostrophe not reliable
 #. [todo] ma.vim.ma
-#. [todo] yun07mu
 
+
+masea@sma16  Wednesday 01/20/2010 06:58 PM
+431$ j
+BrlAPI
 
