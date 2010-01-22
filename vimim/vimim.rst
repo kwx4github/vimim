@@ -130,7 +130,7 @@ VimIM —— Vim 中文输入法
 |
 
 ==============    ========================================================
-vimimhelp　<C-6>　p
+vimimhelp　<C-6><C-6>
 ==========================================================================
    错误报告       http://code.google.com/p/vimim/issues/entry
    词库下载       http://code.google.com/p/vimim/downloads/list
@@ -163,7 +163,7 @@ vimimhelp　<C-6>　p
 | 【拼音★四角】同时插上，可以平行也可以交叉使用，无须切换。
 | 【五笔★拼音】同时插上，可以平行使用，动态切换。
 |
-| 不设选项，不换模式，点<C-6>就可上汉字，是谓〖点石成金〗。
+| 不设选项，不换模式，点<C-6>就可以上汉字，是谓〖点石成金〗。
 | 如果用<C-\\>切换成中文输入模式，也可以将就当前流行的输入法习惯。
 |
 | 所谓卸载，就是删除文本文件。
@@ -331,9 +331,133 @@ __ http://www.bibibang.com/group_thread/view/id-12421
 |
 |
 
+Changes in 2010
+===============
+【安民告示】 新的缺省键终生不变
+
+vimimhelp =>
+  试用版本  http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim
+
+(1) VimIM mapping
+
+  (A) 按 <Ctrl-6>  在非中文模式直接出选择。　　　　　　=> 点石成金
+  (B) 按 <Ctrl-\\> 进入中文输入模式，此后按空格出选择。=> 中文输入模式
+
+(2) 天下大势, 久分必合
+
+    〖中文输入模式〗三者择一：
+
+    |  :let g:vimim_static_input_style=0  （缺省）
+    |  ㈠【经典动态模式】就是输入过程中一直出选择项目，
+    |                或者说，每敲一个字母就蹦出一个菜单。
+    |
+    |  :let g:vimim_static_input_style=1
+    |  ㈡【经典静态模式】就是输入完后按空格出选择项目。
+    |                    支持连续上字。
+    |
+    |  :let g:vimim_static_input_style=2
+    |  ㈢【Sexy静态模式】(A) 对比【经典静态模式】去掉连续上字
+    |                    (B) 对比【点石成金】加上连续上字，以及不少cool功能
+
+(3) 〖想云就云〗，不换模式，不限输入法
+
+   * 【条件】只需要联网和libvimim.dll/wget/curl
+   * 【限于】 `〖点石成金〗`_
+   * 【操作】在输入后加多一个单引号，接着敲〖点石键〗
+   * 【例】ajiao' => 阿娇
+   * 【例】dbrcxby' => 东边日出西边雨
+   * 【例】hfpjlswsqy' => 好风凭借力送我上青云
+
+(4) 强制非云
+
+   * 【特点】在输入后加英文句号，接着敲〖点石键〗
+   * 【特点】不受g:vimim_cloud_sogou的设置所限制
+   * 【例】cloud.  => 云
+
+(5) universal imode
+
+   *   ' =>   为输入小写中文数字的前导字符
+   *  '' =>   为输入大写中文数字的前导字符
+   *  【例】 '2000 　=>　二〇〇九
+   *  【例】 ''2000　=>　贰零零玖
+
+(6) new name
+
+  * 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping
+  *           GVim 玩家可以用 CTRL-SPACE 切换中文模式
+  *           :let g:vimim_ctrl_space_to_toggle=1
+
+
+(7) `〖Sexy静态模式〗`_
+
+   + 【特点】
+
+     - 【特点】 `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
+     - 【设置】 :let g:vimim_static_input_style=2
+
+   + 【操作】
+
+     - 【开启】—— 敲 <Ctrl-\\>
+     - 【关闭】—— 敲 <Ctrl-\\>
+     - 【退出】—— 敲 <Esc>
+     - 【功能】—— 包括〖点石成金〗全部功能，加之：......
+
+
+(8) [new] Windows gVim 用户的福音：
+
+   【目的】使在微软Windows下使用VimIM云输入的体验更加柔和。
+
+   A special bonus DLL is created for gVim users on Microsoft Windows.
+   It can be used to replace wget.exe, and effectively avoid a flash
+   DOS box on the status line when accessing cloud.
+
+   【用法】下载新版 libvimim.dll__  置于vim plugin 目录之下
+
+__ http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll
+
+
+(9) [new] `〖点石成金〗`_   双敲<C-6> 图个舒服
+
+  * vim<C-6><C-6> 
+  * vimim<C-6><C-6> 
+
+(10) [new] 内码输入；
+
+  * 以u为十六进制内码输入的前导字符
+  * 以零结尾为动态列表（十进制或十六进制）
+  * 无词库无联网：abcdefghijklmnopqrstuvwxyz 上单词。
+
+  | * Unicode 内码输入
+  | * GBK 内码输入
+  | * Big5 内码输入
+  |
+  | 【演示】Unicode 内码一键输入：
+  | 　　　【例】　十进制：敲　 **22221** 　→　囍
+  | 　　　【例】十六进制：敲　 **u56cd** 　→　囍
+  |
+  | 【示意图】标准统一码动态列表（以零结尾）：
+  |
+  | 　　　【例】　十进制：敲　 **22220** 　→　囍 in 菜单
+  | 　　　【例】十六进制：敲　 **u56c0** 　→　囍 in 菜单
+  |
+
+(11) [new] start a new way to deal with private datafile
+
+  | For example: one data entry, with two ## at the end
+  |              ajiao  阿娇 ##
+  |
+  |
+
+
+
+|
+|
+
 附录：
 ======
 
+|
+|
 |
 |
 |
@@ -1454,17 +1578,18 @@ Vim插入模式
 +------------------------+----------------------------+-----------------------+
 
 |
-| 【小技巧】玩家可以自定义热键：
-| 　　　　　例如在.vimrc中，定义 CTRL-L 为中文模式开关
-| 　　　　　imap<silent><C-L>   <Plug>VimimChineseMode
-|
 | 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping,
 | 　　　　　GVim 玩家可以用 CTRL-SPACE 切换中文模式
 | 　　　　　:let g:vimim_ctrl_space_to_toggle=1
 |
+| 【小技巧】可以定义Tab键为<C-6>
+| 　　　　　:let g:vimim_tab_as_onekey=1
 |
-
-
+| 【小技巧】玩家可以自定义热键：
+| 　　　　　例如在.vimrc中，定义 CTRL-L 为中文模式开关
+| 　　　　　imap <C-L> <C-\\>
+|
+|
 
 .. sidebar::  `〖点石成金〗`_ 　(*OneKey*)
 
@@ -1490,7 +1615,7 @@ Vim插入模式
 
   #.  打开 vim （如果用Windows可以双击gVim.exe）
   #.  敲 o 或 i 或 a 进入 vim 插入模式
-  #.  连敲四键: v i m <C-\\>
+  #.  连敲四键: v i m <C-6>
   #.  敲 j  光标向下移动
   #.  敲 k  光标向上移动
   #.  敲 h  向上翻页
@@ -1505,6 +1630,7 @@ Vim插入模式
 
   + vim 插入模式：
 
+    - 【点石键】<Ctrl-6>
     - 【云输入】最方便的 `CLOUD 云输入`_
     - 〖想云就云〗不换模式，不限输入法:  加单引号
     - 【整句输入】敲中文如同敲英文
@@ -1524,21 +1650,11 @@ Vim插入模式
     - 【以词定字】可按 ``[`` 或 ``]`` 键
     - 【汉字上屏】也可敲 ``y`` 键或点石键
 
-|
 
-【点石键】OneKey 二者择一：　`VimIM Mapping`_
+  + 快键：双敲<C-6> 图个舒服
 
-  (1) 〖CTRL-6〗
-
-     + 【缺省开启】
-
-  (2) 〖Tab〗（Vim插入模式）
-
-     + 【优点】Tab键方便省力
-     + 【反经典】用Tab键上汉字，用空格键确认
-     + 【智能】该出码时就出码，没码时出Tab
-     + 【开启可设】 :let g:vimim_tab_as_onekey=1
-     + 【推荐】OneKey 专业玩家
+    - vim<C-6><C-6>
+    - vimim<C-6><C-6>
 
 |
 |
@@ -1569,6 +1685,7 @@ Vim插入模式
      |       ㈡ (Vim Normal Mode) 敲map:　 ``g:``
      |
      |
+
 
 中文搜索
 --------
@@ -2771,120 +2888,6 @@ __ http://groups.google.com/group/vimim/browse_thread/thread/4dc68560ae37e4d0
 |
 |
 
-Changes in 2010
-===============
-【安民告示】 新的缺省键终生不变
-
-vimimhelp =>
-  试用版本  http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim
-
-(1) VimIM mapping
-
-  (A) 按 <Ctrl-6>  在非中文模式直接出选择。　　　　　　=> 点石成金
-  (B) 按 <Ctrl-\\> 进入中文输入模式，此后按空格出选择。=> 中文输入模式
-
-(2) 天下大势, 久分必合
-
-    〖中文输入模式〗三者择一：
-
-    |  :let g:vimim_static_input_style=0  （缺省）
-    |  ㈠【经典动态模式】就是输入过程中一直出选择项目，
-    |                或者说，每敲一个字母就蹦出一个菜单。
-    |
-    |  :let g:vimim_static_input_style=1
-    |  ㈡【经典静态模式】就是输入完后按空格出选择项目。
-    |                    支持连续上字。
-    |
-    |  :let g:vimim_static_input_style=2
-    |  ㈢【Sexy静态模式】(A) 对比【经典静态模式】去掉连续上字
-    |                    (B) 对比【点石成金】加上连续上字，以及不少cool功能
-
-(3) 〖想云就云〗，不换模式，不限输入法
-
-   * 【条件】只需要联网和libvimim.dll/wget/curl
-   * 【限于】 `〖点石成金〗`_
-   * 【操作】在输入后加多一个单引号，接着敲〖点石键〗
-   * 【例】ajiao' => 阿娇
-   * 【例】dbrcxby' => 东边日出西边雨
-   * 【例】hfpjlswsqy' => 好风凭借力送我上青云
-
-(4) 强制非云
-
-   * 【特点】在输入后加英文句号，接着敲〖点石键〗
-   * 【特点】不受g:vimim_cloud_sogou的设置所限制
-   * 【例】cloud.  => 云
-
-(5) universal imode
-
-   *   ' =>   为输入小写中文数字的前导字符
-   *  '' =>   为输入大写中文数字的前导字符
-   *  【例】 '2000 　=>　二〇〇九
-   *  【例】 ''2000　=>　贰零零玖
-
-(6) new name
-
-  * 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping
-  *           GVim 玩家可以用 CTRL-SPACE 切换中文模式
-  *           :let g:vimim_ctrl_space_to_toggle=1
-
-
-(7) `〖Sexy静态模式〗`_
-
-   + 【特点】
-
-     - 【特点】 `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
-     - 【设置】 :let g:vimim_static_input_style=2
-
-   + 【操作】
-
-     - 【开启】—— 敲 <Ctrl-\\>
-     - 【关闭】—— 敲 <Ctrl-\\>
-     - 【退出】—— 敲 <Esc>
-     - 【功能】—— 包括〖点石成金〗全部功能，加之：......
-
-
-(8) [new] Windows gVim 用户的福音：
-
-   【目的】使在微软Windows下使用VimIM云输入的体验更加柔和。
-
-   A special bonus DLL is created for gVim users on Microsoft Windows.
-   It can be used to replace wget.exe, and effectively avoid a flash
-   DOS box on the status line when accessing cloud.
-
-   【用法】下载新版 libvimim.dll__  置于vim plugin 目录之下
-
-__ http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll
-
-
-(9) [new] 内码输入；
-
-  * 以u为十六进制内码输入的前导字符
-  * 以零结尾为动态列表（十进制或十六进制）
-  * 无词库无联网：abcdefghijklmnopqrstuvwxyz 上单词。
-
-  | * Unicode 内码输入
-  | * GBK 内码输入
-  | * Big5 内码输入
-  |
-  | 【演示】Unicode 内码一键输入：
-  | 　　　【例】　十进制：敲　 **22221** 　→　囍
-  | 　　　【例】十六进制：敲　 **u56cd** 　→　囍
-  |
-  | 【示意图】标准统一码动态列表（以零结尾）：
-  |
-  | 　　　【例】　十进制：敲　 **22220** 　→　囍 in 菜单
-  | 　　　【例】十六进制：敲　 **u56c0** 　→　囍 in 菜单
-  |
-
-(10) [new] start a new way to deal with private datafile
-
-  | For example: one data entry, with two ## at the end
-  |              ajiao  阿娇 ##
-  |
-  |
-
-
-|
 
 WHAT IS NEW
 ===========
@@ -3142,10 +3145,9 @@ WHAT IS NEW
 #. [done] add back vimim_length_filter(); improve s:vimim_pinyin_filter()
 #. [done] replace g:vimim_sexy_onekey=1 with g:vimim_static_input_style=2
 #. [todo] cloud_at_will_trailing_apostrophe not reliable
-#. [todo] ma.vim.ma
+#. [todo] get used to <C-Space><C-Space>
+#. [todo] http://www.xxx.com<C-6><C-6> use it as http dump
+#. [done] default on for g:vimim_onekey_double_ctrl6=1
 
 
-masea@sma16  Wednesday 01/20/2010 06:58 PM
-431$ j
-BrlAPI
 
