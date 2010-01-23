@@ -691,13 +691,12 @@ VimIM 不错, 一直在用 :) -->
 </div>
 <div class="section" id="changes-in-2010">
 <h1><a class="toc-backref" href="#id127">Changes in 2010</a></h1>
-<p>【安民告示】 新的缺省键终生不变</p>
 <dl class="docutils">
 <dt>vimimhelp =&gt;</dt>
 <dd>试用版本  <a class="reference external" href="http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim">http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim</a></dd>
 </dl>
 <ol class="arabic simple">
-<li>VimIM mapping</li>
+<li>【安民告示】 新的缺省键终生不变　　　VimIM mapping</li>
 </ol>
 <blockquote>
 <ol class="upperalpha simple">
@@ -705,7 +704,16 @@ VimIM 不错, 一直在用 :) -->
 <li>按 &lt;Ctrl-\&gt; 进入中文输入模式，此后按空格出选择。=&gt; 中文输入模式</li>
 </ol>
 </blockquote>
-<ol class="arabic" start="2">
+<ol class="arabic simple" start="2">
+<li>[new] <a class="reference internal" href="#id83">〖点石成金〗</a>   双敲&lt;C-6&gt; 图个舒服</li>
+</ol>
+<blockquote>
+<ul class="simple">
+<li>vim&lt;C-6&gt;&lt;C-6&gt;</li>
+<li>vimim&lt;C-6&gt;&lt;C-6&gt;</li>
+</ul>
+</blockquote>
+<ol class="arabic" start="3">
 <li><p class="first">天下大势, 久分必合</p>
 <p>〖中文输入模式〗三者择一：</p>
 <div class="line-block">
@@ -741,7 +749,7 @@ VimIM 不错, 一直在用 :) -->
 <li>【例】hfpjlswsqy' =&gt; 好风凭借力送我上青云</li>
 </ul>
 </blockquote>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple" start="5">
 <li>强制非云</li>
 </ol>
 <blockquote>
@@ -751,7 +759,7 @@ VimIM 不错, 一直在用 :) -->
 <li>【例】cloud.  =&gt; 云</li>
 </ul>
 </blockquote>
-<ol class="arabic simple" start="5">
+<ol class="arabic simple" start="6">
 <li>universal imode</li>
 </ol>
 <blockquote>
@@ -762,53 +770,49 @@ VimIM 不错, 一直在用 :) -->
 <li>【例】 ''2000　=&gt;　贰零零玖</li>
 </ul>
 </blockquote>
-<ol class="arabic simple" start="6">
-<li>new name</li>
+<ol class="arabic simple" start="7">
+<li>new option names</li>
 </ol>
 <blockquote>
-<ul class="simple">
-<li>【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping</li>
-<li>GVim 玩家可以用 CTRL-SPACE 切换中文模式</li>
-<li>:let g:vimim_ctrl_space_to_toggle=1</li>
-</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping,</div>
+<div class="line">　　　　　GVim 玩家可以用 CTRL-SPACE 切换中文模式</div>
+<div class="line">　　　　　:let g:vimim_ctrl_space_to_toggle=1</div>
+<div class="line"><br /></div>
+<div class="line">【小技巧】可以定义Tab键为&lt;C-6&gt;</div>
+<div class="line">　　　　　:let g:vimim_tab_as_onekey=1</div>
+<div class="line"><br /></div>
+</div>
 </blockquote>
-<ol class="arabic simple" start="7">
+<ol class="arabic simple" start="8">
 <li><a class="reference internal" href="#sexy">〖Sexy静态模式〗</a></li>
 </ol>
 <blockquote>
 <ul class="simple">
-<li>【特点】<ul>
-<li>【特点】 <a class="reference internal" href="#id83">〖点石成金〗</a> 的另类玩法，一键多用，一石多鸟</li>
 <li>【设置】 :let g:vimim_static_input_style=2</li>
-</ul>
-</li>
 <li>【操作】<ul>
 <li>【开启】—— 敲 &lt;Ctrl-\&gt;</li>
 <li>【关闭】—— 敲 &lt;Ctrl-\&gt;</li>
 <li>【退出】—— 敲 &lt;Esc&gt;</li>
-<li>【功能】—— 包括〖点石成金〗全部功能，加之：......</li>
+<li>【功能】—— 包括〖点石成金〗全部功能，加之 ......</li>
 </ul>
 </li>
 </ul>
 </blockquote>
-<ol class="arabic simple" start="8">
+<ol class="arabic simple" start="9">
 <li>[new] Windows gVim 用户的福音：</li>
 </ol>
 <blockquote>
-<p>【目的】使在微软Windows下使用VimIM云输入的体验更加柔和。</p>
-<p>A special bonus DLL is created for gVim users on Microsoft Windows.
-It can be used to replace wget.exe, and effectively avoid a flash
-DOS box on the status line when accessing cloud.</p>
-<p>【用法】下载新版 <a class="reference external" href="http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll">libvimim.dll</a>  置于vim plugin 目录之下</p>
-</blockquote>
-<ol class="arabic simple" start="9">
-<li>[new] <a class="reference internal" href="#id83">〖点石成金〗</a>   双敲&lt;C-6&gt; 图个舒服</li>
-</ol>
 <blockquote>
-<ul class="simple">
-<li>vim&lt;C-6&gt;&lt;C-6&gt;</li>
-<li>vimim&lt;C-6&gt;&lt;C-6&gt;</li>
-</ul>
+【目的】使在微软Windows下玩VimIM云输入的体验更加柔和。</blockquote>
+<div class="line-block">
+<div class="line">A special bonus DLL is created for gVim users on Microsoft Windows.</div>
+<div class="line">It can be used to replace wget.exe, and effectively avoid a flash</div>
+<div class="line">DOS box on the status line when accessing cloud.</div>
+</div>
+<blockquote>
+【用法】下载新版 <a class="reference external" href="http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll">libvimim.dll</a>  置于vim plugin 目录之下</blockquote>
 </blockquote>
 <ol class="arabic simple" start="10">
 <li>[new] 内码输入；</li>
@@ -4924,16 +4928,20 @@ set langmenu=zh_CN.UTF-8
 <li>[todo] let msg = &quot;OneKey stops here&quot;: mutual exclusive &lt;C-6&gt; and &lt;C-Bslash&gt;</li>
 <li>[done] add back vimim_length_filter(); improve s:vimim_pinyin_filter()</li>
 <li>[done] replace g:vimim_sexy_onekey=1 with g:vimim_static_input_style=2</li>
-<li>[todo] cloud_at_will_trailing_apostrophe not reliable</li>
-<li>[todo] get used to &lt;C-Space&gt;&lt;C-Space&gt;</li>
-<li>[todo] <a class="reference external" href="http://www.xxx">http://www.xxx</a>.com&lt;C-6&gt;&lt;C-6&gt; use it as http dump</li>
 <li>[done] default on for g:vimim_onekey_double_ctrl6=1</li>
+<li>[todo] get used to &lt;C-Space&gt;&lt;C-Space&gt;</li>
+<li>[todo] [pinyin] make dropdown menu as standard as possible</li>
+<li>[todo] [libvimim.dll] <a class="reference external" href="http://www.xxx">http://www.xxx</a>.com&lt;C-6&gt;&lt;C-6&gt; use it as http dump</li>
+<li>[todo] [libvimim.dll] :Wget() for libcall(s:www_libcall,&quot;do_geturl&quot;,input)</li>
 </ol>
+<p>let www_libcall = &quot;/home/xma/svn/vim/vimfiles/plugin/libvimim.dll&quot;
+let input = &quot;<a class="reference external" href="http://cnn.com">http://cnn.com</a>&quot;
+let output = libcall(www_libcall, &quot;do_geturl&quot;, input)</p>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 09:51:04 PST on Friday, 01/22/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 16:24:07 PST on Friday, 01/22/2010
 【VimIM ®许可协议：GNU 自由文档许可证 <strong>GFDL</strong> 】
 </div>
 </body>
