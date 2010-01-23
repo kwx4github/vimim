@@ -333,17 +333,20 @@ __ http://www.bibibang.com/group_thread/view/id-12421
 
 Changes in 2010
 ===============
-【安民告示】 新的缺省键终生不变
-
 vimimhelp =>
   试用版本  http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim
 
-(1) VimIM mapping
+(1) 【安民告示】 新的缺省键终生不变　　　VimIM mapping
 
   (A) 按 <Ctrl-6>  在非中文模式直接出选择。　　　　　　=> 点石成金
   (B) 按 <Ctrl-\\> 进入中文输入模式，此后按空格出选择。=> 中文输入模式
 
-(2) 天下大势, 久分必合
+(2) [new] `〖点石成金〗`_   双敲<C-6> 图个舒服
+
+  * vim<C-6><C-6> 
+  * vimim<C-6><C-6> 
+
+(3) 天下大势, 久分必合
 
     〖中文输入模式〗三者择一：
 
@@ -359,7 +362,7 @@ vimimhelp =>
     |  ㈢【Sexy静态模式】(A) 对比【经典静态模式】去掉连续上字
     |                    (B) 对比【点石成金】加上连续上字，以及不少cool功能
 
-(3) 〖想云就云〗，不换模式，不限输入法
+(4) 〖想云就云〗，不换模式，不限输入法
 
    * 【条件】只需要联网和libvimim.dll/wget/curl
    * 【限于】 `〖点石成金〗`_
@@ -368,58 +371,54 @@ vimimhelp =>
    * 【例】dbrcxby' => 东边日出西边雨
    * 【例】hfpjlswsqy' => 好风凭借力送我上青云
 
-(4) 强制非云
+(5) 强制非云
 
    * 【特点】在输入后加英文句号，接着敲〖点石键〗
    * 【特点】不受g:vimim_cloud_sogou的设置所限制
    * 【例】cloud.  => 云
 
-(5) universal imode
+(6) universal imode
 
    *   ' =>   为输入小写中文数字的前导字符
    *  '' =>   为输入大写中文数字的前导字符
    *  【例】 '2000 　=>　二〇〇九
    *  【例】 ''2000　=>　贰零零玖
 
-(6) new name
+(7) new option names
 
-  * 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping
-  *           GVim 玩家可以用 CTRL-SPACE 切换中文模式
-  *           :let g:vimim_ctrl_space_to_toggle=1
-
-
-(7) `〖Sexy静态模式〗`_
-
-   + 【特点】
-
-     - 【特点】 `〖点石成金〗`_ 的另类玩法，一键多用，一石多鸟
-     - 【设置】 :let g:vimim_static_input_style=2
-
-   + 【操作】
-
-     - 【开启】—— 敲 <Ctrl-\\>
-     - 【关闭】—— 敲 <Ctrl-\\>
-     - 【退出】—— 敲 <Esc>
-     - 【功能】—— 包括〖点石成金〗全部功能，加之：......
+   |
+   | 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping,
+   | 　　　　　GVim 玩家可以用 CTRL-SPACE 切换中文模式
+   | 　　　　　:let g:vimim_ctrl_space_to_toggle=1
+   |
+   | 【小技巧】可以定义Tab键为<C-6>
+   | 　　　　　:let g:vimim_tab_as_onekey=1
+   |
 
 
-(8) [new] Windows gVim 用户的福音：
+(8) `〖Sexy静态模式〗`_
 
-   【目的】使在微软Windows下使用VimIM云输入的体验更加柔和。
+  * 【设置】 :let g:vimim_static_input_style=2
+  * 【操作】
 
-   A special bonus DLL is created for gVim users on Microsoft Windows.
-   It can be used to replace wget.exe, and effectively avoid a flash
-   DOS box on the status line when accessing cloud.
+    - 【开启】—— 敲 <Ctrl-\\>
+    - 【关闭】—— 敲 <Ctrl-\\>
+    - 【退出】—— 敲 <Esc>
+    - 【功能】—— 包括〖点石成金〗全部功能，加之 ......
+
+
+(9) [new] Windows gVim 用户的福音：
+
+   【目的】使在微软Windows下玩VimIM云输入的体验更加柔和。
+
+ | A special bonus DLL is created for gVim users on Microsoft Windows.
+ | It can be used to replace wget.exe, and effectively avoid a flash
+ | DOS box on the status line when accessing cloud.
 
    【用法】下载新版 libvimim.dll__  置于vim plugin 目录之下
 
 __ http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll
 
-
-(9) [new] `〖点石成金〗`_   双敲<C-6> 图个舒服
-
-  * vim<C-6><C-6> 
-  * vimim<C-6><C-6> 
 
 (10) [new] 内码输入；
 
@@ -3144,10 +3143,14 @@ WHAT IS NEW
 #. [todo] let msg = "OneKey stops here": mutual exclusive <C-6> and <C-Bslash>
 #. [done] add back vimim_length_filter(); improve s:vimim_pinyin_filter()
 #. [done] replace g:vimim_sexy_onekey=1 with g:vimim_static_input_style=2
-#. [todo] cloud_at_will_trailing_apostrophe not reliable
-#. [todo] get used to <C-Space><C-Space>
-#. [todo] http://www.xxx.com<C-6><C-6> use it as http dump
 #. [done] default on for g:vimim_onekey_double_ctrl6=1
+#. [todo] get used to <C-Space><C-Space>
+#. [todo] [pinyin] make dropdown menu as standard as possible
+#. [todo] [libvimim.dll] http://www.xxx.com<C-6><C-6> use it as http dump
+#. [todo] [libvimim.dll] :Wget() for libcall(s:www_libcall,"do_geturl",input)
 
 
+let www_libcall = "/home/xma/svn/vim/vimfiles/plugin/libvimim.dll"
+let input = "http://cnn.com"
+let output = libcall(www_libcall, "do_geturl", input)
 
