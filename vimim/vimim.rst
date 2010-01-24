@@ -331,22 +331,48 @@ __ http://www.bibibang.com/group_thread/view/id-12421
 |
 |
 
+
 Changes in 2010
 ===============
 vimimhelp =>
   试用版本  http://vimim.googlecode.com/svn/trunk/plugin/vimim.vim
 
-(1) 【安民告示】 新的缺省键终生不变　　　VimIM mapping
+|
 
-  (A) 按 <Ctrl-6>  在非中文模式直接出选择。　　　　　　=> 点石成金
-  (B) 按 <Ctrl-\\> 进入中文输入模式，此后按空格出选择。=> 中文输入模式
+* 【安民告示】 新的缺省键终生不变
 
-(2) [new] `〖点石成金〗`_   双敲<C-6> 图个舒服
+  (1) 按 <Ctrl-6>  在非中文模式直接出选择。　　　　　　=> 点石成金
+  (2) 按 <Ctrl-\\> 进入中文输入模式，此后按空格出选择。=> 中文输入模式
 
-  * vim<C-6><C-6> 
-  * vimim<C-6><C-6> 
+* New Option Names
 
-(3) 天下大势, 久分必合
+  |
+  | 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping,
+  | 　　　　　GVim 玩家可以用 CTRL-SPACE 切换中文模式
+  | 　　　　　:let g:vimim_ctrl_space_to_toggle=1
+  |
+  | 【小技巧】可以定义Tab键为<C-6>
+  | 　　　　　:let g:vimim_tab_as_onekey=1
+  |
+
+* [new] 完善内码输入
+
+  * 用<C-6>点石键直接点汉字，显示内码列表
+  * Unicode 彩蛋 vimimunicode=> 康熙字典部首列表　
+  * 以u为十六进制内码输入的前导字符，动态列表
+  * 十进制内码一键输入： 22221　→　囍
+  * 无词库无联网：abcdefghijklmnopqrstuvwxyz 上单词
+
+    * Unicode 内码输入
+    * GBK 内码输入
+    * Big5 内码输入
+
+*  [new] `〖点石成金〗`_   双敲<C-6> 图个舒服
+
+  * vim<C-6><C-6>
+  * vimim<C-6><C-6>
+
+*  天下大势, 久分必合
 
     〖中文输入模式〗三者择一：
 
@@ -362,7 +388,7 @@ vimimhelp =>
     |  ㈢【Sexy静态模式】(A) 对比【经典静态模式】去掉连续上字
     |                    (B) 对比【点石成金】加上连续上字，以及不少cool功能
 
-(4) 〖想云就云〗，不换模式，不限输入法
+* 〖想云就云〗，不换模式，不限输入法
 
    * 【条件】只需要联网和libvimim.dll/wget/curl
    * 【限于】 `〖点石成金〗`_
@@ -371,32 +397,22 @@ vimimhelp =>
    * 【例】dbrcxby' => 东边日出西边雨
    * 【例】hfpjlswsqy' => 好风凭借力送我上青云
 
-(5) 强制非云
+* 强制非云
 
    * 【特点】在输入后加英文句号，接着敲〖点石键〗
    * 【特点】不受g:vimim_cloud_sogou的设置所限制
    * 【例】cloud.  => 云
 
-(6) universal imode
+
+* universal imode 中文数字量词
 
    *   ' =>   为输入小写中文数字的前导字符
    *  '' =>   为输入大写中文数字的前导字符
    *  【例】 '2000 　=>　二〇〇九
    *  【例】 ''2000　=>　贰零零玖
 
-(7) new option names
 
-   |
-   | 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping,
-   | 　　　　　GVim 玩家可以用 CTRL-SPACE 切换中文模式
-   | 　　　　　:let g:vimim_ctrl_space_to_toggle=1
-   |
-   | 【小技巧】可以定义Tab键为<C-6>
-   | 　　　　　:let g:vimim_tab_as_onekey=1
-   |
-
-
-(8) `〖Sexy静态模式〗`_
+*  〖Sexy静态模式〗
 
   * 【设置】 :let g:vimim_static_input_style=2
   * 【操作】
@@ -404,51 +420,26 @@ vimimhelp =>
     - 【开启】—— 敲 <Ctrl-\\>
     - 【关闭】—— 敲 <Ctrl-\\>
     - 【退出】—— 敲 <Esc>
-    - 【功能】—— 包括〖点石成金〗全部功能，加之 ......
+    - 【功能】—— 包括〖点石成金〗全部功能，附加不少cool功能
 
+*  [new] Windows gVim 用户的福音：
 
-(9) [new] Windows gVim 用户的福音：
+  * 【目的】使在微软Windows下玩VimIM云输入的体验更加柔和
+  * 【用法】下载新版 libvimim.dll   置于vim plugin 目录之下
 
-   【目的】使在微软Windows下玩VimIM云输入的体验更加柔和。
-
- | A special bonus DLL is created for gVim users on Microsoft Windows.
- | It can be used to replace wget.exe, and effectively avoid a flash
- | DOS box on the status line when accessing cloud.
-
-   【用法】下载新版 libvimim.dll__  置于vim plugin 目录之下
-
-__ http://vimim.googlecode.com/svn/mycloud/client/libvimim.dll
-
-
-(10) [new] 内码输入；
-
-  * 以u为十六进制内码输入的前导字符
-  * 以零结尾为动态列表（十进制或十六进制）
-  * 无词库无联网：abcdefghijklmnopqrstuvwxyz 上单词。
-
-  | * Unicode 内码输入
-  | * GBK 内码输入
-  | * Big5 内码输入
-  |
-  | 【演示】Unicode 内码一键输入：
-  | 　　　【例】　十进制：敲　 **22221** 　→　囍
-  | 　　　【例】十六进制：敲　 **u56cd** 　→　囍
-  |
-  | 【示意图】标准统一码动态列表（以零结尾）：
-  |
-  | 　　　【例】　十进制：敲　 **22220** 　→　囍 in 菜单
-  | 　　　【例】十六进制：敲　 **u56c0** 　→　囍 in 菜单
-  |
-
-(11) [new] start a new way to deal with private datafile
+* [new] start a new way to deal with private datafile
 
   | For example: one data entry, with two ## at the end
   |              ajiao  阿娇 ##
   |
-  |
+
+* 【精兵简政】
+
+  (1) remove support to private file
+  (2) remove CTRL-H 重新定匹配: :let g:vimim_smart_ctrl_h=1
 
 
-
+|
 |
 |
 
@@ -549,9 +540,11 @@ VimIM 内码输入总结
   BIG5           taiwan          yes              yes
 =============  ===========  ================  ===============
 
-* 以u为十六进制内码输入的前导字符
-* 以零结尾为动态列表（十进制或十六进制）
+* 用<C-6>点石键直接点汉字，显示内码列表。
+* 以u为十六进制内码输入的前导字符，动态列表
+* 十进制内码一键输入： 22221　→　囍
 * 无词库无联网：abcdefghijklmnopqrstuvwxyz 上单词。
+* Unicode 彩蛋 vimimunicode=> 康熙字典部首列表　
 
 .. sidebar::  `Unicode 内码输入`_
 
@@ -575,9 +568,8 @@ Unicode 内码输入
 
 | 【演示】Unicode 内码一键输入：
 | 　　　【例】　十进制：敲　 **22221** 　→　囍
-| 　　　【例】十六进制：敲　 **u56cd** 　→　囍
 |
-| 【示意图】标准统一码动态列表（以零结尾）：
+| 【示意图】标准统一码动态列表
 |
 | 　　　【例】　十进制：敲　 **22220** 　→　囍 in 菜单
 | 　　　【例】十六进制：敲　 **u56c0** 　→　囍 in 菜单
@@ -632,9 +624,8 @@ GBK 内码输入
 
 | 【演示】GBK 标准内码一键输入：
 | 　　　【例】　十进制：敲　 **49901** 　→　马　(GB)
-| 　　　【例】十六进制：敲　 **uc2ed** 　→　马　(GB)
 |
-| 【示意图】GBK 标准内码动态列表（以零结尾）：
+| 【示意图】GBK 标准内码动态列表
 | 　　　【例】　十进制：敲　 **49900** 　→　马 in 菜单
 | 　　　【例】十六进制：敲　 **uc2e0** 　→　马 in 菜单
 |
@@ -664,9 +655,8 @@ Big5 内码输入
 
 | 【演示】Big5 标准内码一键输入：
 | 　　　【例】　十进制：敲　 **45224** 　→　馬　(Big5)
-| 　　　【例】十六进制：敲　 **ub0a8** 　→　馬　(Big5)
 |
-| 【示意图】Big5 标准内码动态列表（以零结尾）：
+| 【示意图】Big5 标准内码动态列表
 | 　　　【例】　十进制：敲　 **45220** 　→　馬 in 菜单
 | 　　　【例】十六进制：敲　 **ub0a0** 　→　馬 in 菜单
 |
@@ -1032,7 +1022,6 @@ VimIM 拼音输入总结：
   - 【空格键】直接上汉字，或上空格。
   - 【回车键】或无缝上英文，或回车。
   - 【一键改错】<Esc> 将就传统输入法的用户体验
-  - 【<C-H>】（点石成金） `整句输入`_ 重新匹配
 
 (2) 无菜单：
 
@@ -1096,7 +1085,6 @@ VimIM 五笔输入总结：
   - 【空格键】上汉字，开始新的一轮五笔连打。或上空格。
   - 【回车键】或无缝上英文，或回车。
   - 【一键改错】<Esc> 将就传统输入法的用户体验
-  - 【<C-H>】（点石成金） `整句输入`_ 重新匹配
 
 (2) 无菜单：
 
@@ -1602,6 +1590,8 @@ Vim插入模式
 | 英文字母为“石”，中文汉字为“金”：是谓〖点石成金〗
 | 有玩家叹曰：使用〖点石成金〗，点出来的不是汉字，是惊艳。
 |
+| 推而广之，需要修改的中文汉字也可以为“石”。例如：石<C-6>  
+|
 | 卖点：保持 vim 缺省工作环境，没有所谓“状态”切换。
 | 　　　在英文环境下玩中文：想输入就输入，想搜索就搜索。
 |
@@ -1617,7 +1607,6 @@ Vim插入模式
   #.  连敲四键: v i m <C-6>
   #.  敲 j  光标向下移动
   #.  敲 k  光标向上移动
-  #.  敲 h  向上翻页
   #.  敲 l  向下翻页
 
 |
@@ -1854,28 +1843,22 @@ Vim插入模式
 
 ㈡ 无句号分隔，一气呵成：
 
-| 【特点】 逆向最大匹配，逐词上屏。
-| 【演示】 一口气输入一长串拼音：
-| 　　　【输入】jiandaolaoshiwenshenghao.
-| 　　　【匹配】jiandao见到　laoshi老师　wensheng问声　hao好
-|
+【特点】 逆向最大匹配，逐词上屏。
 
 【自己动手试一试】
 
-　【目的】 一口气输入八个汉字: 我最喜欢的浏览器
+　【目的】 一口气输入一个句子: 见到老师问声好
 
 　【操作步骤】
 
   #.  打开 vim （如果用Windows可以双击gVim.exe）
   #.  敲 o 或 i 或 a 进入 vim 插入模式
-  #.  连敲: wozuixihuandeliulanqi.
-  #.  不间断继续敲点石成金键:  <C-6>
-  #.  敲【空格键】或【数字键】上字: wo 　　　=> 我
-  #.  敲【空格键】或【数字键】上字: zui　　　=> 最
-  #.  敲【空格键】或【数字键】上字: xihuan 　=> 喜欢
-  #.  敲【<C-H>】重新挑选 （参见 `其余选项`_ ）
-  #.  敲【空格键】或【数字键】上字: de 　　　=> 的
-  #.  敲【空格键】或【数字键】上字: liulanqi => 浏览器
+  #.  连敲: jiandaolaoshiwenshenghao.
+  #.  敲点石成金键:  <C-6>
+  #.  敲【空格键】或【数字键】上字: jiandao 　=> 见到
+  #.  敲【空格键】或【数字键】上字: laoshi　　=> 老师
+  #.  敲【空格键】或【数字键】上字: wensheng　=> 问声
+  #.  敲【空格键】或【数字键】上字: hao 　　　=> 好
 
 |
 
@@ -2256,13 +2239,6 @@ e　亿  j　斤  o　度  t　吨  z　兆
 | 所有的设定只要重新启动Vim后，就可正常识别。
 |
 
-**重新匹配**
-
-+ 用 CTRL-H 重新定匹配，从最小匹配开始
-+ 〖例〗 wozuixihuandeliulanqi
-+  参见 `逐词匹配`_  之㈡ 无句号分隔
-+ 【缺省关闭】:let g:vimim_smart_ctrl_h=0
-
 **以词定字**
 
 +  使用左右方括号选择当前候选词的开头或结尾的字
@@ -2336,7 +2312,7 @@ e　亿  j　斤  o　度  t　吨  z　兆
 |
 |   :let g:vimim_static_input_style=2
 |   ㈢【Sexy静态模式】(A) 对比【经典静态模式】去掉连续上字
-|                     (B) 对比【点石成金】加上连续上字，以及不少cool功能
+|                     (B) 对比【点石成金】加上连续上字，附加不少cool功能
 |
 |
 
@@ -2402,7 +2378,7 @@ __ http://code.google.com/p/vimim/wiki/OneKey
 + 【特点】 集【点石成金】和【经典静态模式】之优点于一身。
 
   (1)  对比【经典静态模式】去掉连续上字
-  (2)  对比【点石成金】加上连续上字，以及不少cool功能。
+  (2)  对比【点石成金】加上连续上字，附加不少cool功能。
 
 + 【设置】 :let g:vimim_static_input_style=2
 
@@ -2937,7 +2913,6 @@ WHAT IS NEW
 #. [done] make Chinese punctuations intelligent for all situations
 #. [done] make <BS> work as expected, the smart way of doing <BS>
 #. [done] intelligent punctuation: English punctuation after number.
-#. [done] make <C-H> intelligent, also as a key to get rid of trash codes
 #. [done] support vimim_word_by_word_match
 #. [done] better fuzzy search: ycdy(yichuidyingyin) ydgy(yingdegengying)
 #. [done] make "easter egg" secret by moving Chinese to datafile
@@ -3144,13 +3119,11 @@ WHAT IS NEW
 #. [done] add back vimim_length_filter(); improve s:vimim_pinyin_filter()
 #. [done] replace g:vimim_sexy_onekey=1 with g:vimim_static_input_style=2
 #. [done] default on for g:vimim_onekey_double_ctrl6=1
+#. [done] chinese<C-6> => unicode omni popup menu
 #. [todo] get used to <C-Space><C-Space>
 #. [todo] [pinyin] make dropdown menu as standard as possible
-#. [todo] [libvimim.dll] http://www.xxx.com<C-6><C-6> use it as http dump
-#. [todo] [libvimim.dll] :Wget() for libcall(s:www_libcall,"do_geturl",input)
+#. [todo] <C-N> recyle chinese in the current line?
+#. [todo] rename: s:pinyin_and_4corner => s:filter_4corner
 
 
-let www_libcall = "/home/xma/svn/vim/vimfiles/plugin/libvimim.dll"
-let input = "http://cnn.com"
-let output = libcall(www_libcall, "do_geturl", input)
 
