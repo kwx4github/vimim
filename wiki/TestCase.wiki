@@ -1,32 +1,96 @@
 ﻿#summary  VimIM 回归测试 Regression Test Suite
 http://code.google.com/p/vimim/wiki/TestCase
 {{{
+
+# --------------------------- test pinyin+4corner
+cp /home/vimim/vimim.4corner.txt                ~/svn/vim/vimfiles/plugin
+cp /home/vimim/vimim.pinyin.txt                 ~/svn/vim/vimfiles/plugin
+mv ~/svn/vim/vimfiles/plugin/vimim.txt          /home/vimim 
+# --------------------------- rollback
+mv ~/svn/vim/vimfiles/plugin/vimim.4corner.txt  /home/vimim 
+mv ~/svn/vim/vimfiles/plugin/vimim.pinyin.txt   /home/vimim 
+cp /home/vimim/vimim.txt    ~/svn/vim/vimfiles/plugin
+# ---------------------------
+
+# --------------------------- test pinyin+erbi
+cp /home/vimim/vimim.erbi.txt                 ~/svn/vim/vimfiles/plugin
+mv ~/svn/vim/vimfiles/plugin/vimim.txt         /home/vimim 
+# --------------------------- rollback
+mv ~/svn/vim/vimfiles/plugin/vimim.erbi.txt   /home/vimim 
+cp /home/vimim/vimim.txt    ~/svn/vim/vimfiles/plugin
+# ---------------------------
+
+# --------------------------- test pinyin_quote_sogou+4corner
+cp /home/vimim/vimim.4corner.txt            ~/svn/vim/vimfiles/plugin
+cp /home/vimim/vimim.pinyin_quote_sogou.txt ~/svn/vim/vimfiles/plugin 
+mv ~/svn/vim/vimfiles/plugin/vimim.txt     /home/vimim 
+# --------------------------- rollback
+mv ~/svn/vim/vimfiles/plugin/vimim.4corner.txt              /home/vimim 
+mv ~/svn/vim/vimfiles/plugin/vimim.pinyin_quote_sogou.txt   /home/vimim 
+cp /home/vimim/vimim.txt    ~/svn/vim/vimfiles/plugin
+# ---------------------------
+
+# --------------------------- test wubi+pinyin
+cp /home/vimim/vimim.wubi.txt   ~/svn/vim/vimfiles/plugin
+cp /home/vimim/vimim.pinyin.txt ~/svn/vim/vimfiles/plugin
+mv ~/svn/vim/vimfiles/plugin/vimim.txt     /home/vimim 
+# --------------------------- rollback
+mv ~/svn/vim/vimfiles/plugin/vimim.wubi.txt    /home/vimim 
+mv ~/svn/vim/vimfiles/plugin/vimim.pinyin.txt  /home/vimim 
+cp /home/vimim/vimim.txt    ~/svn/vim/vimfiles/plugin
+# ---------------------------
+
+# --------------------------- test pinyin+12345
+cp /home/vimim/vimim.pinyin.txt  ~/svn/vim/vimfiles/plugin
+cp /home/vimim/vimim.12345.txt   ~/svn/vim/vimfiles/plugin
+mv ~/svn/vim/vimfiles/plugin/vimim.txt    /home/vimim 
+# --------------------------- rollback
+mv ~/svn/vim/vimfiles/plugin/vimim.12345.txt   /home/vimim 
+mv ~/svn/vim/vimfiles/plugin/vimim.pinyin.txt  /home/vimim 
+cp /home/vimim/vimim.txt    ~/svn/vim/vimfiles/plugin
+# ---------------------------
+
+
 针对每一个Bug Fix，我们尽可能做回归测试。
 （1）验证新的code的确把缺陷改正了。
 （2）验证新的code没有搞破坏，没有Regression
-	
+
 在共产主义（自动回归测试）还没有实现之前，
 我们可以先玩初级阶段，甚至刀耕火种。
 总之，先把饭煮熟再说。
-	
-	
+
 【回归测试试题】
-	
+# =========================== test wubi
+--------------------------------- issue 6
+我用五笔，输入一个三码的字后，下一个字的第一个编码会忽略，例如：
+输入  ：  sgi hw
+应该是：  杯具
+实际是：  杯h人
+---------------------------------
+所有以 i 开头的候选字都无效, 如 ifh (汁)
+应该出现候选字列表: "不" 和 "水", 结果是: "-- User defined completion
+(^U^N^P) Pattern not found".
+---------------------------------
+
+
+【回归测试试题】
+
 >>> purpose: to test 双拼 云 静态模式
-------------------------------------------
+------------------------------------------ vimrc
 :let g:vimim_www_sogou = 1
 :let g:vimim_static_input_style = 1
 :let g:vimim_shuangpin_abc = 1
-------------------------------------------
+------------------------------------------ issue 23
 euwfti<space><space>wfti<space><space>euwfti<space>
-------------------------------------------
-	
->>> purpose: to test 双拼 云 动态模式
-------------------------------------------
-:let g:vimim_www_sogou = 2
-:let g:vimim_static_input_style = -1
-:let g:vimim_shuangpin_abc = 1
+出问题问题解决问题问题出问题
 ------------------------------------------
 hkfgpyjxlisswovhqyyn
------------------------------------------- 
-	
+------------------------------------------
+
+------------------------------------------ issue 32
+开启云输入，并试图onekey输入
+“缺韵母”三个字，不论全拼双拼均无法正常输入。
+------------------------------------------
+queyunmu
+
+
