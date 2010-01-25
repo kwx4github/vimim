@@ -2,6 +2,7 @@
 
 #ifdef WIN32
 # include <winsock2.h>
+# include <wininet.h>
 #else
 # include <sys/types.h>          /* See NOTES */
 # include <sys/socket.h>
@@ -11,6 +12,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include "mycloud.h"
 
 int tcpsend(char *ret, const char *src, const char *host, unsigned short port)
 {
@@ -52,13 +54,19 @@ int tcpsend(char *ret, const char *src, const char *host, unsigned short port)
         goto error2;
     send(s, "\n", 1, 0);
     ret[0] = '\0';
-    for (;;) {
+    for (int i=OUTPUT_BUFFERS; ;i--) {
         char buf[BUFSIZ];
         size_t sz = recv(s, buf, sizeof buf - 1, 0);
         if (sz <= 0)
             goto error2;
         buf[sz] = '\0';
-        strcat(ret, buf);
+        if (i > 0)
+            strcat(ret, buf);
+        else {
+            size_t len = strlen(ret);
+            ret[len-2] = '\n';
+            ret[len-1] = '\0';
+        }
         if (buf[sz-1] == '\n')
             break;
     }
@@ -84,3 +92,40 @@ error0:
     return 0;
 }
 
+#ifdef WIN32
+int win32_geturl(char *ret, const char *url)
+{
+    HINTERNET hInet = InternetOpen(NULL,INTERNET_OPEN_TYPE_PRECONFIG,NULL,NULL,0);
+    if (hInet == NULL)
+        goto myerror0;
+
+    HINTERNET hUrl = InternetOpenUrl(hInet,url,NULL,0,0,0);
+    if (hUrl == NULL)
+        goto myerror1;
+    ret[0] = '\0';
+    for (int i = OUTPUT_BUFFERS; ;i-- ) {
+        char buf[BUFSIZ];
+        DWORD len;
+        BOOL b = InternetReadFile(hUrl, buf, sizeof buf - 1, &len);
+        if (b == FALSE)
+            goto myerror2;
+        if (len == 0)
+            break;
+        buf[len] = '\0';
+        if (i > 0)
+            strcat(ret, buf);
+    }
+
+    InternetCloseHandle(hUrl);
+    InternetCloseHandle(hInet);
+    return 0;
+
+myerror2:
+    InternetCloseHandle(hUrl);
+myerror1:
+    InternetCloseHandle(hInet);
+myerror0:
+    ret[0] = '\0';
+    return 1;
+}
+#endif

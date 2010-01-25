@@ -229,7 +229,8 @@ def process(item, map, rzk):
     # display hint
     if wc == 1:
         if rzk.has_key(item):
-            hint = rzk[item]
+            start = len(map["itmmap"][wc][0])
+            hint = rzk[item][start:]
         else:
             if twc > 1:
                 # 对于多字输入的情形，隐藏不含形码的单字。
@@ -238,7 +239,8 @@ def process(item, map, rzk):
                 hint = "_"
     elif wc >= 2:
         if rzk.has_key(item[-3:]):
-            hint = rzk[item[-3:]]
+            start = len(map["itmmap"][wc][0])
+            hint = rzk[item[-3:]][start:]
         else:
             hint = "_"
     else:
@@ -467,15 +469,17 @@ def parse_glyph(map):
             break
     else:
         # mzk is a dict and we have exhausted the loop, do traverse the tree
+        xmzk = data.get(data.load_reverse_xmzk)
         retlist = traverse_tree(mzk)
         if len(retlist) >= data.g_maxoutput:
             retlist = retlist[0:data.g_maxoutput]
         retlist.sort()
         for item in retlist:
+            start = len(xmcode)
             if rzk.has_key(item):
-                ret.append((item+intermed, rzk[item], wordptr))
+                ret.append((item+intermed, xmzk[item][start:]+rzk[item], wordptr))
             else:
-                ret.append((item+intermed, "", wordptr))
+                ret.append((item+intermed, xmzk[item][start:], wordptr))
     return ret
 
 g_gae = False

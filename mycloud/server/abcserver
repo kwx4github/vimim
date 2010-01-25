@@ -29,6 +29,12 @@ def socketfunc(indata):
         return ""
 
 def main():
+    try:
+        import psyco
+        psyco.full()
+    except ImportError:
+        pass
+
     algo.parse("__setmode=abc")
     if len(sys.argv) > 1 and sys.argv[1] == "-b":
         mysocket.setverbose(False)

@@ -2,11 +2,46 @@
 # coding=utf-8
 
 import sys
-import mysocket
+import socket
+
+BUFSIZE = 1024
+
+def tcpslice(sendfunc, data):
+    senddata = data
+    while len(senddata) >= BUFSIZE:
+        sendfunc(senddata[0:BUFSIZE])
+        senddata = senddata[BUFSIZE:]
+    if senddata[-1:] == "\n":
+        sendfunc(senddata)
+    else:
+        sendfunc(senddata+"\n")
+
+def tcpsend(data, host, port):
+    addr = host, port
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        s.connect(addr)
+    except Exception, inst:
+        s.close()
+        return None
+    ret = ""
+    for item in data.split("\n"):
+        if item == "":
+            continue
+        tcpslice(s.send, item)
+        cachedata = ""
+        while cachedata[-1:] != "\n":
+            data = s.recv(BUFSIZE)
+            cachedata += data
+        if cachedata == "server closed\n":
+            break
+        ret += cachedata
+    s.close()
+    return ret
 
 def parsefunc(keyb, host="localhost"):
     src = keyb.encode("base64")
-    ret = mysocket.tcpsend(src, host, 10007)
+    ret = tcpsend(src, host, 10007)
     if type(ret).__name__ == "str":
         try:
             return ret.decode("base64")

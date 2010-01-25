@@ -1,8 +1,7 @@
-#ifdef WIN32
-# include <wininet.h>
-#else
-/* do_geturl not supported in linux */
-#endif
+/*
+ * Author: Pan, Shi Zhu
+ * plugin for vim libcall()
+ */
 
 #include <stdio.h>
 #include <string.h>
@@ -10,8 +9,8 @@
 #include "cdecode.h"
 #include "cencode.h"
 
-char buffer1[8192];
-char buffer2[8192];
+char buffer1[OUTPUT_BUFFERS*BUFSIZ];
+char buffer2[OUTPUT_BUFFERS*BUFSIZ];
 
 char *do_geturl(const char *url)
 {
@@ -21,44 +20,19 @@ char *do_geturl(const char *url)
     if (strcmp(url, "__isvalid") == 0) {
         strcpy(geturl, "False");
         return geturl;
+    } else {
+        geturl[0] = '\0';
+        return geturl;
     }
 #else
     if (strcmp(url, "__isvalid") == 0) {
         strcpy(geturl, "True");
         return geturl;
+    } else {
+        win32_geturl(geturl, url);
+        return geturl;
     }
-    HINTERNET hInet = InternetOpen(NULL,INTERNET_OPEN_TYPE_PRECONFIG,NULL,NULL,0);
-    if (hInet == NULL)
-        goto myerror0;
-
-    HINTERNET hUrl = InternetOpenUrl(hInet,url,NULL,0,0,0);
-    if (hUrl == NULL)
-        goto myerror1;
-    geturl[0] = '\0';
-    for (;;) {
-        char buf[BUFSIZ];
-        DWORD len;
-        BOOL ret = InternetReadFile(hUrl, buf, sizeof buf - 1, &len);
-        if (ret == FALSE)
-            goto myerror2;
-        if (len == 0)
-            break;
-        buf[len] = '\0';
-        strcat(geturl, buf);
-    }
-
-    InternetCloseHandle(hUrl);
-    InternetCloseHandle(hInet);
-    return geturl;
-
-myerror2:
-    InternetCloseHandle(hUrl);
-myerror1:
-    InternetCloseHandle(hInet);
-myerror0:
 #endif
-    geturl[0] = '\0';
-    return geturl;
 }
 
 /* unquote the %xx url quote */

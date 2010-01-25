@@ -1,19 +1,18 @@
-# Makefile for MinGW gcc compiler
+# Makefile for Cygming-special gcc compiler
 
-CC=/cygdrive/c/MinGW/bin/gcc 
-#CC=/mingw/bin/gcc 
+CC=gcc-3
 
-CFLAGS= -march=i686 -Dvimim_EXPORTS -DWIN32 -O2 -std=c99 -DNDEBUG -Wall -pedantic -Werror 
+CFLAGS= -mno-cygwin -mwindows -march=i686 -Dvimim_EXPORTS -DWIN32 -O2 -std=c99 -DNDEBUG -Wall -pedantic -Werror 
 LDFLAGS= -lws2_32 -lwininet
 
 build_target=libvimim.dll
 sample=mytest.exe
 srcs=cdecode.c cencode.c dllmain.c mysocket.c 
 
-all: $(build_target)
-
 $(build_target): $(srcs)
 	$(CC) $(CFLAGS) -shared -o $@ $^ $(LDFLAGS)
+
+all: $(build_target) $(sample)
 
 $(sample): $(srcs) sample.c
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
@@ -21,6 +20,6 @@ $(sample): $(srcs) sample.c
 clean:
 	$(RM) $(build_target) $(sample)
 
-install:
+install: $(build_target)
 	@mkdir -p ~/vimfiles/plugin
 	cp $(build_target) ~/vimfiles/plugin
