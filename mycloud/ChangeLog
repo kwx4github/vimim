@@ -2,6 +2,7 @@
 2010-1-25 Pan, Shi Zhu  <pan.shizhu@gmail.com>
 	* client-src: 当获取大量 socket 数据时，增加对数据溢出的处理
 	* server: 逐字输入 dynamic 模式时，支持显示部分的形码
+	* all: 增加了版权信息描述
 
 2010-1-19 Pan, Shi Zhu  <pan.shizhu@gmail.com>
 	* client-src: 发布 client 端源代码
