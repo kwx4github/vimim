@@ -372,6 +372,11 @@ vimimhelp =>
   * vim<C-6><C-6>
   * vimim<C-6><C-6>
 
+*  [new] `〖Sexy静态模式〗`_   输入记忆
+
+  * smart <C-N>
+  * smart <C-P>
+
 *  天下大势, 久分必合
 
     〖中文输入模式〗三者择一：
@@ -412,7 +417,7 @@ vimimhelp =>
    *  【例】 ''2000　=>　贰零零玖
 
 
-*  〖Sexy静态模式〗
+*  `〖Sexy静态模式〗`_
 
   * 【设置】 :let g:vimim_static_input_style=2
   * 【操作】
@@ -437,7 +442,6 @@ vimimhelp =>
 
   (1) remove support to private file
   (2) remove CTRL-H 重新定匹配: :let g:vimim_smart_ctrl_h=1
-
 
 |
 |
@@ -1721,17 +1725,17 @@ Vim插入模式
 --------
 - 【卖点】Yes, VimIM can recycle!
 - 【目的】重复利用用户输入，省时省力!
+- 【开启】 【Sexy静态模式】 default on
 - 【方式之一】利用 Ctrl-N
 
   - 【特点】同一字母开头的输入只记住一次
   - 【操作】在输入一个字母后，按<Ctrl-N>
-  - 【缺省关闭】:let g:vimim_smart_ctrl_n=0
+  - 【操作】在汉字后按<Ctrl-N> => 重复该汉字
 
 - 【方式之二】利用 Ctrl-P
 
   - 【特点】记住用户所有输入记录
   - 【操作】随便敲几个印象中的输入码后，按<Ctrl-P>
-  - 【缺省关闭】:let g:vimim_smart_ctrl_p=0
 
 |
 
@@ -3091,7 +3095,6 @@ WHAT IS NEW
 #. [done] [sort] add r(reverse) sort for omni popup menu
 #. [done] No PageUp after first Page; No PageDown after last page
 #. [done] open debug mode for public; resever only g:vimimdebug=9　
-#. [todo] make ctrl_h smarter:  g:vimim_smart_ctrl_h=0
 #. [todo] improve performance on dynamic mode by using temp cache
 #. [todo] is it possible to fix omni popup location?
 #. [redo] [enter] OneKey a. a.. a... a.... whole match?
