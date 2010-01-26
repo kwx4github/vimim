@@ -363,9 +363,12 @@ vimimhelp =>
   * 十进制内码一键输入： 22221　→　囍
   * 无词库无联网：abcdefghijklmnopqrstuvwxyz 上单词
 
-    * Unicode 内码输入
-    * GBK 内码输入
-    * Big5 内码输入
+  |
+  | 每一个汉字都是“活”的。
+  | （vim插入模式）在任何一个汉字或全角标点后面敲<C-6>
+  | (1) 汉字<C-6><Space> => 重复出前一个字。
+  | (2) 汉字<C-6><C-6> => dump out the whole menu
+  |
 
 *  [new] `〖点石成金〗`_   双敲<C-6> 图个舒服
 
@@ -3126,7 +3129,11 @@ WHAT IS NEW
 #. [todo] get used to <C-Space><C-Space>
 #. [todo] [pinyin] make dropdown menu as standard as possible
 #. [todo] <C-N> recyle chinese in the current line?
+#. [done] zc9_1 <=> z1c9 <=> zheng1010chang9022 <=> zhengchang
 #. [todo] rename: s:pinyin_and_4corner => s:filter_4corner
+#. [todo] [cloud] based on zi instead of total number of char typed
+
+
 
 
 
