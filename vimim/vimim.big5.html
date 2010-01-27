@@ -708,9 +708,10 @@ VimIM 不錯, 一直在用 :) -->
 <li><p class="first">New Option Names</p>
 <div class="line-block">
 <div class="line"><br /></div>
-<div class="line">【小技巧】因為GUI版vim (GVim) 支持CTRL-SPACE 鍵的mapping,</div>
-<div class="line">　　　　　GVim 玩家可以用 CTRL-SPACE 切換中文模式</div>
-<div class="line">　　　　　:let g:vimim_ctrl_space_to_toggle=1</div>
+<div class="line">【小技巧】如果所用的vim支持CTRL-SPACE鍵的mapping,</div>
+<div class="line">　　　　　設置：:let g:vimim_ctrl_space_to_toggle=1</div>
+<div class="line">　　　　　㈠ It works for GVim</div>
+<div class="line">　　　　　㈡ It also works for Console Vim using MinTTY.</div>
 <div class="line"><br /></div>
 <div class="line">【小技巧】可以定義Tab鍵為&lt;C-6&gt;</div>
 <div class="line">　　　　　:let g:vimim_tab_as_onekey=1</div>
@@ -2175,7 +2176,6 @@ If the following download URL does not work for you, please
 <li>　　　㈠ 單碼（音碼） 可敲入 ma 或 ma3</li>
 <li>　　　㈡ 單碼（數碼） 可敲入 71 或 713 或 7132</li>
 <li>　　　㈢ 雙碼（雙碼） 可敲入 ma71 或 ma7132</li>
-<li>　　　㈤ 雙碼（雙碼） 可敲入 mjads （快鍵）</li>
 <li>【注】三種輸入方式互相獨立，互不沖突，互相補充。</li>
 </ul>
 </dd>
@@ -2273,7 +2273,17 @@ If the following download URL does not work for you, please
 </blockquote>
 <ol class="arabic simple" start="2">
 <li>把數字（四角號碼）當過濾器使用，另類的翻頁選字。</li>
+<li>【例樣】</li>
 </ol>
+<blockquote>
+<ul class="simple">
+<li>ma7li4 =&gt;  馬力</li>
+<li>mali4  =&gt;  馬力</li>
+<li>ma7li  =&gt;  馬力</li>
+<li>ml4&lt;Space&gt;7  =&gt;  馬力 （先敲ml4出菜單，再敲7過濾）</li>
+<li>ggy1   =&gt;  歸功於 （精確定位）</li>
+</ul>
+</blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -2673,9 +2683,10 @@ If the following download URL does not work for you, please
 </table>
 <div class="line-block">
 <div class="line"><br /></div>
-<div class="line">【小技巧】因為GUI版vim (GVim) 支持CTRL-SPACE 鍵的mapping,</div>
-<div class="line">　　　　　GVim 玩家可以用 CTRL-SPACE 切換中文模式</div>
-<div class="line">　　　　　:let g:vimim_ctrl_space_to_toggle=1</div>
+<div class="line">【小技巧】如果所用的vim支持CTRL-SPACE鍵的mapping,</div>
+<div class="line">　　　　　設置：:let g:vimim_ctrl_space_to_toggle=1</div>
+<div class="line">　　　　　㈠ It works for GVim</div>
+<div class="line">　　　　　㈡ It also works for Console Vim using MinTTY.</div>
 <div class="line"><br /></div>
 <div class="line">【小技巧】可以定義Tab鍵為&lt;C-6&gt;</div>
 <div class="line">　　　　　:let g:vimim_tab_as_onekey=1</div>
@@ -4344,19 +4355,19 @@ If the following download URL does not work for you, please
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">問:</th><td class="field-body"><div class="first last line-block">
-<div class="line">VimIM 與 latex-suite plugin 好像有點沖突?</div>
+<div class="line">在 static 模式中，如何方便的實現“有縫混排”？</div>
 </div>
 </td>
 </tr>
 <tr class="field"><th class="field-name">答:</th><td class="field-body"><div class="first last line-block">
-<div class="line">有玩家反應。Let's wait for solution from those players who</div>
-<div class="line">are interested in making both plugins work in harmony.</div>
+<div class="line">在 static 模式中，如果按空格之后選擇回車，則直接上英文。</div>
+<div class="line">如果再按一次回車，就會上空格：實現“有縫混排”。</div>
 <div class="line"><br /></div>
 </div>
 </td>
 </tr>
 <tr class="field"><th class="field-name">問:</th><td class="field-body"><div class="first last line-block">
-<div class="line">VimIM 與 Vim abbreviation 好像有點沖突?</div>
+<div class="line">VimIM 與 Vim abbreviation 好像有點沖突？</div>
 </div>
 </td>
 </tr>
@@ -4374,7 +4385,19 @@ If the following download URL does not work for you, please
 </td>
 </tr>
 <tr class="field"><th class="field-name">問:</th><td class="field-body"><div class="first last line-block">
-<div class="line">怎樣減少 copy &amp; paste (復制粘貼)重復操作?</div>
+<div class="line">VimIM 與 latex-suite plugin 好像有點沖突？</div>
+</div>
+</td>
+</tr>
+<tr class="field"><th class="field-name">答:</th><td class="field-body"><div class="first last line-block">
+<div class="line">有玩家反應。Let's wait for solution from those players who</div>
+<div class="line">are interested in making both plugins work in harmony.</div>
+<div class="line"><br /></div>
+</div>
+</td>
+</tr>
+<tr class="field"><th class="field-name">問:</th><td class="field-body"><div class="first last line-block">
+<div class="line">怎樣減少 copy &amp; paste (復制粘貼)重復操作？</div>
 </div>
 </td>
 </tr>
@@ -4909,18 +4932,18 @@ set langmenu=zh_CN.UTF-8
 <li>[done] replace g:vimim_sexy_onekey=1 with g:vimim_static_input_style=2</li>
 <li>[done] default on for g:vimim_onekey_double_ctrl6=1</li>
 <li>[done] chinese&lt;C-6&gt; =&gt; unicode omni popup menu</li>
-<li>[todo] get used to &lt;C-Space&gt;&lt;C-Space&gt;</li>
+<li>[done] zc9_1 &lt;=&gt; z1c9 &lt;=&gt; zheng1010chang9022 &lt;=&gt; zhengchang</li>
+<li>[done] standard menu layout mali =&gt; mali ma ma1 ma2 ma3 ma4</li>
+<li>[done] &lt;C-Space&gt; as my default sexy Chinese mode toggle</li>
 <li>[todo] [pinyin] make dropdown menu as standard as possible</li>
 <li>[todo] &lt;C-N&gt; recyle chinese in the current line?</li>
-<li>[done] zc9_1 &lt;=&gt; z1c9 &lt;=&gt; zheng1010chang9022 &lt;=&gt; zhengchang</li>
-<li>[todo] rename: s:pinyin_and_4corner =&gt; s:filter_4corner</li>
 <li>[todo] [cloud] based on zi instead of total number of char typed</li>
 </ol>
 </div>
 </div>
 <div class="footer">
 <hr class="footer" />
-<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 11:10:02 PST on Tuesday, 01/26/2010
+<a class="reference external" href="mailto:vimim&#64;googlegroups.com">vimim&#64;googlegroups.com</a> at 15:31:30 PST on Wednesday, 01/27/2010
 【VimIM ®許可協議：GNU 自由文檔許可証 <strong>GFDL</strong> 】
 </div>
 </body>
