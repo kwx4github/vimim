@@ -347,9 +347,10 @@ vimimhelp =>
 * New Option Names
 
   |
-  | 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping,
-  | 　　　　　GVim 玩家可以用 CTRL-SPACE 切换中文模式
-  | 　　　　　:let g:vimim_ctrl_space_to_toggle=1
+  | 【小技巧】如果所用的vim支持CTRL-SPACE键的mapping,
+  | 　　　　　设置：:let g:vimim_ctrl_space_to_toggle=1
+  | 　　　　　㈠ It works for GVim
+  | 　　　　　㈡ It also works for Console Vim using MinTTY.
   |
   | 【小技巧】可以定义Tab键为<C-6>
   | 　　　　　:let g:vimim_tab_as_onekey=1
@@ -1295,7 +1296,6 @@ __ http://code.google.com/p/vimim/wiki/VimIM_English_Input
  - 　　　㈠ 单码（音码） 可敲入 ma 或 ma3
  - 　　　㈡ 单码（数码） 可敲入 71 或 713 或 7132
  - 　　　㈢ 双码（双码） 可敲入 ma71 或 ma7132
- - 　　　㈤ 双码（双码） 可敲入 mjads （快键）
  - 【注】三种输入方式互相独立，互不冲突，互相补充。
 
 |
@@ -1335,6 +1335,13 @@ __ http://code.google.com/p/vimim/wiki/VimIM_English_Input
 
 (2) 把数字（四角号码）当过滤器使用，另类的翻页选字。
 
+(3) 【例样】  
+
+   + ma7li4 =>  馬力
+   + mali4  =>  馬力     
+   + ma7li  =>  馬力   
+   + ml4<Space>7  =>  馬力 （先敲ml4出菜单，再敲7过滤）
+   + ggy1   =>  归功于 （精确定位）    
 
 |
 |
@@ -1572,9 +1579,10 @@ Vim插入模式
 +------------------------+----------------------------+-----------------------+
 
 |
-| 【小技巧】因为GUI版vim (GVim) 支持CTRL-SPACE 键的mapping,
-| 　　　　　GVim 玩家可以用 CTRL-SPACE 切换中文模式
-| 　　　　　:let g:vimim_ctrl_space_to_toggle=1
+| 【小技巧】如果所用的vim支持CTRL-SPACE键的mapping,
+| 　　　　　设置：:let g:vimim_ctrl_space_to_toggle=1
+| 　　　　　㈠ It works for GVim
+| 　　　　　㈡ It also works for Console Vim using MinTTY.
 |
 | 【小技巧】可以定义Tab键为<C-6>
 | 　　　　　:let g:vimim_tab_as_onekey=1
@@ -2615,12 +2623,12 @@ FAQ
 __ http://code.google.com/p/vimim/wiki/FAQ_Old
 
 
-:问: | VimIM 与 latex-suite plugin 好像有点冲突?
-:答: | 有玩家反应。Let's wait for solution from those players who
-     | are interested in making both plugins work in harmony.
+:问: | 在 static 模式中，如何方便的实现“有缝混排”？
+:答: | 在 static 模式中，如果按空格之后选择回车，则直接上英文。
+     | 如果再按一次回车，就会上空格：实现“有缝混排”。
      |
 
-:问: | VimIM 与 Vim abbreviation 好像有点冲突?
+:问: | VimIM 与 Vim abbreviation 好像有点冲突？
 :答: | Yes, but ...
      | 如果不激活 VimIM, Vim 的abbreviation永远不会“被和谐”。
      |
@@ -2631,7 +2639,12 @@ __ http://code.google.com/p/vimim/wiki/FAQ_Old
      | 原因：OneKey需要赋予空格键一点智能，以便于上字。
      |
 
-:问: | 怎样减少 copy & paste (复制粘贴)重复操作?
+:问: | VimIM 与 latex-suite plugin 好像有点冲突？
+:答: | 有玩家反应。Let's wait for solution from those players who
+     | are interested in making both plugins work in harmony.
+     |
+
+:问: | 怎样减少 copy & paste (复制粘贴)重复操作？
 :答: | Vim 擅长于把复杂的编辑操作简单化。
      | VimIM 尽可能提供自动复制机制，方便〖打字回帖〗。
      |
@@ -3126,14 +3139,11 @@ WHAT IS NEW
 #. [done] replace g:vimim_sexy_onekey=1 with g:vimim_static_input_style=2
 #. [done] default on for g:vimim_onekey_double_ctrl6=1
 #. [done] chinese<C-6> => unicode omni popup menu
-#. [todo] get used to <C-Space><C-Space>
+#. [done] zc9_1 <=> z1c9 <=> zheng1010chang9022 <=> zhengchang
+#. [done] standard menu layout mali => mali ma ma1 ma2 ma3 ma4
+#. [done] <C-Space> as my default sexy Chinese mode toggle
 #. [todo] [pinyin] make dropdown menu as standard as possible
 #. [todo] <C-N> recyle chinese in the current line?
-#. [done] zc9_1 <=> z1c9 <=> zheng1010chang9022 <=> zhengchang
-#. [todo] rename: s:pinyin_and_4corner => s:filter_4corner
 #. [todo] [cloud] based on zi instead of total number of char typed
-
-
-
 
 
